@@ -1,0 +1,145 @@
+{
+  "dji_osmo_action6_mount": {
+    "size_mm": [
+      104.0,
+      79.45000076293945,
+      84.5
+    ],
+    "quantity": 1,
+    "slice_evidence": "Unchanged STL SHA256 matches previously X1C-sliced file",
+    "sha256": "43bb3a495352e0908b8743c074a54752cf14b28d6beda0037fc9ada749f14605",
+    "slice_return_code": 0
+  },
+  "parent_deck": {
+    "size_mm": [
+      216.0,
+      236.0,
+      60.000000000000014
+    ],
+    "quantity": 1,
+    "slice_evidence": "Unchanged STL SHA256 matches previously X1C-sliced file",
+    "sha256": "2d52899492e26c64bda6b3ece5c0c50f2ba1d877fcd17943081094df278ae0f7",
+    "slice_return_code": 0
+  },
+  "parent_rope_keel_adapter": {
+    "size_mm": [
+      60.0,
+      60.0,
+      48.0
+    ],
+    "quantity": 1,
+    "slice_evidence": "adapter_slice/result.json, return_code 0",
+    "sha256": "2ac6559fc358a55752773b519a3d47bd49e35aee7cd2b4b7972e4ad3bcc1fc09",
+    "slice_return_code": 0
+  },
+  "parent_spar_ballast_body": {
+    "size_mm": [
+      120.0,
+      120.0,
+      51.0
+    ],
+    "quantity": 1,
+    "slice_evidence": "Unchanged STL SHA256 matches previously X1C-sliced file",
+    "sha256": "b2f88e20c20468d3d04423924687c32bf2f65ebef25c272ade62046d8612a7ec",
+    "slice_return_code": 0
+  },
+  "parent_spar_ballast_lid": {
+    "size_mm": [
+      120.0,
+      120.0,
+      6.0
+    ],
+    "quantity": 1,
+    "slice_evidence": "Unchanged STL SHA256 matches previously X1C-sliced file",
+    "sha256": "b3404cfb4ac564258fa700b19bc609f3ff415a8202f3a9679a0df80f3eee214a",
+    "slice_return_code": 0
+  },
+  "parent_spar_beam_lower": {
+    "size_mm": [
+      180.0,
+      32.0,
+      32.0
+    ],
+    "quantity": 1,
+    "slice_evidence": "Unchanged STL SHA256 matches previously X1C-sliced file",
+    "sha256": "9fb066d66843bb04c6a1ab2cdc00a9d144e059b8bbb9c2af5c1dbcfc591af38f",
+    "slice_return_code": 0
+  },
+  "parent_spar_beam_upper": {
+    "size_mm": [
+      107.0,
+      32.0,
+      32.0
+    ],
+    "quantity": 1,
+    "slice_evidence": "Unchanged STL SHA256 matches previously X1C-sliced file",
+    "sha256": "b8888b7a904a9edd87057d8656911a537d1f3e738113b8dff48a9496d3251c97",
+    "slice_return_code": 0
+  },
+  "parent_spar_camera_bridge": {
+    "size_mm": [
+      140.0,
+      78.0,
+      180.0
+    ],
+    "quantity": 1,
+    "slice_evidence": "Unchanged STL SHA256 matches previously X1C-sliced file",
+    "sha256": "a5ec36380c75cc1792345d723c4a87a9f8389b6204cd2560da1e32539ce4462e",
+    "slice_return_code": 0
+  },
+  "parent_spar_coupler_half": {
+    "size_mm": [
+      54.0,
+      64.0,
+      26.75
+    ],
+    "quantity": 2,
+    "slice_evidence": "Unchanged STL SHA256 matches previously X1C-sliced file",
+    "sha256": "71d62c555232a3fb47473c837d450cf6123830a218a323ae88682c34a988cb68",
+    "slice_return_code": 0
+  },
+  "parent_spar_disk": {
+    "size_mm": [
+      225.0,
+      225.0,
+      5.0
+    ],
+    "quantity": 1,
+    "slice_evidence": "Unchanged STL SHA256 matches previously X1C-sliced file",
+    "sha256": "27adbd5abe6fc8efd3d8d2e73e9e22d0502524c00981e9283c3ae014f0f194f5",
+    "slice_return_code": 0
+  },
+  "parent_spar_fin": {
+    "size_mm": [
+      65.0,
+      125.0,
+      4.0
+    ],
+    "quantity": 4,
+    "slice_evidence": "Unchanged STL SHA256 matches previously X1C-sliced file",
+    "sha256": "cebd037b4c08404376ab433236e65b6076fcb014e9b3d38ac0305a4c205ae164",
+    "slice_return_code": 0
+  },
+  "parent_spar_gps_bridge": {
+    "size_mm": [
+      183.0,
+      96.0,
+      100.0
+    ],
+    "quantity": 1,
+    "slice_evidence": "Unchanged STL SHA256 matches previously X1C-sliced file",
+    "sha256": "362d0bd20990ad294b5637fc269de60f1191a4abf1a22812e9a721422339e543",
+    "slice_return_code": 0
+  },
+  "parent_spar_hub": {
+    "size_mm": [
+      88.0,
+      88.0,
+      32.0
+    ],
+    "quantity": 2,
+    "slice_evidence": "Unchanged STL SHA256 matches previously X1C-sliced file",
+    "sha256": "17025a78ef2b16e2ef32d299556e2b8168a930a281545882808a8f31813efe53",
+    "slice_return_code": 0
+  }
+}

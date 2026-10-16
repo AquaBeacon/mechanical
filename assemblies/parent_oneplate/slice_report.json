@@ -1,0 +1,11 @@
+{
+  "plates": 1,
+  "printed_parts": 5,
+  "support_feature_sections": 14,
+  "support_enabled": true,
+  "grams": 346.9334716796875,
+  "seconds": 39271.46484375,
+  "warnings": "",
+  "sha256": "353d1d2cb726f2d25c1632c704991ed5f9528c9fe6b5d179eca5c390ebef0ca7",
+  "support_extruded_filament_mm": 49.71098000000002
+}

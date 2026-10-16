@@ -1,0 +1,5105 @@
+{
+  "name": "parent_integrated",
+  "note": "P1 + latest bottom-sensor exterior; prototype pending measurements. SPRESENSE placeholder contact unresolved.",
+  "coordinate_system": "Box bottom Z=0; camera optical axis and TD04A acoustic axis -Z. TD04A d26 x55 is provisional.",
+  "groups": {
+    "cabling": true,
+    "envelope": false,
+    "exterior": true,
+    "floats": true,
+    "hardware": true,
+    "interior": true,
+    "reference": true,
+    "ropes": true,
+    "vessel": true
+  },
+  "items": [
+    {
+      "label": "beam_lower",
+      "part": "parts/parent/exterior/printed/parent_spar_beam_lower",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            -295
+          ]
+        }
+      ],
+      "color": "DarkSlateGray",
+      "group": "exterior"
+    },
+    {
+      "label": "beam_upper",
+      "part": "parts/parent/exterior/printed/parent_spar_beam_upper",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            -115
+          ]
+        }
+      ],
+      "color": "DarkSlateGray",
+      "group": "exterior"
+    },
+    {
+      "label": "coupler_front",
+      "part": "parts/parent/exterior/printed/parent_spar_coupler_half",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            -147
+          ]
+        }
+      ],
+      "color": "DarkOrange",
+      "group": "exterior"
+    },
+    {
+      "label": "coupler_back",
+      "part": "parts/parent/exterior/printed/parent_spar_coupler_half",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            -147
+          ]
+        },
+        {
+          "mirror": [
+            0,
+            1,
+            0
+          ]
+        }
+      ],
+      "color": "DarkOrange",
+      "group": "exterior"
+    },
+    {
+      "label": "ballast_body",
+      "part": "parts/parent/exterior/printed/parent_spar_ballast_body",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            -300
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "SlateGray",
+      "group": "exterior"
+    },
+    {
+      "label": "ballast_lid",
+      "part": "parts/parent/exterior/printed/parent_spar_ballast_lid",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            -357
+          ]
+        }
+      ],
+      "color": "SlateGray",
+      "group": "exterior"
+    },
+    {
+      "label": "gps_bridge",
+      "part": "parts/parent/exterior/printed/parent_spar_gps_bridge",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            108,
+            70,
+            410
+          ]
+        }
+      ],
+      "color": "DarkOrange",
+      "group": "exterior"
+    },
+    {
+      "label": "deck",
+      "part": "parts/parent/exterior/printed/parent_deck",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            460
+          ]
+        }
+      ],
+      "color": "DarkOrange",
+      "group": "exterior"
+    },
+    {
+      "label": "box_bcas212310g",
+      "part": "assemblies/parent_bottom_sensors/reference",
+      "group": "vessel",
+      "color": "LightSteelBlue",
+      "alpha": 0.22,
+      "note": "タカチ BCAS212310G。箱原点 (外形左下・箱底外面) をデッキ座標 (-105,-115,0) へ。外部取付穴 (箱 (9,9)(201,9)(9,221)(201,221)) = デッキ (±96, ±106); E-E mounting bores restored in display model; upper well D9.4 provisional.",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            460
+          ]
+        },
+        {
+          "translate": [
+            -105,
+            -115,
+            0
+          ]
+        }
+      ],
+      "file": "bcas_mounting_reference"
+    },
+    {
+      "label": "gps_ann_mb1",
+      "part": "assemblies/parent_spar_bolted/reference",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            65,
+            70,
+            593
+          ]
+        }
+      ],
+      "color": "Black",
+      "group": "reference",
+      "file": "gps_ann_mb1"
+    },
+    {
+      "label": "box_lid_envelope",
+      "part": "assemblies/parent_spar_bolted/reference",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            -105,
+            -115,
+            556.3
+          ]
+        }
+      ],
+      "color": "LightSteelBlue",
+      "group": "envelope",
+      "file": "box_lid_envelope"
+    },
+    {
+      "label": "ballast_rings",
+      "part": "assemblies/parent_spar_bolted/reference",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            -336
+          ]
+        }
+      ],
+      "color": "Gray",
+      "group": "reference",
+      "file": "ballast_rings"
+    },
+    {
+      "label": "screw_m6x70_040",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            -28.0,
+            0.0,
+            -135.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "screw_m6x70"
+    },
+    {
+      "label": "washer_m6x1_041",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            -28.0,
+            0.0,
+            -135.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m6x1"
+    },
+    {
+      "label": "washer_m6x1_042",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            27.0,
+            0.0,
+            -135.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m6x1"
+    },
+    {
+      "label": "nut_m6_043",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            28.0,
+            0.0,
+            -135.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "nut_m6"
+    },
+    {
+      "label": "screw_m6x70_044",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            -28.0,
+            0.0,
+            -95.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "screw_m6x70"
+    },
+    {
+      "label": "washer_m6x1_045",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            -28.0,
+            0.0,
+            -95.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m6x1"
+    },
+    {
+      "label": "washer_m6x1_046",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            27.0,
+            0.0,
+            -95.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m6x1"
+    },
+    {
+      "label": "nut_m6_047",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            28.0,
+            0.0,
+            -95.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "nut_m6"
+    },
+    {
+      "label": "screw_m5x65_048",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            -22.0,
+            -28.0,
+            -123.0
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "screw_m5x65"
+    },
+    {
+      "label": "washer_m5x1_049",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            -22.0,
+            -28.0,
+            -123.0
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "washer_m5x1_050",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            -22.0,
+            27.0,
+            -123.0
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "nut_m5_051",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            -22.0,
+            28.0,
+            -123.0
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "nut_m5"
+    },
+    {
+      "label": "screw_m5x65_052",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            -22.0,
+            -28.0,
+            -107.0
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "screw_m5x65"
+    },
+    {
+      "label": "washer_m5x1_053",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            -22.0,
+            -28.0,
+            -107.0
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "washer_m5x1_054",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            -22.0,
+            27.0,
+            -107.0
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "nut_m5_055",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            -22.0,
+            28.0,
+            -107.0
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "nut_m5"
+    },
+    {
+      "label": "screw_m5x65_056",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            22.0,
+            -28.0,
+            -123.0
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "screw_m5x65"
+    },
+    {
+      "label": "washer_m5x1_057",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            22.0,
+            -28.0,
+            -123.0
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "washer_m5x1_058",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            22.0,
+            27.0,
+            -123.0
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "nut_m5_059",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            22.0,
+            28.0,
+            -123.0
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "nut_m5"
+    },
+    {
+      "label": "screw_m5x65_060",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            22.0,
+            -28.0,
+            -107.0
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "screw_m5x65"
+    },
+    {
+      "label": "washer_m5x1_061",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            22.0,
+            -28.0,
+            -107.0
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "washer_m5x1_062",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            22.0,
+            27.0,
+            -107.0
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "nut_m5_063",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            22.0,
+            28.0,
+            -107.0
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "nut_m5"
+    },
+    {
+      "label": "screw_m5x20_084",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            52.0,
+            0.0,
+            -358.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "screw_m5x20"
+    },
+    {
+      "label": "washer_m5x1_085",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            52.0,
+            0.0,
+            -358.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "washer_m5x1_086",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            52.0,
+            0.0,
+            -345.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "nut_m5_087",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            52.0,
+            0.0,
+            -344.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "nut_m5"
+    },
+    {
+      "label": "screw_m5x20_088",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            3.184081677783118e-15,
+            52.0,
+            -358.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "screw_m5x20"
+    },
+    {
+      "label": "washer_m5x1_089",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            3.184081677783118e-15,
+            52.0,
+            -358.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "washer_m5x1_090",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            3.184081677783118e-15,
+            52.0,
+            -345.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "nut_m5_091",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            3.184081677783118e-15,
+            52.0,
+            -344.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "nut_m5"
+    },
+    {
+      "label": "screw_m5x20_092",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            -52.0,
+            6.368163355566236e-15,
+            -358.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "screw_m5x20"
+    },
+    {
+      "label": "washer_m5x1_093",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            -52.0,
+            6.368163355566236e-15,
+            -358.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "washer_m5x1_094",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            -52.0,
+            6.368163355566236e-15,
+            -345.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "nut_m5_095",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            -52.0,
+            6.368163355566236e-15,
+            -344.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "nut_m5"
+    },
+    {
+      "label": "screw_m5x20_096",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            -9.552245033349354e-15,
+            -52.0,
+            -358.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "screw_m5x20"
+    },
+    {
+      "label": "washer_m5x1_097",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            -9.552245033349354e-15,
+            -52.0,
+            -358.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "washer_m5x1_098",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            -9.552245033349354e-15,
+            -52.0,
+            -345.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "nut_m5_099",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            -9.552245033349354e-15,
+            -52.0,
+            -344.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "nut_m5"
+    },
+    {
+      "label": "screw_m8x50_100",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            0.0,
+            1.2246467991473532e-16,
+            -299.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "screw_m8x50"
+    },
+    {
+      "label": "washer_m8x1_101",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            0.0,
+            1.2246467991473532e-16,
+            -299.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m8x1"
+    },
+    {
+      "label": "washer_m8x1_102",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            0.0,
+            -4.408728476930472e-15,
+            -336.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m8x1"
+    },
+    {
+      "label": "nut_m8_103",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -60
+          ]
+        },
+        {
+          "translate": [
+            0.0,
+            -4.531193156845207e-15,
+            -337.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "nut_m8"
+    },
+    {
+      "label": "screw_m5x20_232",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            119.0,
+            50.0,
+            415.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            -90,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "screw_m5x20"
+    },
+    {
+      "label": "washer_m5x1_233",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            119.0,
+            50.0,
+            415.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            -90,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "screw_m5x20_234",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            119.0,
+            50.0,
+            455.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            -90,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "screw_m5x20"
+    },
+    {
+      "label": "washer_m5x1_235",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            119.0,
+            50.0,
+            455.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            -90,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "screw_m5x20_236",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            119.0,
+            90.0,
+            415.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            -90,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "screw_m5x20"
+    },
+    {
+      "label": "washer_m5x1_237",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            119.0,
+            90.0,
+            415.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            -90,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "screw_m5x20_238",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            119.0,
+            90.0,
+            455.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            -90,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "screw_m5x20"
+    },
+    {
+      "label": "washer_m5x1_239",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            119.0,
+            90.0,
+            455.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            -90,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "screw_m4x25_240",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            65.0,
+            36.0,
+            600.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "screw_m4x25"
+    },
+    {
+      "label": "washer_m4x1_241",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            65.0,
+            36.0,
+            600.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m4x1"
+    },
+    {
+      "label": "washer_m4x1_242",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            65.0,
+            36.0,
+            585.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m4x1"
+    },
+    {
+      "label": "nut_m4_243",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            65.0,
+            36.0,
+            584.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "nut_m4"
+    },
+    {
+      "label": "screw_m4x25_244",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            65.0,
+            104.0,
+            600.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "screw_m4x25"
+    },
+    {
+      "label": "washer_m4x1_245",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            65.0,
+            104.0,
+            600.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m4x1"
+    },
+    {
+      "label": "washer_m4x1_246",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            65.0,
+            104.0,
+            585.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m4x1"
+    },
+    {
+      "label": "nut_m4_247",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            65.0,
+            104.0,
+            584.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "nut_m4"
+    },
+    {
+      "label": "screw_m4x16_248",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            -96.0,
+            -106.0,
+            467.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "screw_m4x16"
+    },
+    {
+      "label": "washer_m4x1_249",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            -96.0,
+            -106.0,
+            467.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m4x1"
+    },
+    {
+      "label": "screw_m4x16_250",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            -96.0,
+            106.0,
+            467.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "screw_m4x16"
+    },
+    {
+      "label": "washer_m4x1_251",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            -96.0,
+            106.0,
+            467.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m4x1"
+    },
+    {
+      "label": "screw_m4x16_252",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            96.0,
+            -106.0,
+            467.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "screw_m4x16"
+    },
+    {
+      "label": "washer_m4x1_253",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            96.0,
+            -106.0,
+            467.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m4x1"
+    },
+    {
+      "label": "screw_m4x16_254",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            96.0,
+            106.0,
+            467.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "screw_m4x16"
+    },
+    {
+      "label": "washer_m4x1_255",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            96.0,
+            106.0,
+            467.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "group": "hardware",
+      "file": "washer_m4x1"
+    },
+    {
+      "label": "keel_adapter",
+      "part": "parts/parent/exterior/printed/parent_rope_keel_adapter",
+      "color": "DarkOrange",
+      "group": "exterior",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -68
+          ]
+        }
+      ]
+    },
+    {
+      "label": "new_screw_m5x16_150",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "file": "screw_m5x16",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -20,
+            -20,
+            -69
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "new_washer_m5x1_151",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "file": "washer_m5x1",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -20,
+            -20,
+            -69
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "new_screw_m5x16_152",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "file": "screw_m5x16",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -20,
+            20,
+            -69
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "new_washer_m5x1_153",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "file": "washer_m5x1",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -20,
+            20,
+            -69
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "new_screw_m5x16_154",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "file": "screw_m5x16",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            20,
+            -20,
+            -69
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "new_washer_m5x1_155",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "file": "washer_m5x1",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            20,
+            -20,
+            -69
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "new_screw_m5x16_156",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "file": "screw_m5x16",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            20,
+            20,
+            -69
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "new_washer_m5x1_157",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "file": "washer_m5x1",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            20,
+            20,
+            -69
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "new_screw_m6x60_158",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "file": "screw_m6x60",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -25,
+            0,
+            -88
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "new_washer_m6x1_159",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "file": "washer_m6x1",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -25,
+            0,
+            -88
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "new_washer_m6x1_160",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "file": "washer_m6x1",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            24,
+            0,
+            -88
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "new_nut_m6_161",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "file": "nut_m6",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            25,
+            0,
+            -88
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rope_float_-1",
+      "part": "parts/parent/exterior/cots/parent_fender",
+      "color": "LightSkyBlue",
+      "group": "floats",
+      "ops": [
+        {
+          "translate": [
+            -178,
+            0,
+            0
+          ]
+        }
+      ],
+      "note": "Existing fender envelope, diameter100 x length300 provisional; free to move on rope."
+    },
+    {
+      "label": "rope_float_1",
+      "part": "parts/parent/exterior/cots/parent_fender",
+      "color": "LightSkyBlue",
+      "group": "floats",
+      "ops": [
+        {
+          "translate": [
+            178,
+            0,
+            0
+          ]
+        }
+      ],
+      "note": "Existing fender envelope, diameter100 x length300 provisional; free to move on rope."
+    },
+    {
+      "label": "flexible_ropes",
+      "part": "assemblies/parent_rope_float",
+      "file": "rope_routes",
+      "color": "BurlyWood",
+      "group": "ropes",
+      "ops": []
+    },
+    {
+      "label": "parent_fin_cartridge",
+      "part": "parts/parent/exterior/printed/parent_fin_cartridge",
+      "color": "Gold",
+      "group": "exterior",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -360
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "parent_sensor_carrier",
+      "part": "parts/parent/exterior/printed/parent_sensor_carrier",
+      "color": "DarkOrange",
+      "group": "exterior",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -360
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "parent_td04a_clamp_body",
+      "part": "parts/parent/exterior/printed/parent_td04a_clamp_body",
+      "color": "DarkOrange",
+      "group": "exterior",
+      "ops": [
+        {
+          "translate": [
+            65,
+            -67,
+            -460
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "parent_td04a_clamp_cap",
+      "part": "parts/parent/exterior/printed/parent_td04a_clamp_cap",
+      "color": "DarkOrange",
+      "group": "exterior",
+      "ops": [
+        {
+          "translate": [
+            65,
+            -67,
+            -460
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "camera_mount",
+      "part": "parts/child/exterior/printed/dji_osmo_action6_mount",
+      "color": "SteelBlue",
+      "group": "exterior",
+      "ops": [
+        {
+          "translate": [
+            -45,
+            -67,
+            -470
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "camera_case_envelope",
+      "part": "assemblies/parent_spar_bolted/reference",
+      "color": "DimGray",
+      "group": "envelope",
+      "ops": [
+        {
+          "translate": [
+            -45,
+            -30.5,
+            -470
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "camera_case_envelope"
+    },
+    {
+      "label": "td04a_envelope",
+      "part": "assemblies/parent_bottom_sensors/reference",
+      "color": "Black",
+      "group": "envelope",
+      "ops": [
+        {
+          "translate": [
+            65,
+            -40,
+            -493
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "td04a_envelope"
+    },
+    {
+      "label": "bottom_screw_m6x60_080",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -24.0,
+            10.0,
+            -331.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "file": "screw_m6x60"
+    },
+    {
+      "label": "bottom_washer_m6x1_081",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -24.0,
+            10.0,
+            -331.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m6x1"
+    },
+    {
+      "label": "bottom_washer_m6x1_082",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            23.0,
+            10.0,
+            -331.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m6x1"
+    },
+    {
+      "label": "bottom_nut_m6_083",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            24.0,
+            10.0,
+            -331.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "file": "nut_m6"
+    },
+    {
+      "label": "bottom_screw_m6x60_084",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -24.0,
+            10.0,
+            -238.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "file": "screw_m6x60"
+    },
+    {
+      "label": "bottom_washer_m6x1_085",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -24.0,
+            10.0,
+            -238.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m6x1"
+    },
+    {
+      "label": "bottom_washer_m6x1_086",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            23.0,
+            10.0,
+            -238.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m6x1"
+    },
+    {
+      "label": "bottom_nut_m6_087",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            24.0,
+            10.0,
+            -238.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "file": "nut_m6"
+    },
+    {
+      "label": "bottom_screw_m5x35_088",
+      "part": "assemblies/parent_bottom_sensors/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -23.0,
+            -23.0,
+            -342.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "screw_m5x35"
+    },
+    {
+      "label": "bottom_washer_m5x1_089",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -23.0,
+            -23.0,
+            -342.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_washer_m5x1_090",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -23.0,
+            -23.000000000000004,
+            -366.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_nut_m5_091",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -23.0,
+            -23.000000000000004,
+            -367.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "nut_m5"
+    },
+    {
+      "label": "bottom_screw_m5x35_092",
+      "part": "assemblies/parent_bottom_sensors/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -23.0,
+            23.0,
+            -342.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "screw_m5x35"
+    },
+    {
+      "label": "bottom_washer_m5x1_093",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -23.0,
+            23.0,
+            -342.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_washer_m5x1_094",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -23.0,
+            22.999999999999996,
+            -366.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_nut_m5_095",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -23.0,
+            22.999999999999996,
+            -367.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "nut_m5"
+    },
+    {
+      "label": "bottom_screw_m5x35_096",
+      "part": "assemblies/parent_bottom_sensors/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            23.0,
+            -23.0,
+            -342.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "screw_m5x35"
+    },
+    {
+      "label": "bottom_washer_m5x1_097",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            23.0,
+            -23.0,
+            -342.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_washer_m5x1_098",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            23.0,
+            -23.000000000000004,
+            -366.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_nut_m5_099",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            23.0,
+            -23.000000000000004,
+            -367.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "nut_m5"
+    },
+    {
+      "label": "bottom_screw_m5x35_100",
+      "part": "assemblies/parent_bottom_sensors/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            23.0,
+            23.0,
+            -342.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "screw_m5x35"
+    },
+    {
+      "label": "bottom_washer_m5x1_101",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            23.0,
+            23.0,
+            -342.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_washer_m5x1_102",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            23.0,
+            22.999999999999996,
+            -366.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_nut_m5_103",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            23.0,
+            22.999999999999996,
+            -367.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "nut_m5"
+    },
+    {
+      "label": "bottom_screw_m5x25_104",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -75.0,
+            -50.0,
+            -354.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "screw_m5x25"
+    },
+    {
+      "label": "bottom_washer_m5x1_105",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -75.0,
+            -50.0,
+            -354.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_washer_m5x1_106",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -75.0,
+            -50.0,
+            -368.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_nut_m5_107",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -75.0,
+            -50.0,
+            -369.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "nut_m5"
+    },
+    {
+      "label": "bottom_screw_m5x25_108",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -75.0,
+            -25.0,
+            -354.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "screw_m5x25"
+    },
+    {
+      "label": "bottom_washer_m5x1_109",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -75.0,
+            -25.0,
+            -354.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_washer_m5x1_110",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -75.0,
+            -25.0,
+            -368.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_nut_m5_111",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -75.0,
+            -25.0,
+            -369.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "nut_m5"
+    },
+    {
+      "label": "bottom_screw_m5x25_112",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            75.0,
+            -50.0,
+            -354.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "screw_m5x25"
+    },
+    {
+      "label": "bottom_washer_m5x1_113",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            75.0,
+            -50.0,
+            -354.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_washer_m5x1_114",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            75.0,
+            -50.0,
+            -368.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_nut_m5_115",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            75.0,
+            -50.0,
+            -369.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "nut_m5"
+    },
+    {
+      "label": "bottom_screw_m5x25_116",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            75.0,
+            -25.0,
+            -354.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "screw_m5x25"
+    },
+    {
+      "label": "bottom_washer_m5x1_117",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            75.0,
+            -25.0,
+            -354.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_washer_m5x1_118",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            75.0,
+            -25.0,
+            -368.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_nut_m5_119",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            75.0,
+            -25.0,
+            -369.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "nut_m5"
+    },
+    {
+      "label": "bottom_screw_m5x25_120",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -56.0,
+            -58.0,
+            -486.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "screw_m5x25"
+    },
+    {
+      "label": "bottom_washer_m5x1_121",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -56.0,
+            -58.0,
+            -486.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_washer_m5x1_122",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -56.0,
+            -75.0,
+            -486.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_nut_m5_123",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -56.0,
+            -76.0,
+            -486.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "nut_m5"
+    },
+    {
+      "label": "bottom_screw_m5x25_124",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -56.0,
+            -58.0,
+            -454.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "screw_m5x25"
+    },
+    {
+      "label": "bottom_washer_m5x1_125",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -56.0,
+            -58.0,
+            -454.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_washer_m5x1_126",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -56.0,
+            -75.0,
+            -454.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_nut_m5_127",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -56.0,
+            -76.0,
+            -454.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "nut_m5"
+    },
+    {
+      "label": "bottom_screw_m5x25_128",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -34.0,
+            -58.0,
+            -486.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "screw_m5x25"
+    },
+    {
+      "label": "bottom_washer_m5x1_129",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -34.0,
+            -58.0,
+            -486.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_washer_m5x1_130",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -34.0,
+            -75.0,
+            -486.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_nut_m5_131",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -34.0,
+            -76.0,
+            -486.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "nut_m5"
+    },
+    {
+      "label": "bottom_screw_m5x25_132",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -34.0,
+            -58.0,
+            -454.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "screw_m5x25"
+    },
+    {
+      "label": "bottom_washer_m5x1_133",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -34.0,
+            -58.0,
+            -454.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_washer_m5x1_134",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -34.0,
+            -75.0,
+            -454.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_nut_m5_135",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -34.0,
+            -76.0,
+            -454.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "nut_m5"
+    },
+    {
+      "label": "bottom_screw_m5x25_136",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            40.0,
+            -58.0,
+            -483.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "screw_m5x25"
+    },
+    {
+      "label": "bottom_washer_m5x1_137",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            40.0,
+            -58.0,
+            -483.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_washer_m5x1_138",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            40.0,
+            -75.0,
+            -483.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_nut_m5_139",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            40.0,
+            -76.0,
+            -483.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "nut_m5"
+    },
+    {
+      "label": "bottom_screw_m5x25_140",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            40.0,
+            -58.0,
+            -437.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "screw_m5x25"
+    },
+    {
+      "label": "bottom_washer_m5x1_141",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            40.0,
+            -58.0,
+            -437.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_washer_m5x1_142",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            40.0,
+            -75.0,
+            -437.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_nut_m5_143",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            40.0,
+            -76.0,
+            -437.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "nut_m5"
+    },
+    {
+      "label": "bottom_screw_m5x25_144",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            90.0,
+            -58.0,
+            -483.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "screw_m5x25"
+    },
+    {
+      "label": "bottom_washer_m5x1_145",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            90.0,
+            -58.0,
+            -483.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_washer_m5x1_146",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            90.0,
+            -75.0,
+            -483.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_nut_m5_147",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            90.0,
+            -76.0,
+            -483.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "nut_m5"
+    },
+    {
+      "label": "bottom_screw_m5x25_148",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            90.0,
+            -58.0,
+            -437.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "screw_m5x25"
+    },
+    {
+      "label": "bottom_washer_m5x1_149",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            90.0,
+            -58.0,
+            -437.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_washer_m5x1_150",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            90.0,
+            -75.0,
+            -437.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m5x1"
+    },
+    {
+      "label": "bottom_nut_m5_151",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            90.0,
+            -76.0,
+            -437.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "nut_m5"
+    },
+    {
+      "label": "bottom_screw_m4x65_152",
+      "part": "assemblies/parent_bottom_sensors/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            43.0,
+            -19.5,
+            -460.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "screw_m4x65"
+    },
+    {
+      "label": "bottom_washer_m4x1_153",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            43.0,
+            -19.5,
+            -460.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m4x1"
+    },
+    {
+      "label": "bottom_washer_m4x1_154",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            43.0,
+            -75.0,
+            -460.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m4x1"
+    },
+    {
+      "label": "bottom_nut_m4_155",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            43.0,
+            -76.0,
+            -460.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "nut_m4"
+    },
+    {
+      "label": "bottom_screw_m4x65_156",
+      "part": "assemblies/parent_bottom_sensors/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            87.0,
+            -19.5,
+            -460.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "screw_m4x65"
+    },
+    {
+      "label": "bottom_washer_m4x1_157",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            87.0,
+            -19.5,
+            -460.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m4x1"
+    },
+    {
+      "label": "bottom_washer_m4x1_158",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            87.0,
+            -75.0,
+            -460.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "washer_m4x1"
+    },
+    {
+      "label": "bottom_nut_m4_159",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            87.0,
+            -76.0,
+            -460.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "file": "nut_m4"
+    },
+    {
+      "label": "bottom_screw_m5x20_160",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -37.35,
+            -43,
+            -470
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            -90,
+            0
+          ]
+        }
+      ],
+      "file": "screw_m5x20"
+    },
+    {
+      "label": "bottom_nut_m5_161",
+      "part": "assemblies/parent_spar_bolted/hardware",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -55.65,
+            -43,
+            -470
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "file": "nut_m5"
+    },
+    {
+      "label": "plate",
+      "part": "parts/parent/interior/printed/parent_plate_integrated",
+      "group": "interior",
+      "color": "Orange",
+      "alpha": 0.9,
+      "note": "183x203 t5。プレート左下 = 箱 (13.5,13.5)、下面 z=13.8 (床3.8+ボス10 仮)",
+      "ops": [
+        {
+          "translate": [
+            -105.0,
+            -115.0,
+            0.0
+          ]
+        },
+        {
+          "translate": [
+            13.5,
+            13.5,
+            13.8
+          ]
+        }
+      ]
+    },
+    {
+      "label": "p_main",
+      "part": "parts/parent/interior/pcb/parent_main",
+      "group": "interior",
+      "color": "SteelBlue",
+      "alpha": 1.0,
+      "note": "モデルは Y=-88..0。プレート (2,2)-(114,90)、ボタン/LED/DS3231 縁が北 (+Y)。基板下面 z=24.8 (プレート上面18.8+ボス6)。取付ねじの代わりに M3 MF25 スペーサ ×4 (LiPo トレイ支持)",
+      "ops": [
+        {
+          "translate": [
+            -105.0,
+            -115.0,
+            0.0
+          ]
+        },
+        {
+          "translate": [
+            15.5,
+            103.5,
+            24.8
+          ]
+        }
+      ]
+    },
+    {
+      "label": "p_pwr",
+      "part": "parts/parent/interior/pcb/parent_pwr",
+      "group": "interior",
+      "color": "MediumSeaGreen",
+      "alpha": 1.0,
+      "note": "モデルは Y=-84..0。プレート (2,95)-(102,179)",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            3.5
+          ]
+        },
+        {
+          "translate": [
+            -105.0,
+            -115.0,
+            0.0
+          ]
+        },
+        {
+          "translate": [
+            15.5,
+            192.5,
+            24.8
+          ]
+        }
+      ]
+    },
+    {
+      "label": "tx_improved",
+      "part": "parts/parent/interior/pcb/tx_improved",
+      "group": "interior",
+      "color": "Gold",
+      "alpha": 1.0,
+      "note": "90度回転でプレート (121,77)-(171,151)。プレート直付け (p1)",
+      "ops": [
+        {
+          "translate": [
+            -105.0,
+            -115.0,
+            0.0
+          ]
+        },
+        {
+          "translate": [
+            134.5,
+            94.5,
+            24.8
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            90
+          ]
+        }
+      ]
+    },
+    {
+      "label": "spresense",
+      "part": "parts/parent/interior/cots/spresense_logger",
+      "group": "interior",
+      "color": "SandyBrown",
+      "alpha": 1.0,
+      "note": "簡易モデル (穴・スタック高は仮)。90度回転でプレート (121,2)-(174.5,70.6)",
+      "ops": [
+        {
+          "translate": [
+            -105.0,
+            -115.0,
+            0.0
+          ]
+        },
+        {
+          "translate": [
+            188,
+            15.5,
+            24.8
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            90
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lipo_tray",
+      "part": "parts/parent/interior/printed/parent_lipo_tray",
+      "group": "interior",
+      "color": "DarkOrange",
+      "alpha": 0.9,
+      "note": "ブリッジトレイ。原点 = MAIN 南西穴 (箱 20,23.5)、下面 z=51.4 (MAIN 基板上面 26.4 + スペーサ 25)。M3×6 ×4 でスペーサへ",
+      "ops": [
+        {
+          "translate": [
+            -105.0,
+            -115.0,
+            0.0
+          ]
+        },
+        {
+          "translate": [
+            20,
+            23.5,
+            51.4
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lipo",
+      "part": "parts/common/interior/cots/lipo_3s_2200_zeee",
+      "file": "lipo_3s_2200_zeee_pack",
+      "group": "interior",
+      "color": "IndianRed",
+      "alpha": 1.0,
+      "note": "parent_lipo_tray 内 (セル下面 z=54.4、上面 77.4、蓋パッキン面 90.9)。180°回転でリードを -X (西) へ → P-PWR J_BAT",
+      "ops": [
+        {
+          "translate": [
+            -105.0,
+            -115.0,
+            0.0
+          ]
+        },
+        {
+          "translate": [
+            122.5,
+            68,
+            54.4
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            180
+          ]
+        }
+      ]
+    },
+    {
+      "label": "main_spacer_0",
+      "part": "parts/common/interior/cots/hex_spacer",
+      "file": "hex_spacer_m3_mf25",
+      "group": "interior",
+      "color": "Goldenrod",
+      "alpha": 1.0,
+      "note": "M3 MF 25。MAIN 取付穴を通してプレートのボス下穴へ (MAIN 固定ねじ兼用)。胴下端 = MAIN 基板上面 z=26.4",
+      "ops": [
+        {
+          "translate": [
+            -105.0,
+            -115.0,
+            0.0
+          ]
+        },
+        {
+          "translate": [
+            20,
+            23.5,
+            26.4
+          ]
+        }
+      ]
+    },
+    {
+      "label": "main_spacer_1",
+      "part": "parts/common/interior/cots/hex_spacer",
+      "file": "hex_spacer_m3_mf25",
+      "group": "interior",
+      "color": "Goldenrod",
+      "alpha": 1.0,
+      "note": "M3 MF 25。MAIN 取付穴を通してプレートのボス下穴へ (MAIN 固定ねじ兼用)。胴下端 = MAIN 基板上面 z=26.4",
+      "ops": [
+        {
+          "translate": [
+            -105.0,
+            -115.0,
+            0.0
+          ]
+        },
+        {
+          "translate": [
+            123,
+            23.5,
+            26.4
+          ]
+        }
+      ]
+    },
+    {
+      "label": "main_spacer_2",
+      "part": "parts/common/interior/cots/hex_spacer",
+      "file": "hex_spacer_m3_mf25",
+      "group": "interior",
+      "color": "Goldenrod",
+      "alpha": 1.0,
+      "note": "M3 MF 25。MAIN 取付穴を通してプレートのボス下穴へ (MAIN 固定ねじ兼用)。胴下端 = MAIN 基板上面 z=26.4",
+      "ops": [
+        {
+          "translate": [
+            -105.0,
+            -115.0,
+            0.0
+          ]
+        },
+        {
+          "translate": [
+            20,
+            99,
+            26.4
+          ]
+        }
+      ]
+    },
+    {
+      "label": "main_spacer_3",
+      "part": "parts/common/interior/cots/hex_spacer",
+      "file": "hex_spacer_m3_mf25",
+      "group": "interior",
+      "color": "Goldenrod",
+      "alpha": 1.0,
+      "note": "M3 MF 25。MAIN 取付穴を通してプレートのボス下穴へ (MAIN 固定ねじ兼用)。胴下端 = MAIN 基板上面 z=26.4",
+      "ops": [
+        {
+          "translate": [
+            -105.0,
+            -115.0,
+            0.0
+          ]
+        },
+        {
+          "translate": [
+            123,
+            99,
+            26.4
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pen_tether",
+      "part": "parts/common/exterior/cots/wetlink_penetrator_m10",
+      "file": "wetlink_penetrator_m10_ref_bcas",
+      "group": "vessel",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "WetLink Penetrator M10 (参考モデル・仮寸)。南壁 (Y=0) x=120, 軸 z=65。C1 テザー → P-MAIN J_TETH1 (箱 x≈123 の直下)。頭+プラグは箱外 y=-22..0、ねじ+ナットが箱内 y=0..14.5 (モデル壁 6.1 基準。実壁 3.08 なら 11.5)。容器内に出るのは素の導体 (外被は濡れ側で終端)。型番 -045..-085 はテザー外径待ち",
+      "ops": [
+        {
+          "translate": [
+            -105.0,
+            -115.0,
+            0.0
+          ]
+        },
+        {
+          "translate": [
+            120,
+            0,
+            65
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pen_td04a",
+      "part": "parts/common/exterior/cots/wetlink_penetrator_m10",
+      "file": "wetlink_penetrator_m10_ref_bcas",
+      "group": "vessel",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "WetLink Penetrator M10 (参考モデル・仮寸)。南壁 (Y=0) x=85, 軸 z=65。C3 TD04A → TX (右列)。3P プラグは通らないのでケーブルを切って容器内で端子台に落とす前提 (td04a_transducer.md)。テザー側とのピッチ 35 = 16mm トルクレンチの振り代。東へ寄せられないのは SPRESENSE (箱 X 134.5-188) の天面が仮値 30 で、その上を通すと隙間 0.3 になるため (spec/parent_interior_layout.py check_penetrators)",
+      "ops": [
+        {
+          "translate": [
+            -105.0,
+            -115.0,
+            0.0
+          ]
+        },
+        {
+          "translate": [
+            85,
+            0,
+            65
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "td04a_cable_d5",
+      "part": "parts/common/cabling/parent_td04a_cable",
+      "group": "cabling",
+      "color": "Red",
+      "ops": [],
+      "note": "User cable OD5; R30 provisional; exterior route only. Not printable."
+    }
+  ]
+}

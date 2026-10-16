@@ -1,0 +1,1 @@
+Open battery_base.3mf as a PROJECT in Bambu Studio. A local support blocker is attached to the battery base. The blocker is not printed. The battery base is the only part on this plate. Keep the battery floor face on the bed. See ../../parts/PRINT.md and ../../battery_tool_nut_access_report.md.

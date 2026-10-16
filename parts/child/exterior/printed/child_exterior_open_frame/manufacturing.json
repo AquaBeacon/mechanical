@@ -1,0 +1,143 @@
+{
+  "material": "Bambu PETG Basic",
+  "non_print_files": [
+    "child_exterior_open_frame_foam_reference"
+  ],
+  "print_rotations_deg": {
+    "child_exterior_open_frame_side_front": [
+      0,
+      0,
+      0
+    ],
+    "child_exterior_open_frame_side_rear": [
+      0,
+      0,
+      0
+    ],
+    "child_exterior_open_frame_splice_upper": [
+      0,
+      0,
+      0
+    ],
+    "child_exterior_open_frame_splice_middle": [
+      0,
+      0,
+      0
+    ],
+    "child_exterior_open_frame_clamp_link": [
+      90,
+      0,
+      0
+    ],
+    "child_exterior_open_frame_shoe": [
+      0,
+      0,
+      0
+    ],
+    "child_exterior_open_frame_cross_half": [
+      0,
+      0,
+      0
+    ],
+    "child_exterior_open_frame_cross_splice": [
+      0,
+      0,
+      0
+    ],
+    "child_exterior_open_frame_tray_half": [
+      0,
+      0,
+      0
+    ],
+    "child_exterior_open_frame_tray_splice": [
+      0,
+      0,
+      0
+    ],
+    "child_exterior_open_frame_weight_stop": [
+      0,
+      0,
+      0
+    ],
+    "child_exterior_open_frame_camera_deck": [
+      0,
+      0,
+      0
+    ],
+    "child_exterior_open_frame_equipment_seat": [
+      90,
+      0,
+      0
+    ],
+    "child_exterior_open_frame_equipment_riser": [
+      90,
+      0,
+      0
+    ],
+    "child_exterior_open_frame_equipment_bridge": [
+      0,
+      0,
+      0
+    ],
+    "child_exterior_open_frame_bumper_half": [
+      0,
+      0,
+      0
+    ],
+    "child_exterior_open_frame_bumper_splice": [
+      0,
+      0,
+      0
+    ]
+  },
+  "source_dependencies": [
+    "spec/clamp_interface.scad",
+    "spec/clamp_interface.json",
+    "spec/fastener_schedule.json",
+    "../../../../../tools/prepare_child_horizontal_frame.py",
+    "../../../../../assemblies/child_exterior_concept/placement.json",
+    "../child_wte4_suspension_clamp/child_wte4_suspension_clamp.scad"
+  ],
+  "degenerate_precision_weld_files": [
+    "child_exterior_open_frame_side_front",
+    "child_exterior_open_frame_side_rear",
+    "child_exterior_open_frame_splice_upper",
+    "child_exterior_open_frame_splice_middle",
+    "child_exterior_open_frame_clamp_link",
+    "child_exterior_open_frame_shoe",
+    "child_exterior_open_frame_cross_half",
+    "child_exterior_open_frame_cross_splice",
+    "child_exterior_open_frame_tray_half",
+    "child_exterior_open_frame_tray_splice",
+    "child_exterior_open_frame_weight_stop",
+    "child_exterior_open_frame_camera_deck",
+    "child_exterior_open_frame_equipment_seat",
+    "child_exterior_open_frame_equipment_riser",
+    "child_exterior_open_frame_equipment_bridge",
+    "child_exterior_open_frame_bumper_half",
+    "child_exterior_open_frame_bumper_splice",
+    "child_exterior_open_frame_foam_reference"
+  ],
+  "degenerate_edge_flip_files": [
+    "child_exterior_open_frame_side_front",
+    "child_exterior_open_frame_side_rear",
+    "child_exterior_open_frame_splice_upper",
+    "child_exterior_open_frame_splice_middle",
+    "child_exterior_open_frame_clamp_link",
+    "child_exterior_open_frame_shoe",
+    "child_exterior_open_frame_cross_half",
+    "child_exterior_open_frame_cross_splice",
+    "child_exterior_open_frame_tray_half",
+    "child_exterior_open_frame_tray_splice",
+    "child_exterior_open_frame_weight_stop",
+    "child_exterior_open_frame_camera_deck",
+    "child_exterior_open_frame_equipment_seat",
+    "child_exterior_open_frame_equipment_riser",
+    "child_exterior_open_frame_equipment_bridge",
+    "child_exterior_open_frame_bumper_half",
+    "child_exterior_open_frame_bumper_splice",
+    "child_exterior_open_frame_foam_reference"
+  ],
+  "stl_export_format": "binstl",
+  "note": "Fit prototype. 0.20 mm layers, 8 walls, 100% infill; frame panels flat. Connector Y build. Support horizontal nut-access channels on connectors; remove and gauge all holes. Closed manufacturing meshes only; foam is a non-print reserved volume."
+}

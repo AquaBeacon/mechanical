@@ -1,0 +1,31 @@
+{
+  "purpose": "Preserved user slicer project; not certified as the current production package",
+  "original_path": "assemblies/child_horizontal_plate_frame/parts/child_horizontal_plate_frame_guard_front.3mf",
+  "archived_path": "assemblies/child_horizontal_plate_frame/print_jobs/history/imported_20261012/child_horizontal_plate_frame_guard_front.3mf",
+  "sha256": "9d10c9328d978ca029b0a326431e8d63cd5211205543c680a39147162f43658f",
+  "source_names": [
+    "child_horizontal_plate_frame_clamp_support.stl",
+    "child_horizontal_plate_frame_rotation_key.stl",
+    "child_horizontal_plate_frame_rotation_key_mirrored.stl"
+  ],
+  "settings": {
+    "printer_settings_id": "Bambu Lab X1 Carbon 0.4 nozzle",
+    "filament_settings_id": [
+      "Bambu PETG Basic @BBL X1C",
+      "eSUN PETG ベーシック @Bambu Lab X1 Carbon 0.4 nozzle",
+      "Bambu PETG Basic @BBL X1C",
+      "Bambu PETG Basic @BBL X1C"
+    ],
+    "layer_height": "0.28",
+    "wall_loops": "4",
+    "sparse_infill_density": "50%",
+    "enable_support": "1",
+    "support_on_build_plate_only": "0"
+  },
+  "current_source_sha256": {
+    "child_horizontal_plate_frame_clamp_support.stl": "7e0d13986cfb105acf2d3606ddab8099a3e6c771d35b0b85420e22289a5b42a9",
+    "child_horizontal_plate_frame_rotation_key.stl": "3467c3463c819f013fab7700acc842ade19957a63942cdfb9b3db9ee8540598f",
+    "child_horizontal_plate_frame_rotation_key_mirrored.stl": "091a269047f3ebf9ff121dc9903e24f2f5e460fab44b6bd4a21c5cd68ea26236"
+  },
+  "geometry_equivalence_verified": false
+}

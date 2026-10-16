@@ -1,0 +1,7 @@
+base part="base"
+bail part="bail"
+lever part="lever"
+keeper part="keeper"
+epdm part="epdm"
+axis_a part="axis_a"
+axis_b part="axis_b"

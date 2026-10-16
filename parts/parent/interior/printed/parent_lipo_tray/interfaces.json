@@ -1,0 +1,65 @@
+{
+ "consumer": "parent_lipo_tray",
+ "references": [
+  {
+   "part": "parent_main",
+   "path": "parts/parent/interior/pcb/parent_main",
+   "md_sha256": "ab7d1f080e3e655f03363c84abd9a2b4b33740e069c25b84a2363296fbd742dd",
+   "stl_sha256": "5c9116b796053014d6ef34bddf1d9236b9eeab60ea440bbbf7467b10d3d8e72a",
+   "bbox_mm": [
+    112.0,
+    88.0,
+    24.85
+   ],
+   "status_at_lock": [
+    "needs_measure",
+    "provisional"
+   ],
+   "values": {
+    "main_hole_pitch_x": 103.0,
+    "main_hole_pitch_y": 75.5
+   },
+   "confirmed_by_human": false,
+   "confirmed_at": "2026-08-28T17:55:45",
+   "note": "2026-08-28 PARENT_MAIN.kicad_pcb 実座標。ブリッジトレイの 4 点支持"
+  },
+  {
+   "part": "lipo_3s_2200_zeee",
+   "path": "parts/common/interior/cots/lipo_3s_2200_zeee",
+   "md_sha256": "ad1b056bf2a6aa5104a74bd1b1f32c58651fdf2029ac9e8d736e38dd74cfe8de",
+   "stl_sha256": null,
+   "bbox_mm": null,
+   "status_at_lock": [
+    "needs_measure"
+   ],
+   "values": {
+    "lipo_l": 102.0,
+    "lipo_w": 34.0,
+    "lipo_h": 23.0
+   },
+   "confirmed_by_human": false,
+   "confirmed_at": "2026-08-28T18:01:59",
+   "note": "2026-08-28 商品仕様値。現物実測待ち"
+  },
+  {
+   "part": "parent_plate",
+   "path": "parts/parent/interior/printed/parent_plate",
+   "md_sha256": "d7d1573cb84bd0bab447a678de3d1812344bd12ab84c3ce6815fde4587e44ff6",
+   "stl_sha256": null,
+   "bbox_mm": null,
+   "status_at_lock": [
+    "needs_measure",
+    "not_designed",
+    "obsolete",
+    "provisional"
+   ],
+   "values": {
+    "plate_top_z": 18.8,
+    "boss_h": 6.0
+   },
+   "confirmed_by_human": false,
+   "confirmed_at": "2026-08-28T18:02:00",
+   "note": "2026-08-28 スペーサ m3_mf25 はプレートの MAIN ボス下穴へ / 2026-08-29 ハッシュ更新: parent_plate.md の貫通部記述 (南壁ペネトレータ) だけを直したもので、寸法値は不変。"
+  }
+ ]
+}

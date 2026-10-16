@@ -1,0 +1,9 @@
+{
+  "print_rotations_deg": {
+    "parent_sensor_carrier": [
+      90.0,
+      -0.0,
+      -0.0
+    ]
+  }
+}

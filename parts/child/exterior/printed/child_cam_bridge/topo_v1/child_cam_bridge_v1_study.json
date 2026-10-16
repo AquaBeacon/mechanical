@@ -1,0 +1,106 @@
+{
+  "_what": "child_cam_bridge v1: lightweight the camera bridge of the AquaBeacon child unit by topology optimisation, keeping every functional interface of the current part (328.1 cm3 / PETG ~407 g).",
+  "_geometry_source": "child_cam_bridge_v1.scad (part=preserve/obstacle/design_space/preserve_cuts). Every dimension is a restatement of the Customizer values in child_cam_bridge.scad / child_side_bumper.scad / child_jaw_gate.scad (double definition -- fix both).",
+  "_preserve": "HP4 + HP5 seat pads on the central column (x +-25, y 74.35..80.35, z 145..195 and 75..125; the bolted faces and the M5x4 seats), child_cam_mount seats x2 (deck full thickness, x 58..92 / -92..-58, y 75.05..119.05, z 44.95..52.95 -- top face is the register plane, bottom face is the nut-trap opening), side-bumper end plates x2 (x 114..120 / -120..-114, y 67..128, z 44.95..80 -- the outer face x=+-120 is the mating face of the bumper L-foot and carries the M5x2 seats), front-edge bumper x2 (x 30..120 / -120..-30, y 122..128, z 44.95..80 -- 2 mm ahead of the lens plane, the L4 load-introduction face).",
+  "_obstacle": "camera + waterproof case AABB x2 (x 27.65..122.35, y 74.1..120, z 82.95..167.05), child_cam_mount body x2 (x 58..92, y 75.05..119.05, z 52.95..82.95), lens field-of-view cone x2 (apex at (+-75,120,125), +Y, half-angle 77.5 deg = diagonal FOV 155 deg, which encloses the 145 deg horizontal one; run forward only to the 8 mm hood limit), jaw-gate HP4/HP5 shelves (x +-25, y 62.35..74.35, z 145..195 and 75..125), tool access for the 8x M5 into HP4/HP5 (Q12 along +Y from the column front face y=80.35 to the front of the design space).",
+  "_obstacles_not_declared": "child_side_bumper (L-foot starts at x=120 = ds_x1, main wall at x=124.35 -- outside the design space by construction), jaw-gate shell r64.35 (any y >= ds_y0 = 67 is at r >= 67 > 64.35, so it never reaches the box; jaw_gate has nothing else at y >= 67 outside |x| <= 25), HP-L shelf (z <= 40 < ds_z0 = 44.95). Declaring them would only inflate the domain bounding box.",
+  "_design_space": "box x -120..120, y 67..128, z 44.95..195 -- exactly the current part bbox (240 x 61 x 150.05). Not widened: x +-120 is the 240 frame and the bumper inner face is 124.35; y1 = lens_y + 8 is the hood limit; y0 = 67 is the 2.65 mm gate-shell clearance; z1 = 195 is the HP4 seat top; z0 = 44.95 because anything lower buries the M5 nut-trap openings in the deck underside (that binds before the HP-L +2 rule at z=42).",
+  "_loads": "L1 operational hoist 3g (camera + case 0.35 kg each) / L4 frontal impact 150 N -Y on one front-edge bumper (requirements 3, factor included) / L2s side impact 150 N -X on one end plate / L6 handling: lift by one camera, 100 N +Z on one cam_mount seat. Supports are always the HP4/HP5 seat pads (bolted to child_jaw_gate).",
+  "_not_covered": "The md names the M5 heat-set insert pull-out at HP4/HP5 (~355 N/bolt at L2 300 N) as the real governing item. Fixing those pads xyz means the FEA cannot report it -- it is still an open test item.",
+
+  "units": "mm_N_MPa",
+  "material": "PETG",
+  "build_axis": "Y",
+  "raster_axis": "X",
+  "printer": "X1C",
+  "safety_factor": 3.0,
+  "max_deflection_mm": 1.0,
+
+  "voxel_mm": 3.0,
+
+  "design": {
+    "volfrac": 0.06,
+    "filter_mm": 6.0,
+    "symmetry": ["X"],
+    "move": 0.2,
+    "tol_change": 0.002,
+    "overhang": {"max_support_mm": 12}
+  },
+
+  "geometry": {
+    "voxel_mm": 3.0,
+    "clearance_mm": 0.0,
+    "pad_voxels": 2,
+    "preserve": {
+      "interfaces": "02_setup/child_cam_bridge_v1_preserve.stl"
+    },
+    "design_space": "02_setup/child_cam_bridge_v1_design_space.stl",
+    "obstacle": {
+      "keep_out": "02_setup/child_cam_bridge_v1_obstacle.stl"
+    }
+  },
+
+  "finish": {
+    "voxel_mm": 0.5,
+    "add": {"interfaces": "02_setup/child_cam_bridge_v1_preserve.stl"},
+    "cut": {"features": "02_setup/child_cam_bridge_v1_preserve_cuts.stl"}
+  },
+
+  "regions": {
+    "hp4_seat":   {"type": "box", "min": [-25, 74.35, 145],   "max": [25, 80.35, 195]},
+    "hp5_seat":   {"type": "box", "min": [-25, 74.35, 75],    "max": [25, 80.35, 125]},
+    "mount_R":    {"type": "box", "min": [58, 75.05, 44.95],  "max": [92, 119.05, 52.95]},
+    "mount_L":    {"type": "box", "min": [-92, 75.05, 44.95], "max": [-58, 119.05, 52.95]},
+    "fbump_R":    {"type": "box", "min": [30, 122, 44.95],    "max": [120, 128, 80]},
+    "fbump_L":    {"type": "box", "min": [-120, 122, 44.95],  "max": [-30, 128, 80]},
+    "endp_R":     {"type": "box", "min": [114, 67, 44.95],    "max": [120, 128, 80]},
+    "endp_L":     {"type": "box", "min": [-120, 67, 44.95],   "max": [-114, 128, 80]}
+  },
+
+  "required_cases": ["L1", "L4", "L2s", "L6"],
+
+  "cases": [
+    {
+      "name": "L1 operational hoist 3g: HP4/HP5 fixed, camera + case (0.35 kg each) hang off the mount seats, bridge self-weight at 3 g",
+      "supports": [
+        {"region": "hp4_seat", "fix": "xyz"},
+        {"region": "hp5_seat", "fix": "xyz"}
+      ],
+      "loads": [
+        {"region": "mount_R", "force": [0, 0, -10.3]},
+        {"region": "mount_L", "force": [0, 0, -10.3]}
+      ],
+      "gravity": {"direction": [0, 0, -1], "g_factor": 3.0}
+    },
+    {
+      "name": "L4 frontal impact 150 N (-Y) on one front-edge bumper, HP4/HP5 react",
+      "supports": [
+        {"region": "hp4_seat", "fix": "xyz"},
+        {"region": "hp5_seat", "fix": "xyz"}
+      ],
+      "loads": [
+        {"region": "fbump_R", "force": [0, -150, 0]}
+      ]
+    },
+    {
+      "name": "L2s side impact 150 N (-X) on the starboard end plate through the side bumper, HP4/HP5 react",
+      "supports": [
+        {"region": "hp4_seat", "fix": "xyz"},
+        {"region": "hp5_seat", "fix": "xyz"}
+      ],
+      "loads": [
+        {"region": "endp_R", "force": [-150, 0, 0]}
+      ]
+    },
+    {
+      "name": "L6 handling: the unit is picked up by one camera, 100 N (+Z) on the starboard cam_mount seat, HP4/HP5 react",
+      "supports": [
+        {"region": "hp4_seat", "fix": "xyz"},
+        {"region": "hp5_seat", "fix": "xyz"}
+      ],
+      "loads": [
+        {"region": "mount_R", "force": [0, 0, 100]}
+      ]
+    }
+  ]
+}

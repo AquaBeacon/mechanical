@@ -1,0 +1,206 @@
+{
+  "ann_mb1_internal_rack": {
+    "quantity": 1,
+    "source_stl": "parts/parent/interior/printed/ann_mb1_internal_rack/ann_mb1_internal_rack.stl",
+    "source_stl_sha256": "323ba7a0157a125327484f5242bef8813ef3866dd0856c927a35246b59525d0f",
+    "project_sha256": "57665fa618ca402648f2db6d689515cda511549d136c183344f7b3614404f556",
+    "orientation_deg": [
+      180,
+      0,
+      0
+    ],
+    "material": "Generic PETG1.27",
+    "layer_height_mm": 0.2,
+    "walls": 4,
+    "infill_percent": 100,
+    "support": "Normal auto45deg,0.2mm Z gaps,bridges not supported",
+    "brim_mm": 3
+  },
+  "battery_base": {
+    "quantity": 1,
+    "source_stl": "parts/parent/interior/printed/parent_hand_service/battery_base.stl",
+    "source_stl_sha256": "e6f2b8611e1be7142f059ebd5174ebaeafba892178442a5611514340704b5460",
+    "project_sha256": "ab9d5ddb7e4415ac1a80fd3ac53bb3779db133998c282d417d5c7a839d705c7b",
+    "orientation_deg": [
+      0,
+      0,
+      0
+    ],
+    "material": "Generic PETG1.27",
+    "layer_height_mm": 0.2,
+    "walls": 4,
+    "infill_percent": 100,
+    "support": "Normal auto45deg,0.2mm Z gaps,bridges not supported",
+    "brim_mm": 3
+  },
+  "floor_plate": {
+    "quantity": 1,
+    "source_stl": "parts/parent/interior/printed/parent_hand_service/floor_plate.stl",
+    "source_stl_sha256": "c3359496e039df53ac7a69f19724916f5c2134c01fc3d79f6cbbf1412e502637",
+    "project_sha256": "bbafd60cc04cb5e9e5d89b63cd2eced44ade63325ea39d59098814f1339852a1",
+    "orientation_deg": [
+      0,
+      0,
+      0
+    ],
+    "material": "Generic PETG1.27",
+    "layer_height_mm": 0.2,
+    "walls": 4,
+    "infill_percent": 100,
+    "support": "Normal auto45deg,0.2mm Z gaps,bridges not supported",
+    "brim_mm": 3
+  },
+  "gnss_edge_cap": {
+    "quantity": 1,
+    "source_stl": "parts/parent/interior/printed/gnss_universal_carrier/gnss_edge_cap.stl",
+    "source_stl_sha256": "1902fd500f555bce5e6445e064f22fa27c2ac184cb7e67f1057c54f8585708c1",
+    "project_sha256": "085f9afaf8bdec9e7957016b796742cd3d1accbcc93edc62c3ef91eed946a072",
+    "orientation_deg": [
+      0,
+      0,
+      0
+    ],
+    "material": "Generic PETG1.27",
+    "layer_height_mm": 0.2,
+    "walls": 4,
+    "infill_percent": 100,
+    "support": "Normal auto45deg,0.2mm Z gaps,bridges not supported",
+    "brim_mm": 3
+  },
+  "gnss_edge_cap_front": {
+    "quantity": 1,
+    "source_stl": "parts/parent/interior/printed/gnss_universal_carrier/gnss_edge_cap_front.stl",
+    "source_stl_sha256": "5c0512fb20b957ea3daafca9d0fe043bfffefa4d2345260ad0031559ac09dfd0",
+    "project_sha256": "5118602eea78407da825044c2507d1a4f0b7c4e21c1e83c51ca5ebef08a5bb35",
+    "orientation_deg": [
+      0,
+      0,
+      0
+    ],
+    "material": "Generic PETG1.27",
+    "layer_height_mm": 0.2,
+    "walls": 4,
+    "infill_percent": 100,
+    "support": "Normal auto45deg,0.2mm Z gaps,bridges not supported",
+    "brim_mm": 3
+  },
+  "gnss_universal_carrier": {
+    "quantity": 1,
+    "source_stl": "parts/parent/interior/printed/gnss_universal_carrier/gnss_universal_carrier.stl",
+    "source_stl_sha256": "181619e537cc75714edea5b6aa20aca2199d58e519d3f65070bb03fe5e34aae5",
+    "project_sha256": "63cba871996c86325c3f1d14a8f0c7c7a32523ace8a4d751c19c0bcc5a902381",
+    "orientation_deg": [
+      0,
+      0,
+      0
+    ],
+    "material": "Generic PETG1.27",
+    "layer_height_mm": 0.2,
+    "walls": 4,
+    "infill_percent": 100,
+    "support": "Normal auto45deg,0.2mm Z gaps,bridges not supported",
+    "brim_mm": 3
+  },
+  "main_lower_carrier": {
+    "quantity": 1,
+    "source_stl": "parts/parent/interior/printed/parent_hand_service/main_lower_carrier.stl",
+    "source_stl_sha256": "5bd41378ea27bf5c6e6b1d24be0d857f69e7b5e2785d96bc7c14fc6b86f7986d",
+    "project_sha256": "c7dea3344a281382f4900c06ea6b1e835d2a9e8a1f8b96e03834a1a3907a7f66",
+    "orientation_deg": [
+      180,
+      0,
+      0
+    ],
+    "material": "Generic PETG1.27",
+    "layer_height_mm": 0.2,
+    "walls": 4,
+    "infill_percent": 100,
+    "support": "Normal auto45deg,0.2mm Z gaps,bridges not supported",
+    "brim_mm": 3
+  },
+  "parent_lipo_retainer_lid_narrow": {
+    "quantity": 1,
+    "source_stl": "parts/parent/interior/printed/parent_lipo_retainer/parent_lipo_retainer_lid_narrow.stl",
+    "source_stl_sha256": "75523c45cebc2e44216e1ead9aa92ef70d9693545fb06b860c687478d3dc05ef",
+    "project_sha256": "9a202ee669c2c98c649d372e46439976c2af942d7e534854aa30ea9c247c6067",
+    "orientation_deg": [
+      0,
+      0,
+      0
+    ],
+    "material": "Generic PETG1.27",
+    "layer_height_mm": 0.2,
+    "walls": 4,
+    "infill_percent": 100,
+    "support": "Normal auto45deg,0.2mm Z gaps,bridges not supported",
+    "brim_mm": 3
+  },
+  "sony_upper_carrier": {
+    "quantity": 1,
+    "source_stl": "parts/parent/interior/printed/parent_hand_service/sony_upper_carrier.stl",
+    "source_stl_sha256": "56c5c81cc68b4b880d3c7db8de60369b8ebca9bdd5d7d69e05d59fce6572d104",
+    "project_sha256": "0066b8c6cbac77f2fe1432e7a76ae247d307ff32476001ef2413fb59468754d5",
+    "orientation_deg": [
+      180,
+      0,
+      0
+    ],
+    "material": "Generic PETG1.27",
+    "layer_height_mm": 0.2,
+    "walls": 4,
+    "infill_percent": 100,
+    "support": "Normal auto45deg,0.2mm Z gaps,bridges not supported",
+    "brim_mm": 3
+  },
+  "ann_mb1_coax_ring": {
+    "quantity": 1,
+    "source_stl": "parts/parent/interior/printed/ann_mb1_internal_rack/ann_mb1_coax_ring.stl",
+    "source_stl_sha256": "7503297c5cdfc4aafb58e5e560013803290c3ddf874b172351d96b7ed0ee9d4b",
+    "project_sha256": "25a840040e43d999fba53c3103bbdc062a5db7631e0d5601bd48ab466308737a",
+    "orientation_deg": [
+      0,
+      0,
+      0
+    ],
+    "material": "Generic PETG1.27",
+    "layer_height_mm": 0.2,
+    "walls": 4,
+    "infill_percent": 100,
+    "support": "Normal auto45deg,0.2mm Z gaps,bridges not supported",
+    "brim_mm": 3
+  },
+  "gnss_column_front": {
+    "quantity": 2,
+    "source_stl": "parts/parent/interior/printed/gnss_universal_carrier/gnss_column_front.stl",
+    "source_stl_sha256": "15abf299528403fd8007517b81d2e16cbdab41d3d41dbcfdcc08a8f984d1d8ad",
+    "project_sha256": "9046c8667e78b2918eecf10e582d1c435159ab43174badaae67176b71945fa45",
+    "orientation_deg": [
+      0,
+      0,
+      0
+    ],
+    "material": "Generic PETG1.27",
+    "layer_height_mm": 0.2,
+    "walls": 4,
+    "infill_percent": 100,
+    "support": "Normal auto45deg,0.2mm Z gaps,bridges not supported",
+    "brim_mm": 3
+  },
+  "gnss_column_rear": {
+    "quantity": 2,
+    "source_stl": "parts/parent/interior/printed/gnss_universal_carrier/gnss_column_rear.stl",
+    "source_stl_sha256": "43774659e7c774822ee86763a56d2576e78154baaf1702da33c70f352939153e",
+    "project_sha256": "6826a7ae30ae04db9d7479e71c23a9007497bbec9a38ee63c7072021247634be",
+    "orientation_deg": [
+      0,
+      0,
+      0
+    ],
+    "material": "Generic PETG1.27",
+    "layer_height_mm": 0.2,
+    "walls": 4,
+    "infill_percent": 100,
+    "support": "Normal auto45deg,0.2mm Z gaps,bridges not supported",
+    "brim_mm": 3
+  }
+}

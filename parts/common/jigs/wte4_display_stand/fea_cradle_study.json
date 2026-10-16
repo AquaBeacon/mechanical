@@ -1,0 +1,55 @@
+{
+  "part": "wte4_display_stand_cradle.stl",
+  "material": "PLA",
+  "build_axis": "X",
+  "target_elements": 80000,
+  "safety_factor": 3.0,
+  "max_deflection_mm": 0.5,
+  "regions": {
+    "table": {
+      "type": "face",
+      "axis": "Z",
+      "side": "min",
+      "depth": 2.0
+    },
+    "arc": {
+      "type": "cylinder",
+      "axis": "X",
+      "centre": [
+        0,
+        0,
+        68
+      ],
+      "r": 59.2
+    }
+  },
+  "cases": [
+    {
+      "name": "tube on cradle, handling x3 (2.2 kg tube assy / 2 cradles x 3 = 35 N)",
+      "supports": [
+        {
+          "region": "table",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "arc",
+          "force": [
+            0,
+            0,
+            -35
+          ]
+        }
+      ],
+      "gravity": {
+        "direction": [
+          0,
+          0,
+          -1
+        ],
+        "g_factor": 1.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+
+mesh target 8.00 mm
+  shell refined to 8.00 mm edges: 4786 -> 29590 triangles
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\ryupc\WorkSpace\Mitou26\TO_printing\topopt\src\topopt\__main__.py", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\ryupc\WorkSpace\Mitou26\TO_printing\topopt\src\topopt\cli\__init__.py", line 93, in main
+    code = mod.main(rest)
+  File "C:\Users\ryupc\WorkSpace\Mitou26\TO_printing\topopt\src\topopt\cli\ccx.py", line 1140, in main
+    runs.append(analyse(stl, study, a.out, h, a.isotropic,
+                ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        buckle=a.buckle, frequency=a.frequency,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+                        shell_info=shell_info, refine=not a.no_refine,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        load_split=a.load_split))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryupc\WorkSpace\Mitou26\TO_printing\topopt\src\topopt\cli\ccx.py", line 654, in analyse
+    ccxlib.run_gmsh(geo, mesh_path)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\ryupc\WorkSpace\Mitou26\TO_printing\topopt\src\topopt\ccx.py", line 92, in run_gmsh
+    raise RuntimeError("gmsh failed (%d):\n%s"
+                       % (r.returncode, (r.stderr or r.stdout)[-4000:]))
+RuntimeError: gmsh failed (1):
+Error   : HXT 3D mesh failed
+Warning : No elements in volume 1
+Error   : ------------------------------
+Error   : Mesh generation error summary
+Error   :     1 warning
+Error   :     1 error
+Error   : Check the full log for details
+Error   : ------------------------------
+

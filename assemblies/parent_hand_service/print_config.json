@@ -1,0 +1,34 @@
+{
+  "status": "fit_check_prototype",
+  "note": "2026-10-13 全長側溝版：電池台と蓋を各1個再印刷。蓋を配線側の端から両側の全長溝へ108 mm差し込み、M3×12ねじ／M3ナット各1個で固定する。箱内で全長分を引き出せないため、電源リードを外し、台の固定ねじ4本を外して閉じたボックスを上へ約90 mm持ち上げ、蓋ねじ1本を外して引き抜く。基板を外す必要はない。最下段、MAIN固定板、同軸巻き部と工具穴8 mmは維持。電池台はprint_jobs/battery_side_grooves_20261013/battery_base.3mfをプロジェクトとして開く。ナット座と側溝の支持材禁止設定済み。STLの場合はmodifiers内の支持材禁止パーツ2個を同梱座標で追加し、単体印刷しない。蓋は上面をベッドへ向けた同梱姿勢。9種類各1個、PETG0.2 mm・4周壁・100%インフィル。旧2 mmフック版の電池台／蓋を混ぜない。実印刷でバリ、嵌合と締付けを確認する。",
+  "notes": [
+    "docs/配線・ケーブル計画.md",
+    "assemblies/parent_hand_service/fixed_plate_report.md",
+    "assemblies/parent_hand_service/battery_box_report.md",
+    "assemblies/parent_hand_service/sensor_mount_report.md",
+    "assemblies/parent_hand_service/case_screw_access_report.md",
+    "assemblies/parent_hand_service/battery_slide_lid_report.md",
+    "assemblies/parent_hand_service/battery_tool_nut_access_report.md",
+    "assemblies/parent_hand_service/battery_side_grooves_report.md"
+  ],
+  "extra_parts": [
+    {
+      "part": "parts/common/interior/printed/stack_spacers",
+      "file": "parent_stack_spacer_set",
+      "quantity": 1,
+      "labels": [
+        "print_runner_12_spacers"
+      ]
+    }
+  ],
+  "modifiers": [
+    {
+      "host": "battery_base",
+      "source": "parts/parent/interior/printed/parent_hand_service/battery_lid_nut_support_blocker.stl"
+    },
+    {
+      "host": "battery_base",
+      "source": "parts/parent/interior/printed/parent_hand_service/battery_slide_rail_support_blocker.stl"
+    }
+  ]
+}

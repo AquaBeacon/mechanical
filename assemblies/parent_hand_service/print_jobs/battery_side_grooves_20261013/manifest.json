@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-13",
+  "revision": "full_length_side_grooves",
+  "projects": {
+    "battery_base.3mf": {
+      "sha256": "d847c8bd393f9423f8dbaf9c8d27b0c483ed698c9301f2ebfe7f3f4f8b45e6cb",
+      "source_stl": "parts/parent/interior/printed/parent_hand_service/battery_base.stl",
+      "source_stl_sha256": "936c39fda25aee63dfcd8e35c9d332d0215f891cffd8675a4ca975d261e61817"
+    },
+    "parent_lipo_retainer_lid_slide.3mf": {
+      "sha256": "dc2f4cf51c39aebe81f366a9ebb34365814696c317ec6cf9e9c4ee85c0a4ea69",
+      "source_stl": "parts/parent/interior/printed/parent_lipo_retainer/parent_lipo_retainer_lid_slide.stl",
+      "source_stl_sha256": "af79a9d89e22d5e6bddedffd4d48e51fc68905b2e820e6f0eda939b20da82034"
+    }
+  },
+  "corresponding_print_files_sha256": {
+    "parts/battery_base.stl": "0a152f546801904d39c9f40e6b2e461815f4314bb9b916821bb530f980eefb48",
+    "parts/parent_lipo_retainer_lid_slide.stl": "5b666400bd13ac411d46bd744780edf764f6f28d50d55d3277c298baf2f9b769",
+    "parts/modifiers/battery_lid_nut_support_blocker.stl": "e8d2c1ba18f4fc147327860240cd213bb70b4960ce6b55d1f739faeae55926f9",
+    "parts/modifiers/battery_slide_rail_support_blocker.stl": "f3c1cc1756267511faf9315adb2f751fdaff00cacb026fdeca87afa74f97cda0"
+  },
+  "material": "Generic PETG",
+  "printer": "Bambu X1C",
+  "nozzle_mm": 0.4,
+  "layer_height_mm": 0.2,
+  "walls": 4,
+  "infill_percent": 100,
+  "support": "Auto45, bridge exclusion, base nut and rails blocked locally; lid automatic supports0g",
+  "operation": "Disconnect lead, remove four tray mount screws, lift closed module90 mm, remove one lid screw, slide lid south108 mm",
+  "physical_print_verified": false
+}

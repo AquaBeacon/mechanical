@@ -1,0 +1,138 @@
+{
+  "_what": "child_core_frame v5: lightweight the aft core frame of the AquaBeacon child unit by topology optimisation, keeping every functional interface of v4 (650 cm3).",
+  "_geometry_source": "child_core_frame_v5.scad (part=preserve/obstacle/design_space/preserve_cuts). All dimensions are the v4 Customizer values.",
+  "_preserve": "pocket bands (bottom/mid/top half-shell bands that capture the cap and dome ring), hinge knuckle cylinders x2, latch bosses x2, lug bosses x2, guard bosses x2, cable-groove channels x2, grip bar, HP1 seat plate + insert bosses, HP2/HP3 seat plates + insert bosses",
+  "_obstacle": "tube bore + pockets, gate half-shell (y>=0), gate knuckles, cable grooves, tie slots, hand room behind the grip bar, cable cavities, HP holes, HP2/3 accessory envelope, guard-ring tabs",
+  "_design_space": "box x -80..72, y -110..0, z -17..218.5 (the v4 envelope) plus the hinge column y 0..18 at x<-63",
+  "_loads": "L1 hoist 3g / L2 side hit 300 N / L2 hinge-side landing 300 N / L2 rear hit 300 N / L3 clamp preload / L5 landing 600 N. C6 (2026-09-04): transport 5 g = 300 N.",
+
+  "units": "mm_N_MPa",
+  "material": "PETG",
+  "build_axis": "Z",
+  "raster_axis": "X",
+  "printer": "X1C",
+  "safety_factor": 3.0,
+  "max_deflection_mm": 1.0,
+
+  "voxel_mm": 3.0,
+
+  "design": {
+    "volfrac": 0.10,
+    "filter_mm": 6.0,
+    "symmetry": [],
+    "move": 0.2,
+    "tol_change": 0.002,
+    "overhang": {"max_support_mm": 12}
+  },
+
+  "geometry": {
+    "voxel_mm": 3.0,
+    "clearance_mm": 0.0,
+    "pad_voxels": 2,
+    "preserve": {
+      "interfaces": "02_setup/child_core_frame_v5_preserve.stl"
+    },
+    "design_space": "02_setup/child_core_frame_v5_design_space.stl",
+    "obstacle": {
+      "keep_out": "02_setup/child_core_frame_v5_obstacle.stl"
+    }
+  },
+
+  "finish": {
+    "voxel_mm": 0.5,
+    "add": {"interfaces": "02_setup/child_core_frame_v5_preserve.stl"},
+    "cut": {"features": "02_setup/child_core_frame_v5_preserve_cuts.stl"}
+  },
+
+  "regions": {
+    "lug_boss_R":   {"type": "box", "min": [50, -22, 204],   "max": [72, 0, 218]},
+    "lug_boss_L":   {"type": "box", "min": [-72, -22, 204],  "max": [-50, 0, 218]},
+    "latch_lo":     {"type": "box", "min": [52, -18, 28],    "max": [72, 0, 52]},
+    "latch_hi":     {"type": "box", "min": [52, -18, 158],   "max": [72, 0, 182]},
+    "knuckles":     {"type": "box", "min": [-81, -9, 13],    "max": [-63, 19, 188]},
+    "guard_boss_R": {"type": "box", "min": [48, -45, -14],   "max": [72, -22, 10]},
+    "guard_boss_L": {"type": "box", "min": [-72, -45, -14],  "max": [-48, -22, 10]},
+    "pocket_bot":   {"type": "box", "min": [-66, -66, -17],  "max": [66, 0, -2]},
+    "pocket_top":   {"type": "box", "min": [-66, -66, 200],  "max": [66, 0, 218]},
+    "band_mid":     {"type": "box", "min": [-66, -66, 92],   "max": [66, 0, 108]},
+    "back_wall":    {"type": "box", "min": [-30, -102, 20],  "max": [30, -88, 110]},
+    "grip_bar":     {"type": "box", "min": [-31, -102, 145], "max": [31, -88, 170]}
+  },
+
+  "required_cases": ["L1", "L2s", "L2h", "L2r", "L3", "L5"],
+
+  "cases": [
+    {
+      "name": "L1 hoist 3g: lugs fixed, container + guard + gate weights down",
+      "supports": [
+        {"region": "lug_boss_R", "fix": "xyz"},
+        {"region": "lug_boss_L", "fix": "xyz"}
+      ],
+      "loads": [
+        {"region": "pocket_bot",   "force": [0, 0, -77]},
+        {"region": "guard_boss_R", "force": [0, 0, -37]},
+        {"region": "guard_boss_L", "force": [0, 0, -37]},
+        {"region": "latch_lo",     "force": [0, 0, -18]},
+        {"region": "latch_hi",     "force": [0, 0, -18]}
+      ],
+      "gravity": {"direction": [0, 0, -1], "g_factor": 3.0}
+    },
+    {
+      "name": "L2s transport side hit 300 N (+X on back wall and lugs), container reacts",
+      "supports": [
+        {"region": "pocket_bot", "fix": "xyz"},
+        {"region": "pocket_top", "fix": "xyz"}
+      ],
+      "loads": [
+        {"region": "back_wall",  "force": [200, 0, 0]},
+        {"region": "lug_boss_R", "force": [50, 0, 0]},
+        {"region": "lug_boss_L", "force": [50, 0, 0]}
+      ]
+    },
+    {
+      "name": "L2h transport landing on the hinge side (300 N +X through the knuckles), container reacts",
+      "supports": [
+        {"region": "pocket_bot", "fix": "xyz"},
+        {"region": "pocket_top", "fix": "xyz"}
+      ],
+      "loads": [
+        {"region": "knuckles", "force": [300, 0, 0]}
+      ]
+    },
+    {
+      "name": "L2r transport rear hit 300 N on the back wall (+Y), container reacts",
+      "supports": [
+        {"region": "pocket_bot", "fix": "xyz"},
+        {"region": "pocket_top", "fix": "xyz"}
+      ],
+      "loads": [
+        {"region": "back_wall", "force": [0, 200, 0]},
+        {"region": "grip_bar",  "force": [0, 100, 0]}
+      ]
+    },
+    {
+      "name": "L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands",
+      "supports": [
+        {"region": "pocket_bot", "fix": "xyz"},
+        {"region": "band_mid",   "fix": "xyz"},
+        {"region": "pocket_top", "fix": "xyz"}
+      ],
+      "loads": [
+        {"region": "latch_lo", "force": [0, 300, 0]},
+        {"region": "latch_hi", "force": [0, 300, 0]},
+        {"region": "knuckles", "force": [0, 300, 0]}
+      ]
+    },
+    {
+      "name": "L5 landing 600 N up through the guard bosses, container reacts",
+      "supports": [
+        {"region": "pocket_bot", "fix": "xyz"},
+        {"region": "pocket_top", "fix": "xyz"}
+      ],
+      "loads": [
+        {"region": "guard_boss_R", "force": [0, 0, 300]},
+        {"region": "guard_boss_L", "force": [0, 0, 300]}
+      ]
+    }
+  ]
+}

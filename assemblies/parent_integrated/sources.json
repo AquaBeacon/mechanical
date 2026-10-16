@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {
+      "path": "assemblies\\parent_bottom_sensors\\placement.json",
+      "sha256": "ec3f139a09c6dd2f22eb996b225e756c589c17057a3dbec88ae3555b7afed368"
+    },
+    {
+      "path": "assemblies\\parent_interior_p1\\placement.json",
+      "sha256": "a3e8d4bef4d6764eacbb422779928d8de6f59a1a5b5714aed09e726a5beee653"
+    }
+  ],
+  "box_frame_translation": [
+    -105.0,
+    -115.0,
+    0.0
+  ],
+  "pwr_lift_mm": 3.5,
+  "status": "PROTOTYPE_MEASUREMENT_PENDING"
+}

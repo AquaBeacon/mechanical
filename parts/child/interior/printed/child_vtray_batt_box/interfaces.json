@@ -1,0 +1,23 @@
+{
+  "consumer": "child_vtray_batt_box",
+  "references": [
+    {
+      "part": "lipo_35x26x110",
+      "path": "parts/child/interior/cots/lipo_35x26x110",
+      "md_sha256": "c653b24f170519af872ca167e10fd8405a1f3593521757c7b60a282ccd2f37ff",
+      "stl_sha256": null,
+      "bbox_mm": null,
+      "status_at_lock": [
+        "needs_measure"
+      ],
+      "values": {
+        "lipo_w": 35.0,
+        "lipo_h": 26.0,
+        "lipo_l": 110.0
+      },
+      "confirmed_by_human": true,
+      "confirmed_at": "2026-09-03T04:23:54",
+      "note": "人間確認 2026-09-03: 電池外形 35x26x110、リードは上面 35mm 辺の両端 (充電 50mm / 電源 可撓60+硬直50+XT60)"
+    }
+  ]
+}

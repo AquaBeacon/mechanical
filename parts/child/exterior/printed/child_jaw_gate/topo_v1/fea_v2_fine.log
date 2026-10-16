@@ -1,0 +1,122 @@
+voxelised child_jaw_gate.stl: 90215 solid voxels at 1.330 mm (0.3 s)
+
+--- case: L1 hoist 3g: the gate hangs on the hinge pin and the two knob bolts; bridge + cameras (1.2 kg x 3 g = 35 N) pull down on HP4/HP5 ---
+  applied load        40.95 N [0.0, 0.0, -40.95]
+  max deflection      0.089 mm at [1.1, 63.8, 218.4]
+  von Mises           max 2.40 MPa / p99.5 0.80 MPa
+  safety factor       15.99 (worst) / 50.13 (p99.5)   [need >= 3.00]
+  [PASS] strength         safety factor >= 3.00 -> 15.99 (worst element) / 50.13 (p99.5)
+  [PASS] stiffness        max deflection <= 1.000 mm -> 0.089 mm
+  [FAIL] mesh resolution  >= 3 elements across the thinnest section -> 2.0 (thin 2.66 mm) / 4.0 (typical 5.32 mm)
+         re-run with --voxel 0.89
+  NOTE  max/p99.5 stress ratio is 3.0 -- the peak is probably a stair-step or clamp artefact. Check the hotspot list before trusting it.
+  hotspots (worst first):
+    at [-22.14, 55.2, 199.12] SF 15.99
+    at [-60.72, 19.29, 217.75] SF 16.5
+    at [-18.15, 63.18, 74.11] SF 18.31
+    at [-60.72, 19.29, 107.36] SF 18.78
+    at [-60.72, 19.29, 4.95]  SF 18.88
+
+--- case: L2f transport frontal 300 N (-Y) through the cam bridge into HP4/HP5, the container reacts on the three bands ---
+  applied load        300.00 N [0.0, -300.0, 0.0]
+  max deflection      0.109 mm at [-0.2, 74.5, 145.3]
+  von Mises           max 4.84 MPa / p99.5 1.63 MPa
+  safety factor       7.10 (worst) / 19.43 (p99.5)   [need >= 3.00]
+  [PASS] strength         safety factor >= 3.00 -> 7.10 (worst element) / 19.43 (p99.5)
+  [PASS] stiffness        max deflection <= 1.000 mm -> 0.109 mm
+  [FAIL] mesh resolution  >= 3 elements across the thinnest section -> 2.0 (thin 2.66 mm) / 4.0 (typical 5.32 mm)
+         re-run with --voxel 0.89
+  hotspots (worst first):
+    at [-22.14, 55.2, 199.12] SF 7.1
+    at [21.75, 55.2, 199.12]  SF 7.11
+    at [21.75, 55.2, 108.69]  SF 8.28
+    at [-22.14, 55.2, 108.69] SF 8.29
+    at [17.76, 73.81, 144.59] SF 9.35
+
+--- case: L2s transport side 300 N (-X on the latch edge), the container reacts on the three bands ---
+  applied load        300.00 N [-300.0, 0.0, 0.0]
+  max deflection      0.252 mm at [63.6, 0.0, 41.5]
+  von Mises           max 12.38 MPa / p99.5 3.37 MPa
+  safety factor       2.00 (worst) / 9.70 (p99.5)   [need >= 3.00]
+  [PASS] strength         safety factor >= 3.00 -> 2.00 (worst element) / 9.70 (p99.5)
+  [PASS] stiffness        max deflection <= 1.000 mm -> 0.252 mm
+  [FAIL] mesh resolution  >= 3 elements across the thinnest section -> 2.0 (thin 2.66 mm) / 4.0 (typical 5.32 mm)
+         re-run with --voxel 0.89
+  NOTE  max/p99.5 stress ratio is 3.7 -- the peak is probably a stair-step or clamp artefact. Check the hotspot list before trusting it.
+  hotspots (worst first):
+    at [58.99, 5.99, 39.53]   SF 2.0
+    at [58.99, 5.99, 171.2]   SF 2.43
+    at [70.96, 12.64, 39.53]  SF 3.09
+    at [56.33, 15.3, 199.12]  SF 3.8
+    at [58.99, 0.67, 38.2]    SF 3.86
+
+--- case: L3 clamp preload: the two M5 knob bolts pull the latch bosses -Y (300 N each) and the hinge pin pulls the knuckles -Y, the tube + EVA react on the three bands ---
+  applied load        900.00 N [0.0, -900.0, 0.0]
+  max deflection      0.427 mm at [71.6, 16.0, 40.2]
+  von Mises           max 21.42 MPa / p99.5 6.20 MPa
+  safety factor       1.21 (worst) / 4.49 (p99.5)   [need >= 3.00]
+  [PASS] strength         safety factor >= 3.00 -> 1.21 (worst element) / 4.49 (p99.5)
+  [PASS] stiffness        max deflection <= 1.000 mm -> 0.427 mm
+  [FAIL] mesh resolution  >= 3 elements across the thinnest section -> 2.0 (thin 2.66 mm) / 4.0 (typical 5.32 mm)
+         re-run with --voxel 0.89
+  NOTE  max/p99.5 stress ratio is 3.5 -- the peak is probably a stair-step or clamp artefact. Check the hotspot list before trusting it.
+  hotspots (worst first):
+    at [70.96, 12.64, 39.53]  SF 1.21
+    at [58.99, 0.67, 40.86]   SF 1.35
+    at [65.64, 15.3, 199.12]  SF 1.53
+    at [65.64, 0.67, 40.86]   SF 1.63
+    at [61.65, 15.3, 6.28]    SF 1.66
+
+--- case: L4 frontal collision 300 N on the top of the bridge column (z 195): statics on the HP4/HP5 bolt pair (z 170 / 100) gives -400 N on HP4 and +100 N pull-out on HP5, the container reacts on the three bands ---
+  applied load        300.00 N [0.0, -300.0, 0.0]
+  max deflection      0.261 mm at [-0.2, 74.5, 145.3]
+  von Mises           max 12.31 MPa / p99.5 4.00 MPa
+  safety factor       2.79 (worst) / 7.72 (p99.5)   [need >= 3.00]
+  [PASS] strength         safety factor >= 3.00 -> 2.79 (worst element) / 7.72 (p99.5)
+  [PASS] stiffness        max deflection <= 1.000 mm -> 0.261 mm
+  [FAIL] mesh resolution  >= 3 elements across the thinnest section -> 2.0 (thin 2.66 mm) / 4.0 (typical 5.32 mm)
+         re-run with --voxel 0.89
+  NOTE  max/p99.5 stress ratio is 3.1 -- the peak is probably a stair-step or clamp artefact. Check the hotspot list before trusting it.
+  hotspots (worst first):
+    at [-22.14, 55.2, 199.12] SF 2.79
+    at [21.75, 55.2, 199.12]  SF 2.8
+    at [24.41, 72.48, 149.92] SF 3.73
+    at [17.76, 73.81, 144.59] SF 3.75
+    at [-18.15, 73.81, 144.59] SF 4.18
+
+--- case: L2Lf transport frontal 300 N (-Y) through the light clamp into HP-L, the container reacts on the three bands ---
+  applied load        300.00 N [0.0, -300.0, 0.0]
+  max deflection      0.218 mm at [-0.2, 74.5, 40.2]
+  von Mises           max 7.94 MPa / p99.5 2.70 MPa
+  safety factor       3.97 (worst) / 11.86 (p99.5)   [need >= 3.00]
+  [PASS] strength         safety factor >= 3.00 -> 3.97 (worst element) / 11.86 (p99.5)
+  [PASS] stiffness        max deflection <= 1.000 mm -> 0.218 mm
+  [FAIL] mesh resolution  >= 3 elements across the thinnest section -> 2.0 (thin 2.66 mm) / 4.0 (typical 5.32 mm)
+         re-run with --voxel 0.89
+  hotspots (worst first):
+    at [-22.14, 55.2, 6.28]   SF 3.97
+    at [21.75, 55.2, 6.28]    SF 3.98
+    at [-18.15, 63.18, 74.11] SF 4.15
+    at [17.76, 63.18, 74.11]  SF 4.18
+    at [17.76, 65.84, -1.7]   SF 4.4
+
+--- case: L2Ls transport side 300 N (-X) through the light clamp into HP-L, the container reacts on the three bands ---
+  applied load        300.00 N [-300.0, 0.0, 0.0]
+  max deflection      0.126 mm at [22.4, 54.5, 40.2]
+  von Mises           max 8.44 MPa / p99.5 2.02 MPa
+  safety factor       4.16 (worst) / 16.20 (p99.5)   [need >= 3.00]
+  [PASS] strength         safety factor >= 3.00 -> 4.16 (worst element) / 16.20 (p99.5)
+  [PASS] stiffness        max deflection <= 1.000 mm -> 0.126 mm
+  [FAIL] mesh resolution  >= 3 elements across the thinnest section -> 2.0 (thin 2.66 mm) / 4.0 (typical 5.32 mm)
+         re-run with --voxel 0.89
+  NOTE  max/p99.5 stress ratio is 4.2 -- the peak is probably a stair-step or clamp artefact. Check the hotspot list before trusting it.
+  hotspots (worst first):
+    at [21.75, 67.17, -1.7]   SF 4.16
+    at [-22.14, 67.17, -1.7]  SF 5.42
+    at [25.73, 67.17, -5.7]   SF 5.58
+    at [-16.82, 61.85, 4.95]  SF 5.66
+    at [16.43, 61.85, 4.95]   SF 6.69
+
+wrote fea_v2_fine
+
+=== FAIL ===

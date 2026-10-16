@@ -1,0 +1,11 @@
+{
+  "status": "fit_prototype",
+  "supports": "per_part_manufacturing",
+  "note": "Rev.4 現構成17種類・24個、未印刷13種類・19個。側板2・底板1・クランプ上下各1は印刷済み、元STLのSHAと配置を保持。追加フレーム4枚は側板内側。段差なしの一体メスは厚4、M3×18各2本。既存33×81ホルダーを流用、60°回して停止すると上向き、横のノブは水平+Y、突出59.5 mm、中央Y±45は手の通路。X1C / PETG Basic、0.4 mmノズル、8壁、100%充填、5 mmブリム、Textured PEI。一体メス・オスは0.1 mm層、他は0.2 mm層。ライトオスだけベッドからの外部サポート（上下離隔0.2）、他はサポート無効。STLは印刷姿勢へ変換済み。筒内・機構内部にサポートを入れず、除去後に爪・カム・ロック・実ライトの嵌合を確認する。旧版STLと3MFを混ぜない。嵌合・荷重試験用。詳細は同梱DESIGN_NOTES.mdのCHILD-HORIZONTAL-TWIST-C-R4。 トップフレーム改良（2026-10-12）：クランプ締付ねじ6本の真上に工具穴φ10、正12角形、入口0.4 mm面取り。工具軸φ8×70 mmは仮包絡。縁に近い2穴を局所拡幅、入口直近の検査断面の最小残存肉厚は約3.3 mm。トップは従来向きで1個。",
+  "notes": [
+    "parts/child/exterior/printed/child_horizontal_plate_frame/README.md",
+    "parts/child/exterior/printed/child_wte4_petg_clamp/README.md",
+    "parts/child/exterior/printed/child_horizontal_twist_mount/README.md",
+    "docs/child_horizontal_twist_interface.md"
+  ]
+}

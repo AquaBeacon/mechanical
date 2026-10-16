@@ -1,0 +1,18 @@
+{
+  "hand_cable_check": {
+    "voxel_mm": 1.0,
+    "overlap_voxels": 0,
+    "overlap_centres_mm": []
+  },
+  "preserve_before_mm3": 190282.31378129745,
+  "preserve_after_mm3": 188588.5127464782,
+  "explicit_cable_cut_mm3": 1693.8010348192474,
+  "force_arrows": 36,
+  "cases": 17,
+  "gravity_arrows": 3,
+  "setup": {
+    "child_cam_bridge": true,
+    "child_core_frame": true,
+    "child_jaw_gate": true
+  }
+}

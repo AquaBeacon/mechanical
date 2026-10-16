@@ -1,0 +1,223 @@
+{
+  "consumer": "child_core_frame",
+  "references": [
+    {
+      "part": "wte4_end_cap_5xm10",
+      "path": "parts/child/exterior/cots/wte4_end_cap_5xm10",
+      "md_sha256": "67ecb1b5914bab96033bbe8c209b23be703d618b5287f794dc5861756c87ff83",
+      "stl_sha256": null,
+      "bbox_mm": null,
+      "status_at_lock": [
+        "needs_measure"
+      ],
+      "values": {
+        "cap_od": 120.3
+      },
+      "confirmed_by_human": true,
+      "confirmed_at": "2026-09-05T00:21:13",
+      "note": "人間確認 2026-08-02: R5。gate と同一のポケット寸法 [2026-09-05 再ロック: 改善実装後の md 更新に追従]"
+    },
+    {
+      "part": "child_jaw_gate",
+      "path": "parts/child/exterior/printed/child_jaw_gate",
+      "md_sha256": "0e40f2504d5c344403d03084bfea130cc35c8dfbda469e03d3bfb315c4357d1b",
+      "stl_sha256": "bce8aeace7e4e487fbc31b4fb591b14f33d455c29fb5479b75fdba71716cd7b6",
+      "bbox_mm": [
+        152.0,
+        74.35,
+        235.0
+      ],
+      "status_at_lock": [
+        "needs_measure",
+        "not_bought",
+        "obsolete",
+        "provisional"
+      ],
+      "values": {
+        "hinge_x": -72.0,
+        "latch_hx": 62.0,
+        "r_in": 58.35
+      },
+      "confirmed_by_human": false,
+      "confirmed_at": "2026-09-06T03:54:51",
+      "note": "2026-09-06 再ロック (人間確認待ち): ゲート v2 (トポロジー最適化) でもヒンジ/ラッチ/ポケット値は不変。ノブ頭 Ø16 と容器の干渉 (latch_hx 62→66 案) は判断待ち"
+    }
+  ],
+  "provides": {
+    "note": "この部品が他部品に配る値。相手側 .scad と二重定義になるので片方だけ直さない",
+    "hardpoints": [
+      {
+        "id": "HP1",
+        "standard": "HP40",
+        "face": "pylon pedestal top",
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "center_mm": [
+          0,
+          -85,
+          218.5
+        ],
+        "insert": "M5 heatset D6.4x9 x4 @ (+-20, -105/-65)",
+        "cable_hole_d": 14,
+        "arrow": "+Y",
+        "note": "v4: 屋根直付け (0,-75,190) から移設。旧位置は xdcr_socket 台座が容器に貫通していた",
+        "consumers": [
+          "xdcr_socket"
+        ]
+      },
+      {
+        "id": "HP2",
+        "standard": "HP40",
+        "face": "pylon side +X",
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "center_mm": [
+          44,
+          -75,
+          100
+        ],
+        "insert": "M5 heatset Ø6.4x9 x4 @ (44, -95/-55, 80/120)",
+        "cable_hole_d": 14,
+        "arrow": "+Y",
+        "consumers": [
+          "child_top_crown",
+          "user light clamp",
+          "child_cable_cover"
+        ]
+      },
+      {
+        "id": "HP3",
+        "standard": "HP40",
+        "face": "pylon side -X",
+        "normal": [
+          -1,
+          0,
+          0
+        ],
+        "center_mm": [
+          -44,
+          -75,
+          100
+        ],
+        "insert": "M5 heatset Ø6.4x9 x4 @ (-44, -95/-55, 80/120)",
+        "cable_hole_d": 14,
+        "arrow": "+Y",
+        "consumers": [
+          "child_top_crown",
+          "user light clamp",
+          "child_cable_cover"
+        ]
+      }
+    ],
+    "cable_groove": {
+      "center_x_mm": [
+        18,
+        -18
+      ],
+      "width_mm": 10,
+      "depth_mm": 8,
+      "outer_face_y_mm": -101,
+      "floor_y_mm": -93,
+      "z_range_mm": [
+        -17,
+        182
+      ],
+      "tie_slot_mm": [
+        5.5,
+        3
+      ],
+      "tie_slot_z_mm": [
+        0,
+        30,
+        60,
+        90,
+        155
+      ],
+      "consumers": [
+        "child_cable_cover",
+        "child_guard_ring"
+      ],
+      "pedestal_exit": "Ø12 @ (+-18,-92) z 174..218.5",
+      "channel": "v5: 溝の両側壁 2.5 + 底 4 (y -93..-89) のチャンネルが全高 (z -17..182) で立つ"
+    },
+    "back_wall": {
+      "thickness_mm": 5,
+      "outer_y_mm": -93,
+      "inner_y_mm": -88,
+      "half_width_mm": 44,
+      "note": "v5: t14 の背面壁は廃止。溝チャンネル (x ±10.5..25.5、y -101..-89) が柱を兼ね、その内側に t5 のせん断板 (y -93..-88) を置く。外面 y -101 は溝チャンネルの面。手穴 52×30 (z 115..145) は板を貫通"
+    },
+    "latch": {
+      "insert": "M5 heatset Ø6.4 x depth 14 @ (62, y=0 face, z 40/170)",
+      "knob_bolt": "M5 knob head Ø16 — 頭のポケットは child_jaw_gate 側",
+      "consumers": [
+        "child_jaw_gate"
+      ]
+    },
+    "hinge_pin_counterbore": {
+      "d_mm": 10,
+      "depth_mm": 4,
+      "top_face_z_mm": 187.6,
+      "axis_xy_mm": [
+        -72,
+        10
+      ],
+      "consumers": [
+        "child_jaw_gate"
+      ]
+    },
+    "pedestal": {
+      "x_half_mm": 30,
+      "y_range_mm": [
+        -110,
+        -60
+      ],
+      "z_range_mm": [
+        182,
+        218.5
+      ],
+      "structure": "v5: 中空の箱。座面板 t4 (z 214.5..218.5) + インサートボス Ø15 + 側壁 t6 (x ±24..30, y -93..-60) + 前壁 (y -66..-54, z 196..) + 後壁 (y -93..-87, z 170..) + 後端 45° ハンチ (y -93..-110, z 196..213)",
+      "rear_haunch": "45deg, z 196..213, y -93..-110",
+      "vertical_cable_holes": {
+        "d_mm": 12,
+        "x_mm": [
+          18,
+          -18
+        ],
+        "y_mm": -92,
+        "z_range_mm": [
+          174,
+          218.5
+        ]
+      },
+      "consumers": [
+        "xdcr_socket",
+        "child_top_crown",
+        "child_cable_cover"
+      ]
+    },
+    "mating_plane": {
+      "with": "child_jaw_gate",
+      "plane": "y = 0",
+      "rule": "core_frame は y>0 かつ r<=64.35 に材料を出さない (v4 で差分を追加)"
+    },
+    "hp23_seat": {
+      "plate": "x ±40..44 (t4), y -100..-50, z 63..128; 上下棚 x ±32..44 (t4) z 75..79 / 121..125; 前柱 x ±38..44 y -62..-48 z -17..200; 後柱 x ±38..44 y -100..-90 z 60..150",
+      "note": "v5: 座ブロック丸ごと (v4 x 30..44 × y -101..-50 × z 72..128) から板+柱に変更。HP2/3 の座面・穴・矢印位置は不変"
+    },
+    "hinge_column": {
+      "flange_plate": "x -80..-50.35, y -12..0, 全高 (v4 は x -64..-50, y -8..0)",
+      "note": "v5: ナックル角ブロックは y -8..10。ゲート側 (y>=0, r<=64.35) は不変で削ってある"
+    },
+    "latch_flange": {
+      "plate": "x 50..72, y -10..0, 全高、窓 x 56..66 z 56..150 (四隅 45° 8mm)"
+    },
+    "note_v5": "2026-09-06 v5: トポロジー最適化 (topo_v5/) で 650 → 495 cm³。取合い値 (HP1/2/3、ヒンジ、ラッチ、耳ボス、ガードボス、溝、合わせ面) は v4 と同一"
+  }
+}

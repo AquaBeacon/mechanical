@@ -1,0 +1,151 @@
+{
+  "part": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\parts\\common\\jigs\\wte4_display_stand\\wte4_display_stand_rail.stl",
+  "material": "PLA",
+  "pass": true,
+  "cases": [
+    {
+      "elements": 75882,
+      "voxel_mm": 0.654213262037718,
+      "volume_mm3": 21246.960000000006,
+      "converged": true,
+      "cg_iterations": 1634,
+      "compliance_Nmm": 3.6684162882338223,
+      "max_displacement_mm": 0.08629225719676219,
+      "max_displacement_at": [
+        80.28224919924091,
+        -0.03736021388684607,
+        0.0
+      ],
+      "von_mises_max_MPa": 6.087392238742467,
+      "von_mises_p99_5_MPa": 2.3297239793990134,
+      "stress_concentration_ratio": 2.6129242316133947,
+      "failure_index_max": 0.12989924226543367,
+      "failure_index_p99_5": 0.04573382137379116,
+      "failure_criterion": "max_stress_material_axes",
+      "material_axes": {
+        "build_axis": "Y",
+        "raster_axis": null,
+        "stiffness": "orthotropic",
+        "card_id": "pla_generic_fff_orthotropic_v1"
+      },
+      "min_safety_factor": 7.698274312921847,
+      "safety_factor_p99_5": 21.86565587482426,
+      "mesh": {
+        "thin_section_mm": 7.850559144452616,
+        "typical_section_mm": 7.850559144452616,
+        "elements_across_thin": 12.0,
+        "elements_across_typical": 12.0
+      },
+      "warnings": [],
+      "checks": [
+        {
+          "name": "strength",
+          "required": "safety factor >= 3.00",
+          "got": "7.70 (worst element) / 21.87 (p99.5)",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "stiffness",
+          "required": "max deflection <= 0.500 mm",
+          "got": "0.086 mm",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "mesh resolution",
+          "required": ">= 3 elements across the thinnest section",
+          "got": "12.0 (thin 7.85 mm) / 12.0 (typical 7.85 mm)",
+          "pass": true,
+          "inspect": false
+        }
+      ],
+      "pass": true,
+      "hotspots": [
+        {
+          "pos": [
+            52.48,
+            1.6,
+            17.99
+          ],
+          "failure_index": 0.13,
+          "safety_factor": 7.7
+        },
+        {
+          "pos": [
+            52.48,
+            -1.67,
+            17.99
+          ],
+          "failure_index": 0.13,
+          "safety_factor": 7.7
+        },
+        {
+          "pos": [
+            -10.33,
+            1.6,
+            34.35
+          ],
+          "failure_index": 0.125,
+          "safety_factor": 8.01
+        },
+        {
+          "pos": [
+            -10.33,
+            -1.67,
+            34.35
+          ],
+          "failure_index": 0.125,
+          "safety_factor": 8.01
+        },
+        {
+          "pos": [
+            10.61,
+            1.6,
+            34.35
+          ],
+          "failure_index": 0.125,
+          "safety_factor": 8.01
+        }
+      ],
+      "case": "stand lifted by one rail at midspan with tube on it, x3 (70 N)",
+      "total_applied_load_N": [
+        0.0,
+        0.0,
+        -70.194
+      ],
+      "resultant_load_N": 70.194,
+      "material": "PLA",
+      "material_model": {
+        "material_model": "orthotropic_equivalent_solid",
+        "card_id": "pla_generic_fff_orthotropic_v1",
+        "classification": "conservative_literature_based_default",
+        "measured_for_specific_printer": false,
+        "solid_fraction_applied": 1.0,
+        "Ex_Ey_Ez_MPa": [
+          3000,
+          2400,
+          1500
+        ],
+        "Gxy_Gyz_Gzx_MPa": [
+          1000,
+          550,
+          550
+        ],
+        "strengths_MPa": {
+          "Xt": 50,
+          "Xc": 60,
+          "Yt": 35,
+          "Yc": 50,
+          "Zt": 22,
+          "Zc": 40,
+          "Sxy": 25,
+          "Syz": 15,
+          "Szx": 15
+        },
+        "source": "docs/FFF_PLA_PETG_orthotropic_material_reference.md section 5"
+      },
+      "solve_seconds": 51.3
+    }
+  ]
+}

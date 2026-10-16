@@ -1,0 +1,38 @@
+{
+  "units": {"length": "mm", "mass": "g"},
+  "mass_source": "User-provided mass per physical item, 2026-09-27; not inferred from CAD volume",
+  "items": [
+    {
+      "name": "おもりA",
+      "aliases": ["バラストA", "ballast A"],
+      "mass_g": 60,
+      "part": "parts/common/exterior/cots/ballast_plate",
+      "file": "ballast_plate_a.step",
+      "mesh_file": "ballast_plate_a.stl",
+      "dimensions_mm": [142, 19, 4]
+    },
+    {
+      "name": "おもりB",
+      "aliases": ["バラストB", "ballast B"],
+      "mass_g": 60,
+      "part": "parts/common/exterior/cots/ballast_plate",
+      "file": "ballast_plate_b.step",
+      "mesh_file": "ballast_plate_b.stl",
+      "dimensions_mm": [163.5, 16, 3],
+      "hole_d_mm": 5.5,
+      "hole_d_status": "provisional; M5 clearance through holes, actual diameter not measured"
+    },
+    {
+      "name": "おもりC",
+      "aliases": ["バラストC", "ballast C", "1kgのおもり"],
+      "mass_g": 1000,
+      "part": "parts/common/exterior/cots/ballast_c",
+      "file": "ballast_c.step",
+      "mesh_file": "ballast_c.stl",
+      "dimensions_mm": [48.5, 48.5, 76],
+      "head_d_mm": 48.5,
+      "head_d_status": "confirmed by user: same as body diameter",
+      "geometry_status": "reference model; head height and neck transitions provisional"
+    }
+  ]
+}

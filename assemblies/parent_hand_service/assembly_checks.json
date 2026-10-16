@@ -1,0 +1,16 @@
+[
+  {
+    "pose": "closed",
+    "items": 123,
+    "status": "PASS",
+    "bbox_tolerance_mm": 0.5,
+    "step_sha256": "2dfc32350388f0d01cd8dea3c06d492c4dd04800467b9694280665f9e23e1f74"
+  },
+  {
+    "pose": "service",
+    "items": 121,
+    "status": "PASS",
+    "bbox_tolerance_mm": 0.5,
+    "step_sha256": "381f94e7f8442ba501e0aba3b35f4e316a076cbd87206aacab13e52307786a6b"
+  }
+]

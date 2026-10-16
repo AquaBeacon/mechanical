@@ -1,0 +1,96 @@
+{
+  "method": "AABB candidate pairs, 3000 inset surface samples per direction, depth 0.1 mm; not a proof of no collision",
+  "pairs": [
+    {
+      "a": "plate",
+      "b": "gps_bridge",
+      "inside_samples": [
+        0,
+        0
+      ],
+      "nonwatertight_skipped": []
+    },
+    {
+      "a": "plate",
+      "b": "td04a_cable_d5",
+      "inside_samples": [
+        0,
+        0
+      ],
+      "nonwatertight_skipped": []
+    },
+    {
+      "a": "p_main",
+      "b": "td04a_cable_d5",
+      "inside_samples": [
+        0,
+        0
+      ],
+      "nonwatertight_skipped": []
+    },
+    {
+      "a": "tx_improved",
+      "b": "gps_bridge",
+      "inside_samples": [
+        0
+      ],
+      "nonwatertight_skipped": [
+        "tx_improved"
+      ]
+    },
+    {
+      "a": "spresense",
+      "b": "td04a_cable_d5",
+      "inside_samples": [
+        0,
+        0
+      ],
+      "nonwatertight_skipped": []
+    },
+    {
+      "a": "lipo_tray",
+      "b": "pen_tether",
+      "inside_samples": [
+        1,
+        14
+      ],
+      "nonwatertight_skipped": []
+    },
+    {
+      "a": "lipo_tray",
+      "b": "pen_td04a",
+      "inside_samples": [
+        0,
+        0
+      ],
+      "nonwatertight_skipped": []
+    },
+    {
+      "a": "lipo_tray",
+      "b": "td04a_cable_d5",
+      "inside_samples": [
+        0,
+        0
+      ],
+      "nonwatertight_skipped": []
+    },
+    {
+      "a": "lipo",
+      "b": "td04a_cable_d5",
+      "inside_samples": [
+        0,
+        0
+      ],
+      "nonwatertight_skipped": []
+    },
+    {
+      "a": "main_spacer_1",
+      "b": "td04a_cable_d5",
+      "inside_samples": [
+        0,
+        0
+      ],
+      "nonwatertight_skipped": []
+    }
+  ]
+}

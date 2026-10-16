@@ -1,0 +1,44 @@
+__pycache__/
+*.pyc
+*.csg
+
+# OSS workspace: local environments, credentials and scratch artifacts
+.env
+.env.*
+!.env.example
+.local/
+.claude/
+.agents/
+.openai/
+.codex_tmp/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+.venv-mcp/
+.pio/
+.deps/
+node_modules/
+**/.history/
+**/*-backups/
+*.kicad_prl
+*.blend1
+*.blend2
+Thumbs.db
+.DS_Store
+_work/
+*.csg
+*.FCStd1
+/result.json
+/print_jobs/
+
+# Solver working data; reports, studies, source models and summaries stay available.
+*.frd
+*.12d
+*.cvg
+*.sta
+*_mesh.inp
+
+# Saved vendor web page contains embedded web-service configuration; use the source link.
+/parts/parent/interior/cots/spresense_logger/ref/sony_imu_product.html

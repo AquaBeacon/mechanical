@@ -1,0 +1,27 @@
+{
+  "consumer": "child_vtray_batt_floor",
+  "references": [
+    {
+      "part": "child_vtray_batt_box",
+      "path": "parts/child/interior/printed/child_vtray_batt_box",
+      "md_sha256": "e8e6042607978ee732d2e90d9ae61a3c7c5cd0860ea3c3553c39b5f577c4bd91",
+      "stl_sha256": "3491edb584acb870d9b83436f8158906542ac6eb8fb6140d2f73e519ea10aabd",
+      "bbox_mm": [
+        54.0,
+        33.0,
+        119.5
+      ],
+      "status_at_lock": [
+        "needs_measure",
+        "obsolete"
+      ],
+      "values": {
+        "service_x": 22.5,
+        "service_z": 16.0
+      },
+      "confirmed_by_human": true,
+      "confirmed_at": "2026-09-27T15:43:00",
+      "note": "Confirmed t200 battery bay; 2026-09-27 support-reduction revision, unchanged service interface"
+    }
+  ]
+}

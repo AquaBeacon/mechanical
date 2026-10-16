@@ -1,0 +1,89 @@
+part                         nearest                          gap  status
+vtray_deck                   rail_screw_x-41.7_z37           0.00  ok
+vtray_rib_bot                vtray_deck                      0.24  ok
+vtray_rib_top                vtray_deck                      0.22  ok
+rib_stop_screw_bot           vtray_deck                      0.08  ok
+rib_stop_screw_top           vtray_deck                      0.21  ok
+cable_rail_power             rail_screw_x30.3_z77            0.05  ok
+cable_rail_signal            rail_screw_x-41.7_z77           0.04  ok
+vtray_batt_box               lipo_foam_side_n                0.02  ok
+vtray_batt_floor             vtray_batt_box                  0.03  ok
+lipo                         lipo_foam_top                   0.01  ok
+child_main                   harness_xh4_prs                 0.04  ok
+child_pwr                    vtray_deck                      0.02  ok
+rx_improved_mini             rx_spacer_p_z136.5              0.01  ok
+pwr_screw_p_z130             child_pwr                       0.09  ok
+pwr_screw_p_z184             vtray_deck                      0.09  ok
+pwr_screw_n_z130             vtray_deck                      0.09  ok
+pwr_screw_n_z184             vtray_deck                      0.06  ok
+batt_box_screw_p_z32         vtray_deck                      0.01  ok
+batt_box_screw_p_z110        vtray_deck                      0.03  ok
+batt_box_screw_n_z32         vtray_deck                      0.02  ok
+batt_box_screw_n_z110        vtray_deck                      0.01  ok
+rail_screw_x30.3_z37         vtray_deck                      0.03  ok
+rail_screw_x30.3_z77         vtray_deck                      0.03  ok
+rail_screw_x41.7_z37         vtray_deck                      0.03  ok
+rail_screw_x41.7_z77         vtray_deck                      0.02  ok
+rail_screw_x-41.7_z37        vtray_deck                      0.00  ok
+rail_screw_x-41.7_z77        vtray_deck                      0.01  ok
+rail_screw_x-30.3_z37        vtray_deck                      0.01  ok
+rail_screw_x-30.3_z77        vtray_deck                      0.01  ok
+batt_floor_screw             vtray_batt_floor                0.10  ok
+rx_spacer_p_z136.5           vtray_deck                      0.01  ok
+rx_screw_top_p_z136.5        vtray_deck                      0.02  ok
+rx_screw_bot_p_z136.5        rx_spacer_p_z136.5              0.03  ok
+rx_spacer_p_z177.5           rx_improved_mini                0.02  ok
+rx_screw_top_p_z177.5        vtray_deck                      0.02  ok
+rx_screw_bot_p_z177.5        rx_spacer_p_z177.5              0.03  ok
+rx_spacer_n_z136.5           vtray_deck                      0.02  ok
+rx_screw_top_n_z136.5        vtray_deck                      0.01  ok
+rx_screw_bot_n_z136.5        rx_spacer_n_z136.5              0.02  ok
+rx_spacer_n_z177.5           vtray_deck                      0.01  ok
+rx_screw_top_n_z177.5        vtray_deck                      0.01  ok
+rx_screw_bot_n_z177.5        rx_spacer_n_z177.5              0.03  ok
+flange_spacer_p              vtray_deck                      0.05  ok
+flange_screw_p               vtray_deck                      0.03  ok
+flange_spacer_n              vtray_deck                      0.05  ok
+flange_screw_n               vtray_deck                      0.01  ok
+flange_screw_y               vtray_rib_bot                   6.98  FLOATING
+lipo_foam_top                lipo                            0.01  ok
+lipo_foam_side_p             vtray_batt_box                  0.05  ok
+lipo_foam_side_n             vtray_batt_box                  0.02  ok
+lipo_foam_end_bot            lipo                            0.04  ok
+lipo_foam_end_top            vtray_batt_box                  0.02  ok
+harness_xh9_pwr              child_main                      0.06  ok
+harness_xh6_rx               harness_xh3_teth                0.05  ok
+harness_xh3_teth             harness_xh4_temp                0.01  ok
+harness_xh4_temp             harness_xh3_teth                0.01  ok
+harness_xh2_leak             harness_xh4_temp                0.04  ok
+harness_xh4_prs              child_main                      0.04  ok
+harness_bat                  child_pwr                       0.04  ok
+harness_led                  harness_xh6_rx                  0.08  ok
+
+penetrations (surface samples inside the other part):
+  harness_xh4_prs <-> harness_bat: depth ~3.59 mm
+  harness_xh4_temp <-> harness_bat: depth ~2.91 mm
+  harness_xh3_teth <-> harness_bat: depth ~2.83 mm
+  harness_xh2_leak <-> harness_bat: depth ~2.78 mm
+  child_main <-> harness_xh3_teth: depth ~2.74 mm
+  child_main <-> harness_xh4_temp: depth ~2.73 mm
+  child_main <-> harness_xh6_rx: depth ~2.69 mm
+  child_main <-> harness_xh2_leak: depth ~2.66 mm
+  harness_xh2_leak <-> harness_led: depth ~2.39 mm
+  harness_xh4_prs <-> harness_led: depth ~2.32 mm
+  harness_xh3_teth <-> harness_led: depth ~2.31 mm
+  harness_xh4_temp <-> harness_led: depth ~2.27 mm
+  harness_bat <-> harness_led: depth ~2.26 mm
+  harness_xh6_rx <-> harness_led: depth ~2.23 mm
+  lipo <-> harness_bat: depth ~2.17 mm
+  harness_xh6_rx <-> harness_xh2_leak: depth ~2.17 mm
+  child_pwr <-> harness_led: depth ~2.14 mm
+  harness_xh6_rx <-> harness_xh3_teth: depth ~2.01 mm
+  child_pwr <-> harness_bat: depth ~1.88 mm
+  harness_xh6_rx <-> harness_xh4_temp: depth ~1.83 mm
+  harness_xh4_temp <-> harness_xh2_leak: depth ~1.69 mm
+  harness_xh3_teth <-> harness_xh4_temp: depth ~1.65 mm
+  child_main <-> harness_xh4_prs: depth ~1.38 mm
+  rx_improved_mini <-> harness_xh6_rx: depth ~1.36 mm
+  harness_xh3_teth <-> harness_xh2_leak: depth ~1.35 mm
+  rx_improved_mini <-> harness_led: depth ~1.33 mm

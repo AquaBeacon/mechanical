@@ -1,0 +1,60 @@
+{
+    "error_string": "Success.",
+    "export_time": 303,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 16,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Brim": 39.65802001953125,
+                "Custom": 35.10275650024414,
+                "Gap infill": 107.38389587402344,
+                "Inner wall": 3601.91748046875,
+                "Outer wall": 1147.0419921875,
+                "Top surface": 23.50161361694336,
+                "Travel": 618.0092163085938,
+                "Undefined": 602.7080078125
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFG00",
+                    "id": 1,
+                    "main_used_g": 24.38195037841797,
+                    "total_used_g": 24.38195037841797
+                }
+            ],
+            "generate_support_material_time": 50,
+            "id": 1,
+            "infill_time": 9,
+            "layer_filament_change": 0,
+            "main_predication": 5537.62060546875,
+            "make_perimeters_time": 68,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 19.750001907348633,
+                        "height": 81.0,
+                        "width": 65.0,
+                        "x": 95.5,
+                        "y": 118.12500762939453,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "child_simple_light_mount_cap.stl",
+                    "triangle_count": 1188
+                }
+            ],
+            "sliced_time": 519,
+            "sliced_time_with_cache": 348,
+            "total_predication": 5557.3916015625,
+            "triangle_count": 1188,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 100.0,
+    "wall_loops": 8
+}

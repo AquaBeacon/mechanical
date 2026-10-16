@@ -1,0 +1,2 @@
+旧ボックスのユーザー保存3MF。形状改訂後の印刷一式には用いない。parts/battery_base.3mfからバイト列を変更せず移動し履歴を保持した。設定は3MF内に保持。
+SHA-256: 6ea581dd15886c785e30ebe2279b49ead4bf6b4ace5a364a0b2027aea59d0cc0

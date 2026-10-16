@@ -1,0 +1,11 @@
+﻿# suffix  variant=
+# 子機内装ハーネス9種。1本 = 1バリアント (child_harness.scad の variant 分岐)
+xh9_pwr   variant="xh9_pwr"
+xh6_rx    variant="xh6_rx"
+xh7_lcd   variant="xh7_lcd"
+xh3_teth  variant="xh3_teth"
+xh4_temp  variant="xh4_temp"
+xh2_leak  variant="xh2_leak"
+xh4_prs   variant="xh4_prs"
+bat       variant="bat"
+led       variant="led"

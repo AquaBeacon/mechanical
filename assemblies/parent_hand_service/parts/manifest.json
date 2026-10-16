@@ -1,0 +1,768 @@
+{
+  "schema_version": 1,
+  "assembly": "parent_hand_service",
+  "release_status": "fit_check_prototype",
+  "note": "2026-10-13 全長側溝版：電池台と蓋を各1個再印刷。蓋を配線側の端から両側の全長溝へ108 mm差し込み、M3×12ねじ／M3ナット各1個で固定する。箱内で全長分を引き出せないため、電源リードを外し、台の固定ねじ4本を外して閉じたボックスを上へ約90 mm持ち上げ、蓋ねじ1本を外して引き抜く。基板を外す必要はない。最下段、MAIN固定板、同軸巻き部と工具穴8 mmは維持。電池台はprint_jobs/battery_side_grooves_20261013/battery_base.3mfをプロジェクトとして開く。ナット座と側溝の支持材禁止設定済み。STLの場合はmodifiers内の支持材禁止パーツ2個を同梱座標で追加し、単体印刷しない。蓋は上面をベッドへ向けた同梱姿勢。9種類各1個、PETG0.2 mm・4周壁・100%インフィル。旧2 mmフック版の電池台／蓋を混ぜない。実印刷でバリ、嵌合と締付けを確認する。",
+  "source_hashes": {
+    "assemblies/parent_hand_service/battery_box_report.md": "fbfe1b585716279a0d8ef698e00f34db508b5440c40afd0cf159ea2562627063",
+    "assemblies/parent_hand_service/battery_side_grooves_report.md": "b97153625a520d41f307e46c24fd2267ba9094c2eb79cb09af53252f29b4e9e7",
+    "assemblies/parent_hand_service/battery_slide_lid_report.md": "62a0a6a320f8b9ff4f58f268657bd000b0928196f383b6cd022244bcbc8d10c4",
+    "assemblies/parent_hand_service/battery_tool_nut_access_report.md": "f45b8ed9fd5328cdc3af35abf337fc08c930f137b7dde7f955fc82f5f475db22",
+    "assemblies/parent_hand_service/case_screw_access_report.md": "bb43a30ba8537b6ff1c2e41870ea860688efbcd614ce8e842f28d46474284437",
+    "assemblies/parent_hand_service/fixed_plate_report.md": "0a608630001d97d8e1a5d139b9944c5c36fd47d499068aceb24c5c98a9df9a0a",
+    "assemblies/parent_hand_service/manufacturing_parts.json": "f0d127982dabde1f4ccec950e2de57a4ea3974eaccc58380b1ea147ecfe8c8ed",
+    "assemblies/parent_hand_service/placement.json": "deb1c84fe369dbc9788f32781ea2c54b404f1e4cee30dbabdb24276fa64cc850",
+    "assemblies/parent_hand_service/print_config.json": "65fc4adf9b8d5e86cbcea7c7175372a1972a40cd3ba1b0ad82f42030579797b8",
+    "assemblies/parent_hand_service/README.md": "23f88fb851dc4d7eb6380f849097279780a347986bf9a32fe0098b10fad28385",
+    "assemblies/parent_hand_service/sensor_mount_report.md": "855f5b8794dcb32d351da9dfc86a19840f344b396e543059963e6b4951ce4e0f",
+    "docs/配線・ケーブル計画.md": "c5ffab02575d1f68923aaf052b365ea35a2938bdc3f7b6bcce3e9f077944c829",
+    "parts/child/interior/printed/child_vtray_batt_floor/child_vtray_batt_floor.scad": "614300f65c6bc6cdaf22c5b4792dbe5bb5d86677b4a3bfa967cfed868039e4a5",
+    "parts/common/interior/printed/stack_spacers/manufacturing.json": "e9601370bda65dac54a9d16e8586ba89ff2146cab3c0029bbdcc84b69f97933f",
+    "parts/common/interior/printed/stack_spacers/parent_stack_spacer_set.scad": "0e2b9142e061d109aa0c86512cc2c920bcac2ebd0592bde4caeb6ac119179505",
+    "parts/common/interior/printed/stack_spacers/README.md": "fc4577d18868426677ec2da230f217b1f48de595e2c8229f94200fb6af0d42d8",
+    "parts/common/interior/printed/stack_spacers/set_members.json": "a6760d6d35a82b0ddbba17fa846c0b5fbf4746d83703ff47d158c4a2255b1ff6",
+    "parts/common/interior/printed/stack_spacers/sony_column_left.scad": "ad61ce27406029bd0fc0922e254b669986574ebf4604f9827ba467a811b792f5",
+    "parts/common/interior/printed/stack_spacers/sony_column_right.scad": "ba9b9caa9759a0e75b9ce063fa695dd8cfffc79d1711b1d32d68e3755d5c610c",
+    "parts/parent/exterior/cots/bcas212310g/dimensions.json": "f070658bad2cb983cfcbc173279b7a6da66995f358b9d029048ffbfa72777826",
+    "parts/parent/exterior/cots/bcas212310g/interior_corner_clearance.step": "e22877442924c29740b42ea7621bb3d61de448c12362a52e9daf426943d099aa",
+    "parts/parent/interior/cots/adafruit_lis3mdl/ref/4479 LIS3MDL.step": "c4f99b42dffbf9073f59ed23670fb9752e3769bc5bfe8cf60dde1a10fad72330",
+    "parts/parent/interior/cots/adafruit_lis3mdl/ref/Adafruit LIS3MDL.brd": "f523605d96d38dfca2605413e568af36d6d32d1b53cb8780d04d1a0aa01a6749",
+    "parts/parent/interior/cots/sparkfun_neo_f9p/ref/NEO-F9P.STEP": "be35ebd8a1b4f57e0b93f239879642951560ddd67c93f60f33ff4573ef3d9ba9",
+    "parts/parent/interior/cots/sparkfun_neo_f9p/ref/SparkFun NEO-F9P.brd": "e3a10973490075832eec4a60651cb8d69c0142f023a055bdb23870d537e168e8",
+    "parts/parent/interior/printed/ann_mb1_internal_rack/ann_mb1_coax_ring.scad": "33debbd4d15d3f69988c9f76909f970767397a27b0a0d14c0d24629a4c59e28f",
+    "parts/parent/interior/printed/ann_mb1_internal_rack/ann_mb1_internal_rack.scad": "95bfa434778d04607d827d970346594ede46a61198e2b99edcb6c4b160b100c4",
+    "parts/parent/interior/printed/ann_mb1_internal_rack/manufacturing.json": "955798c5162f32f3e0fac279148f9de2b6cc9a26a216ddc01c582b6084df57c3",
+    "parts/parent/interior/printed/ann_mb1_internal_rack/README.md": "13f890d9215f1e04142c27dee1dc9dd7a57bba3c633f895c7e3dd63e266bff79",
+    "parts/parent/interior/printed/ann_mb1_internal_rack/stored_prop_rail.scad": "52d315ca31e5078788f476bfca4fa9d4fe18e0d7fc53542162274a17fd917d5f",
+    "parts/parent/interior/printed/gnss_universal_carrier/gnss_column_front.scad": "dd2a7154847c00e3c2c74d311b4022235a9a8ca35b22258d019631817df19ec9",
+    "parts/parent/interior/printed/gnss_universal_carrier/gnss_column_front.step": "62889132d19ae678a4648693e94eb7afaa61ce84c89646b3361151682ea12477",
+    "parts/parent/interior/printed/gnss_universal_carrier/gnss_column_rear.scad": "f7fde78884d7c5446bb6ae95cc49a146c09d98b765e714e818c57b3c0a4b7f94",
+    "parts/parent/interior/printed/gnss_universal_carrier/gnss_column_rear.step": "1aa233e310a312d16e505d4976cb1fa4b84a8998d68fcc062c9454caeebbb966",
+    "parts/parent/interior/printed/gnss_universal_carrier/gnss_edge_cap.scad": "a11230b8ddbdc7248bc76982797308e186afd79c47a9e49c4195dde9f3ba6be2",
+    "parts/parent/interior/printed/gnss_universal_carrier/gnss_edge_cap_front.scad": "b12f5a836f71b68885967264e87af6201dc950b0d4da206f49a26c04f1432366",
+    "parts/parent/interior/printed/gnss_universal_carrier/gnss_universal_carrier.scad": "f918e0c6f4f03e40a6f0fe1ebaa547c4e1712821ea5a0c7693227a3e930d50a9",
+    "parts/parent/interior/printed/gnss_universal_carrier/manufacturing.json": "7957edbb35eab309230299d8c2f62a7a65accf16bbdf20d85bd2b10f650d76e3",
+    "parts/parent/interior/printed/gnss_universal_carrier/README.md": "01924fedd4347608f84259dcd998d065cbfcd28296384c1a46628658d0bcb352",
+    "parts/parent/interior/printed/parent_hand_service/battery_base.scad": "3093f4aec0b999294e2a9d801cccf06e9dc9e98575e9a7c116b204804b11f09e",
+    "parts/parent/interior/printed/parent_hand_service/floor_plate.scad": "09c6aebf38b29ed4b1993721209f669fde7287367d9cb5f19d2092b712446774",
+    "parts/parent/interior/printed/parent_hand_service/guide_0.scad": "eee6c30bb1d8f6a9bf55771d68d310c32d83d9b53eb5a7832989095a7852f14f",
+    "parts/parent/interior/printed/parent_hand_service/guide_1.scad": "29e04562a4216a8bd759d231d4f154008de915965c99195ce9161d18b6c85c79",
+    "parts/parent/interior/printed/parent_hand_service/guide_2.scad": "0fd6a4aaeaf4c72ed68094b9a93442b25558fa4139c5c96662c20f2064693a05",
+    "parts/parent/interior/printed/parent_hand_service/guide_3.scad": "723a5a2552dadc388289cd43019c500fe81ef3d759d29c8921a76f6275db57e9",
+    "parts/parent/interior/printed/parent_hand_service/lid_keepout.scad": "4b6f5bf84a0f68990fbbdc1690f31729e5e048f5729147c4b46e47c9c25c90b5",
+    "parts/parent/interior/printed/parent_hand_service/lift_carrier.scad": "2a40f69ee4155cb93783dd55c627b72c28c913cc06bf689131f21d76bb118d44",
+    "parts/parent/interior/printed/parent_hand_service/main_corner_column.scad": "ee28774309b78acbacb82066624f879ffd2105371583c4943023e599e42d9e05",
+    "parts/parent/interior/printed/parent_hand_service/main_corner_column.step": "dcd77102bed06da88fdf88cc8ded374f27514b06947aba9b7450153a116c56bf",
+    "parts/parent/interior/printed/parent_hand_service/main_lower_carrier.scad": "04b33a40e87a7646f00cf001b89d92772aa2b434ba553f571a85ee11958e955c",
+    "parts/parent/interior/printed/parent_hand_service/main_mount_plate.scad": "9991c61a23fbb3b1f7c8c8c8b5544a2015c860a4c09ad21b41782b595351aaa8",
+    "parts/parent/interior/printed/parent_hand_service/main_offset_corner.scad": "bafcabd728f566a3f296d2230bb7da611bce3f88c6f4e8c4784e79c63b6c9fde",
+    "parts/parent/interior/printed/parent_hand_service/manufacturing.json": "63ea8370e1c85dddd4edb520621d233783a6f028d5c19558f0cbb4ac1f7cdd03",
+    "parts/parent/interior/printed/parent_hand_service/README.md": "e990173a550cdabcc9383dc5a9442233abd3fb2e63ea980705dc7fe2c9778e3f",
+    "parts/parent/interior/printed/parent_hand_service/service_prop_0.scad": "25df925372ef8d51870c716a500b3ecd74e9e367f37313a9df408b26db34e210",
+    "parts/parent/interior/printed/parent_hand_service/service_prop_1.scad": "4b9ba34f1ef677ef895e113801793e8b0bac1971c6e17cbad7447cb7d89b0bf9",
+    "parts/parent/interior/printed/parent_hand_service/service_prop_2.scad": "c7e9ba262a2f79388c192e7f9bdc2326a1dfcd00666b980e77280cb8d4fec763",
+    "parts/parent/interior/printed/parent_hand_service/service_prop_3.scad": "d1cafb5e227f1499c5f27b04b425dfff87f86eb3b84405f8987084ea00e07adb",
+    "parts/parent/interior/printed/parent_hand_service/service_prop_4.scad": "c96996739f17df2e599239ca9be03166c8bf304c1d269bf11a0e2aac0b1cb701",
+    "parts/parent/interior/printed/parent_hand_service/sony_corner_0.scad": "96a72b2be58624b0a2d52f78568938785204965dab6e4bf514d6b079906fc86a",
+    "parts/parent/interior/printed/parent_hand_service/sony_corner_1.scad": "e1c05be22aa84f52cb8db773cc8b556b7607aca848463e3edb36e90c0de5ff80",
+    "parts/parent/interior/printed/parent_hand_service/sony_corner_2.scad": "e234ca260a3307210e88d6083d6695d0af44289970e2fbe81250e40428a7558e",
+    "parts/parent/interior/printed/parent_hand_service/sony_corner_3.scad": "5a43d40f521d3733f914d2d2e027eff5acdf0994b1633b330cc8255dadbe8096",
+    "parts/parent/interior/printed/parent_hand_service/sony_mount_plate.scad": "3fd73cd5d97c236873fb26226e8da34b9ef3467bbbe45d5958a81728f61df227",
+    "parts/parent/interior/printed/parent_hand_service/sony_upper_carrier.scad": "c315e9ad557b6f7344aecdb795bde6853c84a919c96efc3af77682b487a1e749",
+    "parts/parent/interior/printed/parent_hand_service/stop_pin_0.scad": "99e0e3e371a6cdc087a9ef2a30620d1c4e11f4fb66415f0767e346527fa69ecb",
+    "parts/parent/interior/printed/parent_hand_service/stop_pin_1.scad": "3990bd0c5b6c40d16c0c29ff5fcbb205dfdef17fe662a2ca713ee4325ab48fd1",
+    "parts/parent/interior/printed/parent_hand_service/stop_pin_2.scad": "a94e1bbd0a58516f95ddbbbb3436cf3496a92e14c257022549bcbfc8c37a970e",
+    "parts/parent/interior/printed/parent_hand_service/stop_pin_3.scad": "8e789493aa290f9fb3e0a5042fbe6383c204ee1f960497493d05740a2af8337d",
+    "parts/parent/interior/printed/parent_hand_service/storage_strap_0.scad": "09577e57cf1b4c3b5699e664e7ced54be51f5ddf841641ee372ee228c4246570",
+    "parts/parent/interior/printed/parent_hand_service/storage_strap_1.scad": "ba4d5c95e5428a5638e5af41b1a54d65bd710d3b857f7bfce4543ca878c643a9",
+    "parts/parent/interior/printed/parent_hand_service/tie_rod_0_0.scad": "841a6433602ffc170f2233c8035f2c7054fabf80ecd55cb69e58217b3c46cef0",
+    "parts/parent/interior/printed/parent_hand_service/tie_rod_0_1.scad": "62f9dc3900a2f76c97b737ae0ed1f9c3c647a73f4d241abe6a2d31961531445a",
+    "parts/parent/interior/printed/parent_hand_service/tie_rod_1_0.scad": "d444f6f48f22f43e7d6dcd1455922ba1209e45a8275d1f910b44b25d21907363",
+    "parts/parent/interior/printed/parent_hand_service/tie_rod_1_1.scad": "011dc0cc620d101df777d3570934b1bc49fe5ca1727be8e71d78cb959ad1b6af",
+    "parts/parent/interior/printed/parent_hand_service/tie_rod_2_0.scad": "f028058039012e6e64b0f4203bf9ffbd16eba1b7058a7eb73b85223faa185cf7",
+    "parts/parent/interior/printed/parent_hand_service/tie_rod_2_1.scad": "99f8a59597c0ae494291c956bdf6f9ba526c2452ede0980b47f47b7b4f1341a0",
+    "parts/parent/interior/printed/parent_hand_service/tie_rod_3_0.scad": "5754fee0e9c9bf794cc98fb7dd7991ee608d1b43950b730c75e4451ff5919678",
+    "parts/parent/interior/printed/parent_hand_service/tie_rod_3_1.scad": "3585f75802b5149e7c1b8d8274be459a73f787a33cc3a918db61bd5dfcdd1948",
+    "parts/parent/interior/printed/parent_hand_service/tie_rod_4_0.scad": "7d5a842907765f658988607261da127e92db6f70ea1e1aa910a2e8ddcced4f44",
+    "parts/parent/interior/printed/parent_hand_service/tie_rod_4_1.scad": "5eaf26762ef0811270beac055a5d521a45621358cdcd86035bf4f3447d82064f",
+    "parts/parent/interior/printed/parent_hand_service/tx_top_keepout.scad": "aecc0252fdcdd6fd62a0f9f778e39df05d9b5601f114f8b41873a9249d3d9797",
+    "parts/parent/interior/printed/parent_lipo_retainer/manufacturing.json": "2d52d3af2c465807d83420bc147d98ab27b28dd3df1cb7f6b9eabe7a6c090cbb",
+    "parts/parent/interior/printed/parent_lipo_retainer/parent_lipo_retainer.md": "b7e9f0010de41d7ff7af2645fb31cb62ff6906ab73589148f6144332756c90f3",
+    "parts/parent/interior/printed/parent_lipo_retainer/parent_lipo_retainer.scad": "77ebb2a70163bfbc4574022debee8f2901c0bab3d5b6bda8c1305da9ee854757",
+    "parts/parent/interior/printed/parent_lipo_retainer/parent_lipo_retainer_lid_slide.scad": "733d8d777576f4909ff4a8221a9287bc31abe8ed8708c514f821eedfdbf66a94",
+    "scad/lib/cad_edge_finish.py": "57da8201cdcc9d0990857594e194e8acd13234f1182c808c9e5b84888f57c1f4",
+    "scad/lib/child_interior_mounts.scad": "ef9f0865bd61bc8ebc9421d1a189db73c38257c5e49adeef2acb3ee204ec0990",
+    "scad/lib/parent_battery_slide.py": "833d8302e75c4339afa8c72e014eeaab2f4ad2b39f39f5aca82d53288707a97e",
+    "scad/lib/parent_case_access.py": "e584ab90e0c46352472e01df1490f49a4300a7ae6c2b33489d302d2836c9f5f7",
+    "scad/lib/parent_corner_mounts.py": "661ec2bb971151c758f6d30f7d89880588cbd58b0b2dcdbabc78c0ca9ed007c1",
+    "scad/lib/parent_gnss.py": "226ae188ab5498e9f0aed233f60abb653b2275ee3b426a891c623fdfd12c93d3",
+    "spec/build_bcas212310g.py": "86d144abbd37250f0a0a4b456be13b86b9bc61d0ef270938451c7222f12467ab",
+    "spec/build_parent_gnss.py": "7852387da224e3f588a98d5483615dc24823c8477ac677cb47ebce3190a66743",
+    "spec/build_parent_hand_service.py": "9f1c8619210f0ad52d7aea72b3072dc4c2abca89c166be7d2c5c0568bad782d2",
+    "spec/build_parent_stack_spacers.py": "7b5659af9b48ebceb9082bc3f37e273b50c66ac047c20e03b84a836692863acd",
+    "spec/export_parent_lipo_retainer.py": "effd66ac91847daafde467ad9439dd8915e6ca7578d14f8be494af41871632cd",
+    "spec/parent_switch_tx_body.py": "886719246e4221c79dd8a15e16fc4cc53ac5f006fb8acad5d66e383d0125eab6",
+    "spec/prepare_parent_lipo_retainer.py": "f0a58672aaa56167a88873e989d13ec4ed5b6c5e6491ea5b5d42f565bd1bcb2c",
+    "spec/remesh_parent_gnss_outputs.py": "531908a3dc0e7f2fc85a63aa5c49002d5077ed8b4099eb2732f87326005ed8b8"
+  },
+  "parts": [
+    {
+      "part": "parts/parent/interior/printed/parent_hand_service",
+      "stem": "floor_plate",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "plate"
+      ],
+      "file": "floor_plate.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/interior/printed/parent_hand_service/floor_plate.stl",
+      "source_sha256": "4b46f40ca07589f87a2ee18f7bd24196069de564b1639b800297d86125dc1070",
+      "sha256": "146ea79013c57c8b786bc6b3dc227a0ad91fa5a720de981354b649da1ae9d64d",
+      "extents_mm": [
+        195.95,
+        212.75,
+        19.41
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -7.800000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -11.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -8.84000015258789
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/interior/printed/parent_hand_service",
+      "stem": "battery_base",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "lipo_tray"
+      ],
+      "file": "battery_base.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/interior/printed/parent_hand_service/battery_base.stl",
+      "source_sha256": "936c39fda25aee63dfcd8e35c9d332d0215f891cffd8675a4ca975d261e61817",
+      "sha256": "0a152f546801904d39c9f40e6b2e461815f4314bb9b916821bb530f980eefb48",
+      "extents_mm": [
+        110.4,
+        63.5,
+        29.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          3.4000000953674316
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          4.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.1024848528838902e-15
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/interior/printed/parent_lipo_retainer",
+      "stem": "parent_lipo_retainer_lid_slide",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "lipo_ret_lid"
+      ],
+      "file": "parent_lipo_retainer_lid_slide.stl",
+      "rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/interior/printed/parent_lipo_retainer/parent_lipo_retainer_lid_slide.stl",
+      "source_sha256": "af79a9d89e22d5e6bddedffd4d48e51fc68905b2e820e6f0eda939b20da82034",
+      "sha256": "5b666400bd13ac411d46bd744780edf764f6f28d50d55d3277c298baf2f9b769",
+      "extents_mm": [
+        107.4,
+        48.9,
+        6.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          3.4000000953674316
+        ],
+        [
+          0.0,
+          -1.0,
+          -1.2246467991473532e-16,
+          49.900001525878906
+        ],
+        [
+          0.0,
+          1.2246467991473532e-16,
+          -1.0,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/interior/printed/parent_hand_service",
+      "stem": "main_mount_plate",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "main_mount_plate"
+      ],
+      "file": "main_mount_plate.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/interior/printed/parent_hand_service/main_mount_plate.stl",
+      "source_sha256": "7639af6081be7052184feb9d2621a4f5b3472ffc752cb49c0d8989c9743533c2",
+      "sha256": "0be783cd582d8603ede266386d611e3e738aabd66d145085631dbdf00013b5fc",
+      "extents_mm": [
+        111.5,
+        97.9993,
+        8.85
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -17.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -13.000730514526367
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -33.099998474121094
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/interior/printed/parent_hand_service",
+      "stem": "sony_mount_plate",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "sony_mount_plate"
+      ],
+      "file": "sony_mount_plate.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/interior/printed/parent_hand_service/sony_mount_plate.stl",
+      "source_sha256": "9ab22013b9590743ba07d6797f893b04feb5263ad82ec425854128e8121cd7b2",
+      "sha256": "65ecb41e2c285b0d644b216e1cc3aa8b56fed39d3fb2eabaca3eb1964e458ba7",
+      "extents_mm": [
+        63.9995,
+        83.9991,
+        5.05
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -140.50047302246094
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -131.00047302246094
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -60.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/interior/printed/gnss_universal_carrier",
+      "stem": "gnss_universal_carrier",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "gnss_universal_carrier"
+      ],
+      "file": "gnss_universal_carrier.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/interior/printed/gnss_universal_carrier/gnss_universal_carrier.stl",
+      "source_sha256": "aa916a9d1516a73e311d67718f32866ff34ec0203198fab412f9eef76794cc86",
+      "sha256": "6cfb0eb902fdddd2743fd5b7f3ac8404a4c99814cde3dcb5d5dd7b497ed9fd02",
+      "extents_mm": [
+        131.0,
+        87.0,
+        7.3
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -135.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -50.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/interior/printed/ann_mb1_internal_rack",
+      "stem": "ann_mb1_internal_rack",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "antenna_rack"
+      ],
+      "file": "ann_mb1_internal_rack.stl",
+      "rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/interior/printed/ann_mb1_internal_rack/ann_mb1_internal_rack.stl",
+      "source_sha256": "323ba7a0157a125327484f5242bef8813ef3866dd0856c927a35246b59525d0f",
+      "sha256": "e17ae0b4a11d1fab0320f39bddf910c2dbe496590c2791329f0f4922cd8208f7",
+      "extents_mm": [
+        129.9995,
+        78.0,
+        42.6
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          51.999507904052734
+        ],
+        [
+          0.0,
+          -1.0,
+          -1.2246467991473532e-16,
+          39.00000000000001
+        ],
+        [
+          0.0,
+          1.2246467991473532e-16,
+          -1.0,
+          44.799999237060554
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/interior/printed/ann_mb1_internal_rack",
+      "stem": "ann_mb1_coax_ring",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "coax_ring"
+      ],
+      "file": "ann_mb1_coax_ring.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/interior/printed/ann_mb1_internal_rack/ann_mb1_coax_ring.stl",
+      "source_sha256": "0102c6e6ea98a764b2404428cd26da77514904b5daef3a5c625346c606beee1c",
+      "sha256": "713c22f50ded3f3d5e3e170e06fff3df2106fa3f74587edb6fc772899535ee4a",
+      "extents_mm": [
+        131.0,
+        105.9924,
+        14.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          53.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          52.996517181396484
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5126788710517758e-15
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/common/interior/printed/stack_spacers",
+      "stem": "parent_stack_spacer_set",
+      "shape": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "print_runner_12_spacers"
+      ],
+      "file": "parent_stack_spacer_set.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/common/interior/printed/stack_spacers/parent_stack_spacer_set.stl",
+      "source_sha256": "a792430437a0ebd76c7e08796716b9deb5dcc0de8d814e9231da2a856e11b620",
+      "sha256": "b36243a650d4923be7d7923d030b3b884fe4c88d10866910dbed4dbf14a94893",
+      "extents_mm": [
+        188.0,
+        16.5,
+        42.5
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    }
+  ],
+  "modifiers": [
+    {
+      "host": "battery_base",
+      "source": "parts/parent/interior/printed/parent_hand_service/battery_lid_nut_support_blocker.stl",
+      "file": "modifiers/battery_lid_nut_support_blocker.stl",
+      "host_file": "battery_base.stl",
+      "source_sha256": "1a26659250ef6243ce53e2437e063acff61770a4de1f000e788b6cb8d1c6396c",
+      "sha256": "e8d2c1ba18f4fc147327860240cd213bb70b4960ce6b55d1f739faeae55926f9"
+    },
+    {
+      "host": "battery_base",
+      "source": "parts/parent/interior/printed/parent_hand_service/battery_slide_rail_support_blocker.stl",
+      "file": "modifiers/battery_slide_rail_support_blocker.stl",
+      "host_file": "battery_base.stl",
+      "source_sha256": "69633d9b93177b843c9c3520f800f3f6dc95192da92c21d50f80fb013762e8a6",
+      "sha256": "f3c1cc1756267511faf9315adb2f751fdaff00cacb026fdeca87afa74f97cda0"
+    }
+  ],
+  "generated_files": [
+    "floor_plate.stl",
+    "battery_base.stl",
+    "parent_lipo_retainer_lid_slide.stl",
+    "main_mount_plate.stl",
+    "sony_mount_plate.stl",
+    "gnss_universal_carrier.stl",
+    "ann_mb1_internal_rack.stl",
+    "ann_mb1_coax_ring.stl",
+    "parent_stack_spacer_set.stl",
+    "modifiers/battery_lid_nut_support_blocker.stl",
+    "modifiers/battery_slide_rail_support_blocker.stl",
+    "DESIGN_NOTES.md",
+    "PRINT.md"
+  ],
+  "document_hashes": {
+    "DESIGN_NOTES.md": "4e365f32f757c916460f4472ab5bf00694f7f84fed0710e12a01c7f6d88b0f7f",
+    "PRINT.md": "898a7a0328b3171e56e37db68c80cdeecf777e87ddba88ddb676cb94ad9c45ad"
+  }
+}

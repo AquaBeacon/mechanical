@@ -1,0 +1,26 @@
+grid 66 x 63 x 86 at 3.000 mm (origin [-98.89, -117.0, -26.0])
+
+density field child_core_frame_v5_study at 3.0000 mm voxel, 66x63x86
+thresholds: 0.40, 0.50, 0.60
+
+level       volume  SF p99.5  SF worst    max mm   min thk   down A  verdict
+0.40        404865      8.55      2.13     0.747     6.00*    22320  FAIL: mesh resolution (2.0 (thin 6.00 mm) / 2.0 (typical 6.0
+0.50        400707      8.24      2.16     0.757     6.00*    22293  FAIL: mesh resolution (2.0 (thin 6.00 mm) / 2.0 (typical 6.0
+0.60        396144      8.06      2.15     0.777     6.00*    21996  FAIL: mesh resolution (2.0 (thin 6.00 mm) / 2.0 (typical 6.0
+  * grid-limited: min thickness is exactly 2 x voxel, i.e. the finest the grid can hold. Not a measurement of the structure.
+
+finish (interface at CAD dimensions, 0.50 mm grid)
+  finish  + interfaces          1522137 cells (+31248.0 mm3)
+  finish  - features           27704908 cells (38250.0 mm3)
+  finish  -> child_core_frame_v5_study_t40_finish.stl (39744 triangles at 0.500 mm)
+
+wrote threshold 0.40 to 03_optimization
+  stl         03_optimization\child_core_frame_v5_study_t40.stl
+  smooth_stl  03_optimization\child_core_frame_v5_study_t40_smooth.stl
+  step        03_optimization\child_core_frame_v5_study_t40.step
+  finish_stl  03_optimization\child_core_frame_v5_study_t40_finish.stl
+
+chosen threshold 0.40 -- no candidate passes every check; this is the strongest of the connected ones and is NOT a pass. Outstanding: mesh resolution (2.0 (thin 6.00 mm) / 2.0 (typical 6.00 mm), required >= 3 elements across the thinnest section)
+
+NEXT: this is still not a part. Interface dimensions are quantised to 3.000 mm. Rebuild them as parametric CAD and prove it carries the load with:
+  topopt compare 03_optimization <rebuild>.stl --study child_core_frame_v5_study.json

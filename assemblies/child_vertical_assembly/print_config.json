@@ -1,0 +1,18 @@
+{
+  "status": "existing_prototype",
+  "note": "電池ナット締結・印刷根元補強版。ケースM3×12＋普通M3ナット4組、床板M3×10皿＋普通M3ナット1組、前側フランジM3×16。ナットは二面幅5.5／厚2.4 mm。ケース・床板・ブレース100%、デッキ通常15%／根元100%、壁8周。床板の容器すきまは公称0.71 mm、仮組みを確認。強度試験未実施。 2026-10-04: RXクランプは左右連結4個。小部品を減らし、フランジ梁のくびれ・床板窓・ケース耳を補強。連結クランプ100%充填。配線はクランプ外側へ迂回。 2026-10-06:軸径4 mmの工具で組立順を指定。左右フランジMF10のオス突出長は現物確認待ち（CAD6 mm／取付記録4〜5 mm）。 2026-10-07：未使用ケーブルレール2本と固定ねじ8本を撤去。デッキの既存穴は残置（使用不要）。バッテリーの普通M3ナット5個は横差しポケットに収まり、樹脂との重なり・横挿入・床板着脱の122検査で干渉なし。ナットの熱圧入や造形途中の埋込みは不要。",
+  "modifiers": [
+    {
+      "host": "child_vtray_deck_t200",
+      "source": "spec/child_interior_reinforcement/pla_matte_lever/root_dense_modifier.stl"
+    }
+  ],
+  "notes": [
+    "spec/child_interior_reinforcement/PLA_MATTE_REVISION.md",
+    "spec/child_interior_reinforcement/SERVICE_REVISION.md",
+    "spec/child_interior_reinforcement/M3_SUPPORT_REVISION.md",
+    "spec/child_interior_reinforcement/BOLTED_MOUNT_REVISION.md",
+    "spec/child_interior_reinforcement/PRINT_STRENGTH_REVISION.md",
+    "spec/child_interior_reinforcement/FASTENER_ASSEMBLY.md"
+  ]
+}

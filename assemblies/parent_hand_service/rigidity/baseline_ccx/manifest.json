@@ -1,0 +1,69 @@
+{
+  "schema": "topopt/manifest/1",
+  "tool": {
+    "name": "topopt",
+    "version": "1.0.0"
+  },
+  "command": {
+    "name": "ccx",
+    "argv": [
+      "Body_Models/assemblies/parent_hand_service/rigidity/baseline_carrier.stl",
+      "--study",
+      "Body_Models/assemblies/parent_hand_service/rigidity/baseline_study.json",
+      "--out",
+      "Body_Models/assemblies/parent_hand_service/rigidity/baseline_ccx",
+      "--mesh-mm",
+      "4",
+      "--converge"
+    ],
+    "line": "ccx Body_Models/assemblies/parent_hand_service/rigidity/baseline_carrier.stl --study Body_Models/assemblies/parent_hand_service/rigidity/baseline_study.json --out Body_Models/assemblies/parent_hand_service/rigidity/baseline_ccx --mesh-mm 4 --converge",
+    "cwd": "C:\\Users\\ryupc\\WorkSpace\\Mitou26"
+  },
+  "run": {
+    "started_utc": "2026-09-26T13:57:31Z",
+    "finished_utc": "2026-09-26T14:04:01Z",
+    "seconds": 390.63,
+    "exit_code": null,
+    "exit_code_meaning": null
+  },
+  "source": {
+    "git_commit": "57541b1feb77cf083f5656a8ec85ee27448cfd18",
+    "git_dirty": true
+  },
+  "environment": {
+    "python": "3.13.5",
+    "python_full": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "packages": {
+      "numpy": "2.4.2",
+      "scipy": "1.18.0",
+      "matplotlib": "3.10.8",
+      "skimage": "0.26.0",
+      "pytest": "9.1.1",
+      "torch": "2.12.0+cu130"
+    },
+    "external_tools": {
+      "freecad": null,
+      "calculix": null,
+      "gmsh": null,
+      "openscad": null
+    }
+  },
+  "inputs": [
+    {
+      "path": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\assemblies\\parent_hand_service\\rigidity\\baseline_carrier.stl",
+      "bytes": 193684,
+      "sha256": "0b22cfdbb190b61374c1aca318fec95076f09450633d33d6f94639d9dc5273b6"
+    },
+    {
+      "path": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\assemblies\\parent_hand_service\\rigidity\\baseline_study.json",
+      "bytes": 15806,
+      "sha256": "f98d1ab185a9e81448a40bfd93c175368636841e6f129e52701339b9db1df471"
+    }
+  ],
+  "random_seed": null,
+  "random_seed_note": "no seed was declared by the study. The voxel path is deterministic (uniform initial density, OC update, CG solve), so a seed is not currently required for reproducibility.",
+  "crashed": true,
+  "crashed_note": "the command raised instead of returning an exit code; outputs in this directory may be partial"
+}

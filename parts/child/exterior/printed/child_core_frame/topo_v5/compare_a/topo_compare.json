@@ -1,0 +1,94 @@
+{
+  "voxel_mm": 3.0,
+  "optimum_voxels": 14841,
+  "rebuild_voxels": 16188,
+  "overlap": 8835,
+  "missing": 6006,
+  "extra": 7353,
+  "fea": [
+    {
+      "shape": "optimum shape",
+      "case": "L1 hoist 3g: lugs fixed, container + guard + gate weights down",
+      "deflection_mm": 0.749005081638245,
+      "compliance_Nmm": 66.98225294961136,
+      "safety_factor": 8.26378916319112
+    },
+    {
+      "shape": "optimum shape",
+      "case": "L2s transport side hit 300 N (+X on back wall and lugs), container reacts",
+      "deflection_mm": 0.05686175421578383,
+      "compliance_Nmm": 8.041645212249158,
+      "safety_factor": 52.26893897082041
+    },
+    {
+      "shape": "optimum shape",
+      "case": "L2h transport landing on the hinge side (300 N +X through the knuckles), container reacts",
+      "deflection_mm": 0.6790177573335525,
+      "compliance_Nmm": 106.4357830658359,
+      "safety_factor": 9.986046185686856
+    },
+    {
+      "shape": "optimum shape",
+      "case": "L2r transport rear hit 300 N on the back wall (+Y), container reacts",
+      "deflection_mm": 0.1450149400457838,
+      "compliance_Nmm": 14.117367652761445,
+      "safety_factor": 40.32264367921214
+    },
+    {
+      "shape": "optimum shape",
+      "case": "L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands",
+      "deflection_mm": 0.1110176128490527,
+      "compliance_Nmm": 48.972293059011065,
+      "safety_factor": 14.79425892088927
+    },
+    {
+      "shape": "optimum shape",
+      "case": "L5 landing 600 N up through the guard bosses, container reacts",
+      "deflection_mm": 0.0056993514840658595,
+      "compliance_Nmm": 0.4181732205151678,
+      "safety_factor": 73.84079736974715
+    },
+    {
+      "shape": "rebuild",
+      "case": "L1 hoist 3g: lugs fixed, container + guard + gate weights down",
+      "deflection_mm": 0.8677630754528715,
+      "compliance_Nmm": 26.565843317721075,
+      "safety_factor": 15.820729564559617
+    },
+    {
+      "shape": "rebuild",
+      "case": "L2s transport side hit 300 N (+X on back wall and lugs), container reacts",
+      "deflection_mm": 1.749836140704929,
+      "compliance_Nmm": 179.4667693767834,
+      "safety_factor": 4.401506452026943
+    },
+    {
+      "shape": "rebuild",
+      "case": "L2h transport landing on the hinge side (300 N +X through the knuckles), container reacts",
+      "deflection_mm": 6.280583669465944,
+      "compliance_Nmm": 883.8260370850497,
+      "safety_factor": 2.1050512612204555
+    },
+    {
+      "shape": "rebuild",
+      "case": "L2r transport rear hit 300 N on the back wall (+Y), container reacts",
+      "deflection_mm": 1.7776204570607173,
+      "compliance_Nmm": 296.21478635899894,
+      "safety_factor": 4.313681339525277
+    },
+    {
+      "shape": "rebuild",
+      "case": "L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands",
+      "deflection_mm": 0.4700294070989537,
+      "compliance_Nmm": 150.88340042489776,
+      "safety_factor": 5.992141189759151
+    },
+    {
+      "shape": "rebuild",
+      "case": "L5 landing 600 N up through the guard bosses, container reacts",
+      "deflection_mm": 0.009476102484892475,
+      "compliance_Nmm": 0.5542093594252433,
+      "safety_factor": 59.04056156000819
+    }
+  ]
+}

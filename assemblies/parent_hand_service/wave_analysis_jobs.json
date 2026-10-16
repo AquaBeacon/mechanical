@@ -1,0 +1,14 @@
+{
+  "floor_plate": [
+    "simple_stack_final",
+    "ccx_screen_h3_circle16"
+  ],
+  "main_carrier": [
+    "print_economy_adjusted",
+    "ccx_screen_h3_circle16"
+  ],
+  "sony_carrier": [
+    "simple_stack",
+    "ccx_screen_h3_circle16"
+  ]
+}

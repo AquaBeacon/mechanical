@@ -1,0 +1,356 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "label": "main_column_0",
+      "missing_member_mm3": 0.0,
+      "neck_probe_mm3": 0.0990000000000002,
+      "pass_": true
+    },
+    {
+      "label": "main_column_1",
+      "missing_member_mm3": 0.0,
+      "neck_probe_mm3": 0.09900000000000037,
+      "pass_": true
+    },
+    {
+      "label": "main_column_2",
+      "missing_member_mm3": 0.0,
+      "neck_probe_mm3": 0.09900000000000037,
+      "pass_": true
+    },
+    {
+      "label": "main_column_3",
+      "missing_member_mm3": 0.0,
+      "neck_probe_mm3": 0.09900000000000037,
+      "pass_": true
+    },
+    {
+      "label": "sony_column_0",
+      "missing_member_mm3": 0.0,
+      "neck_probe_mm3": 0.09899999999999971,
+      "pass_": true
+    },
+    {
+      "label": "sony_column_1",
+      "missing_member_mm3": 0.0,
+      "neck_probe_mm3": 0.09899999999999971,
+      "pass_": true
+    },
+    {
+      "label": "sony_column_2",
+      "missing_member_mm3": 0.0,
+      "neck_probe_mm3": 0.09899999999999971,
+      "pass_": true
+    },
+    {
+      "label": "sony_column_3",
+      "missing_member_mm3": 0.0,
+      "neck_probe_mm3": 0.09899999999999971,
+      "pass_": true
+    },
+    {
+      "label": "gnss_column_0",
+      "missing_member_mm3": 0.0,
+      "neck_probe_mm3": 0.09899999999999942,
+      "pass_": true
+    },
+    {
+      "label": "gnss_column_1",
+      "missing_member_mm3": 0.0,
+      "neck_probe_mm3": 0.09899999999999942,
+      "pass_": true
+    },
+    {
+      "label": "gnss_column_2",
+      "missing_member_mm3": 0.0,
+      "neck_probe_mm3": 0.09899999999999971,
+      "pass_": true
+    },
+    {
+      "label": "gnss_column_3",
+      "missing_member_mm3": 0.0,
+      "neck_probe_mm3": 0.09899999999999971,
+      "pass_": true
+    },
+    {
+      "label": "floor_nut_continuous_support_0",
+      "outer_ring_case_relief_mm3": 0.0,
+      "missing_vertical_path_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "missing_above_boss_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pass_": true
+    },
+    {
+      "label": "floor_nut_continuous_support_1",
+      "outer_ring_case_relief_mm3": 0.0,
+      "missing_vertical_path_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "missing_above_boss_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pass_": true
+    },
+    {
+      "label": "floor_nut_continuous_support_2",
+      "outer_ring_case_relief_mm3": 0.0,
+      "missing_vertical_path_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "missing_above_boss_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pass_": true
+    },
+    {
+      "label": "floor_nut_continuous_support_3",
+      "outer_ring_case_relief_mm3": 0.0,
+      "missing_vertical_path_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "missing_above_boss_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pass_": true
+    },
+    {
+      "label": "floor_nut_continuous_support_4",
+      "outer_ring_case_relief_mm3": 0.0,
+      "missing_vertical_path_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "missing_above_boss_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pass_": true
+    },
+    {
+      "label": "floor_nut_continuous_support_5",
+      "outer_ring_case_relief_mm3": 0.0,
+      "missing_vertical_path_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "missing_above_boss_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pass_": true
+    },
+    {
+      "label": "floor_nut_continuous_support_6",
+      "outer_ring_case_relief_mm3": 0.0,
+      "missing_vertical_path_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "missing_above_boss_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pass_": true
+    },
+    {
+      "label": "floor_nut_continuous_support_7",
+      "outer_ring_case_relief_mm3": 0.0,
+      "missing_vertical_path_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "missing_above_boss_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pass_": true
+    },
+    {
+      "label": "floor_nut_continuous_support_8",
+      "outer_ring_case_relief_mm3": 0.0,
+      "missing_vertical_path_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "missing_above_boss_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pass_": true
+    },
+    {
+      "label": "floor_nut_continuous_support_9",
+      "outer_ring_case_relief_mm3": 0.0,
+      "missing_vertical_path_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "missing_above_boss_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pass_": true
+    },
+    {
+      "label": "floor_nut_continuous_support_10",
+      "outer_ring_case_relief_mm3": 0.0,
+      "missing_vertical_path_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "missing_above_boss_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pass_": true
+    },
+    {
+      "label": "floor_nut_continuous_support_11",
+      "outer_ring_case_relief_mm3": 0.0,
+      "missing_vertical_path_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "missing_above_boss_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pass_": true
+    },
+    {
+      "label": "floor_nut_continuous_support_12",
+      "outer_ring_case_relief_mm3": 0.0,
+      "missing_vertical_path_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "missing_above_boss_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pass_": true
+    },
+    {
+      "label": "floor_nut_continuous_support_13",
+      "outer_ring_case_relief_mm3": 0.0,
+      "missing_vertical_path_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "missing_above_boss_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pass_": true
+    },
+    {
+      "label": "floor_nut_continuous_support_14",
+      "outer_ring_case_relief_mm3": 1.0134376912442797,
+      "missing_vertical_path_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.030159289474461892
+      ],
+      "missing_above_boss_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pass_": true
+    },
+    {
+      "label": "floor_nut_continuous_support_15",
+      "outer_ring_case_relief_mm3": 0.0,
+      "missing_vertical_path_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "missing_above_boss_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pass_": true
+    }
+  ],
+  "connected_before": 1,
+  "separate_after": 13,
+  "notes": [
+    "1.2 x 0.4 mm side necks, nominal two 0.2 mm layers; actual printed break force unmeasured.",
+    "Cut flush at the side; no sacrificial connection on bearing/key/bore faces.",
+    "MAIN/PWR/TX/battery/antenna integral spacers are already printable supports; no purchased hex spacer used."
+  ]
+}

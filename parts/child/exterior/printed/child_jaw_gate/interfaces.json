@@ -1,0 +1,249 @@
+{
+  "consumer": "child_jaw_gate",
+  "references": [
+    {
+      "part": "wte4_end_cap_5xm10",
+      "path": "parts/child/exterior/cots/wte4_end_cap_5xm10",
+      "md_sha256": "67ecb1b5914bab96033bbe8c209b23be703d618b5287f794dc5861756c87ff83",
+      "stl_sha256": null,
+      "bbox_mm": null,
+      "status_at_lock": [
+        "needs_measure"
+      ],
+      "values": {
+        "cap_od": 120.3,
+        "cap_z0": -13.8,
+        "cap_z1": -8.0
+      },
+      "confirmed_by_human": true,
+      "confirmed_at": "2026-09-05T00:21:20",
+      "note": "人間確認 2026-08-02: R5 エンドキャップ段差を形状で捕捉する方針をユーザ指示。リム寸法は STL 実測値 [2026-09-05 再ロック: 改善実装後の md 更新に追従]"
+    },
+    {
+      "part": "wte4_dome_cap",
+      "path": "parts/child/exterior/cots/wte4_dome_cap",
+      "md_sha256": "650a17fea041a53dc6845782c2732a68d24edd3864cfab671ad98697b3764bf8",
+      "stl_sha256": null,
+      "bbox_mm": null,
+      "status_at_lock": [
+        "needs_measure",
+        "not_bought",
+        "not_designed",
+        "provisional"
+      ],
+      "values": {
+        "dome_ring_od": 120.3,
+        "dome_ring_t": 6.5
+      },
+      "confirmed_by_human": true,
+      "confirmed_at": "2026-09-05T00:21:21",
+      "note": "人間確認 2026-08-02: 上側はドーム押えリングを捕捉。リング寸法は未購入につき仮値 — 要実測 [2026-09-05 再ロック: 改善実装後の md 更新に追従]"
+    },
+    {
+      "part": "child_core_frame",
+      "path": "parts/child/exterior/printed/child_core_frame",
+      "md_sha256": "2946fb7f4eea0cd3bb975d017e711e5801ed2b026ee7582424470be4ea54d59a",
+      "stl_sha256": "7db4d45a80aa293e9907deeb1b41e1b4ebbe1fdba52f52be615c3e50e04045f4",
+      "bbox_mm": [
+        152.0,
+        128.0,
+        235.5
+      ],
+      "status_at_lock": [
+        "needs_measure",
+        "provisional"
+      ],
+      "values": {
+        "hinge_x": -72.0,
+        "hinge_y": 10.0,
+        "latch_hx": 62.0,
+        "r_in": 58.35,
+        "shell_t": 6.0
+      },
+      "confirmed_by_human": false,
+      "confirmed_at": "2026-09-06T04:27:35",
+      "note": "2026-09-06 再ロック (人間確認待ち): コア v5 md の最終更新に追従。値は不変"
+    }
+  ],
+  "provides": {
+    "note": "この部品が他部品に配る値。相手側 .scad と二重定義になるので片方だけ直さない。v2 (2026-09-06) で構造は作り直したが、ここに並ぶ取合い値は v1 と同一。",
+    "hardpoints": [
+      {
+        "id": "HP4",
+        "standard": "HP40",
+        "face": "front seat plate",
+        "normal": [
+          0,
+          1,
+          0
+        ],
+        "center_mm": [
+          0,
+          74.35,
+          170
+        ],
+        "insert": "M5 heatset D6.4x9 x4 @ (+-20, y 74.35..65.35, z 150/190)",
+        "cable_hole_d": null,
+        "arrow": "なし (hp40_arrow は STEP 規約で呼ばない)",
+        "seat_plate": "x -25..25, y 68.35..74.35, z 145..195 (t6) + インサートボス D12 x 12",
+        "consumers": [
+          "child_cam_bridge"
+        ]
+      },
+      {
+        "id": "HP5",
+        "standard": "HP40",
+        "face": "front seat plate",
+        "normal": [
+          0,
+          1,
+          0
+        ],
+        "center_mm": [
+          0,
+          74.35,
+          100
+        ],
+        "insert": "M5 heatset D6.4x9 x4 @ (+-20, y 74.35..65.35, z 80/120)",
+        "cable_hole_d": null,
+        "arrow": "なし",
+        "seat_plate": "x -25..25, y 68.35..74.35, z 75..125 (t6) + インサートボス D12 x 12",
+        "consumers": [
+          "child_cam_bridge"
+        ]
+      },
+      {
+        "id": "HP-L",
+        "standard": "HP40",
+        "face": "front seat plate",
+        "normal": [
+          0,
+          1,
+          0
+        ],
+        "center_mm": [
+          0,
+          74.35,
+          15
+        ],
+        "insert": "M5 heatset D6.4x9 x4 @ (+-20, y 74.35..65.35, z -5/35)",
+        "cable_hole_d": 14,
+        "arrow": "なし",
+        "seat_plate": "x -25..25, y 68.35..74.35, z -10..40 (t6) + インサートボス D12 x 12",
+        "note": "v2: 座の裏は中空 (縦キール x +-17..23 のみ)。中央 D14 ケーブル穴は座面板 t6 を貫通し、キール間の空間へ抜ける (v1 は座ブロックの中で止まっていた)",
+        "consumers": [
+          "user light clamp"
+        ]
+      }
+    ],
+    "mating_plane": {
+      "with": "child_core_frame",
+      "plane": "y = 0",
+      "rule": "jaw_gate は y<0 に材料を出さない。r<=64.35 の y>=0 側だけを占める"
+    },
+    "hinge": {
+      "pin_axis_xy_mm": [
+        -72,
+        10
+      ],
+      "pin_d_mm": 5.0,
+      "pin_hole_d_mm": 5.4,
+      "pin_length_mm": "約 240 (購入品: D5 ステンレス棒 or M5 長ボルト)",
+      "gate_knuckles_z_mm": [
+        [
+          -17,
+          13
+        ],
+        [
+          85.5,
+          115.5
+        ],
+        [
+          188,
+          218
+        ]
+      ],
+      "core_knuckles_z_mm": [
+        [
+          13.4,
+          85.1
+        ],
+        [
+          115.9,
+          187.6
+        ]
+      ],
+      "knu_od_mm": 16,
+      "clearance_mm": 0.4,
+      "arm_block": "x -80..-50 (内腔で実効 -80..-57), y 0..18, 各ナックルの z 範囲 30mm ぶんだけ (v1 の全高フランジ板は廃止)",
+      "pin_counterbore": "D10 x 4 @ 最上ナックル頂面 z 218 (実用の抜け止めはゲート側)",
+      "consumers": [
+        "child_core_frame"
+      ]
+    },
+    "latch": {
+      "bolt": "M5 ノブボルト x2 (頭 D16)、軸 = Y",
+      "axis_xz_mm": [
+        [
+          62,
+          40
+        ],
+        [
+          62,
+          170
+        ]
+      ],
+      "through_hole_d_mm": 5.4,
+      "knob_head_pocket": "D18 x 深さ12、前面 y=16 から -Y (底は 45deg コーン)",
+      "knob_insertion_channel": "D24、x 62 中心、y >= 16、z 40/170 中心 — **ここに材料を置いてはならない** (v1 はシェルで塞がっていた)",
+      "flange_plate": "x 52..72 (内腔で実効 57..72), y 0..16, 全高 z -17..218",
+      "consumers": [
+        "child_core_frame"
+      ]
+    },
+    "pockets": {
+      "bore_r_mm": 58.35,
+      "outer_r_mm": 64.35,
+      "pocket_r_mm": 60.9,
+      "bottom_pocket_z_mm": [
+        -14.3,
+        -7.5
+      ],
+      "top_pocket_z_mm": [
+        207.5,
+        215.0
+      ],
+      "cone": "45deg、高さ 2.55",
+      "gate_z_mm": [
+        -17,
+        218
+      ],
+      "bands_z_mm": [
+        [
+          -17,
+          6
+        ],
+        [
+          92,
+          108
+        ],
+        [
+          200,
+          218
+        ]
+      ],
+      "note": "v2: 半殻はこの 3 帯だけ。帯間の殻と窓 x4 は廃止 (最適化の結果)",
+      "consumers": [
+        "child_core_frame",
+        "child_guard_ring"
+      ]
+    },
+    "bridge_keepout": {
+      "with": "child_cam_bridge",
+      "inner": "|x| < 27 かつ y >= 64.35 かつ z 42.3..74 は空ける (デッキ + キール + 離隔 2.65)",
+      "outer": "|x| >= 27 かつ y >= 64.35 かつ z 42.3..167.05 は空ける (後ウェブ + カメラケース)",
+      "note": "v2 の縦キール (x +-17..23) は内側域の z 42.3..74 で y<=64.35 に切り欠かれ、上端に 45deg の立ち上がりが付く"
+    },
+    "note_v2": "2026-09-06 v2: トポロジー最適化 (topo_v1/) で 308.3 -> 211.5 cm3 (68.6%)。取合い値 (HP4/HP5/HP-L、ヒンジ、ラッチ、ポケット、合わせ面) は v1 と同一"
+  }
+}

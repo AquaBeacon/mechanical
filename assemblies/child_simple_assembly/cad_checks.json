@@ -1,0 +1,606 @@
+{
+  "revision": "r3_rear_light",
+  "parts": {
+    "child_simple_front": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 468915.1712120938
+    },
+    "child_simple_rear": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 519751.79771568626
+    },
+    "child_simple_guard": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 407878.4605835512
+    }
+  },
+  "contacts": [
+    {
+      "a": "acrylic_tube_200",
+      "b": "child_simple_front",
+      "intersection_mm3": 0.0,
+      "gap_mm": 1.1999999999995385,
+      "pass": true
+    },
+    {
+      "a": "acrylic_tube_200",
+      "b": "child_simple_rear",
+      "intersection_mm3": 0.0,
+      "gap_mm": 1.199999883542604,
+      "pass": true
+    },
+    {
+      "a": "acrylic_tube_200",
+      "b": "child_simple_guard",
+      "intersection_mm3": 0.0,
+      "gap_mm": 38.70927185202272,
+      "pass": true
+    },
+    {
+      "a": "flange_bot",
+      "b": "child_simple_front",
+      "intersection_mm3": 0.0,
+      "gap_mm": 1.1999999999999966,
+      "pass": true
+    },
+    {
+      "a": "flange_bot",
+      "b": "child_simple_rear",
+      "intersection_mm3": 0.0,
+      "gap_mm": 1.1999999999999769,
+      "pass": true
+    },
+    {
+      "a": "flange_bot",
+      "b": "child_simple_guard",
+      "intersection_mm3": 0.0,
+      "gap_mm": 36.21678950689949,
+      "pass": true
+    },
+    {
+      "a": "flange_top",
+      "b": "child_simple_front",
+      "intersection_mm3": 0.0,
+      "gap_mm": 1.199999999999987,
+      "pass": true
+    },
+    {
+      "a": "flange_top",
+      "b": "child_simple_rear",
+      "intersection_mm3": 0.0,
+      "gap_mm": 1.1999999999999906,
+      "pass": true
+    },
+    {
+      "a": "flange_top",
+      "b": "child_simple_guard",
+      "intersection_mm3": 0.0,
+      "gap_mm": 174.71983152231468,
+      "pass": true
+    },
+    {
+      "a": "end_cap_bottom",
+      "b": "child_simple_front",
+      "intersection_mm3": 0.0,
+      "gap_mm": 0.2999999999999998,
+      "pass": true
+    },
+    {
+      "a": "end_cap_bottom",
+      "b": "child_simple_rear",
+      "intersection_mm3": 0.0,
+      "gap_mm": 0.29999999999999716,
+      "pass": true
+    },
+    {
+      "a": "end_cap_bottom",
+      "b": "child_simple_guard",
+      "intersection_mm3": 0.0,
+      "gap_mm": 31.953981540101164,
+      "pass": true
+    },
+    {
+      "a": "dome_top",
+      "b": "child_simple_front",
+      "intersection_mm3": 0.0,
+      "gap_mm": 1.0,
+      "pass": true
+    },
+    {
+      "a": "dome_top",
+      "b": "child_simple_rear",
+      "intersection_mm3": 0.0,
+      "gap_mm": 1.0,
+      "pass": true
+    },
+    {
+      "a": "dome_top",
+      "b": "child_simple_guard",
+      "intersection_mm3": 0.0,
+      "gap_mm": 198.6872519237759,
+      "pass": true
+    },
+    {
+      "a": "child_simple_front",
+      "b": "child_simple_rear",
+      "intersection_mm3": 0.0,
+      "gap_mm": 0.0,
+      "pass": true
+    },
+    {
+      "a": "child_simple_front",
+      "b": "child_simple_guard",
+      "intersection_mm3": 0.0,
+      "gap_mm": 0.0,
+      "pass": true
+    },
+    {
+      "a": "child_simple_rear",
+      "b": "child_simple_guard",
+      "intersection_mm3": 0.0,
+      "gap_mm": 0.0,
+      "pass": true
+    }
+  ],
+  "hardware": [
+    {
+      "name": "mount_shaft_1_-20_80",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "mount_nut_tool_1_-20_80",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "mount_shaft_1_-20_120",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "mount_nut_tool_1_-20_120",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "mount_shaft_1_20_80",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "mount_nut_tool_1_20_80",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "mount_shaft_1_20_120",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "mount_nut_tool_1_20_120",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "mount_shaft_-1_-20_170",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "mount_nut_tool_-1_-20_170",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "mount_shaft_-1_-20_210",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "mount_nut_tool_-1_-20_210",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "mount_shaft_-1_20_170",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "mount_nut_tool_-1_20_170",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "mount_shaft_-1_20_210",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "mount_nut_tool_-1_20_210",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "mount_shaft_-1_-20_80",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "mount_nut_tool_-1_-20_80",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "mount_shaft_-1_-20_120",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "mount_nut_tool_-1_-20_120",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "mount_shaft_-1_20_80",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "mount_nut_tool_-1_20_80",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "mount_shaft_-1_20_120",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "mount_nut_tool_-1_20_120",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "split_bolt_-77_20",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "split_tool_-77_20_-1",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "split_tool_-77_20_1",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "split_bolt_-77_180",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "split_tool_-77_180_-1",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "split_tool_-77_180_1",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "split_bolt_77_20",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "split_tool_77_20_-1",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "split_tool_77_20_1",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "split_bolt_77_180",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "split_tool_77_180_-1",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "split_tool_77_180_1",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_M3x35_-100_-1_-7",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_nut_-100_-1_-7",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_washer_inner_-100_-1_-7",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_washer_outer_-100_-1_-7",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_nut_tool_-100_-1_-7",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_head_tool_-100_-1_-7",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_M3x35_-100_-1_5",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_nut_-100_-1_5",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_washer_inner_-100_-1_5",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_washer_outer_-100_-1_5",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_nut_tool_-100_-1_5",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_head_tool_-100_-1_5",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_M3x35_-100_1_-7",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_nut_-100_1_-7",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_washer_inner_-100_1_-7",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_washer_outer_-100_1_-7",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_nut_tool_-100_1_-7",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_head_tool_-100_1_-7",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_M3x35_-100_1_5",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_nut_-100_1_5",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_washer_inner_-100_1_5",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_washer_outer_-100_1_5",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_nut_tool_-100_1_5",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_head_tool_-100_1_5",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_M3x35_100_-1_-7",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_nut_100_-1_-7",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_washer_inner_100_-1_-7",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_washer_outer_100_-1_-7",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_nut_tool_100_-1_-7",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_head_tool_100_-1_-7",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_M3x35_100_-1_5",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_nut_100_-1_5",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_washer_inner_100_-1_5",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_washer_outer_100_-1_5",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_nut_tool_100_-1_5",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_head_tool_100_-1_5",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_M3x35_100_1_-7",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_nut_100_1_-7",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_washer_inner_100_1_-7",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_washer_outer_100_1_-7",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_nut_tool_100_1_-7",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_head_tool_100_1_-7",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_M3x35_100_1_5",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_nut_100_1_5",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_washer_inner_100_1_5",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_washer_outer_100_1_5",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_nut_tool_100_1_5",
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "guard_head_tool_100_1_5",
+      "intersection_mm3": 0.0,
+      "pass": true
+    }
+  ],
+  "bearing_seats": [
+    {
+      "x": -100,
+      "side": -1,
+      "area_mm2": 320,
+      "frame_volume": 6.3999999999998645,
+      "guard_volume": 6.399999999999864,
+      "pass": true
+    },
+    {
+      "x": -100,
+      "side": 1,
+      "area_mm2": 320,
+      "frame_volume": 6.3999999999998645,
+      "guard_volume": 6.3999999999998645,
+      "pass": true
+    },
+    {
+      "x": 100,
+      "side": -1,
+      "area_mm2": 320,
+      "frame_volume": 6.3999999999998645,
+      "guard_volume": 6.3999999999998645,
+      "pass": true
+    },
+    {
+      "x": 100,
+      "side": 1,
+      "area_mm2": 320,
+      "frame_volume": 6.399999999999864,
+      "guard_volume": 6.3999999999998645,
+      "pass": true
+    }
+  ],
+  "scope": "New frame against vessel; exposed bolts, nuts, tool access and four bearing shoulders. Includes rear light M3 40x40 interface. No actual cables or future mounts.",
+  "pass": true
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "file": "4479 LIS3MDL.step",
+    "url": "https://raw.githubusercontent.com/adafruit/Adafruit_CAD_Parts/main/4479%20LIS3MDL/4479%20LIS3MDL.step",
+    "sha256": "c4f99b42dffbf9073f59ed23670fb9752e3769bc5bfe8cf60dde1a10fad72330"
+  },
+  {
+    "file": "Adafruit LIS3MDL.brd",
+    "url": "https://raw.githubusercontent.com/adafruit/Adafruit-LIS3MDL-PCB/master/Adafruit%20LIS3MDL.brd",
+    "sha256": "f523605d96d38dfca2605413e568af36d6d32d1b53cb8780d04d1a0aa01a6749"
+  },
+  {
+    "file": "license.txt",
+    "url": "https://raw.githubusercontent.com/adafruit/Adafruit-LIS3MDL-PCB/master/license.txt",
+    "sha256": "075dad5e5fc96c27014fabc269f4f5732909cffd178a486f546d982b6cf86b74"
+  },
+  {
+    "file": "vendor_README.md",
+    "url": "https://raw.githubusercontent.com/adafruit/Adafruit-LIS3MDL-PCB/master/README.md",
+    "sha256": "d14582684cf777c4c669818006f99a1b726da4c192710379fd689f4d8f58d486"
+  }
+]

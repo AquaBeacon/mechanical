@@ -1,0 +1,6 @@
+{
+  "original_path": "assemblies\\child_interior\\parts\\child_flange_brace.3mf",
+  "retained_path": "assemblies\\child_interior\\print_jobs\\child_flange_brace.3mf",
+  "sha256": "2d8d1884cf43a195b0a9363d070f0d8bf4e54c1c6b07523e4f13e2d0aed02b6e",
+  "note": "Existing slicer project retained unchanged. STL revision and slicing settings not verified; reload current print STL before slicing."
+}

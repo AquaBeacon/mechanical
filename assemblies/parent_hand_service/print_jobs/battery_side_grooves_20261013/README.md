@@ -1,0 +1,1 @@
+Open each .3mf as a PROJECT in Bambu Studio. One battery base and one matching full-length slide lid. Base contains2 support blocker parts; do not print blockers. Keep stored orientations. See ../../parts/PRINT.md and ../../battery_side_grooves_report.md.

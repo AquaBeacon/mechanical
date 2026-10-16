@@ -1,0 +1,15 @@
+# <suffix> <var=value> ...
+# m3_mf25 = M3 male-female 25mm: P-MAIN holes x4 (parent_lipo_tray bridge) and p2 TX_improved elevation x4
+m3_mf25 size=3 body_l=25 stud_l=6
+# child interior (2026-08-28): LCD support arches on C-MAIN holes (left -22: 30mm, right +39.5: 17mm)
+m3_mf30 size=3 body_l=30 stud_l=6
+m3_mf17 size=3 body_l=17 stud_l=6
+# child interior: WTE4 bottom flange BCD94 -> child_vtray_deck anchor lugs x2
+m3_mf10 size=3 body_l=10 stud_l=6
+# child interior: RX_improved_mini hangs 6mm under the deck, M2 female-female x4
+m2_ff6 size=2 body_l=6 stud_l=0 kind="ff"
+
+# LCD-free crush-proof brace: right spacer shortened for pan-head access
+m3_mf15 size=3 body_l=15 stud_l=6
+
+m3_mf12 size=3 body_l=12 stud_l=6

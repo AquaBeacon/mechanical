@@ -1,0 +1,215 @@
+{
+  "schema": "topopt/fea-convergence/1",
+  "part": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\parts\\child\\exterior\\printed\\child_simple_guard\\child_simple_guard.stl",
+  "voxel_mm": [
+    4.0,
+    2.0,
+    1.0
+  ],
+  "cases": {
+    "landing_300N": {
+      "runs": [
+        {
+          "level": "coarse",
+          "target_mm": 4.0,
+          "elements": 6450,
+          "max_disp_mm": 0.37531286181737933,
+          "max_stress_MPa": 2.5485370857755134,
+          "p99_5_stress_MPa": 1.7572505941447956,
+          "safety_factor_p99_5": 23.756059735819694,
+          "min_safety_factor": 16.896515666627153,
+          "hotspot_xyz_mm": [
+            88.0,
+            -34.0,
+            -63.0
+          ]
+        },
+        {
+          "level": "medium",
+          "target_mm": 2.0,
+          "elements": 52000,
+          "max_disp_mm": 0.37504309955466864,
+          "max_stress_MPa": 3.353236366442932,
+          "p99_5_stress_MPa": 1.446853239963879,
+          "safety_factor_p99_5": 24.57097484988448,
+          "min_safety_factor": 12.382074795470547,
+          "hotspot_xyz_mm": [
+            -89.0,
+            -35.0,
+            -64.0
+          ]
+        },
+        {
+          "level": "fine",
+          "target_mm": 1.0,
+          "elements": 428320,
+          "max_disp_mm": 0.36655585927330037,
+          "max_stress_MPa": 4.386388000556274,
+          "p99_5_stress_MPa": 1.3555029529713123,
+          "safety_factor_p99_5": 26.821477144381323,
+          "min_safety_factor": 9.34934233848174,
+          "hotspot_xyz_mm": [
+            -88.5,
+            36.5,
+            -64.5
+          ]
+        }
+      ],
+      "verdict": {
+        "steps": [
+          {
+            "displacement_change": 0.00072,
+            "stress_change": 0.21453,
+            "hotspot_shift_mm": 177.00565
+          },
+          {
+            "displacement_change": 0.02315,
+            "stress_change": 0.06739,
+            "hotspot_shift_mm": 71.5035
+          }
+        ],
+        "tolerance": 0.05,
+        "hotspot_tolerance_mm": 2.0,
+        "pass": false,
+        "note": "the numbers settled but the hotspot moved 71.50 mm (allowed 2.00); the two meshes are not describing the same failure, so it is a property of the discretisation, not of the part"
+      }
+    },
+    "transport_X_300N": {
+      "runs": [
+        {
+          "level": "coarse",
+          "target_mm": 4.0,
+          "elements": 6450,
+          "max_disp_mm": 0.6769601849107505,
+          "max_stress_MPa": 6.566024850602659,
+          "p99_5_stress_MPa": 5.041930887146931,
+          "safety_factor_p99_5": 8.278264056081996,
+          "min_safety_factor": 3.3284481232847645,
+          "hotspot_xyz_mm": [
+            88.0,
+            30.0,
+            -7.0
+          ]
+        },
+        {
+          "level": "medium",
+          "target_mm": 2.0,
+          "elements": 52000,
+          "max_disp_mm": 0.7064448988014493,
+          "max_stress_MPa": 9.256276295517154,
+          "p99_5_stress_MPa": 4.729662974791076,
+          "safety_factor_p99_5": 7.718518898391151,
+          "min_safety_factor": 2.3441225927569183,
+          "hotspot_xyz_mm": [
+            87.0,
+            31.0,
+            -6.0
+          ]
+        },
+        {
+          "level": "fine",
+          "target_mm": 1.0,
+          "elements": 428320,
+          "max_disp_mm": 0.7246344304899495,
+          "max_stress_MPa": 15.754035020902215,
+          "p99_5_stress_MPa": 4.005995276914956,
+          "safety_factor_p99_5": 8.213716885686662,
+          "min_safety_factor": 1.4248365669725678,
+          "hotspot_xyz_mm": [
+            86.5,
+            29.5,
+            -5.5
+          ]
+        }
+      ],
+      "verdict": {
+        "steps": [
+          {
+            "displacement_change": 0.04174,
+            "stress_change": 0.06602,
+            "hotspot_shift_mm": 1.73205
+          },
+          {
+            "displacement_change": 0.0251,
+            "stress_change": 0.18065,
+            "hotspot_shift_mm": 1.65831
+          }
+        ],
+        "tolerance": 0.05,
+        "hotspot_tolerance_mm": 2.0,
+        "pass": false,
+        "note": "the answer is still moving with the mesh; it is a property of the discretisation, not of the part"
+      }
+    },
+    "transport_Y_300N": {
+      "runs": [
+        {
+          "level": "coarse",
+          "target_mm": 4.0,
+          "elements": 6450,
+          "max_disp_mm": 0.4281038899765271,
+          "max_stress_MPa": 4.747068053235356,
+          "p99_5_stress_MPa": 3.2912287553660264,
+          "safety_factor_p99_5": 10.065336509371273,
+          "min_safety_factor": 6.276284929185614,
+          "hotspot_xyz_mm": [
+            92.0,
+            -26.0,
+            -7.0
+          ]
+        },
+        {
+          "level": "medium",
+          "target_mm": 2.0,
+          "elements": 52000,
+          "max_disp_mm": 0.4041414998929376,
+          "max_stress_MPa": 7.070855400435062,
+          "p99_5_stress_MPa": 2.8046439183741287,
+          "safety_factor_p99_5": 12.412728371320506,
+          "min_safety_factor": 4.103019347890622,
+          "hotspot_xyz_mm": [
+            -91.0,
+            -29.0,
+            -6.0
+          ]
+        },
+        {
+          "level": "fine",
+          "target_mm": 1.0,
+          "elements": 428320,
+          "max_disp_mm": 0.40695332758867003,
+          "max_stress_MPa": 12.156631828083212,
+          "p99_5_stress_MPa": 2.3718471069826585,
+          "safety_factor_p99_5": 13.73365587191576,
+          "min_safety_factor": 2.6275394893586377,
+          "hotspot_xyz_mm": [
+            90.5,
+            -28.5,
+            -5.5
+          ]
+        }
+      ],
+      "verdict": {
+        "steps": [
+          {
+            "displacement_change": 0.05929,
+            "stress_change": 0.17349,
+            "hotspot_shift_mm": 183.02732
+          },
+          {
+            "displacement_change": 0.00691,
+            "stress_change": 0.18247,
+            "hotspot_shift_mm": 181.50138
+          }
+        ],
+        "tolerance": 0.05,
+        "hotspot_tolerance_mm": 2.0,
+        "pass": false,
+        "note": "the answer is still moving with the mesh; it is a property of the discretisation, not of the part"
+      }
+    }
+  },
+  "governing_case": "transport_X_300N",
+  "pass": false,
+  "note": "still moving with the mesh in: landing_300N (the numbers settled but the hotspot moved 71.50 mm (allowed 2.00); the two meshes are not describing the same failure, so it is a property of the discretisation, not of the part), transport_X_300N (the answer is still moving with the mesh; it is a property of the discretisation, not of the part), transport_Y_300N (the answer is still moving with the mesh; it is a property of the discretisation, not of the part)"
+}

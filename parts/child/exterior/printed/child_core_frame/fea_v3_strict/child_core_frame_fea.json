@@ -1,0 +1,443 @@
+{
+  "part": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\parts\\child\\exterior\\printed\\child_core_frame\\child_core_frame.stl",
+  "material": "PETG",
+  "pass": false,
+  "cases": [
+    {
+      "elements": 107813,
+      "voxel_mm": 1.63,
+      "volume_mm3": 466910.82631099987,
+      "converged": true,
+      "cg_iterations": 13864,
+      "compliance_Nmm": 12.353210836364179,
+      "max_displacement_mm": 0.3780659622919859,
+      "max_displacement_at": [
+        58.54999999999998,
+        -27.650000000000006,
+        -17.0
+      ],
+      "von_mises_max_MPa": 5.213692905279417,
+      "von_mises_p99_5_MPa": 1.1688731706781466,
+      "stress_concentration_ratio": 4.460443644415743,
+      "failure_index_max": 0.23193289718221133,
+      "failure_index_p99_5": 0.04058665460402289,
+      "min_safety_factor": 4.311591896402601,
+      "safety_factor_p99_5": 24.638640699913257,
+      "mesh": {
+        "thin_section_mm": 4.61033621333629,
+        "typical_section_mm": 6.52,
+        "elements_across_thin": 2.8284271247461903,
+        "elements_across_typical": 4.0
+      },
+      "warnings": [],
+      "checks": [
+        {
+          "name": "strength",
+          "required": "safety factor >= 2.00",
+          "got": "4.31 (worst element) / 24.64 (p99.5)",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "stiffness",
+          "required": "max deflection <= 1.000 mm",
+          "got": "0.378 mm",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "mesh resolution",
+          "required": ">= 3 elements across the thinnest section",
+          "got": "2.8 (thin 4.61 mm) / 4.0 (typical 6.52 mm)",
+          "pass": false,
+          "inspect": false,
+          "fix": "re-run with --voxel 1.54"
+        }
+      ],
+      "pass": false,
+      "hotspots": [
+        {
+          "pos": [
+            54.47,
+            -21.95,
+            203.86
+          ],
+          "failure_index": 0.232,
+          "safety_factor": 4.31
+        },
+        {
+          "pos": [
+            -54.73,
+            -21.95,
+            203.86
+          ],
+          "failure_index": 0.205,
+          "safety_factor": 4.87
+        },
+        {
+          "pos": [
+            56.1,
+            -26.84,
+            208.75
+          ],
+          "failure_index": 0.126,
+          "safety_factor": 7.96
+        },
+        {
+          "pos": [
+            56.1,
+            -23.58,
+            216.9
+          ],
+          "failure_index": 0.114,
+          "safety_factor": 8.79
+        },
+        {
+          "pos": [
+            33.28,
+            -54.55,
+            13.15
+          ],
+          "failure_index": 0.111,
+          "safety_factor": 9.03
+        }
+      ],
+      "case": "L1 hoist 3g: lugs fixed, container + guard + gate weights down",
+      "total_applied_load_N": [
+        0.0,
+        0.0,
+        -200.088
+      ],
+      "resultant_load_N": 200.088,
+      "material": "PETG",
+      "solve_seconds": 1608.2
+    },
+    {
+      "elements": 107813,
+      "voxel_mm": 1.63,
+      "volume_mm3": 466910.82631099987,
+      "converged": true,
+      "cg_iterations": 7582,
+      "compliance_Nmm": 116.36957388546766,
+      "max_displacement_mm": 0.30888493542090073,
+      "max_displacement_at": [
+        -35.99,
+        -101.0,
+        75.91
+      ],
+      "von_mises_max_MPa": 13.331236984820778,
+      "von_mises_p99_5_MPa": 3.9687118240341004,
+      "stress_concentration_ratio": 3.359084150199118,
+      "failure_index_max": 0.5220874547932667,
+      "failure_index_p99_5": 0.11527651418388524,
+      "min_safety_factor": 1.9153879121573119,
+      "safety_factor_p99_5": 8.674793882167824,
+      "mesh": {
+        "thin_section_mm": 4.61033621333629,
+        "typical_section_mm": 6.52,
+        "elements_across_thin": 2.8284271247461903,
+        "elements_across_typical": 4.0
+      },
+      "warnings": [],
+      "checks": [
+        {
+          "name": "strength",
+          "required": "safety factor >= 2.00",
+          "got": "1.92 (worst element) / 8.67 (p99.5)",
+          "pass": true,
+          "inspect": true
+        },
+        {
+          "name": "stiffness",
+          "required": "max deflection <= 1.000 mm",
+          "got": "0.309 mm",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "mesh resolution",
+          "required": ">= 3 elements across the thinnest section",
+          "got": "2.8 (thin 4.61 mm) / 4.0 (typical 6.52 mm)",
+          "pass": false,
+          "inspect": false,
+          "fix": "re-run with --voxel 1.54"
+        }
+      ],
+      "pass": false,
+      "hotspots": [
+        {
+          "pos": [
+            -31.92,
+            -65.96,
+            -3.15
+          ],
+          "failure_index": 0.522,
+          "safety_factor": 1.92
+        },
+        {
+          "pos": [
+            25.13,
+            -65.96,
+            -3.15
+          ],
+          "failure_index": 0.409,
+          "safety_factor": 2.44
+        },
+        {
+          "pos": [
+            31.65,
+            -65.96,
+            -4.78
+          ],
+          "failure_index": 0.333,
+          "safety_factor": 3.01
+        },
+        {
+          "pos": [
+            -25.4,
+            -65.96,
+            -3.15
+          ],
+          "failure_index": 0.31,
+          "safety_factor": 3.23
+        },
+        {
+          "pos": [
+            26.76,
+            -98.56,
+            137.03
+          ],
+          "failure_index": 0.288,
+          "safety_factor": 3.48
+        }
+      ],
+      "case": "L2 transport side hit 600N: container reacts, load on pylon + lugs",
+      "total_applied_load_N": [
+        600.0,
+        0.0,
+        0.0
+      ],
+      "resultant_load_N": 600.0,
+      "material": "PETG",
+      "solve_seconds": 894.3
+    },
+    {
+      "elements": 107813,
+      "voxel_mm": 1.63,
+      "volume_mm3": 466910.82631099987,
+      "converged": true,
+      "cg_iterations": 7607,
+      "compliance_Nmm": 137.32926891515268,
+      "max_displacement_mm": 0.3395688136439318,
+      "max_displacement_at": [
+        -0.13000000000000966,
+        -97.74,
+        80.8
+      ],
+      "von_mises_max_MPa": 9.506243194861938,
+      "von_mises_p99_5_MPa": 3.411653697874634,
+      "stress_concentration_ratio": 2.7864033212937365,
+      "failure_index_max": 0.3880459510283485,
+      "failure_index_p99_5": 0.10499529650699367,
+      "min_safety_factor": 2.5770143905636207,
+      "safety_factor_p99_5": 9.524236163601772,
+      "mesh": {
+        "thin_section_mm": 4.61033621333629,
+        "typical_section_mm": 6.52,
+        "elements_across_thin": 2.8284271247461903,
+        "elements_across_typical": 4.0
+      },
+      "warnings": [],
+      "checks": [
+        {
+          "name": "strength",
+          "required": "safety factor >= 2.00",
+          "got": "2.58 (worst element) / 9.52 (p99.5)",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "stiffness",
+          "required": "max deflection <= 1.000 mm",
+          "got": "0.340 mm",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "mesh resolution",
+          "required": ">= 3 elements across the thinnest section",
+          "got": "2.8 (thin 4.61 mm) / 4.0 (typical 6.52 mm)",
+          "pass": false,
+          "inspect": false,
+          "fix": "re-run with --voxel 1.54"
+        }
+      ],
+      "pass": false,
+      "hotspots": [
+        {
+          "pos": [
+            -30.29,
+            -51.29,
+            109.32
+          ],
+          "failure_index": 0.388,
+          "safety_factor": 2.58
+        },
+        {
+          "pos": [
+            30.02,
+            -51.29,
+            109.32
+          ],
+          "failure_index": 0.334,
+          "safety_factor": 3.0
+        },
+        {
+          "pos": [
+            -28.66,
+            -88.78,
+            117.47
+          ],
+          "failure_index": 0.26,
+          "safety_factor": 3.85
+        },
+        {
+          "pos": [
+            51.22,
+            -30.09,
+            109.32
+          ],
+          "failure_index": 0.258,
+          "safety_factor": 3.88
+        },
+        {
+          "pos": [
+            28.39,
+            -88.78,
+            117.47
+          ],
+          "failure_index": 0.257,
+          "safety_factor": 3.89
+        }
+      ],
+      "case": "L2 transport rear hit 600N on back wall",
+      "total_applied_load_N": [
+        0.0,
+        600.0,
+        0.0
+      ],
+      "resultant_load_N": 600.0,
+      "material": "PETG",
+      "solve_seconds": 916.3
+    },
+    {
+      "elements": 107813,
+      "voxel_mm": 1.63,
+      "volume_mm3": 466910.82631099987,
+      "converged": true,
+      "cg_iterations": 6412,
+      "compliance_Nmm": 0.5744895153548241,
+      "max_displacement_mm": 0.006725374661776289,
+      "max_displacement_at": [
+        60.17999999999998,
+        -37.43000000000001,
+        10.709999999999997
+      ],
+      "von_mises_max_MPa": 1.438101165084914,
+      "von_mises_p99_5_MPa": 0.4316940155996096,
+      "stress_concentration_ratio": 3.3312974308606895,
+      "failure_index_max": 0.07032698676281976,
+      "failure_index_p99_5": 0.020930588654387385,
+      "min_safety_factor": 14.219292565065174,
+      "safety_factor_p99_5": 47.77696492498715,
+      "mesh": {
+        "thin_section_mm": 4.61033621333629,
+        "typical_section_mm": 6.52,
+        "elements_across_thin": 2.8284271247461903,
+        "elements_across_typical": 4.0
+      },
+      "warnings": [],
+      "checks": [
+        {
+          "name": "strength",
+          "required": "safety factor >= 2.00",
+          "got": "14.22 (worst element) / 47.78 (p99.5)",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "stiffness",
+          "required": "max deflection <= 1.000 mm",
+          "got": "0.007 mm",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "mesh resolution",
+          "required": ">= 3 elements across the thinnest section",
+          "got": "2.8 (thin 4.61 mm) / 4.0 (typical 6.52 mm)",
+          "pass": false,
+          "inspect": false,
+          "fix": "re-run with --voxel 1.54"
+        }
+      ],
+      "pass": false,
+      "hotspots": [
+        {
+          "pos": [
+            57.73,
+            -38.25,
+            5.0
+          ],
+          "failure_index": 0.07,
+          "safety_factor": 14.22
+        },
+        {
+          "pos": [
+            -58.0,
+            -38.25,
+            5.0
+          ],
+          "failure_index": 0.062,
+          "safety_factor": 16.1
+        },
+        {
+          "pos": [
+            56.1,
+            -41.51,
+            -3.15
+          ],
+          "failure_index": 0.059,
+          "safety_factor": 16.88
+        },
+        {
+          "pos": [
+            -56.37,
+            -39.88,
+            -3.15
+          ],
+          "failure_index": 0.056,
+          "safety_factor": 17.77
+        },
+        {
+          "pos": [
+            62.62,
+            -30.09,
+            -3.15
+          ],
+          "failure_index": 0.053,
+          "safety_factor": 18.9
+        }
+      ],
+      "case": "L5 landing 600N up through guard bosses",
+      "total_applied_load_N": [
+        0.0,
+        0.0,
+        600.0
+      ],
+      "resultant_load_N": 600.0,
+      "material": "PETG",
+      "solve_seconds": 768.4
+    }
+  ]
+}

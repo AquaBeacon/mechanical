@@ -1,0 +1,4 @@
+base part="base"
+cap part="cap"
+base_pair part="base_pair"
+cap_pair part="cap_pair"

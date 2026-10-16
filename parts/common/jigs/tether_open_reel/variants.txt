@@ -1,0 +1,7 @@
+base part="base"
+lid part="lid"
+stand part="stand"
+cover_half part="cover_half"
+clip part="clip"
+coupon_socket part="coupon" coupon_side="socket"
+coupon_spring part="coupon" coupon_side="spring"

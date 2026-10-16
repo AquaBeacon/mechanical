@@ -1,0 +1,173 @@
+Mesher configuration: Gmsh Algorithm3D=1 (Delaunay), OptimizeNetgen=0; surface refinement remains enabled. Mesh quality still checked.
+
+mesh target 8.00 mm
+  shell refined to 8.00 mm edges: 4786 -> 29556 triangles
+  mesh carrier_h8.00_mesh.inp: 104204 nodes, 56216 elements at 8.00 mm
+Traceback (most recent call last):
+  File "C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\parent_hand_service\rigidity\iteration_04\mesher_adapter.py", line 18, in <module>
+    raise SystemExit(main(sys.argv[1:]))
+                     ~~~~^^^^^^^^^^^^^^
+  File "C:\Users\ryupc\WorkSpace\Mitou26\TO_printing\topopt\src\topopt\cli\ccx.py", line 1140, in main
+    runs.append(analyse(stl, study, a.out, h, a.isotropic,
+                ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        buckle=a.buckle, frequency=a.frequency,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+                        shell_info=shell_info, refine=not a.no_refine,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        load_split=a.load_split))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryupc\WorkSpace\Mitou26\TO_printing\topopt\src\topopt\cli\ccx.py", line 680, in analyse
+    out, cbase = ccxlib.run_ccx(inp)
+                 ~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\ryupc\WorkSpace\Mitou26\TO_printing\topopt\src\topopt\ccx.py", line 743, in run_ccx
+    raise RuntimeError("CalculiX did not produce results:\n%s"
+                       % out[-4000:])
+RuntimeError: CalculiX did not produce results:
+s:            1
+   tie constraints:            0
+   dependent nodes tied by cyclic constraints:            0
+   dependent nodes in pre-tension constraints:            0
+
+   sets:           50
+   terms in all sets:       176388
+
+   materials:            1
+   constants per material and temperature:            9
+   temperature points per material:            1
+   plastic data points per material:            0
+
+   orientations:            0
+   amplitudes:           24
+   data points in all amplitudes:           24
+   print requests:           48
+   transformations:            0
+   property cards:            0
+
+
+ STEP            1
+
+ Static analysis was selected
+
+ Decascading the MPC's
+
+ Determining the structure of the matrix:
+ Using up to 1 cpu(s) for setting up the structure of the matrix.
+ number of equations
+ 310677
+ number of nonzero lower triangular matrix elements
+ 10958856
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       19866
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       19866
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       19866
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       19867
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       19867
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       19882
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       19882
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       19882
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       19883
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       19884
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       19884
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       19887
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       19887
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       19887
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       19887
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       19888
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       19888
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       23432
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       23432
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       23444
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       23444
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       23444
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       23801
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       23804
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       23804
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       23804
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       23809
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       23809
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       23809
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       23810
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       23810
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       23810
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       23854
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       23854
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       23854
+
+ *ERROR in e_c3d: nonpositive jacobian
+        determinant in element       23854
+
+

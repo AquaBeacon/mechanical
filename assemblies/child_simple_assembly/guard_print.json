@@ -1,0 +1,136 @@
+{
+  "schema": "topopt/printability/1",
+  "part": "child_simple_guard.stl",
+  "printer": "Bambu Lab X1-Carbon",
+  "build_volume_nominal_mm": [
+    256,
+    256,
+    256
+  ],
+  "build_volume_usable_mm": [
+    250,
+    250,
+    250
+  ],
+  "triangles": 1104,
+  "bbox_as_modelled_mm": [
+    220.0,
+    168.0,
+    97.0
+  ],
+  "fits_as_modelled": true,
+  "fits_in_some_orientation": true,
+  "orientations": [
+    {
+      "orientation": "+Z up",
+      "size_mm": [
+        220.0,
+        168.0,
+        97.0
+      ],
+      "fits": true,
+      "overhang_pct": 17.7,
+      "first_layer_mm2": 13920.0,
+      "height_mm": 97.0,
+      "load_across_layers": 1.0,
+      "score": 23.992
+    },
+    {
+      "orientation": "+Z up",
+      "size_mm": [
+        168.0,
+        220.0,
+        97.0
+      ],
+      "fits": true,
+      "overhang_pct": 17.7,
+      "first_layer_mm2": 13920.0,
+      "height_mm": 97.0,
+      "load_across_layers": 1.0,
+      "score": 23.992
+    },
+    {
+      "orientation": "-Z up",
+      "size_mm": [
+        220.0,
+        168.0,
+        97.0
+      ],
+      "fits": true,
+      "overhang_pct": 17.7,
+      "first_layer_mm2": 960.0,
+      "height_mm": 97.0,
+      "load_across_layers": 1.0,
+      "score": 25.044
+    },
+    {
+      "orientation": "-Z up",
+      "size_mm": [
+        168.0,
+        220.0,
+        97.0
+      ],
+      "fits": true,
+      "overhang_pct": 17.7,
+      "first_layer_mm2": 960.0,
+      "height_mm": 97.0,
+      "load_across_layers": 1.0,
+      "score": 25.044
+    }
+  ],
+  "excluded_orientations": [],
+  "best_orientation": {
+    "orientation": "+Z up",
+    "size_mm": [
+      220.0,
+      168.0,
+      97.0
+    ],
+    "fits": true,
+    "overhang_pct": 17.7,
+    "first_layer_mm2": 13920.0,
+    "height_mm": 97.0,
+    "load_across_layers": 1.0,
+    "score": 23.992
+  },
+  "split": {
+    "required": false
+  },
+  "min_features": {
+    "voxel_mm": 2.61712560862031,
+    "min_printable_wall_mm": 0.8,
+    "p1_thickness_mm": 10.469,
+    "p5_thickness_mm": 10.469,
+    "median_thickness_mm": 20.937,
+    "fraction_below_min": 0.0,
+    "resolved": false,
+    "pass": true
+  },
+  "checks": [
+    {
+      "name": "build volume",
+      "required": "fits [250, 250, 250] mm in some axis-aligned orientation",
+      "got": "yes, best is +Z up at [220.0, 168.0, 97.0] mm",
+      "pass": true
+    },
+    {
+      "name": "supports",
+      "required": "overhang area <= 15 % in the chosen orientation",
+      "got": "17.7 %",
+      "pass": false
+    },
+    {
+      "name": "min feature size",
+      "required": "no section thinner than 0.8 mm (2 perimeters)",
+      "got": "p1 10.47 mm, 0.00 % of sections below the limit",
+      "pass": true
+    },
+    {
+      "name": "load vs layers",
+      "required": "main tensile load should lie in the layer plane (cos <= 0.5)",
+      "got": "cos = 1.00",
+      "pass": false
+    }
+  ],
+  "pass": false
+}

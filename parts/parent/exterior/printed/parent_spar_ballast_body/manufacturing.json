@@ -1,0 +1,9 @@
+{
+  "print_rotations_deg": {
+    "parent_spar_ballast_body": [
+      0.0,
+      -0.0,
+      -180.0
+    ]
+  }
+}

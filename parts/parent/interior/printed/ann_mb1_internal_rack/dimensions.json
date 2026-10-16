@@ -1,0 +1,90 @@
+{
+  "vendor_board_zip_sha256": "cf089ffa95206e6980676f7a685519202ec6c9fa97154d66ea8c4847ffb139d4",
+  "antenna_pdf_sha256": "626953ccc78f67f77de5edb49d76302a2a7d0c624418c278059759a3936f68c6",
+  "board_outline_mm": [
+    43.18,
+    43.18
+  ],
+  "board_holes_xy_d_mm": [
+    [
+      2.54,
+      40.6146,
+      3.302
+    ],
+    [
+      40.64,
+      40.6146,
+      3.302
+    ],
+    [
+      2.54,
+      2.54,
+      3.302
+    ],
+    [
+      40.64,
+      2.54,
+      3.302
+    ]
+  ],
+  "case_holes_xy_mm": [
+    [
+      116.96,
+      164.3854
+    ],
+    [
+      78.86,
+      164.3854
+    ],
+    [
+      116.96,
+      202.46
+    ],
+    [
+      78.86,
+      202.46
+    ]
+  ],
+  "neo_module_step_sha256": "be35ebd8a1b4f57e0b93f239879642951560ddd67c93f60f33ff4573ef3d9ba9",
+  "neo_module_url": "https://github.com/u-blox/3D-Step-Models-Library/blob/master/POS/NEO-F9P.STEP",
+  "full_breakout_3d_status": "Official full SparkFun PCB STEP not published in its hardware/3D repositories; EAGLE board + official u-blox STEP + provisional connector envelopes",
+  "provisional": {
+    "pcb_thickness_mm": 1.6,
+    "pcb_populated_height_mm": 10,
+    "SMA_plug_length_mm": 14,
+    "RG174_diameter_mm": 2.8,
+    "lid_top_z_mm": 100.3,
+    "header_height_mm": 7.0,
+    "XH_envelope_mm": [
+      14.8,
+      24,
+      6.6
+    ]
+  },
+  "antenna_mm": [
+    60.0,
+    82.0,
+    22.5
+  ],
+  "antenna_screw_pitch_mm": 68,
+  "caddy_edge_chamfer_mm": 0.2,
+  "gnss_frame_edge_chamfer_mm": 0.05,
+  "coil_user_envelope_mm": {
+    "outer_diameter": 100,
+    "inner_diameter": 75,
+    "height": 10
+  },
+  "coil_capacity_status": "User-specified reserved envelope; actual 5 m winding and transition tails require fit check, no capacity claim",
+  "ground_plate_mm": [
+    88,
+    60,
+    1
+  ],
+  "waterproof_entry_status": "not required; antenna and complete original coax are internal",
+  "coax_route_length_mm": 139.09177960769378,
+  "coax_coiled_length_mm": 4860.908220392306,
+  "routed_bend_radius_min_mm": 20,
+  "coil_inner_void_radius_mm": 37.5,
+  "ground_plate_performance": "smaller than vendor 120 mm circular test plane; reception/phase centre must be measured in closed case",
+  "antenna_screw_head_access": "Provisional R4 envelope above ear thickness Z6; confirm actual housing"
+}

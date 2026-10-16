@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 646.5305902524706,
+  "stl_volume_mm3": 646.5299682617188,
+  "relative_volume_difference": 9.620447347501092e-07,
+  "representation": "faceted STEP; edit original SCAD for parameter changes"
+}

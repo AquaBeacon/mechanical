@@ -1,0 +1,2087 @@
+{
+  "name": "child_interior",
+  "note": "子機 (水中ユニット) 内装のみのサブアセンブリ。親機の parent_interior_p1 と同じ位置づけ。\n容器: WTE4 4in × 200mm アクリルチューブ + 上下フランジ BR-101040 (透明表示・取合い確認用)。下エンドキャップ (5×M10) と上ドーム (仮モデル) も透明表示 (2026-09-03 追加)。外装シェル / カメラは表示しない。\n2026-08-28: 浮いていた部品を全部固定 — スペーサ・ねじ・ワッシャ・シム・フォームパッドを実体化し、貫通していた 4 箇所 (LCD/ベゼル前板、電池箱アンカー/デッキ、ヒンジ枠ラグ/アーチ、ナックル/ドア板) を部品形状で修正。\n2026-09-03: 電池を 35×26×110 (リード −Z 出し) に変更。電池箱を ∩ チャンネル + 着脱床板 (皿ねじ 1 本) に作り直し、電池だけを取り出せるようにした。電源リードは切って XT30 メスを付け、基板側は J_BAT パッド直付けのピグテール (XT30 ペアは +X レール z 25..55)。基板間 XH ハーネスをモデル化 (parts/common/cabling/child_harness)。\n2026-09-03: 下フランジ固定を 3 点化 — 0°/180° (デッキラグ + MF10) に加え、90° (0,+47) を下 LCD アーチ (child_lcd_support_lower) の耳で直接フランジ内面へ M3×12。270° は電池箱床が塞ぐため未使用。上フランジ 4 穴は内側からねじが回せないので使わない。穴の根拠: parts/child/exterior/cots/wte4_flange/_work/images/ref/BR-101040_hole_map.png + WTE データシート Rev C.5。\ninterior グループは assemblies/child_vertical_assembly/placement.json と同一 (生成元: 本 placement を正とし、scad/lib/sync_child_interior.py で複製)。\n配置根拠: docs/子機内装_収まり検討.md / docs/子機内装_サービス設計.md。検証: scad/lib/verify_child_interior.py, scad/lib/check_asm_contacts.py。",
+  "coordinate_system": "X=左右(カメラ基線) / Y=前後(+Y が前・カメラとライトの向き) / Z=上。アクリルチューブ下端面が z=0。",
+  "groups": {
+    "vessel": true,
+    "interior": true
+  },
+  "items": [
+    {
+      "label": "acrylic_tube_200",
+      "part": "parts/child/exterior/cots/wte4_acrylic_tube",
+      "file": "BR-101052-200_RevB",
+      "group": "vessel",
+      "color": "LightSteelBlue",
+      "alpha": 0.22,
+      "note": "アクリルチューブ 4in x 200mm。元モデルは軸=X(0..200)/断面中心(57.15,57.15) → 軸を Z へ立てる。下端面が z=0",
+      "ops": [
+        {
+          "rotate": [
+            0,
+            -90,
+            0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            -57.15,
+            -57.15
+          ]
+        }
+      ]
+    },
+    {
+      "label": "flange_bot",
+      "part": "parts/child/exterior/cots/wte4_flange",
+      "file": "BR-101040_RevC",
+      "group": "vessel",
+      "color": "LightSteelBlue",
+      "alpha": 0.22,
+      "note": "下フランジ。ピストン(局所 z0..19)を上へ向けてチューブ座ぐりへ 19mm 挿入 → カラー(Ø114.3)が z -8..0 に露出",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            19
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -57.15,
+            -57.15,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "flange_top",
+      "part": "parts/child/exterior/cots/wte4_flange",
+      "file": "BR-101040_RevC",
+      "group": "vessel",
+      "color": "LightSteelBlue",
+      "alpha": 0.22,
+      "note": "上フランジ。ピストンを下へ向けて挿入 → カラー上面が z=208 (= ドームの座面)",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            181
+          ]
+        },
+        {
+          "translate": [
+            -57.15,
+            -57.15,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "end_cap_bottom",
+      "part": "parts/child/exterior/cots/wte4_end_cap_5xm10",
+      "file": "WTE4-M-END-CAP-5XM10-R2",
+      "group": "vessel",
+      "color": "LightSteelBlue",
+      "alpha": 0.22,
+      "note": "下アルミキャップ (M10 x5 / BCD56)。プラグ(局所 z0..4.2)を下フランジ口へ差し込み、外面が z=-13.8。キャップ固定ねじ 6× M3×12 は BCD108 (フランジ外面)。内装固定はこのキャップではなくフランジ内面 BCD94",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -3.8
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -60.15,
+            -57.15,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "dome_top",
+      "part": "parts/child/exterior/cots/wte4_dome_cap",
+      "file": "wte4_dome_cap_ref",
+      "group": "vessel",
+      "color": "LightSteelBlue",
+      "alpha": 0.22,
+      "note": "上ドーム BR-100495 の参考モデル(仮)。座面 z=208 (上フランジのカラー上面)。child_vertical_assembly と同じ配置",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            208
+          ]
+        }
+      ]
+    },
+    {
+      "label": "vtray_deck",
+      "part": "parts/child/interior/printed/child_vtray_deck",
+      "file": "child_vtray_deck_t200",
+      "group": "interior",
+      "color": "Orange",
+      "alpha": 0.9,
+      "note": "縦置きトレイ本体 t200。両端が上下フランジ貫通口に入り、幅広部 (20..180) がフランジ内端面に突き当たる。下フランジ BCD94 固定ラグ付き (2026-08-28 batt_box から移設)",
+      "ops": []
+    },
+    {
+      "label": "vtray_rib_bot",
+      "part": "parts/child/interior/printed/child_vtray_rib",
+      "group": "interior",
+      "color": "DarkOrange",
+      "alpha": 0.9,
+      "note": "下センタリングリブ (Ø87.5) z 2.5..8.5。デッキ先端から差し込み、内側ショルダー (z 9.5) に当てる。外周 0.8 面取り = 挿入ガード",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            2.5
+          ]
+        }
+      ]
+    },
+    {
+      "label": "vtray_rib_top",
+      "part": "parts/child/interior/printed/child_vtray_rib",
+      "group": "interior",
+      "color": "DarkOrange",
+      "alpha": 0.9,
+      "note": "上センタリングリブ z 191.5..197.5。内側ショルダー (z 190.5) に当てる",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            191.5
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rib_stop_screw_bot",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m2_5x6",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M2.5×6 なべ。デッキ先端 (z=0) の板を上面から貫く抜け止め。頭 Ø4.5 が板上面 (y −6..−4.3)、先端が下面に 2mm 出て、下リブ (z ≥ 2.5) を止める",
+      "ops": [
+        {
+          "translate": [
+            0,
+            -6,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rib_stop_screw_top",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m2_5x6",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M2.5×6 なべ。デッキ先端 (z=200) の抜け止め。上リブ (z ≤ 197.5) を止める",
+      "ops": [
+        {
+          "translate": [
+            0,
+            -6,
+            200
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cable_rail_power",
+      "part": "parts/child/interior/printed/child_vtray_cable_rail",
+      "group": "interior",
+      "color": "Gainsboro",
+      "alpha": 1.0,
+      "note": "ケーブルレール。+X 側: 電池 XT30 ペア (z 25..55) + 電池ピグテール + J_PRS1。デッキ実肉部 Z=37/77 へ M3×10 ×4 でセルフタップ",
+      "ops": [
+        {
+          "translate": [
+            36,
+            -10,
+            20
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cable_rail_signal",
+      "part": "parts/child/interior/printed/child_vtray_cable_rail",
+      "group": "interior",
+      "color": "Gainsboro",
+      "alpha": 1.0,
+      "note": "ケーブルレール。-X 側: RX / テザー / 水温 / 漏水 / ライトのハーネス。デッキ実肉部 Z=37/77 へ M3×10 ×4 でセルフタップ",
+      "ops": [
+        {
+          "translate": [
+            -36,
+            -10,
+            20
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "vtray_batt_box",
+      "part": "parts/child/interior/printed/child_vtray_batt_box",
+      "group": "interior",
+      "color": "Chocolate",
+      "alpha": 0.9,
+      "note": "LiPo ∩ ベイ (2026-09-03 作り直し: 35×26×110 用)。デッキ下面へ耳 M3×8 ×4。−Z 端壁 (z 14..20、両端にリード切欠き) は貫通口の中、+Z はリップ (z 132..133.5、床板フックのスロット付き)。床は別部品",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "label": "vtray_batt_floor",
+      "part": "parts/child/interior/printed/child_vtray_batt_floor",
+      "group": "interior",
+      "color": "Peru",
+      "alpha": 1.0,
+      "note": "着脱床板 (37.4 × 3)。+Z 端のフック 2 個がリップのスロットへ、−Z 端のタブ (z 14..20) を端壁の柱へ M3×8 皿ねじ 1 本。外すと電池が −Y へ出る",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lipo",
+      "part": "parts/child/interior/cots/lipo_35x26x110",
+      "file": "lipo_35x26x110_leads",
+      "group": "interior",
+      "color": "Crimson",
+      "alpha": 1.0,
+      "note": "LiPo 35×26×110 (ユーザー指定 2026-09-03、型番要確認)。リード側端面 (モデル +X) を −Z に向けて z 21..131。床板に載り、上 3 / 側 2 / 端 1 のフォームで拘束。リードスタブ ×2 は端壁の切欠きへ",
+      "ops": [
+        {
+          "translate": [
+            -17.5,
+            -14,
+            131
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            -90
+          ]
+        }
+      ]
+    },
+    {
+      "label": "child_main",
+      "part": "parts/child/interior/pcb/child_main",
+      "group": "interior",
+      "color": "ForestGreen",
+      "alpha": 1.0,
+      "note": "CHILD_MAIN v4.1 (104×88)。基板下面 y=1 (ボス 7)。4 穴は LCD スペーサ (M3 MF30/17) のオスで共締め = 固定ねじ兼用",
+      "ops": [
+        {
+          "translate": [
+            44,
+            1,
+            20
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            -90,
+            -90
+          ]
+        }
+      ]
+    },
+    {
+      "label": "child_pwr",
+      "part": "parts/child/interior/pcb/child_pwr",
+      "group": "interior",
+      "color": "SeaGreen",
+      "alpha": 1.0,
+      "note": "CHILD_PWR v2.1 (62×70)。基板下面 y=4 (ボス 10)。M3×8 ×4",
+      "ops": [
+        {
+          "translate": [
+            35,
+            4,
+            126
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            -90,
+            -90
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lcd_support_lower",
+      "part": "parts/child/interior/printed/child_lcd_support",
+      "file": "child_lcd_support_lower",
+      "group": "interior",
+      "color": "Gold",
+      "alpha": 1.0,
+      "note": "LCD 支持アーチ 下 (z 22..27 = MAIN 穴 z=24.5)。スペーサ端面にボスを載せ M3×10 皿ねじを +Y 面から面一に沈める。2026-09-03: 下フランジ BCD94 90° (0,+47) の固定耳付きバリアント — 足は z 19.3 (フランジ内面 19 + 0.3)、M3×12 を上から入れてフランジのタップ穴へ 4mm",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            22
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lcd_support_upper",
+      "part": "parts/child/interior/printed/child_lcd_support",
+      "file": "child_lcd_support_upper",
+      "group": "interior",
+      "color": "Gold",
+      "alpha": 1.0,
+      "note": "LCD 支持アーチ 上 (z 117..122 = MAIN 穴 z=119.5)。耳無しバリアント",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            117
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lcd_hinge_frame",
+      "part": "parts/child/interior/printed/child_lcd_hinge_frame",
+      "group": "interior",
+      "color": "DarkGoldenrod",
+      "alpha": 1.0,
+      "note": "LCD ドア固定 C フレーム。ラグはアーチ内側面 (z 27..32 / 112..117) に載り M3×10 を軸方向に締める (2026-08-28 修正)",
+      "ops": [
+        {
+          "translate": [
+            0,
+            27,
+            72
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lcd_cradle",
+      "part": "parts/child/interior/printed/child_lcd_cradle",
+      "file": "child_lcd_cradle_bezel",
+      "group": "interior",
+      "color": "Khaki",
+      "alpha": 1.0,
+      "note": "LCD ドア (ベゼル)。前面 y=43.5。左ヒンジ M3 全ねじロッド (両アーチ受け) + 右 M2.5×12 ラッチ。ナックル逃げ切欠きあり。ヒンジ葉は ±8..20.5 に短縮 (クランプ棒の逃げ)",
+      "ops": [
+        {
+          "translate": [
+            0,
+            43.5,
+            72
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lcd_module",
+      "part": "parts/child/interior/cots/nhd_c0216ciz",
+      "group": "interior",
+      "color": "DimGray",
+      "alpha": 1.0,
+      "note": "NHD-C0216CiZ。前面 = ベゼル前板 2 + フォーム 0.8 の奥 (y=40.7)。2026-08-28 まで前板と同位置に置かれていた (2mm 貫通) のを修正",
+      "ops": [
+        {
+          "translate": [
+            0,
+            40.7,
+            72
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rx_improved_mini",
+      "part": "parts/child/interior/pcb/rx_improved_mini",
+      "group": "interior",
+      "color": "MediumSeaGreen",
+      "alpha": 1.0,
+      "note": "RX_improved_mini (68×46)。デッキ下面に M2 FF6 スペーサ ×4 で吊る (基板上面 y=-16、部品は -Y)",
+      "ops": [
+        {
+          "translate": [
+            34,
+            -16,
+            134
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            180
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lcd_spacer_l_z24.5",
+      "part": "parts/common/interior/cots/hex_spacer",
+      "file": "hex_spacer_m3_mf30",
+      "group": "interior",
+      "color": "Goldenrod",
+      "alpha": 1.0,
+      "note": "M3 MF30。オスは MAIN 穴 Ø3.2 → デッキ MAIN ボス下穴へ (MAIN 固定兼用)。メス端面 y=32.6 にアーチのボスが載る",
+      "ops": [
+        {
+          "translate": [
+            -22,
+            2.6,
+            24.5
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lcd_spacer_r_z24.5",
+      "part": "parts/common/interior/cots/hex_spacer",
+      "file": "hex_spacer_m3_mf17",
+      "group": "interior",
+      "color": "Goldenrod",
+      "alpha": 1.0,
+      "note": "M3 MF17。同上、メス端面 y=19.6",
+      "ops": [
+        {
+          "translate": [
+            39.5,
+            2.6,
+            24.5
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lcd_arch_screw_l_z24.5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x10_flat",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "JIS M3×10 皿。アーチ左ボス +Y 面 (y=38.1) に面一、スペーサに 4.5mm かかる",
+      "ops": [
+        {
+          "translate": [
+            -22,
+            38.1,
+            24.5
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lcd_arch_screw_r_z24.5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x10_flat",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "JIS M3×10 皿。アーチ右ボス +Y 面 (y=25.1) に面一",
+      "ops": [
+        {
+          "translate": [
+            39.5,
+            25.1,
+            24.5
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lcd_spacer_l_z119.5",
+      "part": "parts/common/interior/cots/hex_spacer",
+      "file": "hex_spacer_m3_mf30",
+      "group": "interior",
+      "color": "Goldenrod",
+      "alpha": 1.0,
+      "note": "M3 MF30。オスは MAIN 穴 Ø3.2 → デッキ MAIN ボス下穴へ (MAIN 固定兼用)。メス端面 y=32.6 にアーチのボスが載る",
+      "ops": [
+        {
+          "translate": [
+            -22,
+            2.6,
+            119.5
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lcd_spacer_r_z119.5",
+      "part": "parts/common/interior/cots/hex_spacer",
+      "file": "hex_spacer_m3_mf17",
+      "group": "interior",
+      "color": "Goldenrod",
+      "alpha": 1.0,
+      "note": "M3 MF17。同上、メス端面 y=19.6",
+      "ops": [
+        {
+          "translate": [
+            39.5,
+            2.6,
+            119.5
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lcd_arch_screw_l_z119.5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x10_flat",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "JIS M3×10 皿。アーチ左ボス +Y 面 (y=38.1) に面一、スペーサに 4.5mm かかる",
+      "ops": [
+        {
+          "translate": [
+            -22,
+            38.1,
+            119.5
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lcd_arch_screw_r_z119.5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x10_flat",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "JIS M3×10 皿。アーチ右ボス +Y 面 (y=25.1) に面一",
+      "ops": [
+        {
+          "translate": [
+            39.5,
+            25.1,
+            119.5
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "hinge_frame_screw_lower",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x10",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3×10 なべ。下ラグ (z 27..32) 上面から -Z へ、下アーチ下穴 Ø2.8 にセルフタップ",
+      "ops": [
+        {
+          "translate": [
+            0,
+            39.6,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "label": "hinge_frame_screw_upper",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x10",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3×10 なべ。上ラグ (z 112..117) 下面から +Z へ",
+      "ops": [
+        {
+          "translate": [
+            0,
+            39.6,
+            112
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lcd_hinge_rod",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x105_rod",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3 全ねじ 105mm (切断)。上下アーチのヒンジボス (Ø3.4) → ドア葉 z 51.5..64 / 80..92.5 → 枠ナックル z 64.5..79.5 を貫き、両アーチの外側でナット止め。頭が無いのでドア板端と干渉しない",
+      "ops": [
+        {
+          "translate": [
+            -18.5,
+            36.5,
+            124.5
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lcd_hinge_nut_lower",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3 ナイロックナット。下アーチ下面 (z=22) の下",
+      "ops": [
+        {
+          "translate": [
+            -18.5,
+            36.5,
+            19.6
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lcd_hinge_nut_upper",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3 ナット。上アーチ上面 (z=122) の上 (PWR 基板 z=126 まで 1.6mm)",
+      "ops": [
+        {
+          "translate": [
+            -18.5,
+            36.5,
+            122
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lcd_latch_screw",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m2_5x12_low",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M2.5×12 低頭。ベゼル前面の座ぐり (深さ 2.2) に沈み、枠のヒートセットインサートへ",
+      "ops": [
+        {
+          "translate": [
+            16.5,
+            41.3,
+            72
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lcd_clamp_bar_p",
+      "part": "parts/child/interior/printed/child_lcd_cradle",
+      "file": "child_lcd_cradle_bar",
+      "group": "interior",
+      "color": "Khaki",
+      "alpha": 1.0,
+      "note": "LCD 後クランプ棒 (2.5t)。ベゼルのボス座 (前面から 8.8) に載り、0.8 フォーム (圧縮 0.5) 越しに LCD 背面を押す。ヒンジピン下面 35.0 まで 0.3",
+      "ops": [
+        {
+          "translate": [
+            0,
+            43.5,
+            72
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            23.4,
+            8.8
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lcd_clamp_screw_pp",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m2_5x6",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M2.5×6。クランプ棒背面 (y=32.2) から +Y へ、ベゼルの盲下穴 Ø2.0 にセルフタップ",
+      "ops": [
+        {
+          "translate": [
+            14.9,
+            32.2,
+            95.4
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lcd_clamp_screw_pn",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m2_5x6",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M2.5×6。クランプ棒背面 (y=32.2) から +Y へ、ベゼルの盲下穴 Ø2.0 にセルフタップ",
+      "ops": [
+        {
+          "translate": [
+            -14.9,
+            32.2,
+            95.4
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lcd_rear_foam_p",
+      "part": "parts/common/interior/cots/foam_pad",
+      "file": "foam_pad_lcd_rear",
+      "group": "interior",
+      "color": "LightPink",
+      "alpha": 0.8,
+      "note": "独立気泡フォーム 0.8t (26×5、圧縮 0.5 でモデル化)。クランプ棒と LCD 背面 (y=35.2) の間",
+      "ops": [
+        {
+          "translate": [
+            0,
+            34.7,
+            95.4
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lcd_clamp_bar_n",
+      "part": "parts/child/interior/printed/child_lcd_cradle",
+      "file": "child_lcd_cradle_bar",
+      "group": "interior",
+      "color": "Khaki",
+      "alpha": 1.0,
+      "note": "LCD 後クランプ棒 (2.5t)。ベゼルのボス座 (前面から 8.8) に載り、0.8 フォーム (圧縮 0.5) 越しに LCD 背面を押す。ヒンジピン下面 35.0 まで 0.3",
+      "ops": [
+        {
+          "translate": [
+            0,
+            43.5,
+            72
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            -23.4,
+            8.8
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lcd_clamp_screw_np",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m2_5x6",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M2.5×6。クランプ棒背面 (y=32.2) から +Y へ、ベゼルの盲下穴 Ø2.0 にセルフタップ",
+      "ops": [
+        {
+          "translate": [
+            14.9,
+            32.2,
+            48.6
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lcd_clamp_screw_nn",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m2_5x6",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M2.5×6。クランプ棒背面 (y=32.2) から +Y へ、ベゼルの盲下穴 Ø2.0 にセルフタップ",
+      "ops": [
+        {
+          "translate": [
+            -14.9,
+            32.2,
+            48.6
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lcd_rear_foam_n",
+      "part": "parts/common/interior/cots/foam_pad",
+      "file": "foam_pad_lcd_rear",
+      "group": "interior",
+      "color": "LightPink",
+      "alpha": 0.8,
+      "note": "独立気泡フォーム 0.8t (26×5、圧縮 0.5 でモデル化)。クランプ棒と LCD 背面 (y=35.2) の間",
+      "ops": [
+        {
+          "translate": [
+            0,
+            34.7,
+            48.6
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pwr_screw_p_z130",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3×8。CHILD_PWR 取付穴 → デッキ PWR ボス (10) 下穴へセルフタップ",
+      "ops": [
+        {
+          "translate": [
+            31,
+            5.6,
+            130
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pwr_screw_p_z184",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3×8。CHILD_PWR 取付穴 → デッキ PWR ボス (10) 下穴へセルフタップ",
+      "ops": [
+        {
+          "translate": [
+            31,
+            5.6,
+            184
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pwr_screw_n_z130",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3×8。CHILD_PWR 取付穴 → デッキ PWR ボス (10) 下穴へセルフタップ",
+      "ops": [
+        {
+          "translate": [
+            -31,
+            5.6,
+            130
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pwr_screw_n_z184",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3×8。CHILD_PWR 取付穴 → デッキ PWR ボス (10) 下穴へセルフタップ",
+      "ops": [
+        {
+          "translate": [
+            -31,
+            5.6,
+            184
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "batt_box_screw_p_z32",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3×8。デッキ上面 → Ø3.4 → ベイ取付耳の下穴 Ø2.8 へセルフタップ (先端 y=-14、クレードルのポケット上面 -14.5 の手前)",
+      "ops": [
+        {
+          "translate": [
+            24,
+            -6,
+            32
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "batt_box_screw_p_z110",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3×8。デッキ上面 → Ø3.4 → ベイ取付耳の下穴 Ø2.8 へセルフタップ (先端 y=-14、クレードルのポケット上面 -14.5 の手前)",
+      "ops": [
+        {
+          "translate": [
+            24,
+            -6,
+            110
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "batt_box_screw_n_z32",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3×8。デッキ上面 → Ø3.4 → ベイ取付耳の下穴 Ø2.8 へセルフタップ (先端 y=-14、クレードルのポケット上面 -14.5 の手前)",
+      "ops": [
+        {
+          "translate": [
+            -24,
+            -6,
+            32
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "batt_box_screw_n_z110",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3×8。デッキ上面 → Ø3.4 → ベイ取付耳の下穴 Ø2.8 へセルフタップ (先端 y=-14、クレードルのポケット上面 -14.5 の手前)",
+      "ops": [
+        {
+          "translate": [
+            -24,
+            -6,
+            110
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rail_screw_x30.3_z37",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x10",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3×10。デッキ上面 → Ø3.4 → レール側壁 Ø2.8 へセルフタップ (6mm かかる)",
+      "ops": [
+        {
+          "translate": [
+            30.3,
+            -6,
+            37
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rail_screw_x30.3_z77",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x10",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3×10。デッキ上面 → Ø3.4 → レール側壁 Ø2.8 へセルフタップ (6mm かかる)",
+      "ops": [
+        {
+          "translate": [
+            30.3,
+            -6,
+            77
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rail_screw_x41.7_z37",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x10",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3×10。デッキ上面 → Ø3.4 → レール側壁 Ø2.8 へセルフタップ (6mm かかる)",
+      "ops": [
+        {
+          "translate": [
+            41.7,
+            -6,
+            37
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rail_screw_x41.7_z77",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x10",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3×10。デッキ上面 → Ø3.4 → レール側壁 Ø2.8 へセルフタップ (6mm かかる)",
+      "ops": [
+        {
+          "translate": [
+            41.7,
+            -6,
+            77
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rail_screw_x-41.7_z37",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x10",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3×10。デッキ上面 → Ø3.4 → レール側壁 Ø2.8 へセルフタップ (6mm かかる)",
+      "ops": [
+        {
+          "translate": [
+            -41.7,
+            -6,
+            37
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rail_screw_x-41.7_z77",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x10",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3×10。デッキ上面 → Ø3.4 → レール側壁 Ø2.8 へセルフタップ (6mm かかる)",
+      "ops": [
+        {
+          "translate": [
+            -41.7,
+            -6,
+            77
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rail_screw_x-30.3_z37",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x10",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3×10。デッキ上面 → Ø3.4 → レール側壁 Ø2.8 へセルフタップ (6mm かかる)",
+      "ops": [
+        {
+          "translate": [
+            -30.3,
+            -6,
+            37
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rail_screw_x-30.3_z77",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x10",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3×10。デッキ上面 → Ø3.4 → レール側壁 Ø2.8 へセルフタップ (6mm かかる)",
+      "ops": [
+        {
+          "translate": [
+            -30.3,
+            -6,
+            77
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "batt_floor_screw",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8_flat",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3×8 皿。床板の −Z タブ (y -43) から +Y へ、端壁の柱の下穴 Ø2.5 (深さ 6) にセルフタップ。これ 1 本で床板が外れる",
+      "ops": [
+        {
+          "translate": [
+            0,
+            -43,
+            17
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rx_spacer_p_z136.5",
+      "part": "parts/common/interior/cots/hex_spacer",
+      "file": "hex_spacer_m2_ff6",
+      "group": "interior",
+      "color": "Goldenrod",
+      "alpha": 1.0,
+      "note": "M2 メスメス 6mm。デッキ下面 (y=-10) と RX 基板上面 (y=-16) の間",
+      "ops": [
+        {
+          "translate": [
+            31.5,
+            -10,
+            136.5
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rx_screw_top_p_z136.5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m2x6",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M2×6。デッキ上面 → Ø2.4 → スペーサ上端 (2mm かかる)",
+      "ops": [
+        {
+          "translate": [
+            31.5,
+            -6,
+            136.5
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rx_screw_bot_p_z136.5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m2x5",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M2×5。RX 基板下面 (y=-17.6) → Ø2.2 → スペーサ下端 (3.4mm かかる)",
+      "ops": [
+        {
+          "translate": [
+            31.5,
+            -17.6,
+            136.5
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rx_spacer_p_z177.5",
+      "part": "parts/common/interior/cots/hex_spacer",
+      "file": "hex_spacer_m2_ff6",
+      "group": "interior",
+      "color": "Goldenrod",
+      "alpha": 1.0,
+      "note": "M2 メスメス 6mm。デッキ下面 (y=-10) と RX 基板上面 (y=-16) の間",
+      "ops": [
+        {
+          "translate": [
+            31.5,
+            -10,
+            177.5
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rx_screw_top_p_z177.5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m2x6",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M2×6。デッキ上面 → Ø2.4 → スペーサ上端 (2mm かかる)",
+      "ops": [
+        {
+          "translate": [
+            31.5,
+            -6,
+            177.5
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rx_screw_bot_p_z177.5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m2x5",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M2×5。RX 基板下面 (y=-17.6) → Ø2.2 → スペーサ下端 (3.4mm かかる)",
+      "ops": [
+        {
+          "translate": [
+            31.5,
+            -17.6,
+            177.5
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rx_spacer_n_z136.5",
+      "part": "parts/common/interior/cots/hex_spacer",
+      "file": "hex_spacer_m2_ff6",
+      "group": "interior",
+      "color": "Goldenrod",
+      "alpha": 1.0,
+      "note": "M2 メスメス 6mm。デッキ下面 (y=-10) と RX 基板上面 (y=-16) の間",
+      "ops": [
+        {
+          "translate": [
+            -31.5,
+            -10,
+            136.5
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rx_screw_top_n_z136.5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m2x6",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M2×6。デッキ上面 → Ø2.4 → スペーサ上端 (2mm かかる)",
+      "ops": [
+        {
+          "translate": [
+            -31.5,
+            -6,
+            136.5
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rx_screw_bot_n_z136.5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m2x5",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M2×5。RX 基板下面 (y=-17.6) → Ø2.2 → スペーサ下端 (3.4mm かかる)",
+      "ops": [
+        {
+          "translate": [
+            -31.5,
+            -17.6,
+            136.5
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rx_spacer_n_z177.5",
+      "part": "parts/common/interior/cots/hex_spacer",
+      "file": "hex_spacer_m2_ff6",
+      "group": "interior",
+      "color": "Goldenrod",
+      "alpha": 1.0,
+      "note": "M2 メスメス 6mm。デッキ下面 (y=-10) と RX 基板上面 (y=-16) の間",
+      "ops": [
+        {
+          "translate": [
+            -31.5,
+            -10,
+            177.5
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rx_screw_top_n_z177.5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m2x6",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M2×6。デッキ上面 → Ø2.4 → スペーサ上端 (2mm かかる)",
+      "ops": [
+        {
+          "translate": [
+            -31.5,
+            -6,
+            177.5
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rx_screw_bot_n_z177.5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m2x5",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M2×5。RX 基板下面 (y=-17.6) → Ø2.2 → スペーサ下端 (3.4mm かかる)",
+      "ops": [
+        {
+          "translate": [
+            -31.5,
+            -17.6,
+            177.5
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "flange_spacer_p",
+      "part": "parts/common/interior/cots/hex_spacer",
+      "file": "hex_spacer_m3_mf10",
+      "group": "interior",
+      "color": "Goldenrod",
+      "alpha": 1.0,
+      "note": "M3 MF10。下フランジ内面 (z=19) の BCD94 M3 穴へオスを 4〜5mm ねじ込む (6 を超えない)。オス部はフランジ金属の中 = 包絡検証対象外",
+      "ops": [
+        {
+          "translate": [
+            47,
+            0,
+            19
+          ]
+        }
+      ],
+      "skip_envelope": true
+    },
+    {
+      "label": "flange_screw_p",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x10",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3×10 なべ (ワッシャ無し: Ø7 は MAIN 基板端に当たる)。ラグ 5.5 を貫きスペーサのメスに 4.5mm",
+      "ops": [
+        {
+          "translate": [
+            47,
+            0,
+            34.5
+          ]
+        }
+      ]
+    },
+    {
+      "label": "flange_spacer_n",
+      "part": "parts/common/interior/cots/hex_spacer",
+      "file": "hex_spacer_m3_mf10",
+      "group": "interior",
+      "color": "Goldenrod",
+      "alpha": 1.0,
+      "note": "M3 MF10。下フランジ内面 (z=19) の BCD94 M3 穴へオスを 4〜5mm ねじ込む (6 を超えない)。オス部はフランジ金属の中 = 包絡検証対象外",
+      "ops": [
+        {
+          "translate": [
+            -47,
+            0,
+            19
+          ]
+        }
+      ],
+      "skip_envelope": true
+    },
+    {
+      "label": "flange_screw_n",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x10",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3×10 なべ (ワッシャ無し: Ø7 は MAIN 基板端に当たる)。ラグ 5.5 を貫きスペーサのメスに 4.5mm",
+      "ops": [
+        {
+          "translate": [
+            -47,
+            0,
+            34.5
+          ]
+        }
+      ]
+    },
+    {
+      "label": "flange_screw_y",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x12",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3×12 なべ/キャップ (頭Ø5.5)。下フランジ BCD94 の 90° 穴 (0, +47)。下 LCD アーチの固定耳 (z 19.3..27) を貫き、フランジ内面 (z=19) のタップ穴へ 4mm ねじ込む (制限 4〜5)。頭は z 27..29、ヒンジ枠ラグ (y≤42.5) まで 1.75。270° は電池箱床が塞ぐため未使用。先端 z 15..19 はフランジ金属の中 = 包絡検証対象外",
+      "ops": [
+        {
+          "translate": [
+            0,
+            47,
+            27
+          ]
+        }
+      ],
+      "skip_envelope": true
+    },
+    {
+      "label": "lipo_foam_top",
+      "part": "parts/common/interior/cots/foam_pad",
+      "file": "foam_pad_clipo_top",
+      "group": "interior",
+      "color": "LightPink",
+      "alpha": 0.8,
+      "note": "独立気泡フォーム 3t (106×33)。LiPo 上面 (y=-14) とデッキ下面 (-10) の間 (残り 1mm = 公差代)",
+      "ops": [
+        {
+          "translate": [
+            0,
+            -14,
+            76
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lipo_foam_side_p",
+      "part": "parts/common/interior/cots/foam_pad",
+      "file": "foam_pad_clipo_side",
+      "group": "interior",
+      "color": "LightPink",
+      "alpha": 0.8,
+      "note": "独立気泡フォーム 2t (106×24)。LiPo +X 側面 (x=17.5, +0.5 公差) とベイ側壁 (20) の間",
+      "ops": [
+        {
+          "translate": [
+            18,
+            -27,
+            76
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lipo_foam_side_n",
+      "part": "parts/common/interior/cots/foam_pad",
+      "file": "foam_pad_clipo_side",
+      "group": "interior",
+      "color": "LightPink",
+      "alpha": 0.8,
+      "note": "同 -X 側",
+      "ops": [
+        {
+          "translate": [
+            -18,
+            -27,
+            76
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            -90,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lipo_foam_end_bot",
+      "part": "parts/common/interior/cots/foam_pad",
+      "file": "foam_pad_clipo_end",
+      "group": "interior",
+      "color": "LightPink",
+      "alpha": 0.8,
+      "note": "独立気泡フォーム 1t (20×24)。LiPo -Z 端 (リード側) と端壁の中央柱 (z=20) の間。リード出口 (|x|>10.5) は覆わない",
+      "ops": [
+        {
+          "translate": [
+            0,
+            -27,
+            21
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lipo_foam_end_top",
+      "part": "parts/common/interior/cots/foam_pad",
+      "file": "foam_pad_clipo_end",
+      "group": "interior",
+      "color": "LightPink",
+      "alpha": 0.8,
+      "note": "独立気泡フォーム 1t。LiPo +Z 端 (z=131) とリップ (z=132) の間",
+      "ops": [
+        {
+          "translate": [
+            0,
+            -27,
+            131
+          ]
+        }
+      ]
+    },
+    {
+      "label": "harness_xh9_pwr",
+      "part": "parts/common/cabling/child_harness",
+      "file": "child_harness_xh9_pwr",
+      "group": "interior",
+      "color": "DarkSlateGray",
+      "alpha": 0.9,
+      "note": "C-MAIN J_PWR1 ↔ C-PWR J_MAIN (XH9 ストレート 9 芯、Ø5.5)。MAIN 低背部の上 (x≈4, y≈15) を +Z へ",
+      "ops": []
+    },
+    {
+      "label": "harness_xh6_rx",
+      "part": "parts/common/cabling/child_harness",
+      "file": "child_harness_xh6_rx",
+      "group": "interior",
+      "color": "DarkSlateGray",
+      "alpha": 0.9,
+      "note": "C-MAIN J_RX1 ↔ RX J2 (XH6、Ø4.5)。−X スリット (z 96) → −X レール溝 → RX 下面",
+      "ops": []
+    },
+    {
+      "label": "harness_xh7_lcd",
+      "part": "parts/common/cabling/child_harness",
+      "file": "child_harness_xh7_lcd",
+      "group": "interior",
+      "color": "DarkSlateGray",
+      "alpha": 0.9,
+      "note": "C-MAIN J_LCD1 → LCD 小基板 (XH7、Ø5)。小基板の位置未定なのでスタブ + サービスループ",
+      "ops": []
+    },
+    {
+      "label": "harness_xh3_teth",
+      "part": "parts/common/cabling/child_harness",
+      "file": "child_harness_xh3_teth",
+      "group": "interior",
+      "color": "DarkSlateGray",
+      "alpha": 0.9,
+      "note": "C-MAIN J_TETH1 → 下キャップ ペネトレータ (XH3、Ø3)。−X スリット → −X レール溝 → 下リブ開口",
+      "ops": []
+    },
+    {
+      "label": "harness_xh4_temp",
+      "part": "parts/common/cabling/child_harness",
+      "file": "child_harness_xh4_temp",
+      "group": "interior",
+      "color": "DarkSlateGray",
+      "alpha": 0.9,
+      "note": "C-MAIN J_TEMP1 → ペネトレータ (XH4、Ø3.5)。teth と同経路",
+      "ops": []
+    },
+    {
+      "label": "harness_xh2_leak",
+      "part": "parts/common/cabling/child_harness",
+      "file": "child_harness_xh2_leak",
+      "group": "interior",
+      "color": "DarkSlateGray",
+      "alpha": 0.9,
+      "note": "C-MAIN J_LEAK1 → ペネトレータ (XH2、Ø2.5)。teth と同経路",
+      "ops": []
+    },
+    {
+      "label": "harness_xh4_prs",
+      "part": "parts/common/cabling/child_harness",
+      "file": "child_harness_xh4_prs",
+      "group": "interior",
+      "color": "DarkSlateGray",
+      "alpha": 0.9,
+      "note": "C-MAIN J_PRS1 → ペネトレータ (XH4、Ø3.5)。+X スリット → +X レール溝 → 下リブ開口",
+      "ops": []
+    },
+    {
+      "label": "harness_bat",
+      "part": "parts/common/cabling/child_harness",
+      "file": "child_harness_bat",
+      "group": "interior",
+      "color": "DarkSlateGray",
+      "alpha": 0.9,
+      "note": "電池リード (切って XT30 メス) → XT30 嵌合ペア (+X レール溝 z 25..55) → ピグテール → +X スリット (z 157) → C-PWR J_BAT パッド直付け。充電リード (XH4) は −X 側で下リブに結束",
+      "ops": []
+    },
+    {
+      "label": "harness_led",
+      "part": "parts/common/cabling/child_harness",
+      "file": "child_harness_led",
+      "group": "interior",
+      "color": "DarkSlateGray",
+      "alpha": 0.9,
+      "note": "C-PWR J_LED パッド直付けピグテール → −X スリット (z 157) → −X レール溝 → 下リブ開口 → ライト",
+      "ops": []
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+  [STATUS] child_cam_bridge -> child_cam_mount: became obsolete after locking
+  [UNCONF] child_cam_bridge -> action_camera: never confirmed by a human
+  [DRIFT] child_cam_bridge -> action_camera: parts/child/exterior/cots/action_camera/action_camera.md changed since it was locked (bbox then None, now None)
+  [UNCONF] child_cam_bridge -> child_jaw_gate: never confirmed by a human
+  [DRIFT] child_cam_bridge -> child_jaw_gate: parts/child/exterior/printed/child_jaw_gate/child_jaw_gate.md changed since it was locked (bbox then [152.0, 74.35, 235.0], now [152.0, 74.35, 235.0])
+  [DRIFT] child_cam_mount -> action_camera: parts/child/exterior/cots/action_camera/action_camera.md changed since it was locked (bbox then None, now None)
+  [UNCONF] child_cam_mount -> child_cam_bridge: never confirmed by a human
+  [STATUS] child_cam_mount -> child_cam_bridge: became obsolete after locking
+  [UNCONF] child_core_frame -> child_jaw_gate: never confirmed by a human
+  [DRIFT] child_core_frame -> child_jaw_gate: parts/child/exterior/printed/child_jaw_gate/child_jaw_gate.md changed since it was locked (bbox then [152.0, 74.35, 235.0], now [152.0, 74.35, 235.0])
+  [UNCONF] child_dome_cap_transport -> wte4_dome_cap: never confirmed by a human
+  [UNCONF] child_guard_ring -> child_core_frame: never confirmed by a human
+  [UNCONF] child_jaw_gate -> child_core_frame: never confirmed by a human
+  [UNCONF] child_side_bumper -> child_cam_bridge: never confirmed by a human
+  [STATUS] child_side_bumper -> child_cam_bridge: became obsolete after locking
+  [UNCONF] child_top_crown -> wte4_dome_cap: never confirmed by a human
+  [UNCONF] child_top_crown -> child_core_frame: never confirmed by a human
+  [DRIFT] child_lcd_support -> wte4_flange: parts/child/exterior/cots/wte4_flange/wte4_flange.md changed since it was locked (bbox then None, now None)
+  [DRIFT] child_vtray_batt_box -> lipo_35x26x110: parts/child/interior/cots/lipo_35x26x110/lipo_35x26x110.md changed since it was locked (bbox then None, now None)
+  [UNCONF] wetlink_penetrator_m10 -> bcas212310g: never confirmed by a human
+  [DRIFT] wetlink_penetrator_m10 -> bcas212310g: parts/parent/exterior/cots/bcas212310g/bcas212310g.md changed since it was locked (bbox then [210.0, 230.0, 100.3], now [210.0, 230.0, 100.3])
+  [UNCONF] bcas212310g -> wetlink_penetrator_m10: never confirmed by a human
+  [UNCONF] parent_cam_mount -> parent_plate: never confirmed by a human
+  [UNCONF] parent_cam_mount -> gs_camera_m12: never confirmed by a human
+  [UNCONF] parent_lipo_tray -> parent_main: never confirmed by a human
+  [UNCONF] parent_lipo_tray -> lipo_3s_2200_zeee: never confirmed by a human
+  [DRIFT] parent_lipo_tray -> lipo_3s_2200_zeee: parts/common/interior/cots/lipo_3s_2200_zeee/lipo_3s_2200_zeee.md changed since it was locked (bbox then None, now None)
+  [UNCONF] parent_lipo_tray -> parent_plate: never confirmed by a human
+  [UNCONF] parent_plate -> parent_main: never confirmed by a human
+  [UNCONF] parent_plate -> parent_pwr: never confirmed by a human
+  [UNCONF] parent_plate -> tx_improved: never confirmed by a human
+  [UNCONF] parent_plate -> lipo_3s_2200_zeee: never confirmed by a human
+  [DRIFT] parent_plate -> lipo_3s_2200_zeee: parts/common/interior/cots/lipo_3s_2200_zeee/lipo_3s_2200_zeee.md changed since it was locked (bbox then None, now None)
+  [DRIFT] parent_plate -> bcas212310g: parts/parent/exterior/cots/bcas212310g/bcas212310g.md changed since it was locked (bbox then [210.0, 230.0, 100.3], now [210.0, 230.0, 100.3])
+
+  45 interface(s) checked, 34 problem(s).

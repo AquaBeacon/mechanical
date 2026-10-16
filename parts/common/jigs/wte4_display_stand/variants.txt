@@ -1,0 +1,7 @@
+﻿# wte4_display_stand のバリアント定義 (build.ps1 / build.sh が読む)
+# 書式: <接尾辞>  <変数=値> [<変数=値> ...]        '#' 始まりはコメント
+# 出力: wte4_display_stand_<接尾辞>.stl / .step / _preview.png
+# demo (チューブ付き) はビルド対象外。PNG だけ openscad で直接出す (md 参照)
+cradle  part="cradle"
+rail    part="rail"
+asm     part="asm"

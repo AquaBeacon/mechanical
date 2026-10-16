@@ -1,0 +1,2125 @@
+{
+ "floating": [
+  "flange_screw_y"
+ ],
+ "pairs": [
+  {
+   "a": "vtray_deck",
+   "b": "vtray_rib_bot",
+   "gap": 0.24137158155513747,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "vtray_rib_top",
+   "gap": 0.21677765989664136,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "rib_stop_screw_bot",
+   "gap": 0.08252095430004174,
+   "penetration": 1.73350773738148
+  },
+  {
+   "a": "vtray_deck",
+   "b": "rib_stop_screw_top",
+   "gap": 0.2054198758591152,
+   "penetration": 1.452811023862234
+  },
+  {
+   "a": "vtray_deck",
+   "b": "cable_rail_power",
+   "gap": 0.07340797932864318,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "cable_rail_signal",
+   "gap": 0.1033964528972506,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "vtray_batt_box",
+   "gap": 0.10141622455397799,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "lipo",
+   "gap": 4.000003984828663,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "child_main",
+   "gap": 0.09632509150147907,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "child_pwr",
+   "gap": 0.016692215279198938,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "rx_improved_mini",
+   "gap": 4.141556945971243,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "pwr_screw_p_z130",
+   "gap": 0.09204381425027433,
+   "penetration": 1.7293632993930834
+  },
+  {
+   "a": "vtray_deck",
+   "b": "pwr_screw_p_z184",
+   "gap": 0.09056768182885905,
+   "penetration": 2.689890837805629
+  },
+  {
+   "a": "vtray_deck",
+   "b": "pwr_screw_n_z130",
+   "gap": 0.0921824159858887,
+   "penetration": 1.9736048969539477
+  },
+  {
+   "a": "vtray_deck",
+   "b": "pwr_screw_n_z184",
+   "gap": 0.0618582161079714,
+   "penetration": 2.1347553033423186
+  },
+  {
+   "a": "vtray_deck",
+   "b": "batt_box_screw_p_z32",
+   "gap": 0.008820917087253246,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "batt_box_screw_p_z110",
+   "gap": 0.02995673862492383,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "batt_box_screw_n_z32",
+   "gap": 0.023062265180715313,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "batt_box_screw_n_z110",
+   "gap": 0.014779826943704083,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "rail_screw_x30.3_z37",
+   "gap": 0.03204553314643762,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "rail_screw_x30.3_z77",
+   "gap": 0.025454616937705874,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "rail_screw_x41.7_z37",
+   "gap": 0.02571826773531623,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "rail_screw_x41.7_z77",
+   "gap": 0.016926516224525755,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "rail_screw_x-41.7_z37",
+   "gap": 0.0023886831241401105,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "rail_screw_x-41.7_z77",
+   "gap": 0.0065686220940681566,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "rail_screw_x-30.3_z37",
+   "gap": 0.007542774157594609,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "rail_screw_x-30.3_z77",
+   "gap": 0.014173525020163861,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "rx_spacer_p_z136.5",
+   "gap": 0.00883563290748559,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "rx_screw_top_p_z136.5",
+   "gap": 0.01718857461541812,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "rx_screw_bot_p_z136.5",
+   "gap": 2.6076656899658364,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "rx_spacer_p_z177.5",
+   "gap": 0.025740702357598247,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "rx_screw_top_p_z177.5",
+   "gap": 0.0165832304598747,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "rx_screw_bot_p_z177.5",
+   "gap": 2.6076656899658364,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "rx_spacer_n_z136.5",
+   "gap": 0.020438622209337294,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "rx_screw_top_n_z136.5",
+   "gap": 0.013254194910864495,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "rx_screw_bot_n_z136.5",
+   "gap": 2.6076656899658364,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "rx_spacer_n_z177.5",
+   "gap": 0.010792137179207503,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "rx_screw_top_n_z177.5",
+   "gap": 0.01051340608795265,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "rx_screw_bot_n_z177.5",
+   "gap": 2.6076656899658364,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "flange_spacer_p",
+   "gap": 0.04614509748228757,
+   "penetration": 1.319022679338988
+  },
+  {
+   "a": "vtray_deck",
+   "b": "flange_screw_p",
+   "gap": 0.034461278016113255,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "flange_spacer_n",
+   "gap": 0.05055878001825141,
+   "penetration": 1.3041473967705997
+  },
+  {
+   "a": "vtray_deck",
+   "b": "flange_screw_n",
+   "gap": 0.01486000222995796,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "lipo_foam_top",
+   "gap": 1.000073363172038,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "lipo_foam_side_p",
+   "gap": 5.000966479978432,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "lipo_foam_side_n",
+   "gap": 5.001405438345419,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "lipo_foam_end_bot",
+   "gap": 5.000260026716682,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "lipo_foam_end_top",
+   "gap": 5.00245607717931,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "harness_xh9_pwr",
+   "gap": 8.68447771097166,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "harness_xh6_rx",
+   "gap": 3.297212781877483,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "harness_xh3_teth",
+   "gap": 4.014754655702409,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "harness_xh4_temp",
+   "gap": 3.7700622256997907,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "harness_xh2_leak",
+   "gap": 4.270114670231431,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "harness_xh4_prs",
+   "gap": 3.7659868789214705,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "harness_bat",
+   "gap": 2.413718334680108,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_deck",
+   "b": "harness_led",
+   "gap": 3.0833287586504863,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_rib_bot",
+   "b": "rib_stop_screw_bot",
+   "gap": 0.3284905665665394,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_rib_bot",
+   "b": "vtray_batt_box",
+   "gap": 5.5060190573465775,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_rib_bot",
+   "b": "vtray_batt_floor",
+   "gap": 5.506967073403668,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_rib_bot",
+   "b": "lipo",
+   "gap": 6.849144749566119,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_rib_bot",
+   "b": "batt_floor_screw",
+   "gap": 5.750217387195026,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_rib_bot",
+   "b": "flange_spacer_p",
+   "gap": 5.1722818948699985,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_rib_bot",
+   "b": "flange_spacer_n",
+   "gap": 5.1722818948699985,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_rib_bot",
+   "b": "flange_screw_y",
+   "gap": 6.982299048307798,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_rib_bot",
+   "b": "harness_xh3_teth",
+   "gap": 0.7309240393889285,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_rib_bot",
+   "b": "harness_xh4_temp",
+   "gap": 0.3642136543085492,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_rib_bot",
+   "b": "harness_xh2_leak",
+   "gap": 2.014659316847977,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_rib_bot",
+   "b": "harness_xh4_prs",
+   "gap": 0.9434162040202299,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_rib_bot",
+   "b": "harness_bat",
+   "gap": 0.5056416547026824,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_rib_bot",
+   "b": "harness_led",
+   "gap": 2.8458659196586393,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_rib_top",
+   "b": "rib_stop_screw_top",
+   "gap": 0.48059479668568494,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_rib_top",
+   "b": "child_pwr",
+   "gap": 3.506364387728492,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_rib_top",
+   "b": "pwr_screw_p_z184",
+   "gap": 4.762065395403553,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_rib_top",
+   "b": "pwr_screw_n_z184",
+   "gap": 4.762065395403553,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_power",
+   "b": "vtray_batt_box",
+   "gap": 1.0009349340858575,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_power",
+   "b": "child_main",
+   "gap": 9.095372568509761,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_power",
+   "b": "rx_improved_mini",
+   "gap": 4.238045821785145,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_power",
+   "b": "pwr_screw_p_z130",
+   "gap": 7.644757039248596,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_power",
+   "b": "batt_box_screw_p_z32",
+   "gap": 2.5078218307011575,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_power",
+   "b": "batt_box_screw_p_z110",
+   "gap": 2.502920896446812,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_power",
+   "b": "rail_screw_x30.3_z37",
+   "gap": 0.05717073168012431,
+   "penetration": 1.5463293088424932
+  },
+  {
+   "a": "cable_rail_power",
+   "b": "rail_screw_x30.3_z77",
+   "gap": 0.05212583770914872,
+   "penetration": 0.9998279157225739
+  },
+  {
+   "a": "cable_rail_power",
+   "b": "rail_screw_x41.7_z37",
+   "gap": 0.052194228419370214,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_power",
+   "b": "rail_screw_x41.7_z77",
+   "gap": 0.06779317466525603,
+   "penetration": 1.7189568291791544
+  },
+  {
+   "a": "cable_rail_power",
+   "b": "rx_spacer_p_z136.5",
+   "gap": 4.500177354395892,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_power",
+   "b": "rx_screw_top_p_z136.5",
+   "gap": 5.5093625505602315,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_power",
+   "b": "rx_screw_bot_p_z136.5",
+   "gap": 4.627094120503704,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_power",
+   "b": "flange_spacer_p",
+   "gap": 7.515333527315215,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_power",
+   "b": "flange_screw_p",
+   "gap": 7.961409293554732,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_power",
+   "b": "lipo_foam_side_p",
+   "gap": 8.000950622549762,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_power",
+   "b": "harness_xh4_prs",
+   "gap": 0.8054696835852615,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_power",
+   "b": "harness_bat",
+   "gap": 0.06994865102064698,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_signal",
+   "b": "vtray_batt_box",
+   "gap": 1.0014268153996482,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_signal",
+   "b": "child_main",
+   "gap": 6.2467173879566475,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_signal",
+   "b": "rx_improved_mini",
+   "gap": 4.081109730153617,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_signal",
+   "b": "pwr_screw_n_z130",
+   "gap": 7.600172033025736,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_signal",
+   "b": "batt_box_screw_n_z32",
+   "gap": 2.6076554348320657,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_signal",
+   "b": "batt_box_screw_n_z110",
+   "gap": 2.5253791050493413,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_signal",
+   "b": "rail_screw_x-41.7_z37",
+   "gap": 0.05381683718849976,
+   "penetration": 1.2371191097443017
+  },
+  {
+   "a": "cable_rail_signal",
+   "b": "rail_screw_x-41.7_z77",
+   "gap": 0.03605069235594096,
+   "penetration": 1.1735228161770284
+  },
+  {
+   "a": "cable_rail_signal",
+   "b": "rail_screw_x-30.3_z37",
+   "gap": 0.04981532258195317,
+   "penetration": 1.3128556711295643
+  },
+  {
+   "a": "cable_rail_signal",
+   "b": "rail_screw_x-30.3_z77",
+   "gap": 0.038103128446340055,
+   "penetration": 1.1199303361160817
+  },
+  {
+   "a": "cable_rail_signal",
+   "b": "rx_spacer_n_z136.5",
+   "gap": 4.5014854277800795,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_signal",
+   "b": "rx_screw_top_n_z136.5",
+   "gap": 5.53714727996285,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_signal",
+   "b": "rx_screw_bot_n_z136.5",
+   "gap": 4.609860703572564,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_signal",
+   "b": "flange_spacer_n",
+   "gap": 7.509356963705106,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_signal",
+   "b": "flange_screw_n",
+   "gap": 7.976379617872007,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_signal",
+   "b": "lipo_foam_side_n",
+   "gap": 8.000263830042694,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_signal",
+   "b": "harness_xh6_rx",
+   "gap": 0.8803873792277503,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_signal",
+   "b": "harness_xh3_teth",
+   "gap": 0.6794766831995555,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_signal",
+   "b": "harness_xh4_temp",
+   "gap": 0.6701949429322425,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_signal",
+   "b": "harness_xh2_leak",
+   "gap": 0.7102708412434843,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_signal",
+   "b": "harness_bat",
+   "gap": 5.003686065742456,
+   "penetration": 0.0
+  },
+  {
+   "a": "cable_rail_signal",
+   "b": "harness_led",
+   "gap": 0.7013353496172519,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "vtray_batt_floor",
+   "gap": 0.028339707820518808,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "lipo",
+   "gap": 0.7722918771536597,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "child_main",
+   "gap": 6.245036365386509,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "child_pwr",
+   "gap": 9.160127250753668,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "rx_improved_mini",
+   "gap": 0.8039437703971776,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "pwr_screw_p_z130",
+   "gap": 8.299107729487254,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "pwr_screw_n_z130",
+   "gap": 8.505886154375684,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "batt_box_screw_p_z32",
+   "gap": 0.03847990622790682,
+   "penetration": 1.4934325672418927
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "batt_box_screw_p_z110",
+   "gap": 0.05005071502154136,
+   "penetration": 1.894766964151692
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "batt_box_screw_n_z32",
+   "gap": 0.057084598475717625,
+   "penetration": 1.1974618841047204
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "batt_box_screw_n_z110",
+   "gap": 0.07672450517972094,
+   "penetration": 1.411083605540524
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "rail_screw_x30.3_z37",
+   "gap": 1.834173315556969,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "rail_screw_x30.3_z77",
+   "gap": 1.8318933710265701,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "rail_screw_x-30.3_z37",
+   "gap": 1.903089534695052,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "rail_screw_x-30.3_z77",
+   "gap": 1.8051887428072562,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "batt_floor_screw",
+   "gap": 0.2372050129623332,
+   "penetration": 1.8841584219589445
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "rx_spacer_p_z136.5",
+   "gap": 3.3987970598267916,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "rx_screw_top_p_z136.5",
+   "gap": 4.416644284284587,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "rx_screw_bot_p_z136.5",
+   "gap": 4.414292412255129,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "rx_spacer_n_z136.5",
+   "gap": 3.3992446355546857,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "rx_screw_top_n_z136.5",
+   "gap": 4.411863763631649,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "rx_screw_bot_n_z136.5",
+   "gap": 4.413460530408672,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "lipo_foam_top",
+   "gap": 3.0067341869826194,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "lipo_foam_side_p",
+   "gap": 0.04731251236827106,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "lipo_foam_side_n",
+   "gap": 0.01771249848196,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "lipo_foam_end_bot",
+   "gap": 0.1010058314577482,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "lipo_foam_end_top",
+   "gap": 0.018349948307197054,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "harness_xh6_rx",
+   "gap": 6.797135318628804,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "harness_xh3_teth",
+   "gap": 2.8011389712607606,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "harness_xh4_temp",
+   "gap": 3.3453018757207724,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "harness_xh2_leak",
+   "gap": 3.0700344533664747,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "harness_xh4_prs",
+   "gap": 2.5261527212971067,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "harness_bat",
+   "gap": 0.8936875858678195,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_box",
+   "b": "harness_led",
+   "gap": 2.226632580472603,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_floor",
+   "b": "lipo",
+   "gap": 0.03366795063606248,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_floor",
+   "b": "batt_floor_screw",
+   "gap": 0.10071286019393404,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_floor",
+   "b": "lipo_foam_side_p",
+   "gap": 0.45731135815314405,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_floor",
+   "b": "lipo_foam_side_n",
+   "gap": 0.3316824854934803,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_floor",
+   "b": "lipo_foam_end_bot",
+   "gap": 1.0031550878879356,
+   "penetration": 0.0
+  },
+  {
+   "a": "vtray_batt_floor",
+   "b": "lipo_foam_end_top",
+   "gap": 1.0222225472495405,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo",
+   "b": "rx_improved_mini",
+   "gap": 3.026299498115573,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo",
+   "b": "batt_box_screw_p_z32",
+   "gap": 5.576043446772894,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo",
+   "b": "batt_box_screw_p_z110",
+   "gap": 5.232264288497138,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo",
+   "b": "batt_box_screw_n_z32",
+   "gap": 5.251703981719574,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo",
+   "b": "batt_box_screw_n_z110",
+   "gap": 5.274632323231347,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo",
+   "b": "batt_floor_screw",
+   "gap": 2.526818960862045,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo",
+   "b": "lipo_foam_top",
+   "gap": 0.012846836871974843,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo",
+   "b": "lipo_foam_side_p",
+   "gap": 0.5006893038238192,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo",
+   "b": "lipo_foam_side_n",
+   "gap": 0.5006370079829479,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo",
+   "b": "lipo_foam_end_bot",
+   "gap": 0.04483578739332895,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo",
+   "b": "lipo_foam_end_top",
+   "gap": 0.09155279971637445,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo",
+   "b": "harness_xh3_teth",
+   "gap": 4.691094792149694,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo",
+   "b": "harness_xh4_temp",
+   "gap": 4.364780954288302,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo",
+   "b": "harness_xh2_leak",
+   "gap": 3.6845699644896395,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo",
+   "b": "harness_xh4_prs",
+   "gap": 3.881366692553751,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo",
+   "b": "harness_bat",
+   "gap": 0.1247657848396924,
+   "penetration": 2.170175022434062
+  },
+  {
+   "a": "lipo",
+   "b": "harness_led",
+   "gap": 0.8706616105008932,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_main",
+   "b": "child_pwr",
+   "gap": 2.611660814638349,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_main",
+   "b": "pwr_screw_p_z130",
+   "gap": 5.1891766101299925,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_main",
+   "b": "pwr_screw_n_z130",
+   "gap": 4.988946321672648,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_main",
+   "b": "batt_box_screw_p_z32",
+   "gap": 4.829422843363376,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_main",
+   "b": "batt_box_screw_p_z110",
+   "gap": 5.000251777286488,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_main",
+   "b": "batt_box_screw_n_z32",
+   "gap": 0.24825929535462757,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_main",
+   "b": "batt_box_screw_n_z110",
+   "gap": 4.488131571155188,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_main",
+   "b": "rail_screw_x30.3_z37",
+   "gap": 5.000165226697618,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_main",
+   "b": "rail_screw_x30.3_z77",
+   "gap": 5.00055461850652,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_main",
+   "b": "rail_screw_x41.7_z37",
+   "gap": 5.000329893935995,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_main",
+   "b": "rail_screw_x41.7_z77",
+   "gap": 3.0954431262844038,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_main",
+   "b": "rail_screw_x-41.7_z37",
+   "gap": 1.993419884144834,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_main",
+   "b": "rail_screw_x-41.7_z77",
+   "gap": 5.000625329652432,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_main",
+   "b": "rail_screw_x-30.3_z37",
+   "gap": 1.8873137325309775,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_main",
+   "b": "rail_screw_x-30.3_z77",
+   "gap": 5.000728562916763,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_main",
+   "b": "flange_spacer_p",
+   "gap": 0.39319966223857084,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_main",
+   "b": "flange_screw_p",
+   "gap": 0.8101151978441397,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_main",
+   "b": "flange_spacer_n",
+   "gap": 0.4271130122933252,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_main",
+   "b": "flange_screw_n",
+   "gap": 0.655165148161756,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_main",
+   "b": "lipo_foam_top",
+   "gap": 7.245093451546684,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_main",
+   "b": "harness_xh9_pwr",
+   "gap": 0.062279631548386706,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_main",
+   "b": "harness_xh6_rx",
+   "gap": 0.19192726293583098,
+   "penetration": 2.689560702207397
+  },
+  {
+   "a": "child_main",
+   "b": "harness_xh3_teth",
+   "gap": 0.037837655895662306,
+   "penetration": 2.737490454624763
+  },
+  {
+   "a": "child_main",
+   "b": "harness_xh4_temp",
+   "gap": 0.21152975629024107,
+   "penetration": 2.732349189204853
+  },
+  {
+   "a": "child_main",
+   "b": "harness_xh2_leak",
+   "gap": 0.06598712707173657,
+   "penetration": 2.6596242109884622
+  },
+  {
+   "a": "child_main",
+   "b": "harness_xh4_prs",
+   "gap": 0.035839713299511994,
+   "penetration": 1.384628914585403
+  },
+  {
+   "a": "child_main",
+   "b": "harness_led",
+   "gap": 9.795011963365317,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_pwr",
+   "b": "pwr_screw_p_z130",
+   "gap": 0.09161531554524541,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_pwr",
+   "b": "pwr_screw_p_z184",
+   "gap": 0.09637948535099083,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_pwr",
+   "b": "pwr_screw_n_z130",
+   "gap": 0.09252939890304279,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_pwr",
+   "b": "pwr_screw_n_z184",
+   "gap": 0.09517018838051254,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_pwr",
+   "b": "rx_screw_top_p_z136.5",
+   "gap": 8.700294462327925,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_pwr",
+   "b": "rx_screw_top_p_z177.5",
+   "gap": 8.700038351475591,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_pwr",
+   "b": "rx_screw_top_n_z136.5",
+   "gap": 8.700291838688155,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_pwr",
+   "b": "rx_spacer_n_z177.5",
+   "gap": 9.074083678807458,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_pwr",
+   "b": "rx_screw_top_n_z177.5",
+   "gap": 7.369690037579598,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_pwr",
+   "b": "harness_xh9_pwr",
+   "gap": 0.12956046637720367,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_pwr",
+   "b": "harness_xh2_leak",
+   "gap": 9.05369286671604,
+   "penetration": 0.0
+  },
+  {
+   "a": "child_pwr",
+   "b": "harness_bat",
+   "gap": 0.04489891100199704,
+   "penetration": 1.8757406484322336
+  },
+  {
+   "a": "child_pwr",
+   "b": "harness_led",
+   "gap": 0.16820231639525426,
+   "penetration": 2.1442300914742964
+  },
+  {
+   "a": "rx_improved_mini",
+   "b": "rx_spacer_p_z136.5",
+   "gap": 0.014154150829916688,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_improved_mini",
+   "b": "rx_screw_top_p_z136.5",
+   "gap": 4.001249781165525,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_improved_mini",
+   "b": "rx_screw_bot_p_z136.5",
+   "gap": 0.09279523059893438,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_improved_mini",
+   "b": "rx_spacer_p_z177.5",
+   "gap": 0.01831032886056317,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_improved_mini",
+   "b": "rx_screw_top_p_z177.5",
+   "gap": 4.001249766613741,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_improved_mini",
+   "b": "rx_screw_bot_p_z177.5",
+   "gap": 0.09357092595972014,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_improved_mini",
+   "b": "rx_spacer_n_z136.5",
+   "gap": 0.02521117407749706,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_improved_mini",
+   "b": "rx_screw_top_n_z136.5",
+   "gap": 4.001249766613736,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_improved_mini",
+   "b": "rx_screw_bot_n_z136.5",
+   "gap": 0.0912427657747956,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_improved_mini",
+   "b": "rx_spacer_n_z177.5",
+   "gap": 0.024379211281907096,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_improved_mini",
+   "b": "rx_screw_top_n_z177.5",
+   "gap": 4.001249766613734,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_improved_mini",
+   "b": "rx_screw_bot_n_z177.5",
+   "gap": 0.09032343021360777,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_improved_mini",
+   "b": "lipo_foam_top",
+   "gap": 5.506336380762855,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_improved_mini",
+   "b": "lipo_foam_side_p",
+   "gap": 5.247536985562953,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_improved_mini",
+   "b": "lipo_foam_side_n",
+   "gap": 5.288194890337551,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_improved_mini",
+   "b": "lipo_foam_end_top",
+   "gap": 2.006020983340873,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_improved_mini",
+   "b": "harness_xh6_rx",
+   "gap": 0.1901881910152217,
+   "penetration": 1.3564362648928434
+  },
+  {
+   "a": "rx_improved_mini",
+   "b": "harness_bat",
+   "gap": 0.7781434191685268,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_improved_mini",
+   "b": "harness_led",
+   "gap": 0.2530613258899278,
+   "penetration": 1.3291542243487846
+  },
+  {
+   "a": "pwr_screw_p_z130",
+   "b": "rx_spacer_p_z136.5",
+   "gap": 8.193917229194103,
+   "penetration": 0.0
+  },
+  {
+   "a": "pwr_screw_p_z130",
+   "b": "rx_screw_top_p_z136.5",
+   "gap": 3.8923000912057075,
+   "penetration": 0.0
+  },
+  {
+   "a": "pwr_screw_p_z184",
+   "b": "rx_spacer_p_z177.5",
+   "gap": 8.176540879772913,
+   "penetration": 0.0
+  },
+  {
+   "a": "pwr_screw_p_z184",
+   "b": "rx_screw_top_p_z177.5",
+   "gap": 3.892300091205708,
+   "penetration": 0.0
+  },
+  {
+   "a": "pwr_screw_n_z130",
+   "b": "rx_spacer_n_z136.5",
+   "gap": 8.193917229194103,
+   "penetration": 0.0
+  },
+  {
+   "a": "pwr_screw_n_z130",
+   "b": "rx_screw_top_n_z136.5",
+   "gap": 3.8923000912057075,
+   "penetration": 0.0
+  },
+  {
+   "a": "pwr_screw_n_z184",
+   "b": "rx_spacer_n_z177.5",
+   "gap": 8.18469521547602,
+   "penetration": 0.0
+  },
+  {
+   "a": "pwr_screw_n_z184",
+   "b": "rx_screw_top_n_z177.5",
+   "gap": 3.892300091205708,
+   "penetration": 0.0
+  },
+  {
+   "a": "batt_box_screw_p_z32",
+   "b": "rail_screw_x30.3_z37",
+   "gap": 2.589079328491418,
+   "penetration": 0.0
+  },
+  {
+   "a": "batt_box_screw_p_z32",
+   "b": "lipo_foam_top",
+   "gap": 6.008529041418486,
+   "penetration": 0.0
+  },
+  {
+   "a": "batt_box_screw_p_z32",
+   "b": "lipo_foam_side_p",
+   "gap": 3.129073203251432,
+   "penetration": 0.0
+  },
+  {
+   "a": "batt_box_screw_p_z32",
+   "b": "harness_xh4_prs",
+   "gap": 8.917982018908965,
+   "penetration": 0.0
+  },
+  {
+   "a": "batt_box_screw_p_z32",
+   "b": "harness_bat",
+   "gap": 7.02858152270129,
+   "penetration": 0.0
+  },
+  {
+   "a": "batt_box_screw_p_z110",
+   "b": "lipo_foam_top",
+   "gap": 6.028222554098594,
+   "penetration": 0.0
+  },
+  {
+   "a": "batt_box_screw_p_z110",
+   "b": "lipo_foam_side_p",
+   "gap": 3.0339966962851395,
+   "penetration": 0.0
+  },
+  {
+   "a": "batt_box_screw_p_z110",
+   "b": "harness_bat",
+   "gap": 9.198360040686795,
+   "penetration": 0.0
+  },
+  {
+   "a": "batt_box_screw_n_z32",
+   "b": "rail_screw_x-30.3_z37",
+   "gap": 2.5893236945868603,
+   "penetration": 0.0
+  },
+  {
+   "a": "batt_box_screw_n_z32",
+   "b": "lipo_foam_top",
+   "gap": 6.0064966454449,
+   "penetration": 0.0
+  },
+  {
+   "a": "batt_box_screw_n_z32",
+   "b": "lipo_foam_side_n",
+   "gap": 2.8187630126316554,
+   "penetration": 0.0
+  },
+  {
+   "a": "batt_box_screw_n_z32",
+   "b": "harness_xh3_teth",
+   "gap": 9.122829738688612,
+   "penetration": 0.0
+  },
+  {
+   "a": "batt_box_screw_n_z32",
+   "b": "harness_xh4_temp",
+   "gap": 8.873000481442018,
+   "penetration": 0.0
+  },
+  {
+   "a": "batt_box_screw_n_z32",
+   "b": "harness_xh2_leak",
+   "gap": 9.380316696051436,
+   "penetration": 0.0
+  },
+  {
+   "a": "batt_box_screw_n_z32",
+   "b": "harness_led",
+   "gap": 8.2242744277963,
+   "penetration": 0.0
+  },
+  {
+   "a": "batt_box_screw_n_z110",
+   "b": "lipo_foam_top",
+   "gap": 6.006939272371716,
+   "penetration": 0.0
+  },
+  {
+   "a": "batt_box_screw_n_z110",
+   "b": "lipo_foam_side_n",
+   "gap": 3.2526140400884573,
+   "penetration": 0.0
+  },
+  {
+   "a": "batt_box_screw_n_z110",
+   "b": "harness_xh6_rx",
+   "gap": 8.390163766150101,
+   "penetration": 0.0
+  },
+  {
+   "a": "batt_box_screw_n_z110",
+   "b": "harness_led",
+   "gap": 9.99688203064456,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x30.3_z37",
+   "b": "rail_screw_x41.7_z37",
+   "gap": 5.900000000000006,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x30.3_z37",
+   "b": "lipo_foam_side_p",
+   "gap": 8.849560554272955,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x30.3_z37",
+   "b": "harness_xh4_prs",
+   "gap": 2.465975154090421,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x30.3_z37",
+   "b": "harness_bat",
+   "gap": 0.7581239529260496,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x30.3_z77",
+   "b": "rail_screw_x41.7_z77",
+   "gap": 5.900000000000006,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x30.3_z77",
+   "b": "lipo_foam_side_p",
+   "gap": 8.86680167152641,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x30.3_z77",
+   "b": "harness_xh4_prs",
+   "gap": 2.508159729530512,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x30.3_z77",
+   "b": "harness_bat",
+   "gap": 2.724424808204195,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x41.7_z37",
+   "b": "flange_spacer_p",
+   "gap": 6.212260474980104,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x41.7_z37",
+   "b": "flange_screw_p",
+   "gap": 2.056692292526175,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x41.7_z37",
+   "b": "harness_xh4_prs",
+   "gap": 2.5076322394569512,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x41.7_z37",
+   "b": "harness_bat",
+   "gap": 0.708056977270266,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x41.7_z77",
+   "b": "harness_xh4_prs",
+   "gap": 2.5168819637715147,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x41.7_z77",
+   "b": "harness_bat",
+   "gap": 0.8414978546844822,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x-41.7_z37",
+   "b": "rail_screw_x-30.3_z37",
+   "gap": 5.900000000000006,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x-41.7_z37",
+   "b": "flange_spacer_n",
+   "gap": 6.212260474980104,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x-41.7_z37",
+   "b": "flange_screw_n",
+   "gap": 2.0583486233582384,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x-41.7_z37",
+   "b": "harness_xh3_teth",
+   "gap": 2.826872017654641,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x-41.7_z37",
+   "b": "harness_xh4_temp",
+   "gap": 2.493835752986503,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x-41.7_z37",
+   "b": "harness_xh2_leak",
+   "gap": 2.9852624748903973,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x-41.7_z37",
+   "b": "harness_led",
+   "gap": 2.081696229497323,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x-41.7_z77",
+   "b": "rail_screw_x-30.3_z77",
+   "gap": 5.900000000000006,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x-41.7_z77",
+   "b": "harness_xh3_teth",
+   "gap": 2.713468549770312,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x-41.7_z77",
+   "b": "harness_xh4_temp",
+   "gap": 2.5275755515313,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x-41.7_z77",
+   "b": "harness_xh2_leak",
+   "gap": 2.97904542991469,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x-41.7_z77",
+   "b": "harness_led",
+   "gap": 2.6141739623638145,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x-30.3_z37",
+   "b": "lipo_foam_side_n",
+   "gap": 8.8276543450395,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x-30.3_z37",
+   "b": "harness_xh3_teth",
+   "gap": 2.7595474354509877,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x-30.3_z37",
+   "b": "harness_xh4_temp",
+   "gap": 2.552404845255156,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x-30.3_z37",
+   "b": "harness_xh2_leak",
+   "gap": 2.996727257432163,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x-30.3_z37",
+   "b": "harness_led",
+   "gap": 1.8160560962264798,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x-30.3_z77",
+   "b": "lipo_foam_side_n",
+   "gap": 8.803822709652732,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x-30.3_z77",
+   "b": "harness_xh3_teth",
+   "gap": 2.799509514940128,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x-30.3_z77",
+   "b": "harness_xh4_temp",
+   "gap": 2.503044849215874,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x-30.3_z77",
+   "b": "harness_xh2_leak",
+   "gap": 3.002727689792077,
+   "penetration": 0.0
+  },
+  {
+   "a": "rail_screw_x-30.3_z77",
+   "b": "harness_led",
+   "gap": 2.5216895625688913,
+   "penetration": 0.0
+  },
+  {
+   "a": "batt_floor_screw",
+   "b": "lipo_foam_end_bot",
+   "gap": 1.519749326825007,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_spacer_p_z136.5",
+   "b": "rx_screw_top_p_z136.5",
+   "gap": 0.018029916966328358,
+   "penetration": 0.30476545364532953
+  },
+  {
+   "a": "rx_spacer_p_z136.5",
+   "b": "rx_screw_bot_p_z136.5",
+   "gap": 0.02775258093870591,
+   "penetration": 0.2891941427853946
+  },
+  {
+   "a": "rx_spacer_p_z136.5",
+   "b": "harness_bat",
+   "gap": 0.8244457102719964,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_screw_top_p_z136.5",
+   "b": "rx_screw_bot_p_z136.5",
+   "gap": 0.6000000000000014,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_screw_top_p_z136.5",
+   "b": "harness_bat",
+   "gap": 3.2292190907068306,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_screw_bot_p_z136.5",
+   "b": "harness_bat",
+   "gap": 1.8746434721970282,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_spacer_p_z177.5",
+   "b": "rx_screw_top_p_z177.5",
+   "gap": 0.027770963545678613,
+   "penetration": 0.3341347771753851
+  },
+  {
+   "a": "rx_spacer_p_z177.5",
+   "b": "rx_screw_bot_p_z177.5",
+   "gap": 0.03090208067901704,
+   "penetration": 0.31954656628564265
+  },
+  {
+   "a": "rx_screw_top_p_z177.5",
+   "b": "rx_screw_bot_p_z177.5",
+   "gap": 0.6000000000000014,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_spacer_n_z136.5",
+   "b": "rx_screw_top_n_z136.5",
+   "gap": 0.0253088834377311,
+   "penetration": 0.27794639162055423
+  },
+  {
+   "a": "rx_spacer_n_z136.5",
+   "b": "rx_screw_bot_n_z136.5",
+   "gap": 0.02479604657353548,
+   "penetration": 0.34404136145749087
+  },
+  {
+   "a": "rx_spacer_n_z136.5",
+   "b": "harness_xh6_rx",
+   "gap": 1.3725239397129738,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_spacer_n_z136.5",
+   "b": "harness_led",
+   "gap": 0.6244371339776581,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_screw_top_n_z136.5",
+   "b": "rx_screw_bot_n_z136.5",
+   "gap": 0.6000000000000014,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_screw_top_n_z136.5",
+   "b": "harness_xh6_rx",
+   "gap": 3.5958565796063158,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_screw_top_n_z136.5",
+   "b": "harness_led",
+   "gap": 2.8785096865609114,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_screw_bot_n_z136.5",
+   "b": "harness_xh6_rx",
+   "gap": 0.8749561247774275,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_screw_bot_n_z136.5",
+   "b": "harness_led",
+   "gap": 0.3157711725281493,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_spacer_n_z177.5",
+   "b": "rx_screw_top_n_z177.5",
+   "gap": 0.039744934941990925,
+   "penetration": 0.29771283542054977
+  },
+  {
+   "a": "rx_spacer_n_z177.5",
+   "b": "rx_screw_bot_n_z177.5",
+   "gap": 0.029074238006725033,
+   "penetration": 0.3045903053644355
+  },
+  {
+   "a": "rx_screw_top_n_z177.5",
+   "b": "rx_screw_bot_n_z177.5",
+   "gap": 0.6000000000000014,
+   "penetration": 0.0
+  },
+  {
+   "a": "rx_screw_bot_n_z177.5",
+   "b": "harness_xh6_rx",
+   "gap": 9.028343923313127,
+   "penetration": 0.0
+  },
+  {
+   "a": "flange_spacer_p",
+   "b": "flange_screw_p",
+   "gap": 0.06790188364378226,
+   "penetration": 0.5049792594793766
+  },
+  {
+   "a": "flange_spacer_n",
+   "b": "flange_screw_n",
+   "gap": 0.0573431540697522,
+   "penetration": 0.4487115925960823
+  },
+  {
+   "a": "lipo_foam_top",
+   "b": "lipo_foam_side_p",
+   "gap": 1.8027756377319897,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo_foam_top",
+   "b": "lipo_foam_side_n",
+   "gap": 1.8027756377319897,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo_foam_top",
+   "b": "lipo_foam_end_bot",
+   "gap": 2.3671161916690053,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo_foam_top",
+   "b": "lipo_foam_end_top",
+   "gap": 2.342818242137962,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo_foam_top",
+   "b": "harness_bat",
+   "gap": 8.910983391298629,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo_foam_side_p",
+   "b": "lipo_foam_end_bot",
+   "gap": 8.246211251235325,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo_foam_side_p",
+   "b": "lipo_foam_end_top",
+   "gap": 8.246211251235318,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo_foam_side_p",
+   "b": "harness_xh4_prs",
+   "gap": 9.403346036211044,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo_foam_side_p",
+   "b": "harness_bat",
+   "gap": 4.250390282592201,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo_foam_side_n",
+   "b": "lipo_foam_end_bot",
+   "gap": 8.246211251235325,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo_foam_side_n",
+   "b": "lipo_foam_end_top",
+   "gap": 8.246211251235318,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo_foam_side_n",
+   "b": "harness_xh3_teth",
+   "gap": 8.536694170401297,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo_foam_side_n",
+   "b": "harness_xh2_leak",
+   "gap": 8.772310962000846,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo_foam_side_n",
+   "b": "harness_bat",
+   "gap": 5.423015752605878,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo_foam_side_n",
+   "b": "harness_led",
+   "gap": 6.915992475505998,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo_foam_end_bot",
+   "b": "harness_bat",
+   "gap": 1.9058812055235919,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo_foam_end_bot",
+   "b": "harness_led",
+   "gap": 6.43830718298717,
+   "penetration": 0.0
+  },
+  {
+   "a": "harness_xh6_rx",
+   "b": "harness_xh3_teth",
+   "gap": 0.053991917944800336,
+   "penetration": 2.0121480257948092
+  },
+  {
+   "a": "harness_xh6_rx",
+   "b": "harness_xh4_temp",
+   "gap": 0.10132563183819324,
+   "penetration": 1.832044958216272
+  },
+  {
+   "a": "harness_xh6_rx",
+   "b": "harness_xh2_leak",
+   "gap": 0.16035512352055126,
+   "penetration": 2.165057364786887
+  },
+  {
+   "a": "harness_xh6_rx",
+   "b": "harness_led",
+   "gap": 0.07528066829093387,
+   "penetration": 2.225116670130441
+  },
+  {
+   "a": "harness_xh3_teth",
+   "b": "harness_xh4_temp",
+   "gap": 0.007116444562695709,
+   "penetration": 1.6524314115780607
+  },
+  {
+   "a": "harness_xh3_teth",
+   "b": "harness_xh2_leak",
+   "gap": 0.07526742075006822,
+   "penetration": 1.3457607552129254
+  },
+  {
+   "a": "harness_xh3_teth",
+   "b": "harness_bat",
+   "gap": 0.20127951480076806,
+   "penetration": 2.8262635967050795
+  },
+  {
+   "a": "harness_xh3_teth",
+   "b": "harness_led",
+   "gap": 0.1238121336418308,
+   "penetration": 2.307453002939347
+  },
+  {
+   "a": "harness_xh4_temp",
+   "b": "harness_xh2_leak",
+   "gap": 0.03603068137018855,
+   "penetration": 1.6871842871523206
+  },
+  {
+   "a": "harness_xh4_temp",
+   "b": "harness_xh4_prs",
+   "gap": 9.46054,
+   "penetration": 0.0
+  },
+  {
+   "a": "harness_xh4_temp",
+   "b": "harness_bat",
+   "gap": 0.13262748583909909,
+   "penetration": 2.9100368774655645
+  },
+  {
+   "a": "harness_xh4_temp",
+   "b": "harness_led",
+   "gap": 0.09407137871641974,
+   "penetration": 2.2694302639750363
+  },
+  {
+   "a": "harness_xh2_leak",
+   "b": "harness_xh4_prs",
+   "gap": 3.966738629819212,
+   "penetration": 0.0
+  },
+  {
+   "a": "harness_xh2_leak",
+   "b": "harness_bat",
+   "gap": 0.17132999383279857,
+   "penetration": 2.7789967467678385
+  },
+  {
+   "a": "harness_xh2_leak",
+   "b": "harness_led",
+   "gap": 0.12060391874983717,
+   "penetration": 2.394065442089827
+  },
+  {
+   "a": "harness_xh4_prs",
+   "b": "harness_bat",
+   "gap": 0.07477205360293675,
+   "penetration": 3.585121966831889
+  },
+  {
+   "a": "harness_xh4_prs",
+   "b": "harness_led",
+   "gap": 0.09776110320572294,
+   "penetration": 2.316608413045997
+  },
+  {
+   "a": "harness_bat",
+   "b": "harness_led",
+   "gap": 0.1344493143164924,
+   "penetration": 2.2552831970185814
+  }
+ ]
+}

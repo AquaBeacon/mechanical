@@ -1,0 +1,868 @@
+{
+  "schema": "topopt/fea/1",
+  "part": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\spec\\child_interior_reinforcement\\pla_matte_lever\\deck_after.stl",
+  "material": "PLA",
+  "pass": false,
+  "cases": [
+    {
+      "elements": 1061070,
+      "voxel_mm": 0.4,
+      "volume_mm3": 67908.48000000001,
+      "converged": true,
+      "cg_iterations": 39,
+      "compliance_Nmm": 0.6263108856295876,
+      "max_displacement_mm": 0.06808725608051178,
+      "max_displacement_at": [
+        -38.15680160522461,
+        -5.899999809265136,
+        201.8
+      ],
+      "von_mises_max_MPa": 2.791054937117536,
+      "von_mises_p99_5_MPa": 0.6948876818378854,
+      "stress_concentration_ratio": 4.016555495322017,
+      "failure_index_max": 0.0744284795328699,
+      "failure_index_p99_5": 0.014787250920656308,
+      "failure_criterion": "max_stress_material_axes",
+      "material_axes": {
+        "build_axis": "Y",
+        "raster_axis": "Z",
+        "stiffness": "orthotropic",
+        "card_id": "pla_generic_fff_orthotropic_v1"
+      },
+      "min_safety_factor": 13.43571716466906,
+      "safety_factor_p99_5": 67.62582209267175,
+      "mesh": {
+        "thin_section_mm": 4.0,
+        "typical_section_mm": 4.0,
+        "elements_across_thin": 10.0,
+        "elements_across_typical": 10.0
+      },
+      "warnings": [],
+      "checks": [
+        {
+          "name": "strength",
+          "required": "safety factor >= 4.00",
+          "got": "13.44 (worst element) / 67.63 (p99.5)",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "stiffness",
+          "required": "max deflection <= 1.000 mm",
+          "got": "0.068 mm",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "mesh resolution",
+          "required": ">= 3 elements across the thinnest section",
+          "got": "10.0 (thin 4.00 mm) / 10.0 (typical 4.00 mm)",
+          "pass": true,
+          "inspect": false
+        }
+      ],
+      "pass": true,
+      "hotspots": [
+        {
+          "pos": [
+            49.64,
+            -2.5,
+            28.8
+          ],
+          "failure_index": 0.074,
+          "safety_factor": 13.44
+        },
+        {
+          "pos": [
+            -45.56,
+            -3.3,
+            40.8
+          ],
+          "failure_index": 0.074,
+          "safety_factor": 13.58
+        },
+        {
+          "pos": [
+            -44.36,
+            -2.1,
+            41.2
+          ],
+          "failure_index": 0.072,
+          "safety_factor": 13.87
+        },
+        {
+          "pos": [
+            45.64,
+            -3.3,
+            29.2
+          ],
+          "failure_index": 0.07,
+          "safety_factor": 14.26
+        },
+        {
+          "pos": [
+            48.04,
+            -3.3,
+            29.2
+          ],
+          "failure_index": 0.067,
+          "safety_factor": 15.0
+        }
+      ],
+      "case": "200g_5g_X_-1",
+      "load_class": "normal",
+      "required_safety_factor": 4.0,
+      "total_applied_load_N": [
+        -13.94,
+        0.0,
+        0.0
+      ],
+      "resultant_load_N": 13.94,
+      "material": "PLA",
+      "material_model": {
+        "material_model": "orthotropic_equivalent_solid",
+        "card_id": "pla_generic_fff_orthotropic_v1",
+        "classification": "conservative_literature_based_default",
+        "measured_for_specific_printer": false,
+        "solid_fraction_applied": 1.0,
+        "Ex_Ey_Ez_MPa": [
+          3000,
+          2400,
+          1500
+        ],
+        "Gxy_Gyz_Gzx_MPa": [
+          1000,
+          550,
+          550
+        ],
+        "strengths_MPa": {
+          "Xt": 50,
+          "Xc": 60,
+          "Yt": 35,
+          "Yc": 50,
+          "Zt": 22,
+          "Zc": 40,
+          "Sxy": 25,
+          "Syz": 15,
+          "Szx": 15
+        },
+        "source": "docs/FFF_PLA_PETG_orthotropic_material_reference.md section 5"
+      },
+      "solve_seconds": 24.806,
+      "solver": {
+        "backend": "cuda",
+        "device": "NVIDIA GeForce RTX 4060 Ti",
+        "torch": "2.12.0+cu130",
+        "preconditioner": "mg",
+        "precision": "mixed32",
+        "multigrid": {
+          "levels": [
+            {
+              "shape": [
+                249,
+                64,
+                458
+              ],
+              "elements": 1061070,
+              "ndof": 22376250
+            },
+            {
+              "shape": [
+                125,
+                32,
+                229
+              ],
+              "elements": 160317,
+              "ndof": 2869020
+            },
+            {
+              "shape": [
+                63,
+                16,
+                115
+              ],
+              "elements": 27110,
+              "ndof": 378624
+            },
+            {
+              "shape": [
+                32,
+                8,
+                58
+              ],
+              "elements": 5134,
+              "ndof": 52569
+            },
+            {
+              "shape": [
+                16,
+                4,
+                29
+              ],
+              "elements": 929,
+              "ndof": 7650
+            },
+            {
+              "shape": [
+                8,
+                2,
+                15
+              ],
+              "elements": 139,
+              "ndof": 1296
+            }
+          ],
+          "smoother": "chebyshev(degree 2, D^-1 K, lambda ratio 30)",
+          "coarse_solver": "dense cholesky",
+          "precision": "mixed (float32 cycle, float64 coarse solve and outer CG)",
+          "setup_seconds": 2.543
+        }
+      }
+    },
+    {
+      "elements": 1061070,
+      "voxel_mm": 0.4,
+      "volume_mm3": 67908.48000000001,
+      "converged": true,
+      "cg_iterations": 39,
+      "compliance_Nmm": 0.6263108856295513,
+      "max_displacement_mm": 0.06808725608054761,
+      "max_displacement_at": [
+        -38.15680160522461,
+        -5.899999809265136,
+        201.8
+      ],
+      "von_mises_max_MPa": 2.7910549371173583,
+      "von_mises_p99_5_MPa": 0.6948876818382056,
+      "stress_concentration_ratio": 4.016555495319911,
+      "failure_index_max": 0.08086784315387317,
+      "failure_index_p99_5": 0.014751349637863133,
+      "failure_criterion": "max_stress_material_axes",
+      "material_axes": {
+        "build_axis": "Y",
+        "raster_axis": "Z",
+        "stiffness": "orthotropic",
+        "card_id": "pla_generic_fff_orthotropic_v1"
+      },
+      "min_safety_factor": 12.36585472048793,
+      "safety_factor_p99_5": 67.79040728810622,
+      "mesh": {
+        "thin_section_mm": 4.0,
+        "typical_section_mm": 4.0,
+        "elements_across_thin": 10.0,
+        "elements_across_typical": 10.0
+      },
+      "warnings": [],
+      "checks": [
+        {
+          "name": "strength",
+          "required": "safety factor >= 4.00",
+          "got": "12.37 (worst element) / 67.79 (p99.5)",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "stiffness",
+          "required": "max deflection <= 1.000 mm",
+          "got": "0.068 mm",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "mesh resolution",
+          "required": ">= 3 elements across the thinnest section",
+          "got": "10.0 (thin 4.00 mm) / 10.0 (typical 4.00 mm)",
+          "pass": true,
+          "inspect": false
+        }
+      ],
+      "pass": true,
+      "hotspots": [
+        {
+          "pos": [
+            -49.56,
+            -2.5,
+            28.8
+          ],
+          "failure_index": 0.081,
+          "safety_factor": 12.37
+        },
+        {
+          "pos": [
+            45.64,
+            -3.3,
+            40.8
+          ],
+          "failure_index": 0.073,
+          "safety_factor": 13.69
+        },
+        {
+          "pos": [
+            44.44,
+            -2.1,
+            41.2
+          ],
+          "failure_index": 0.071,
+          "safety_factor": 14.02
+        },
+        {
+          "pos": [
+            -45.56,
+            -3.3,
+            29.2
+          ],
+          "failure_index": 0.07,
+          "safety_factor": 14.23
+        },
+        {
+          "pos": [
+            -47.96,
+            -3.3,
+            29.2
+          ],
+          "failure_index": 0.068,
+          "safety_factor": 14.73
+        }
+      ],
+      "case": "200g_5g_X_+1",
+      "load_class": "normal",
+      "required_safety_factor": 4.0,
+      "total_applied_load_N": [
+        13.94,
+        0.0,
+        0.0
+      ],
+      "resultant_load_N": 13.94,
+      "material": "PLA",
+      "material_model": {
+        "material_model": "orthotropic_equivalent_solid",
+        "card_id": "pla_generic_fff_orthotropic_v1",
+        "classification": "conservative_literature_based_default",
+        "measured_for_specific_printer": false,
+        "solid_fraction_applied": 1.0,
+        "Ex_Ey_Ez_MPa": [
+          3000,
+          2400,
+          1500
+        ],
+        "Gxy_Gyz_Gzx_MPa": [
+          1000,
+          550,
+          550
+        ],
+        "strengths_MPa": {
+          "Xt": 50,
+          "Xc": 60,
+          "Yt": 35,
+          "Yc": 50,
+          "Zt": 22,
+          "Zc": 40,
+          "Sxy": 25,
+          "Syz": 15,
+          "Szx": 15
+        },
+        "source": "docs/FFF_PLA_PETG_orthotropic_material_reference.md section 5"
+      },
+      "solve_seconds": 24.806,
+      "solver": {
+        "backend": "cuda",
+        "device": "NVIDIA GeForce RTX 4060 Ti",
+        "torch": "2.12.0+cu130",
+        "preconditioner": "mg",
+        "precision": "mixed32",
+        "multigrid": {
+          "levels": [
+            {
+              "shape": [
+                249,
+                64,
+                458
+              ],
+              "elements": 1061070,
+              "ndof": 22376250
+            },
+            {
+              "shape": [
+                125,
+                32,
+                229
+              ],
+              "elements": 160317,
+              "ndof": 2869020
+            },
+            {
+              "shape": [
+                63,
+                16,
+                115
+              ],
+              "elements": 27110,
+              "ndof": 378624
+            },
+            {
+              "shape": [
+                32,
+                8,
+                58
+              ],
+              "elements": 5134,
+              "ndof": 52569
+            },
+            {
+              "shape": [
+                16,
+                4,
+                29
+              ],
+              "elements": 929,
+              "ndof": 7650
+            },
+            {
+              "shape": [
+                8,
+                2,
+                15
+              ],
+              "elements": 139,
+              "ndof": 1296
+            }
+          ],
+          "smoother": "chebyshev(degree 2, D^-1 K, lambda ratio 30)",
+          "coarse_solver": "dense cholesky",
+          "precision": "mixed (float32 cycle, float64 coarse solve and outer CG)",
+          "setup_seconds": 2.543
+        }
+      }
+    },
+    {
+      "elements": 1061070,
+      "voxel_mm": 0.4,
+      "volume_mm3": 67908.48000000001,
+      "converged": true,
+      "cg_iterations": 45,
+      "compliance_Nmm": 128.763916286856,
+      "max_displacement_mm": 12.517713061832302,
+      "max_displacement_at": [
+        -0.5568016052246065,
+        -9.899999809265136,
+        201.8
+      ],
+      "von_mises_max_MPa": 40.76173931559908,
+      "von_mises_p99_5_MPa": 9.74403247903442,
+      "stress_concentration_ratio": 4.183251585347583,
+      "failure_index_max": 0.9136192579468436,
+      "failure_index_p99_5": 0.185387963082444,
+      "failure_criterion": "max_stress_material_axes",
+      "material_axes": {
+        "build_axis": "Y",
+        "raster_axis": "Z",
+        "stiffness": "orthotropic",
+        "card_id": "pla_generic_fff_orthotropic_v1"
+      },
+      "min_safety_factor": 1.0945478560152924,
+      "safety_factor_p99_5": 5.39409346417647,
+      "mesh": {
+        "thin_section_mm": 4.0,
+        "typical_section_mm": 4.0,
+        "elements_across_thin": 10.0,
+        "elements_across_typical": 10.0
+      },
+      "warnings": [],
+      "checks": [
+        {
+          "name": "strength",
+          "required": "safety factor >= 4.00",
+          "got": "1.09 (worst element) / 5.39 (p99.5)",
+          "pass": true,
+          "inspect": true
+        },
+        {
+          "name": "stiffness",
+          "required": "max deflection <= 1.000 mm",
+          "got": "12.518 mm",
+          "pass": false,
+          "inspect": false
+        },
+        {
+          "name": "mesh resolution",
+          "required": ">= 3 elements across the thinnest section",
+          "got": "10.0 (thin 4.00 mm) / 10.0 (typical 4.00 mm)",
+          "pass": true,
+          "inspect": false
+        }
+      ],
+      "pass": false,
+      "hotspots": [
+        {
+          "pos": [
+            -48.36,
+            -2.9,
+            41.2
+          ],
+          "failure_index": 0.914,
+          "safety_factor": 1.09
+        },
+        {
+          "pos": [
+            48.44,
+            -2.9,
+            41.2
+          ],
+          "failure_index": 0.908,
+          "safety_factor": 1.1
+        },
+        {
+          "pos": [
+            -46.36,
+            -6.1,
+            80.0
+          ],
+          "failure_index": 0.858,
+          "safety_factor": 1.17
+        },
+        {
+          "pos": [
+            46.44,
+            -6.1,
+            80.0
+          ],
+          "failure_index": 0.848,
+          "safety_factor": 1.18
+        },
+        {
+          "pos": [
+            -43.96,
+            -2.1,
+            41.2
+          ],
+          "failure_index": 0.746,
+          "safety_factor": 1.34
+        }
+      ],
+      "case": "200g_5g_Y_-1",
+      "load_class": "normal",
+      "required_safety_factor": 4.0,
+      "total_applied_load_N": [
+        0.0,
+        -13.94,
+        0.0
+      ],
+      "resultant_load_N": 13.94,
+      "material": "PLA",
+      "material_model": {
+        "material_model": "orthotropic_equivalent_solid",
+        "card_id": "pla_generic_fff_orthotropic_v1",
+        "classification": "conservative_literature_based_default",
+        "measured_for_specific_printer": false,
+        "solid_fraction_applied": 1.0,
+        "Ex_Ey_Ez_MPa": [
+          3000,
+          2400,
+          1500
+        ],
+        "Gxy_Gyz_Gzx_MPa": [
+          1000,
+          550,
+          550
+        ],
+        "strengths_MPa": {
+          "Xt": 50,
+          "Xc": 60,
+          "Yt": 35,
+          "Yc": 50,
+          "Zt": 22,
+          "Zc": 40,
+          "Sxy": 25,
+          "Syz": 15,
+          "Szx": 15
+        },
+        "source": "docs/FFF_PLA_PETG_orthotropic_material_reference.md section 5"
+      },
+      "solve_seconds": 24.806,
+      "solver": {
+        "backend": "cuda",
+        "device": "NVIDIA GeForce RTX 4060 Ti",
+        "torch": "2.12.0+cu130",
+        "preconditioner": "mg",
+        "precision": "mixed32",
+        "multigrid": {
+          "levels": [
+            {
+              "shape": [
+                249,
+                64,
+                458
+              ],
+              "elements": 1061070,
+              "ndof": 22376250
+            },
+            {
+              "shape": [
+                125,
+                32,
+                229
+              ],
+              "elements": 160317,
+              "ndof": 2869020
+            },
+            {
+              "shape": [
+                63,
+                16,
+                115
+              ],
+              "elements": 27110,
+              "ndof": 378624
+            },
+            {
+              "shape": [
+                32,
+                8,
+                58
+              ],
+              "elements": 5134,
+              "ndof": 52569
+            },
+            {
+              "shape": [
+                16,
+                4,
+                29
+              ],
+              "elements": 929,
+              "ndof": 7650
+            },
+            {
+              "shape": [
+                8,
+                2,
+                15
+              ],
+              "elements": 139,
+              "ndof": 1296
+            }
+          ],
+          "smoother": "chebyshev(degree 2, D^-1 K, lambda ratio 30)",
+          "coarse_solver": "dense cholesky",
+          "precision": "mixed (float32 cycle, float64 coarse solve and outer CG)",
+          "setup_seconds": 2.543
+        }
+      }
+    },
+    {
+      "elements": 1061070,
+      "voxel_mm": 0.4,
+      "volume_mm3": 67908.48000000001,
+      "converged": true,
+      "cg_iterations": 45,
+      "compliance_Nmm": 128.76391628327085,
+      "max_displacement_mm": 12.51771306148283,
+      "max_displacement_at": [
+        -0.5568016052246065,
+        -9.899999809265136,
+        201.8
+      ],
+      "von_mises_max_MPa": 40.76173931439955,
+      "von_mises_p99_5_MPa": 9.744032478747878,
+      "stress_concentration_ratio": 4.183251585347496,
+      "failure_index_max": 0.7613493815990281,
+      "failure_index_p99_5": 0.17971143274941745,
+      "failure_criterion": "max_stress_material_axes",
+      "material_axes": {
+        "build_axis": "Y",
+        "raster_axis": "Z",
+        "stiffness": "orthotropic",
+        "card_id": "pla_generic_fff_orthotropic_v1"
+      },
+      "min_safety_factor": 1.313457427258619,
+      "safety_factor_p99_5": 5.564476253407654,
+      "mesh": {
+        "thin_section_mm": 4.0,
+        "typical_section_mm": 4.0,
+        "elements_across_thin": 10.0,
+        "elements_across_typical": 10.0
+      },
+      "warnings": [],
+      "checks": [
+        {
+          "name": "strength",
+          "required": "safety factor >= 4.00",
+          "got": "1.31 (worst element) / 5.56 (p99.5)",
+          "pass": true,
+          "inspect": true
+        },
+        {
+          "name": "stiffness",
+          "required": "max deflection <= 1.000 mm",
+          "got": "12.518 mm",
+          "pass": false,
+          "inspect": false
+        },
+        {
+          "name": "mesh resolution",
+          "required": ">= 3 elements across the thinnest section",
+          "got": "10.0 (thin 4.00 mm) / 10.0 (typical 4.00 mm)",
+          "pass": true,
+          "inspect": false
+        }
+      ],
+      "pass": false,
+      "hotspots": [
+        {
+          "pos": [
+            -48.36,
+            -2.9,
+            41.2
+          ],
+          "failure_index": 0.761,
+          "safety_factor": 1.31
+        },
+        {
+          "pos": [
+            48.44,
+            -2.9,
+            41.2
+          ],
+          "failure_index": 0.757,
+          "safety_factor": 1.32
+        },
+        {
+          "pos": [
+            -46.36,
+            -6.1,
+            80.0
+          ],
+          "failure_index": 0.715,
+          "safety_factor": 1.4
+        },
+        {
+          "pos": [
+            46.44,
+            -6.1,
+            80.0
+          ],
+          "failure_index": 0.706,
+          "safety_factor": 1.42
+        },
+        {
+          "pos": [
+            -44.36,
+            -2.1,
+            28.8
+          ],
+          "failure_index": 0.582,
+          "safety_factor": 1.72
+        }
+      ],
+      "case": "200g_5g_Y_+1",
+      "load_class": "normal",
+      "required_safety_factor": 4.0,
+      "total_applied_load_N": [
+        0.0,
+        13.94,
+        0.0
+      ],
+      "resultant_load_N": 13.94,
+      "material": "PLA",
+      "material_model": {
+        "material_model": "orthotropic_equivalent_solid",
+        "card_id": "pla_generic_fff_orthotropic_v1",
+        "classification": "conservative_literature_based_default",
+        "measured_for_specific_printer": false,
+        "solid_fraction_applied": 1.0,
+        "Ex_Ey_Ez_MPa": [
+          3000,
+          2400,
+          1500
+        ],
+        "Gxy_Gyz_Gzx_MPa": [
+          1000,
+          550,
+          550
+        ],
+        "strengths_MPa": {
+          "Xt": 50,
+          "Xc": 60,
+          "Yt": 35,
+          "Yc": 50,
+          "Zt": 22,
+          "Zc": 40,
+          "Sxy": 25,
+          "Syz": 15,
+          "Szx": 15
+        },
+        "source": "docs/FFF_PLA_PETG_orthotropic_material_reference.md section 5"
+      },
+      "solve_seconds": 24.806,
+      "solver": {
+        "backend": "cuda",
+        "device": "NVIDIA GeForce RTX 4060 Ti",
+        "torch": "2.12.0+cu130",
+        "preconditioner": "mg",
+        "precision": "mixed32",
+        "multigrid": {
+          "levels": [
+            {
+              "shape": [
+                249,
+                64,
+                458
+              ],
+              "elements": 1061070,
+              "ndof": 22376250
+            },
+            {
+              "shape": [
+                125,
+                32,
+                229
+              ],
+              "elements": 160317,
+              "ndof": 2869020
+            },
+            {
+              "shape": [
+                63,
+                16,
+                115
+              ],
+              "elements": 27110,
+              "ndof": 378624
+            },
+            {
+              "shape": [
+                32,
+                8,
+                58
+              ],
+              "elements": 5134,
+              "ndof": 52569
+            },
+            {
+              "shape": [
+                16,
+                4,
+                29
+              ],
+              "elements": 929,
+              "ndof": 7650
+            },
+            {
+              "shape": [
+                8,
+                2,
+                15
+              ],
+              "elements": 139,
+              "ndof": 1296
+            }
+          ],
+          "smoother": "chebyshev(degree 2, D^-1 K, lambda ratio 30)",
+          "coarse_solver": "dense cholesky",
+          "precision": "mixed (float32 cycle, float64 coarse solve and outer CG)",
+          "setup_seconds": 2.543
+        }
+      }
+    }
+  ]
+}

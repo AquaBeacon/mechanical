@@ -1,0 +1,29 @@
+{
+ "consumer": "wetlink_penetrator_m10",
+ "references": [
+  {
+   "part": "bcas212310g",
+   "path": "parts/parent/exterior/cots/bcas212310g",
+   "md_sha256": "53245cbbda4d69bb9cde60c4deff080e25b6cbb8322c55d04cd09217622ff9ba",
+   "stl_sha256": "34b8056c89e3bade01bf0692027eb119c0b32aec2b6d8a02444717799a6572c7",
+   "bbox_mm": [
+    210.0,
+    230.0,
+    100.3
+   ],
+   "status_at_lock": [
+    "needs_measure",
+    "not_chosen",
+    "not_designed",
+    "provisional"
+   ],
+   "values": {
+    "wall_t": 6.1,
+    "pen_z": 65.0
+   },
+   "confirmed_by_human": false,
+   "confirmed_at": "2026-08-29T15:19:00",
+   "note": "2026-08-29 人間確認待ち: 親機箱の南壁(Y=0)にペネトレータ2本(x=120 テザー / x=85 TD04A)。wall_t 6.1 は bcas212310g.scad のモデル側壁厚(実壁 3.08)。壁は docs/親機内装_収まり検討.md 7 と 配線・ケーブル計画.md 2 の既定どおり南壁"
+  }
+ ]
+}

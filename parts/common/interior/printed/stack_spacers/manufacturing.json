@@ -1,0 +1,23 @@
+{
+  "source_dependencies": [
+    "../../../../../spec/build_parent_stack_spacers.py",
+    "../../../../../scad/lib/parent_gnss.py",
+    "../../../../../assemblies/parent_hand_service/placement.json",
+    "../../../../../spec/build_parent_gnss.py",
+    "../../../../../scad/lib/parent_corner_mounts.py",
+    "set_members.json",
+    "../../../../parent/interior/printed/parent_hand_service/main_corner_column.step",
+    "../../../../parent/interior/printed/gnss_universal_carrier/gnss_column_front.step",
+    "../../../../parent/interior/printed/gnss_universal_carrier/gnss_column_rear.step"
+  ],
+  "print_rotations_deg": {},
+  "release_status": "fit_check_prototype",
+  "portable_stl_export_format": "stl_ascii",
+  "structural_print_conditions": {
+    "material": "PETG",
+    "layer_height_mm": 0.2,
+    "walls": 4,
+    "infill_percent": 100
+  },
+  "permitted_sharp_edges": "Flat bearing/key interfaces and deliberately sharp sacrificial necks; handling/bore edges have 0.1–0.15 mm chamfers."
+}

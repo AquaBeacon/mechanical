@@ -1,0 +1,4 @@
+# suffix  OpenSCAD definitions
+bezel part=0
+clamp part=1
+bar part=2

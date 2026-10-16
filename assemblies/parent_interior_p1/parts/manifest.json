@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "assembly": "parent_interior_p1",
+  "release_status": "existing_prototype",
+  "note": "既存構成の印刷データを整理。強度・造形性の新規認証ではない。",
+  "source_hashes": {
+    "assemblies/parent_interior_p1/placement.json": "a3e8d4bef4d6764eacbb422779928d8de6f59a1a5b5714aed09e726a5beee653",
+    "assemblies/parent_interior_p1/README.md": "c29cac5df0de71e5b72622fceecf9f02dd4af4d161973585674c409d15489a50",
+    "parts/parent/interior/printed/parent_lipo_tray/parent_lipo_tray.md": "ed17599abd58ad15bbb3ad1ff838e24709cb614082ed847b17d2483ee1c22607",
+    "parts/parent/interior/printed/parent_lipo_tray/parent_lipo_tray.scad": "6142afab41fb20fe154828aae636994a315a9e487a53885bec8e3a241c4bb2bc",
+    "parts/parent/interior/printed/parent_plate/parent_plate.md": "8f7915cbda8fbaa2eeede07539587b12dbc748f7e33b0c30e72e3ba62ebc3660",
+    "parts/parent/interior/printed/parent_plate/parent_plate.scad": "297143f9878cc8ac2eb23a94fd239c141fe628b39c5d4ab5ab709ce0f246ded8",
+    "parts/parent/interior/printed/parent_plate/variants.txt": "0082df303675be8d98f89964eebea778d29342a033e60635a1cba43f38d23533",
+    "spec/parent_interior_layout.py": "94fcfd389470591cb68c24a3edce6ac5582092b5d994d7a6c6dde59de6ff92d5"
+  },
+  "parts": [
+    {
+      "part": "parts/parent/interior/printed/parent_plate",
+      "stem": "parent_plate_p1",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "plate"
+      ],
+      "file": "parent_plate_p1.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/interior/printed/parent_plate/parent_plate_p1.stl",
+      "source_sha256": "4e72e6f6b963bc74fa123b223e8d03d7763f584667ee5e193395b0e6d94202dd",
+      "sha256": "297dc2d1e92cab0fe24a13b1c08564b34f0f6ddfa38a44df96b4dc7bcf679776",
+      "extents_mm": [
+        183.0,
+        203.0,
+        17.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/interior/printed/parent_lipo_tray",
+      "stem": "parent_lipo_tray",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "lipo_tray"
+      ],
+      "file": "parent_lipo_tray.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/interior/printed/parent_lipo_tray/parent_lipo_tray.stl",
+      "source_sha256": "79293d4649b38714d3e8eed0c968741b62b0812ec3dae944b7067beab1de36dd",
+      "sha256": "bedbc9947401a32b0206a4962e99b37e26f8dab822b9e4f222b9aa204272485b",
+      "extents_mm": [
+        112.0,
+        84.5,
+        17.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          4.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    }
+  ],
+  "modifiers": [],
+  "generated_files": [
+    "parent_plate_p1.stl",
+    "parent_lipo_tray.stl",
+    "DESIGN_NOTES.md",
+    "PRINT.md"
+  ],
+  "document_hashes": {
+    "DESIGN_NOTES.md": "65f12a1945fbe1795fb361353a1bf91b84c006d3762d782c5549785be0bdb1ab",
+    "PRINT.md": "bb4a3e9d7655c7c72326635862f193aed10d370632087ec3769f96335b5615dd"
+  }
+}

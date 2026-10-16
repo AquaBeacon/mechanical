@@ -1,0 +1,23 @@
+{
+  "sha256": {
+    "carrier.step": "7d064e6228d5484d2a33da61742463be17560beb09b730bd4e6bff0aa3f8f5bc",
+    "carrier.stl": "819da7baa8c6a935145ab9958861c827ffc71a7307b7b52cf2b1f131d7289d8c",
+    "study.json": "a4944f2a9e5d2f8c0219cfefec24b747033f46b39cf3ab4d96cf1ae86ba3a114"
+  },
+  "command": [
+    "C:\\Python313\\python.exe",
+    "-u",
+    "-m",
+    "topopt",
+    "ccx",
+    "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\assemblies\\parent_hand_service\\rigidity\\iteration_02\\carrier.stl",
+    "--study",
+    "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\assemblies\\parent_hand_service\\rigidity\\iteration_02\\study.json",
+    "--out",
+    "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\assemblies\\parent_hand_service\\rigidity\\iteration_02\\ccx",
+    "--mesh-mm",
+    "4",
+    "--converge"
+  ],
+  "scope": "Carrier-only, ideally clamped service-cap faces. Not PCB/assembly/physical certification."
+}

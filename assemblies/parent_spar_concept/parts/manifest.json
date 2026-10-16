@@ -1,0 +1,450 @@
+{
+  "schema_version": 1,
+  "assembly": "parent_spar_concept",
+  "release_status": "legacy_prototype",
+  "note": "旧配置検討案。支柱・浮体・錘は購入品または予約包絡。印刷形状は未認証の試作。",
+  "source_hashes": {
+    "assemblies/parent_spar_concept/export_step.py": "596aa3ffb682291168d93cf6a8f6e0c76ecadc616e672f286e808f8bdcdd9a1c",
+    "assemblies/parent_spar_concept/parent_spar_concept.md": "618159280c20e8ab36ee97540573ec650497977a17777a25ab872bf328b085e8",
+    "assemblies/parent_spar_concept/parent_spar_concept.scad": "ea437cebc90b902faed78dcf35658a2eeb1379202203c5248ac1d867ed8bf71f",
+    "assemblies/parent_spar_concept/print_config.json": "3b1a884fa86e2272f9f7f637447320a482041b25d791610abaf17428b8045ee4",
+    "assemblies/parent_spar_concept/README.md": "b31b048b2847f873f9bda1c8e2428aca7f892a2cfffea6fc562752eac4078c59",
+    "assemblies/parent_spar_concept/verify.py": "768e765baa0cf8be195970260c7ccf64ecb78b4ece5cc3ef4e1e14bad749d552",
+    "parts/parent/exterior/printed/parent_deck/manufacturing.json": "f3bea2e0fd2e0e3fd244a5cc85fc87fe21a7eab3c184aec782af4346bd49583a",
+    "parts/parent/exterior/printed/parent_deck/parent_deck.md": "bc97953df376c06278ad8714324c9df8b3ffeacec0d2d21b88168987a7b9bff6",
+    "parts/parent/exterior/printed/parent_deck/parent_deck.scad": "7930e5a7703e650432e5f4b896743ea34f8ad9b90abe5a9e6b93603f8fbead6a",
+    "scad/lib/hardpoint.scad": "5a442026ba75c7cb3d7eac05f29da72952cfe55706bfb0b6f02be0ac1b5cc6c1",
+    "spec/parent_hydrostatics.py": "c374b818b93aa7d7da073d4ca753ac3a78734b1db60aedc7ec7a59d25518edee"
+  },
+  "parts": [
+    {
+      "part": "assemblies/parent_spar_concept",
+      "stem": "disk",
+      "shape": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "disk"
+      ],
+      "file": "disk.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "assemblies/parent_spar_concept/disk.stl",
+      "source_sha256": "297270dbff761f8fa287f085098aa2493ebe701ffc8c50e10cfc756f3a980cc5",
+      "sha256": "2f69debdca8d737dccbc947f8920ce5e80279a01bb47246d52659b5c132d59aa",
+      "extents_mm": [
+        225.0,
+        225.0,
+        5.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          112.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          112.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "assemblies/parent_spar_concept",
+      "stem": "fin",
+      "shape": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "quantity": 4,
+      "labels": [
+        "fin"
+      ],
+      "file": "fin.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "assemblies/parent_spar_concept/fin.stl",
+      "source_sha256": "713d1445387554633955587cc45e85e1f1a22e887342b2d0deddfa9cd81ea83b",
+      "sha256": "c9280e9ee9ab761801f7c1335b900768e200ad1a7970906c14a17de8f182cacf",
+      "extents_mm": [
+        65.0,
+        125.0,
+        4.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "assemblies/parent_spar_concept",
+      "stem": "hub",
+      "shape": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "quantity": 2,
+      "labels": [
+        "hub"
+      ],
+      "file": "hub.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "assemblies/parent_spar_concept/hub.stl",
+      "source_sha256": "96fdb4367bee0a5da53c82868adfd55b28cb88787789cd2f59a1e60644b8c5d9",
+      "sha256": "85b26386d168fdbc0a85c66e0ff261f3943a7a1ef94f245ce941613c964158a7",
+      "extents_mm": [
+        60.0,
+        60.0,
+        24.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          30.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          30.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "assemblies/parent_spar_concept",
+      "stem": "coupler",
+      "shape": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "coupler"
+      ],
+      "file": "coupler.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "assemblies/parent_spar_concept/coupler.stl",
+      "source_sha256": "36bb42a19a7807c942419e58f880804ce1efb8cd844e892c50dbf5de3200caf8",
+      "sha256": "c3f2c2b22e10143cf2dcb79f96158a896433f16cc1af800115c90ab2bd863845",
+      "extents_mm": [
+        40.0,
+        40.0,
+        80.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          20.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "assemblies/parent_spar_concept",
+      "stem": "adapter",
+      "shape": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "adapter"
+      ],
+      "file": "adapter.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "assemblies/parent_spar_concept/adapter.stl",
+      "source_sha256": "7d43587554f375968b5d25e6b7b2e4c015042d8405a5db28751046d357e87e86",
+      "sha256": "3fc99ebf9a23d320a0dd94929c48aab9e0875507a5a7851f73e122b17496f564",
+      "extents_mm": [
+        50.0,
+        50.0,
+        60.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          25.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          25.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_deck",
+      "stem": "parent_deck",
+      "shape": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "parent_deck"
+      ],
+      "file": "parent_deck.stl",
+      "rotation_deg": [
+        -180.0,
+        0.0,
+        -0.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_deck/parent_deck.stl",
+      "source_sha256": "1e542027170d975801b43d316a052f5f5e89a054c251ad5fcbb1e9efcb420943",
+      "sha256": "6c45f99facc9a2ccf3f4c4ca94d7c95927835259bc44bf78fe22e7e89d2789e4",
+      "extents_mm": [
+        216.0,
+        236.0,
+        60.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          108.0
+        ],
+        [
+          0.0,
+          -1.0,
+          1.2246467991473532e-16,
+          118.0
+        ],
+        [
+          0.0,
+          -1.2246467991473532e-16,
+          -1.0,
+          1.4450832229938766e-14
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    }
+  ],
+  "modifiers": [],
+  "generated_files": [
+    "disk.stl",
+    "fin.stl",
+    "hub.stl",
+    "coupler.stl",
+    "adapter.stl",
+    "parent_deck.stl",
+    "DESIGN_NOTES.md",
+    "PRINT.md"
+  ],
+  "document_hashes": {
+    "DESIGN_NOTES.md": "21dfde9b1ffb8749623f1cd1cceb2f98a3f0f2e4446070652957f9fe68be48ec",
+    "PRINT.md": "c0426f5240d7db8e973a21981f4e49a2824a9b44a08a3838a71dce93d5afdd2b"
+  }
+}

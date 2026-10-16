@@ -1,0 +1,5 @@
+# <接尾辞>  <変数=値> ...
+# pack = セル本体のみ (ベイ内寸を決めるのはこちら)
+# env  = 本体 + リード/コネクタ余裕ゾーン (配線スペースの確認用)
+pack   show_leads=false
+env    show_leads=true

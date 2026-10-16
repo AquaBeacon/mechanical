@@ -1,0 +1,147 @@
+{
+  "part": "../parent_float_yoke_a.stl",
+  "material": "PETG",
+  "build_axis": "X",
+  "target_elements": 90000,
+  "safety_factor": 2.0,
+  "max_deflection_mm": 1.0,
+  "regions": {
+    "adapter_face": {
+      "type": "box",
+      "min": [
+        -0.5,
+        -28,
+        -28
+      ],
+      "max": [
+        3,
+        28,
+        28
+      ]
+    },
+    "seat": {
+      "type": "cylinder",
+      "axis": "Y",
+      "centre": [
+        70,
+        74,
+        25
+      ],
+      "r": 38,
+      "range": [
+        66,
+        88
+      ]
+    },
+    "rope_hole": {
+      "type": "cylinder",
+      "axis": "Y",
+      "centre": [
+        70,
+        80,
+        25
+      ],
+      "r": 8,
+      "range": [
+        66,
+        100
+      ]
+    },
+    "post_bottom": {
+      "type": "box",
+      "min": [
+        20,
+        66,
+        -17
+      ],
+      "max": [
+        108,
+        100,
+        -9
+      ]
+    }
+  },
+  "cases": [
+    {
+      "name": "L2 buoyancy/handling: float pushes seat up 65 N (13 N steady x5), held at HP40 adapter face",
+      "supports": [
+        {
+          "region": "adapter_face",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "seat",
+          "force": [
+            0,
+            0,
+            65
+          ]
+        }
+      ],
+      "gravity": {
+        "direction": [
+          0,
+          0,
+          -1
+        ],
+        "g_factor": 5.0
+      }
+    },
+    {
+      "name": "L2r rope tension 100 N pulling post toward float (-Y), held at adapter face",
+      "supports": [
+        {
+          "region": "adapter_face",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "rope_hole",
+          "force": [
+            0,
+            -100,
+            0
+          ]
+        }
+      ],
+      "gravity": {
+        "direction": [
+          0,
+          0,
+          -1
+        ],
+        "g_factor": 3.0
+      }
+    },
+    {
+      "name": "L3 side knock: 50 N along +X on post bottom (float swung against yoke), held at adapter face",
+      "supports": [
+        {
+          "region": "adapter_face",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "post_bottom",
+          "force": [
+            50,
+            0,
+            0
+          ]
+        }
+      ],
+      "gravity": {
+        "direction": [
+          0,
+          0,
+          -1
+        ],
+        "g_factor": 3.0
+      }
+    }
+  ]
+}

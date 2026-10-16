@@ -1,0 +1,388 @@
+{
+  "errors": [],
+  "checks": [
+    {
+      "pair": "vtray_deck/acrylic_tube_200",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "vtray_deck/flange_top",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "vtray_deck/vtray_rib_top",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "vtray_deck/child_main",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "vtray_deck/child_pwr",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "vtray_batt_box/acrylic_tube_200",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "vtray_batt_box/flange_bot",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "vtray_batt_box/vtray_batt_floor",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "vtray_batt_box/lipo",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "vtray_batt_box/lipo_foam_top",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "vtray_batt_box/lipo_foam_side_p",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "vtray_batt_box/lipo_foam_side_n",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "vtray_batt_box/lipo_foam_end_bot",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "vtray_batt_box/lipo_foam_end_top",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "vtray_batt_floor/acrylic_tube_200",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "vtray_batt_floor/vtray_batt_box",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "vtray_batt_floor/lipo",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "vtray_batt_floor/lipo_foam_side_p",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "vtray_batt_floor/lipo_foam_side_n",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "vtray_batt_floor/lipo_foam_end_top",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "flange_brace/acrylic_tube_200",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "flange_brace/child_main",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "vtray_rib_top/acrylic_tube_200",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "vtray_rib_top/flange_top",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "vtray_rib_top/vtray_deck",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "rx_clamp_base_pair_-1/acrylic_tube_200",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "rx_clamp_base_pair_-1/flange_top",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "rx_clamp_base_pair_-1/rx_improved_mini",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "rx_clamp_base_pair_-1/rx_clamp_cap_pair_-1",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "rx_clamp_cap_pair_-1/acrylic_tube_200",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "rx_clamp_cap_pair_-1/rx_improved_mini",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "rx_clamp_cap_pair_-1/rx_clamp_base_pair_-1",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "rx_clamp_base_pair_1/acrylic_tube_200",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "rx_clamp_base_pair_1/flange_top",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "rx_clamp_base_pair_1/rx_improved_mini",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "rx_clamp_base_pair_1/rx_clamp_cap_pair_1",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "rx_clamp_cap_pair_1/acrylic_tube_200",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "rx_clamp_cap_pair_1/rx_improved_mini",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "rx_clamp_cap_pair_1/rx_clamp_base_pair_1",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "wire_reserve/vtray_batt_box",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z0.00_y0.00/vtray_batt_box",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "floor_move_z0.00_y0.00/lipo",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "floor_move_z0.00_y0.00/lipo_foam_side_p",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z0.00_y0.00/lipo_foam_side_n",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z0.00_y0.00/lipo_foam_end_top",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-0.25_y0.00/vtray_batt_box",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "floor_move_z-0.25_y0.00/lipo",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "floor_move_z-0.25_y0.00/lipo_foam_side_p",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-0.25_y0.00/lipo_foam_side_n",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-0.25_y0.00/lipo_foam_end_top",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-0.50_y0.00/vtray_batt_box",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "floor_move_z-0.50_y0.00/lipo",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "floor_move_z-0.50_y0.00/lipo_foam_side_p",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-0.50_y0.00/lipo_foam_side_n",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-0.50_y0.00/lipo_foam_end_top",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-0.75_y0.00/vtray_batt_box",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "floor_move_z-0.75_y0.00/lipo",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "floor_move_z-0.75_y0.00/lipo_foam_side_p",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-0.75_y0.00/lipo_foam_side_n",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-0.75_y0.00/lipo_foam_end_top",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-1.00_y0.00/vtray_batt_box",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "floor_move_z-1.00_y0.00/lipo",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "floor_move_z-1.00_y0.00/lipo_foam_side_p",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-1.00_y0.00/lipo_foam_side_n",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-1.00_y0.00/lipo_foam_end_top",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-1.25_y0.00/vtray_batt_box",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "floor_move_z-1.25_y0.00/lipo",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "floor_move_z-1.25_y0.00/lipo_foam_side_p",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-1.25_y0.00/lipo_foam_side_n",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-1.25_y0.00/lipo_foam_end_top",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-1.50_y0.00/vtray_batt_box",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "floor_move_z-1.50_y0.00/lipo",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "floor_move_z-1.50_y0.00/lipo_foam_side_p",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-1.50_y0.00/lipo_foam_side_n",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-1.50_y0.00/lipo_foam_end_top",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-1.75_y0.00/vtray_batt_box",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "floor_move_z-1.75_y0.00/lipo",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "floor_move_z-1.75_y0.00/lipo_foam_side_p",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-1.75_y0.00/lipo_foam_side_n",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-1.75_y0.00/lipo_foam_end_bot",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-1.75_y0.00/lipo_foam_end_top",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-2.00_y0.00/vtray_batt_box",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "floor_move_z-2.00_y0.00/lipo",
+      "overlap_mm3": 0.0
+    },
+    {
+      "pair": "floor_move_z-2.00_y0.00/lipo_foam_side_p",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-2.00_y0.00/lipo_foam_side_n",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-2.00_y0.00/lipo_foam_end_bot",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-2.00_y0.00/lipo_foam_end_top",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-2.00_y-0.50/vtray_batt_box",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-2.00_y-0.50/lipo",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-2.00_y-0.50/lipo_foam_side_p",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-2.00_y-0.50/lipo_foam_side_n",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-2.00_y-0.50/lipo_foam_end_bot",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-2.00_y-0.50/lipo_foam_end_top",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-2.00_y-2.84/vtray_batt_box",
+      "overlap_mm3": 0
+    },
+    {
+      "pair": "floor_move_z-2.00_y-5.18/vtray_batt_box",
+      "overlap_mm3": 0
+    }
+  ],
+  "wire_envelope_d_mm": 9,
+  "floor_release_z_mm": -2,
+  "tool_d_mm": 6
+}

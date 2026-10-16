@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-13",
+  "project": "battery_base.3mf",
+  "project_sha256": "4140db3fc372080f03206af7d5102d2cfb5b926a427e3c7ecfbf1c1d88036277",
+  "material": "Generic PETG",
+  "printer": "Bambu X1 Carbon",
+  "nozzle_mm": 0.4,
+  "layer_height_mm": 0.2,
+  "walls": 4,
+  "infill_percent": 100,
+  "support": "normal auto45, exclude bridges, local blocker in nut/shaft only",
+  "corresponding_print_stl_sha256": {
+    "parts/battery_base.stl": "dd1ca5d3570bec900e555997c9944e6f362dc73ae4e09e2cc47a13078eb9c580",
+    "parts/modifiers/battery_lid_nut_support_blocker.stl": "e8d2c1ba18f4fc147327860240cd213bb70b4960ce6b55d1f739faeae55926f9",
+    "parts/parent_lipo_retainer_lid_slide.stl": "c265edcfed285bb37a587eb8ee3c752f032616152d714004b78be25f3f64e9a8"
+  },
+  "source_stl": "parts/parent/interior/printed/parent_hand_service/battery_base.stl",
+  "source_stl_sha256": "4358cbcfc5f8e3303d9abcde38752e2f33bd4dbde84f4cfaedf084de0c285a94",
+  "support_path_validation": "../../battery_nut_print_checks.json",
+  "physical_print_verified": false
+}

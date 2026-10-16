@@ -1,0 +1,11 @@
+SetFactory("OpenCASCADE");
+v() = ShapeFromFile("C:/Users/ryupc/WorkSpace/Mitou26/Body_Models/assemblies/parent_hand_service/rigidity/iteration_06/carrier.step");
+Physical Volume("part") = {v()};
+Mesh.CharacteristicLengthMin = 1.0;
+Mesh.CharacteristicLengthMax = 2.0;
+Mesh.Algorithm3D = 1;
+Mesh.ElementOrder = 2;
+Mesh.SecondOrderIncomplete = 0;
+Mesh.SecondOrderLinear = 1;
+Mesh.Optimize = 1;
+Mesh.OptimizeNetgen = 0;

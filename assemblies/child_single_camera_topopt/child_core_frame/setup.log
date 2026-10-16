@@ -1,0 +1,64 @@
+grid 69 x 76 x 108 at 3.000 mm (origin [-98.89, -156.0, -54.0])
+
+runtime  80 iterations x 8 case(s) ~ 29 min  (range 14 min - 43 min; one cold solve of case 1 took 2.7 s on 151917 elements [cuda/mg])
+
+--- setup ---
+  voxel               3.000 mm, grid [69, 76, 108]
+  design space        4101759 mm3
+  preserve            194130 mm3 in 10 bodies
+  obstacle            3847041 mm3 declared -> 3847041 mm3 with clearance
+  free (optimisable)  2171529 mm3 (80427 cells)
+  attach              interfaces may be joined at 5906 cell(s), 53154 mm2 (join_free_space); 0 cell(s) / 0 mm3 of no-contact shell around the rest of it, 3.00 mm thick
+  build volume        250x250x250 on Bambu Lab X1-Carbon -- design space 153x129x237, fits
+  free to decide      53 % of the domain; preserve is 47 % of the expected part
+    preserve   interfaces               194130 mm3  stl:preserve.stl
+    design_space design_space            4101759 mm3  stl:design_space.stl
+    obstacle   keep_out                3143772 mm3  stl:obstacle.stl
+    obstacle   pressure_vessel         2567484 mm3  stl:pressure_vessel.stl
+    obstacle   light_vertical           187704 mm3  stl:light_vertical.stl
+    obstacle   hand_clearance           191484 mm3  stl:hand_clearance.stl
+    obstacle   cables                   151470 mm3  stl:cables.stl
+  WARN  support region 'lug_boss_R' in case 'L1 hoist 3g: lugs fixed, container + guard + gate weights down' reaches 34 % (2241.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 66 % only.
+  WARN  support region 'lug_boss_L' in case 'L1 hoist 3g: lugs fixed, container + guard + gate weights down' reaches 35 % (2322.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 65 % only.
+  WARN  load region 'pocket_bot' in case 'L1 hoist 3g: lugs fixed, container + guard + gate weights down' reaches 87 % (113373.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 13 % only.
+  WARN  load region 'guard_boss_R' in case 'L1 hoist 3g: lugs fixed, container + guard + gate weights down' reaches 60 % (8289.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 40 % only.
+  WARN  load region 'guard_boss_L' in case 'L1 hoist 3g: lugs fixed, container + guard + gate weights down' reaches 60 % (8316.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 40 % only.
+  WARN  load region 'latch_lo' in case 'L1 hoist 3g: lugs fixed, container + guard + gate weights down' reaches 29 % (2592.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 71 % only.
+  WARN  load region 'latch_hi' in case 'L1 hoist 3g: lugs fixed, container + guard + gate weights down' reaches 29 % (2592.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 71 % only.
+  WARN  support region 'pocket_bot' in case 'L2s transport side hit 300 N (+X on back wall and lugs), container reacts' reaches 87 % (113373.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.
+  WARN  support region 'pocket_top' in case 'L2s transport side hit 300 N (+X on back wall and lugs), container reacts' reaches 87 % (136053.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.
+  WARN  load region 'back_wall' in case 'L2s transport side hit 300 N (+X on back wall and lugs), container reacts' reaches 85 % (68661.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 15 % only.
+  WARN  load region 'lug_boss_R' in case 'L2s transport side hit 300 N (+X on back wall and lugs), container reacts' reaches 34 % (2241.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 66 % only.
+  WARN  load region 'lug_boss_L' in case 'L2s transport side hit 300 N (+X on back wall and lugs), container reacts' reaches 35 % (2322.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 65 % only.
+  WARN  support region 'pocket_bot' in case 'L2h transport landing on the hinge side (300 N +X through the knuckles), container reacts' reaches 87 % (113373.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.
+  WARN  support region 'pocket_top' in case 'L2h transport landing on the hinge side (300 N +X through the knuckles), container reacts' reaches 87 % (136053.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.
+  WARN  load region 'knuckles' in case 'L2h transport landing on the hinge side (300 N +X through the knuckles), container reacts' reaches 65 % (56214.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 35 % only.
+  WARN  support region 'pocket_bot' in case 'L2r transport rear hit 300 N on the back wall (+Y), container reacts' reaches 87 % (113373.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.
+  WARN  support region 'pocket_top' in case 'L2r transport rear hit 300 N on the back wall (+Y), container reacts' reaches 87 % (136053.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.
+  WARN  load region 'back_wall' in case 'L2r transport rear hit 300 N on the back wall (+Y), container reacts' reaches 85 % (68661.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 15 % only.
+  WARN  load region 'grip_bar' in case 'L2r transport rear hit 300 N on the back wall (+Y), container reacts' reaches 44 % (10692.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 56 % only.
+  WARN  support region 'pocket_bot' in case 'L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands' reaches 87 % (113373.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.
+  WARN  support region 'band_mid' in case 'L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands' reaches 85 % (110700.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 15 % only.
+  WARN  support region 'pocket_top' in case 'L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands' reaches 87 % (136053.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.
+  WARN  load region 'latch_lo' in case 'L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands' reaches 29 % (2592.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 71 % only.
+  WARN  load region 'latch_hi' in case 'L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands' reaches 29 % (2592.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 71 % only.
+  WARN  load region 'knuckles' in case 'L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands' reaches 65 % (56214.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 35 % only.
+  WARN  support region 'pocket_bot' in case 'L5 landing 600 N up through the guard bosses, container reacts' reaches 87 % (113373.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.
+  WARN  support region 'pocket_top' in case 'L5 landing 600 N up through the guard bosses, container reacts' reaches 87 % (136053.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.
+  WARN  load region 'guard_boss_R' in case 'L5 landing 600 N up through the guard bosses, container reacts' reaches 60 % (8289.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 40 % only.
+  WARN  load region 'guard_boss_L' in case 'L5 landing 600 N up through the guard bosses, container reacts' reaches 60 % (8316.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 40 % only.
+  WARN  support region 'pocket_bot' in case 'L6 grip lift +200 N: equivalent handling test with vessel restrained; provisional 6kg x 3g rounded up' reaches 87 % (113373.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.
+  WARN  support region 'pocket_top' in case 'L6 grip lift +200 N: equivalent handling test with vessel restrained; provisional 6kg x 3g rounded up' reaches 87 % (136053.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.
+  WARN  load region 'grip_underside' in case 'L6 grip lift +200 N: equivalent handling test with vessel restrained; provisional 6kg x 3g rounded up' reaches 30 % (1296.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 70 % only.
+  WARN  support region 'pocket_bot' in case 'L7 vertical light 3g: provisional 0.3kg, 9N weight plus 324Nmm offset moment' reaches 87 % (113373.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.
+  WARN  support region 'pocket_top' in case 'L7 vertical light 3g: provisional 0.3kg, 9N weight plus 324Nmm offset moment' reaches 87 % (136053.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.
+  WARN  the free region is only 2.0 voxels (6.00 mm) thick at its thinnest. Below about 3 voxels there is no room for a hole, so the topology there is set by the outline rather than chosen -- refine the grid or widen the design space.
+  WARN  the free region's median thickness is 6.00 mm, below the 9.00 mm filter radius. The filter cannot form a member narrower than itself, so most of the free region will come out grey and the threshold, not the optimisation, will decide what is material.
+  WARN  the 5 support point(s) are fixed by preserve at lug_boss_R at [65.1, -10.9, 211.5]; lug_boss_L at [-65.0, -10.8, 211.5]; pocket_bot at [0.6, -37.7, -10.1]; pocket_top at [0.6, -39.0, 210.3]; band_mid at [0.6, -41.7, 100.5]. Where the part is held is an input to this study, not a result of it -- if the layout of the supports is itself meant to be optimised, that decision is currently being made in CAD.
+  => setup OK
+
+wrote C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\child_single_camera_topopt\child_core_frame\setup
+  look at C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\child_single_camera_topopt\child_core_frame\setup\study_setup.png
+  look at C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\child_single_camera_topopt\child_core_frame\setup\study_setup.scad
+
+NEXT: topopt opt C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\child_single_camera_topopt\child_core_frame\study.json --out DIR

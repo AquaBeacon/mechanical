@@ -1,0 +1,68 @@
+{
+  "phase": "exploration",
+  "started": 1789023397.5512726,
+  "pid": 115844,
+  "runs": [
+    {
+      "part": "child_cam_bridge",
+      "started": 1789023397.5520558,
+      "status": "finished",
+      "command": [
+        "C:\\Python313\\python.exe",
+        "-m",
+        "topopt",
+        "run",
+        "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\assemblies\\child_single_camera_topopt\\child_cam_bridge\\study.json",
+        "--model",
+        "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\assemblies\\child_single_camera_topopt\\child_cam_bridge\\exploration",
+        "--iters",
+        "80",
+        "--quick"
+      ],
+      "pid": 111348,
+      "exit_code": 1,
+      "finished": 1789023518.7129118
+    },
+    {
+      "part": "child_jaw_gate",
+      "started": 1789023518.7173526,
+      "status": "finished",
+      "command": [
+        "C:\\Python313\\python.exe",
+        "-m",
+        "topopt",
+        "run",
+        "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\assemblies\\child_single_camera_topopt\\child_jaw_gate\\study.json",
+        "--model",
+        "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\assemblies\\child_single_camera_topopt\\child_jaw_gate\\exploration",
+        "--iters",
+        "80",
+        "--quick"
+      ],
+      "pid": 116860,
+      "exit_code": 1,
+      "finished": 1789024611.6543863
+    },
+    {
+      "part": "child_core_frame",
+      "started": 1789024611.6584384,
+      "status": "finished",
+      "command": [
+        "C:\\Python313\\python.exe",
+        "-m",
+        "topopt",
+        "run",
+        "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\assemblies\\child_single_camera_topopt\\child_core_frame\\study.json",
+        "--model",
+        "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\assemblies\\child_single_camera_topopt\\child_core_frame\\exploration",
+        "--iters",
+        "80",
+        "--quick"
+      ],
+      "pid": 109304,
+      "exit_code": 1,
+      "finished": 1789026316.0333645
+    }
+  ],
+  "finished": 1789026316.0374362
+}

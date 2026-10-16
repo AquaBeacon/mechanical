@@ -1,0 +1,67 @@
+{
+  "schema": "topopt/manifest/1",
+  "tool": {
+    "name": "topopt",
+    "version": "1.0.0"
+  },
+  "command": {
+    "name": "print",
+    "argv": [
+      "parts/child/exterior/printed/child_simple_light_mount/child_simple_light_mount_cap.stl",
+      "--keep-flat",
+      "Z",
+      "--load-axis",
+      "1,0,0",
+      "--json",
+      "parts/child/exterior/printed/child_simple_light_mount/verification/print_cap.json"
+    ],
+    "line": "print parts/child/exterior/printed/child_simple_light_mount/child_simple_light_mount_cap.stl --keep-flat Z --load-axis 1,0,0 --json parts/child/exterior/printed/child_simple_light_mount/verification/print_cap.json",
+    "cwd": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models"
+  },
+  "run": {
+    "started_utc": "2026-09-16T16:16:39Z",
+    "finished_utc": "2026-09-16T16:16:39Z",
+    "seconds": 0.037,
+    "exit_code": 0,
+    "exit_code_meaning": "pass / valid"
+  },
+  "source": {
+    "git_commit": null,
+    "git_dirty": null,
+    "git_commit_note": "not a git repository (or git unavailable)"
+  },
+  "environment": {
+    "python": "3.13.5",
+    "python_full": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "packages": {
+      "numpy": "2.4.2",
+      "scipy": "1.18.0",
+      "matplotlib": "3.10.8",
+      "skimage": "0.26.0",
+      "pytest": "9.1.1",
+      "torch": "2.12.0+cu130"
+    },
+    "external_tools": {
+      "freecad": null,
+      "calculix": null,
+      "gmsh": null,
+      "openscad": null
+    }
+  },
+  "inputs": [
+    {
+      "path": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\parts\\child\\exterior\\printed\\child_simple_light_mount\\child_simple_light_mount_cap.stl",
+      "bytes": 163806,
+      "sha256": "5a693a7cde157b53df776ffac0d8b1465c69b3b19ac5836c4cd1efc8532f0ef9"
+    },
+    {
+      "path": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\parts\\child\\exterior\\printed\\child_simple_light_mount\\verification\\print_cap.json",
+      "bytes": 2974,
+      "sha256": "c6e3364c88133b80e4646353a4d1f3d3ef7e28fa87c427c20b4dd98234a74699"
+    }
+  ],
+  "random_seed": null,
+  "random_seed_note": "no seed was declared by the study. The voxel path is deterministic (uniform initial density, OC update, CG solve), so a seed is not currently required for reproducibility."
+}

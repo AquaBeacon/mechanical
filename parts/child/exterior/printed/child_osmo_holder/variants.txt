@@ -1,0 +1,3 @@
+# <接尾辞>  <変数=値> ...
+cradle  part="cradle"
+strap   part="strap"

@@ -1,0 +1,2 @@
+// Generated from the same CSG operations as STEP. Rebuild with spec/build_parent_hand_service.py.
+translate([11.5,132.5,22]) rotate([-90,0,0]) union(){cylinder(r=2,h=1);translate([0,0,1]) cylinder(r=1,h=13);translate([0,0,14]) cylinder(r=2,h=1);}

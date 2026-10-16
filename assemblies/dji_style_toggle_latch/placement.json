@@ -1,0 +1,195 @@
+{
+  "name": "dji_style_toggle_latch",
+  "units": "mm",
+  "note": "Fixed host spacing. Positive hook undercut and EPDM preload. Rubber model is the closed envelope, not printable or a deformation simulation.",
+  "groups": {
+    "printed": true,
+    "hardware": true
+  },
+  "items": [
+    {
+      "part": "parts/common/jigs/dji_style_toggle_latch",
+      "file": "dji_style_toggle_latch_base",
+      "label": "Base",
+      "color": "SlateGray",
+      "group": "printed",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "parts/common/jigs/dji_style_toggle_latch",
+      "file": "dji_style_toggle_latch_keeper",
+      "label": "Keeper",
+      "color": "SteelBlue",
+      "group": "printed",
+      "ops": [
+        {
+          "translate": [
+            26,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "parts/common/jigs/dji_style_toggle_latch",
+      "file": "dji_style_toggle_latch_epdm",
+      "label": "EPDM full fixed recess - closed envelope",
+      "color": "SeaGreen",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            26,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "parts/common/jigs/dji_style_toggle_latch",
+      "file": "dji_style_toggle_latch_link",
+      "label": "Link left",
+      "color": "Orange",
+      "group": "printed",
+      "ops": [
+        {
+          "translate": [
+            0,
+            -9.2,
+            10.5
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            -185,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "parts/common/jigs/dji_style_toggle_latch",
+      "file": "dji_style_toggle_latch_link",
+      "label": "Link right",
+      "color": "Orange",
+      "group": "printed",
+      "ops": [
+        {
+          "translate": [
+            0,
+            4.4,
+            10.5
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            -185,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "parts/common/jigs/dji_style_toggle_latch",
+      "file": "dji_style_toggle_latch_lever",
+      "label": "Lever",
+      "color": "DimGray",
+      "group": "printed",
+      "ops": [
+        {
+          "translate": [
+            -11.954336377100947,
+            0,
+            9.454131087028104
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            1.4400518462612075,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "parts/common/jigs/dji_style_toggle_latch",
+      "file": "dji_style_toggle_latch_axle_a",
+      "label": "M3x25 A envelope",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            10.5
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "parts/common/jigs/dji_style_toggle_latch",
+      "file": "dji_style_toggle_latch_axle_b",
+      "label": "M3x35 B envelope",
+      "color": "Silver",
+      "group": "hardware",
+      "ops": [
+        {
+          "translate": [
+            -11.954336377100947,
+            0,
+            9.454131087028104
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  ]
+}

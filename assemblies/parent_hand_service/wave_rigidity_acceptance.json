@@ -1,0 +1,64 @@
+{
+  "status": "CURRENT_GEOMETRY_NOT_ANALYZED",
+  "manufacturing_release": false,
+  "reference_screening_pass": null,
+  "wave_reference_screening_pass": null,
+  "guarantee": "Case correction changed floor, Sony/GNSS geometry and supports; prior calculations are historical. Current stiffness and physical retention unqualified.",
+  "runs": [
+    {
+      "part": "floor_plate",
+      "tag": "simple_stack_final",
+      "current_geometry": false,
+      "summary": "assemblies/parent_hand_service/_work/analysis/wave_rigidity_20261009/simple_stack_final/floor_plate/ccx_screen_h3_circle16/ccx_summary.json",
+      "mesh_mm": 3.0,
+      "native_pass": true,
+      "wave_native_pass": true,
+      "wave_mm": 0.16744,
+      "port20N_mm": null,
+      "port20N_native_pass": true,
+      "p995_sf": 56.809,
+      "worst_sf": 17.618,
+      "mesh_quality_pass": true,
+      "mesh_convergence": "not evaluated; one stage"
+    },
+    {
+      "part": "main_carrier",
+      "tag": "print_economy_adjusted",
+      "current_geometry": false,
+      "summary": "assemblies/parent_hand_service/_work/analysis/wave_rigidity_20261009/print_economy_adjusted/main_carrier/ccx_screen_h3_circle16/ccx_summary.json",
+      "mesh_mm": 3.0,
+      "native_pass": true,
+      "wave_native_pass": true,
+      "wave_mm": 0.00988,
+      "port20N_mm": 0.1906,
+      "port20N_native_pass": true,
+      "p995_sf": 19.104,
+      "worst_sf": 6.807,
+      "mesh_quality_pass": true,
+      "mesh_convergence": "not evaluated; one stage"
+    },
+    {
+      "part": "sony_carrier",
+      "tag": "simple_stack",
+      "current_geometry": false,
+      "summary": "assemblies/parent_hand_service/_work/analysis/wave_rigidity_20261009/simple_stack/sony_carrier/ccx_screen_h3_circle16/ccx_summary.json",
+      "mesh_mm": 3.0,
+      "native_pass": false,
+      "wave_native_pass": true,
+      "wave_mm": 0.06956,
+      "port20N_mm": 1.12878,
+      "port20N_native_pass": false,
+      "p995_sf": 3.272,
+      "worst_sf": 0.322,
+      "mesh_quality_pass": true,
+      "mesh_convergence": "not evaluated; one stage"
+    }
+  ],
+  "conditions": "Six resultant2g directions; floor1510g payload plus CAD self-mass, Sony40g plus adapter/column self-mass, MAIN150g. Same generic dry23C dense PETG Z, walls4, infill100%, SF3 / absolute worst1.5. Sony actual printed stack seats are ideally bonded; real steel bolt stiffness/preload/slip omitted.",
+  "limitations": [
+    "Sony20N case retains original0.2mm and native strength criteria; failed cases are not waived or reduced.",
+    "GNSS/rack split interfaces and case/PCB/actual bolt compliance are not qualified.",
+    "No physical print, neck break-force, wave-cycle or creep tests. Single3mm stage is not mesh-density convergence."
+  ],
+  "current_reference": "_work/analysis/case_cad_correction_20261010/before/checks/wave_rigidity_acceptance.json"
+}

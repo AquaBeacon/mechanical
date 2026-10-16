@@ -1,0 +1,1 @@
+difference(){import("C:/Users/ryupc/WorkSpace/Mitou26/AquaBeacon-OSS/mechanical/assemblies/child_single_camera_topopt/child_core_frame/inputs/preserve_before_cable_passages.stl");import("C:/Users/ryupc/WorkSpace/Mitou26/AquaBeacon-OSS/mechanical/assemblies/child_single_camera_topopt/scene/cables.stl");}

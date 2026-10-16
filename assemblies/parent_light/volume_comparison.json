@@ -1,0 +1,6 @@
+{
+  "before_same_scope_mm3": 680464.3093533457,
+  "after_mm3": 522127.5027489348,
+  "reduction_percent": 23.268936287765108,
+  "note": "CAD solid volume only; actual filament depends on slicing, shells, infill and supports. Existing camera mount excluded from both sides."
+}

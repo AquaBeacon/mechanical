@@ -1,0 +1,460 @@
+{
+  "schema_version": 1,
+  "assembly": "parent_assembly",
+  "release_status": "existing_prototype",
+  "note": "既存構成の印刷データを整理。強度・造形性の新規認証ではない。",
+  "source_hashes": {
+    "assemblies/parent_assembly/placement.json": "41621ba897ae2608dac5950015ae698a2e7f248d70b3720624253386d8f15ffe",
+    "assemblies/parent_assembly/README.md": "f19193ebc66281077d6441947b6a7998260a74a52379635197753e56162a1973",
+    "parts/common/exterior/printed/xdcr_socket/variants.txt": "186ee4e3ab704cf07980c91da10db08b3cff97314948f2163a4efe6b4831a114",
+    "parts/common/exterior/printed/xdcr_socket/xdcr_socket.md": "23a64757ba36537292819594ed0c6ef89db09c2ff25adb3f6068f559cfabe2cd",
+    "parts/common/exterior/printed/xdcr_socket/xdcr_socket.scad": "64f782e8fab6433013c77e6904836787fed357a8df32b306404f4c3975c84d81",
+    "parts/parent/exterior/printed/parent_deck/manufacturing.json": "f3bea2e0fd2e0e3fd244a5cc85fc87fe21a7eab3c184aec782af4346bd49583a",
+    "parts/parent/exterior/printed/parent_deck/parent_deck.md": "bc97953df376c06278ad8714324c9df8b3ffeacec0d2d21b88168987a7b9bff6",
+    "parts/parent/exterior/printed/parent_deck/parent_deck.scad": "7930e5a7703e650432e5f4b896743ea34f8ad9b90abe5a9e6b93603f8fbead6a",
+    "parts/parent/exterior/printed/parent_float_yoke/parent_float_yoke.md": "e12da6680390fbedc9abc0e0bc79f447577248428958c4b807841a4b41453539",
+    "parts/parent/exterior/printed/parent_float_yoke/parent_float_yoke.scad": "d0800fae1112c5815cca3e017be208d3ceb1f9d2c4cd4ee17828d88ede93b269",
+    "parts/parent/exterior/printed/parent_float_yoke/variants.txt": "b62610dc40f759cb3811242148357ef775726901e1e6e69d39278ff78b6a21ea",
+    "parts/parent/interior/printed/parent_lipo_tray/parent_lipo_tray.md": "ed17599abd58ad15bbb3ad1ff838e24709cb614082ed847b17d2483ee1c22607",
+    "parts/parent/interior/printed/parent_lipo_tray/parent_lipo_tray.scad": "6142afab41fb20fe154828aae636994a315a9e487a53885bec8e3a241c4bb2bc",
+    "parts/parent/interior/printed/parent_plate/parent_plate.md": "8f7915cbda8fbaa2eeede07539587b12dbc748f7e33b0c30e72e3ba62ebc3660",
+    "parts/parent/interior/printed/parent_plate/parent_plate.scad": "297143f9878cc8ac2eb23a94fd239c141fe628b39c5d4ab5ab709ce0f246ded8",
+    "parts/parent/interior/printed/parent_plate/variants.txt": "0082df303675be8d98f89964eebea778d29342a033e60635a1cba43f38d23533",
+    "scad/lib/hardpoint.scad": "5a442026ba75c7cb3d7eac05f29da72952cfe55706bfb0b6f02be0ac1b5cc6c1",
+    "spec/parent_hydrostatics.py": "c374b818b93aa7d7da073d4ca753ac3a78734b1db60aedc7ec7a59d25518edee",
+    "spec/parent_interior_layout.py": "94fcfd389470591cb68c24a3edce6ac5582092b5d994d7a6c6dde59de6ff92d5"
+  },
+  "parts": [
+    {
+      "part": "parts/parent/exterior/printed/parent_deck",
+      "stem": "parent_deck",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "deck"
+      ],
+      "file": "parent_deck.stl",
+      "rotation_deg": [
+        -180.0,
+        0.0,
+        -0.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_deck/parent_deck.stl",
+      "source_sha256": "1e542027170d975801b43d316a052f5f5e89a054c251ad5fcbb1e9efcb420943",
+      "sha256": "6c45f99facc9a2ccf3f4c4ca94d7c95927835259bc44bf78fe22e7e89d2789e4",
+      "extents_mm": [
+        216.0,
+        236.0,
+        60.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          108.0
+        ],
+        [
+          0.0,
+          -1.0,
+          1.2246467991473532e-16,
+          118.0
+        ],
+        [
+          0.0,
+          -1.2246467991473532e-16,
+          -1.0,
+          1.4450832229938766e-14
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_float_yoke",
+      "stem": "parent_float_yoke_a",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 2,
+      "labels": [
+        "yoke_R_aft",
+        "yoke_L_fore"
+      ],
+      "file": "parent_float_yoke_a.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_float_yoke/parent_float_yoke_a.stl",
+      "source_sha256": "4ca34d76fab6050d6822e8d51e15ae44ed1de72f5d779fc6d804a09bf13ae7ab",
+      "sha256": "a2603a09df831eb315c2384e88cf98ba1aa1b26d09ebc4fc70652f56c83ad167",
+      "extents_mm": [
+        113.0,
+        127.0,
+        96.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_float_yoke",
+      "stem": "parent_float_yoke_b",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 2,
+      "labels": [
+        "yoke_R_fore",
+        "yoke_L_aft"
+      ],
+      "file": "parent_float_yoke_b.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_float_yoke/parent_float_yoke_b.stl",
+      "source_sha256": "25507be645063847af0837925b70af98c460b0625acb9f0c5212d03055e5b3c5",
+      "sha256": "d01aa78a253b8c367cf46551b74221a9b82b6e8cf778ea4f320b218d31335c3a",
+      "extents_mm": [
+        113.0,
+        127.0,
+        96.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          99.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          28.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/common/exterior/printed/xdcr_socket",
+      "stem": "xdcr_socket_parent",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "xdcr_socket"
+      ],
+      "file": "xdcr_socket_parent.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/common/exterior/printed/xdcr_socket/xdcr_socket_parent.stl",
+      "source_sha256": "10395b0941e9f7433192bb358898dea6789d016018fee188507ecfd0cd1913bb",
+      "sha256": "df9ba1b4d48d22568896cc49116082820c5102661f95f39896f654c159a2b376",
+      "extents_mm": [
+        50.0,
+        50.0,
+        38.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          25.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          25.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/interior/printed/parent_plate",
+      "stem": "parent_plate_p1",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "plate"
+      ],
+      "file": "parent_plate_p1.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/interior/printed/parent_plate/parent_plate_p1.stl",
+      "source_sha256": "4e72e6f6b963bc74fa123b223e8d03d7763f584667ee5e193395b0e6d94202dd",
+      "sha256": "297dc2d1e92cab0fe24a13b1c08564b34f0f6ddfa38a44df96b4dc7bcf679776",
+      "extents_mm": [
+        183.0,
+        203.0,
+        17.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/interior/printed/parent_lipo_tray",
+      "stem": "parent_lipo_tray",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "lipo_tray"
+      ],
+      "file": "parent_lipo_tray.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/interior/printed/parent_lipo_tray/parent_lipo_tray.stl",
+      "source_sha256": "79293d4649b38714d3e8eed0c968741b62b0812ec3dae944b7067beab1de36dd",
+      "sha256": "bedbc9947401a32b0206a4962e99b37e26f8dab822b9e4f222b9aa204272485b",
+      "extents_mm": [
+        112.0,
+        84.5,
+        17.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          4.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    }
+  ],
+  "modifiers": [],
+  "generated_files": [
+    "parent_deck.stl",
+    "parent_float_yoke_a.stl",
+    "parent_float_yoke_b.stl",
+    "xdcr_socket_parent.stl",
+    "parent_plate_p1.stl",
+    "parent_lipo_tray.stl",
+    "DESIGN_NOTES.md",
+    "PRINT.md"
+  ],
+  "document_hashes": {
+    "DESIGN_NOTES.md": "640979c318899e6ea3202d58d4aa328fc48437a93a8a3933edaafd9670d95e18",
+    "PRINT.md": "5bc0db66288438baae6380f4a98f5ec9282f53a41d0fe5e433b82f89e95f4564"
+  }
+}

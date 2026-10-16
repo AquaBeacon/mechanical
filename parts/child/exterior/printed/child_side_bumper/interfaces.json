@@ -1,0 +1,26 @@
+{
+  "consumer": "child_side_bumper",
+  "references": [
+    {
+      "part": "child_cam_bridge",
+      "path": "parts/child/exterior/printed/child_cam_bridge",
+      "md_sha256": "8ae64f86665d58d92589314973782a8ca1668115a2b3c23f1576de57b33ed863",
+      "stl_sha256": "4c2b6db63249dcbd5218cf6e82267cb555100c6c25ce6ba7225af4dba6eaee4c",
+      "bbox_mm": [
+        240.0,
+        61.0,
+        150.05
+      ],
+      "status_at_lock": [
+        "needs_measure"
+      ],
+      "values": {
+        "case_outer_x": 122.35,
+        "end_plate_z1": 80.0
+      },
+      "confirmed_by_human": false,
+      "confirmed_at": "2026-09-06T04:26:41",
+      "note": "2026-09-06 再ロック (人間確認待ち): ブリッジ v2 (トポロジー最適化、266 cm³) でも座・端板の値は不変"
+    }
+  ]
+}

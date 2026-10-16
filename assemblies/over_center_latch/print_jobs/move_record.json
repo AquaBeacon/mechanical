@@ -1,0 +1,6 @@
+{
+  "from": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\assemblies\\over_center_latch\\parts\\over_center_latch_bail.3mf",
+  "to": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\assemblies\\over_center_latch\\print_jobs\\over_center_latch_bail.3mf",
+  "sha256": "a88ee4631b3e5665ec3d946f258c65c9c2c353623dc9edba3472ac35eed46039",
+  "reason": "Preserve pre-existing slicing file outside generated current print set; source STL correspondence unverified."
+}

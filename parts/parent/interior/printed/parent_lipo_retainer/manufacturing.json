@@ -1,0 +1,20 @@
+{
+  "non_print_files": [
+    "parent_lipo_retainer_pads"
+  ],
+  "note": "Pads represent cut foam, not FDM parts.",
+  "source_dependencies": [
+    "../../../../../spec/prepare_parent_lipo_retainer.py",
+    "../../../../../spec/export_parent_lipo_retainer.py",
+    "../../../../../spec/remesh_parent_gnss_outputs.py",
+    "../../../../../scad/lib/parent_battery_slide.py",
+    "../../../../../parts/child/interior/printed/child_vtray_batt_floor/child_vtray_batt_floor.scad"
+  ],
+  "print_rotations_deg": {
+    "parent_lipo_retainer_lid_slide": [
+      180,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "support_segments": 0,
+  "regions_model_mm": {
+    "nut_and_entry": [
+      [
+        8.4,
+        15.6
+      ],
+      [
+        0.2,
+        7.8
+      ],
+      [
+        21.3,
+        28.3
+      ]
+    ],
+    "screw_bore": [
+      [
+        10.5,
+        13.5
+      ],
+      [
+        3.5,
+        6.5
+      ],
+      [
+        0.2,
+        29
+      ]
+    ],
+    "rail_left": [
+      [
+        -3.5,
+        104.5
+      ],
+      [
+        6.3,
+        7.5
+      ],
+      [
+        25.7,
+        28.1
+      ]
+    ],
+    "rail_right": [
+      [
+        -3.5,
+        104.5
+      ],
+      [
+        47.5,
+        48.7
+      ],
+      [
+        25.7,
+        28.1
+      ]
+    ]
+  },
+  "bead_envelope_half_width_mm": 0.25,
+  "hit_counts": {
+    "nut_and_entry": 0,
+    "screw_bore": 0,
+    "rail_left": 0,
+    "rail_right": 0
+  },
+  "hits": {
+    "nut_and_entry": [],
+    "screw_bore": [],
+    "rail_left": [],
+    "rail_right": []
+  },
+  "source_sha256": "936c39fda25aee63dfcd8e35c9d332d0215f891cffd8675a4ca975d261e61817",
+  "project_sha256": "d847c8bd393f9423f8dbaf9c8d27b0c483ed698c9301f2ebfe7f3f4f8b45e6cb",
+  "limits": "Bambu X1C PETG0.2/wall4/infill100/support45/bridge exclusion; other slicer profiles and physical printing require checking."
+}

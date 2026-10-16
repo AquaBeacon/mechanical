@@ -1,0 +1,118 @@
+{
+  "floor_case_intersection_mm3": 0.0,
+  "status": "PASS",
+  "scope": "Straight tool-shaft clearance only; actual tightening/preload, grip and captive-nut retention not verified.",
+  "checks": [
+    {
+      "screw": "0_0",
+      "axis_mm": [
+        11.5,
+        79,
+        123.3
+      ],
+      "tool_shaft_diameter_mm": 3.2,
+      "above_head_length_mm": 100,
+      "collisions": []
+    },
+    {
+      "screw": "0_1",
+      "axis_mm": [
+        11.5,
+        97,
+        123.3
+      ],
+      "tool_shaft_diameter_mm": 3.2,
+      "above_head_length_mm": 100,
+      "collisions": []
+    },
+    {
+      "screw": "1_0",
+      "axis_mm": [
+        132,
+        79,
+        123.3
+      ],
+      "tool_shaft_diameter_mm": 3.2,
+      "above_head_length_mm": 100,
+      "collisions": []
+    },
+    {
+      "screw": "1_1",
+      "axis_mm": [
+        132,
+        97,
+        123.3
+      ],
+      "tool_shaft_diameter_mm": 3.2,
+      "above_head_length_mm": 100,
+      "collisions": []
+    },
+    {
+      "screw": "2_0",
+      "axis_mm": [
+        21,
+        178,
+        123.3
+      ],
+      "tool_shaft_diameter_mm": 3.2,
+      "above_head_length_mm": 100,
+      "collisions": []
+    },
+    {
+      "screw": "2_1",
+      "axis_mm": [
+        21,
+        196,
+        123.3
+      ],
+      "tool_shaft_diameter_mm": 3.2,
+      "above_head_length_mm": 100,
+      "collisions": []
+    },
+    {
+      "screw": "3_0",
+      "axis_mm": [
+        127.5,
+        181,
+        123.3
+      ],
+      "tool_shaft_diameter_mm": 3.2,
+      "above_head_length_mm": 100,
+      "collisions": []
+    },
+    {
+      "screw": "3_1",
+      "axis_mm": [
+        127.5,
+        199,
+        123.3
+      ],
+      "tool_shaft_diameter_mm": 3.2,
+      "above_head_length_mm": 100,
+      "collisions": []
+    },
+    {
+      "screw": "4_0",
+      "axis_mm": [
+        142,
+        101,
+        123.3
+      ],
+      "tool_shaft_diameter_mm": 3.2,
+      "above_head_length_mm": 100,
+      "collisions": []
+    },
+    {
+      "screw": "4_1",
+      "axis_mm": [
+        142,
+        119,
+        123.3
+      ],
+      "tool_shaft_diameter_mm": 3.2,
+      "above_head_length_mm": 100,
+      "collisions": []
+    }
+  ],
+  "service_step_sha256": "af6b19882d3dab86b39a665cbcd7a131c972c595a8eb5d24654532b1c3ecf3f8"
+}

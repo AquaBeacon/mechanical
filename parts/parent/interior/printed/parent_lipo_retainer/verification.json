@@ -1,0 +1,46 @@
+{
+  "reference": "parts/child/interior/printed/child_vtray_batt_box + child_vtray_batt_floor",
+  "six_direction_contact_distance_mm": {
+    "-Z_floor": 0.0,
+    "+Z_top_pad": 0.0,
+    "-Y_side_pad": 0.0,
+    "+Y_side_pad": 0.0,
+    "+X_end_pad": 0.0,
+    "-X_end_pads": 0.0
+  },
+  "rigid_lid_stop_z_local_mm": 29,
+  "installed_foam_top_mm": 3,
+  "retainer_max_z_box_mm": 85.4,
+  "enclosure_lid_z_mm": 90.9,
+  "part_checks": [
+    {
+      "part": "parent_lipo_retainer_base",
+      "valid_step": true,
+      "closed_stl": true,
+      "bbox_difference_mm": 3.552713678800501e-15,
+      "relative_volume_difference": 0.00012764395032648988
+    },
+    {
+      "part": "parent_lipo_retainer_lid",
+      "valid_step": true,
+      "closed_stl": true,
+      "bbox_difference_mm": 4.440892098500626e-16,
+      "relative_volume_difference": 5.1537045143503566e-08
+    },
+    {
+      "part": "parent_lipo_retainer_pads",
+      "valid_step": true,
+      "closed_stl": true,
+      "bbox_difference_mm": 0.0,
+      "relative_volume_difference": 0.0
+    },
+    {
+      "part": "parent_lipo_retainer_lid_narrow",
+      "valid_step": true,
+      "closed_stl": true,
+      "bbox_difference_mm": 9.536743217353205e-08,
+      "relative_volume_difference": 1.862176697100894e-07
+    }
+  ],
+  "condition": "Nominal pack 102x34x23; choose foam/shims from actual measurements, no direct rigid clamping."
+}

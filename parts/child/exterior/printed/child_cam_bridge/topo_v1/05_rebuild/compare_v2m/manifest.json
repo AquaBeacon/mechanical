@@ -1,0 +1,67 @@
+{
+  "schema": "topopt/manifest/1",
+  "tool": {
+    "name": "topopt",
+    "version": "1.0.0"
+  },
+  "command": {
+    "name": "compare",
+    "argv": [
+      "topo_v1/03_optimization",
+      "rebuild/v2m.stl",
+      "--study",
+      "topo_v1/child_cam_bridge_v1_study.json",
+      "--out",
+      "topo_v1/compare_v2m",
+      "--solver",
+      "cuda:jacobi"
+    ],
+    "line": "compare topo_v1/03_optimization rebuild/v2m.stl --study topo_v1/child_cam_bridge_v1_study.json --out topo_v1/compare_v2m --solver cuda:jacobi",
+    "cwd": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\parts\\child\\exterior\\printed\\child_cam_bridge"
+  },
+  "run": {
+    "started_utc": "2026-09-05T19:11:34Z",
+    "finished_utc": "2026-09-05T19:11:53Z",
+    "seconds": 18.975,
+    "exit_code": 0,
+    "exit_code_meaning": "pass / valid"
+  },
+  "source": {
+    "git_commit": "1ffa0c88feb867a77f4af8b1ab36e8b11eb7f5ef",
+    "git_dirty": true
+  },
+  "environment": {
+    "python": "3.13.5",
+    "python_full": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "packages": {
+      "numpy": "2.4.2",
+      "scipy": "1.18.0",
+      "matplotlib": "3.10.8",
+      "skimage": "0.26.0",
+      "pytest": "9.1.1",
+      "torch": "2.12.0+cu130"
+    },
+    "external_tools": {
+      "freecad": null,
+      "calculix": null,
+      "gmsh": null,
+      "openscad": null
+    }
+  },
+  "inputs": [
+    {
+      "path": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\parts\\child\\exterior\\printed\\child_cam_bridge\\rebuild\\v2m.stl",
+      "bytes": 741230,
+      "sha256": "9d0acaa28c37f62d30cc9c4f5e89351e9c2b00ed65d6bdef20dd8a439bad5e10"
+    },
+    {
+      "path": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\parts\\child\\exterior\\printed\\child_cam_bridge\\topo_v1\\child_cam_bridge_v1_study.json",
+      "bytes": 6114,
+      "sha256": "57485a3bb73731cd9ddd2653c80998127fc7109a4d48bbfc5cd7a52dbe635faa"
+    }
+  ],
+  "random_seed": null,
+  "random_seed_note": "no seed was declared by the study. The voxel path is deterministic (uniform initial density, OC update, CG solve), so a seed is not currently required for reproducibility."
+}

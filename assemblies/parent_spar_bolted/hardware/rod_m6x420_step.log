@@ -1,0 +1,32 @@
+[csg2step] doc objects: 1
+[csg2step] tops: [('cylinder', 11875.2)]
+[csg2step] check vs STL: bbox maxdiff=0.00 mm  volume step=11875.2 stl=11799.1 (0.6%)
+FreeCAD 1.0.0, Libs: 1.0.0R39109 (Git)
+(C) 2001-2024 FreeCAD contributors
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+
+End processing CSG file
+Recompute......
+						(100 %)	
+								
+Recompute......
+						(50 %)	
+						(100 %)	
+								
+*******************************************************************
+******        Statistics on Transfer (Write)                 ******
+
+*******************************************************************
+******        Transfer Mode = 0  I.E.  As Is       ******
+******        Transferring Shape, ShapeType = 0                      ******
+** WorkSession : Sending all data
+ Step File Name : C:/Users/ryupc/WorkSpace/Mitou26/Body_Models/assemblies/parent_spar_bolted/hardware/rod_m6x420.step(73 ents)  Write  Done
+[csg2step] wrote C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\parent_spar_bolted\hardware\rod_m6x420.step volume= 11875.2 solids= 1 faces= 3
+Failed to create 'C:/Users/ryupc/AppData/Local/cache\FreeCAD\Cache\FreeCAD_Doc_e92a611b-08f3-4f32-86bd-209902d1f824_da39a3_953159'
+WARNING: Token 'DOT' defined, but not used
+WARNING: Token 'WORD' defined, but not used
+WARNING: There are 2 unused tokens
+An error occurred during creation of output transcoder. Msg is:
+unable to open file 'C:/Users/ryupc/AppData/Roaming/FreeCAD/system.cfg'
+An error occurred during creation of output transcoder. Msg is:
+unable to open file 'C:/Users/ryupc/AppData/Roaming/FreeCAD/user.cfg'

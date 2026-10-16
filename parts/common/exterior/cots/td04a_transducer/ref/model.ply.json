@@ -1,0 +1,311 @@
+{
+  "schema_version": "1.0",
+  "processing_version": "0.2.1",
+  "classification": "V",
+  "model_file": "results/7e194b9cc0dea85267b5/annotated.vtp",
+  "pointcloud_file": "results/7e194b9cc0dea85267b5/points.ply",
+  "classification_label": "見た目モデル・寸法保証なし",
+  "scale_m_per_unit": 0.05642031445192208,
+  "coordinate_system": "right-handed world, metres",
+  "registered_ratio": 1.0,
+  "calibration_version": "aruco-4x4-50-v1",
+  "device": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/153.0.8010.24 Mobile/15E148 Safari/604.1",
+  "pc": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "cpu_count": 16,
+    "ram_gb": 31.7,
+    "available_ram_gb": 13.7,
+    "free_gb": 152.2,
+    "gpu": [
+      "NVIDIA GeForce RTX 4060 Ti, 16380, 610.88"
+    ],
+    "estimated_minutes": null,
+    "estimate_note": "実測データ未収集のため時間は推定不能"
+  },
+  "input_manifest": {
+    "schema_version": "1.0",
+    "capture_id": "44ea4496-985c-4f2c-a9c7-d877efecdd61",
+    "created_at": "2026-09-15T11:01:01.635Z",
+    "device": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/153.0.8010.24 Mobile/15E148 Safari/604.1",
+    "images": [
+      {
+        "path": "images/shot_00.jpg",
+        "slot": 0,
+        "sha256": "61f0346467b95b486239d0040c89ca4637056a924609bf9ee83eef085b3f6959"
+      },
+      {
+        "path": "images/shot_01.jpg",
+        "slot": 1,
+        "sha256": "950671da41081523cb13f0e2c4c51bda50a88671639076d7e22fc5a78224ac04"
+      },
+      {
+        "path": "images/shot_02.jpg",
+        "slot": 2,
+        "sha256": "aaa06a030ef9a25fe4dbac27d06d68df4f784d14f61299879271ae64221768a6"
+      },
+      {
+        "path": "images/shot_03.jpg",
+        "slot": 3,
+        "sha256": "f2c04618df8efbd4e8f72acf40dd643b0477a287ff220705186cc0fb1581ac83"
+      },
+      {
+        "path": "images/shot_04.jpg",
+        "slot": 4,
+        "sha256": "764d5489ef127f2e7a27447082c4dac3b697da0f9604efad25d96c1971e7d551"
+      },
+      {
+        "path": "images/shot_05.jpg",
+        "slot": 5,
+        "sha256": "864615af985989933e494db7a44f9e743e4d48aeef81dcfbaf191fe2887c6cd3"
+      },
+      {
+        "path": "images/shot_06.jpg",
+        "slot": 6,
+        "sha256": "1d7ff1ed0ad0050025810c4fb80cf14034a68533f53ad49075f98e74876722c5"
+      },
+      {
+        "path": "images/shot_07.jpg",
+        "slot": 7,
+        "sha256": "5d9823c7884f18657ec092d18542f04555f3b35b2fc4b738312347979a6fd960"
+      },
+      {
+        "path": "images/shot_08.jpg",
+        "slot": 8,
+        "sha256": "a84992c2916bc9814011a1401563d61804e977b9115a89447e372d481b66f696"
+      },
+      {
+        "path": "images/shot_09.jpg",
+        "slot": 9,
+        "sha256": "7a53b9c530215603c0a4152cde38d3ad19b283a01ff73fe756c7a2ace6a69baf"
+      },
+      {
+        "path": "images/shot_10.jpg",
+        "slot": 10,
+        "sha256": "1a9fd65fb31e8a55d804097a840e1491e1c7b4613f3833de78046e49409d972a"
+      },
+      {
+        "path": "images/shot_11.jpg",
+        "slot": 11,
+        "sha256": "bab4d7e1618c43d436fe6ffe46795948be96c0a9b174cc8cf81add98e3a89ef7"
+      },
+      {
+        "path": "images/shot_12.jpg",
+        "slot": 12,
+        "sha256": "96a9b869d9f0c8448d3fc5dcff299c6340c8a2213c8085bb95e243cbef2e65fc"
+      },
+      {
+        "path": "images/shot_13.jpg",
+        "slot": 13,
+        "sha256": "bfce9096f36d46ee173d428e345623c857c69db8efdd36715bbe15ccef1e88fa"
+      },
+      {
+        "path": "images/shot_14.jpg",
+        "slot": 14,
+        "sha256": "13219a2b91af4d98fbc1643de2e773fa9d33b08ff4176209faaaa12f2d82f875"
+      },
+      {
+        "path": "images/shot_15.jpg",
+        "slot": 15,
+        "sha256": "6bbe094e15c576013ee5c57186a31500978796fae1273aa60aa839482e6f8a90"
+      },
+      {
+        "path": "images/shot_16.jpg",
+        "slot": 16,
+        "sha256": "5978e3410be30269d93a86f056714b734af799be93c45e9505c69cc5b281aaaf"
+      },
+      {
+        "path": "images/shot_17.jpg",
+        "slot": 17,
+        "sha256": "78f856c333795eaba1cf6f5f60fa2ac12142f10de53c4f83080a9cdc311b56d8"
+      },
+      {
+        "path": "images/shot_18.jpg",
+        "slot": 18,
+        "sha256": "5154525e35462287dbafece7c790f1eead4cb77464a2c8986caab3f485d4931c"
+      },
+      {
+        "path": "images/shot_19.jpg",
+        "slot": 19,
+        "sha256": "17b6a95594b1311d0a9112f1b957d7bbf1ec7d57c7f1a6e1dcfc08a6cb7aa56a"
+      },
+      {
+        "path": "images/shot_20.jpg",
+        "slot": 20,
+        "sha256": "9b2169f6885e42b06f736de1fffbd22d2968b5db0d173821e695a9162078823d"
+      },
+      {
+        "path": "images/shot_21.jpg",
+        "slot": 21,
+        "sha256": "c9391f3bea4b71bd903dc604c5d5234eea7ceeec089bab91c83fee8146e03b88"
+      },
+      {
+        "path": "images/shot_22.jpg",
+        "slot": 22,
+        "sha256": "dcc19776fb6e82cc70fa300acfd3fca61f4ffef04c6f45266f689e356f90d593"
+      },
+      {
+        "path": "images/shot_23.jpg",
+        "slot": 23,
+        "sha256": "172da74e8e30f06a02bac266ab5715c63f486425b0341a2717e62cd6b8003fb9"
+      },
+      {
+        "path": "images/shot_24.jpg",
+        "slot": 24,
+        "sha256": "f52e69272f2de37bd0e8462dc7f3e4234d2defc9d334d3e9682ef330181d0533"
+      },
+      {
+        "path": "images/shot_25.jpg",
+        "slot": 25,
+        "sha256": "84082bb91869584d949624224e01759e054e3d656c277dd735a1fa6b5371f33a"
+      },
+      {
+        "path": "images/shot_26.jpg",
+        "slot": 26,
+        "sha256": "b69c5663b83bfc3068d3062aeda114e639b9830261d4ed903f038e42306b2c0e"
+      },
+      {
+        "path": "images/shot_27.jpg",
+        "slot": 27,
+        "sha256": "9e2826a754b88f828841ae9db29bb99773782ea1f869b8bd94918834a24a833a"
+      },
+      {
+        "path": "images/shot_28.jpg",
+        "slot": 28,
+        "sha256": "263517346efe483e23ce879d32a6f5da83e85f50b1bc9a5b649da31a61723cb8"
+      },
+      {
+        "path": "images/shot_29.jpg",
+        "slot": 29,
+        "sha256": "039ab4824da09df71ec113867ba67860da9cba0aa5cc954aed82868ae296f218"
+      },
+      {
+        "path": "images/shot_30.jpg",
+        "slot": 30,
+        "sha256": "570649dc0b8137eb28398bba9362866f202e2670fbeb7381cc5532912aef21ba"
+      },
+      {
+        "path": "images/shot_31.jpg",
+        "slot": 31,
+        "sha256": "4de842cc2753282cbfd08b8ff5c8eacc456621588fb5bced35942522c0188f76"
+      }
+    ],
+    "metadata": [
+      {
+        "path": "calibration.json",
+        "sha256": "bfea09dd5874913c2e363a9fc0310383c241f1869f3d5c7dd920eb8e78a67130"
+      },
+      {
+        "path": "quality.json",
+        "sha256": "aff16a27ae74fa7697d2c70fbb9482f49b1d2e7fa87dd246e2c8182d06a51ff4"
+      }
+    ]
+  },
+  "measurements": [],
+  "tool_sha256": {
+    "colmap": "5b6c35ab35fb5d21f2a1205da2cc9a89e5d5cbe1f0a2b86005386ff9c895cebd",
+    "InterfaceCOLMAP": "785311ce935b49a5c993570e5daf77b5616fe7fce871b7ddee3b5e5c10c30cc4",
+    "DensifyPointCloud": "baa34151aa66ca5b909645330fdb79c271087f08759872dd2d474717dc901d77",
+    "ReconstructMesh": "bb84317e4881effed587a560a80c574c1e22fc3dd9b1d9655127944f66b8abcc"
+  },
+  "quality": {
+    "coverage": {
+      "pass": true,
+      "missing_sectors": [],
+      "max_gap_degrees": 31.35459993221852,
+      "observed_sectors": 12,
+      "method": "camera-centers-around-sparse-target-v1"
+    },
+    "reprojection_mean_px": 0.7050953584879267,
+    "reprojection_p95_px": 1.6145030333917076,
+    "sparse_points": 10391,
+    "short_track_fraction": 0.043499181984409586,
+    "outlier_fraction": 0.014050620729477433,
+    "pass": true,
+    "vertices": 408352,
+    "faces": 816590,
+    "boundary_edges": 156,
+    "unobserved_regions": "unknown",
+    "per_vertex_confidence": "available",
+    "support_method": "occlusion-rays-sampled-2048-nearest-v1",
+    "confidence_sample_count": 2048,
+    "low_support_fraction": 0.00146484375,
+    "surface_area_m2": null,
+    "point_density_per_m2": null,
+    "error_model": "reprojection*max(distance/focal_px)/sin(parallax); approximate, not certified",
+    "error_unknown_value": -1
+  },
+  "thresholds": {
+    "registration_min": 0.8,
+    "scale_spread_max": 0.01,
+    "error_m": 0.001,
+    "error_relative": 0.01
+  },
+  "automatic_calibration": {
+    "status": "failed",
+    "reason": "3個以上のA4マーカーを複数方向から写してください（有効な校正点が不足）"
+  },
+  "classification_gates": {
+    "calibration": false,
+    "independent_reference": false,
+    "axes": false,
+    "quality": true,
+    "evaluated_device": false
+  },
+  "device_evaluation": {
+    "device": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/153.0.8010.24 Mobile/15E148 Safari/604.1",
+    "processing_version": "0.2.1",
+    "trials": 0,
+    "passes": 0,
+    "pass_rate": 0,
+    "shape_count": 0,
+    "shapes": {},
+    "absolute_errors_mm": [],
+    "qualified": false
+  },
+  "world_to_m": [
+    [
+      0.05642031445192208,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.05642031445192208,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.05642031445192208,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "scale_method": "manual-two-point",
+  "crop_bounds_m": [
+    -0.18256850717850215,
+    0.1830803625898071,
+    -0.03014686752512035,
+    0.2979453701176556,
+    0.05592374418692549,
+    0.3131877363973856
+  ],
+  "export_unit": "mm",
+  "mesh_statistics": {
+    "vertices": 408371,
+    "faces": 816609,
+    "boundary_edges": 175,
+    "unobserved_regions": "unknown",
+    "per_vertex_confidence": "available"
+  },
+  "export_kind": "mesh",
+  "sha256": "64e968a103baec03bc605d12504dca94d09a290563f758368aad7ce4fbcb29a4",
+  "format": "ply"
+}

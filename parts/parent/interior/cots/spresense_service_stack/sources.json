@@ -1,0 +1,35 @@
+{
+  "retrieved": "2026-09-26",
+  "urls": [
+    "https://github.com/sonydevworld/spresense-hw-design-files",
+    "https://developer.spresense.sony-semicon.com/ja/buy-spresense/spresense-imu-add-on-board/"
+  ],
+  "files": [
+    {
+      "file": "CXD5602PWBEXT1.png",
+      "sha256": "c84bb094550c0465eb2cae1a3a9f81855c7ace809e0253222756f94ef1d470ba"
+    },
+    {
+      "file": "CXD5602PWBEXT1.stp",
+      "sha256": "60d099c7debd6139d2c0cf79e0f99b5be0e027024f253e99db17f057ebbe43d5"
+    },
+    {
+      "file": "CXD5602PWBMAIN1.png",
+      "sha256": "e1a8926a8550a8b35f8bd8da29a3a81024fb79484bef4a8606aef1583b54b464"
+    },
+    {
+      "file": "CXD5602PWBMAIN1.stp",
+      "sha256": "b95bfce1ebddc434e2127e7222b3b276587c66fe60ecc54f98aacd58c29ec419"
+    },
+    {
+      "file": "sony_imu_product.html",
+      "sha256": "89be77902a7afa5d70dd92bfa1542d8cf1b5a06408a72d4adb81dde553d7fca9"
+    }
+  ],
+  "main_xy_translation": [
+    11.29,
+    0
+  ],
+  "main_z_provisional": 6.2,
+  "imu_is_envelope": true
+}

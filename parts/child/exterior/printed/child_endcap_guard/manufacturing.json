@@ -1,0 +1,19 @@
+{
+  "material": "PETG",
+  "source_dependencies": [
+    "parameters.json",
+    "../../../../../spec/build_child_endcap_guard.py",
+    "../../cots/wte4_end_cap_5xm10/WTE4-M-END-CAP-5XM10-R2.step"
+  ],
+  "non_print_files": [
+    "child_endcap_guard_hinge_reference"
+  ],
+  "print_rotations_deg": {
+    "child_endcap_guard_integrated": [
+      0,
+      0,
+      0
+    ]
+  },
+  "note": "PETG 0.20 mm / 0.4 nozzle, 6 walls, 6 top-bottom, 40% infill, 5 mm brim. Upright cage: 45-degree window roofs, sloped foot; 3 mm window corners, 1.5 mm cage/outer-foot edges, 2 mm cage-receiver roots. Provisional hinge extends 6.5 mm below main foot: support under main foot and provisional hinge/latch is still required. Fixed hinge reference excluded."
+}

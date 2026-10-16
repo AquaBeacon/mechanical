@@ -1,0 +1,10 @@
+{
+  "print_rotations_deg": {
+    "child_flange_brace": [
+      0,
+      0,
+      0
+    ]
+  },
+  "step_coplanar_merge": true
+}

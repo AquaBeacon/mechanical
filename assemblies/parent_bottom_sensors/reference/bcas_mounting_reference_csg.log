@@ -1,0 +1,2 @@
+ECHO: "bcas212310g: insert bosses at [[25, 25], [25, 205], [185, 25], [185, 205]]  tapping bosses (box coords) = [[25, 75], [25, 155], [185, 75], [185, 155], [65, 25], [65, 205], [105, 25], [105, 205], [145, 25], [145, 205]]"
+ECHO: "bcas212310g: PENETRATORS (south wall y=0) d=10.2 z=65 x=[85, 120] model wall_y=6.1"

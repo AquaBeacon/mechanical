@@ -1,0 +1,67 @@
+{
+    "error_string": "Success.",
+    "export_time": 1127,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 220,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Bottom surface": 1109.759765625,
+                "Bridge": 9.834455490112305,
+                "Custom": 35.641258239746094,
+                "Gap infill": 365.64398193359375,
+                "Inner wall": 10827.6640625,
+                "Internal solid infill": 4674.10205078125,
+                "Outer wall": 2060.802490234375,
+                "Overhang wall": 201.09266662597656,
+                "Sparse infill": 20989.580078125,
+                "Support": 530.8311767578125,
+                "Support interface": 92.40501403808594,
+                "Support transition": 45.54005813598633,
+                "Top surface": 1062.06396484375,
+                "Travel": 3960.947021484375,
+                "Undefined": 3945.2509765625
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFG00",
+                    "id": 1,
+                    "main_used_g": 574.4308471679688,
+                    "total_used_g": 578.2852172851563
+                }
+            ],
+            "generate_support_material_time": 481,
+            "id": 1,
+            "infill_time": 412,
+            "layer_filament_change": 0,
+            "main_predication": 45868.9609375,
+            "make_perimeters_time": 521,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 230.0,
+                        "height": 33.25,
+                        "width": 220.0,
+                        "x": 19.319000244140625,
+                        "y": 14.921719551086426,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "child_horizontal_plate_frame_bottom.stl",
+                    "triangle_count": 40400
+                }
+            ],
+            "sliced_time": 2811,
+            "sliced_time_with_cache": 1287,
+            "total_predication": 45888.875,
+            "triangle_count": 40400,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 100.0,
+    "wall_loops": 8
+}

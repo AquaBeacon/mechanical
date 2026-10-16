@@ -1,0 +1,1144 @@
+{
+  "schema": "topopt/setup/1",
+  "ok": true,
+  "errors": [],
+  "warnings": [
+    "support region 'lug_boss_R' in case 'L1 hoist 3g: lugs fixed, container + guard + gate weights down' reaches 34 % (2241.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 66 % only.",
+    "support region 'lug_boss_L' in case 'L1 hoist 3g: lugs fixed, container + guard + gate weights down' reaches 35 % (2322.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 65 % only.",
+    "load region 'pocket_bot' in case 'L1 hoist 3g: lugs fixed, container + guard + gate weights down' reaches 87 % (113373.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 13 % only.",
+    "load region 'guard_boss_R' in case 'L1 hoist 3g: lugs fixed, container + guard + gate weights down' reaches 60 % (8289.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 40 % only.",
+    "load region 'guard_boss_L' in case 'L1 hoist 3g: lugs fixed, container + guard + gate weights down' reaches 60 % (8316.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 40 % only.",
+    "load region 'latch_lo' in case 'L1 hoist 3g: lugs fixed, container + guard + gate weights down' reaches 29 % (2592.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 71 % only.",
+    "load region 'latch_hi' in case 'L1 hoist 3g: lugs fixed, container + guard + gate weights down' reaches 29 % (2592.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 71 % only.",
+    "load region 'td04a_hp1' in case 'L1 hoist 3g: lugs fixed, container + guard + gate weights down' reaches 6 % (1161.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 94 % only.",
+    "support region 'pocket_bot' in case 'L2s transport side hit 300 N (+X on back wall and lugs), container reacts' reaches 87 % (113373.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.",
+    "support region 'pocket_top' in case 'L2s transport side hit 300 N (+X on back wall and lugs), container reacts' reaches 87 % (136053.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.",
+    "load region 'back_wall' in case 'L2s transport side hit 300 N (+X on back wall and lugs), container reacts' reaches 85 % (68661.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 15 % only.",
+    "load region 'lug_boss_R' in case 'L2s transport side hit 300 N (+X on back wall and lugs), container reacts' reaches 34 % (2241.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 66 % only.",
+    "load region 'lug_boss_L' in case 'L2s transport side hit 300 N (+X on back wall and lugs), container reacts' reaches 35 % (2322.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 65 % only.",
+    "support region 'pocket_bot' in case 'L2h transport landing on the hinge side (300 N +X through the knuckles), container reacts' reaches 87 % (113373.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.",
+    "support region 'pocket_top' in case 'L2h transport landing on the hinge side (300 N +X through the knuckles), container reacts' reaches 87 % (136053.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.",
+    "load region 'knuckles' in case 'L2h transport landing on the hinge side (300 N +X through the knuckles), container reacts' reaches 65 % (56214.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 35 % only.",
+    "support region 'pocket_bot' in case 'L2r transport rear hit 300 N on the back wall (+Y), container reacts' reaches 87 % (113373.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.",
+    "support region 'pocket_top' in case 'L2r transport rear hit 300 N on the back wall (+Y), container reacts' reaches 87 % (136053.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.",
+    "load region 'back_wall' in case 'L2r transport rear hit 300 N on the back wall (+Y), container reacts' reaches 85 % (68661.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 15 % only.",
+    "load region 'grip_bar' in case 'L2r transport rear hit 300 N on the back wall (+Y), container reacts' reaches 44 % (10692.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 56 % only.",
+    "support region 'pocket_bot' in case 'L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands' reaches 87 % (113373.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.",
+    "support region 'band_mid' in case 'L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands' reaches 85 % (110700.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 15 % only.",
+    "support region 'pocket_top' in case 'L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands' reaches 87 % (136053.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.",
+    "load region 'latch_lo' in case 'L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands' reaches 29 % (2592.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 71 % only.",
+    "load region 'latch_hi' in case 'L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands' reaches 29 % (2592.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 71 % only.",
+    "load region 'knuckles' in case 'L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands' reaches 65 % (56214.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 35 % only.",
+    "support region 'pocket_bot' in case 'L5 landing 600 N up through the guard bosses, container reacts' reaches 87 % (113373.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.",
+    "support region 'pocket_top' in case 'L5 landing 600 N up through the guard bosses, container reacts' reaches 87 % (136053.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.",
+    "load region 'guard_boss_R' in case 'L5 landing 600 N up through the guard bosses, container reacts' reaches 60 % (8289.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 40 % only.",
+    "load region 'guard_boss_L' in case 'L5 landing 600 N up through the guard bosses, container reacts' reaches 60 % (8316.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 40 % only.",
+    "support region 'pocket_bot' in case 'L6 grip lift +200 N: equivalent handling test with vessel restrained; provisional 6kg x 3g rounded up' reaches 87 % (113373.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.",
+    "support region 'pocket_top' in case 'L6 grip lift +200 N: equivalent handling test with vessel restrained; provisional 6kg x 3g rounded up' reaches 87 % (136053.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.",
+    "load region 'grip_underside' in case 'L6 grip lift +200 N: equivalent handling test with vessel restrained; provisional 6kg x 3g rounded up' reaches 30 % (1296.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 70 % only.",
+    "support region 'pocket_bot' in case 'L7 vertical light 3g: provisional 0.3kg, 9N weight plus 324Nmm offset moment' reaches 87 % (113373.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.",
+    "support region 'pocket_top' in case 'L7 vertical light 3g: provisional 0.3kg, 9N weight plus 324Nmm offset moment' reaches 87 % (136053.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.",
+    "the free region is only 2.0 voxels (6.00 mm) thick at its thinnest. Below about 3 voxels there is no room for a hole, so the topology there is set by the outline rather than chosen -- refine the grid or widen the design space.",
+    "the free region's median thickness is 6.00 mm, below the 9.00 mm filter radius. The filter cannot form a member narrower than itself, so most of the free region will come out grey and the threshold, not the optimisation, will decide what is material.",
+    "the 5 support point(s) are fixed by preserve at lug_boss_R at [65.1, -10.9, 211.5]; lug_boss_L at [-65.0, -10.8, 211.5]; pocket_bot at [0.6, -37.7, -10.1]; pocket_top at [0.6, -39.0, 210.3]; band_mid at [0.6, -41.7, 100.5]. Where the part is held is an input to this study, not a result of it -- if the layout of the supports is itself meant to be optimised, that decision is currently being made in CAD."
+  ],
+  "info": {
+    "voxel_mm": 3.0,
+    "grid_shape": [
+      69,
+      76,
+      108
+    ],
+    "origin_mm": [
+      -98.892,
+      -156.0,
+      -54.0
+    ],
+    "design_space_mm3": 4101759.0,
+    "preserve_mm3": 194130.0,
+    "obstacle_mm3": 3847041.0,
+    "obstacle_declared_mm3": 3847041.0,
+    "domain_mm3": 4101759.0,
+    "free_mm3": 2171529.0,
+    "free_voxels": 80427,
+    "domain_voxels": 151917,
+    "ground": {
+      "axis": "Z",
+      "plane_mm": -18.0,
+      "band_voxels": 1923,
+      "band_area_mm2": 17307.0
+    },
+    "attach": {
+      "interfaces": {
+        "specs": [
+          {
+            "region": "join_free_space"
+          }
+        ],
+        "attach_voxels": 7673,
+        "attach_usable_voxels": 5906,
+        "attach_area_mm2": 53154.0,
+        "no_attach_voxels": 0,
+        "no_attach_mm3": 0.0,
+        "standoff_mm": 3.0
+      }
+    },
+    "no_attach_mm3": 0.0,
+    "attach_standoff_mm": 3.0,
+    "preserve_outside_design_space_mm3": 0.0,
+    "preserve_bodies": 10,
+    "domain_components": 1,
+    "preserve_bodies_by_domain_component": {
+      "1": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "note_preserve_bodies": "10 separate preserve bodies, all reachable through the design space -- that is the normal generative-design setup.",
+    "design_space_blocked_pct": 42.3,
+    "boundary_conditions": [
+      {
+        "case": "L1 hoist 3g: lugs fixed, container + guard + gate weights down",
+        "kind": "support",
+        "region": "lug_boss_R",
+        "voxels_in_domain": 245,
+        "voxels_on_preserve": 162
+      },
+      {
+        "case": "L1 hoist 3g: lugs fixed, container + guard + gate weights down",
+        "kind": "support",
+        "region": "lug_boss_L",
+        "voxels_in_domain": 245,
+        "voxels_on_preserve": 159
+      },
+      {
+        "case": "L1 hoist 3g: lugs fixed, container + guard + gate weights down",
+        "kind": "load",
+        "region": "pocket_bot",
+        "voxels_in_domain": 4840,
+        "voxels_on_preserve": 641
+      },
+      {
+        "case": "L1 hoist 3g: lugs fixed, container + guard + gate weights down",
+        "kind": "load",
+        "region": "guard_boss_R",
+        "voxels_in_domain": 512,
+        "voxels_on_preserve": 205
+      },
+      {
+        "case": "L1 hoist 3g: lugs fixed, container + guard + gate weights down",
+        "kind": "load",
+        "region": "guard_boss_L",
+        "voxels_in_domain": 512,
+        "voxels_on_preserve": 204
+      },
+      {
+        "case": "L1 hoist 3g: lugs fixed, container + guard + gate weights down",
+        "kind": "load",
+        "region": "latch_lo",
+        "voxels_in_domain": 336,
+        "voxels_on_preserve": 240
+      },
+      {
+        "case": "L1 hoist 3g: lugs fixed, container + guard + gate weights down",
+        "kind": "load",
+        "region": "latch_hi",
+        "voxels_in_domain": 336,
+        "voxels_on_preserve": 240
+      },
+      {
+        "case": "L1 hoist 3g: lugs fixed, container + guard + gate weights down",
+        "kind": "load",
+        "region": "td04a_hp1",
+        "voxels_in_domain": 680,
+        "voxels_on_preserve": 637
+      },
+      {
+        "case": "L2s transport side hit 300 N (+X on back wall and lugs), container reacts",
+        "kind": "support",
+        "region": "pocket_bot",
+        "voxels_in_domain": 4840,
+        "voxels_on_preserve": 641
+      },
+      {
+        "case": "L2s transport side hit 300 N (+X on back wall and lugs), container reacts",
+        "kind": "support",
+        "region": "pocket_top",
+        "voxels_in_domain": 5808,
+        "voxels_on_preserve": 769
+      },
+      {
+        "case": "L2s transport side hit 300 N (+X on back wall and lugs), container reacts",
+        "kind": "load",
+        "region": "back_wall",
+        "voxels_in_domain": 3000,
+        "voxels_on_preserve": 457
+      },
+      {
+        "case": "L2s transport side hit 300 N (+X on back wall and lugs), container reacts",
+        "kind": "load",
+        "region": "lug_boss_R",
+        "voxels_in_domain": 245,
+        "voxels_on_preserve": 162
+      },
+      {
+        "case": "L2s transport side hit 300 N (+X on back wall and lugs), container reacts",
+        "kind": "load",
+        "region": "lug_boss_L",
+        "voxels_in_domain": 245,
+        "voxels_on_preserve": 159
+      },
+      {
+        "case": "L2h transport landing on the hinge side (300 N +X through the knuckles), container reacts",
+        "kind": "support",
+        "region": "pocket_bot",
+        "voxels_in_domain": 4840,
+        "voxels_on_preserve": 641
+      },
+      {
+        "case": "L2h transport landing on the hinge side (300 N +X through the knuckles), container reacts",
+        "kind": "support",
+        "region": "pocket_top",
+        "voxels_in_domain": 5808,
+        "voxels_on_preserve": 769
+      },
+      {
+        "case": "L2h transport landing on the hinge side (300 N +X through the knuckles), container reacts",
+        "kind": "load",
+        "region": "knuckles",
+        "voxels_in_domain": 3186,
+        "voxels_on_preserve": 1104
+      },
+      {
+        "case": "L2r transport rear hit 300 N on the back wall (+Y), container reacts",
+        "kind": "support",
+        "region": "pocket_bot",
+        "voxels_in_domain": 4840,
+        "voxels_on_preserve": 641
+      },
+      {
+        "case": "L2r transport rear hit 300 N on the back wall (+Y), container reacts",
+        "kind": "support",
+        "region": "pocket_top",
+        "voxels_in_domain": 5808,
+        "voxels_on_preserve": 769
+      },
+      {
+        "case": "L2r transport rear hit 300 N on the back wall (+Y), container reacts",
+        "kind": "load",
+        "region": "back_wall",
+        "voxels_in_domain": 3000,
+        "voxels_on_preserve": 457
+      },
+      {
+        "case": "L2r transport rear hit 300 N on the back wall (+Y), container reacts",
+        "kind": "load",
+        "region": "grip_bar",
+        "voxels_in_domain": 900,
+        "voxels_on_preserve": 504
+      },
+      {
+        "case": "L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands",
+        "kind": "support",
+        "region": "pocket_bot",
+        "voxels_in_domain": 4840,
+        "voxels_on_preserve": 641
+      },
+      {
+        "case": "L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands",
+        "kind": "support",
+        "region": "band_mid",
+        "voxels_in_domain": 4840,
+        "voxels_on_preserve": 740
+      },
+      {
+        "case": "L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands",
+        "kind": "support",
+        "region": "pocket_top",
+        "voxels_in_domain": 5808,
+        "voxels_on_preserve": 769
+      },
+      {
+        "case": "L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands",
+        "kind": "load",
+        "region": "latch_lo",
+        "voxels_in_domain": 336,
+        "voxels_on_preserve": 240
+      },
+      {
+        "case": "L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands",
+        "kind": "load",
+        "region": "latch_hi",
+        "voxels_in_domain": 336,
+        "voxels_on_preserve": 240
+      },
+      {
+        "case": "L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands",
+        "kind": "load",
+        "region": "knuckles",
+        "voxels_in_domain": 3186,
+        "voxels_on_preserve": 1104
+      },
+      {
+        "case": "L5 landing 600 N up through the guard bosses, container reacts",
+        "kind": "support",
+        "region": "pocket_bot",
+        "voxels_in_domain": 4840,
+        "voxels_on_preserve": 641
+      },
+      {
+        "case": "L5 landing 600 N up through the guard bosses, container reacts",
+        "kind": "support",
+        "region": "pocket_top",
+        "voxels_in_domain": 5808,
+        "voxels_on_preserve": 769
+      },
+      {
+        "case": "L5 landing 600 N up through the guard bosses, container reacts",
+        "kind": "load",
+        "region": "guard_boss_R",
+        "voxels_in_domain": 512,
+        "voxels_on_preserve": 205
+      },
+      {
+        "case": "L5 landing 600 N up through the guard bosses, container reacts",
+        "kind": "load",
+        "region": "guard_boss_L",
+        "voxels_in_domain": 512,
+        "voxels_on_preserve": 204
+      },
+      {
+        "case": "L6 grip lift +200 N: equivalent handling test with vessel restrained; provisional 6kg x 3g rounded up",
+        "kind": "support",
+        "region": "pocket_bot",
+        "voxels_in_domain": 4840,
+        "voxels_on_preserve": 641
+      },
+      {
+        "case": "L6 grip lift +200 N: equivalent handling test with vessel restrained; provisional 6kg x 3g rounded up",
+        "kind": "support",
+        "region": "pocket_top",
+        "voxels_in_domain": 5808,
+        "voxels_on_preserve": 769
+      },
+      {
+        "case": "L6 grip lift +200 N: equivalent handling test with vessel restrained; provisional 6kg x 3g rounded up",
+        "kind": "load",
+        "region": "grip_underside",
+        "voxels_in_domain": 160,
+        "voxels_on_preserve": 112
+      },
+      {
+        "case": "L7 vertical light 3g: provisional 0.3kg, 9N weight plus 324Nmm offset moment",
+        "kind": "support",
+        "region": "pocket_bot",
+        "voxels_in_domain": 4840,
+        "voxels_on_preserve": 641
+      },
+      {
+        "case": "L7 vertical light 3g: provisional 0.3kg, 9N weight plus 324Nmm offset moment",
+        "kind": "support",
+        "region": "pocket_top",
+        "voxels_in_domain": 5808,
+        "voxels_on_preserve": 769
+      },
+      {
+        "case": "L7 vertical light 3g: provisional 0.3kg, 9N weight plus 324Nmm offset moment",
+        "kind": "load",
+        "region": "light_hp",
+        "voxels_in_domain": 544,
+        "voxels_on_preserve": 544
+      },
+      {
+        "case": "L7 vertical light 3g: provisional 0.3kg, 9N weight plus 324Nmm offset moment",
+        "kind": "load",
+        "region": "light_hp_upper",
+        "voxels_in_domain": 128,
+        "voxels_on_preserve": 128
+      },
+      {
+        "case": "L7 vertical light 3g: provisional 0.3kg, 9N weight plus 324Nmm offset moment",
+        "kind": "load",
+        "region": "light_hp_lower",
+        "voxels_in_domain": 128,
+        "voxels_on_preserve": 128
+      }
+    ],
+    "build_volume": {
+      "printer": {
+        "key": "X1C",
+        "name": "Bambu Lab X1-Carbon",
+        "nominal_mm": [
+          256.0,
+          256.0,
+          256.0
+        ],
+        "usable_mm": [
+          250.0,
+          250.0,
+          250.0
+        ],
+        "margin_mm": 0.0,
+        "envelope_mm": [
+          250.0,
+          250.0,
+          250.0
+        ],
+        "nozzle_mm": 0.4,
+        "min_feature_mm": 0.8,
+        "note": "AMS-fed; the purge tower needs ~60x60 mm of plate on multi-material prints.",
+        "source": "built-in",
+        "allow_oversize_design_space": false
+      },
+      "build_axis": "Z",
+      "domain": {
+        "what": "design space",
+        "printer": "X1C",
+        "printer_name": "Bambu Lab X1-Carbon",
+        "printer_source": "built-in",
+        "size_mm": [
+          153.0,
+          129.0,
+          237.0
+        ],
+        "usable_mm": [
+          250.0,
+          250.0,
+          250.0
+        ],
+        "margin_mm": 0.0,
+        "envelope_mm": [
+          250.0,
+          250.0,
+          250.0
+        ],
+        "fits_any_orientation": true,
+        "up_axes_that_fit": [
+          "X",
+          "Y",
+          "Z"
+        ],
+        "by_up_axis": {
+          "X": {
+            "fits": true,
+            "overflow_mm": {
+              "Z": -13.0,
+              "Y": -121.0,
+              "X": -97.0
+            }
+          },
+          "Y": {
+            "fits": true,
+            "overflow_mm": {
+              "Z": -13.0,
+              "X": -97.0,
+              "Y": -121.0
+            }
+          },
+          "Z": {
+            "fits": true,
+            "overflow_mm": {
+              "X": -97.0,
+              "Y": -121.0,
+              "Z": -13.0
+            }
+          }
+        },
+        "declared_build_axis": "Z",
+        "fits_as_declared": true,
+        "overflow_mm": {
+          "X": -97.0,
+          "Y": -121.0,
+          "Z": -13.0
+        },
+        "margin_to_envelope_mm": 13.0,
+        "lo_mm": [
+          -80.89,
+          -111.0,
+          -18.0
+        ],
+        "hi_mm": [
+          72.11,
+          18.0,
+          219.0
+        ]
+      },
+      "preserve": {
+        "what": "preserve",
+        "printer": "X1C",
+        "printer_name": "Bambu Lab X1-Carbon",
+        "printer_source": "built-in",
+        "size_mm": [
+          153.0,
+          129.0,
+          237.0
+        ],
+        "usable_mm": [
+          250.0,
+          250.0,
+          250.0
+        ],
+        "margin_mm": 0.0,
+        "envelope_mm": [
+          250.0,
+          250.0,
+          250.0
+        ],
+        "fits_any_orientation": true,
+        "up_axes_that_fit": [
+          "X",
+          "Y",
+          "Z"
+        ],
+        "by_up_axis": {
+          "X": {
+            "fits": true,
+            "overflow_mm": {
+              "Z": -13.0,
+              "Y": -121.0,
+              "X": -97.0
+            }
+          },
+          "Y": {
+            "fits": true,
+            "overflow_mm": {
+              "Z": -13.0,
+              "X": -97.0,
+              "Y": -121.0
+            }
+          },
+          "Z": {
+            "fits": true,
+            "overflow_mm": {
+              "X": -97.0,
+              "Y": -121.0,
+              "Z": -13.0
+            }
+          }
+        },
+        "declared_build_axis": "Z",
+        "fits_as_declared": true,
+        "overflow_mm": {
+          "X": -97.0,
+          "Y": -121.0,
+          "Z": -13.0
+        },
+        "margin_to_envelope_mm": 13.0
+      },
+      "voxel_vs_min_feature": "one voxel is 3.00 mm and the smallest printable wall is 0.80 mm, so the grid cannot represent the printer's limit; minimum-feature checks on this run are about the grid, not the machine."
+    },
+    "design_freedom": {
+      "free_voxels": 80427,
+      "domain_voxels": 151917,
+      "free_fraction_of_domain": 0.5294,
+      "volfrac": 0.1,
+      "expected_final_mm3": 411282.9,
+      "preserve_mm3": 194130.0,
+      "preserve_fraction_of_expected_part": 0.472,
+      "free_min_thickness_mm": 6.0,
+      "free_median_thickness_mm": 6.0,
+      "free_min_thickness_voxels": 2.0,
+      "fixed_points": [
+        {
+          "kind": "support",
+          "region": "lug_boss_R",
+          "centroid_mm": [
+            65.1,
+            -10.9,
+            211.5
+          ],
+          "mm3": 4374.0
+        },
+        {
+          "kind": "support",
+          "region": "lug_boss_L",
+          "centroid_mm": [
+            -65.0,
+            -10.8,
+            211.5
+          ],
+          "mm3": 4293.0
+        },
+        {
+          "kind": "load",
+          "region": "pocket_bot",
+          "centroid_mm": [
+            0.6,
+            -37.7,
+            -10.1
+          ],
+          "mm3": 17307.0
+        },
+        {
+          "kind": "load",
+          "region": "guard_boss_R",
+          "centroid_mm": [
+            56.6,
+            -32.5,
+            -3.3
+          ],
+          "mm3": 5535.0
+        },
+        {
+          "kind": "load",
+          "region": "guard_boss_L",
+          "centroid_mm": [
+            -56.4,
+            -32.5,
+            -3.3
+          ],
+          "mm3": 5508.0
+        },
+        {
+          "kind": "load",
+          "region": "latch_lo",
+          "centroid_mm": [
+            64.6,
+            -9.0,
+            39.0
+          ],
+          "mm3": 6480.0
+        },
+        {
+          "kind": "load",
+          "region": "latch_hi",
+          "centroid_mm": [
+            64.6,
+            -9.0,
+            171.0
+          ],
+          "mm3": 6480.0
+        },
+        {
+          "kind": "load",
+          "region": "td04a_hp1",
+          "centroid_mm": [
+            0.5,
+            -85.3,
+            216.0
+          ],
+          "mm3": 17199.0
+        },
+        {
+          "kind": "support",
+          "region": "pocket_bot",
+          "centroid_mm": [
+            0.6,
+            -37.7,
+            -10.1
+          ],
+          "mm3": 17307.0
+        },
+        {
+          "kind": "support",
+          "region": "pocket_top",
+          "centroid_mm": [
+            0.6,
+            -39.0,
+            210.3
+          ],
+          "mm3": 20763.0
+        },
+        {
+          "kind": "load",
+          "region": "back_wall",
+          "centroid_mm": [
+            -3.7,
+            -93.9,
+            65.2
+          ],
+          "mm3": 12339.0
+        },
+        {
+          "kind": "load",
+          "region": "lug_boss_R",
+          "centroid_mm": [
+            65.1,
+            -10.9,
+            211.5
+          ],
+          "mm3": 4374.0
+        },
+        {
+          "kind": "load",
+          "region": "lug_boss_L",
+          "centroid_mm": [
+            -65.0,
+            -10.8,
+            211.5
+          ],
+          "mm3": 4293.0
+        },
+        {
+          "kind": "load",
+          "region": "knuckles",
+          "centroid_mm": [
+            -72.2,
+            10.4,
+            100.5
+          ],
+          "mm3": 29808.0
+        },
+        {
+          "kind": "load",
+          "region": "grip_bar",
+          "centroid_mm": [
+            0.1,
+            -95.4,
+            157.5
+          ],
+          "mm3": 13608.0
+        },
+        {
+          "kind": "support",
+          "region": "band_mid",
+          "centroid_mm": [
+            0.6,
+            -41.7,
+            100.5
+          ],
+          "mm3": 19980.0
+        },
+        {
+          "kind": "load",
+          "region": "grip_underside",
+          "centroid_mm": [
+            0.1,
+            -95.4,
+            147.0
+          ],
+          "mm3": 3024.0
+        },
+        {
+          "kind": "load",
+          "region": "light_hp",
+          "centroid_mm": [
+            42.1,
+            -75.0,
+            100.5
+          ],
+          "mm3": 14688.0
+        },
+        {
+          "kind": "load",
+          "region": "light_hp_upper",
+          "centroid_mm": [
+            42.1,
+            -75.0,
+            120.0
+          ],
+          "mm3": 3456.0
+        },
+        {
+          "kind": "load",
+          "region": "light_hp_lower",
+          "centroid_mm": [
+            42.1,
+            -75.0,
+            81.0
+          ],
+          "mm3": 3456.0
+        }
+      ],
+      "ground_zones": [],
+      "note_fixed_points": "20 load/support footprint(s) sit on preserve at positions the CAD model chose. The optimiser decides how to reach them, not where they are."
+    },
+    "runtime_estimate": {
+      "iters": 80,
+      "cases": 8,
+      "elements": 151917,
+      "voxel_mm": 3.0,
+      "solver": {
+        "backend": "cuda",
+        "device": "NVIDIA GeForce RTX 4060 Ti",
+        "torch": "2.12.0+cu130",
+        "preconditioner": "mg",
+        "precision": "mixed32",
+        "multigrid": {
+          "levels": [
+            {
+              "shape": [
+                69,
+                76,
+                108
+              ],
+              "elements": 87617,
+              "ndof": 1762530
+            },
+            {
+              "shape": [
+                35,
+                38,
+                54
+              ],
+              "elements": 12898,
+              "ndof": 231660
+            },
+            {
+              "shape": [
+                18,
+                19,
+                27
+              ],
+              "elements": 2150,
+              "ndof": 31920
+            },
+            {
+              "shape": [
+                9,
+                10,
+                14
+              ],
+              "elements": 465,
+              "ndof": 4950
+            },
+            {
+              "shape": [
+                5,
+                5,
+                7
+              ],
+              "elements": 87,
+              "ndof": 864
+            }
+          ],
+          "smoother": "chebyshev(degree 2, D^-1 K, lambda ratio 30)",
+          "coarse_solver": "dense cholesky",
+          "precision": "mixed (float32 cycle, float64 coarse solve and outer CG)",
+          "setup_seconds": 0.438
+        }
+      },
+      "probe_cg_iterations": 54,
+      "probe_seconds": 2.53,
+      "probe_converged": true,
+      "seconds": 1616.4,
+      "seconds_low": 808.2,
+      "seconds_high": 2424.6,
+      "human": "27 min",
+      "basis": "one cold conjugate-gradient solve of load case 1 at uniform density, times cases times iterations. Warm starting makes later iterations cheaper; continuation towards a 0/1 field makes them dearer. Measured runs land within 0.5x - 1.5x."
+    }
+  },
+  "bodies": [
+    {
+      "name": "interfaces",
+      "kind": "preserve",
+      "source": "stl:preserve.stl",
+      "voxels": 7190,
+      "mm3": 194130.0,
+      "bbox_mm": [
+        [
+          -80.89,
+          -111.0,
+          -18.0
+        ],
+        [
+          72.11,
+          18.0,
+          219.0
+        ]
+      ],
+      "mesh": {
+        "triangles": 9352,
+        "open_edges": 0,
+        "non_manifold_edges": 0,
+        "degenerate": 0,
+        "closed_shell": true,
+        "components": 10,
+        "edge_components": 10,
+        "self_intersections": 0,
+        "self_intersection_examples": []
+      },
+      "attach": {
+        "specs": [
+          {
+            "region": "join_free_space"
+          }
+        ],
+        "attach_voxels": 7673,
+        "attach_usable_voxels": 5906,
+        "attach_area_mm2": 53154.0,
+        "no_attach_voxels": 0,
+        "no_attach_mm3": 0.0,
+        "standoff_mm": 3.0
+      }
+    },
+    {
+      "name": "design_space",
+      "kind": "design_space",
+      "source": "stl:design_space.stl",
+      "voxels": 151917,
+      "mm3": 4101759.0,
+      "bbox_mm": [
+        [
+          -80.89,
+          -111.0,
+          -18.0
+        ],
+        [
+          72.11,
+          18.0,
+          219.0
+        ]
+      ],
+      "mesh": {
+        "triangles": 20,
+        "open_edges": 0,
+        "non_manifold_edges": 0,
+        "degenerate": 0,
+        "closed_shell": true,
+        "components": 1,
+        "edge_components": 1,
+        "self_intersections": 0,
+        "self_intersection_examples": []
+      }
+    },
+    {
+      "name": "keep_out",
+      "kind": "obstacle",
+      "source": "stl:obstacle.stl",
+      "voxels": 116436,
+      "mm3": 3143772.0,
+      "bbox_mm": [
+        [
+          -92.89,
+          -102.0,
+          -21.0
+        ],
+        [
+          93.11,
+          63.0,
+          222.0
+        ]
+      ],
+      "clearance_requested_mm": 0.0,
+      "clearance_achieved_mm": 0.0,
+      "mesh": {
+        "triangles": 5268,
+        "open_edges": 0,
+        "non_manifold_edges": 0,
+        "degenerate": 0,
+        "closed_shell": true,
+        "components": 19,
+        "edge_components": 19,
+        "self_intersections": 0,
+        "self_intersection_examples": []
+      }
+    },
+    {
+      "name": "pressure_vessel",
+      "kind": "obstacle",
+      "source": "stl:pressure_vessel.stl",
+      "voxels": 95092,
+      "mm3": 2567484.0,
+      "bbox_mm": [
+        [
+          -59.89,
+          -60.0,
+          -15.0
+        ],
+        [
+          60.11,
+          60.0,
+          261.0
+        ]
+      ],
+      "clearance_requested_mm": 0.0,
+      "clearance_achieved_mm": 0.0,
+      "mesh": {
+        "triangles": 1820,
+        "open_edges": 0,
+        "non_manifold_edges": 0,
+        "degenerate": 0,
+        "closed_shell": true,
+        "components": 1,
+        "edge_components": 1,
+        "self_intersections": 0,
+        "self_intersection_examples": []
+      }
+    },
+    {
+      "name": "light_vertical",
+      "kind": "obstacle",
+      "source": "stl:light_vertical.stl",
+      "voxels": 6952,
+      "mm3": 187704.0,
+      "bbox_mm": [
+        [
+          45.11,
+          -99.0,
+          51.0
+        ],
+        [
+          102.11,
+          -51.0,
+          150.0
+        ]
+      ],
+      "clearance_requested_mm": 0.0,
+      "clearance_achieved_mm": 0.0,
+      "mesh": {
+        "triangles": 304,
+        "open_edges": 0,
+        "non_manifold_edges": 0,
+        "degenerate": 0,
+        "closed_shell": true,
+        "components": 1,
+        "edge_components": 1,
+        "self_intersections": 0,
+        "self_intersection_examples": []
+      }
+    },
+    {
+      "name": "hand_clearance",
+      "kind": "obstacle",
+      "source": "stl:hand_clearance.stl",
+      "voxels": 7092,
+      "mm3": 191484.0,
+      "bbox_mm": [
+        [
+          -26.89,
+          -150.0,
+          114.0
+        ],
+        [
+          27.11,
+          -63.0,
+          183.0
+        ]
+      ],
+      "clearance_requested_mm": 0.0,
+      "clearance_achieved_mm": 0.0,
+      "mesh": {
+        "triangles": 20,
+        "open_edges": 0,
+        "non_manifold_edges": 0,
+        "degenerate": 0,
+        "closed_shell": true,
+        "components": 1,
+        "edge_components": 1,
+        "self_intersections": 0,
+        "self_intersection_examples": []
+      }
+    },
+    {
+      "name": "cables",
+      "kind": "obstacle",
+      "source": "stl:cables.stl",
+      "voxels": 5610,
+      "mm3": 151470.0,
+      "bbox_mm": [
+        [
+          -38.89,
+          -102.0,
+          -48.0
+        ],
+        [
+          84.11,
+          39.0,
+          231.0
+        ]
+      ],
+      "clearance_requested_mm": 0.0,
+      "clearance_achieved_mm": 0.0,
+      "mesh": {
+        "triangles": 2778,
+        "open_edges": 0,
+        "non_manifold_edges": 0,
+        "degenerate": 0,
+        "closed_shell": true,
+        "components": 8,
+        "edge_components": 8,
+        "self_intersections": 0,
+        "self_intersection_examples": []
+      }
+    },
+    {
+      "name": "preserve body 1",
+      "kind": "preserve_component",
+      "source": "interfaces",
+      "voxels": 552,
+      "mm3": 14904.0,
+      "domain_component": 1
+    },
+    {
+      "name": "preserve body 2",
+      "kind": "preserve_component",
+      "source": "interfaces",
+      "voxels": 552,
+      "mm3": 14904.0,
+      "domain_component": 1
+    },
+    {
+      "name": "preserve body 3",
+      "kind": "preserve_component",
+      "source": "interfaces",
+      "voxels": 1540,
+      "mm3": 41580.0,
+      "domain_component": 1
+    },
+    {
+      "name": "preserve body 4",
+      "kind": "preserve_component",
+      "source": "interfaces",
+      "voxels": 865,
+      "mm3": 23355.0,
+      "domain_component": 1
+    },
+    {
+      "name": "preserve body 5",
+      "kind": "preserve_component",
+      "source": "interfaces",
+      "voxels": 1952,
+      "mm3": 52704.0,
+      "domain_component": 1
+    },
+    {
+      "name": "preserve body 6",
+      "kind": "preserve_component",
+      "source": "interfaces",
+      "voxels": 568,
+      "mm3": 15336.0,
+      "domain_component": 1
+    },
+    {
+      "name": "preserve body 7",
+      "kind": "preserve_component",
+      "source": "interfaces",
+      "voxels": 340,
+      "mm3": 9180.0,
+      "domain_component": 1
+    },
+    {
+      "name": "preserve body 8",
+      "kind": "preserve_component",
+      "source": "interfaces",
+      "voxels": 341,
+      "mm3": 9207.0,
+      "domain_component": 1
+    },
+    {
+      "name": "preserve body 9",
+      "kind": "preserve_component",
+      "source": "interfaces",
+      "voxels": 240,
+      "mm3": 6480.0,
+      "domain_component": 1
+    },
+    {
+      "name": "preserve body 10",
+      "kind": "preserve_component",
+      "source": "interfaces",
+      "voxels": 240,
+      "mm3": 6480.0,
+      "domain_component": 1
+    }
+  ]
+}

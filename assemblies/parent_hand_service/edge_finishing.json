@@ -1,0 +1,522 @@
+{
+  "floor_grid_x_16.5": {
+    "chamfer_mm": 0.25,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_grid_x_40": {
+    "chamfer_mm": 0.25,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_grid_x_75": {
+    "chamfer_mm": 0.25,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_grid_x_110": {
+    "chamfer_mm": 0.25,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_grid_x_145": {
+    "chamfer_mm": 0.25,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_grid_x_175": {
+    "chamfer_mm": 0.25,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_grid_x_193.5": {
+    "chamfer_mm": 0.25,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_grid_y_16.5": {
+    "chamfer_mm": 0.25,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_grid_y_45": {
+    "chamfer_mm": 0.25,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_grid_y_85": {
+    "chamfer_mm": 0.25,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_grid_y_125": {
+    "chamfer_mm": 0.25,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_grid_y_165": {
+    "chamfer_mm": 0.25,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_grid_y_195": {
+    "chamfer_mm": 0.25,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_grid_y_213.5": {
+    "chamfer_mm": 0.25,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(0, (13.5, 22))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(0, (13.5, 13.5))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "case_anchor_pad_0": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 2,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(1, (182, 22))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(1, (190.5, 13.5))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "case_anchor_pad_1": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 2,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(2, (13.5, 202))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "case_anchor_pad_2": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 2,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(3, (182, 202))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(3, (190.5, 202))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "case_anchor_pad_3": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 2,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(4, (27.8, 117.0))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(4, (37, 117.0))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(5, (101.8, 207.0))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(5, (107, 207.0))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(6, (27.8, 207.0))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(6, (37, 207.0))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(7, (101.8, 117.0))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(7, (107, 117.0))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(8, (190.5, 203.5))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(9, (190.5, 137.5))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(9, (190.5, 122))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(10, (142, 203.5))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(11, (142, 137.5))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(11, (142, 122))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(12, (190.5, 19.1))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(12, (190.5, 13.5))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(13, (190.5, 122.1))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(13, (190.5, 122))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(14, (139.0, 19.1))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(14, (142, 13.5))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(15, (139.0, 122.1))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(15, (142, 122))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(16, (10, 142))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(16, (13.5, 122))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(17, (132, 142))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(17, (142, 122))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(18, (13.5, 216))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(18, (13.5, 210.5))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(19, (132, 216))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(19, (142, 210.5))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(20, (9, 22))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(20, (13.5, 13.5))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(21, (131, 22))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(21, (142, 13.5))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(22, (9, 92))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(22, (13.5, 82))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(23, (131, 92))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(23, (142, 82))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(24, (13.5, 13.5))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(25, (13.5, 104.5))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(26, (107, 29))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(27, (107, 104.5))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(28, (141, 131.5))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(28, (142, 122))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(29, (190.5, 131.5))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(29, (190.5, 122))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(30, (141, 208.5))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(30, (142, 208.5))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_mount_link_(31, (190.5, 201.5))": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "gnss_floor_tab_0": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "gnss_floor_tab_1": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "gnss_floor_tab_2": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "gnss_floor_tab_3": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "rack_floor_tab_0": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "rack_floor_tab_1": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "rack_floor_tab_2": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "rack_floor_tab_3": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "main_floor_tab_0": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "main_floor_tab_1": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "main_floor_tab_2": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "main_floor_tab_3": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "sony_floor_tab_0": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "sony_floor_tab_1": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "sony_floor_tab_2": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "sony_floor_tab_3": {
+    "chamfer_mm": 0.15,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "floor_plate": {
+    "chamfer_mm": 0.25,
+    "hole_mouth_relief_mm": 0.4,
+    "permitted_sharp_edges": "Existing guide/prop seating, nut capture and boss attachment interfaces; retained to preserve their mating footprints"
+  },
+  "battery_outer_perimeter": {
+    "chamfer_mm": 0.2,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "battery_mount_rail_0": {
+    "chamfer_mm": 0.2,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "battery_mount_rail_103": {
+    "chamfer_mm": 0.2,
+    "sharp_edges_treated": 12,
+    "permitted_sharp_edges": []
+  },
+  "battery_base": {
+    "chamfer_mm": 0.2,
+    "new_wire_face_edges_treated": 3,
+    "hole_mouth_relief_mm": 0.4,
+    "permitted_sharp_edges": "Inherited nut floor/hex capture and internal roof ridges retain nut fit and steep planar printing profile",
+    "case_access_hole_mm": 8.0,
+    "case_access_chamfer_mm": 0.2,
+    "nut_roof": "Hex taper >=45 degrees; triangular side-entry roof50 degrees; external mouth chamfer0.1"
+  },
+  "main_corner_column": {
+    "chamfer_mm": 0.15,
+    "permitted_sharp_edges": "Specified flat bearing surfaces and pilot/key fits; no component-shaped pockets"
+  },
+  "main_offset_corner": {
+    "chamfer_mm": 0.15,
+    "permitted_sharp_edges": "Specified flat bearing surfaces and pilot/key fits; no component-shaped pockets"
+  },
+  "sony_corner_0": {
+    "chamfer_mm": 0.15,
+    "permitted_sharp_edges": "Specified flat bearing surfaces and pilot/key fits; no component-shaped pockets"
+  },
+  "sony_corner_1": {
+    "chamfer_mm": 0.15,
+    "permitted_sharp_edges": "Specified flat bearing surfaces and pilot/key fits; no component-shaped pockets"
+  },
+  "sony_corner_2": {
+    "chamfer_mm": 0.15,
+    "permitted_sharp_edges": "Specified flat bearing surfaces and pilot/key fits; no component-shaped pockets"
+  },
+  "sony_corner_3": {
+    "chamfer_mm": 0.15,
+    "permitted_sharp_edges": "Specified flat bearing surfaces and pilot/key fits; no component-shaped pockets"
+  },
+  "main_mount_plate": {
+    "chamfer_mm": 0.15,
+    "permitted_sharp_edges": "Specified flat bearing surfaces and pilot/key fits; no component-shaped pockets",
+    "case_access_hole_mm": 4.2,
+    "case_access_chamfer_mm": 0.15
+  },
+  "sony_mount_plate": {
+    "chamfer_mm": 0.15,
+    "permitted_sharp_edges": "Specified flat bearing surfaces and pilot/key fits; no component-shaped pockets"
+  },
+  "ann_mb1_coax_ring_case_access": {
+    "guide_id_mm": 4.2,
+    "guide_od_mm": 11.4,
+    "mouth_chamfer_mm": 0.2,
+    "outer_chamfer_mm": 0.2,
+    "vertical_root_chamfer_mm": 0.1
+  }
+}

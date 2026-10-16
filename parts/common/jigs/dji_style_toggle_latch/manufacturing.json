@@ -1,0 +1,10 @@
+{
+  "non_print_files": ["dji_style_toggle_latch_axle_a", "dji_style_toggle_latch_axle_b", "dji_style_toggle_latch_epdm"],
+  "degenerate_edge_flip_files": ["dji_style_toggle_latch_keeper", "dji_style_toggle_latch_lever"],
+  "print_rotations_deg": {
+    "dji_style_toggle_latch_base": [0, 0, 0],
+    "dji_style_toggle_latch_link": [90, 0, 0],
+    "dji_style_toggle_latch_lever": [180, 0, 0],
+    "dji_style_toggle_latch_keeper": [0, 0, 0]
+  }
+}

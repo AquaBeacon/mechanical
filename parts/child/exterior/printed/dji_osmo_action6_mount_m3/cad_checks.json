@@ -1,0 +1,31 @@
+{
+  "revision": "direct_rear_M3_15pct",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 124781.3560504924,
+  "mount_frame_intersection_mm3": 0.0,
+  "M3_hole_centers": [
+    [
+      -20,
+      82,
+      80
+    ],
+    [
+      -20,
+      82,
+      120
+    ],
+    [
+      20,
+      82,
+      80
+    ],
+    [
+      20,
+      82,
+      120
+    ]
+  ],
+  "hardware": "M3 socket heads D5.5 x 3 recessed 0.6 mm; straight D3 driver shaft; D10 rear tool clearance. Install before camera.",
+  "strength": "Not analysed; infill 15 percent is a print setting, not a strength certification."
+}

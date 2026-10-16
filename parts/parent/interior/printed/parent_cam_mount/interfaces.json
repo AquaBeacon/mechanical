@@ -1,0 +1,51 @@
+{
+ "consumer": "parent_cam_mount",
+ "references": [
+  {
+   "part": "parent_plate",
+   "path": "parts/parent/interior/printed/parent_plate",
+   "md_sha256": "d7d1573cb84bd0bab447a678de3d1812344bd12ab84c3ce6815fde4587e44ff6",
+   "stl_sha256": null,
+   "bbox_mm": null,
+   "status_at_lock": [
+    "needs_measure",
+    "not_designed",
+    "obsolete",
+    "provisional"
+   ],
+   "values": {
+    "foot_sq": 44.0,
+    "cam_pilot": 2.6,
+    "cam_leg_d": 7.5,
+    "vp_off": 54.0
+   },
+   "confirmed_by_human": false,
+   "confirmed_at": "2026-08-28T18:02:01",
+   "note": "2026-08-28 脚 Ø7.5、VP +X54 / 2026-08-29 ハッシュ更新: parent_plate.md の貫通部記述 (南壁ペネトレータ) だけを直したもので、寸法値は不変。"
+  },
+  {
+   "part": "gs_camera_m12",
+   "path": "parts/parent/interior/cots/gs_camera_m12",
+   "md_sha256": "f1ecb5176833c35bc30a7e81aec0020793705afc4165cd0d303a628eaa8cd78e",
+   "stl_sha256": "c8153adddaf9d9c5dcaa75bfa61baaafff36e76d15b6d7a07fabdf0835a293c6",
+   "bbox_mm": [
+    38.0,
+    38.0,
+    32.6
+   ],
+   "status_at_lock": [
+    "needs_measure",
+    "not_designed"
+   ],
+   "values": {
+    "cam_sq": 38.0,
+    "cam_pitch": 34.0,
+    "base_sq": 22.0,
+    "lens_d": 17.0
+   },
+   "confirmed_by_human": false,
+   "confirmed_at": "2026-08-28T18:02:02",
+   "note": "2026-08-28 RPi公称+仮値。穴ピッチ34は公式図面照合待ち"
+  }
+ ]
+}

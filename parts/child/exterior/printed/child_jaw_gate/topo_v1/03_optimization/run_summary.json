@@ -1,0 +1,50 @@
+{
+  "schema": "topopt/run/1",
+  "study": "child_jaw_gate_v1_study.json",
+  "outdir": ".\\03_optimization",
+  "model_dir": ".",
+  "stages": [
+    {
+      "stage": "extract",
+      "exit_code": 1,
+      "error": null,
+      "skipped": null,
+      "note": null
+    },
+    {
+      "stage": "print",
+      "exit_code": 0,
+      "error": null,
+      "skipped": null,
+      "note": "wrote printcheck.json (threshold 0.40)"
+    },
+    {
+      "stage": "report",
+      "exit_code": 1,
+      "error": null,
+      "skipped": null,
+      "note": null
+    },
+    {
+      "stage": "assumptions",
+      "exit_code": 0,
+      "error": null,
+      "skipped": null,
+      "note": "wrote .\\01_assumptions\\assumptions.md"
+    },
+    {
+      "stage": "publish",
+      "exit_code": 0,
+      "error": null,
+      "skipped": null,
+      "note": "wrote .\\04_print\\PRINT.md"
+    }
+  ],
+  "stopped_at": null,
+  "valid_through": [
+    "extract",
+    "print",
+    "assumptions",
+    "publish"
+  ]
+}

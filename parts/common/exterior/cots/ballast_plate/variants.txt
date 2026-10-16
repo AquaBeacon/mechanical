@@ -1,0 +1,3 @@
+# Reference CAD only. No print compensation or manufacturing allowance.
+a variant="A"
+b variant="B"

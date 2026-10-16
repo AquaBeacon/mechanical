@@ -1,0 +1,72 @@
+[
+  {
+    "instance": 1,
+    "part": "parent_oneplate_frame",
+    "plate_min_xy": [
+      12,
+      74
+    ],
+    "extents_mm": [
+      232.0,
+      134.0,
+      42.000000000000014
+    ],
+    "sha256": "f0fff574a8fc52836244ffd93df67ffd26c8c5277874da55647d4d82b1a0f468"
+  },
+  {
+    "instance": 2,
+    "part": "parent_oneplate_bar",
+    "plate_min_xy": [
+      12,
+      34
+    ],
+    "extents_mm": [
+      232.0,
+      24.0,
+      12.0
+    ],
+    "sha256": "ea96f9abbd5541944001474e759e26e6e91270bcb3b16d45a895da69e8f140dd"
+  },
+  {
+    "instance": 3,
+    "part": "parent_oneplate_bar",
+    "plate_min_xy": [
+      12,
+      220
+    ],
+    "extents_mm": [
+      232.0,
+      24.0,
+      12.0
+    ],
+    "sha256": "ea96f9abbd5541944001474e759e26e6e91270bcb3b16d45a895da69e8f140dd"
+  },
+  {
+    "instance": 4,
+    "part": "parent_oneplate_td_support",
+    "plate_min_xy": [
+      128,
+      108
+    ],
+    "extents_mm": [
+      80.0,
+      42.0,
+      67.0
+    ],
+    "sha256": "b74195e833a021a767434b9b0a04afddf640f2b8ff8a7737ef8e9d0f2d4f6328"
+  },
+  {
+    "instance": 5,
+    "part": "parent_light_jaw",
+    "plate_min_xy": [
+      143,
+      160
+    ],
+    "extents_mm": [
+      50.0,
+      14.0,
+      8.0
+    ],
+    "sha256": "8417e3979724879adcbe8ba201e1dba28fecbacbd079a5ccfcbc0866482857f9"
+  }
+]

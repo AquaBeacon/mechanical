@@ -1,0 +1,1415 @@
+{
+  "schema_version": 1,
+  "assembly": "parent_spar_bolted",
+  "release_status": "existing_prototype",
+  "note": "既存構成の印刷データを整理。強度・造形性の新規認証ではない。",
+  "source_hashes": {
+    "assemblies/parent_spar_bolted/placement.json": "d92fcf21192c04d7b851631bad8a6ec4870a0666d3b627994ed8987acd719858",
+    "assemblies/parent_spar_bolted/README.md": "b606f773693dc28c2862ad7d7fd9fd2d50a0ca8f2857b830fdd7fb8e43e71c53",
+    "parts/child/exterior/printed/dji_osmo_action6_mount/dji_osmo_action6_mount.md": "ec9f0ce48edbf77ae893316249bca86f5cbc375f20f14a3af7e821f0b1cd8db6",
+    "parts/child/exterior/printed/dji_osmo_action6_mount/dji_osmo_action6_mount.scad": "52c00273d8c6e2eb3c6f3a94267a4303b97db5689b8fdc07dba45add6aefa87c",
+    "parts/child/exterior/printed/dji_osmo_action6_mount/manufacturing.json": "fe15031485b19dd37a1d51a1653b0380985e55641618a0b5c430957d427a4d9c",
+    "parts/child/exterior/printed/dji_osmo_action6_mount/verify_step.py": "1e173671a580f058777a8ed72ed7a8cd6103988891505e26dee2e7732ceadabb",
+    "parts/parent/exterior/printed/parent_deck/manufacturing.json": "f3bea2e0fd2e0e3fd244a5cc85fc87fe21a7eab3c184aec782af4346bd49583a",
+    "parts/parent/exterior/printed/parent_deck/parent_deck.md": "bc97953df376c06278ad8714324c9df8b3ffeacec0d2d21b88168987a7b9bff6",
+    "parts/parent/exterior/printed/parent_deck/parent_deck.scad": "7930e5a7703e650432e5f4b896743ea34f8ad9b90abe5a9e6b93603f8fbead6a",
+    "parts/parent/exterior/printed/parent_spar_ballast_body/manufacturing.json": "de9c3c516fc1b968c2af67df36b6676a5401ec353b68303822d1927acc51f29f",
+    "parts/parent/exterior/printed/parent_spar_ballast_body/parent_spar_ballast_body.md": "85607fe22955f4e734c01b511e174239c22d8bdf72de7e9f38fdebe1ba469dc9",
+    "parts/parent/exterior/printed/parent_spar_ballast_body/parent_spar_ballast_body.scad": "fe010ca809ed71520cbe62f3dfbc6d341b740678ccdf79f0a8272f1a07edab18",
+    "parts/parent/exterior/printed/parent_spar_ballast_lid/manufacturing.json": "c6f7e73e10716551e284a34185466566a7888f56e78d4d4f266d7a8885b69fc7",
+    "parts/parent/exterior/printed/parent_spar_ballast_lid/parent_spar_ballast_lid.md": "4d819e67c8483089b77609d872b26dbaf590db1bb7ff30cccd6a171341cd0817",
+    "parts/parent/exterior/printed/parent_spar_ballast_lid/parent_spar_ballast_lid.scad": "f9c93dd629b975932021369cee5d399109ebe79989b03e4c160c33a3e1ffb651",
+    "parts/parent/exterior/printed/parent_spar_beam_lower/manufacturing.json": "97b6029e9a23a3214c3f309fddc485ae277d2daf3b97398ffba81eb5b7388932",
+    "parts/parent/exterior/printed/parent_spar_beam_lower/parent_spar_beam_lower.md": "a1ba1570fd471cb97dd7dbfbdb65280c17ddab820d4f1bfbb8dd50c0915920c2",
+    "parts/parent/exterior/printed/parent_spar_beam_lower/parent_spar_beam_lower.scad": "13347473cba25dc3baabf79af0bb9f86ca1cf7fc9bd01cff7b785c65da1cea86",
+    "parts/parent/exterior/printed/parent_spar_beam_upper/manufacturing.json": "9b36b9e17cf9343d176938bf7765517b2f665447f1a190ad482d7b5d2a4ebc79",
+    "parts/parent/exterior/printed/parent_spar_beam_upper/parent_spar_beam_upper.md": "ff3d7cb66403e61f84a7afc0e8c142ddc3321edf624393649eedd4ff15ade376",
+    "parts/parent/exterior/printed/parent_spar_beam_upper/parent_spar_beam_upper.scad": "8e61a55c7622ef8eb10323ef88cfe666f66ffff75f70b0f6b6a78afa3926054f",
+    "parts/parent/exterior/printed/parent_spar_camera_bridge/manufacturing.json": "52184e53d1f1e66b5171ca1b9c7e0cccbe45952159de556bfb9da614ca0e31f2",
+    "parts/parent/exterior/printed/parent_spar_camera_bridge/parent_spar_camera_bridge.md": "ad1865c831fe8871a64ce5f045c71c56adaaa52ab7ed6179219993576b40524e",
+    "parts/parent/exterior/printed/parent_spar_camera_bridge/parent_spar_camera_bridge.scad": "8b0320ed44a51b41a3d78964439dfdc2c403445afe8e6427efdd50693651eded",
+    "parts/parent/exterior/printed/parent_spar_coupler_half/manufacturing.json": "7845380cfb90278283df8a591db01cc01b461937cc49f319995b7de7995748ff",
+    "parts/parent/exterior/printed/parent_spar_coupler_half/parent_spar_coupler_half.md": "c090844598f0f0ccb99525408e1f156f3cd7beb27ec523b981c478d4043ca2fa",
+    "parts/parent/exterior/printed/parent_spar_coupler_half/parent_spar_coupler_half.scad": "b26757233a21b4f2fc1fcc4e9998c25e8954e4a08979800a4dd81b0c5bda29f9",
+    "parts/parent/exterior/printed/parent_spar_disk/manufacturing.json": "74fb60e0561e70d7bce7961d09fa402f1ae017c85fee93e9c54dfe5dfe2270a9",
+    "parts/parent/exterior/printed/parent_spar_disk/parent_spar_disk.md": "47a83dad4771a474d87e22f0ccb854f6af3790e2bd254c12bf345b231a6e3563",
+    "parts/parent/exterior/printed/parent_spar_disk/parent_spar_disk.scad": "33b7a7edf614d392ba492b3784ca07d4dc961cdd03a473dd62d69c4f5c951f6d",
+    "parts/parent/exterior/printed/parent_spar_fin/manufacturing.json": "b11d4b0239f189dacab9528ebbf46eef7fb620b3714230896fbd236eb7ecb10e",
+    "parts/parent/exterior/printed/parent_spar_fin/parent_spar_fin.md": "766f4e63add2bd621a5fbb06221d7d94f57bbb29cb30a16dc76f4656f3d9af42",
+    "parts/parent/exterior/printed/parent_spar_fin/parent_spar_fin.scad": "900b614b23d19d78015ba25d0df313498115f7efb2efda3360813925c460dae8",
+    "parts/parent/exterior/printed/parent_spar_float_body/manufacturing.json": "65cd1b51e6b2a950709fb2825bb07eadec9d254bbd1abaaa8a8bc664f6d36f6d",
+    "parts/parent/exterior/printed/parent_spar_float_body/parent_spar_float_body.md": "061e89e63f098982317a04273654368cfa85f677757a2fd50b1cb3aae85c93d9",
+    "parts/parent/exterior/printed/parent_spar_float_body/parent_spar_float_body.scad": "7885c256a92d982fab941f9f39a94463528b4d723e4795236570fa63e88ff620",
+    "parts/parent/exterior/printed/parent_spar_float_bottom/manufacturing.json": "8af6003a4f0d24b6971f365c179440149319476c18101625f2519f12ea298b3c",
+    "parts/parent/exterior/printed/parent_spar_float_bottom/parent_spar_float_bottom.md": "6fdab9dded3082165a7f97882f705bf3c5a2bc7de738da7206b008615dcfa9a6",
+    "parts/parent/exterior/printed/parent_spar_float_bottom/parent_spar_float_bottom.scad": "81af3076fc0e9ff4a1aab37eff5f4686495f4e434d527ddf7af15a6e2da73f93",
+    "parts/parent/exterior/printed/parent_spar_float_lid/manufacturing.json": "92e419436835fb92bf92fb12f79c9639340f367e17ec36b97b4dd710dd156ff0",
+    "parts/parent/exterior/printed/parent_spar_float_lid/parent_spar_float_lid.md": "c09dee6514beec77e99918200d3c06dfe71c798d920c56b9efffed10331600bb",
+    "parts/parent/exterior/printed/parent_spar_float_lid/parent_spar_float_lid.scad": "23c4f2a87b5e169a0920942ee4a0928c9aac23326b6b11ad477b7427d6e61ec4",
+    "parts/parent/exterior/printed/parent_spar_float_top/manufacturing.json": "70fb5831440a4d45531ecda2c9a5e909e9d4b304bca8057cbdc2f7a98e81079a",
+    "parts/parent/exterior/printed/parent_spar_float_top/parent_spar_float_top.md": "2ccc2091a214a437fdd8a3bbf319522cbf34ad456071050d99e95c4cc025f9b8",
+    "parts/parent/exterior/printed/parent_spar_float_top/parent_spar_float_top.scad": "ed94d43fd4c7b8f0d7da47130fe6210acccd32f913ef7c64a9b151da678fc882",
+    "parts/parent/exterior/printed/parent_spar_gps_bridge/manufacturing.json": "73a0dcb6e407f8cb32c8ebe527dcc4e675b102517e1483fbc968406bc24b6342",
+    "parts/parent/exterior/printed/parent_spar_gps_bridge/parent_spar_gps_bridge.md": "35ff69507b36594dc6259a33af2ae921b8f9b6200c3c8957f3333b3ddbc9eef6",
+    "parts/parent/exterior/printed/parent_spar_gps_bridge/parent_spar_gps_bridge.scad": "85530b58190fdf05232a37106db2d4a91162c4b462dd70164e46091255670d2c",
+    "parts/parent/exterior/printed/parent_spar_hub/manufacturing.json": "325e03aed2576d642d448c7ed3a1a0b5382a970ca1bd480a00cdecb26764dbab",
+    "parts/parent/exterior/printed/parent_spar_hub/parent_spar_hub.md": "80878e26ea4252627ee9480f805ac07983c03cc56d96bf8946c247c2814eed09",
+    "parts/parent/exterior/printed/parent_spar_hub/parent_spar_hub.scad": "0cc4aab49d02d4d8dcc4f702723a84c35bbceb5d4b6b1694212e9407c92ee161",
+    "parts/parent/interior/printed/parent_lipo_tray/parent_lipo_tray.md": "ed17599abd58ad15bbb3ad1ff838e24709cb614082ed847b17d2483ee1c22607",
+    "parts/parent/interior/printed/parent_lipo_tray/parent_lipo_tray.scad": "6142afab41fb20fe154828aae636994a315a9e487a53885bec8e3a241c4bb2bc",
+    "parts/parent/interior/printed/parent_plate/parent_plate.md": "8f7915cbda8fbaa2eeede07539587b12dbc748f7e33b0c30e72e3ba62ebc3660",
+    "parts/parent/interior/printed/parent_plate/parent_plate.scad": "297143f9878cc8ac2eb23a94fd239c141fe628b39c5d4ab5ab709ce0f246ded8",
+    "parts/parent/interior/printed/parent_plate/variants.txt": "0082df303675be8d98f89964eebea778d29342a033e60635a1cba43f38d23533",
+    "scad/lib/hardpoint.scad": "5a442026ba75c7cb3d7eac05f29da72952cfe55706bfb0b6f02be0ac1b5cc6c1",
+    "scad/lib/parent_spar_bolted.scad": "69a7cc1e3f568b9959daa558c29864254d7e960ceb984428a605e0ca3378cd3a",
+    "spec/parent_hydrostatics.py": "c374b818b93aa7d7da073d4ca753ac3a78734b1db60aedc7ec7a59d25518edee",
+    "spec/parent_interior_layout.py": "94fcfd389470591cb68c24a3edce6ac5582092b5d994d7a6c6dde59de6ff92d5"
+  },
+  "parts": [
+    {
+      "part": "parts/parent/exterior/printed/parent_spar_disk",
+      "stem": "parent_spar_disk",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "disk"
+      ],
+      "file": "parent_spar_disk.stl",
+      "rotation_deg": [
+        0.0,
+        -0.0,
+        -180.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_spar_disk/parent_spar_disk.stl",
+      "source_sha256": "6cb56f5a76b8fdd4f35092f3a3637e32fa773c924a431295dc04723ce57c5971",
+      "sha256": "6e67cce617da0a7675c41187606b07c0f62b1723c90a495a396044ff12644118",
+      "extents_mm": [
+        225.0,
+        225.0,
+        5.0
+      ],
+      "model_to_print": [
+        [
+          -1.0,
+          1.2246467991473532e-16,
+          0.0,
+          112.5
+        ],
+        [
+          -1.2246467991473532e-16,
+          -1.0,
+          0.0,
+          112.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_spar_fin",
+      "stem": "parent_spar_fin",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 4,
+      "labels": [
+        "fin_0",
+        "fin_90",
+        "fin_180",
+        "fin_270"
+      ],
+      "file": "parent_spar_fin.stl",
+      "rotation_deg": [
+        90.0,
+        -0.0,
+        -0.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_spar_fin/parent_spar_fin.stl",
+      "source_sha256": "488f322d7c530cb3d449f527ee773f05126cf625acb4a1ec7f7f510622edc8ea",
+      "sha256": "74adc3ba15c8e3a5b4c65b5b4173ddb535fd919d4af5751101fe448ccf5d2ffa",
+      "extents_mm": [
+        65.0,
+        125.0,
+        4.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          -1.0,
+          125.0
+        ],
+        [
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_spar_hub",
+      "stem": "parent_spar_hub",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 2,
+      "labels": [
+        "hub_-295",
+        "hub_-202"
+      ],
+      "file": "parent_spar_hub.stl",
+      "rotation_deg": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_spar_hub/parent_spar_hub.stl",
+      "source_sha256": "0124f5eef53462f9bda57f860fe1154695fa1f9a6d761bf8bacbbda292128fb5",
+      "sha256": "12522974cbbdb2558f1075e56256854d7855efdd842e43608d191783b12c0a6b",
+      "extents_mm": [
+        88.0,
+        88.0,
+        32.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          44.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          44.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_spar_beam_lower",
+      "stem": "parent_spar_beam_lower",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "beam_lower"
+      ],
+      "file": "parent_spar_beam_lower.stl",
+      "rotation_deg": [
+        -0.0,
+        90.0,
+        0.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_spar_beam_lower/parent_spar_beam_lower.stl",
+      "source_sha256": "64c5c7f317acec84be07acfad2003832c9e76736bb8b7b43739386ea780d0fbd",
+      "sha256": "e9cc55415764b029a538b6bc342683530cbb779aca0c8f2a404ebc74d04b4d48",
+      "extents_mm": [
+        180.0,
+        32.0,
+        32.0
+      ],
+      "model_to_print": [
+        [
+          6.123233995736766e-17,
+          0.0,
+          1.0,
+          9.797174393178826e-16
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          16.0
+        ],
+        [
+          -1.0,
+          0.0,
+          6.123233995736766e-17,
+          16.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_spar_beam_upper",
+      "stem": "parent_spar_beam_upper",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "beam_upper"
+      ],
+      "file": "parent_spar_beam_upper.stl",
+      "rotation_deg": [
+        180.0,
+        90.0,
+        0.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_spar_beam_upper/parent_spar_beam_upper.stl",
+      "source_sha256": "431e66314b09b517e8b2f3291c66ff747a94e5c43bc3da0b4ba48f3a0d41d877",
+      "sha256": "1a2c63f092ebaa31a9b2e482f8805295c82c09774c9b032e693395a50be21bca",
+      "extents_mm": [
+        107.0,
+        32.0,
+        32.0
+      ],
+      "model_to_print": [
+        [
+          6.123233995736766e-17,
+          1.2246467991473532e-16,
+          -1.0,
+          107.0
+        ],
+        [
+          0.0,
+          -1.0,
+          -1.2246467991473532e-16,
+          16.000000000000014
+        ],
+        [
+          -1.0,
+          7.498798913309288e-33,
+          -6.123233995736766e-17,
+          16.000000000000007
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_spar_coupler_half",
+      "stem": "parent_spar_coupler_half",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "coupler_front"
+      ],
+      "file": "parent_spar_coupler_half.stl",
+      "rotation_deg": [
+        -90.0,
+        0.0,
+        -180.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_spar_coupler_half/parent_spar_coupler_half.stl",
+      "source_sha256": "d88f7cc4dfcd13579f925696ad9ec93af32391e5ac05ed8be5b35a2c8af1c9cd",
+      "sha256": "f6469d85774ed89be7326a09c5d5487fd268eddb0f51db5629fa825326217aa1",
+      "extents_mm": [
+        54.0,
+        64.0,
+        26.75
+      ],
+      "model_to_print": [
+        [
+          -1.0,
+          7.498798913309288e-33,
+          1.2246467991473532e-16,
+          27.0
+        ],
+        [
+          -1.2246467991473532e-16,
+          -6.123233995736766e-17,
+          -1.0,
+          64.0
+        ],
+        [
+          0.0,
+          -1.0,
+          6.123233995736766e-17,
+          27.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_spar_coupler_half",
+      "stem": "parent_spar_coupler_half",
+      "shape": [
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "coupler_back"
+      ],
+      "file": "parent_spar_coupler_half_mirrored.stl",
+      "rotation_deg": [
+        -90.0,
+        0.0,
+        -180.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_spar_coupler_half/parent_spar_coupler_half.stl",
+      "source_sha256": "d88f7cc4dfcd13579f925696ad9ec93af32391e5ac05ed8be5b35a2c8af1c9cd",
+      "sha256": "96d43688f8e35c4272a8ac765aa23d028ea5ab9a7fb70ff68ddfe2d21f73b8c0",
+      "extents_mm": [
+        54.0,
+        64.0,
+        26.75
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          7.498798913309288e-33,
+          1.2246467991473532e-16,
+          27.0
+        ],
+        [
+          1.2246467991473532e-16,
+          -6.123233995736766e-17,
+          -1.0,
+          64.0
+        ],
+        [
+          0.0,
+          -1.0,
+          6.123233995736766e-17,
+          27.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_spar_float_bottom",
+      "stem": "parent_spar_float_bottom",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "float_bottom"
+      ],
+      "file": "parent_spar_float_bottom.stl",
+      "rotation_deg": [
+        -180.0,
+        0.0,
+        180.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_spar_float_bottom/parent_spar_float_bottom.stl",
+      "source_sha256": "57b6fb4c98813e0f07da44d8834ea4d4ae4252da168551a0f07625dfe21213e1",
+      "sha256": "10214772d8cc7d5592681fe7453ad7ec3618e2b3f0cd50a358f4f583334302dc",
+      "extents_mm": [
+        225.0,
+        225.0,
+        48.0
+      ],
+      "model_to_print": [
+        [
+          -1.0,
+          1.2246467991473532e-16,
+          -1.4997597826618576e-32,
+          112.5
+        ],
+        [
+          1.2246467991473532e-16,
+          1.0,
+          -1.2246467991473532e-16,
+          112.5
+        ],
+        [
+          0.0,
+          -1.2246467991473532e-16,
+          -1.0,
+          8.000000000000014
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_spar_float_body",
+      "stem": "parent_spar_float_body",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 2,
+      "labels": [
+        "float_body_0",
+        "float_body_1"
+      ],
+      "file": "parent_spar_float_body.stl",
+      "rotation_deg": [
+        0.0,
+        -0.0,
+        -180.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_spar_float_body/parent_spar_float_body.stl",
+      "source_sha256": "7f748c9ebf303a6047cdc3efd00118235090f92eac6981b39e6c3f02ac03725c",
+      "sha256": "8b750e766cb2a4df0824a2eccabe81e7bd7ccd795070af2f9113bbd4f117afab",
+      "extents_mm": [
+        225.0,
+        225.0,
+        180.0
+      ],
+      "model_to_print": [
+        [
+          -1.0,
+          1.2246467991473532e-16,
+          0.0,
+          112.5
+        ],
+        [
+          -1.2246467991473532e-16,
+          -1.0,
+          0.0,
+          112.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_spar_float_lid",
+      "stem": "parent_spar_float_lid",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 2,
+      "labels": [
+        "float_lid_0",
+        "float_lid_1"
+      ],
+      "file": "parent_spar_float_lid.stl",
+      "rotation_deg": [
+        -180.0,
+        0.0,
+        180.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_spar_float_lid/parent_spar_float_lid.stl",
+      "source_sha256": "439230bd5058af6a073931addd2b7a4fe6c419a0ce7ab2854ef952b6adf9592c",
+      "sha256": "9733ca1e6221ac2ba469a1d9545b8d929cf27f4b881ff1d990a6ad1606034d2e",
+      "extents_mm": [
+        225.0,
+        225.0,
+        6.0
+      ],
+      "model_to_print": [
+        [
+          -1.0,
+          1.2246467991473532e-16,
+          -1.4997597826618576e-32,
+          112.5
+        ],
+        [
+          1.2246467991473532e-16,
+          1.0,
+          -1.2246467991473532e-16,
+          112.5
+        ],
+        [
+          0.0,
+          -1.2246467991473532e-16,
+          -1.0,
+          6.000000000000014
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_spar_float_top",
+      "stem": "parent_spar_float_top",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "float_top"
+      ],
+      "file": "parent_spar_float_top.stl",
+      "rotation_deg": [
+        0.0,
+        -0.0,
+        -180.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_spar_float_top/parent_spar_float_top.stl",
+      "source_sha256": "537b5fa1013948de565877f70d6328bc3d3517d707bf11435809193ca1e14ac2",
+      "sha256": "28cfcadee18ba7de0886c39e06ee23e10c3e12fc868a3706fee1d0ddb4c078d6",
+      "extents_mm": [
+        225.0,
+        225.0,
+        28.0
+      ],
+      "model_to_print": [
+        [
+          -1.0,
+          1.2246467991473532e-16,
+          0.0,
+          112.5
+        ],
+        [
+          -1.2246467991473532e-16,
+          -1.0,
+          0.0,
+          112.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_spar_ballast_body",
+      "stem": "parent_spar_ballast_body",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "ballast_body"
+      ],
+      "file": "parent_spar_ballast_body.stl",
+      "rotation_deg": [
+        0.0,
+        -0.0,
+        -180.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_spar_ballast_body/parent_spar_ballast_body.stl",
+      "source_sha256": "bfd392f7663b70da297023ba8b23832385c12ebbc378f956bed11e46453f4c7e",
+      "sha256": "7ee255b59768fddcf47a3c9c581169f1f1d6bf0833ba653b129853f0334385ba",
+      "extents_mm": [
+        120.0,
+        120.0,
+        51.0
+      ],
+      "model_to_print": [
+        [
+          -1.0,
+          1.2246467991473532e-16,
+          0.0,
+          60.0
+        ],
+        [
+          -1.2246467991473532e-16,
+          -1.0,
+          0.0,
+          60.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_spar_ballast_lid",
+      "stem": "parent_spar_ballast_lid",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "ballast_lid"
+      ],
+      "file": "parent_spar_ballast_lid.stl",
+      "rotation_deg": [
+        0.0,
+        -0.0,
+        -180.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_spar_ballast_lid/parent_spar_ballast_lid.stl",
+      "source_sha256": "8a8edeadef4b446ff055fcd595dbbce8a4fdc22c33c733e75555bb8da6ed869f",
+      "sha256": "891539b5906aa7beb69628d55dac25f55d48748fba606e9ba8830639f2499779",
+      "extents_mm": [
+        120.0,
+        120.0,
+        6.0
+      ],
+      "model_to_print": [
+        [
+          -1.0,
+          1.2246467991473532e-16,
+          0.0,
+          60.0
+        ],
+        [
+          -1.2246467991473532e-16,
+          -1.0,
+          0.0,
+          60.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_spar_camera_bridge",
+      "stem": "parent_spar_camera_bridge",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "camera_bridge"
+      ],
+      "file": "parent_spar_camera_bridge.stl",
+      "rotation_deg": [
+        -90.0,
+        0.0,
+        0.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_spar_camera_bridge/parent_spar_camera_bridge.stl",
+      "source_sha256": "af671942eb510e707b0e42d31b66b0bf96be28193b145192c92c621a296390ec",
+      "sha256": "ff9c6df6231e4bf16aebf565d613ace06be561e2598369914334215ad217624c",
+      "extents_mm": [
+        140.0,
+        78.0,
+        180.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          70.0
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          1.0,
+          -7.654042494670958e-15
+        ],
+        [
+          0.0,
+          -1.0,
+          6.123233995736766e-17,
+          225.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_spar_gps_bridge",
+      "stem": "parent_spar_gps_bridge",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "gps_bridge"
+      ],
+      "file": "parent_spar_gps_bridge.stl",
+      "rotation_deg": [
+        -0.0,
+        90.0,
+        0.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_spar_gps_bridge/parent_spar_gps_bridge.stl",
+      "source_sha256": "9d4a7431b2e252cea16ba0f3cad1f68851b09cb8ba78d067f6ff3c652cb06285",
+      "sha256": "05ed623653e63fb28f5028f59ca4657e0b23d929e7ae967f15b0ce39b04b16cc",
+      "extents_mm": [
+        183.0,
+        96.0,
+        100.0
+      ],
+      "model_to_print": [
+        [
+          6.123233995736766e-17,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          48.0
+        ],
+        [
+          -1.0,
+          0.0,
+          6.123233995736766e-17,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_deck",
+      "stem": "parent_deck",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "deck"
+      ],
+      "file": "parent_deck.stl",
+      "rotation_deg": [
+        -180.0,
+        0.0,
+        -0.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_deck/parent_deck.stl",
+      "source_sha256": "1e542027170d975801b43d316a052f5f5e89a054c251ad5fcbb1e9efcb420943",
+      "sha256": "6c45f99facc9a2ccf3f4c4ca94d7c95927835259bc44bf78fe22e7e89d2789e4",
+      "extents_mm": [
+        216.0,
+        236.0,
+        60.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          108.0
+        ],
+        [
+          0.0,
+          -1.0,
+          1.2246467991473532e-16,
+          118.0
+        ],
+        [
+          0.0,
+          -1.2246467991473532e-16,
+          -1.0,
+          1.4450832229938766e-14
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/exterior/printed/dji_osmo_action6_mount",
+      "stem": "dji_osmo_action6_mount",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "camera_mount"
+      ],
+      "file": "dji_osmo_action6_mount.stl",
+      "rotation_deg": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/exterior/printed/dji_osmo_action6_mount/dji_osmo_action6_mount.stl",
+      "source_sha256": "ec75fb6f29c35e78a030d1cb3341c41a9d4e603702c1b030936f32a32c373be1",
+      "sha256": "53ed2d96d28fe89f3b667c46aa208c9d6ad4e9302d0afe1359c799a5e208a9a4",
+      "extents_mm": [
+        104.0,
+        79.45,
+        84.5
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          52.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          52.45
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/interior/printed/parent_plate",
+      "stem": "parent_plate_p1",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "plate"
+      ],
+      "file": "parent_plate_p1.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/interior/printed/parent_plate/parent_plate_p1.stl",
+      "source_sha256": "4e72e6f6b963bc74fa123b223e8d03d7763f584667ee5e193395b0e6d94202dd",
+      "sha256": "297dc2d1e92cab0fe24a13b1c08564b34f0f6ddfa38a44df96b4dc7bcf679776",
+      "extents_mm": [
+        183.0,
+        203.0,
+        17.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/interior/printed/parent_lipo_tray",
+      "stem": "parent_lipo_tray",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "lipo_tray"
+      ],
+      "file": "parent_lipo_tray.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/interior/printed/parent_lipo_tray/parent_lipo_tray.stl",
+      "source_sha256": "79293d4649b38714d3e8eed0c968741b62b0812ec3dae944b7067beab1de36dd",
+      "sha256": "bedbc9947401a32b0206a4962e99b37e26f8dab822b9e4f222b9aa204272485b",
+      "extents_mm": [
+        112.0,
+        84.5,
+        17.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          4.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    }
+  ],
+  "modifiers": [],
+  "generated_files": [
+    "parent_spar_disk.stl",
+    "parent_spar_fin.stl",
+    "parent_spar_hub.stl",
+    "parent_spar_beam_lower.stl",
+    "parent_spar_beam_upper.stl",
+    "parent_spar_coupler_half.stl",
+    "parent_spar_coupler_half_mirrored.stl",
+    "parent_spar_float_bottom.stl",
+    "parent_spar_float_body.stl",
+    "parent_spar_float_lid.stl",
+    "parent_spar_float_top.stl",
+    "parent_spar_ballast_body.stl",
+    "parent_spar_ballast_lid.stl",
+    "parent_spar_camera_bridge.stl",
+    "parent_spar_gps_bridge.stl",
+    "parent_deck.stl",
+    "dji_osmo_action6_mount.stl",
+    "parent_plate_p1.stl",
+    "parent_lipo_tray.stl",
+    "DESIGN_NOTES.md",
+    "PRINT.md"
+  ],
+  "document_hashes": {
+    "DESIGN_NOTES.md": "54f00978e516fb4f1ae92aaf8c48428516c9f94c30c391b8d6fa348cb018ece8",
+    "PRINT.md": "162c539b1b36f8e4ae87a13bf11ff24f88b39095edcbbf8758375d82f64b9fae"
+  }
+}

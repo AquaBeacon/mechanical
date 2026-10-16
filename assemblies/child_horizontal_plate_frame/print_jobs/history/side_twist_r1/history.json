@@ -1,0 +1,10 @@
+{
+  "reason": "Retired separate Rev.1 parts; not current print jobs",
+  "archived_jobs": [
+    "child_horizontal_twist_mount_frame_adapter",
+    "quick_release_prototypes_twist_female",
+    "quick_release_prototypes_twist_male_mount",
+    "child_horizontal_twist_mount_light_adapter",
+    "child_simple_light_mount_base"
+  ]
+}

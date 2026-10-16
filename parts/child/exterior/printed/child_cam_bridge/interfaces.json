@@ -1,0 +1,75 @@
+{
+  "consumer": "child_cam_bridge",
+  "references": [
+    {
+      "part": "child_cam_mount",
+      "path": "parts/child/exterior/printed/child_cam_mount",
+      "md_sha256": "25eb18932896d22e649304b715ad95643511aefbfdeb0d241d89f8b6602bf7ec",
+      "stl_sha256": "3a4ba53712433f7ac06732c0e62bb7c70096045568a91757f973df93deadb66a",
+      "bbox_mm": [
+        30.0,
+        44.0,
+        34.0
+      ],
+      "status_at_lock": [
+        "needs_measure",
+        "not_designed",
+        "provisional"
+      ],
+      "values": {
+        "lens_off_bot": 42.05,
+        "fin_x1": 30.0,
+        "fh_y": 16.0,
+        "fh_z": 11.0
+      },
+      "confirmed_by_human": true,
+      "confirmed_at": "2026-09-05T00:21:08",
+      "note": "改善要件 2026-09-04 (ユーザ承認) で確定した取合い: デッキ高さの導出元 (仮値、ケース実測で変わる) [2026-09-05 再ロック: 改善実装後の md 更新に追従]"
+    },
+    {
+      "part": "action_camera",
+      "path": "parts/child/exterior/cots/action_camera",
+      "md_sha256": "d1b59d0913b4de1e32504f29ed00ec98780400af50d4cf679640ef0dfd86af1e",
+      "stl_sha256": null,
+      "bbox_mm": null,
+      "status_at_lock": [
+        "needs_measure",
+        "provisional"
+      ],
+      "values": {
+        "case_w": 94.7,
+        "case_h": 84.1,
+        "case_d": 45.9
+      },
+      "confirmed_by_human": false,
+      "confirmed_at": "2026-09-05T00:21:09",
+      "note": "公称値 (仮)。横向き: 幅 94.7 が X、高さ 84.1 が Z [2026-09-05 再ロック: 改善実装後の md 更新に追従]"
+    },
+    {
+      "part": "child_jaw_gate",
+      "path": "parts/child/exterior/printed/child_jaw_gate",
+      "md_sha256": "0e40f2504d5c344403d03084bfea130cc35c8dfbda469e03d3bfb315c4357d1b",
+      "stl_sha256": "bce8aeace7e4e487fbc31b4fb591b14f33d455c29fb5479b75fdba71716cd7b6",
+      "bbox_mm": [
+        152.0,
+        74.35,
+        235.0
+      ],
+      "status_at_lock": [
+        "needs_measure",
+        "not_bought",
+        "obsolete",
+        "provisional"
+      ],
+      "values": {
+        "hp_seat_y": 74.35,
+        "hp4_z": 170.0,
+        "hp5_z": 100.0,
+        "hpl_z": 15.0
+      },
+      "confirmed_by_human": false,
+      "confirmed_at": "2026-09-06T04:27:18",
+      "note": "2026-09-06 再ロック (人間確認待ち): child_jaw_gate のトポロジー最適化版でも取合い値は不変 (md 更新への追従)"
+    }
+  ]
+}

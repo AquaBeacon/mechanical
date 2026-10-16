@@ -1,0 +1,118 @@
+{
+  "parts": {
+    "base": {
+      "valid": true,
+      "solids": 1,
+      "bbox_error_mm": 0.02575723133986685,
+      "volume_error_fraction": 0.000357702680213967
+    },
+    "lid": {
+      "valid": true,
+      "solids": 1,
+      "bbox_error_mm": 4.064304448547773e-12,
+      "volume_error_fraction": 6.341016345791189e-07
+    },
+    "stand": {
+      "valid": true,
+      "solids": 1,
+      "bbox_error_mm": 0.0,
+      "volume_error_fraction": 0.0001439759386773991
+    },
+    "cover_half": {
+      "valid": true,
+      "solids": 1,
+      "bbox_error_mm": 3.0517578011313162e-06,
+      "volume_error_fraction": 0.0003351104589613425
+    },
+    "clip": {
+      "valid": true,
+      "solids": 1,
+      "bbox_error_mm": 3.8146972691777137e-07,
+      "volume_error_fraction": 1.1914738964147973e-07
+    },
+    "coupon_socket": {
+      "valid": true,
+      "solids": 1,
+      "bbox_error_mm": 0.0,
+      "volume_error_fraction": 1.2907447000542505e-07
+    },
+    "coupon_spring": {
+      "valid": true,
+      "solids": 1,
+      "bbox_error_mm": 8.276046514765767e-12,
+      "volume_error_fraction": 1.0993452468432046e-08
+    }
+  },
+  "contacts": {
+    "base_lid": {
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.0,
+      "intersection_bounds": []
+    },
+    "half_shells": {
+      "intersection_mm3": 0.0,
+      "distance_mm": 1.4450832229938766e-14,
+      "intersection_bounds": []
+    },
+    "base_shell": {
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.3999999999999999,
+      "intersection_bounds": []
+    },
+    "lid_shell": {
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.4000000000000057,
+      "intersection_bounds": []
+    },
+    "clip_upper_tab": {
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.0,
+      "intersection_bounds": []
+    },
+    "clip_lower_tab": {
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.0,
+      "intersection_bounds": []
+    },
+    "clip_reel": {
+      "intersection_mm3": 0.0,
+      "distance_mm": 17.0,
+      "intersection_bounds": []
+    },
+    "stand_base_False": {
+      "intersection_mm3": 0.0,
+      "distance_mm": 1.5803669566506697e-14,
+      "intersection_bounds": []
+    },
+    "stand_lid_False": {
+      "intersection_mm3": 0.0,
+      "distance_mm": 1.4210854715202004e-14,
+      "intersection_bounds": []
+    },
+    "stand_base_True": {
+      "intersection_mm3": 0.0,
+      "distance_mm": 3.0,
+      "intersection_bounds": []
+    },
+    "stand_lid_True": {
+      "intersection_mm3": 0.0,
+      "distance_mm": 3.000000000000014,
+      "intersection_bounds": []
+    },
+    "stand_shell_True": {
+      "intersection_mm3": 0.0,
+      "distance_mm": 78.04107892642179,
+      "intersection_bounds": []
+    },
+    "stand_shell2_True": {
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.0,
+      "intersection_bounds": []
+    },
+    "snap_coupon": {
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.0,
+      "intersection_bounds": []
+    }
+  }
+}

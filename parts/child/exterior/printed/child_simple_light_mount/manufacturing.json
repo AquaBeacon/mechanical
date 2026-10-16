@@ -1,0 +1,15 @@
+{
+  "print_rotations_deg": {
+    "child_simple_light_mount_base": [
+      0.0,
+      -0.0,
+      0.0
+    ],
+    "child_simple_light_mount_cap": [
+      0.0,
+      -0.0,
+      0.0
+    ]
+  },
+  "portable_stl_export_format": "stl_ascii"
+}

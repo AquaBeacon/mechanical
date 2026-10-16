@@ -1,0 +1,20 @@
+# 印刷一式
+
+対象: `parent_assembly`。同じ部品は表の数量だけ複製してください。
+
+既存構成の印刷データを整理。強度・造形性の新規認証ではない。
+
+STLは全てこのフォルダ内の実ファイルです。このフォルダをコピーして印刷できます。組立配置は除き、最小XYZを0へ移動済み。鏡像・スケールは反映済みです。CAD原本は編集せず、設計元を更新して再生成します。
+
+| STL | 個数 | 外形 mm | 設計元からの回転 X/Y/Z ° | X1C 250³ |
+|---|---:|---|---|---|
+| [parent_deck.stl](parent_deck.stl) | 1 | 216 × 236 × 60 | [-180.0, 0.0, -0.0] | 枠内 |
+| [parent_float_yoke_a.stl](parent_float_yoke_a.stl) | 2 | 113 × 127 × 96 | [0, 0, 0] | 枠内 |
+| [parent_float_yoke_b.stl](parent_float_yoke_b.stl) | 2 | 113 × 127 × 96 | [0, 0, 0] | 枠内 |
+| [xdcr_socket_parent.stl](xdcr_socket_parent.stl) | 1 | 50 × 50 × 38 | [0, 0, 0] | 枠内 |
+| [parent_plate_p1.stl](parent_plate_p1.stl) | 1 | 183 × 203 × 17 | [0, 0, 0] | 枠内 |
+| [parent_lipo_tray.stl](parent_lipo_tray.stl) | 1 | 112 × 84.5 × 17 | [0, 0, 0] | 枠内 |
+
+回転0°のものは設計元の姿勢を保っています。枠内の判定は外形だけです。サポート・積層方向・材料・強度の条件は [設計元の説明](DESIGN_NOTES.md) と上のassemblyの説明を確認してください。
+
+`manifest.json` は出所、個数、鏡像変換、元STLとコピーのSHA-256を記録します。コピーを編集すると検査で不一致になります。

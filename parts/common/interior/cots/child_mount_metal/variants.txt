@@ -1,0 +1,5 @@
+sleeve_12_2 kind="sleeve" length=12.2
+sleeve_6_2 kind="sleeve" length=6.2
+sleeve_5_7 kind="sleeve" length=5.7
+flange_plate kind="plate" plate_w=5 plate_l=12 plate_t=1.5
+brace_plate kind="plate" plate_w=5.5 plate_l=8 plate_t=1

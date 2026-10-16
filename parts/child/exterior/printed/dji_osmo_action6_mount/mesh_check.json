@@ -1,0 +1,12 @@
+{
+  "watertight": true,
+  "components": 1,
+  "extents_mm": [
+    104.0,
+    79.45,
+    84.5
+  ],
+  "volume_mm3": 144199.96101920007,
+  "downward_overhang_area_mm2": 41.69322059364618,
+  "note": "Overhang geometry screen only; not slicing or load verification"
+}

@@ -1,0 +1,215 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "case_anchor_0",
+      "axis_xy_mm": [
+        25,
+        25
+      ],
+      "head_top_mm": 19.0,
+      "nominal_case_engagement_mm": 5.199999999999999,
+      "floor_bore_overlap_mm3": 0.0,
+      "head_recess_overlap_mm3": 0.0,
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "case_anchor_0 driver clears integral floor posts",
+      "overlap_mm3": 0.0,
+      "pass_": true
+    },
+    {
+      "name": "case_anchor_1",
+      "axis_xy_mm": [
+        185,
+        25
+      ],
+      "head_top_mm": 19.0,
+      "nominal_case_engagement_mm": 5.199999999999999,
+      "floor_bore_overlap_mm3": 0.0,
+      "head_recess_overlap_mm3": 0.0,
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "case_anchor_1 driver clears integral floor posts",
+      "overlap_mm3": 0.0,
+      "pass_": true
+    },
+    {
+      "name": "case_anchor_2",
+      "axis_xy_mm": [
+        25,
+        205
+      ],
+      "head_top_mm": 19.0,
+      "nominal_case_engagement_mm": 5.199999999999999,
+      "floor_bore_overlap_mm3": 0.0,
+      "head_recess_overlap_mm3": 0.0,
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "case_anchor_2 driver clears integral floor posts",
+      "overlap_mm3": 0.0,
+      "pass_": true
+    },
+    {
+      "name": "plate valid single solid",
+      "pass_": true
+    },
+    {
+      "name": "gnss_universal_carrier valid single solid",
+      "pass_": true
+    },
+    {
+      "name": "antenna_rack valid single solid",
+      "pass_": true
+    },
+    {
+      "name": "coax_ring valid single solid",
+      "pass_": true
+    },
+    {
+      "name": "main_column_0 valid single solid",
+      "pass_": true
+    },
+    {
+      "name": "main_column_1 valid single solid",
+      "pass_": true
+    },
+    {
+      "name": "main_column_2 valid single solid",
+      "pass_": true
+    },
+    {
+      "name": "main_column_3 valid single solid",
+      "pass_": true
+    },
+    {
+      "name": "main_mount_plate valid single solid",
+      "pass_": true
+    },
+    {
+      "name": "sony_mount_plate valid single solid",
+      "pass_": true
+    },
+    {
+      "name": "sony_column_0 valid single solid",
+      "pass_": true
+    },
+    {
+      "name": "sony_column_1 valid single solid",
+      "pass_": true
+    },
+    {
+      "name": "sony_column_2 valid single solid",
+      "pass_": true
+    },
+    {
+      "name": "sony_column_3 valid single solid",
+      "pass_": true
+    },
+    {
+      "name": "gnss_column_0 valid single solid",
+      "pass_": true
+    },
+    {
+      "name": "gnss_column_1 valid single solid",
+      "pass_": true
+    },
+    {
+      "name": "gnss_column_2 valid single solid",
+      "pass_": true
+    },
+    {
+      "name": "gnss_column_3 valid single solid",
+      "pass_": true
+    },
+    {
+      "name": "sony_column_0 keyed split clearance/translation stop",
+      "installed_overlap_mm3": 0.0,
+      "shift_0_3mm_overlap_mm3": 0.646971644861785,
+      "pass_": true
+    },
+    {
+      "name": "sony_column_1 keyed split clearance/translation stop",
+      "installed_overlap_mm3": 0.0,
+      "shift_0_3mm_overlap_mm3": 0.573546939291316,
+      "pass_": true
+    },
+    {
+      "name": "sony_column_2 keyed split clearance/translation stop",
+      "installed_overlap_mm3": 0.0,
+      "shift_0_3mm_overlap_mm3": 0.6469716448458261,
+      "pass_": true
+    },
+    {
+      "name": "sony_column_3 keyed split clearance/translation stop",
+      "installed_overlap_mm3": 0.0,
+      "shift_0_3mm_overlap_mm3": 0.5735469392942553,
+      "pass_": true
+    },
+    {
+      "name": "antenna_rack keyed split clearance/translation stop",
+      "installed_overlap_mm3": 0.0,
+      "shift_0_3mm_overlap_mm3": 2.809347938369905,
+      "pass_": true
+    },
+    {
+      "name": "gnss_column_0 keyed split clearance/translation stop",
+      "installed_overlap_mm3": 0.0,
+      "shift_0_3mm_overlap_mm3": 1.1126666666666665,
+      "pass_": true
+    },
+    {
+      "name": "gnss_column_1 keyed split clearance/translation stop",
+      "installed_overlap_mm3": 0.0,
+      "shift_0_3mm_overlap_mm3": 1.1126666666667566,
+      "pass_": true
+    },
+    {
+      "name": "gnss_column_2 keyed split clearance/translation stop",
+      "installed_overlap_mm3": 0.0,
+      "shift_0_3mm_overlap_mm3": 0.6326666666666722,
+      "pass_": true
+    },
+    {
+      "name": "gnss_column_3 keyed split clearance/translation stop",
+      "installed_overlap_mm3": 0.0,
+      "shift_0_3mm_overlap_mm3": 0.6326666666667176,
+      "pass_": true
+    }
+  ],
+  "case_anchor_service": [
+    {
+      "anchor": "case_anchor_0",
+      "remove_before_driver": [
+        "p_main",
+        "main_mount_plate",
+        "coax_ring"
+      ]
+    },
+    {
+      "anchor": "case_anchor_1",
+      "remove_before_driver": [
+        "lipo",
+        "lipo_ret_lid",
+        "lipo_ret_pads"
+      ]
+    },
+    {
+      "anchor": "case_anchor_2",
+      "remove_before_driver": [
+        "p_pwr"
+      ]
+    }
+  ],
+  "limitations": [
+    "Drawing-derived insert top Z10; screw/pilot geometric overlap is not thread engagement analysis. Exact insert depth and selected screw require physical confirmation.",
+    "Anchor driver access requires the listed obstructions removed; not a one-piece interior extraction procedure.",
+    "Carrier long bolts use16 top-loaded M3 metal nuts. Torque, creep, loosening and physical wave-cycle retention unmeasured.",
+    "Lacing is soft cord, packed inside the user coil envelope including knots; actual installation/clearance required."
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "schema_version": 1,
+  "assembly": "tether_open_reel",
+  "release_status": "existing_prototype",
+  "note": "既存構成の印刷データを整理。強度・造形性の新規認証ではない。",
+  "source_hashes": {
+    "assemblies/tether_open_reel/placement.json": "de1af84cd4064146ef2e4f9f77a3d744123c21f64787f082f606640d10c7bff5",
+    "assemblies/tether_open_reel/README.md": "bcb7f4904f9a5909ac331ceb8c650cbea6c44d3530eb4c5f38ad085522073db5",
+    "parts/common/jigs/tether_open_reel/check_and_preview.py": "2b1bd7675eacc2df274ff472ed1fea8133336865346b2b1fc3171b402c685598",
+    "parts/common/jigs/tether_open_reel/tether_open_reel.md": "7ebff13141fbf1adc6ea9d9dca31dbe262636bf80ef095847876715b138345f6",
+    "parts/common/jigs/tether_open_reel/tether_open_reel.scad": "fd30413cfdea9b40a4ce07abcc427605fdec19797ee7ec45cd277edd96aeccb4",
+    "parts/common/jigs/tether_open_reel/variants.txt": "1737c75a4eefb4150ff5adc4fd0d007542ac97ac078ce8a3bf04b7645bfbe886",
+    "parts/common/jigs/tether_open_reel/verify_step.py": "cd922ad551bb3b138de461523dae5c8bd36da1eb7e6d164c7ce09dc9d01b29d2"
+  },
+  "parts": [
+    {
+      "part": "parts/common/jigs/tether_open_reel",
+      "stem": "tether_open_reel_stand",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "Upright cradle"
+      ],
+      "file": "tether_open_reel_stand.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/common/jigs/tether_open_reel/tether_open_reel_stand.stl",
+      "source_sha256": "dc3f68be2be0b286701fdedd17c7178bd0ebc617b878930812ab6d7dfa7ff4ff",
+      "sha256": "2910727930f5f977935ed7a7c80fc436a4c0a99714f3dcfcba2e7f194c736e97",
+      "extents_mm": [
+        220.0,
+        190.0,
+        50.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          110.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          95.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/common/jigs/tether_open_reel",
+      "stem": "tether_open_reel_base",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "Single winding chamber"
+      ],
+      "file": "tether_open_reel_base.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/common/jigs/tether_open_reel/tether_open_reel_base.stl",
+      "source_sha256": "afc02a7bf65dfac1b53a5f5e6f66d99ba5f83e0b955de462d7e723a1f34566eb",
+      "sha256": "3d6d3e41071a85513f354489dc5cf1538248b9362e4a6ee70421118390669a0c",
+      "extents_mm": [
+        229.761,
+        230.0,
+        175.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          115.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          115.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/common/jigs/tether_open_reel",
+      "stem": "tether_open_reel_lid",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "Side plate with two release latches"
+      ],
+      "file": "tether_open_reel_lid.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/common/jigs/tether_open_reel/tether_open_reel_lid.stl",
+      "source_sha256": "8760ce71e5b314a6920e3d52a95239d358a3ecf448524040b6d565442a0ea884",
+      "sha256": "47bdd13494da440912f132520a625127903cccb559c31ba7dc1f41e751a8ba14",
+      "extents_mm": [
+        229.761,
+        230.0,
+        35.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          115.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          115.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    }
+  ],
+  "modifiers": [],
+  "generated_files": [
+    "tether_open_reel_stand.stl",
+    "tether_open_reel_base.stl",
+    "tether_open_reel_lid.stl",
+    "DESIGN_NOTES.md",
+    "PRINT.md"
+  ],
+  "document_hashes": {
+    "DESIGN_NOTES.md": "9377d646d21fede1b6f0363c24421801bbf9891d83acd261d4de3f3f233331dc",
+    "PRINT.md": "8057ac3b8b8c104e63c98b262f03a85ee3412da3097235769d5b14d647c8a53e"
+  }
+}

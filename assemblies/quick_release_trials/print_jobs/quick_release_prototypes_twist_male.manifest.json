@@ -1,0 +1,39 @@
+{
+  "file": "quick_release_prototypes_twist_male.3mf",
+  "sha256": "75c1427c97d5d24e99fed7e13a42b3fa08aafdecd1459979acc11941841c7627",
+  "moved_from": "parts/quick_release_prototypes_twist_male.3mf",
+  "moved_at": "2026-10-01T00:49:50.328990+09:00",
+  "geometry_status": "User-created project predates this recessed-rubber CAD update; do not treat as current. Reimport current STL before printing.",
+  "related_stl_at_archive": {
+    "quick_release_prototypes_knob.stl": "68b3eff0976cccaef6633b54f647f9d08ed43bc02d69830e5269b572d539fa1e",
+    "quick_release_prototypes_slide_female.stl": "a06f571f4732d9f142ee76f8328982a1841280e31ca86e851b883fd691875912",
+    "quick_release_prototypes_slide_gib.stl": "54098610793b0805547202378162a12d31f912526b325c9b57103e9ade4e3be8",
+    "quick_release_prototypes_slide_male.stl": "b23508bb2c618af140170abc23a49ba5f394421d6e97602c7b8a529ea3109048",
+    "quick_release_prototypes_snap_female.stl": "8f735944648902603c296fe2b0ed2b55e336de1e84c674a7a70b34e57fe62a18",
+    "quick_release_prototypes_snap_male.stl": "341145d31b69473d8573f1e525a59dbc094b2a0db68bc1c6034c678e38e35499",
+    "quick_release_prototypes_twist_female.stl": "8bc6a9c02cd0e6245963191a48bdf1edbacb0badbdeb5c5c85a8e12cc3a42f52",
+    "quick_release_prototypes_twist_knob.stl": "61ee978a1a0e6ca8fb02280095130869e1a2405bcc681a70eee39b45614a7142",
+    "quick_release_prototypes_twist_male.stl": "2c22acd8b3ed2e54badb15fd05ae62fa0bac20726f8d42c0e2c1af3cc4be6c9f"
+  },
+  "settings": {
+    "filament_type": [
+      "PETG",
+      "PLA-CF",
+      "PLA",
+      "PLA"
+    ],
+    "filament_settings_id": [
+      "eSUN PETG ベーシック @Bambu Lab X1 Carbon 0.4 nozzle",
+      "Bambu PLA-CF @BBL X1C",
+      "Bambu PLA Matte @BBL X1C",
+      "Bambu PLA Matte @BBL X1C"
+    ],
+    "print_settings_id": "0.20mm Standard @BBL X1C For esun-PETG-Basic",
+    "printer_settings_id": "Bambu Lab X1 Carbon 0.4 nozzle",
+    "layer_height": "0.2",
+    "wall_loops": "2",
+    "sparse_infill_density": "15%",
+    "support_type": "tree(auto)",
+    "enable_support": "0"
+  }
+}

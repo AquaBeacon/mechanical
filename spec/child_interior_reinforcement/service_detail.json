@@ -1,0 +1,332 @@
+{
+  "name": "child_interior",
+  "note": "2026-09-26: LCD撤去。下側は専用フランジブレースへ置換。左右ラグは接線方向へ拡幅し斜めリブを追加。旧記述は履歴。\n子機 (水中ユニット) 内装のみのサブアセンブリ。親機の parent_interior_p1 と同じ位置づけ。\n容器: WTE4 4in × 200mm アクリルチューブ + 上下フランジ BR-101040 (透明表示・取合い確認用)。下エンドキャップ (5×M10) と上ドーム (仮モデル) も透明表示 (2026-09-03 追加)。外装シェル / カメラは表示しない。\n2026-08-28: 浮いていた部品を全部固定 — スペーサ・ねじ・ワッシャ・シム・フォームパッドを実体化し、貫通していた 4 箇所 (LCD/ベゼル前板、電池箱アンカー/デッキ、ヒンジ枠ラグ/アーチ、ナックル/ドア板) を部品形状で修正。\n2026-09-03: 電池を 35×26×110 (リード −Z 出し) に変更。電池箱を ∩ チャンネル + 着脱床板 (皿ねじ 1 本) に作り直し、電池だけを取り出せるようにした。電源リードは切って XT30 メスを付け、基板側は J_BAT パッド直付けのピグテール (XT30 ペアは +X レール z 25..55)。基板間 XH ハーネスをモデル化 (parts/common/cabling/child_harness)。\n2026-09-03: 下フランジ固定を 3 点化 — 0°/180° (デッキラグ + MF10) に加え、90° (0,+47) を下 LCD アーチ (child_lcd_support_lower) の耳で直接フランジ内面へ M3×12。270° は電池箱床が塞ぐため未使用。上フランジ 4 穴は内側からねじが回せないので使わない。穴の根拠: parts/child/exterior/cots/wte4_flange/_work/images/ref/BR-101040_hole_map.png + WTE データシート Rev C.5。\ninterior グループは assemblies/child_vertical_assembly/placement.json と同一 (生成元: 本 placement を正とし、scad/lib/sync_child_interior.py で複製)。\n配置根拠: docs/子機内装_収まり検討.md / docs/子機内装_サービス設計.md。検証: scad/lib/verify_child_interior.py, scad/lib/check_asm_contacts.py。",
+  "coordinate_system": "X=左右(カメラ基線) / Y=前後(+Y が前・カメラとライトの向き) / Z=上。アクリルチューブ下端面が z=0。",
+  "groups": {
+    "vessel": true,
+    "interior": true,
+    "penetrators": true,
+    "keepout": true
+  },
+  "items": [
+    {
+      "label": "end_cap_bottom",
+      "part": "parts/child/exterior/cots/wte4_end_cap_5xm10",
+      "file": "WTE4-M-END-CAP-5XM10-R2",
+      "group": "vessel",
+      "color": "LightSteelBlue",
+      "alpha": 0.22,
+      "note": "下アルミキャップ (M10 x5 / BCD56)。プラグ(局所 z0..4.2)を下フランジ口へ差し込み、外面が z=-13.8。キャップ固定ねじ 6× M3×12 は BCD108 (フランジ外面)。内装固定はこのキャップではなくフランジ内面 BCD94",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -3.8
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -60.15,
+            -57.15,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "vtray_deck",
+      "part": "parts/child/interior/printed/child_vtray_deck",
+      "file": "child_vtray_deck_t200",
+      "group": "interior",
+      "color": "Orange",
+      "alpha": 0.9,
+      "note": "Printed closed seats, rounded roots spread over Z20..51",
+      "ops": []
+    },
+    {
+      "label": "vtray_batt_box",
+      "part": "parts/child/interior/printed/child_vtray_batt_box",
+      "group": "interior",
+      "color": "Chocolate",
+      "alpha": 0.9,
+      "note": "LiPo ∩ ベイ (2026-09-03 作り直し: 35×26×110 用)。デッキ下面へ耳 M3×8 ×4。−Z 端壁 (z 14..20、両端にリード切欠き) は貫通口の中、+Z はリップ (z 132..133.5、床板フックのスロット付き)。床は別部品",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "label": "vtray_batt_floor",
+      "part": "parts/child/interior/printed/child_vtray_batt_floor",
+      "group": "interior",
+      "color": "Peru",
+      "alpha": 1.0,
+      "note": "着脱床板 (37.4 × 3)。+Z 端のフック 2 個がリップのスロットへ、−Z 端のタブ (z 14..20) を端壁の柱へ M3×8 皿ねじ 1 本。外すと電池が −Y へ出る",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "label": "batt_floor_screw",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8_flat",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3×8 皿。床板の −Z タブ (y -43) から +Y へ、端壁の柱の下穴 Ø2.5 (深さ 6) にセルフタップ。サービスねじ Z36、+X 側壁。フランジ固定後も -Y 側からアクセス可能",
+      "ops": [
+        {
+          "translate": [
+            22.5,
+            -43,
+            36
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "flange_spacer_p",
+      "part": "parts/common/interior/cots/hex_spacer",
+      "file": "hex_spacer_m3_mf10",
+      "group": "interior",
+      "color": "Goldenrod",
+      "alpha": 1.0,
+      "note": "M3 MF10。下フランジ内面 (z=19) の BCD94 M3 穴へオスを 4〜5mm ねじ込む (6 を超えない)。オス部はフランジ金属の中 = 包絡検証対象外",
+      "ops": [
+        {
+          "translate": [
+            47,
+            0,
+            19
+          ]
+        }
+      ],
+      "skip_envelope": true
+    },
+    {
+      "label": "flange_screw_p",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x18",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3x18: printed 12 mm bearing seat, MF10 engagement 6 mm",
+      "ops": [
+        {
+          "translate": [
+            47,
+            0,
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "label": "flange_spacer_n",
+      "part": "parts/common/interior/cots/hex_spacer",
+      "file": "hex_spacer_m3_mf10",
+      "group": "interior",
+      "color": "Goldenrod",
+      "alpha": 1.0,
+      "note": "M3 MF10。下フランジ内面 (z=19) の BCD94 M3 穴へオスを 4〜5mm ねじ込む (6 を超えない)。オス部はフランジ金属の中 = 包絡検証対象外",
+      "ops": [
+        {
+          "translate": [
+            -47,
+            0,
+            19
+          ]
+        }
+      ],
+      "skip_envelope": true
+    },
+    {
+      "label": "flange_screw_n",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x18",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3x18: printed 12 mm bearing seat, MF10 engagement 6 mm",
+      "ops": [
+        {
+          "translate": [
+            -47,
+            0,
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "label": "flange_screw_y",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x18",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3x18: printed 12 mm bearing seat, flange engagement 6 mm",
+      "ops": [
+        {
+          "translate": [
+            0,
+            47,
+            31
+          ]
+        }
+      ],
+      "skip_envelope": true
+    },
+    {
+      "label": "flange_brace",
+      "part": "parts/child/interior/printed/child_flange_brace",
+      "group": "interior",
+      "color": "Gold",
+      "alpha": 1.0,
+      "note": "Printed brace: closed 12 mm bearing seat, rounded beams, pan screws",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            22
+          ]
+        }
+      ]
+    },
+    {
+      "label": "penetrator_1",
+      "part": "parts/child/exterior/cots/wetlink_m10_confirmed",
+      "file": "wetlink_m10_confirmed",
+      "group": "penetrators",
+      "color": "SlateGray",
+      "alpha": 1.0,
+      "note": "WetLink M10: thread20, cap10, nutAF16 height8; dry tip Z6.2",
+      "ops": [
+        {
+          "translate": [
+            1.7145055188062944e-15,
+            28.0,
+            -13.8
+          ]
+        }
+      ]
+    },
+    {
+      "label": "penetrator_2",
+      "part": "parts/child/exterior/cots/wetlink_m10_confirmed",
+      "file": "wetlink_m10_confirmed",
+      "group": "penetrators",
+      "color": "SlateGray",
+      "alpha": 1.0,
+      "note": "WetLink M10: thread20, cap10, nutAF16 height8; dry tip Z6.2",
+      "ops": [
+        {
+          "translate": [
+            26.6295824562643,
+            8.652475842498527,
+            -13.8
+          ]
+        }
+      ]
+    },
+    {
+      "label": "penetrator_3",
+      "part": "parts/child/exterior/cots/wetlink_m10_confirmed",
+      "file": "wetlink_m10_confirmed",
+      "group": "penetrators",
+      "color": "SlateGray",
+      "alpha": 1.0,
+      "note": "WetLink M10: thread20, cap10, nutAF16 height8; dry tip Z6.2",
+      "ops": [
+        {
+          "translate": [
+            16.457987064189247,
+            -22.65247584249853,
+            -13.8
+          ]
+        }
+      ]
+    },
+    {
+      "label": "penetrator_4",
+      "part": "parts/child/exterior/cots/wetlink_m10_confirmed",
+      "file": "wetlink_m10_confirmed",
+      "group": "penetrators",
+      "color": "SlateGray",
+      "alpha": 1.0,
+      "note": "WetLink M10: thread20, cap10, nutAF16 height8; dry tip Z6.2",
+      "ops": [
+        {
+          "translate": [
+            -16.457987064189243,
+            -22.65247584249853,
+            -13.8
+          ]
+        }
+      ]
+    },
+    {
+      "label": "penetrator_5",
+      "part": "parts/child/exterior/cots/wetlink_m10_confirmed",
+      "file": "wetlink_m10_confirmed",
+      "group": "penetrators",
+      "color": "SlateGray",
+      "alpha": 1.0,
+      "note": "WetLink M10: thread20, cap10, nutAF16 height8; dry tip Z6.2",
+      "ops": [
+        {
+          "translate": [
+            -26.6295824562643,
+            8.65247584249853,
+            -13.8
+          ]
+        }
+      ]
+    },
+    {
+      "label": "wire_allowance",
+      "part": "spec/child_interior_reinforcement",
+      "file": "service_wire_keepout",
+      "ops": [],
+      "group": "keepout",
+      "color": "LimeGreen",
+      "alpha": 0.35
+    },
+    {
+      "label": "tool_access",
+      "part": "spec/child_interior_reinforcement",
+      "file": "service_tool_keepout",
+      "ops": [],
+      "group": "keepout",
+      "color": "Red",
+      "alpha": 0.55
+    }
+  ]
+}

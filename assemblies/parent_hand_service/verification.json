@@ -1,0 +1,2527 @@
+{
+  "status": "PASS",
+  "switches": [
+    {
+      "reference": "SW_TX",
+      "centre_xy_mm": [
+        63.34,
+        130.46
+      ],
+      "lever_z_mm": [
+        44.425,
+        53.425
+      ],
+      "source": "Current KiCad footprint/model offset cross-checked against imported STEP lever solid"
+    },
+    {
+      "reference": "SW_PWR",
+      "centre_xy_mm": [
+        33.26,
+        199.54000000000002
+      ],
+      "lever_z_mm": [
+        44.425,
+        53.425
+      ],
+      "source": "Current KiCad footprint/model offset cross-checked against imported STEP lever solid"
+    }
+  ],
+  "tx": {
+    "populated_top_z_mm": 40.195,
+    "reserved_top_z_mm": 60.195,
+    "height_mm": 20.0
+  },
+  "checks": [
+    {
+      "name": "SW_TX finger_column",
+      "collisions": []
+    },
+    {
+      "name": "SW_TX actuator_envelope",
+      "collisions": []
+    },
+    {
+      "name": "SW_PWR finger_column",
+      "collisions": []
+    },
+    {
+      "name": "SW_PWR actuator_envelope",
+      "collisions": []
+    },
+    {
+      "name": "20 mm above highest TX component, complete populated XY envelope",
+      "collisions": []
+    },
+    {
+      "name": "MAIN USB plug/grip approach outside case",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs p_pwr",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs tx_improved",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs spresense",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs lipo",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs gnss_receiver",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs gnss_universal_pcb",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs gnss_pin_headers",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs gnss_sma_plug",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs gnss_antenna",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs antenna_ground_plate",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs magnetometer",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs plate",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs antenna_rack",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs gnss_universal_carrier",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs main_column_0",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs main_column_1",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs main_column_2",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs main_column_3",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs main_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs sony_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs coax_ring",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs sony_column_0",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs sony_column_1",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs sony_column_2",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs sony_column_3",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs gnss_column_0",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs gnss_column_1",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs pen_tether",
+      "collisions": []
+    },
+    {
+      "name": "p_main vs pen_td04a",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs tx_improved",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs spresense",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs lipo",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs gnss_receiver",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs gnss_universal_pcb",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs gnss_pin_headers",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs gnss_sma_plug",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs gnss_antenna",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs antenna_ground_plate",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs magnetometer",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs plate",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs antenna_rack",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs gnss_universal_carrier",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs main_column_0",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs main_column_1",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs main_column_2",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs main_column_3",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs main_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs sony_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs coax_ring",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs sony_column_0",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs sony_column_1",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs sony_column_2",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs sony_column_3",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs gnss_column_0",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs gnss_column_1",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs pen_tether",
+      "collisions": []
+    },
+    {
+      "name": "p_pwr vs pen_td04a",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs spresense",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs lipo",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs gnss_receiver",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs gnss_universal_pcb",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs gnss_pin_headers",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs gnss_sma_plug",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs gnss_antenna",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs antenna_ground_plate",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs magnetometer",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs plate",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs antenna_rack",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs gnss_universal_carrier",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs main_column_0",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs main_column_1",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs main_column_2",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs main_column_3",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs main_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs sony_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs coax_ring",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs sony_column_0",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs sony_column_1",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs sony_column_2",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs sony_column_3",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs gnss_column_0",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs gnss_column_1",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs pen_tether",
+      "collisions": []
+    },
+    {
+      "name": "tx_improved vs pen_td04a",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs lipo",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs gnss_receiver",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs gnss_universal_pcb",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs gnss_pin_headers",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs gnss_sma_plug",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs gnss_antenna",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs antenna_ground_plate",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs magnetometer",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs plate",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs antenna_rack",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs gnss_universal_carrier",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs main_column_0",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs main_column_1",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs main_column_2",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs main_column_3",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs main_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs sony_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs coax_ring",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs sony_column_0",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs sony_column_1",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs sony_column_2",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs sony_column_3",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs gnss_column_0",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs gnss_column_1",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs pen_tether",
+      "collisions": []
+    },
+    {
+      "name": "spresense vs pen_td04a",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs gnss_receiver",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs gnss_universal_pcb",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs gnss_pin_headers",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs gnss_sma_plug",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs gnss_antenna",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs antenna_ground_plate",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs magnetometer",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs plate",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs antenna_rack",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs gnss_universal_carrier",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs main_column_0",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs main_column_1",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs main_column_2",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs main_column_3",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs main_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs sony_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs coax_ring",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs sony_column_0",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs sony_column_1",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs sony_column_2",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs sony_column_3",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs gnss_column_0",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs gnss_column_1",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs pen_tether",
+      "collisions": []
+    },
+    {
+      "name": "lipo vs pen_td04a",
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver vs gnss_universal_pcb",
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver vs gnss_pin_headers",
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver vs gnss_sma_plug",
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver vs gnss_antenna",
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver vs antenna_ground_plate",
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver vs magnetometer",
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver vs plate",
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver vs antenna_rack",
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver vs gnss_universal_carrier",
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver vs main_column_0",
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver vs main_column_1",
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver vs main_column_2",
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver vs main_column_3",
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver vs main_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver vs sony_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver vs coax_ring",
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver vs sony_column_0",
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver vs sony_column_1",
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver vs sony_column_2",
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver vs sony_column_3",
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver vs gnss_column_0",
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver vs gnss_column_1",
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver vs pen_tether",
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver vs pen_td04a",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_pcb vs gnss_pin_headers",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_pcb vs gnss_sma_plug",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_pcb vs gnss_antenna",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_pcb vs antenna_ground_plate",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_pcb vs magnetometer",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_pcb vs plate",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_pcb vs antenna_rack",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_pcb vs gnss_universal_carrier",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_pcb vs main_column_0",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_pcb vs main_column_1",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_pcb vs main_column_2",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_pcb vs main_column_3",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_pcb vs main_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_pcb vs sony_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_pcb vs coax_ring",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_pcb vs sony_column_0",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_pcb vs sony_column_1",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_pcb vs sony_column_2",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_pcb vs sony_column_3",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_pcb vs gnss_column_0",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_pcb vs gnss_column_1",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_pcb vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_pcb vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_pcb vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_pcb vs pen_tether",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_pcb vs pen_td04a",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pin_headers vs gnss_sma_plug",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pin_headers vs gnss_antenna",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pin_headers vs antenna_ground_plate",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pin_headers vs magnetometer",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pin_headers vs plate",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pin_headers vs antenna_rack",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pin_headers vs gnss_universal_carrier",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pin_headers vs main_column_0",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pin_headers vs main_column_1",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pin_headers vs main_column_2",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pin_headers vs main_column_3",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pin_headers vs main_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pin_headers vs sony_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pin_headers vs coax_ring",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pin_headers vs sony_column_0",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pin_headers vs sony_column_1",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pin_headers vs sony_column_2",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pin_headers vs sony_column_3",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pin_headers vs gnss_column_0",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pin_headers vs gnss_column_1",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pin_headers vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pin_headers vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pin_headers vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pin_headers vs pen_tether",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pin_headers vs pen_td04a",
+      "collisions": []
+    },
+    {
+      "name": "gnss_sma_plug vs gnss_antenna",
+      "collisions": []
+    },
+    {
+      "name": "gnss_sma_plug vs antenna_ground_plate",
+      "collisions": []
+    },
+    {
+      "name": "gnss_sma_plug vs magnetometer",
+      "collisions": []
+    },
+    {
+      "name": "gnss_sma_plug vs plate",
+      "collisions": []
+    },
+    {
+      "name": "gnss_sma_plug vs antenna_rack",
+      "collisions": []
+    },
+    {
+      "name": "gnss_sma_plug vs gnss_universal_carrier",
+      "collisions": []
+    },
+    {
+      "name": "gnss_sma_plug vs main_column_0",
+      "collisions": []
+    },
+    {
+      "name": "gnss_sma_plug vs main_column_1",
+      "collisions": []
+    },
+    {
+      "name": "gnss_sma_plug vs main_column_2",
+      "collisions": []
+    },
+    {
+      "name": "gnss_sma_plug vs main_column_3",
+      "collisions": []
+    },
+    {
+      "name": "gnss_sma_plug vs main_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "gnss_sma_plug vs sony_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "gnss_sma_plug vs coax_ring",
+      "collisions": []
+    },
+    {
+      "name": "gnss_sma_plug vs sony_column_0",
+      "collisions": []
+    },
+    {
+      "name": "gnss_sma_plug vs sony_column_1",
+      "collisions": []
+    },
+    {
+      "name": "gnss_sma_plug vs sony_column_2",
+      "collisions": []
+    },
+    {
+      "name": "gnss_sma_plug vs sony_column_3",
+      "collisions": []
+    },
+    {
+      "name": "gnss_sma_plug vs gnss_column_0",
+      "collisions": []
+    },
+    {
+      "name": "gnss_sma_plug vs gnss_column_1",
+      "collisions": []
+    },
+    {
+      "name": "gnss_sma_plug vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "gnss_sma_plug vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "gnss_sma_plug vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "gnss_sma_plug vs pen_tether",
+      "collisions": []
+    },
+    {
+      "name": "gnss_sma_plug vs pen_td04a",
+      "collisions": []
+    },
+    {
+      "name": "gnss_antenna vs antenna_ground_plate",
+      "collisions": []
+    },
+    {
+      "name": "gnss_antenna vs magnetometer",
+      "collisions": []
+    },
+    {
+      "name": "gnss_antenna vs plate",
+      "collisions": []
+    },
+    {
+      "name": "gnss_antenna vs antenna_rack",
+      "collisions": []
+    },
+    {
+      "name": "gnss_antenna vs gnss_universal_carrier",
+      "collisions": []
+    },
+    {
+      "name": "gnss_antenna vs main_column_0",
+      "collisions": []
+    },
+    {
+      "name": "gnss_antenna vs main_column_1",
+      "collisions": []
+    },
+    {
+      "name": "gnss_antenna vs main_column_2",
+      "collisions": []
+    },
+    {
+      "name": "gnss_antenna vs main_column_3",
+      "collisions": []
+    },
+    {
+      "name": "gnss_antenna vs main_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "gnss_antenna vs sony_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "gnss_antenna vs coax_ring",
+      "collisions": []
+    },
+    {
+      "name": "gnss_antenna vs sony_column_0",
+      "collisions": []
+    },
+    {
+      "name": "gnss_antenna vs sony_column_1",
+      "collisions": []
+    },
+    {
+      "name": "gnss_antenna vs sony_column_2",
+      "collisions": []
+    },
+    {
+      "name": "gnss_antenna vs sony_column_3",
+      "collisions": []
+    },
+    {
+      "name": "gnss_antenna vs gnss_column_0",
+      "collisions": []
+    },
+    {
+      "name": "gnss_antenna vs gnss_column_1",
+      "collisions": []
+    },
+    {
+      "name": "gnss_antenna vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "gnss_antenna vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "gnss_antenna vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "gnss_antenna vs pen_tether",
+      "collisions": []
+    },
+    {
+      "name": "gnss_antenna vs pen_td04a",
+      "collisions": []
+    },
+    {
+      "name": "antenna_ground_plate vs magnetometer",
+      "collisions": []
+    },
+    {
+      "name": "antenna_ground_plate vs plate",
+      "collisions": []
+    },
+    {
+      "name": "antenna_ground_plate vs antenna_rack",
+      "collisions": []
+    },
+    {
+      "name": "antenna_ground_plate vs gnss_universal_carrier",
+      "collisions": []
+    },
+    {
+      "name": "antenna_ground_plate vs main_column_0",
+      "collisions": []
+    },
+    {
+      "name": "antenna_ground_plate vs main_column_1",
+      "collisions": []
+    },
+    {
+      "name": "antenna_ground_plate vs main_column_2",
+      "collisions": []
+    },
+    {
+      "name": "antenna_ground_plate vs main_column_3",
+      "collisions": []
+    },
+    {
+      "name": "antenna_ground_plate vs main_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "antenna_ground_plate vs sony_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "antenna_ground_plate vs coax_ring",
+      "collisions": []
+    },
+    {
+      "name": "antenna_ground_plate vs sony_column_0",
+      "collisions": []
+    },
+    {
+      "name": "antenna_ground_plate vs sony_column_1",
+      "collisions": []
+    },
+    {
+      "name": "antenna_ground_plate vs sony_column_2",
+      "collisions": []
+    },
+    {
+      "name": "antenna_ground_plate vs sony_column_3",
+      "collisions": []
+    },
+    {
+      "name": "antenna_ground_plate vs gnss_column_0",
+      "collisions": []
+    },
+    {
+      "name": "antenna_ground_plate vs gnss_column_1",
+      "collisions": []
+    },
+    {
+      "name": "antenna_ground_plate vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "antenna_ground_plate vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "antenna_ground_plate vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "antenna_ground_plate vs pen_tether",
+      "collisions": []
+    },
+    {
+      "name": "antenna_ground_plate vs pen_td04a",
+      "collisions": []
+    },
+    {
+      "name": "magnetometer vs plate",
+      "collisions": []
+    },
+    {
+      "name": "magnetometer vs antenna_rack",
+      "collisions": []
+    },
+    {
+      "name": "magnetometer vs gnss_universal_carrier",
+      "collisions": []
+    },
+    {
+      "name": "magnetometer vs main_column_0",
+      "collisions": []
+    },
+    {
+      "name": "magnetometer vs main_column_1",
+      "collisions": []
+    },
+    {
+      "name": "magnetometer vs main_column_2",
+      "collisions": []
+    },
+    {
+      "name": "magnetometer vs main_column_3",
+      "collisions": []
+    },
+    {
+      "name": "magnetometer vs main_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "magnetometer vs sony_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "magnetometer vs coax_ring",
+      "collisions": []
+    },
+    {
+      "name": "magnetometer vs sony_column_0",
+      "collisions": []
+    },
+    {
+      "name": "magnetometer vs sony_column_1",
+      "collisions": []
+    },
+    {
+      "name": "magnetometer vs sony_column_2",
+      "collisions": []
+    },
+    {
+      "name": "magnetometer vs sony_column_3",
+      "collisions": []
+    },
+    {
+      "name": "magnetometer vs gnss_column_0",
+      "collisions": []
+    },
+    {
+      "name": "magnetometer vs gnss_column_1",
+      "collisions": []
+    },
+    {
+      "name": "magnetometer vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "magnetometer vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "magnetometer vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "magnetometer vs pen_tether",
+      "collisions": []
+    },
+    {
+      "name": "magnetometer vs pen_td04a",
+      "collisions": []
+    },
+    {
+      "name": "plate vs antenna_rack",
+      "collisions": []
+    },
+    {
+      "name": "plate vs gnss_universal_carrier",
+      "collisions": []
+    },
+    {
+      "name": "plate vs main_column_0",
+      "collisions": []
+    },
+    {
+      "name": "plate vs main_column_1",
+      "collisions": []
+    },
+    {
+      "name": "plate vs main_column_2",
+      "collisions": []
+    },
+    {
+      "name": "plate vs main_column_3",
+      "collisions": []
+    },
+    {
+      "name": "plate vs main_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "plate vs sony_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "plate vs coax_ring",
+      "collisions": []
+    },
+    {
+      "name": "plate vs sony_column_0",
+      "collisions": []
+    },
+    {
+      "name": "plate vs sony_column_1",
+      "collisions": []
+    },
+    {
+      "name": "plate vs sony_column_2",
+      "collisions": []
+    },
+    {
+      "name": "plate vs sony_column_3",
+      "collisions": []
+    },
+    {
+      "name": "plate vs gnss_column_0",
+      "collisions": []
+    },
+    {
+      "name": "plate vs gnss_column_1",
+      "collisions": []
+    },
+    {
+      "name": "plate vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "plate vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "plate vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "antenna_rack vs gnss_universal_carrier",
+      "collisions": []
+    },
+    {
+      "name": "antenna_rack vs main_column_0",
+      "collisions": []
+    },
+    {
+      "name": "antenna_rack vs main_column_1",
+      "collisions": []
+    },
+    {
+      "name": "antenna_rack vs main_column_2",
+      "collisions": []
+    },
+    {
+      "name": "antenna_rack vs main_column_3",
+      "collisions": []
+    },
+    {
+      "name": "antenna_rack vs main_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "antenna_rack vs sony_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "antenna_rack vs coax_ring",
+      "collisions": []
+    },
+    {
+      "name": "antenna_rack vs sony_column_0",
+      "collisions": []
+    },
+    {
+      "name": "antenna_rack vs sony_column_1",
+      "collisions": []
+    },
+    {
+      "name": "antenna_rack vs sony_column_2",
+      "collisions": []
+    },
+    {
+      "name": "antenna_rack vs sony_column_3",
+      "collisions": []
+    },
+    {
+      "name": "antenna_rack vs gnss_column_0",
+      "collisions": []
+    },
+    {
+      "name": "antenna_rack vs gnss_column_1",
+      "collisions": []
+    },
+    {
+      "name": "antenna_rack vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "antenna_rack vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "antenna_rack vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_carrier vs main_column_0",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_carrier vs main_column_1",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_carrier vs main_column_2",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_carrier vs main_column_3",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_carrier vs main_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_carrier vs sony_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_carrier vs coax_ring",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_carrier vs sony_column_0",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_carrier vs sony_column_1",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_carrier vs sony_column_2",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_carrier vs sony_column_3",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_carrier vs gnss_column_0",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_carrier vs gnss_column_1",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_carrier vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_carrier vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_carrier vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "main_column_0 vs main_column_1",
+      "collisions": []
+    },
+    {
+      "name": "main_column_0 vs main_column_2",
+      "collisions": []
+    },
+    {
+      "name": "main_column_0 vs main_column_3",
+      "collisions": []
+    },
+    {
+      "name": "main_column_0 vs main_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "main_column_0 vs sony_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "main_column_0 vs coax_ring",
+      "collisions": []
+    },
+    {
+      "name": "main_column_0 vs sony_column_0",
+      "collisions": []
+    },
+    {
+      "name": "main_column_0 vs sony_column_1",
+      "collisions": []
+    },
+    {
+      "name": "main_column_0 vs sony_column_2",
+      "collisions": []
+    },
+    {
+      "name": "main_column_0 vs sony_column_3",
+      "collisions": []
+    },
+    {
+      "name": "main_column_0 vs gnss_column_0",
+      "collisions": []
+    },
+    {
+      "name": "main_column_0 vs gnss_column_1",
+      "collisions": []
+    },
+    {
+      "name": "main_column_0 vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "main_column_0 vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "main_column_0 vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "main_column_1 vs main_column_2",
+      "collisions": []
+    },
+    {
+      "name": "main_column_1 vs main_column_3",
+      "collisions": []
+    },
+    {
+      "name": "main_column_1 vs main_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "main_column_1 vs sony_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "main_column_1 vs coax_ring",
+      "collisions": []
+    },
+    {
+      "name": "main_column_1 vs sony_column_0",
+      "collisions": []
+    },
+    {
+      "name": "main_column_1 vs sony_column_1",
+      "collisions": []
+    },
+    {
+      "name": "main_column_1 vs sony_column_2",
+      "collisions": []
+    },
+    {
+      "name": "main_column_1 vs sony_column_3",
+      "collisions": []
+    },
+    {
+      "name": "main_column_1 vs gnss_column_0",
+      "collisions": []
+    },
+    {
+      "name": "main_column_1 vs gnss_column_1",
+      "collisions": []
+    },
+    {
+      "name": "main_column_1 vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "main_column_1 vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "main_column_1 vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "main_column_2 vs main_column_3",
+      "collisions": []
+    },
+    {
+      "name": "main_column_2 vs main_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "main_column_2 vs sony_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "main_column_2 vs coax_ring",
+      "collisions": []
+    },
+    {
+      "name": "main_column_2 vs sony_column_0",
+      "collisions": []
+    },
+    {
+      "name": "main_column_2 vs sony_column_1",
+      "collisions": []
+    },
+    {
+      "name": "main_column_2 vs sony_column_2",
+      "collisions": []
+    },
+    {
+      "name": "main_column_2 vs sony_column_3",
+      "collisions": []
+    },
+    {
+      "name": "main_column_2 vs gnss_column_0",
+      "collisions": []
+    },
+    {
+      "name": "main_column_2 vs gnss_column_1",
+      "collisions": []
+    },
+    {
+      "name": "main_column_2 vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "main_column_2 vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "main_column_2 vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "main_column_3 vs main_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "main_column_3 vs sony_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "main_column_3 vs coax_ring",
+      "collisions": []
+    },
+    {
+      "name": "main_column_3 vs sony_column_0",
+      "collisions": []
+    },
+    {
+      "name": "main_column_3 vs sony_column_1",
+      "collisions": []
+    },
+    {
+      "name": "main_column_3 vs sony_column_2",
+      "collisions": []
+    },
+    {
+      "name": "main_column_3 vs sony_column_3",
+      "collisions": []
+    },
+    {
+      "name": "main_column_3 vs gnss_column_0",
+      "collisions": []
+    },
+    {
+      "name": "main_column_3 vs gnss_column_1",
+      "collisions": []
+    },
+    {
+      "name": "main_column_3 vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "main_column_3 vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "main_column_3 vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "main_mount_plate vs sony_mount_plate",
+      "collisions": []
+    },
+    {
+      "name": "main_mount_plate vs coax_ring",
+      "collisions": []
+    },
+    {
+      "name": "main_mount_plate vs sony_column_0",
+      "collisions": []
+    },
+    {
+      "name": "main_mount_plate vs sony_column_1",
+      "collisions": []
+    },
+    {
+      "name": "main_mount_plate vs sony_column_2",
+      "collisions": []
+    },
+    {
+      "name": "main_mount_plate vs sony_column_3",
+      "collisions": []
+    },
+    {
+      "name": "main_mount_plate vs gnss_column_0",
+      "collisions": []
+    },
+    {
+      "name": "main_mount_plate vs gnss_column_1",
+      "collisions": []
+    },
+    {
+      "name": "main_mount_plate vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "main_mount_plate vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "main_mount_plate vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "sony_mount_plate vs coax_ring",
+      "collisions": []
+    },
+    {
+      "name": "sony_mount_plate vs sony_column_0",
+      "collisions": []
+    },
+    {
+      "name": "sony_mount_plate vs sony_column_1",
+      "collisions": []
+    },
+    {
+      "name": "sony_mount_plate vs sony_column_2",
+      "collisions": []
+    },
+    {
+      "name": "sony_mount_plate vs sony_column_3",
+      "collisions": []
+    },
+    {
+      "name": "sony_mount_plate vs gnss_column_0",
+      "collisions": []
+    },
+    {
+      "name": "sony_mount_plate vs gnss_column_1",
+      "collisions": []
+    },
+    {
+      "name": "sony_mount_plate vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "sony_mount_plate vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "sony_mount_plate vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "coax_ring vs sony_column_0",
+      "collisions": []
+    },
+    {
+      "name": "coax_ring vs sony_column_1",
+      "collisions": []
+    },
+    {
+      "name": "coax_ring vs sony_column_2",
+      "collisions": []
+    },
+    {
+      "name": "coax_ring vs sony_column_3",
+      "collisions": []
+    },
+    {
+      "name": "coax_ring vs gnss_column_0",
+      "collisions": []
+    },
+    {
+      "name": "coax_ring vs gnss_column_1",
+      "collisions": []
+    },
+    {
+      "name": "coax_ring vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "coax_ring vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "coax_ring vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_0 vs sony_column_1",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_0 vs sony_column_2",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_0 vs sony_column_3",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_0 vs gnss_column_0",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_0 vs gnss_column_1",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_0 vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_0 vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_0 vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_1 vs sony_column_2",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_1 vs sony_column_3",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_1 vs gnss_column_0",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_1 vs gnss_column_1",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_1 vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_1 vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_1 vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_2 vs sony_column_3",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_2 vs gnss_column_0",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_2 vs gnss_column_1",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_2 vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_2 vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_2 vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_3 vs gnss_column_0",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_3 vs gnss_column_1",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_3 vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_3 vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_3 vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "gnss_column_0 vs gnss_column_1",
+      "collisions": []
+    },
+    {
+      "name": "gnss_column_0 vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "gnss_column_0 vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "gnss_column_0 vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "gnss_column_1 vs gnss_column_2",
+      "collisions": []
+    },
+    {
+      "name": "gnss_column_1 vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "gnss_column_1 vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "gnss_column_2 vs gnss_column_3",
+      "collisions": []
+    },
+    {
+      "name": "gnss_column_2 vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "gnss_column_3 vs box_bcas212310g",
+      "collisions": []
+    },
+    {
+      "name": "gnss_coax_route occupied envelope",
+      "collisions": []
+    },
+    {
+      "name": "gnss_xh_keepout occupied envelope",
+      "collisions": []
+    }
+  ],
+  "lid_closure": {
+    "minimum_clearance_mm": 10.0,
+    "parts": [
+      {
+        "part": "plate",
+        "lid_clearance_mm": 68.84999999999985
+      },
+      {
+        "part": "p_main",
+        "lid_clearance_mm": 35.004999999999995
+      },
+      {
+        "part": "p_pwr",
+        "lid_clearance_mm": 43.675
+      },
+      {
+        "part": "tx_improved",
+        "lid_clearance_mm": 56.904999999999994
+      },
+      {
+        "part": "spresense",
+        "lid_clearance_mm": 12.5
+      },
+      {
+        "part": "lipo_tray",
+        "lid_clearance_mm": 48.09999999999985
+      },
+      {
+        "part": "lipo",
+        "lid_clearance_mm": 51.099999999999994
+      },
+      {
+        "part": "lipo_ret_lid",
+        "lid_clearance_mm": 45.099999999999994
+      },
+      {
+        "part": "lipo_ret_pads",
+        "lid_clearance_mm": 48.099999999999994
+      },
+      {
+        "part": "lipo_ret_bolt_0",
+        "lid_clearance_mm": 43.099999999999994
+      },
+      {
+        "part": "lipo_ret_nut_0",
+        "lid_clearance_mm": 53.099999999999994
+      },
+      {
+        "part": "lipo_ret_bolt_1",
+        "lid_clearance_mm": 43.099999999999994
+      },
+      {
+        "part": "lipo_ret_nut_1",
+        "lid_clearance_mm": 53.099999999999994
+      },
+      {
+        "part": "lipo_ret_bolt_2",
+        "lid_clearance_mm": 43.099999999999994
+      },
+      {
+        "part": "lipo_ret_nut_2",
+        "lid_clearance_mm": 53.099999999999994
+      },
+      {
+        "part": "lipo_ret_bolt_3",
+        "lid_clearance_mm": 43.099999999999994
+      },
+      {
+        "part": "lipo_ret_nut_3",
+        "lid_clearance_mm": 53.099999999999994
+      },
+      {
+        "part": "lipo_ret_mount_0",
+        "lid_clearance_mm": 72.1
+      },
+      {
+        "part": "lipo_ret_mount_1",
+        "lid_clearance_mm": 72.1
+      },
+      {
+        "part": "lipo_ret_mount_2",
+        "lid_clearance_mm": 72.1
+      },
+      {
+        "part": "lipo_ret_mount_3",
+        "lid_clearance_mm": 72.1
+      },
+      {
+        "part": "case_anchor_0",
+        "lid_clearance_mm": 78.1
+      },
+      {
+        "part": "case_anchor_1",
+        "lid_clearance_mm": 78.1
+      },
+      {
+        "part": "case_anchor_2",
+        "lid_clearance_mm": 78.1
+      },
+      {
+        "part": "main_column_0",
+        "lid_clearance_mm": 63.99999999999992
+      },
+      {
+        "part": "main_column_1",
+        "lid_clearance_mm": 63.99999999999992
+      },
+      {
+        "part": "main_column_2",
+        "lid_clearance_mm": 63.99999999999992
+      },
+      {
+        "part": "main_column_3",
+        "lid_clearance_mm": 63.99999999999992
+      },
+      {
+        "part": "main_mount_plate",
+        "lid_clearance_mm": 55.14999999999993
+      },
+      {
+        "part": "sony_mount_plate",
+        "lid_clearance_mm": 31.549999999999926
+      },
+      {
+        "part": "sony_column_0",
+        "lid_clearance_mm": 35.79999999999992
+      },
+      {
+        "part": "sony_column_1",
+        "lid_clearance_mm": 35.79999999999992
+      },
+      {
+        "part": "sony_column_2",
+        "lid_clearance_mm": 35.79999999999992
+      },
+      {
+        "part": "sony_column_3",
+        "lid_clearance_mm": 35.79999999999992
+      },
+      {
+        "part": "main_mount_0",
+        "lid_clearance_mm": 50.49999999999999
+      },
+      {
+        "part": "main_mount_1",
+        "lid_clearance_mm": 51.49999999999999
+      },
+      {
+        "part": "main_mount_2",
+        "lid_clearance_mm": 50.49999999999999
+      },
+      {
+        "part": "main_mount_3",
+        "lid_clearance_mm": 50.49999999999999
+      },
+      {
+        "part": "sony_mount_0",
+        "lid_clearance_mm": 28.19999999999999
+      },
+      {
+        "part": "sony_mount_1",
+        "lid_clearance_mm": 28.19999999999999
+      },
+      {
+        "part": "sony_mount_2",
+        "lid_clearance_mm": 28.19999999999999
+      },
+      {
+        "part": "sony_mount_3",
+        "lid_clearance_mm": 28.19999999999999
+      },
+      {
+        "part": "pwr_mount_0",
+        "lid_clearance_mm": 65.19999999999999
+      },
+      {
+        "part": "pwr_mount_1",
+        "lid_clearance_mm": 65.19999999999999
+      },
+      {
+        "part": "pwr_mount_2",
+        "lid_clearance_mm": 65.19999999999999
+      },
+      {
+        "part": "pwr_mount_3",
+        "lid_clearance_mm": 65.19999999999999
+      },
+      {
+        "part": "tx_mount_0",
+        "lid_clearance_mm": 68.69999999999999
+      },
+      {
+        "part": "tx_mount_1",
+        "lid_clearance_mm": 68.69999999999999
+      },
+      {
+        "part": "tx_mount_2",
+        "lid_clearance_mm": 68.69999999999999
+      },
+      {
+        "part": "tx_mount_3",
+        "lid_clearance_mm": 68.69999999999999
+      },
+      {
+        "part": "main_carrier_nut_0",
+        "lid_clearance_mm": 78.5
+      },
+      {
+        "part": "main_carrier_mount_0",
+        "lid_clearance_mm": 57.3
+      },
+      {
+        "part": "main_carrier_nut_1",
+        "lid_clearance_mm": 78.5
+      },
+      {
+        "part": "main_carrier_nut_2",
+        "lid_clearance_mm": 78.5
+      },
+      {
+        "part": "main_carrier_nut_3",
+        "lid_clearance_mm": 78.5
+      },
+      {
+        "part": "sony_carrier_nut_0",
+        "lid_clearance_mm": 78.5
+      },
+      {
+        "part": "sony_carrier_mount_0",
+        "lid_clearance_mm": 32.0
+      },
+      {
+        "part": "sony_carrier_nut_1",
+        "lid_clearance_mm": 78.5
+      },
+      {
+        "part": "sony_carrier_mount_1",
+        "lid_clearance_mm": 32.0
+      },
+      {
+        "part": "sony_carrier_nut_2",
+        "lid_clearance_mm": 78.5
+      },
+      {
+        "part": "sony_carrier_mount_2",
+        "lid_clearance_mm": 32.0
+      },
+      {
+        "part": "sony_carrier_nut_3",
+        "lid_clearance_mm": 78.5
+      },
+      {
+        "part": "sony_carrier_mount_3",
+        "lid_clearance_mm": 32.0
+      },
+      {
+        "part": "gnss_frame_nut_0",
+        "lid_clearance_mm": 78.5
+      },
+      {
+        "part": "gnss_frame_mount_0",
+        "lid_clearance_mm": 41.599999999999994
+      },
+      {
+        "part": "gnss_frame_nut_1",
+        "lid_clearance_mm": 78.5
+      },
+      {
+        "part": "gnss_frame_mount_1",
+        "lid_clearance_mm": 41.599999999999994
+      },
+      {
+        "part": "gnss_frame_nut_2",
+        "lid_clearance_mm": 78.5
+      },
+      {
+        "part": "gnss_frame_mount_2",
+        "lid_clearance_mm": 41.599999999999994
+      },
+      {
+        "part": "gnss_frame_nut_3",
+        "lid_clearance_mm": 78.5
+      },
+      {
+        "part": "gnss_frame_mount_3",
+        "lid_clearance_mm": 41.599999999999994
+      },
+      {
+        "part": "antenna_rack_nut_0",
+        "lid_clearance_mm": 78.5
+      },
+      {
+        "part": "antenna_rack_mount_0",
+        "lid_clearance_mm": 30.5
+      },
+      {
+        "part": "antenna_rack_nut_1",
+        "lid_clearance_mm": 78.5
+      },
+      {
+        "part": "antenna_rack_mount_1",
+        "lid_clearance_mm": 30.5
+      },
+      {
+        "part": "antenna_rack_nut_2",
+        "lid_clearance_mm": 78.5
+      },
+      {
+        "part": "antenna_rack_mount_2",
+        "lid_clearance_mm": 30.5
+      },
+      {
+        "part": "antenna_rack_nut_3",
+        "lid_clearance_mm": 78.5
+      },
+      {
+        "part": "antenna_rack_mount_3",
+        "lid_clearance_mm": 30.5
+      },
+      {
+        "part": "gnss_receiver",
+        "lid_clearance_mm": 25.400000000000006
+      },
+      {
+        "part": "gnss_sma_plug",
+        "lid_clearance_mm": 24.700000000000003
+      },
+      {
+        "part": "gnss_pin_headers",
+        "lid_clearance_mm": 32.5
+      },
+      {
+        "part": "gnss_universal_pcb",
+        "lid_clearance_mm": 39.49999999999999
+      },
+      {
+        "part": "gnss_xh_keepout",
+        "lid_clearance_mm": 32.89999999999999
+      },
+      {
+        "part": "gnss_universal_carrier",
+        "lid_clearance_mm": 39.79999999999999
+      },
+      {
+        "part": "gnss_column_0",
+        "lid_clearance_mm": 46.29999999999999
+      },
+      {
+        "part": "gnss_column_1",
+        "lid_clearance_mm": 46.29999999999999
+      },
+      {
+        "part": "gnss_column_2",
+        "lid_clearance_mm": 46.29999999999999
+      },
+      {
+        "part": "gnss_column_3",
+        "lid_clearance_mm": 46.29999999999999
+      },
+      {
+        "part": "antenna_rack",
+        "lid_clearance_mm": 33.49999999999764
+      },
+      {
+        "part": "coax_ring",
+        "lid_clearance_mm": 63.766904519477336
+      },
+      {
+        "part": "antenna_ground_plate",
+        "lid_clearance_mm": 32.5
+      },
+      {
+        "part": "gnss_antenna",
+        "lid_clearance_mm": 10.0
+      },
+      {
+        "part": "coax_coil_keepout",
+        "lid_clearance_mm": 64.8
+      },
+      {
+        "part": "gnss_coax_route",
+        "lid_clearance_mm": 27.299999999999983
+      },
+      {
+        "part": "magnetometer",
+        "lid_clearance_mm": 36.56999999999997
+      },
+      {
+        "part": "mag_bolt_0",
+        "lid_clearance_mm": 37.92999999999999
+      },
+      {
+        "part": "mag_nut_0",
+        "lid_clearance_mm": 45.599999999999994
+      },
+      {
+        "part": "mag_bolt_1",
+        "lid_clearance_mm": 37.92999999999999
+      },
+      {
+        "part": "mag_nut_1",
+        "lid_clearance_mm": 45.599999999999994
+      },
+      {
+        "part": "mag_bolt_2",
+        "lid_clearance_mm": 37.92999999999999
+      },
+      {
+        "part": "mag_nut_2",
+        "lid_clearance_mm": 45.599999999999994
+      },
+      {
+        "part": "mag_bolt_3",
+        "lid_clearance_mm": 37.92999999999999
+      },
+      {
+        "part": "mag_nut_3",
+        "lid_clearance_mm": 45.599999999999994
+      },
+      {
+        "part": "ground_plate_mount_0",
+        "lid_clearance_mm": 30.5
+      },
+      {
+        "part": "ground_plate_nut_0",
+        "lid_clearance_mm": 33.49999999999999
+      },
+      {
+        "part": "ground_plate_mount_1",
+        "lid_clearance_mm": 30.5
+      },
+      {
+        "part": "ground_plate_nut_1",
+        "lid_clearance_mm": 33.49999999999999
+      },
+      {
+        "part": "ground_plate_mount_2",
+        "lid_clearance_mm": 30.5
+      },
+      {
+        "part": "ground_plate_nut_2",
+        "lid_clearance_mm": 33.49999999999999
+      },
+      {
+        "part": "ground_plate_mount_3",
+        "lid_clearance_mm": 30.5
+      },
+      {
+        "part": "ground_plate_nut_3",
+        "lid_clearance_mm": 33.49999999999999
+      },
+      {
+        "part": "antenna_mount_0",
+        "lid_clearance_mm": 23.900000000000006
+      },
+      {
+        "part": "antenna_nut_0",
+        "lid_clearance_mm": 33.49999999999999
+      },
+      {
+        "part": "antenna_mount_1",
+        "lid_clearance_mm": 23.900000000000006
+      },
+      {
+        "part": "antenna_nut_1",
+        "lid_clearance_mm": 33.49999999999999
+      },
+      {
+        "part": "gnss_pcb_bolt_0",
+        "lid_clearance_mm": 37.49999999999999
+      },
+      {
+        "part": "gnss_pcb_nut_0",
+        "lid_clearance_mm": 47.099999999999994
+      },
+      {
+        "part": "gnss_pcb_bolt_1",
+        "lid_clearance_mm": 37.49999999999999
+      },
+      {
+        "part": "gnss_pcb_nut_1",
+        "lid_clearance_mm": 47.099999999999994
+      },
+      {
+        "part": "gnss_pcb_bolt_2",
+        "lid_clearance_mm": 37.49999999999999
+      },
+      {
+        "part": "gnss_pcb_nut_2",
+        "lid_clearance_mm": 47.099999999999994
+      },
+      {
+        "part": "gnss_pcb_bolt_3",
+        "lid_clearance_mm": 37.49999999999999
+      },
+      {
+        "part": "gnss_pcb_nut_3",
+        "lid_clearance_mm": 47.099999999999994
+      }
+    ]
+  },
+  "conditions": "Case lid open. Both power switches and SD cards at installed height. MAIN USB checked with case and case-mounted penetrators disconnected/removed. Cable harness and human grip require fit check.",
+  "manufacturing_release": false
+}

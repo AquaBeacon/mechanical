@@ -1,0 +1,41 @@
+{
+  "consumer": "child_flange_brace",
+  "references": [
+    {
+      "part": "wte4_flange",
+      "path": "parts/child/exterior/cots/wte4_flange",
+      "md_sha256": "a9663f01b7e127ea60ca195fe3221172a790484dd11bd4d8d01f791760e97895",
+      "stl_sha256": null,
+      "bbox_mm": null,
+      "status_at_lock": [
+        "needs_measure"
+      ],
+      "values": {
+        "flange_bcd": 94.0,
+        "flange_face_z": 19.0
+      },
+      "confirmed_by_human": true,
+      "confirmed_at": "2026-09-26T17:43:34",
+      "note": "User confirmed child_interior 200 mm vertical assembly, 2026-09-26. Existing lower flange interfaces retained."
+    },
+    {
+      "part": "child_main",
+      "path": "parts/child/interior/pcb/child_main",
+      "md_sha256": "57e925ae8f0a492ad74bf0d879c7299014c2f4035a50ff0c8fd15645f758e2e9",
+      "stl_sha256": "e919bdcae2f32fc87c5a6d2eb9438338fbeedb8e6e01a8e3b9d2be2ac39a9d11",
+      "bbox_mm": [
+        104.0,
+        88.0,
+        24.85
+      ],
+      "status_at_lock": [
+        "needs_measure",
+        "provisional"
+      ],
+      "values": {},
+      "confirmed_by_human": true,
+      "confirmed_at": "2026-09-26T17:43:35",
+      "note": "User confirmed C-MAIN 104x88 in current vertical interior, 2026-09-26. Mounting holes unchanged and verified against KiCad."
+    }
+  ]
+}

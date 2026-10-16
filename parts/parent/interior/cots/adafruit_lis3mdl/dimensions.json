@@ -1,0 +1,55 @@
+{
+  "vendor_holes_xy_d_mm": [
+    [
+      2.54,
+      15.24,
+      2.5
+    ],
+    [
+      22.86,
+      15.24,
+      2.5
+    ],
+    [
+      2.54,
+      2.54,
+      2.5
+    ],
+    [
+      22.86,
+      2.54,
+      2.5
+    ]
+  ],
+  "installed_holes_xy_mm": [
+    [
+      47.54,
+      197.54
+    ],
+    [
+      47.54,
+      217.86
+    ],
+    [
+      60.24,
+      197.54
+    ],
+    [
+      60.24,
+      217.86
+    ]
+  ],
+  "origin_mm": [
+    62.78,
+    195,
+    56
+  ],
+  "pcb_thickness_mm": 1.57,
+  "model_bounds_mm": [
+    25.4,
+    17.78,
+    4.53
+  ],
+  "fasteners": "Four nylon M2x8 bolts and M2 nuts; head and nut envelopes provisional, no steel fasteners at sensor",
+  "magnetic_performance": "Mechanical location only; calibrate and measure with complete powered assembly, no accuracy guarantee"
+}

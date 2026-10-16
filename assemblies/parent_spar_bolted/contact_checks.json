@@ -1,0 +1,275 @@
+{
+ "floating": [],
+ "pairs": [
+  {
+   "a": "disk",
+   "b": "fin_0",
+   "gap": 0.11761335192500028,
+   "penetration": 0.0
+  },
+  {
+   "a": "disk",
+   "b": "fin_90",
+   "gap": 0.08856251004063645,
+   "penetration": 0.0
+  },
+  {
+   "a": "disk",
+   "b": "fin_180",
+   "gap": 0.1629712822951783,
+   "penetration": 0.0
+  },
+  {
+   "a": "disk",
+   "b": "fin_270",
+   "gap": 0.34517975758767167,
+   "penetration": 0.0
+  },
+  {
+   "a": "disk",
+   "b": "hub_-295",
+   "gap": 0.0,
+   "penetration": 0.0
+  },
+  {
+   "a": "disk",
+   "b": "beam_lower",
+   "gap": 0.3535533905932738,
+   "penetration": 0.0
+  },
+  {
+   "a": "disk",
+   "b": "ballast_body",
+   "gap": 0.0,
+   "penetration": 0.0
+  },
+  {
+   "a": "fin_0",
+   "b": "hub_-295",
+   "gap": 0.25,
+   "penetration": 0.0
+  },
+  {
+   "a": "fin_0",
+   "b": "hub_-202",
+   "gap": 0.25000000019999996,
+   "penetration": 0.0
+  },
+  {
+   "a": "fin_0",
+   "b": "ballast_body",
+   "gap": 5.004189202704398,
+   "penetration": 0.0
+  },
+  {
+   "a": "fin_90",
+   "b": "hub_-295",
+   "gap": 0.24999999999999778,
+   "penetration": 0.0
+  },
+  {
+   "a": "fin_90",
+   "b": "hub_-202",
+   "gap": 0.25000000019999774,
+   "penetration": 0.0
+  },
+  {
+   "a": "fin_90",
+   "b": "ballast_body",
+   "gap": 5.010114282194201,
+   "penetration": 0.0
+  },
+  {
+   "a": "fin_180",
+   "b": "hub_-295",
+   "gap": 0.24999999999999512,
+   "penetration": 0.0
+  },
+  {
+   "a": "fin_180",
+   "b": "hub_-202",
+   "gap": 0.2500000001999951,
+   "penetration": 0.0
+  },
+  {
+   "a": "fin_180",
+   "b": "ballast_body",
+   "gap": 5.009918913933353,
+   "penetration": 0.0
+  },
+  {
+   "a": "fin_270",
+   "b": "hub_-295",
+   "gap": 0.2499999999999929,
+   "penetration": 0.0
+  },
+  {
+   "a": "fin_270",
+   "b": "hub_-202",
+   "gap": 0.25000000019999286,
+   "penetration": 0.0
+  },
+  {
+   "a": "fin_270",
+   "b": "ballast_body",
+   "gap": 5.010247220248653,
+   "penetration": 0.0
+  },
+  {
+   "a": "hub_-295",
+   "b": "beam_lower",
+   "gap": 0.25,
+   "penetration": 0.0
+  },
+  {
+   "a": "hub_-295",
+   "b": "ballast_body",
+   "gap": 5.0,
+   "penetration": 0.0
+  },
+  {
+   "a": "hub_-202",
+   "b": "beam_lower",
+   "gap": 0.25,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "beam_upper",
+   "gap": 0.0,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "coupler_front",
+   "gap": 0.25,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "coupler_back",
+   "gap": 0.25,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "ballast_body",
+   "gap": 5.002575029235361,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_upper",
+   "b": "coupler_front",
+   "gap": 0.25,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_upper",
+   "b": "coupler_back",
+   "gap": 0.25,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_upper",
+   "b": "float_bottom",
+   "gap": 0.09662312249042848,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_front",
+   "b": "coupler_back",
+   "gap": 0.5,
+   "penetration": 0.0
+  },
+  {
+   "a": "float_bottom",
+   "b": "float_body_0",
+   "gap": 0.020072876628778217,
+   "penetration": 0.0
+  },
+  {
+   "a": "float_body_0",
+   "b": "float_lid_0",
+   "gap": 0.0,
+   "penetration": 0.0
+  },
+  {
+   "a": "float_body_0",
+   "b": "float_body_1",
+   "gap": 6.0,
+   "penetration": 0.0
+  },
+  {
+   "a": "float_lid_0",
+   "b": "float_body_1",
+   "gap": 0.0,
+   "penetration": 0.0
+  },
+  {
+   "a": "float_body_1",
+   "b": "float_lid_1",
+   "gap": 0.0,
+   "penetration": 0.0
+  },
+  {
+   "a": "float_body_1",
+   "b": "float_top",
+   "gap": 6.0,
+   "penetration": 0.0
+  },
+  {
+   "a": "float_body_1",
+   "b": "camera_bridge",
+   "gap": 5.087191129228355,
+   "penetration": 0.0
+  },
+  {
+   "a": "float_lid_1",
+   "b": "float_top",
+   "gap": 0.0,
+   "penetration": 0.0
+  },
+  {
+   "a": "float_lid_1",
+   "b": "camera_bridge",
+   "gap": 5.046484702083961,
+   "penetration": 0.0
+  },
+  {
+   "a": "float_top",
+   "b": "camera_bridge",
+   "gap": 5.027965680258713,
+   "penetration": 0.0
+  },
+  {
+   "a": "float_top",
+   "b": "deck",
+   "gap": 0.03995324370796346,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "ballast_lid",
+   "gap": 6.217248937900877e-15,
+   "penetration": 0.0
+  },
+  {
+   "a": "camera_bridge",
+   "b": "deck",
+   "gap": 0.058486402695991604,
+   "penetration": 0.0
+  },
+  {
+   "a": "camera_bridge",
+   "b": "camera_mount",
+   "gap": 0.016520676444322015,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_bridge",
+   "b": "deck",
+   "gap": 0.05109450488679234,
+   "penetration": 0.0
+  }
+ ]
+}

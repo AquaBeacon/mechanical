@@ -1,0 +1,23 @@
+{
+  "consumer": "child_vtray_deck",
+  "references": [
+    {
+      "part": "wetlink_m10_confirmed",
+      "path": "parts/child/exterior/cots/wetlink_m10_confirmed",
+      "md_sha256": "2545c6ce35af2266f18b1423c85c45a2b15bef8b9444c814c5e3edb6b7d2b871",
+      "stl_sha256": "7dea8f597a35c7d487ee85e7aa4ef1319f5ed94703d82e5df6bb3b5f06fe2da2",
+      "bbox_mm": [
+        18.48,
+        16.0,
+        46.0
+      ],
+      "status_at_lock": [
+        "provisional"
+      ],
+      "values": {},
+      "confirmed_by_human": true,
+      "confirmed_at": "2026-09-27T11:52:51",
+      "note": "Human confirmed 2026-09-27: five WetLink M10s in lower cap; retire lower circular frame and reserve wire clearance."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "part": "../parent_deck.stl",
+  "material": "PETG",
+  "build_axis": "Z",
+  "target_elements": 90000,
+  "safety_factor": 2.0,
+  "max_deflection_mm": 1.0,
+  "regions": {
+    "lip_R_face": {"type": "box", "min": [104.5, -118, -50], "max": [108.5, 118, 0]},
+    "lip_L_face": {"type": "box", "min": [-108.5, -118, -50], "max": [-104.5, 118, 0]},
+    "deck_top":   {"type": "face", "axis": "Z", "side": "max", "depth": 3.0},
+    "keel_pad_S": {"type": "box", "min": [-25, -95, -60.5], "max": [25, -45, -57]}
+  },
+  "cases": [
+    {
+      "name": "L2 lift: held at both lip HP40 faces (cradles), box+interior+accessories 2.45 kg x5 = 120 N on deck top, self weight x5",
+      "supports": [{"region": "lip_R_face", "fix": "xyz"}, {"region": "lip_L_face", "fix": "xyz"}],
+      "loads": [{"region": "deck_top", "force": [0, 0, -120]}],
+      "gravity": {"direction": [0, 0, -1], "g_factor": 5.0}
+    },
+    {
+      "name": "L3 drop 10g: accessory 0.4 kg on south keel pad = 40 N down, held at lips",
+      "supports": [{"region": "lip_R_face", "fix": "xyz"}, {"region": "lip_L_face", "fix": "xyz"}],
+      "loads": [{"region": "keel_pad_S", "force": [0, 0, -40]}],
+      "gravity": {"direction": [0, 0, -1], "g_factor": 10.0}
+    },
+    {
+      "name": "L2b side pull: tether 50 N along -Y at south fairlead, held at lips",
+      "supports": [{"region": "lip_R_face", "fix": "xyz"}, {"region": "lip_L_face", "fix": "xyz"}],
+      "loads": [{"region": {"type": "box", "min": [-16, -106, -50], "max": [16, -99, -6]}, "force": [0, -50, 0]}],
+      "gravity": {"direction": [0, 0, -1], "g_factor": 3.0}
+    }
+  ]
+}

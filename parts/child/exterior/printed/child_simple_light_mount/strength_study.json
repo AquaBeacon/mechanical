@@ -1,0 +1,172 @@
+{
+  "units": "mm_N_MPa",
+  "part": "child_simple_light_mount_base.stl",
+  "material": "PETG",
+  "build_axis": "Z",
+  "voxel_mm": 2,
+  "safety_factor": 3,
+  "max_deflection_mm": 1,
+  "_assumption": "Provisional 0.5 kg light, handling factor 5, rounded 25N. Solid material; no friction, creep or clamp preload validation.",
+  "regions": {
+    "bolt0": {
+      "type": "box",
+      "min": [
+        -24,
+        0,
+        -24
+      ],
+      "max": [
+        -16,
+        6,
+        -16
+      ]
+    },
+    "bolt1": {
+      "type": "box",
+      "min": [
+        -24,
+        0,
+        16
+      ],
+      "max": [
+        -16,
+        6,
+        24
+      ]
+    },
+    "bolt2": {
+      "type": "box",
+      "min": [
+        16,
+        0,
+        -24
+      ],
+      "max": [
+        24,
+        6,
+        -16
+      ]
+    },
+    "bolt3": {
+      "type": "box",
+      "min": [
+        16,
+        0,
+        16
+      ],
+      "max": [
+        24,
+        6,
+        24
+      ]
+    },
+    "load": {
+      "type": "box",
+      "min": [
+        -21,
+        24,
+        -25
+      ],
+      "max": [
+        21,
+        40,
+        25
+      ]
+    }
+  },
+  "cases": [
+    {
+      "name": "lateral_25N",
+      "supports": [
+        {
+          "region": "bolt0",
+          "fix": "xyz"
+        },
+        {
+          "region": "bolt1",
+          "fix": "xyz"
+        },
+        {
+          "region": "bolt2",
+          "fix": "xyz"
+        },
+        {
+          "region": "bolt3",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "load",
+          "force": [
+            25,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "axial_25N",
+      "supports": [
+        {
+          "region": "bolt0",
+          "fix": "xyz"
+        },
+        {
+          "region": "bolt1",
+          "fix": "xyz"
+        },
+        {
+          "region": "bolt2",
+          "fix": "xyz"
+        },
+        {
+          "region": "bolt3",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "load",
+          "force": [
+            0,
+            0,
+            -25
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pull_25N",
+      "supports": [
+        {
+          "region": "bolt0",
+          "fix": "xyz"
+        },
+        {
+          "region": "bolt1",
+          "fix": "xyz"
+        },
+        {
+          "region": "bolt2",
+          "fix": "xyz"
+        },
+        {
+          "region": "bolt3",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "load",
+          "force": [
+            0,
+            25,
+            0
+          ]
+        }
+      ]
+    }
+  ]
+}

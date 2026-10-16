@@ -1,0 +1,15 @@
+{
+  "print_rotations_deg": {
+    "child_vtray_batt_box": [
+      -90,
+      0,
+      0
+    ]
+  },
+  "degenerate_precision_weld_files": [
+    "child_vtray_batt_box"
+  ],
+  "degenerate_edge_flip_files": [
+    "child_vtray_batt_box"
+  ]
+}

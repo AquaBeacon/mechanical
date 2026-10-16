@@ -1,0 +1,13 @@
+  NOTE  fine mesh (0.400 mm) is an estimated ~1064440 solid elements (8x the 0.800 mm grid's 133055) -- this can take a long time; continuing because --converge was asked for
+mesh convergence: 1.600 mm (coarse) / 0.800 mm (medium) / 0.400 mm (fine)
+wrote spec/child_interior_reinforcement/pla_matte_lever/after_fea\deck_after_fea_convergence.json
+
+case                         d@1.60     d@0.80     d@0.40    SF@1.60  SF@0.80  SF@0.40   verdict
+200g_5g_X_-1                 0.0839     0.0697     0.0681      49.58    63.14    67.63   FAIL
+200g_5g_X_+1                 0.0839     0.0697     0.0681      49.30    63.22    67.79   FAIL
+200g_5g_Y_-1                19.9912    12.5841    12.5177       2.86     5.01     5.39   FAIL
+200g_5g_Y_+1                19.9912    12.5841    12.5177       2.81     5.05     5.56   FAIL
+governing case: 200g_5g_Y_-1 (SF p99.5 5.39 at 0.400 mm)
+mesh convergence: FAIL -- still moving with the mesh in: 200g_5g_X_-1 (the answer is still moving with the mesh; it is a property of the discretisation, not of the part), 200g_5g_X_+1 (the answer is still moving with the mesh; it is a property of the discretisation, not of the part), 200g_5g_Y_-1 (the numbers settled but the hotspot moved 102.02 mm (allowed 0.80); the two meshes are not describing the same failure, so it is a property of the discretisation, not of the part), 200g_5g_Y_+1 (the numbers settled but the hotspot moved 102.02 mm (allowed 0.80); the two meshes are not describing the same failure, so it is a property of the discretisation, not of the part)
+
+=== FAIL ===

@@ -1,0 +1,117 @@
+[
+  {
+    "check": "base_solid",
+    "passed": true,
+    "value": 1
+  },
+  {
+    "check": "cap_solid",
+    "passed": true,
+    "value": 1
+  },
+  {
+    "check": "base_cap_overlap",
+    "passed": true,
+    "value": 0.0
+  },
+  {
+    "check": "split_gap",
+    "passed": true,
+    "value": 1.5
+  },
+  {
+    "check": "base_rear_overlap",
+    "passed": true,
+    "value": 0.0
+  },
+  {
+    "check": "rear_contact",
+    "passed": true,
+    "value": 0.0
+  },
+  {
+    "check": "cap_rear_overlap",
+    "passed": true,
+    "value": 0.0
+  },
+  {
+    "check": "mount_M3_shaft_-20_-20",
+    "passed": true,
+    "value": 0.0
+  },
+  {
+    "check": "mount_head_-20_-20",
+    "passed": true,
+    "value": 0.0
+  },
+  {
+    "check": "L_key_-20_-20",
+    "passed": true,
+    "value": 0.0
+  },
+  {
+    "check": "rear_nut_tool_-20_-20",
+    "passed": true,
+    "value": 0.0
+  },
+  {
+    "check": "mount_M3_shaft_-20_20",
+    "passed": true,
+    "value": 0.0
+  },
+  {
+    "check": "mount_head_-20_20",
+    "passed": true,
+    "value": 0.0
+  },
+  {
+    "check": "L_key_-20_20",
+    "passed": true,
+    "value": 0.0
+  },
+  {
+    "check": "rear_nut_tool_-20_20",
+    "passed": true,
+    "value": 0.0
+  },
+  {
+    "check": "mount_M3_shaft_20_-20",
+    "passed": true,
+    "value": 0.0
+  },
+  {
+    "check": "mount_head_20_-20",
+    "passed": true,
+    "value": 0.0
+  },
+  {
+    "check": "L_key_20_-20",
+    "passed": true,
+    "value": 0.0
+  },
+  {
+    "check": "rear_nut_tool_20_-20",
+    "passed": true,
+    "value": 0.0
+  },
+  {
+    "check": "mount_M3_shaft_20_20",
+    "passed": true,
+    "value": 0.0
+  },
+  {
+    "check": "mount_head_20_20",
+    "passed": true,
+    "value": 0.0
+  },
+  {
+    "check": "L_key_20_20",
+    "passed": true,
+    "value": 0.0
+  },
+  {
+    "check": "rear_nut_tool_20_20",
+    "passed": true,
+    "value": 0.0
+  }
+]

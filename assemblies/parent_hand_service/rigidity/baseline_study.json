@@ -1,0 +1,870 @@
+{
+  "part": "baseline_carrier.stl",
+  "material": "PETG",
+  "build_axis": "Z",
+  "units": "mm_N_MPa",
+  "safety_factor": 3,
+  "max_deflection_mm": 0.2,
+  "walls": 4,
+  "infill": 1,
+  "regions": {
+    "support_0": {
+      "type": "box",
+      "min": [
+        17,
+        138,
+        54.95
+      ],
+      "max": [
+        21,
+        142,
+        55.3
+      ]
+    },
+    "support_1": {
+      "type": "box",
+      "min": [
+        17,
+        188,
+        54.95
+      ],
+      "max": [
+        21,
+        192,
+        55.3
+      ]
+    },
+    "support_2": {
+      "type": "box",
+      "min": [
+        127.5,
+        138,
+        54.95
+      ],
+      "max": [
+        131.5,
+        142,
+        55.3
+      ]
+    },
+    "support_3": {
+      "type": "box",
+      "min": [
+        127.5,
+        188,
+        54.95
+      ],
+      "max": [
+        131.5,
+        192,
+        55.3
+      ]
+    },
+    "MAIN_USB": {
+      "type": "box",
+      "min": [
+        31.9,
+        82.4,
+        63.7
+      ],
+      "max": [
+        45.1,
+        86.6,
+        64.05
+      ]
+    },
+    "MAIN_SD": {
+      "type": "box",
+      "min": [
+        52.9,
+        82.4,
+        63.7
+      ],
+      "max": [
+        72.1,
+        86.6,
+        64.05
+      ]
+    },
+    "SONY_FRONT": {
+      "type": "box",
+      "min": [
+        153.5,
+        69.5,
+        62.7
+      ],
+      "max": [
+        160,
+        75.6,
+        63.1
+      ]
+    },
+    "SONY_REAR": {
+      "type": "box",
+      "min": [
+        196.5,
+        120,
+        62.7
+      ],
+      "max": [
+        203,
+        127,
+        63.1
+      ]
+    }
+  },
+  "cases": [
+    {
+      "name": "MAIN_USB_X-",
+      "supports": [
+        {
+          "region": "support_0",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_1",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_2",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_3",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "MAIN_USB",
+          "force": [
+            -20,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MAIN_USB_X+",
+      "supports": [
+        {
+          "region": "support_0",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_1",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_2",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_3",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "MAIN_USB",
+          "force": [
+            20,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MAIN_USB_Y-",
+      "supports": [
+        {
+          "region": "support_0",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_1",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_2",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_3",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "MAIN_USB",
+          "force": [
+            0,
+            -20,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MAIN_USB_Y+",
+      "supports": [
+        {
+          "region": "support_0",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_1",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_2",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_3",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "MAIN_USB",
+          "force": [
+            0,
+            20,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MAIN_USB_Z-",
+      "supports": [
+        {
+          "region": "support_0",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_1",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_2",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_3",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "MAIN_USB",
+          "force": [
+            0,
+            0,
+            -20
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MAIN_USB_Z+",
+      "supports": [
+        {
+          "region": "support_0",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_1",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_2",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_3",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "MAIN_USB",
+          "force": [
+            0,
+            0,
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MAIN_SD_X-",
+      "supports": [
+        {
+          "region": "support_0",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_1",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_2",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_3",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "MAIN_SD",
+          "force": [
+            -20,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MAIN_SD_X+",
+      "supports": [
+        {
+          "region": "support_0",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_1",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_2",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_3",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "MAIN_SD",
+          "force": [
+            20,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MAIN_SD_Y-",
+      "supports": [
+        {
+          "region": "support_0",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_1",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_2",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_3",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "MAIN_SD",
+          "force": [
+            0,
+            -20,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MAIN_SD_Y+",
+      "supports": [
+        {
+          "region": "support_0",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_1",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_2",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_3",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "MAIN_SD",
+          "force": [
+            0,
+            20,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MAIN_SD_Z-",
+      "supports": [
+        {
+          "region": "support_0",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_1",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_2",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_3",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "MAIN_SD",
+          "force": [
+            0,
+            0,
+            -20
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MAIN_SD_Z+",
+      "supports": [
+        {
+          "region": "support_0",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_1",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_2",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_3",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "MAIN_SD",
+          "force": [
+            0,
+            0,
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SONY_FRONT_X-",
+      "supports": [
+        {
+          "region": "support_0",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_1",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_2",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_3",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "SONY_FRONT",
+          "force": [
+            -20,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SONY_FRONT_X+",
+      "supports": [
+        {
+          "region": "support_0",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_1",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_2",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_3",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "SONY_FRONT",
+          "force": [
+            20,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SONY_FRONT_Y-",
+      "supports": [
+        {
+          "region": "support_0",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_1",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_2",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_3",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "SONY_FRONT",
+          "force": [
+            0,
+            -20,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SONY_FRONT_Y+",
+      "supports": [
+        {
+          "region": "support_0",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_1",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_2",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_3",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "SONY_FRONT",
+          "force": [
+            0,
+            20,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SONY_FRONT_Z-",
+      "supports": [
+        {
+          "region": "support_0",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_1",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_2",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_3",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "SONY_FRONT",
+          "force": [
+            0,
+            0,
+            -20
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SONY_FRONT_Z+",
+      "supports": [
+        {
+          "region": "support_0",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_1",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_2",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_3",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "SONY_FRONT",
+          "force": [
+            0,
+            0,
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SONY_REAR_X-",
+      "supports": [
+        {
+          "region": "support_0",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_1",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_2",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_3",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "SONY_REAR",
+          "force": [
+            -20,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SONY_REAR_X+",
+      "supports": [
+        {
+          "region": "support_0",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_1",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_2",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_3",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "SONY_REAR",
+          "force": [
+            20,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SONY_REAR_Y-",
+      "supports": [
+        {
+          "region": "support_0",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_1",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_2",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_3",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "SONY_REAR",
+          "force": [
+            0,
+            -20,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SONY_REAR_Y+",
+      "supports": [
+        {
+          "region": "support_0",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_1",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_2",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_3",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "SONY_REAR",
+          "force": [
+            0,
+            20,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SONY_REAR_Z-",
+      "supports": [
+        {
+          "region": "support_0",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_1",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_2",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_3",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "SONY_REAR",
+          "force": [
+            0,
+            0,
+            -20
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SONY_REAR_Z+",
+      "supports": [
+        {
+          "region": "support_0",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_1",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_2",
+          "fix": "xyz"
+        },
+        {
+          "region": "support_3",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "SONY_REAR",
+          "force": [
+            0,
+            0,
+            20
+          ]
+        }
+      ]
+    }
+  ],
+  "_what": "Baseline carrier ONLY; service support patches ideally fixed. USB/SD load transferred to nearby support patches, not actual connector shell.",
+  "_limitations": [
+    "Not complete assembly FEA",
+    "Ideal clamps omit floor, props, joints and case flexibility",
+    "Sony front/rear patches are mounting-post loads, not connector displacement",
+    "No PCB deformation or connector solder-joint assessment",
+    "PETG provisional material card; no actual printer measurement"
+  ]
+}

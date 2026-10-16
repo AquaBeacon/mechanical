@@ -1,0 +1,15 @@
+material PETG: E 1400 MPa, tensile 24 MPa (across layers)
+safety factor 2.00 -> allowable 12.00 MPa
+  (this is the interlayer number. Pass --in-plane only when the print orientation is fixed and puts the tension along the layers.)
+
+cantilever: L 30.0, section 10.0 x 1.6 mm, tip load 1.0 N
+  second moment of area I = 3.4 mm^4
+  [PASS] bending stress             7.031 MPa (limit 12.000)
+  [PASS] tip deflection             1.888 mm (limit 2.000)
+
+  to reach the stress limit by thickness alone: t >= 1.22 mm (stress ~ 1/t^2)
+  to reach the deflection limit by thickness alone: t >= 1.57 mm (deflection ~ 1/t^3)
+  a rib of height h on the tension side is worth far more than thickness: I grows with h^3 at almost no mass cost.
+
+=== PASS ===
+This is a first-order check on an idealised section. Confirm the real geometry with `topopt fea` before printing anything load-bearing.

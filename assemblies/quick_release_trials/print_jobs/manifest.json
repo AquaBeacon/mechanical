@@ -1,0 +1,37 @@
+{
+  "file": "quick_release_prototypes_snap_male.3mf",
+  "sha256": "24510237107d9c714cfed9a3dacf266546ad7ae5f9d7a67577ba9f7a78115d96",
+  "moved_from": "parts/quick_release_prototypes_snap_male.3mf",
+  "moved_at": "2026-09-27T15:41:04.748589+09:00",
+  "note": "User-added slicer project, moved without modifying contents. Two objects, both extruder 1 PETG. Slicer conditions differ from trial recommendation; no strength approval.",
+  "settings": {
+    "filament_type": [
+      "PETG",
+      "PLA-CF",
+      "PLA",
+      "PLA"
+    ],
+    "filament_settings_id": [
+      "eSUN PETG ベーシック @Bambu Lab X1 Carbon 0.4 nozzle",
+      "Bambu PLA-CF @BBL X1C",
+      "Bambu PLA Matte @BBL X1C",
+      "Bambu PLA Matte @BBL X1C"
+    ],
+    "print_settings_id": "0.20mm Standard @BBL X1C For esun-PETG-Basic",
+    "printer_settings_id": "Bambu Lab X1 Carbon 0.4 nozzle",
+    "layer_height": "0.2",
+    "wall_loops": "2",
+    "sparse_infill_density": "15%",
+    "support_type": "tree(auto)",
+    "enable_support": "1"
+  },
+  "object_extruders": [
+    "1",
+    "1"
+  ],
+  "geometry_status": "Historical pre-protruding-hook B geometry; not current after the through-clamp revision.",
+  "related_stl_at_archive": {
+    "quick_release_prototypes_snap_male.stl": "e9c45f0e5fe7aa37030c4ed67b254ac675493ff2dccfc258195b6536e83b7924",
+    "quick_release_prototypes_snap_female.stl": "869b27baf7167cce774d5583b54f494bb2393c0384cbb0b5b56fa0ad7f7f1372"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://cad.bluerobotics.com/BLUEROV2-R4.zip",
+  "product_page": "https://bluerobotics.com/store/rov/bluerov2/",
+  "retrieved_date": "2026-10-07",
+  "archive_last_modified": "Tue, 07 Jun 2022 18:45:20 GMT",
+  "archive_member": "BLUEROV2-R4-PUBLIC.STEP",
+  "archive_size_bytes": 375730995,
+  "member_size_bytes": 185976589,
+  "sha256": "f1ec8be6bccdd2d91b9931f43992c46c148b77c4de032fca79a7eb68db0a3deb",
+  "use": "Manufacturer CAD original for layout study only; geometry not used as a child part."
+}

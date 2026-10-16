@@ -1,0 +1,72 @@
+
+mesh target 8.00 mm
+  shell refined to 8.00 mm edges: 7416 -> 38342 triangles
+  mesh revised_carrier_h8.00_mesh.inp: 114319 nodes, 56792 elements at 8.00 mm
+  MAIN_USB_X+                            normal   req 3.00  p99.5  58.263  worst   7.752  max   0.1036 mm  PASS
+  MAIN_USB_Y+                            normal   req 3.00  p99.5  42.530  worst   5.954  max   0.1085 mm  PASS
+  MAIN_USB_Z+                            normal   req 3.00  p99.5  23.793  worst   5.062  max   0.2284 mm  PASS
+  MAIN_SD_X+                             normal   req 3.00  p99.5  58.022  worst   7.307  max   0.0687 mm  PASS
+  MAIN_SD_Y+                             normal   req 3.00  p99.5  38.912  worst   5.803  max   0.1321 mm  PASS
+  MAIN_SD_Z+                             normal   req 3.00  p99.5  19.324  worst   4.200  max   0.4472 mm  FAIL
+      - the load/reaction balance did not close; the boundary conditions in the deck are not the ones intended
+  SONY_FRONT_X+                          normal   req 3.00  p99.5  25.336  worst   2.520  max   0.1650 mm  PASS
+  SONY_FRONT_Y+                          normal   req 3.00  p99.5  22.975  worst   2.116  max   0.0670 mm  PASS
+  SONY_FRONT_Z+                          normal   req 3.00  p99.5  20.883  worst   3.695  max   0.4174 mm  PASS
+  SONY_REAR_X+                           normal   req 3.00  p99.5  25.645  worst   5.574  max   0.2720 mm  PASS
+  SONY_REAR_Y+                           normal   req 3.00  p99.5  21.226  worst   5.699  max   0.2549 mm  PASS
+  SONY_REAR_Z+                           normal   req 3.00  p99.5   8.662  worst   1.644  max   2.0129 mm  PASS
+
+mesh target 4.00 mm
+  shell refined to 4.00 mm edges: 7416 -> 117758 triangles
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\ryupc\WorkSpace\Mitou26\TO_printing\topopt\src\topopt\__main__.py", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\ryupc\WorkSpace\Mitou26\TO_printing\topopt\src\topopt\cli\__init__.py", line 93, in main
+    code = mod.main(rest)
+  File "C:\Users\ryupc\WorkSpace\Mitou26\TO_printing\topopt\src\topopt\cli\ccx.py", line 1140, in main
+    runs.append(analyse(stl, study, a.out, h, a.isotropic,
+                ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        buckle=a.buckle, frequency=a.frequency,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+                        shell_info=shell_info, refine=not a.no_refine,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        load_split=a.load_split))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryupc\WorkSpace\Mitou26\TO_printing\topopt\src\topopt\cli\ccx.py", line 654, in analyse
+    ccxlib.run_gmsh(geo, mesh_path)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\ryupc\WorkSpace\Mitou26\TO_printing\topopt\src\topopt\ccx.py", line 92, in run_gmsh
+    raise RuntimeError("gmsh failed (%d):\n%s"
+                       % (r.returncode, (r.stderr or r.stdout)[-4000:]))
+RuntimeError: gmsh failed (3221226356):
+Info    : Running 'C:\Users\ryupc\Tools\gmsh-4.15.2-Windows64\gmsh.exe Body_Models/assemblies/parent_hand_service/rigidity/revised_ccx\revised_carrier_h4.00.geo -3 -format inp -o Body_Models/assemblies/parent_hand_service/rigidity/revised_ccx\revised_carrier_h4.00_mesh.inp' [Gmsh 4.15.2, 1 node, max. 1 thread]
+Info    : Started on Sat Sep 26 23:14:21 2026
+Info    : Reading 'Body_Models/assemblies/parent_hand_service/rigidity/revised_ccx\revised_carrier_h4.00.geo'...
+Info    : Reading 'C:/Users/ryupc/WorkSpace/Mitou26/Body_Models/assemblies/parent_hand_service/rigidity/revised_ccx/revised_carrier_h4.00_shell.stl'...
+Info    : Mesh is in binary format
+Info    : 117758 facets in solid 0 
+Info    : Done reading 'C:/Users/ryupc/WorkSpace/Mitou26/Body_Models/assemblies/parent_hand_service/rigidity/revised_ccx/revised_carrier_h4.00_shell.stl'
+Info    : Done reading 'Body_Models/assemblies/parent_hand_service/rigidity/revised_ccx\revised_carrier_h4.00.geo'
+Info    : Meshing 1D...
+Info    : Done meshing 1D (Wall 3.02792e-05s, CPU 0s)
+Info    : Meshing 2D...
+Info    : Done meshing 2D (Wall 5.19753e-05s, CPU 0s)
+Info    : Meshing 3D...
+Info    : 3D Meshing 1 volume with 1 connected component
+Info    : Input mesh hash 8462a6bb232cd86f
+Info    : Creating an empty mesh with 58851 vertices
+Info    : Initialization of tet. mesh
+Info    : Delaunay of      58847 points on   1 threads - mesh.nvert: 4         
+Info    : Recovering 94259 missing facet(s)
+Info    : Recover Delaunay
+Info    : Steiner point inserted that splits an existing edge(boundary mesh has changed,JF you should finish that thing and reconstruct edges as well)
+Info    : Steiner point inserted that splits an existing edge(boundary mesh has changed,JF you should finish that thing and reconstruct edges as well)
+Info    : deleting 117758 triangles
+Info    : creating 117762 triangles
+Info    : Steiner(s) point(s) were inserted
+Info    : All volumes of the BRep were found and colorized accordingly
+

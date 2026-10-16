@@ -1,0 +1,310 @@
+{
+  "schema_version": 1,
+  "assembly": "parent_clamped",
+  "release_status": "existing_prototype",
+  "note": "既存構成の印刷データを整理。強度・造形性の新規認証ではない。",
+  "source_hashes": {
+    "assemblies/parent_clamped/placement.json": "bd4c2476f7661cce916187c031c70b4c9de56b6b6f3e33f73e6a46e08f561ed8",
+    "assemblies/parent_clamped/README.md": "2450c9cdcf8a42d360875795cef910d615c1e7dacf03704adc7c480ed300c146",
+    "parts/parent/exterior/printed/parent_clamp_bar/manufacturing.json": "899bca96dbcecc54b0bca6ff71e028d3f5f68665a1970bfb7bdb32f0e686f604",
+    "parts/parent/exterior/printed/parent_clamp_bar/parent_clamp_bar.scad": "38f1fcd53d98c9f3fd9c34377f59fe54e33a002e0497fe395923070c1f95671d",
+    "parts/parent/exterior/printed/parent_clamped_deck/parent_clamped_deck.scad": "698366b58037de4f78c2397ab95fceb3f8695be511868e39c2398411adf8d670",
+    "parts/parent/exterior/printed/parent_float_lug/manufacturing.json": "1cd2c151284b79caa5f33d064c6e325ce7737f5415ade2711a425b4cc7f9a120",
+    "parts/parent/exterior/printed/parent_float_lug/parent_float_lug.md": "15292bd1c5187a2a950f5ead153da047da3d379d0aadbb84e9b070a90b4f48f0",
+    "parts/parent/exterior/printed/parent_float_lug/parent_float_lug.scad": "2ad80d540813dffb33eb4d00fc7b96b43ecfaf2dbcdcfc0e1b03ae62c0b905f4"
+  },
+  "parts": [
+    {
+      "part": "parts/parent/exterior/printed/parent_clamped_deck",
+      "stem": "parent_clamped_deck",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "clamped_deck"
+      ],
+      "file": "parent_clamped_deck.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_clamped_deck/parent_clamped_deck.stl",
+      "source_sha256": "bd0b17451e38b7dd05e69b542dc3f35e666b201906c9bda49c957d97b20ff5e9",
+      "sha256": "0a991f7cc37236c34641bcdbf37685eb3ce148d5ed659f85305f63947f031448",
+      "extents_mm": [
+        236.0,
+        236.0,
+        12.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          118.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          118.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          12.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_float_lug",
+      "stem": "parent_float_lug",
+      "shape": [
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 2,
+      "labels": [
+        "float_lug_-1_-85",
+        "float_lug_-1_85"
+      ],
+      "file": "parent_float_lug_mirrored.stl",
+      "rotation_deg": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_float_lug/parent_float_lug.stl",
+      "source_sha256": "869b8a2dfbdf201855239e50e74ab3b9538fab649b70a1218f3050a891d89ffb",
+      "sha256": "2b3516911e09b7eb5e8823e018e7fd08f2e4c32425d44400df45bc178b98c3d1",
+      "extents_mm": [
+        24.0,
+        32.0,
+        44.0
+      ],
+      "model_to_print": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          126.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          16.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          20.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_float_lug",
+      "stem": "parent_float_lug",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 2,
+      "labels": [
+        "float_lug_1_-85",
+        "float_lug_1_85"
+      ],
+      "file": "parent_float_lug.stl",
+      "rotation_deg": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_float_lug/parent_float_lug.stl",
+      "source_sha256": "869b8a2dfbdf201855239e50e74ab3b9538fab649b70a1218f3050a891d89ffb",
+      "sha256": "3918b598d0098a13ef035c5d9976b3d66fd6cd16ede13c5b0da8000c1fde5c59",
+      "extents_mm": [
+        24.0,
+        32.0,
+        44.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -102.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          16.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          20.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_clamp_bar",
+      "stem": "parent_clamp_bar",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 2,
+      "labels": [
+        "upper_bar_-55",
+        "upper_bar_55"
+      ],
+      "file": "parent_clamp_bar.stl",
+      "rotation_deg": [
+        0.0,
+        -0.0,
+        -180.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_clamp_bar/parent_clamp_bar.stl",
+      "source_sha256": "34e0db35e434605f4b1b777ebe041579e50fef98f50c732e8b33bb521bc35095",
+      "sha256": "fe1840552530a665a75087a6ab14a2026c35b65b4dd1fac6cdd46ff9135bec0b",
+      "extents_mm": [
+        236.0,
+        24.0,
+        12.0
+      ],
+      "model_to_print": [
+        [
+          -1.0,
+          1.2246467991473532e-16,
+          0.0,
+          118.0
+        ],
+        [
+          -1.2246467991473532e-16,
+          -1.0,
+          0.0,
+          12.000000000000014
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    }
+  ],
+  "modifiers": [],
+  "generated_files": [
+    "parent_clamped_deck.stl",
+    "parent_float_lug_mirrored.stl",
+    "parent_float_lug.stl",
+    "parent_clamp_bar.stl",
+    "DESIGN_NOTES.md",
+    "PRINT.md"
+  ],
+  "document_hashes": {
+    "DESIGN_NOTES.md": "9a5fdf6dfc7aa43d3d27e71f8ad92227551a3e729b72ff7a3ced7aec963694d4",
+    "PRINT.md": "12bfa2efd3b9cfd471205c9cc38100e93c4a815f88692206627e67617be39e9f"
+  }
+}

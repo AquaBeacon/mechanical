@@ -1,0 +1,4100 @@
+{
+  "schema": "topopt/ccx/1",
+  "stl": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\assemblies\\parent_hand_service\\rigidity\\iteration_07\\carrier.stl",
+  "study": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\assemblies\\parent_hand_service\\rigidity\\iteration_07\\study.json",
+  "map_mode": "volume",
+  "runs": [
+    {
+      "mesh_target_mm": 8.0,
+      "nodes": 30702,
+      "elements": 16006,
+      "converged": true,
+      "convergence_note": "no error or divergence reported",
+      "material_model": {
+        "material_model": "orthotropic_equivalent_solid",
+        "card_id": "petg_generic_fff_orthotropic_v1",
+        "classification": "conservative_literature_based_default",
+        "measured_for_specific_printer": false,
+        "solid_fraction_applied": 1.0,
+        "Ex_Ey_Ez_MPa": [
+          2100,
+          1750,
+          1150
+        ],
+        "Gxy_Gyz_Gzx_MPa": [
+          700,
+          420,
+          420
+        ],
+        "strengths_MPa": {
+          "Xt": 42,
+          "Xc": 50,
+          "Yt": 33,
+          "Yc": 42,
+          "Zt": 25,
+          "Zc": 35,
+          "Sxy": 20,
+          "Syz": 14,
+          "Szx": 14
+        },
+        "source": "docs/FFF_PLA_PETG_orthotropic_material_reference.md section 6"
+      },
+      "build_axis": "Z",
+      "map_mode": "volume",
+      "load_split": "consistent",
+      "ground_tol_mm": 0.05,
+      "exclude_mm": 0.0,
+      "mesh_quality": {
+        "min": 0.04309,
+        "sliver_count": 0,
+        "sliver_fraction": 0.0,
+        "p1": 0.15295,
+        "p5": 0.27733,
+        "median": 0.70269,
+        "poor_count": 91,
+        "poor_fraction": 0.00569,
+        "elements": 16006,
+        "pass": true,
+        "note": "no sliver elements"
+      },
+      "mass_properties": {
+        "volume_mm3": 198087.375079,
+        "mass_g": 251.570966,
+        "centroid_mm": [
+          118.68798,
+          123.344696,
+          53.806018
+        ],
+        "inertia_tensor_g_mm2": [
+          [
+            257918.554279,
+            169095.822863,
+            37587.145052
+          ],
+          [
+            169095.822863,
+            797183.349153,
+            -6763.11268
+          ],
+          [
+            37587.145052,
+            -6763.11268,
+            1026733.736476
+          ]
+        ],
+        "elements": 16006
+      },
+      "density_kg_m3": 1270,
+      "inp": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\assemblies\\parent_hand_service\\rigidity\\iteration_07\\ccx\\carrier_h8.00.inp",
+      "frd": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\assemblies\\parent_hand_service\\rigidity\\iteration_07\\ccx\\carrier_h8.00.frd",
+      "stl_meshed": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\assemblies\\parent_hand_service\\rigidity\\iteration_07\\ccx\\carrier_h8.00_shell.stl",
+      "surface_refinement": {
+        "triangles_before": 4906,
+        "triangles_after": 29586,
+        "max_edge_before_mm": 129.99,
+        "max_edge_after_mm": 8.0,
+        "passes": 5,
+        "path": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\assemblies\\parent_hand_service\\rigidity\\iteration_07\\ccx\\carrier_h8.00_shell.stl"
+      },
+      "shell": {
+        "stl": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\assemblies\\parent_hand_service\\rigidity\\iteration_07\\carrier.stl",
+        "shell": {
+          "triangles": 4906,
+          "open_edges": 0,
+          "non_manifold_edges": 0,
+          "degenerate": 0,
+          "closed_shell": true,
+          "components": 5,
+          "edge_components": 5,
+          "self_intersections": 0,
+          "self_intersection_examples": []
+        },
+        "repaired": false
+      },
+      "cases": [
+        {
+          "case": "MAIN_USB_X+",
+          "step": 1,
+          "load_class": "normal",
+          "required_safety_factor": 3.0,
+          "worst_element_minimum": 1.5,
+          "mapping": {
+            "supports": [
+              {
+                "region": "support_0",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 205,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 160.3062
+              },
+              {
+                "region": "support_1",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 200,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 80.2427
+              },
+              {
+                "region": "support_2",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 267,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 138.8895
+              },
+              {
+                "region": "support_3",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 217,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 142.2734
+              },
+              {
+                "region": "support_4",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 127,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 13.8563
+              }
+            ],
+            "loads": [
+              {
+                "region": "MAIN_USB",
+                "mode": "volume",
+                "nodes": 26,
+                "loaded_nodes": 26,
+                "split": "equal split over 26 nodes (no element lies fully inside the region, so the consistent weights are empty)",
+                "force_N": [
+                  20.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            ],
+            "gravity": null,
+            "load_distribution": "each region's total force is spread over its volume nodes (consistent weights): the resultant is exact, the distribution is uniform over what the region selects"
+          },
+          "max_disp_mm": 0.07259,
+          "max_disp_components_mm": [
+            0.05437,
+            0.00649,
+            0.04954
+          ],
+          "max_disp_at_mm": [
+            45.0,
+            82.5,
+            63.95
+          ],
+          "von_mises_max_MPa": 3.9241,
+          "von_mises_p99_5_MPa": 1.3029,
+          "stress_components_MPa": {
+            "sxx": [
+              -3.4831,
+              2.5353
+            ],
+            "syy": [
+              -1.5669,
+              1.1003
+            ],
+            "szz": [
+              -4.3015,
+              3.975
+            ],
+            "txy": [
+              -0.749,
+              1.1464
+            ],
+            "tyz": [
+              -0.3622,
+              0.4691
+            ],
+            "tzx": [
+              -0.8426,
+              1.3336
+            ]
+          },
+          "principal_max_MPa": 4.0136,
+          "principal_min_MPa": -5.0093,
+          "tresca_max_MPa": 4.1368,
+          "strain_energy_density_max_MPa": 0.007341,
+          "principal_strain_max": 0.00344679,
+          "principal_strain_min": -0.00356129,
+          "failure_criterion": "max_stress_material_axes",
+          "failure_index_max": 0.159,
+          "failure_index_p99_5": 0.03399,
+          "safety_factor_p99_5": 29.419,
+          "material_axis_stress_MPa": {
+            "raster": [
+              -3.4831,
+              2.5353
+            ],
+            "in_plane_transverse": [
+              -1.5669,
+              1.1003
+            ],
+            "interlayer_normal": [
+              -4.3015,
+              3.975
+            ],
+            "in_plane_shear": [
+              -0.749,
+              1.1464
+            ],
+            "interlayer_shear_yz": [
+              -0.3622,
+              0.4691
+            ],
+            "interlayer_shear_zx": [
+              -0.8426,
+              1.3336
+            ]
+          },
+          "failure_modes": {
+            "raster_tension_compression": {
+              "failure_index_max": 0.06966,
+              "safety_factor": 14.355
+            },
+            "in_plane_transverse": {
+              "failure_index_max": 0.03731,
+              "safety_factor": 26.805
+            },
+            "interlayer_normal": {
+              "failure_index_max": 0.159,
+              "safety_factor": 6.289
+            },
+            "in_plane_shear": {
+              "failure_index_max": 0.05732,
+              "safety_factor": 17.446
+            },
+            "interlayer_shear_yz": {
+              "failure_index_max": 0.03351,
+              "safety_factor": 29.842
+            },
+            "interlayer_shear_zx": {
+              "failure_index_max": 0.09526,
+              "safety_factor": 10.498
+            }
+          },
+          "governing_failure_mode": "interlayer_normal",
+          "worst_element_safety_factor": 6.289,
+          "hotspot": {
+            "node": 11985,
+            "xyz_mm": [
+              41.0,
+              85.602,
+              60.087
+            ],
+            "failure_index": 0.159
+          },
+          "applied_N": [
+            20.0,
+            0.0,
+            0.0
+          ],
+          "reaction_total_N": [
+            -20.0,
+            -0.0,
+            1e-05
+          ],
+          "reaction_moment_Nmm": [
+            0.0008,
+            -1279.0008,
+            1690.0003
+          ],
+          "reaction_by_support": [
+            {
+              "name": "support_0",
+              "nodes": 205,
+              "force_N": [
+                -11.31593,
+                2.72695,
+                -1.68821
+              ],
+              "moment_Nmm": [
+                -281.2,
+                -626.83,
+                1046.5528
+              ]
+            },
+            {
+              "name": "support_1",
+              "nodes": 200,
+              "force_N": [
+                -6.06383,
+                -0.2406,
+                2.90163
+              ],
+              "moment_Nmm": [
+                283.5936,
+                -696.7283,
+                536.186
+              ]
+            },
+            {
+              "name": "support_2",
+              "nodes": 267,
+              "force_N": [
+                0.61503,
+                -1.23592,
+                0.15118
+              ],
+              "moment_Nmm": [
+                90.11,
+                30.9832,
+                -137.005
+              ]
+            },
+            {
+              "name": "support_3",
+              "nodes": 217,
+              "force_N": [
+                -0.32355,
+                -1.06434,
+                -0.25007
+              ],
+              "moment_Nmm": [
+                14.4054,
+                12.915,
+                -75.2871
+              ]
+            },
+            {
+              "name": "support_4",
+              "nodes": 127,
+              "force_N": [
+                -2.91171,
+                -0.18609,
+                -1.11453
+              ],
+              "moment_Nmm": [
+                -106.9081,
+                0.6594,
+                319.5536
+              ]
+            }
+          ],
+          "moment_error": {
+            "applied_Nmm": [
+              0.0,
+              1279.0,
+              -1690.0
+            ],
+            "reaction_Nmm": [
+              0.0008,
+              -1279.0008,
+              1690.0003
+            ],
+            "residual_Nmm": [
+              0.000772,
+              -0.000779,
+              0.000323
+            ],
+            "relative_error": 1e-06,
+            "pass": true,
+            "required": "<= 1 % of the applied moment"
+          },
+          "compliance_Nmm": 1.055637,
+          "equilibrium": {
+            "applied_N": [
+              20.0,
+              0.0,
+              0.0
+            ],
+            "reaction_N": [
+              -20.0,
+              -0.0,
+              0.0
+            ],
+            "residual_N": [
+              -5e-06,
+              -0.0,
+              1e-06
+            ],
+            "relative_error": 0.0,
+            "pass": true,
+            "required": "<= 1 % of the applied load"
+          },
+          "pass": true
+        },
+        {
+          "case": "MAIN_USB_Y+",
+          "step": 2,
+          "load_class": "normal",
+          "required_safety_factor": 3.0,
+          "worst_element_minimum": 1.5,
+          "mapping": {
+            "supports": [
+              {
+                "region": "support_0",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 205,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 160.3062
+              },
+              {
+                "region": "support_1",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 200,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 80.2427
+              },
+              {
+                "region": "support_2",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 267,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 138.8895
+              },
+              {
+                "region": "support_3",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 217,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 142.2734
+              },
+              {
+                "region": "support_4",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 127,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 13.8563
+              }
+            ],
+            "loads": [
+              {
+                "region": "MAIN_USB",
+                "mode": "volume",
+                "nodes": 26,
+                "loaded_nodes": 26,
+                "split": "equal split over 26 nodes (no element lies fully inside the region, so the consistent weights are empty)",
+                "force_N": [
+                  0.0,
+                  20.0,
+                  0.0
+                ]
+              }
+            ],
+            "gravity": null,
+            "load_distribution": "each region's total force is spread over its volume nodes (consistent weights): the resultant is exact, the distribution is uniform over what the region selects"
+          },
+          "max_disp_mm": 0.08321,
+          "max_disp_components_mm": [
+            0.00807,
+            0.0681,
+            0.04774
+          ],
+          "max_disp_at_mm": [
+            41.0,
+            82.5,
+            63.95
+          ],
+          "von_mises_max_MPa": 3.8587,
+          "von_mises_p99_5_MPa": 1.4514,
+          "stress_components_MPa": {
+            "sxx": [
+              -1.6466,
+              1.889
+            ],
+            "syy": [
+              -2.3066,
+              1.6251
+            ],
+            "szz": [
+              -4.2559,
+              3.5385
+            ],
+            "txy": [
+              -0.8862,
+              1.038
+            ],
+            "tyz": [
+              -1.5074,
+              1.1815
+            ],
+            "tzx": [
+              -1.4703,
+              1.2679
+            ]
+          },
+          "principal_max_MPa": 4.1891,
+          "principal_min_MPa": -4.7172,
+          "tresca_max_MPa": 4.2183,
+          "strain_energy_density_max_MPa": 0.007696,
+          "principal_strain_max": 0.00322832,
+          "principal_strain_min": -0.00364026,
+          "failure_criterion": "max_stress_material_axes",
+          "failure_index_max": 0.14154,
+          "failure_index_p99_5": 0.0443,
+          "safety_factor_p99_5": 22.571,
+          "material_axis_stress_MPa": {
+            "raster": [
+              -1.6466,
+              1.889
+            ],
+            "in_plane_transverse": [
+              -2.3066,
+              1.6251
+            ],
+            "interlayer_normal": [
+              -4.2559,
+              3.5385
+            ],
+            "in_plane_shear": [
+              -0.8862,
+              1.038
+            ],
+            "interlayer_shear_yz": [
+              -1.5074,
+              1.1815
+            ],
+            "interlayer_shear_zx": [
+              -1.4703,
+              1.2679
+            ]
+          },
+          "failure_modes": {
+            "raster_tension_compression": {
+              "failure_index_max": 0.04498,
+              "safety_factor": 22.234
+            },
+            "in_plane_transverse": {
+              "failure_index_max": 0.05492,
+              "safety_factor": 18.208
+            },
+            "interlayer_normal": {
+              "failure_index_max": 0.14154,
+              "safety_factor": 7.065
+            },
+            "in_plane_shear": {
+              "failure_index_max": 0.0519,
+              "safety_factor": 19.268
+            },
+            "interlayer_shear_yz": {
+              "failure_index_max": 0.10767,
+              "safety_factor": 9.287
+            },
+            "interlayer_shear_zx": {
+              "failure_index_max": 0.10502,
+              "safety_factor": 9.522
+            }
+          },
+          "governing_failure_mode": "interlayer_normal",
+          "worst_element_safety_factor": 7.065,
+          "hotspot": {
+            "node": 2780,
+            "xyz_mm": [
+              32.0,
+              83.0,
+              58.4
+            ],
+            "failure_index": 0.1415
+          },
+          "applied_N": [
+            0.0,
+            20.0,
+            0.0
+          ],
+          "reaction_total_N": [
+            0.0,
+            -20.0,
+            1e-05
+          ],
+          "reaction_moment_Nmm": [
+            1279.0003,
+            0.0003,
+            -770.0006
+          ],
+          "reaction_by_support": [
+            {
+              "name": "support_0",
+              "nodes": 205,
+              "force_N": [
+                -0.61694,
+                -8.6773,
+                -0.87437
+              ],
+              "moment_Nmm": [
+                455.1709,
+                -3.7026,
+                -123.2324
+              ]
+            },
+            {
+              "name": "support_1",
+              "nodes": 200,
+              "force_N": [
+                3.19755,
+                -1.65988,
+                -0.50237
+              ],
+              "moment_Nmm": [
+                51.456,
+                239.1385,
+                -500.178
+              ]
+            },
+            {
+              "name": "support_2",
+              "nodes": 267,
+              "force_N": [
+                0.81252,
+                -6.30723,
+                0.81169
+              ],
+              "moment_Nmm": [
+                492.6214,
+                25.7133,
+                -289.9039
+              ]
+            },
+            {
+              "name": "support_3",
+              "nodes": 217,
+              "force_N": [
+                -2.73944,
+                -2.44656,
+                0.41722
+              ],
+              "moment_Nmm": [
+                210.9237,
+                -205.4557,
+                191.2956
+              ]
+            },
+            {
+              "name": "support_4",
+              "nodes": 127,
+              "force_N": [
+                -0.65368,
+                -0.90903,
+                0.14783
+              ],
+              "moment_Nmm": [
+                68.8283,
+                -55.6932,
+                -47.9818
+              ]
+            }
+          ],
+          "moment_error": {
+            "applied_Nmm": [
+              -1279.0,
+              0.0,
+              770.0
+            ],
+            "reaction_Nmm": [
+              1279.0003,
+              0.0003,
+              -770.0006
+            ],
+            "residual_Nmm": [
+              0.000317,
+              0.000295,
+              -0.000566
+            ],
+            "relative_error": 0.0,
+            "pass": true,
+            "required": "<= 1 % of the applied moment"
+          },
+          "compliance_Nmm": 1.319179,
+          "equilibrium": {
+            "applied_N": [
+              0.0,
+              20.0,
+              0.0
+            ],
+            "reaction_N": [
+              0.0,
+              -20.0,
+              -0.0
+            ],
+            "residual_N": [
+              0.0,
+              -1e-06,
+              -0.0
+            ],
+            "relative_error": 0.0,
+            "pass": true,
+            "required": "<= 1 % of the applied load"
+          },
+          "pass": true
+        },
+        {
+          "case": "MAIN_USB_Z+",
+          "step": 3,
+          "load_class": "normal",
+          "required_safety_factor": 3.0,
+          "worst_element_minimum": 1.5,
+          "mapping": {
+            "supports": [
+              {
+                "region": "support_0",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 205,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 160.3062
+              },
+              {
+                "region": "support_1",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 200,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 80.2427
+              },
+              {
+                "region": "support_2",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 267,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 138.8895
+              },
+              {
+                "region": "support_3",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 217,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 142.2734
+              },
+              {
+                "region": "support_4",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 127,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 13.8563
+              }
+            ],
+            "loads": [
+              {
+                "region": "MAIN_USB",
+                "mode": "volume",
+                "nodes": 26,
+                "loaded_nodes": 26,
+                "split": "equal split over 26 nodes (no element lies fully inside the region, so the consistent weights are empty)",
+                "force_N": [
+                  0.0,
+                  0.0,
+                  20.0
+                ]
+              }
+            ],
+            "gravity": null,
+            "load_distribution": "each region's total force is spread over its volume nodes (consistent weights): the resultant is exact, the distribution is uniform over what the region selects"
+          },
+          "max_disp_mm": 0.1237,
+          "max_disp_components_mm": [
+            0.03433,
+            0.02655,
+            0.1207
+          ],
+          "max_disp_at_mm": [
+            45.0,
+            82.5,
+            63.95
+          ],
+          "von_mises_max_MPa": 11.7098,
+          "von_mises_p99_5_MPa": 1.4029,
+          "stress_components_MPa": {
+            "sxx": [
+              -3.582,
+              3.6012
+            ],
+            "syy": [
+              -0.9699,
+              5.0192
+            ],
+            "szz": [
+              -1.1029,
+              2.1646
+            ],
+            "txy": [
+              -0.6186,
+              5.279
+            ],
+            "tyz": [
+              -3.9171,
+              0.4237
+            ],
+            "tzx": [
+              -0.8151,
+              0.9049
+            ]
+          },
+          "principal_max_MPa": 10.745,
+          "principal_min_MPa": -3.5964,
+          "tresca_max_MPa": 13.3849,
+          "strain_energy_density_max_MPa": 0.042913,
+          "principal_strain_max": 0.0070092,
+          "principal_strain_min": -0.00514637,
+          "failure_criterion": "max_stress_material_axes",
+          "failure_index_max": 0.27979,
+          "failure_index_p99_5": 0.03425,
+          "safety_factor_p99_5": 29.195,
+          "material_axis_stress_MPa": {
+            "raster": [
+              -3.582,
+              3.6012
+            ],
+            "in_plane_transverse": [
+              -0.9699,
+              5.0192
+            ],
+            "interlayer_normal": [
+              -1.1029,
+              2.1646
+            ],
+            "in_plane_shear": [
+              -0.6186,
+              5.279
+            ],
+            "interlayer_shear_yz": [
+              -3.9171,
+              0.4237
+            ],
+            "interlayer_shear_zx": [
+              -0.8151,
+              0.9049
+            ]
+          },
+          "failure_modes": {
+            "raster_tension_compression": {
+              "failure_index_max": 0.08574,
+              "safety_factor": 11.663
+            },
+            "in_plane_transverse": {
+              "failure_index_max": 0.1521,
+              "safety_factor": 6.575
+            },
+            "interlayer_normal": {
+              "failure_index_max": 0.08658,
+              "safety_factor": 11.549
+            },
+            "in_plane_shear": {
+              "failure_index_max": 0.26395,
+              "safety_factor": 3.789
+            },
+            "interlayer_shear_yz": {
+              "failure_index_max": 0.27979,
+              "safety_factor": 3.574
+            },
+            "interlayer_shear_zx": {
+              "failure_index_max": 0.06464,
+              "safety_factor": 15.471
+            }
+          },
+          "governing_failure_mode": "interlayer_shear_yz",
+          "worst_element_safety_factor": 3.574,
+          "hotspot": {
+            "node": 2744,
+            "xyz_mm": [
+              13.5,
+              101.05,
+              54.5
+            ],
+            "failure_index": 0.2798
+          },
+          "applied_N": [
+            0.0,
+            0.0,
+            20.0
+          ],
+          "reaction_total_N": [
+            -0.0,
+            0.0,
+            -20.00001
+          ],
+          "reaction_moment_Nmm": [
+            -1690.0006,
+            770.002,
+            -0.0008
+          ],
+          "reaction_by_support": [
+            {
+              "name": "support_0",
+              "nodes": 205,
+              "force_N": [
+                -9.17994,
+                -2.4176,
+                -16.49807
+              ],
+              "moment_Nmm": [
+                -1345.7836,
+                -89.2441,
+                849.9549
+              ]
+            },
+            {
+              "name": "support_1",
+              "nodes": 200,
+              "force_N": [
+                10.6528,
+                -1.17152,
+                -8.57742
+              ],
+              "moment_Nmm": [
+                -740.6273,
+                1657.2335,
+                -1156.8629
+              ]
+            },
+            {
+              "name": "support_2",
+              "nodes": 267,
+              "force_N": [
+                -2.85111,
+                4.38846,
+                0.01749
+              ],
+              "moment_Nmm": [
+                -231.6874,
+                -157.203,
+                604.4203
+              ]
+            },
+            {
+              "name": "support_3",
+              "nodes": 217,
+              "force_N": [
+                -0.33554,
+                0.4403,
+                0.76392
+              ],
+              "moment_Nmm": [
+                113.8181,
+                -115.4607,
+                114.4758
+              ]
+            },
+            {
+              "name": "support_4",
+              "nodes": 127,
+              "force_N": [
+                1.71378,
+                -1.23963,
+                4.29407
+              ],
+              "moment_Nmm": [
+                514.2798,
+                -525.3237,
+                -411.9889
+              ]
+            }
+          ],
+          "moment_error": {
+            "applied_Nmm": [
+              1690.0,
+              -770.0,
+              0.0
+            ],
+            "reaction_Nmm": [
+              -1690.0006,
+              770.002,
+              -0.0008
+            ],
+            "residual_Nmm": [
+              -0.000602,
+              0.00195,
+              -0.00078
+            ],
+            "relative_error": 1e-06,
+            "pass": true,
+            "required": "<= 1 % of the applied moment"
+          },
+          "compliance_Nmm": 1.967878,
+          "equilibrium": {
+            "applied_N": [
+              0.0,
+              0.0,
+              20.0
+            ],
+            "reaction_N": [
+              -0.0,
+              0.0,
+              -20.0
+            ],
+            "residual_N": [
+              -2e-06,
+              1e-06,
+              1e-06
+            ],
+            "relative_error": 0.0,
+            "pass": true,
+            "required": "<= 1 % of the applied load"
+          },
+          "pass": true
+        },
+        {
+          "case": "MAIN_SD_X+",
+          "step": 4,
+          "load_class": "normal",
+          "required_safety_factor": 3.0,
+          "worst_element_minimum": 1.5,
+          "mapping": {
+            "supports": [
+              {
+                "region": "support_0",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 205,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 160.3062
+              },
+              {
+                "region": "support_1",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 200,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 80.2427
+              },
+              {
+                "region": "support_2",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 267,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 138.8895
+              },
+              {
+                "region": "support_3",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 217,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 142.2734
+              },
+              {
+                "region": "support_4",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 127,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 13.8563
+              }
+            ],
+            "loads": [
+              {
+                "region": "MAIN_SD",
+                "mode": "volume",
+                "nodes": 74,
+                "loaded_nodes": 60,
+                "split": "consistent body force over 12 fully selected elements",
+                "force_N": [
+                  20.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            ],
+            "gravity": null,
+            "load_distribution": "each region's total force is spread over its volume nodes (consistent weights): the resultant is exact, the distribution is uniform over what the region selects"
+          },
+          "max_disp_mm": 0.01068,
+          "max_disp_components_mm": [
+            0.00641,
+            0.00133,
+            0.009
+          ],
+          "max_disp_at_mm": [
+            49.67,
+            83.0,
+            63.7
+          ],
+          "von_mises_max_MPa": 1.8698,
+          "von_mises_p99_5_MPa": 0.2651,
+          "stress_components_MPa": {
+            "sxx": [
+              -0.7424,
+              0.5864
+            ],
+            "syy": [
+              -0.2543,
+              0.4893
+            ],
+            "szz": [
+              -0.195,
+              0.2589
+            ],
+            "txy": [
+              -0.3131,
+              1.0549
+            ],
+            "tyz": [
+              -0.177,
+              0.0444
+            ],
+            "tzx": [
+              -0.0867,
+              0.7518
+            ]
+          },
+          "principal_max_MPa": 1.558,
+          "principal_min_MPa": -1.1373,
+          "tresca_max_MPa": 2.1463,
+          "strain_energy_density_max_MPa": 0.000885,
+          "principal_strain_max": 0.000920274,
+          "principal_strain_min": -0.000999723,
+          "failure_criterion": "max_stress_material_axes",
+          "failure_index_max": 0.0537,
+          "failure_index_p99_5": 0.00688,
+          "safety_factor_p99_5": 145.319,
+          "material_axis_stress_MPa": {
+            "raster": [
+              -0.7424,
+              0.5864
+            ],
+            "in_plane_transverse": [
+              -0.2543,
+              0.4893
+            ],
+            "interlayer_normal": [
+              -0.195,
+              0.2589
+            ],
+            "in_plane_shear": [
+              -0.3131,
+              1.0549
+            ],
+            "interlayer_shear_yz": [
+              -0.177,
+              0.0444
+            ],
+            "interlayer_shear_zx": [
+              -0.0867,
+              0.7518
+            ]
+          },
+          "failure_modes": {
+            "raster_tension_compression": {
+              "failure_index_max": 0.01485,
+              "safety_factor": 67.351
+            },
+            "in_plane_transverse": {
+              "failure_index_max": 0.01483,
+              "safety_factor": 67.441
+            },
+            "interlayer_normal": {
+              "failure_index_max": 0.01036,
+              "safety_factor": 96.569
+            },
+            "in_plane_shear": {
+              "failure_index_max": 0.05275,
+              "safety_factor": 18.959
+            },
+            "interlayer_shear_yz": {
+              "failure_index_max": 0.01264,
+              "safety_factor": 79.115
+            },
+            "interlayer_shear_zx": {
+              "failure_index_max": 0.0537,
+              "safety_factor": 18.622
+            }
+          },
+          "governing_failure_mode": "interlayer_shear_zx",
+          "worst_element_safety_factor": 18.622,
+          "hotspot": {
+            "node": 2830,
+            "xyz_mm": [
+              57.0,
+              86.5,
+              63.825
+            ],
+            "failure_index": 0.0537
+          },
+          "applied_N": [
+            20.0,
+            0.0,
+            0.0
+          ],
+          "reaction_total_N": [
+            -20.0,
+            -0.0,
+            0.0
+          ],
+          "reaction_moment_Nmm": [
+            0.0001,
+            -1277.152,
+            1701.6305
+          ],
+          "reaction_by_support": [
+            {
+              "name": "support_0",
+              "nodes": 205,
+              "force_N": [
+                -5.88632,
+                1.41059,
+                -1.28903
+              ],
+              "moment_Nmm": [
+                -200.2292,
+                -297.6686,
+                578.6688
+              ]
+            },
+            {
+              "name": "support_1",
+              "nodes": 200,
+              "force_N": [
+                -6.49304,
+                -1.14715,
+                0.39131
+              ],
+              "moment_Nmm": [
+                96.2141,
+                -410.1862,
+                450.3489
+              ]
+            },
+            {
+              "name": "support_2",
+              "nodes": 267,
+              "force_N": [
+                -1.08987,
+                2.5483,
+                -0.18746
+              ],
+              "moment_Nmm": [
+                -174.9232,
+                -56.0937,
+                250.3392
+              ]
+            },
+            {
+              "name": "support_3",
+              "nodes": 217,
+              "force_N": [
+                -0.80473,
+                -1.64758,
+                0.12521
+              ],
+              "moment_Nmm": [
+                114.6813,
+                -61.1913,
+                -63.8314
+              ]
+            },
+            {
+              "name": "support_4",
+              "nodes": 127,
+              "force_N": [
+                -5.72604,
+                -1.16416,
+                0.95997
+              ],
+              "moment_Nmm": [
+                164.2572,
+                -452.0122,
+                486.1049
+              ]
+            }
+          ],
+          "moment_error": {
+            "applied_Nmm": [
+              0.0,
+              1277.1522,
+              -1701.6304
+            ],
+            "reaction_Nmm": [
+              0.0001,
+              -1277.152,
+              1701.6305
+            ],
+            "residual_Nmm": [
+              0.000123,
+              0.000134,
+              7.2e-05
+            ],
+            "relative_error": 0.0,
+            "pass": true,
+            "required": "<= 1 % of the applied moment"
+          },
+          "compliance_Nmm": 0.108628,
+          "equilibrium": {
+            "applied_N": [
+              20.0,
+              0.0,
+              0.0
+            ],
+            "reaction_N": [
+              -20.0,
+              0.0,
+              0.0
+            ],
+            "residual_N": [
+              1e-06,
+              1e-06,
+              0.0
+            ],
+            "relative_error": 0.0,
+            "pass": true,
+            "required": "<= 1 % of the applied load"
+          },
+          "pass": true
+        },
+        {
+          "case": "MAIN_SD_Y+",
+          "step": 5,
+          "load_class": "normal",
+          "required_safety_factor": 3.0,
+          "worst_element_minimum": 1.5,
+          "mapping": {
+            "supports": [
+              {
+                "region": "support_0",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 205,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 160.3062
+              },
+              {
+                "region": "support_1",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 200,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 80.2427
+              },
+              {
+                "region": "support_2",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 267,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 138.8895
+              },
+              {
+                "region": "support_3",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 217,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 142.2734
+              },
+              {
+                "region": "support_4",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 127,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 13.8563
+              }
+            ],
+            "loads": [
+              {
+                "region": "MAIN_SD",
+                "mode": "volume",
+                "nodes": 74,
+                "loaded_nodes": 60,
+                "split": "consistent body force over 12 fully selected elements",
+                "force_N": [
+                  0.0,
+                  20.0,
+                  0.0
+                ]
+              }
+            ],
+            "gravity": null,
+            "load_distribution": "each region's total force is spread over its volume nodes (consistent weights): the resultant is exact, the distribution is uniform over what the region selects"
+          },
+          "max_disp_mm": 0.0201,
+          "max_disp_components_mm": [
+            0.00357,
+            0.00927,
+            0.01788
+          ],
+          "max_disp_at_mm": [
+            55.0,
+            82.5,
+            63.95
+          ],
+          "von_mises_max_MPa": 1.563,
+          "von_mises_p99_5_MPa": 0.2651,
+          "stress_components_MPa": {
+            "sxx": [
+              -0.2878,
+              0.6232
+            ],
+            "syy": [
+              -0.9761,
+              1.1273
+            ],
+            "szz": [
+              -0.2972,
+              0.383
+            ],
+            "txy": [
+              -0.2836,
+              0.304
+            ],
+            "tyz": [
+              -0.5381,
+              0.8355
+            ],
+            "tzx": [
+              -0.1306,
+              0.12
+            ]
+          },
+          "principal_max_MPa": 1.5076,
+          "principal_min_MPa": -1.3468,
+          "tresca_max_MPa": 1.7212,
+          "strain_energy_density_max_MPa": 0.000927,
+          "principal_strain_max": 0.00093476,
+          "principal_strain_min": -0.00118161,
+          "failure_criterion": "max_stress_material_axes",
+          "failure_index_max": 0.05968,
+          "failure_index_p99_5": 0.00683,
+          "safety_factor_p99_5": 146.45,
+          "material_axis_stress_MPa": {
+            "raster": [
+              -0.2878,
+              0.6232
+            ],
+            "in_plane_transverse": [
+              -0.9761,
+              1.1273
+            ],
+            "interlayer_normal": [
+              -0.2972,
+              0.383
+            ],
+            "in_plane_shear": [
+              -0.2836,
+              0.304
+            ],
+            "interlayer_shear_yz": [
+              -0.5381,
+              0.8355
+            ],
+            "interlayer_shear_zx": [
+              -0.1306,
+              0.12
+            ]
+          },
+          "failure_modes": {
+            "raster_tension_compression": {
+              "failure_index_max": 0.01484,
+              "safety_factor": 67.394
+            },
+            "in_plane_transverse": {
+              "failure_index_max": 0.03416,
+              "safety_factor": 29.273
+            },
+            "interlayer_normal": {
+              "failure_index_max": 0.01532,
+              "safety_factor": 65.278
+            },
+            "in_plane_shear": {
+              "failure_index_max": 0.0152,
+              "safety_factor": 65.785
+            },
+            "interlayer_shear_yz": {
+              "failure_index_max": 0.05968,
+              "safety_factor": 16.756
+            },
+            "interlayer_shear_zx": {
+              "failure_index_max": 0.00933,
+              "safety_factor": 107.196
+            }
+          },
+          "governing_failure_mode": "interlayer_shear_yz",
+          "worst_element_safety_factor": 16.756,
+          "hotspot": {
+            "node": 11840,
+            "xyz_mm": [
+              55.0,
+              86.5,
+              63.825
+            ],
+            "failure_index": 0.0597
+          },
+          "applied_N": [
+            0.0,
+            20.0,
+            0.0
+          ],
+          "reaction_total_N": [
+            -0.0,
+            -20.0,
+            0.0
+          ],
+          "reaction_moment_Nmm": [
+            1277.1521,
+            0.0002,
+            -1249.9989
+          ],
+          "reaction_by_support": [
+            {
+              "name": "support_0",
+              "nodes": 205,
+              "force_N": [
+                -2.58082,
+                -4.58306,
+                -0.71013
+              ],
+              "moment_Nmm": [
+                200.597,
+                -124.3111,
+                155.9265
+              ]
+            },
+            {
+              "name": "support_1",
+              "nodes": 200,
+              "force_N": [
+                5.42385,
+                -3.18409,
+                -1.26419
+              ],
+              "moment_Nmm": [
+                71.2371,
+                457.0628,
+                -895.8285
+              ]
+            },
+            {
+              "name": "support_2",
+              "nodes": 267,
+              "force_N": [
+                2.16187,
+                -6.14057,
+                0.77202
+              ],
+              "moment_Nmm": [
+                479.142,
+                100.8407,
+                -531.4607
+              ]
+            },
+            {
+              "name": "support_3",
+              "nodes": 217,
+              "force_N": [
+                -3.55172,
+                -4.06016,
+                0.75777
+              ],
+              "moment_Nmm": [
+                361.5952,
+                -292.8821,
+                135.4422
+              ]
+            },
+            {
+              "name": "support_4",
+              "nodes": 127,
+              "force_N": [
+                -1.45319,
+                -2.03211,
+                0.44453
+              ],
+              "moment_Nmm": [
+                164.5808,
+                -140.7102,
+                -114.0785
+              ]
+            }
+          ],
+          "moment_error": {
+            "applied_Nmm": [
+              -1277.1522,
+              0.0,
+              1250.0
+            ],
+            "reaction_Nmm": [
+              1277.1521,
+              0.0002,
+              -1249.9989
+            ],
+            "residual_Nmm": [
+              -5.7e-05,
+              0.000151,
+              0.001119
+            ],
+            "relative_error": 1e-06,
+            "pass": true,
+            "required": "<= 1 % of the applied moment"
+          },
+          "compliance_Nmm": 0.171167,
+          "equilibrium": {
+            "applied_N": [
+              0.0,
+              20.0,
+              0.0
+            ],
+            "reaction_N": [
+              0.0,
+              -20.0,
+              -0.0
+            ],
+            "residual_N": [
+              0.0,
+              -0.0,
+              -0.0
+            ],
+            "relative_error": 0.0,
+            "pass": true,
+            "required": "<= 1 % of the applied load"
+          },
+          "pass": true
+        },
+        {
+          "case": "MAIN_SD_Z+",
+          "step": 6,
+          "load_class": "normal",
+          "required_safety_factor": 3.0,
+          "worst_element_minimum": 1.5,
+          "mapping": {
+            "supports": [
+              {
+                "region": "support_0",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 205,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 160.3062
+              },
+              {
+                "region": "support_1",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 200,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 80.2427
+              },
+              {
+                "region": "support_2",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 267,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 138.8895
+              },
+              {
+                "region": "support_3",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 217,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 142.2734
+              },
+              {
+                "region": "support_4",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 127,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 13.8563
+              }
+            ],
+            "loads": [
+              {
+                "region": "MAIN_SD",
+                "mode": "volume",
+                "nodes": 74,
+                "loaded_nodes": 60,
+                "split": "consistent body force over 12 fully selected elements",
+                "force_N": [
+                  0.0,
+                  0.0,
+                  20.0
+                ]
+              }
+            ],
+            "gravity": null,
+            "load_distribution": "each region's total force is spread over its volume nodes (consistent weights): the resultant is exact, the distribution is uniform over what the region selects"
+          },
+          "max_disp_mm": 0.12893,
+          "max_disp_components_mm": [
+            0.033,
+            0.01569,
+            0.12796
+          ],
+          "max_disp_at_mm": [
+            53.0,
+            82.5,
+            63.95
+          ],
+          "von_mises_max_MPa": 12.8679,
+          "von_mises_p99_5_MPa": 1.3493,
+          "stress_components_MPa": {
+            "sxx": [
+              -2.6954,
+              4.6658
+            ],
+            "syy": [
+              -0.8073,
+              6.215
+            ],
+            "szz": [
+              -0.9719,
+              2.6187
+            ],
+            "txy": [
+              -0.5095,
+              6.5584
+            ],
+            "tyz": [
+              -2.9875,
+              0.3382
+            ],
+            "tzx": [
+              -0.6218,
+              0.6707
+            ]
+          },
+          "principal_max_MPa": 12.5456,
+          "principal_min_MPa": -2.7184,
+          "tresca_max_MPa": 14.6462,
+          "strain_energy_density_max_MPa": 0.048531,
+          "principal_strain_max": 0.00710059,
+          "principal_strain_min": -0.00487966,
+          "failure_criterion": "max_stress_material_axes",
+          "failure_index_max": 0.32792,
+          "failure_index_p99_5": 0.03448,
+          "safety_factor_p99_5": 28.999,
+          "material_axis_stress_MPa": {
+            "raster": [
+              -2.6954,
+              4.6658
+            ],
+            "in_plane_transverse": [
+              -0.8073,
+              6.215
+            ],
+            "interlayer_normal": [
+              -0.9719,
+              2.6187
+            ],
+            "in_plane_shear": [
+              -0.5095,
+              6.5584
+            ],
+            "interlayer_shear_yz": [
+              -2.9875,
+              0.3382
+            ],
+            "interlayer_shear_zx": [
+              -0.6218,
+              0.6707
+            ]
+          },
+          "failure_modes": {
+            "raster_tension_compression": {
+              "failure_index_max": 0.11109,
+              "safety_factor": 9.002
+            },
+            "in_plane_transverse": {
+              "failure_index_max": 0.18833,
+              "safety_factor": 5.31
+            },
+            "interlayer_normal": {
+              "failure_index_max": 0.10475,
+              "safety_factor": 9.547
+            },
+            "in_plane_shear": {
+              "failure_index_max": 0.32792,
+              "safety_factor": 3.05
+            },
+            "interlayer_shear_yz": {
+              "failure_index_max": 0.21339,
+              "safety_factor": 4.686
+            },
+            "interlayer_shear_zx": {
+              "failure_index_max": 0.04791,
+              "safety_factor": 20.874
+            }
+          },
+          "governing_failure_mode": "in_plane_shear",
+          "worst_element_safety_factor": 3.05,
+          "hotspot": {
+            "node": 2744,
+            "xyz_mm": [
+              13.5,
+              101.05,
+              54.5
+            ],
+            "failure_index": 0.3279
+          },
+          "applied_N": [
+            0.0,
+            0.0,
+            20.0
+          ],
+          "reaction_total_N": [
+            0.0,
+            1e-05,
+            -20.00002
+          ],
+          "reaction_moment_Nmm": [
+            -1701.6331,
+            1250.0045,
+            -0.0006
+          ],
+          "reaction_by_support": [
+            {
+              "name": "support_0",
+              "nodes": 205,
+              "force_N": [
+                -16.16527,
+                -1.7114,
+                -11.12238
+              ],
+              "moment_Nmm": [
+                -941.5492,
+                -595.1002,
+                1538.4602
+              ]
+            },
+            {
+              "name": "support_1",
+              "nodes": 200,
+              "force_N": [
+                21.14549,
+                -2.12497,
+                -16.98978
+              ],
+              "moment_Nmm": [
+                -1469.8443,
+                3292.8737,
+                -2255.8106
+              ]
+            },
+            {
+              "name": "support_2",
+              "nodes": 267,
+              "force_N": [
+                -4.20988,
+                6.15823,
+                -0.13978
+              ],
+              "moment_Nmm": [
+                -353.29,
+                -229.6487,
+                882.4901
+              ]
+            },
+            {
+              "name": "support_3",
+              "nodes": 217,
+              "force_N": [
+                -2.02178,
+                -0.37723,
+                1.06544
+              ],
+              "moment_Nmm": [
+                215.0866,
+                -248.9207,
+                317.81
+              ]
+            },
+            {
+              "name": "support_4",
+              "nodes": 127,
+              "force_N": [
+                1.25144,
+                -1.94462,
+                7.18649
+              ],
+              "moment_Nmm": [
+                847.9639,
+                -969.1997,
+                -482.9502
+              ]
+            }
+          ],
+          "moment_error": {
+            "applied_Nmm": [
+              1701.6304,
+              -1250.0,
+              0.0
+            ],
+            "reaction_Nmm": [
+              -1701.6331,
+              1250.0045,
+              -0.0006
+            ],
+            "residual_Nmm": [
+              -0.002623,
+              0.004488,
+              -0.000578
+            ],
+            "relative_error": 2e-06,
+            "pass": true,
+            "required": "<= 1 % of the applied moment"
+          },
+          "compliance_Nmm": 2.334805,
+          "equilibrium": {
+            "applied_N": [
+              0.0,
+              0.0,
+              20.0
+            ],
+            "reaction_N": [
+              0.0,
+              -0.0,
+              -20.0
+            ],
+            "residual_N": [
+              3e-06,
+              -1e-06,
+              0.0
+            ],
+            "relative_error": 0.0,
+            "pass": true,
+            "required": "<= 1 % of the applied load"
+          },
+          "pass": true
+        },
+        {
+          "case": "SONY_FRONT_X+",
+          "step": 7,
+          "load_class": "normal",
+          "required_safety_factor": 3.0,
+          "worst_element_minimum": 1.5,
+          "mapping": {
+            "supports": [
+              {
+                "region": "support_0",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 205,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 160.3062
+              },
+              {
+                "region": "support_1",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 200,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 80.2427
+              },
+              {
+                "region": "support_2",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 267,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 138.8895
+              },
+              {
+                "region": "support_3",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 217,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 142.2734
+              },
+              {
+                "region": "support_4",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 127,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 13.8563
+              }
+            ],
+            "loads": [
+              {
+                "region": "SONY_FRONT",
+                "mode": "volume",
+                "nodes": 101,
+                "loaded_nodes": 101,
+                "split": "equal split over 101 nodes (no element lies fully inside the region, so the consistent weights are empty)",
+                "force_N": [
+                  20.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            ],
+            "gravity": null,
+            "load_distribution": "each region's total force is spread over its volume nodes (consistent weights): the resultant is exact, the distribution is uniform over what the region selects"
+          },
+          "max_disp_mm": 0.04043,
+          "max_disp_components_mm": [
+            0.03464,
+            0.00333,
+            0.02264
+          ],
+          "max_disp_at_mm": [
+            159.62,
+            72.54,
+            63.0
+          ],
+          "von_mises_max_MPa": 5.1008,
+          "von_mises_p99_5_MPa": 1.9018,
+          "stress_components_MPa": {
+            "sxx": [
+              -2.3861,
+              2.9055
+            ],
+            "syy": [
+              -2.352,
+              2.1145
+            ],
+            "szz": [
+              -4.2732,
+              4.6825
+            ],
+            "txy": [
+              -1.0661,
+              1.0878
+            ],
+            "tyz": [
+              -1.3189,
+              1.097
+            ],
+            "tzx": [
+              -0.4166,
+              2.8948
+            ]
+          },
+          "principal_max_MPa": 4.8856,
+          "principal_min_MPa": -4.6147,
+          "tresca_max_MPa": 5.886,
+          "strain_energy_density_max_MPa": 0.010264,
+          "principal_strain_max": 0.00373511,
+          "principal_strain_min": -0.00377976,
+          "failure_criterion": "max_stress_material_axes",
+          "failure_index_max": 0.20677,
+          "failure_index_p99_5": 0.06023,
+          "safety_factor_p99_5": 16.602,
+          "material_axis_stress_MPa": {
+            "raster": [
+              -2.3861,
+              2.9055
+            ],
+            "in_plane_transverse": [
+              -2.352,
+              2.1145
+            ],
+            "interlayer_normal": [
+              -4.2732,
+              4.6825
+            ],
+            "in_plane_shear": [
+              -1.0661,
+              1.0878
+            ],
+            "interlayer_shear_yz": [
+              -1.3189,
+              1.097
+            ],
+            "interlayer_shear_zx": [
+              -0.4166,
+              2.8948
+            ]
+          },
+          "failure_modes": {
+            "raster_tension_compression": {
+              "failure_index_max": 0.06918,
+              "safety_factor": 14.455
+            },
+            "in_plane_transverse": {
+              "failure_index_max": 0.06408,
+              "safety_factor": 15.606
+            },
+            "interlayer_normal": {
+              "failure_index_max": 0.1873,
+              "safety_factor": 5.339
+            },
+            "in_plane_shear": {
+              "failure_index_max": 0.05439,
+              "safety_factor": 18.386
+            },
+            "interlayer_shear_yz": {
+              "failure_index_max": 0.09421,
+              "safety_factor": 10.615
+            },
+            "interlayer_shear_zx": {
+              "failure_index_max": 0.20677,
+              "safety_factor": 4.836
+            }
+          },
+          "governing_failure_mode": "interlayer_shear_zx",
+          "worst_element_safety_factor": 4.836,
+          "hotspot": {
+            "node": 2257,
+            "xyz_mm": [
+              156.892,
+              73.554,
+              63.0
+            ],
+            "failure_index": 0.2068
+          },
+          "applied_N": [
+            20.0,
+            0.0,
+            0.0
+          ],
+          "reaction_total_N": [
+            -19.99999,
+            -0.0,
+            -1e-05
+          ],
+          "reaction_moment_Nmm": [
+            -0.0007,
+            -1259.9986,
+            1452.4122
+          ],
+          "reaction_by_support": [
+            {
+              "name": "support_0",
+              "nodes": 205,
+              "force_N": [
+                -0.66,
+                0.09558,
+                -0.11876
+              ],
+              "moment_Nmm": [
+                -17.2264,
+                -33.5942,
+                64.3663
+              ]
+            },
+            {
+              "name": "support_1",
+              "nodes": 200,
+              "force_N": [
+                -18.71367,
+                2.18008,
+                -7.03379
+              ],
+              "moment_Nmm": [
+                -763.1693,
+                -112.4923,
+                1826.2173
+              ]
+            },
+            {
+              "name": "support_2",
+              "nodes": 267,
+              "force_N": [
+                -0.31583,
+                0.54054,
+                -0.10333
+              ],
+              "moment_Nmm": [
+                -47.9578,
+                -14.1398,
+                68.4761
+              ]
+            },
+            {
+              "name": "support_3",
+              "nodes": 217,
+              "force_N": [
+                0.80215,
+                0.58364,
+                -1.00533
+              ],
+              "moment_Nmm": [
+                -207.7958,
+                170.9616,
+                -70.2909
+              ]
+            },
+            {
+              "name": "support_4",
+              "nodes": 127,
+              "force_N": [
+                -1.11264,
+                -3.39984,
+                8.2612
+              ],
+              "moment_Nmm": [
+                1036.1487,
+                -1270.734,
+                -436.3567
+              ]
+            }
+          ],
+          "moment_error": {
+            "applied_Nmm": [
+              0.0,
+              1260.0,
+              -1452.4134
+            ],
+            "reaction_Nmm": [
+              -0.0007,
+              -1259.9986,
+              1452.4122
+            ],
+            "residual_Nmm": [
+              -0.000697,
+              0.001353,
+              -0.001201
+            ],
+            "relative_error": 1e-06,
+            "pass": true,
+            "required": "<= 1 % of the applied moment"
+          },
+          "compliance_Nmm": 0.663992,
+          "equilibrium": {
+            "applied_N": [
+              20.0,
+              0.0,
+              0.0
+            ],
+            "reaction_N": [
+              -20.0,
+              0.0,
+              -0.0
+            ],
+            "residual_N": [
+              -0.0,
+              1e-06,
+              -0.0
+            ],
+            "relative_error": 0.0,
+            "pass": true,
+            "required": "<= 1 % of the applied load"
+          },
+          "pass": true
+        },
+        {
+          "case": "SONY_FRONT_Y+",
+          "step": 8,
+          "load_class": "normal",
+          "required_safety_factor": 3.0,
+          "worst_element_minimum": 1.5,
+          "mapping": {
+            "supports": [
+              {
+                "region": "support_0",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 205,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 160.3062
+              },
+              {
+                "region": "support_1",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 200,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 80.2427
+              },
+              {
+                "region": "support_2",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 267,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 138.8895
+              },
+              {
+                "region": "support_3",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 217,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 142.2734
+              },
+              {
+                "region": "support_4",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 127,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 13.8563
+              }
+            ],
+            "loads": [
+              {
+                "region": "SONY_FRONT",
+                "mode": "volume",
+                "nodes": 101,
+                "loaded_nodes": 101,
+                "split": "equal split over 101 nodes (no element lies fully inside the region, so the consistent weights are empty)",
+                "force_N": [
+                  0.0,
+                  20.0,
+                  0.0
+                ]
+              }
+            ],
+            "gravity": null,
+            "load_distribution": "each region's total force is spread over its volume nodes (consistent weights): the resultant is exact, the distribution is uniform over what the region selects"
+          },
+          "max_disp_mm": 0.04369,
+          "max_disp_components_mm": [
+            0.00371,
+            0.03858,
+            0.02332
+          ],
+          "max_disp_at_mm": [
+            155.952,
+            69.615,
+            63.0
+          ],
+          "von_mises_max_MPa": 5.7544,
+          "von_mises_p99_5_MPa": 2.0206,
+          "stress_components_MPa": {
+            "sxx": [
+              -2.2177,
+              2.3819
+            ],
+            "syy": [
+              -2.4091,
+              1.3053
+            ],
+            "szz": [
+              -4.8863,
+              4.2302
+            ],
+            "txy": [
+              -1.1425,
+              1.1934
+            ],
+            "tyz": [
+              -0.4338,
+              3.1725
+            ],
+            "tzx": [
+              -1.2454,
+              1.2077
+            ]
+          },
+          "principal_max_MPa": 4.3772,
+          "principal_min_MPa": -5.0826,
+          "tresca_max_MPa": 6.6253,
+          "strain_energy_density_max_MPa": 0.013043,
+          "principal_strain_max": 0.00386302,
+          "principal_strain_min": -0.00398947,
+          "failure_criterion": "max_stress_material_axes",
+          "failure_index_max": 0.22661,
+          "failure_index_p99_5": 0.06262,
+          "safety_factor_p99_5": 15.969,
+          "material_axis_stress_MPa": {
+            "raster": [
+              -2.2177,
+              2.3819
+            ],
+            "in_plane_transverse": [
+              -2.4091,
+              1.3053
+            ],
+            "interlayer_normal": [
+              -4.8863,
+              4.2302
+            ],
+            "in_plane_shear": [
+              -1.1425,
+              1.1934
+            ],
+            "interlayer_shear_yz": [
+              -0.4338,
+              3.1725
+            ],
+            "interlayer_shear_zx": [
+              -1.2454,
+              1.2077
+            ]
+          },
+          "failure_modes": {
+            "raster_tension_compression": {
+              "failure_index_max": 0.05671,
+              "safety_factor": 17.633
+            },
+            "in_plane_transverse": {
+              "failure_index_max": 0.05736,
+              "safety_factor": 17.434
+            },
+            "interlayer_normal": {
+              "failure_index_max": 0.16921,
+              "safety_factor": 5.91
+            },
+            "in_plane_shear": {
+              "failure_index_max": 0.05967,
+              "safety_factor": 16.758
+            },
+            "interlayer_shear_yz": {
+              "failure_index_max": 0.22661,
+              "safety_factor": 4.413
+            },
+            "interlayer_shear_zx": {
+              "failure_index_max": 0.08896,
+              "safety_factor": 11.241
+            }
+          },
+          "governing_failure_mode": "interlayer_shear_yz",
+          "worst_element_safety_factor": 4.413,
+          "hotspot": {
+            "node": 2248,
+            "xyz_mm": [
+              157.634,
+              72.268,
+              63.0
+            ],
+            "failure_index": 0.2266
+          },
+          "applied_N": [
+            0.0,
+            20.0,
+            0.0
+          ],
+          "reaction_total_N": [
+            -0.0,
+            -20.0,
+            -0.0
+          ],
+          "reaction_moment_Nmm": [
+            1260.0004,
+            0.0013,
+            -3132.669
+          ],
+          "reaction_by_support": [
+            {
+              "name": "support_0",
+              "nodes": 205,
+              "force_N": [
+                0.4927,
+                0.15594,
+                0.0184
+              ],
+              "moment_Nmm": [
+                -6.9674,
+                27.3586,
+                -43.7991
+              ]
+            },
+            {
+              "name": "support_1",
+              "nodes": 200,
+              "force_N": [
+                -5.43373,
+                -5.14728,
+                -2.31338
+              ],
+              "moment_Nmm": [
+                132.9248,
+                19.5535,
+                -285.5875
+              ]
+            },
+            {
+              "name": "support_2",
+              "nodes": 267,
+              "force_N": [
+                0.51613,
+                -0.17653,
+                0.00213
+              ],
+              "moment_Nmm": [
+                10.3069,
+                29.1267,
+                -96.7003
+              ]
+            },
+            {
+              "name": "support_3",
+              "nodes": 217,
+              "force_N": [
+                0.71651,
+                0.22144,
+                0.22455
+              ],
+              "moment_Nmm": [
+                26.6509,
+                10.6048,
+                -100.1988
+              ]
+            },
+            {
+              "name": "support_4",
+              "nodes": 127,
+              "force_N": [
+                3.70838,
+                -15.05356,
+                2.0683
+              ],
+              "moment_Nmm": [
+                1097.0852,
+                -86.6423,
+                -2606.3834
+              ]
+            }
+          ],
+          "moment_error": {
+            "applied_Nmm": [
+              -1260.0,
+              0.0,
+              3132.6678
+            ],
+            "reaction_Nmm": [
+              1260.0004,
+              0.0013,
+              -3132.669
+            ],
+            "residual_Nmm": [
+              0.00042,
+              0.001337,
+              -0.001202
+            ],
+            "relative_error": 1e-06,
+            "pass": true,
+            "required": "<= 1 % of the applied moment"
+          },
+          "compliance_Nmm": 0.73993,
+          "equilibrium": {
+            "applied_N": [
+              0.0,
+              20.0,
+              0.0
+            ],
+            "reaction_N": [
+              -0.0,
+              -20.0,
+              0.0
+            ],
+            "residual_N": [
+              -0.0,
+              -4e-06,
+              0.0
+            ],
+            "relative_error": 0.0,
+            "pass": true,
+            "required": "<= 1 % of the applied load"
+          },
+          "pass": true
+        },
+        {
+          "case": "SONY_FRONT_Z+",
+          "step": 9,
+          "load_class": "normal",
+          "required_safety_factor": 3.0,
+          "worst_element_minimum": 1.5,
+          "mapping": {
+            "supports": [
+              {
+                "region": "support_0",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 205,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 160.3062
+              },
+              {
+                "region": "support_1",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 200,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 80.2427
+              },
+              {
+                "region": "support_2",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 267,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 138.8895
+              },
+              {
+                "region": "support_3",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 217,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 142.2734
+              },
+              {
+                "region": "support_4",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 127,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 13.8563
+              }
+            ],
+            "loads": [
+              {
+                "region": "SONY_FRONT",
+                "mode": "volume",
+                "nodes": 101,
+                "loaded_nodes": 101,
+                "split": "equal split over 101 nodes (no element lies fully inside the region, so the consistent weights are empty)",
+                "force_N": [
+                  0.0,
+                  0.0,
+                  20.0
+                ]
+              }
+            ],
+            "gravity": null,
+            "load_distribution": "each region's total force is spread over its volume nodes (consistent weights): the resultant is exact, the distribution is uniform over what the region selects"
+          },
+          "max_disp_mm": 0.06328,
+          "max_disp_components_mm": [
+            0.01364,
+            0.00661,
+            0.06217
+          ],
+          "max_disp_at_mm": [
+            203.5,
+            69.0,
+            41.5
+          ],
+          "von_mises_max_MPa": 2.1919,
+          "von_mises_p99_5_MPa": 0.9038,
+          "stress_components_MPa": {
+            "sxx": [
+              -1.3689,
+              2.762
+            ],
+            "syy": [
+              -0.7887,
+              2.0002
+            ],
+            "szz": [
+              -0.7764,
+              2.3884
+            ],
+            "txy": [
+              -0.6451,
+              0.6542
+            ],
+            "tyz": [
+              -0.5561,
+              0.7244
+            ],
+            "tzx": [
+              -0.5835,
+              0.6558
+            ]
+          },
+          "principal_max_MPa": 3.5412,
+          "principal_min_MPa": -1.5354,
+          "tresca_max_MPa": 2.4602,
+          "strain_energy_density_max_MPa": 0.002484,
+          "principal_strain_max": 0.0017331,
+          "principal_strain_min": -0.000876425,
+          "failure_criterion": "max_stress_material_axes",
+          "failure_index_max": 0.09554,
+          "failure_index_p99_5": 0.03321,
+          "safety_factor_p99_5": 30.113,
+          "material_axis_stress_MPa": {
+            "raster": [
+              -1.3689,
+              2.762
+            ],
+            "in_plane_transverse": [
+              -0.7887,
+              2.0002
+            ],
+            "interlayer_normal": [
+              -0.7764,
+              2.3884
+            ],
+            "in_plane_shear": [
+              -0.6451,
+              0.6542
+            ],
+            "interlayer_shear_yz": [
+              -0.5561,
+              0.7244
+            ],
+            "interlayer_shear_zx": [
+              -0.5835,
+              0.6558
+            ]
+          },
+          "failure_modes": {
+            "raster_tension_compression": {
+              "failure_index_max": 0.06576,
+              "safety_factor": 15.206
+            },
+            "in_plane_transverse": {
+              "failure_index_max": 0.06061,
+              "safety_factor": 16.498
+            },
+            "interlayer_normal": {
+              "failure_index_max": 0.09554,
+              "safety_factor": 10.467
+            },
+            "in_plane_shear": {
+              "failure_index_max": 0.03271,
+              "safety_factor": 30.573
+            },
+            "interlayer_shear_yz": {
+              "failure_index_max": 0.05174,
+              "safety_factor": 19.326
+            },
+            "interlayer_shear_zx": {
+              "failure_index_max": 0.04685,
+              "safety_factor": 21.347
+            }
+          },
+          "governing_failure_mode": "interlayer_normal",
+          "worst_element_safety_factor": 10.467,
+          "hotspot": {
+            "node": 2248,
+            "xyz_mm": [
+              157.634,
+              72.268,
+              63.0
+            ],
+            "failure_index": 0.0955
+          },
+          "applied_N": [
+            0.0,
+            0.0,
+            20.0
+          ],
+          "reaction_total_N": [
+            0.0,
+            0.0,
+            -19.99998
+          ],
+          "reaction_moment_Nmm": [
+            -1452.4094,
+            3132.6681,
+            0.0001
+          ],
+          "reaction_by_support": [
+            {
+              "name": "support_0",
+              "nodes": 205,
+              "force_N": [
+                2.53931,
+                0.2957,
+                0.31206
+              ],
+              "moment_Nmm": [
+                14.4819,
+                134.0159,
+                -235.1662
+              ]
+            },
+            {
+              "name": "support_1",
+              "nodes": 200,
+              "force_N": [
+                -1.07308,
+                1.13436,
+                -1.37229
+              ],
+              "moment_Nmm": [
+                69.1066,
+                208.6452,
+                196.4702
+              ]
+            },
+            {
+              "name": "support_2",
+              "nodes": 267,
+              "force_N": [
+                1.45616,
+                -1.27079,
+                0.23539
+              ],
+              "moment_Nmm": [
+                111.3773,
+                73.7664,
+                -288.5602
+              ]
+            },
+            {
+              "name": "support_3",
+              "nodes": 217,
+              "force_N": [
+                -0.59554,
+                0.2148,
+                3.02626
+              ],
+              "moment_Nmm": [
+                515.2079,
+                -416.0062,
+                135.7976
+              ]
+            },
+            {
+              "name": "support_4",
+              "nodes": 127,
+              "force_N": [
+                -2.32684,
+                -0.37406,
+                -22.20139
+              ],
+              "moment_Nmm": [
+                -2162.583,
+                3132.2469,
+                191.4587
+              ]
+            }
+          ],
+          "moment_error": {
+            "applied_Nmm": [
+              1452.4134,
+              -3132.6678,
+              0.0
+            ],
+            "reaction_Nmm": [
+              -1452.4094,
+              3132.6681,
+              0.0001
+            ],
+            "residual_Nmm": [
+              0.004052,
+              0.000317,
+              0.000149
+            ],
+            "relative_error": 1e-06,
+            "pass": true,
+            "required": "<= 1 % of the applied moment"
+          },
+          "compliance_Nmm": 0.630491,
+          "equilibrium": {
+            "applied_N": [
+              0.0,
+              0.0,
+              20.0
+            ],
+            "reaction_N": [
+              -0.0,
+              0.0,
+              -20.0
+            ],
+            "residual_N": [
+              -1e-06,
+              1e-06,
+              -1e-06
+            ],
+            "relative_error": 0.0,
+            "pass": true,
+            "required": "<= 1 % of the applied load"
+          },
+          "pass": true
+        },
+        {
+          "case": "SONY_REAR_X+",
+          "step": 10,
+          "load_class": "normal",
+          "required_safety_factor": 3.0,
+          "worst_element_minimum": 1.5,
+          "mapping": {
+            "supports": [
+              {
+                "region": "support_0",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 205,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 160.3062
+              },
+              {
+                "region": "support_1",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 200,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 80.2427
+              },
+              {
+                "region": "support_2",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 267,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 138.8895
+              },
+              {
+                "region": "support_3",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 217,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 142.2734
+              },
+              {
+                "region": "support_4",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 127,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 13.8563
+              }
+            ],
+            "loads": [
+              {
+                "region": "SONY_REAR",
+                "mode": "volume",
+                "nodes": 101,
+                "loaded_nodes": 101,
+                "split": "equal split over 101 nodes (no element lies fully inside the region, so the consistent weights are empty)",
+                "force_N": [
+                  20.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            ],
+            "gravity": null,
+            "load_distribution": "each region's total force is spread over its volume nodes (consistent weights): the resultant is exact, the distribution is uniform over what the region selects"
+          },
+          "max_disp_mm": 0.05621,
+          "max_disp_components_mm": [
+            0.04008,
+            0.0037,
+            0.04027
+          ],
+          "max_disp_at_mm": [
+            202.8,
+            123.34,
+            63.0
+          ],
+          "von_mises_max_MPa": 5.8483,
+          "von_mises_p99_5_MPa": 1.9397,
+          "stress_components_MPa": {
+            "sxx": [
+              -1.3754,
+              2.4573
+            ],
+            "syy": [
+              -2.0899,
+              2.1329
+            ],
+            "szz": [
+              -3.8342,
+              4.8586
+            ],
+            "txy": [
+              -1.0412,
+              1.086
+            ],
+            "tyz": [
+              -1.0496,
+              1.1113
+            ],
+            "tzx": [
+              -0.3574,
+              3.2898
+            ]
+          },
+          "principal_max_MPa": 5.0916,
+          "principal_min_MPa": -3.9927,
+          "tresca_max_MPa": 6.7494,
+          "strain_energy_density_max_MPa": 0.013548,
+          "principal_strain_max": 0.0039704,
+          "principal_strain_min": -0.0040559,
+          "failure_criterion": "max_stress_material_axes",
+          "failure_index_max": 0.23499,
+          "failure_index_p99_5": 0.06195,
+          "safety_factor_p99_5": 16.142,
+          "material_axis_stress_MPa": {
+            "raster": [
+              -1.3754,
+              2.4573
+            ],
+            "in_plane_transverse": [
+              -2.0899,
+              2.1329
+            ],
+            "interlayer_normal": [
+              -3.8342,
+              4.8586
+            ],
+            "in_plane_shear": [
+              -1.0412,
+              1.086
+            ],
+            "interlayer_shear_yz": [
+              -1.0496,
+              1.1113
+            ],
+            "interlayer_shear_zx": [
+              -0.3574,
+              3.2898
+            ]
+          },
+          "failure_modes": {
+            "raster_tension_compression": {
+              "failure_index_max": 0.05851,
+              "safety_factor": 17.092
+            },
+            "in_plane_transverse": {
+              "failure_index_max": 0.06463,
+              "safety_factor": 15.472
+            },
+            "interlayer_normal": {
+              "failure_index_max": 0.19435,
+              "safety_factor": 5.145
+            },
+            "in_plane_shear": {
+              "failure_index_max": 0.0543,
+              "safety_factor": 18.416
+            },
+            "interlayer_shear_yz": {
+              "failure_index_max": 0.07938,
+              "safety_factor": 12.598
+            },
+            "interlayer_shear_zx": {
+              "failure_index_max": 0.23499,
+              "safety_factor": 4.256
+            }
+          },
+          "governing_failure_mode": "interlayer_shear_zx",
+          "worst_element_safety_factor": 4.256,
+          "hotspot": {
+            "node": 2478,
+            "xyz_mm": [
+              199.528,
+              124.354,
+              63.0
+            ],
+            "failure_index": 0.235
+          },
+          "applied_N": [
+            20.0,
+            0.0,
+            0.0
+          ],
+          "reaction_total_N": [
+            -20.0,
+            0.0,
+            -0.0
+          ],
+          "reaction_moment_Nmm": [
+            -0.0003,
+            -1260.0001,
+            2468.4141
+          ],
+          "reaction_by_support": [
+            {
+              "name": "support_0",
+              "nodes": 205,
+              "force_N": [
+                -1.57182,
+                -0.44617,
+                -0.12557
+              ],
+              "moment_Nmm": [
+                12.5599,
+                -85.1905,
+                140.8375
+              ]
+            },
+            {
+              "name": "support_1",
+              "nodes": 200,
+              "force_N": [
+                0.36933,
+                -1.63078,
+                -6.97871
+              ],
+              "moment_Nmm": [
+                -557.2163,
+                932.0536,
+                -212.4885
+              ]
+            },
+            {
+              "name": "support_2",
+              "nodes": 267,
+              "force_N": [
+                -1.32489,
+                0.60424,
+                -0.10064
+              ],
+              "moment_Nmm": [
+                -51.1816,
+                -71.3876,
+                250.89
+              ]
+            },
+            {
+              "name": "support_3",
+              "nodes": 217,
+              "force_N": [
+                -0.99729,
+                -0.48083,
+                -0.85519
+              ],
+              "moment_Nmm": [
+                -121.6834,
+                52.5676,
+                117.9445
+              ]
+            },
+            {
+              "name": "support_4",
+              "nodes": 127,
+              "force_N": [
+                -16.47534,
+                1.95354,
+                8.06011
+              ],
+              "moment_Nmm": [
+                717.521,
+                -2088.0433,
+                2171.2306
+              ]
+            }
+          ],
+          "moment_error": {
+            "applied_Nmm": [
+              0.0,
+              1260.0,
+              -2468.4134
+            ],
+            "reaction_Nmm": [
+              -0.0003,
+              -1260.0001,
+              2468.4141
+            ],
+            "residual_Nmm": [
+              -0.000281,
+              -8.4e-05,
+              0.000708
+            ],
+            "relative_error": 0.0,
+            "pass": true,
+            "required": "<= 1 % of the applied moment"
+          },
+          "compliance_Nmm": 0.773807,
+          "equilibrium": {
+            "applied_N": [
+              20.0,
+              0.0,
+              0.0
+            ],
+            "reaction_N": [
+              -20.0,
+              -0.0,
+              0.0
+            ],
+            "residual_N": [
+              -2e-06,
+              -0.0,
+              0.0
+            ],
+            "relative_error": 0.0,
+            "pass": true,
+            "required": "<= 1 % of the applied load"
+          },
+          "pass": true
+        },
+        {
+          "case": "SONY_REAR_Y+",
+          "step": 11,
+          "load_class": "normal",
+          "required_safety_factor": 3.0,
+          "worst_element_minimum": 1.5,
+          "mapping": {
+            "supports": [
+              {
+                "region": "support_0",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 205,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 160.3062
+              },
+              {
+                "region": "support_1",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 200,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 80.2427
+              },
+              {
+                "region": "support_2",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 267,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 138.8895
+              },
+              {
+                "region": "support_3",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 217,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 142.2734
+              },
+              {
+                "region": "support_4",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 127,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 13.8563
+              }
+            ],
+            "loads": [
+              {
+                "region": "SONY_REAR",
+                "mode": "volume",
+                "nodes": 101,
+                "loaded_nodes": 101,
+                "split": "equal split over 101 nodes (no element lies fully inside the region, so the consistent weights are empty)",
+                "force_N": [
+                  0.0,
+                  20.0,
+                  0.0
+                ]
+              }
+            ],
+            "gravity": null,
+            "load_distribution": "each region's total force is spread over its volume nodes (consistent weights): the resultant is exact, the distribution is uniform over what the region selects"
+          },
+          "max_disp_mm": 0.04621,
+          "max_disp_components_mm": [
+            0.00729,
+            0.0435,
+            0.01778
+          ],
+          "max_disp_at_mm": [
+            199.132,
+            126.265,
+            63.0
+          ],
+          "von_mises_max_MPa": 5.8715,
+          "von_mises_p99_5_MPa": 1.9514,
+          "stress_components_MPa": {
+            "sxx": [
+              -2.3221,
+              5.0519
+            ],
+            "syy": [
+              -2.3446,
+              2.5412
+            ],
+            "szz": [
+              -4.918,
+              4.8896
+            ],
+            "txy": [
+              -1.4612,
+              1.1987
+            ],
+            "tyz": [
+              -0.431,
+              3.1303
+            ],
+            "tzx": [
+              -1.2354,
+              1.2131
+            ]
+          },
+          "principal_max_MPa": 5.7468,
+          "principal_min_MPa": -5.2029,
+          "tresca_max_MPa": 6.627,
+          "strain_energy_density_max_MPa": 0.013408,
+          "principal_strain_max": 0.00439291,
+          "principal_strain_min": -0.00392302,
+          "failure_criterion": "max_stress_material_axes",
+          "failure_index_max": 0.22359,
+          "failure_index_p99_5": 0.06041,
+          "safety_factor_p99_5": 16.552,
+          "material_axis_stress_MPa": {
+            "raster": [
+              -2.3221,
+              5.0519
+            ],
+            "in_plane_transverse": [
+              -2.3446,
+              2.5412
+            ],
+            "interlayer_normal": [
+              -4.918,
+              4.8896
+            ],
+            "in_plane_shear": [
+              -1.4612,
+              1.1987
+            ],
+            "interlayer_shear_yz": [
+              -0.431,
+              3.1303
+            ],
+            "interlayer_shear_zx": [
+              -1.2354,
+              1.2131
+            ]
+          },
+          "failure_modes": {
+            "raster_tension_compression": {
+              "failure_index_max": 0.12028,
+              "safety_factor": 8.314
+            },
+            "in_plane_transverse": {
+              "failure_index_max": 0.07701,
+              "safety_factor": 12.986
+            },
+            "interlayer_normal": {
+              "failure_index_max": 0.19558,
+              "safety_factor": 5.113
+            },
+            "in_plane_shear": {
+              "failure_index_max": 0.07306,
+              "safety_factor": 13.687
+            },
+            "interlayer_shear_yz": {
+              "failure_index_max": 0.22359,
+              "safety_factor": 4.472
+            },
+            "interlayer_shear_zx": {
+              "failure_index_max": 0.08825,
+              "safety_factor": 11.332
+            }
+          },
+          "governing_failure_mode": "interlayer_shear_yz",
+          "worst_element_safety_factor": 4.472,
+          "hotspot": {
+            "node": 2476,
+            "xyz_mm": [
+              198.786,
+              123.612,
+              63.0
+            ],
+            "failure_index": 0.2236
+          },
+          "applied_N": [
+            0.0,
+            20.0,
+            0.0
+          ],
+          "reaction_total_N": [
+            -2e-05,
+            -20.0,
+            -0.0
+          ],
+          "reaction_moment_Nmm": [
+            1260.0009,
+            0.0017,
+            -3996.2679
+          ],
+          "reaction_by_support": [
+            {
+              "name": "support_0",
+              "nodes": 205,
+              "force_N": [
+                1.1612,
+                0.61447,
+                -0.0148
+              ],
+              "moment_Nmm": [
+                -36.1126,
+                66.3598,
+                -98.427
+              ]
+            },
+            {
+              "name": "support_1",
+              "nodes": 200,
+              "force_N": [
+                -19.80266,
+                -0.33868,
+                -1.27078
+              ],
+              "moment_Nmm": [
+                -85.2195,
+                -914.9732,
+                1521.568
+              ]
+            },
+            {
+              "name": "support_2",
+              "nodes": 267,
+              "force_N": [
+                1.18837,
+                -0.06265,
+                -0.05543
+              ],
+              "moment_Nmm": [
+                -5.8903,
+                69.1609,
+                -214.7797
+              ]
+            },
+            {
+              "name": "support_3",
+              "nodes": 217,
+              "force_N": [
+                2.4214,
+                1.56073,
+                0.35236
+              ],
+              "moment_Nmm": [
+                -26.0468,
+                86.893,
+                -235.7649
+              ]
+            },
+            {
+              "name": "support_4",
+              "nodes": 127,
+              "force_N": [
+                15.03166,
+                -21.77387,
+                0.98865
+              ],
+              "moment_Nmm": [
+                1413.27,
+                692.5612,
+                -4968.8642
+              ]
+            }
+          ],
+          "moment_error": {
+            "applied_Nmm": [
+              -1260.0,
+              0.0,
+              3996.2678
+            ],
+            "reaction_Nmm": [
+              1260.0009,
+              0.0017,
+              -3996.2679
+            ],
+            "residual_Nmm": [
+              0.000928,
+              0.001698,
+              -3e-05
+            ],
+            "relative_error": 0.0,
+            "pass": true,
+            "required": "<= 1 % of the applied moment"
+          },
+          "compliance_Nmm": 0.835669,
+          "equilibrium": {
+            "applied_N": [
+              0.0,
+              20.0,
+              0.0
+            ],
+            "reaction_N": [
+              -0.0,
+              -20.0,
+              0.0
+            ],
+            "residual_N": [
+              -3e-06,
+              2e-06,
+              0.0
+            ],
+            "relative_error": 0.0,
+            "pass": true,
+            "required": "<= 1 % of the applied load"
+          },
+          "pass": true
+        },
+        {
+          "case": "SONY_REAR_Z+",
+          "step": 12,
+          "load_class": "normal",
+          "required_safety_factor": 3.0,
+          "worst_element_minimum": 1.5,
+          "mapping": {
+            "supports": [
+              {
+                "region": "support_0",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 205,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 160.3062
+              },
+              {
+                "region": "support_1",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 200,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 80.2427
+              },
+              {
+                "region": "support_2",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 267,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 138.8895
+              },
+              {
+                "region": "support_3",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 217,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 142.2734
+              },
+              {
+                "region": "support_4",
+                "mode": "volume",
+                "fix": "xyz",
+                "nodes": 127,
+                "dofs": [
+                  1,
+                  2,
+                  3
+                ],
+                "area_mm2": 13.8563
+              }
+            ],
+            "loads": [
+              {
+                "region": "SONY_REAR",
+                "mode": "volume",
+                "nodes": 101,
+                "loaded_nodes": 101,
+                "split": "equal split over 101 nodes (no element lies fully inside the region, so the consistent weights are empty)",
+                "force_N": [
+                  0.0,
+                  0.0,
+                  20.0
+                ]
+              }
+            ],
+            "gravity": null,
+            "load_distribution": "each region's total force is spread over its volume nodes (consistent weights): the resultant is exact, the distribution is uniform over what the region selects"
+          },
+          "max_disp_mm": 0.14176,
+          "max_disp_components_mm": [
+            0.02956,
+            0.00687,
+            0.13991
+          ],
+          "max_disp_at_mm": [
+            202.8,
+            123.34,
+            63.0
+          ],
+          "von_mises_max_MPa": 13.8959,
+          "von_mises_p99_5_MPa": 1.511,
+          "stress_components_MPa": {
+            "sxx": [
+              -2.9306,
+              5.1546
+            ],
+            "syy": [
+              -1.5364,
+              2.7306
+            ],
+            "szz": [
+              -2.4034,
+              4.6494
+            ],
+            "txy": [
+              -1.3259,
+              1.1723
+            ],
+            "tyz": [
+              -1.1691,
+              6.5422
+            ],
+            "tzx": [
+              -4.4254,
+              1.2398
+            ]
+          },
+          "principal_max_MPa": 12.3499,
+          "principal_min_MPa": -3.6869,
+          "tresca_max_MPa": 16.0368,
+          "strain_energy_density_max_MPa": 0.08027,
+          "principal_strain_max": 0.0106364,
+          "principal_strain_min": -0.00827141,
+          "failure_criterion": "max_stress_material_axes",
+          "failure_index_max": 0.4673,
+          "failure_index_p99_5": 0.04453,
+          "safety_factor_p99_5": 22.458,
+          "material_axis_stress_MPa": {
+            "raster": [
+              -2.9306,
+              5.1546
+            ],
+            "in_plane_transverse": [
+              -1.5364,
+              2.7306
+            ],
+            "interlayer_normal": [
+              -2.4034,
+              4.6494
+            ],
+            "in_plane_shear": [
+              -1.3259,
+              1.1723
+            ],
+            "interlayer_shear_yz": [
+              -1.1691,
+              6.5422
+            ],
+            "interlayer_shear_zx": [
+              -4.4254,
+              1.2398
+            ]
+          },
+          "failure_modes": {
+            "raster_tension_compression": {
+              "failure_index_max": 0.12273,
+              "safety_factor": 8.148
+            },
+            "in_plane_transverse": {
+              "failure_index_max": 0.08275,
+              "safety_factor": 12.085
+            },
+            "interlayer_normal": {
+              "failure_index_max": 0.18597,
+              "safety_factor": 5.377
+            },
+            "in_plane_shear": {
+              "failure_index_max": 0.06629,
+              "safety_factor": 15.084
+            },
+            "interlayer_shear_yz": {
+              "failure_index_max": 0.4673,
+              "safety_factor": 2.14
+            },
+            "interlayer_shear_zx": {
+              "failure_index_max": 0.3161,
+              "safety_factor": 3.164
+            }
+          },
+          "governing_failure_mode": "interlayer_shear_yz",
+          "worst_element_safety_factor": 2.14,
+          "hotspot": {
+            "node": 1508,
+            "xyz_mm": [
+              131.4,
+              74.95,
+              54.5
+            ],
+            "failure_index": 0.4673
+          },
+          "applied_N": [
+            0.0,
+            0.0,
+            20.0
+          ],
+          "reaction_total_N": [
+            1e-05,
+            2e-05,
+            -20.0
+          ],
+          "reaction_moment_Nmm": [
+            -2468.4158,
+            3996.2666,
+            0.0006
+          ],
+          "reaction_by_support": [
+            {
+              "name": "support_0",
+              "nodes": 205,
+              "force_N": [
+                6.24534,
+                1.04368,
+                0.88905
+              ],
+              "moment_Nmm": [
+                30.3557,
+                326.2055,
+                -575.0018
+              ]
+            },
+            {
+              "name": "support_1",
+              "nodes": 200,
+              "force_N": [
+                -7.43077,
+                0.57911,
+                50.47982
+              ],
+              "moment_Nmm": [
+                4693.6365,
+                -7000.6232,
+                661.252
+              ]
+            },
+            {
+              "name": "support_2",
+              "nodes": 267,
+              "force_N": [
+                4.86766,
+                -3.60065,
+                0.83844
+              ],
+              "moment_Nmm": [
+                345.3878,
+                245.6395,
+                -951.3419
+              ]
+            },
+            {
+              "name": "support_3",
+              "nodes": 217,
+              "force_N": [
+                -1.04679,
+                -2.38555,
+                5.05884
+              ],
+              "moment_Nmm": [
+                1012.7114,
+                -688.0821,
+                -116.6817
+              ]
+            },
+            {
+              "name": "support_4",
+              "nodes": 127,
+              "force_N": [
+                -2.63543,
+                4.36343,
+                -77.26615
+              ],
+              "moment_Nmm": [
+                -8550.5072,
+                11113.1268,
+                981.774
+              ]
+            }
+          ],
+          "moment_error": {
+            "applied_Nmm": [
+              2468.4134,
+              -3996.2678,
+              0.0
+            ],
+            "reaction_Nmm": [
+              -2468.4158,
+              3996.2666,
+              0.0006
+            ],
+            "residual_Nmm": [
+              -0.00238,
+              -0.001244,
+              0.000559
+            ],
+            "relative_error": 1e-06,
+            "pass": true,
+            "required": "<= 1 % of the applied moment"
+          },
+          "compliance_Nmm": 2.6666,
+          "equilibrium": {
+            "applied_N": [
+              0.0,
+              0.0,
+              20.0
+            ],
+            "reaction_N": [
+              0.0,
+              0.0,
+              -20.0
+            ],
+            "residual_N": [
+              0.0,
+              0.0,
+              5e-06
+            ],
+            "relative_error": 0.0,
+            "pass": true,
+            "required": "<= 1 % of the applied load"
+          },
+          "pass": true
+        }
+      ],
+      "governing_case": "SONY_FRONT_Y+",
+      "safety_factor_p99_5": 15.969,
+      "worst_element_safety_factor": 4.413,
+      "hotspot": {
+        "node": 2248,
+        "xyz_mm": [
+          157.634,
+          72.268,
+          63.0
+        ],
+        "failure_index": 0.2266
+      },
+      "failure_criterion": "max_stress_material_axes",
+      "von_mises_p99_5_MPa": 2.0206,
+      "required_safety_factor": 3.0,
+      "load_class": "normal",
+      "p99_5_stress_MPa": 2.0206,
+      "hotspot_xyz_mm": [
+        157.634,
+        72.268,
+        63.0
+      ],
+      "max_disp_mm": 0.14176,
+      "von_mises_max_MPa": 13.8959,
+      "max_stress_MPa": 13.8959,
+      "equilibrium": {
+        "applied_N": [
+          20.0,
+          0.0,
+          0.0
+        ],
+        "reaction_N": [
+          -20.0,
+          -0.0,
+          0.0
+        ],
+        "residual_N": [
+          -5e-06,
+          -0.0,
+          1e-06
+        ],
+        "relative_error": 0.0,
+        "pass": true,
+        "required": "<= 1 % of the applied load"
+      },
+      "pass": true
+    }
+  ]
+}

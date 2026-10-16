@@ -1,0 +1,77 @@
+voxelised child_core_frame.stl: 126555 solid voxels at 1.730 mm (0.3 s)
+  NOTE  126555 elements x 2 case(s) is a long run (tens of minutes). Thin-walled parts are expensive in voxel FEA because resolving the wall sets the voxel size for the whole part. Iterate at a coarser --voxel and refine once.
+
+--- case: L1 hoist 3g: lugs fixed, container + guard + gate weights down ---
+  applied load        205.37 N [0.0, 0.0, -205.368]
+  max deflection      0.489 mm at [72.2, -9.7, -17.0]
+  von Mises           max 5.43 MPa / p99.5 1.08 MPa
+  safety factor       5.17 (worst) / 30.07 (p99.5)   [need >= 2.00]
+  [PASS] strength         safety factor >= 2.00 -> 5.17 (worst element) / 30.07 (p99.5)
+  [PASS] stiffness        max deflection <= 1.000 mm -> 0.489 mm
+  [PASS] mesh resolution  >= 3 elements across the thinnest section -> 4.0 (thin 6.92 mm) / 4.0 (typical 6.92 mm)
+  NOTE  max/p99.5 stress ratio is 5.0 -- the peak is probably a stair-step or clamp artefact. Check the hotspot list before trusting it.
+  hotspots (worst first):
+    at [55.81, -20.91, 203.57] SF 5.17
+    at [-54.91, -20.91, 203.57] SF 5.48
+    at [59.26, -22.64, 217.41] SF 6.7
+    at [-56.64, -22.64, 217.41] SF 8.06
+    at [-56.64, -26.09, 208.76] SF 9.41
+
+--- case: L2 transport side hit 300N (C6 hard case 5g): container reacts, load on pylon + lugs ---
+  applied load        300.00 N [300.0, 0.0, 0.0]
+  max deflection      0.120 mm at [44.6, -101.3, 71.2]
+  von Mises           max 4.99 MPa / p99.5 1.41 MPa
+  safety factor       6.09 (worst) / 28.02 (p99.5)   [need >= 2.00]
+  [PASS] strength         safety factor >= 2.00 -> 6.09 (worst element) / 28.02 (p99.5)
+  [PASS] stiffness        max deflection <= 1.000 mm -> 0.120 mm
+  [PASS] mesh resolution  >= 3 elements across the thinnest section -> 4.0 (thin 6.92 mm) / 4.0 (typical 6.92 mm)
+  NOTE  max/p99.5 stress ratio is 3.5 -- the peak is probably a stair-step or clamp artefact. Check the hotspot list before trusting it.
+  hotspots (worst first):
+    at [-30.7, -65.88, -2.29] SF 6.09
+    at [24.66, -65.88, -2.29] SF 6.38
+    at [31.58, -65.88, -2.29] SF 7.14
+    at [-30.7, -65.88, -10.95] SF 10.55
+    at [24.66, -65.88, -10.95] SF 10.83
+
+wrote parts/child/exterior/printed/child_core_frame/fea_v4
+
+=== PASS ===
+
+voxelised child_core_frame.stl: 126555 solid voxels at 1.730 mm (0.3 s)
+  NOTE  126555 elements x 2 case(s) is a long run (tens of minutes). Thin-walled parts are expensive in voxel FEA because resolving the wall sets the voxel size for the whole part. Iterate at a coarser --voxel and refine once.
+
+--- case: L2 transport rear hit 300N on back wall (C6) ---
+  applied load        300.00 N [0.0, 300.0, 0.0]
+  max deflection      0.116 mm at [-80.0, 18.0, 116.2]
+  von Mises           max 4.05 MPa / p99.5 1.03 MPa
+  safety factor       9.89 (worst) / 31.91 (p99.5)   [need >= 2.00]
+  [PASS] strength         safety factor >= 2.00 -> 9.89 (worst element) / 31.91 (p99.5)
+  [PASS] stiffness        max deflection <= 1.000 mm -> 0.116 mm
+  [PASS] mesh resolution  >= 3 elements across the thinnest section -> 4.0 (thin 6.92 mm) / 4.0 (typical 6.92 mm)
+  NOTE  max/p99.5 stress ratio is 3.9 -- the peak is probably a stair-step or clamp artefact. Check the hotspot list before trusting it.
+  hotspots (worst first):
+    at [45.42, -43.39, 99.78] SF 9.89
+    at [-44.54, -45.12, 99.78] SF 10.23
+    at [52.34, -31.28, 108.42] SF 12.19
+    at [-41.08, -48.59, 104.97] SF 12.34
+    at [-51.45, -31.28, 108.42] SF 14.16
+
+--- case: L5 landing 600N up through guard bosses ---
+  applied load        600.00 N [0.0, 0.0, 600.0]
+  max deflection      0.009 mm at [-61.0, -35.6, 10.7]
+  von Mises           max 1.15 MPa / p99.5 0.36 MPa
+  safety factor       17.29 (worst) / 63.15 (p99.5)   [need >= 2.00]
+  [PASS] strength         safety factor >= 2.00 -> 17.29 (worst element) / 63.15 (p99.5)
+  [PASS] stiffness        max deflection <= 1.000 mm -> 0.009 mm
+  [PASS] mesh resolution  >= 3 elements across the thinnest section -> 4.0 (thin 6.92 mm) / 4.0 (typical 6.92 mm)
+  NOTE  max/p99.5 stress ratio is 3.2 -- the peak is probably a stair-step or clamp artefact. Check the hotspot list before trusting it.
+  hotspots (worst first):
+    at [-61.84, -31.28, 2.89] SF 17.29
+    at [57.53, -38.2, 2.89]   SF 18.09
+    at [-56.64, -36.47, 2.89] SF 20.32
+    at [61.0, -31.28, 2.89]   SF 20.62
+    at [-54.91, -41.67, -2.29] SF 22.92
+
+wrote parts/child/exterior/printed/child_core_frame/fea_v4b
+
+=== PASS ===

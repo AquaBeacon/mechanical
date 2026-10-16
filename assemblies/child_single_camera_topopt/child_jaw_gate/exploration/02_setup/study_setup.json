@@ -1,0 +1,863 @@
+{
+  "schema": "topopt/setup/1",
+  "ok": true,
+  "errors": [],
+  "warnings": [
+    "support region 'knuckles' in case 'L1 hoist 3g: single camera + smaller adapter, 20N total on HP4/HP5 plus gate self-weight' reaches 73 % (56052.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 27 % only.",
+    "support region 'latch_lo' in case 'L1 hoist 3g: single camera + smaller adapter, 20N total on HP4/HP5 plus gate self-weight' reaches 7 % (135.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 93 % only.",
+    "support region 'latch_hi' in case 'L1 hoist 3g: single camera + smaller adapter, 20N total on HP4/HP5 plus gate self-weight' reaches 7 % (135.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 93 % only.",
+    "load region 'hp4' in case 'L1 hoist 3g: single camera + smaller adapter, 20N total on HP4/HP5 plus gate self-weight' reaches 62 % (19278.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 38 % only.",
+    "load region 'hp5' in case 'L1 hoist 3g: single camera + smaller adapter, 20N total on HP4/HP5 plus gate self-weight' reaches 57 % (17928.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 43 % only.",
+    "support region 'pocket_bot' in case 'L2f transport frontal 300 N (-Y) through the cam bridge into HP4/HP5, the container reacts on the three bands' reaches 89 % (116316.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 11 % only.",
+    "support region 'band_mid' in case 'L2f transport frontal 300 N (-Y) through the cam bridge into HP4/HP5, the container reacts on the three bands' reaches 86 % (112995.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 14 % only.",
+    "support region 'pocket_top' in case 'L2f transport frontal 300 N (-Y) through the cam bridge into HP4/HP5, the container reacts on the three bands' reaches 89 % (139914.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 11 % only.",
+    "load region 'hp4' in case 'L2f transport frontal 300 N (-Y) through the cam bridge into HP4/HP5, the container reacts on the three bands' reaches 62 % (19278.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 38 % only.",
+    "load region 'hp5' in case 'L2f transport frontal 300 N (-Y) through the cam bridge into HP4/HP5, the container reacts on the three bands' reaches 57 % (17928.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 43 % only.",
+    "support region 'pocket_bot' in case 'L2s transport side 300 N (-X on the latch edge), the container reacts on the three bands' reaches 89 % (116316.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 11 % only.",
+    "support region 'band_mid' in case 'L2s transport side 300 N (-X on the latch edge), the container reacts on the three bands' reaches 86 % (112995.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 14 % only.",
+    "support region 'pocket_top' in case 'L2s transport side 300 N (-X on the latch edge), the container reacts on the three bands' reaches 89 % (139914.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 11 % only.",
+    "load region 'latch_lo' in case 'L2s transport side 300 N (-X on the latch edge), the container reacts on the three bands' reaches 7 % (135.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 93 % only.",
+    "load region 'latch_hi' in case 'L2s transport side 300 N (-X on the latch edge), the container reacts on the three bands' reaches 7 % (135.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 93 % only.",
+    "support region 'pocket_bot' in case 'L3 clamp preload: the two M5 knob bolts pull the latch bosses -Y (300 N each) and the hinge pin pulls the knuckles -Y, the tube + EVA react on the three bands' reaches 89 % (116316.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 11 % only.",
+    "support region 'band_mid' in case 'L3 clamp preload: the two M5 knob bolts pull the latch bosses -Y (300 N each) and the hinge pin pulls the knuckles -Y, the tube + EVA react on the three bands' reaches 86 % (112995.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 14 % only.",
+    "support region 'pocket_top' in case 'L3 clamp preload: the two M5 knob bolts pull the latch bosses -Y (300 N each) and the hinge pin pulls the knuckles -Y, the tube + EVA react on the three bands' reaches 89 % (139914.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 11 % only.",
+    "load region 'latch_lo' in case 'L3 clamp preload: the two M5 knob bolts pull the latch bosses -Y (300 N each) and the hinge pin pulls the knuckles -Y, the tube + EVA react on the three bands' reaches 7 % (135.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 93 % only.",
+    "load region 'latch_hi' in case 'L3 clamp preload: the two M5 knob bolts pull the latch bosses -Y (300 N each) and the hinge pin pulls the knuckles -Y, the tube + EVA react on the three bands' reaches 7 % (135.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 93 % only.",
+    "load region 'knuckles' in case 'L3 clamp preload: the two M5 knob bolts pull the latch bosses -Y (300 N each) and the hinge pin pulls the knuckles -Y, the tube + EVA react on the three bands' reaches 73 % (56052.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 27 % only.",
+    "support region 'pocket_bot' in case 'L4 frontal collision 300 N on the top of the bridge column (z 195): statics on the HP4/HP5 bolt pair (z 170 / 100) gives -400 N on HP4 and +100 N pull-out on HP5, the container reacts on the three bands' reaches 89 % (116316.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 11 % only.",
+    "support region 'band_mid' in case 'L4 frontal collision 300 N on the top of the bridge column (z 195): statics on the HP4/HP5 bolt pair (z 170 / 100) gives -400 N on HP4 and +100 N pull-out on HP5, the container reacts on the three bands' reaches 86 % (112995.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 14 % only.",
+    "support region 'pocket_top' in case 'L4 frontal collision 300 N on the top of the bridge column (z 195): statics on the HP4/HP5 bolt pair (z 170 / 100) gives -400 N on HP4 and +100 N pull-out on HP5, the container reacts on the three bands' reaches 89 % (139914.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 11 % only.",
+    "load region 'hp4' in case 'L4 frontal collision 300 N on the top of the bridge column (z 195): statics on the HP4/HP5 bolt pair (z 170 / 100) gives -400 N on HP4 and +100 N pull-out on HP5, the container reacts on the three bands' reaches 62 % (19278.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 38 % only.",
+    "load region 'hp5' in case 'L4 frontal collision 300 N on the top of the bridge column (z 195): statics on the HP4/HP5 bolt pair (z 170 / 100) gives -400 N on HP4 and +100 N pull-out on HP5, the container reacts on the three bands' reaches 57 % (17928.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 43 % only.",
+    "only 37 % of the domain is free for the optimiser to decide.",
+    "preserve is 72 % of the expected final part (127953 mm3 of 178389 mm3 at volfrac 0.05). Most of this shape is drawn, not optimised; say so wherever the result is presented.",
+    "the free region is only 2.0 voxels (6.00 mm) thick at its thinnest. Below about 3 voxels there is no room for a hole, so the topology there is set by the outline rather than chosen -- refine the grid or widen the design space.",
+    "the free region's median thickness is 6.00 mm, below the 9.00 mm filter radius. The filter cannot form a member narrower than itself, so most of the free region will come out grey and the threshold, not the optimisation, will decide what is material.",
+    "the 6 support point(s) are fixed by preserve at knuckles at [-71.7, 9.8, 100.4]; latch_lo at [63.2, 22.2, 40.5]; latch_hi at [63.2, 22.2, 169.5]; pocket_bot at [1.6, 41.5, -10.2]; band_mid at [1.9, 39.6, 100.5]; pocket_top at [1.9, 39.8, 209.6]. Where the part is held is an input to this study, not a result of it -- if the layout of the supports is itself meant to be optimised, that decision is currently being made in CAD."
+  ],
+  "info": {
+    "voxel_mm": 3.0,
+    "grid_shape": [
+      60,
+      64,
+      108
+    ],
+    "origin_mm": [
+      -89.0,
+      -106.923,
+      -54.0
+    ],
+    "design_space_mm3": 2610792.0,
+    "preserve_mm3": 127953.0,
+    "obstacle_mm3": 3233952.0,
+    "obstacle_declared_mm3": 3233952.0,
+    "domain_mm3": 2610792.0,
+    "free_mm3": 969921.0,
+    "free_voxels": 35923,
+    "domain_voxels": 96696,
+    "ground": {
+      "axis": "Z",
+      "plane_mm": -18.0,
+      "band_voxels": 1224,
+      "band_area_mm2": 11016.0
+    },
+    "attach": {
+      "interfaces": {
+        "specs": [
+          {
+            "region": "join_free_space"
+          }
+        ],
+        "attach_voxels": 4584,
+        "attach_usable_voxels": 3815,
+        "attach_area_mm2": 34335.0,
+        "no_attach_voxels": 0,
+        "no_attach_mm3": 0.0,
+        "standoff_mm": 3.0
+      }
+    },
+    "no_attach_mm3": 0.0,
+    "attach_standoff_mm": 3.0,
+    "preserve_outside_design_space_mm3": 0.0,
+    "preserve_bodies": 7,
+    "domain_components": 1,
+    "preserve_bodies_by_domain_component": {
+      "1": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "note_preserve_bodies": "7 separate preserve bodies, all reachable through the design space -- that is the normal generative-design setup.",
+    "design_space_blocked_pct": 57.9,
+    "boundary_conditions": [
+      {
+        "case": "L1 hoist 3g: single camera + smaller adapter, 20N total on HP4/HP5 plus gate self-weight",
+        "kind": "support",
+        "region": "knuckles",
+        "voxels_in_domain": 2844,
+        "voxels_on_preserve": 768
+      },
+      {
+        "case": "L1 hoist 3g: single camera + smaller adapter, 20N total on HP4/HP5 plus gate self-weight",
+        "kind": "support",
+        "region": "latch_lo",
+        "voxels_in_domain": 70,
+        "voxels_on_preserve": 65
+      },
+      {
+        "case": "L1 hoist 3g: single camera + smaller adapter, 20N total on HP4/HP5 plus gate self-weight",
+        "kind": "support",
+        "region": "latch_hi",
+        "voxels_in_domain": 70,
+        "voxels_on_preserve": 65
+      },
+      {
+        "case": "L1 hoist 3g: single camera + smaller adapter, 20N total on HP4/HP5 plus gate self-weight",
+        "kind": "load",
+        "region": "hp4",
+        "voxels_in_domain": 1156,
+        "voxels_on_preserve": 442
+      },
+      {
+        "case": "L1 hoist 3g: single camera + smaller adapter, 20N total on HP4/HP5 plus gate self-weight",
+        "kind": "load",
+        "region": "hp5",
+        "voxels_in_domain": 1156,
+        "voxels_on_preserve": 492
+      },
+      {
+        "case": "L2f transport frontal 300 N (-Y) through the cam bridge into HP4/HP5, the container reacts on the three bands",
+        "kind": "support",
+        "region": "pocket_bot",
+        "voxels_in_domain": 4840,
+        "voxels_on_preserve": 532
+      },
+      {
+        "case": "L2f transport frontal 300 N (-Y) through the cam bridge into HP4/HP5, the container reacts on the three bands",
+        "kind": "support",
+        "region": "band_mid",
+        "voxels_in_domain": 4840,
+        "voxels_on_preserve": 655
+      },
+      {
+        "case": "L2f transport frontal 300 N (-Y) through the cam bridge into HP4/HP5, the container reacts on the three bands",
+        "kind": "support",
+        "region": "pocket_top",
+        "voxels_in_domain": 5808,
+        "voxels_on_preserve": 626
+      },
+      {
+        "case": "L2f transport frontal 300 N (-Y) through the cam bridge into HP4/HP5, the container reacts on the three bands",
+        "kind": "load",
+        "region": "hp4",
+        "voxels_in_domain": 1156,
+        "voxels_on_preserve": 442
+      },
+      {
+        "case": "L2f transport frontal 300 N (-Y) through the cam bridge into HP4/HP5, the container reacts on the three bands",
+        "kind": "load",
+        "region": "hp5",
+        "voxels_in_domain": 1156,
+        "voxels_on_preserve": 492
+      },
+      {
+        "case": "L2s transport side 300 N (-X on the latch edge), the container reacts on the three bands",
+        "kind": "support",
+        "region": "pocket_bot",
+        "voxels_in_domain": 4840,
+        "voxels_on_preserve": 532
+      },
+      {
+        "case": "L2s transport side 300 N (-X on the latch edge), the container reacts on the three bands",
+        "kind": "support",
+        "region": "band_mid",
+        "voxels_in_domain": 4840,
+        "voxels_on_preserve": 655
+      },
+      {
+        "case": "L2s transport side 300 N (-X on the latch edge), the container reacts on the three bands",
+        "kind": "support",
+        "region": "pocket_top",
+        "voxels_in_domain": 5808,
+        "voxels_on_preserve": 626
+      },
+      {
+        "case": "L2s transport side 300 N (-X on the latch edge), the container reacts on the three bands",
+        "kind": "load",
+        "region": "latch_lo",
+        "voxels_in_domain": 70,
+        "voxels_on_preserve": 65
+      },
+      {
+        "case": "L2s transport side 300 N (-X on the latch edge), the container reacts on the three bands",
+        "kind": "load",
+        "region": "latch_hi",
+        "voxels_in_domain": 70,
+        "voxels_on_preserve": 65
+      },
+      {
+        "case": "L3 clamp preload: the two M5 knob bolts pull the latch bosses -Y (300 N each) and the hinge pin pulls the knuckles -Y, the tube + EVA react on the three bands",
+        "kind": "support",
+        "region": "pocket_bot",
+        "voxels_in_domain": 4840,
+        "voxels_on_preserve": 532
+      },
+      {
+        "case": "L3 clamp preload: the two M5 knob bolts pull the latch bosses -Y (300 N each) and the hinge pin pulls the knuckles -Y, the tube + EVA react on the three bands",
+        "kind": "support",
+        "region": "band_mid",
+        "voxels_in_domain": 4840,
+        "voxels_on_preserve": 655
+      },
+      {
+        "case": "L3 clamp preload: the two M5 knob bolts pull the latch bosses -Y (300 N each) and the hinge pin pulls the knuckles -Y, the tube + EVA react on the three bands",
+        "kind": "support",
+        "region": "pocket_top",
+        "voxels_in_domain": 5808,
+        "voxels_on_preserve": 626
+      },
+      {
+        "case": "L3 clamp preload: the two M5 knob bolts pull the latch bosses -Y (300 N each) and the hinge pin pulls the knuckles -Y, the tube + EVA react on the three bands",
+        "kind": "load",
+        "region": "latch_lo",
+        "voxels_in_domain": 70,
+        "voxels_on_preserve": 65
+      },
+      {
+        "case": "L3 clamp preload: the two M5 knob bolts pull the latch bosses -Y (300 N each) and the hinge pin pulls the knuckles -Y, the tube + EVA react on the three bands",
+        "kind": "load",
+        "region": "latch_hi",
+        "voxels_in_domain": 70,
+        "voxels_on_preserve": 65
+      },
+      {
+        "case": "L3 clamp preload: the two M5 knob bolts pull the latch bosses -Y (300 N each) and the hinge pin pulls the knuckles -Y, the tube + EVA react on the three bands",
+        "kind": "load",
+        "region": "knuckles",
+        "voxels_in_domain": 2844,
+        "voxels_on_preserve": 768
+      },
+      {
+        "case": "L4 frontal collision 300 N on the top of the bridge column (z 195): statics on the HP4/HP5 bolt pair (z 170 / 100) gives -400 N on HP4 and +100 N pull-out on HP5, the container reacts on the three bands",
+        "kind": "support",
+        "region": "pocket_bot",
+        "voxels_in_domain": 4840,
+        "voxels_on_preserve": 532
+      },
+      {
+        "case": "L4 frontal collision 300 N on the top of the bridge column (z 195): statics on the HP4/HP5 bolt pair (z 170 / 100) gives -400 N on HP4 and +100 N pull-out on HP5, the container reacts on the three bands",
+        "kind": "support",
+        "region": "band_mid",
+        "voxels_in_domain": 4840,
+        "voxels_on_preserve": 655
+      },
+      {
+        "case": "L4 frontal collision 300 N on the top of the bridge column (z 195): statics on the HP4/HP5 bolt pair (z 170 / 100) gives -400 N on HP4 and +100 N pull-out on HP5, the container reacts on the three bands",
+        "kind": "support",
+        "region": "pocket_top",
+        "voxels_in_domain": 5808,
+        "voxels_on_preserve": 626
+      },
+      {
+        "case": "L4 frontal collision 300 N on the top of the bridge column (z 195): statics on the HP4/HP5 bolt pair (z 170 / 100) gives -400 N on HP4 and +100 N pull-out on HP5, the container reacts on the three bands",
+        "kind": "load",
+        "region": "hp4",
+        "voxels_in_domain": 1156,
+        "voxels_on_preserve": 442
+      },
+      {
+        "case": "L4 frontal collision 300 N on the top of the bridge column (z 195): statics on the HP4/HP5 bolt pair (z 170 / 100) gives -400 N on HP4 and +100 N pull-out on HP5, the container reacts on the three bands",
+        "kind": "load",
+        "region": "hp5",
+        "voxels_in_domain": 1156,
+        "voxels_on_preserve": 492
+      }
+    ],
+    "build_volume": {
+      "printer": {
+        "key": "X1C",
+        "name": "Bambu Lab X1-Carbon",
+        "nominal_mm": [
+          256.0,
+          256.0,
+          256.0
+        ],
+        "usable_mm": [
+          250.0,
+          250.0,
+          250.0
+        ],
+        "margin_mm": 0.0,
+        "envelope_mm": [
+          250.0,
+          250.0,
+          250.0
+        ],
+        "nozzle_mm": 0.4,
+        "min_feature_mm": 0.8,
+        "note": "AMS-fed; the purge tower needs ~60x60 mm of plate on multi-material prints.",
+        "source": "built-in",
+        "allow_oversize_design_space": false
+      },
+      "build_axis": "Z",
+      "domain": {
+        "what": "design space",
+        "printer": "X1C",
+        "printer_name": "Bambu Lab X1-Carbon",
+        "printer_source": "built-in",
+        "size_mm": [
+          153.0,
+          72.0,
+          237.0
+        ],
+        "usable_mm": [
+          250.0,
+          250.0,
+          250.0
+        ],
+        "margin_mm": 0.0,
+        "envelope_mm": [
+          250.0,
+          250.0,
+          250.0
+        ],
+        "fits_any_orientation": true,
+        "up_axes_that_fit": [
+          "X",
+          "Y",
+          "Z"
+        ],
+        "by_up_axis": {
+          "X": {
+            "fits": true,
+            "overflow_mm": {
+              "Z": -13.0,
+              "Y": -178.0,
+              "X": -97.0
+            }
+          },
+          "Y": {
+            "fits": true,
+            "overflow_mm": {
+              "Z": -13.0,
+              "X": -97.0,
+              "Y": -178.0
+            }
+          },
+          "Z": {
+            "fits": true,
+            "overflow_mm": {
+              "X": -97.0,
+              "Y": -178.0,
+              "Z": -13.0
+            }
+          }
+        },
+        "declared_build_axis": "Z",
+        "fits_as_declared": true,
+        "overflow_mm": {
+          "X": -97.0,
+          "Y": -178.0,
+          "Z": -13.0
+        },
+        "margin_to_envelope_mm": 13.0,
+        "lo_mm": [
+          -80.0,
+          1.08,
+          -18.0
+        ],
+        "hi_mm": [
+          73.0,
+          73.08,
+          219.0
+        ]
+      },
+      "preserve": {
+        "what": "preserve",
+        "printer": "X1C",
+        "printer_name": "Bambu Lab X1-Carbon",
+        "printer_source": "built-in",
+        "size_mm": [
+          153.0,
+          72.0,
+          237.0
+        ],
+        "usable_mm": [
+          250.0,
+          250.0,
+          250.0
+        ],
+        "margin_mm": 0.0,
+        "envelope_mm": [
+          250.0,
+          250.0,
+          250.0
+        ],
+        "fits_any_orientation": true,
+        "up_axes_that_fit": [
+          "X",
+          "Y",
+          "Z"
+        ],
+        "by_up_axis": {
+          "X": {
+            "fits": true,
+            "overflow_mm": {
+              "Z": -13.0,
+              "Y": -178.0,
+              "X": -97.0
+            }
+          },
+          "Y": {
+            "fits": true,
+            "overflow_mm": {
+              "Z": -13.0,
+              "X": -97.0,
+              "Y": -178.0
+            }
+          },
+          "Z": {
+            "fits": true,
+            "overflow_mm": {
+              "X": -97.0,
+              "Y": -178.0,
+              "Z": -13.0
+            }
+          }
+        },
+        "declared_build_axis": "Z",
+        "fits_as_declared": true,
+        "overflow_mm": {
+          "X": -97.0,
+          "Y": -178.0,
+          "Z": -13.0
+        },
+        "margin_to_envelope_mm": 13.0
+      },
+      "voxel_vs_min_feature": "one voxel is 3.00 mm and the smallest printable wall is 0.80 mm, so the grid cannot represent the printer's limit; minimum-feature checks on this run are about the grid, not the machine."
+    },
+    "design_freedom": {
+      "free_voxels": 35923,
+      "domain_voxels": 96696,
+      "free_fraction_of_domain": 0.3715,
+      "volfrac": 0.052,
+      "expected_final_mm3": 178388.9,
+      "preserve_mm3": 127953.0,
+      "preserve_fraction_of_expected_part": 0.7173,
+      "free_min_thickness_mm": 6.0,
+      "free_median_thickness_mm": 6.0,
+      "free_min_thickness_voxels": 2.0,
+      "fixed_points": [
+        {
+          "kind": "support",
+          "region": "knuckles",
+          "centroid_mm": [
+            -71.7,
+            9.8,
+            100.4
+          ],
+          "mm3": 20736.0
+        },
+        {
+          "kind": "support",
+          "region": "latch_lo",
+          "centroid_mm": [
+            63.2,
+            22.2,
+            40.5
+          ],
+          "mm3": 1755.0
+        },
+        {
+          "kind": "support",
+          "region": "latch_hi",
+          "centroid_mm": [
+            63.2,
+            22.2,
+            169.5
+          ],
+          "mm3": 1755.0
+        },
+        {
+          "kind": "load",
+          "region": "hp4",
+          "centroid_mm": [
+            -0.5,
+            69.5,
+            169.5
+          ],
+          "mm3": 11934.0
+        },
+        {
+          "kind": "load",
+          "region": "hp5",
+          "centroid_mm": [
+            -0.3,
+            68.8,
+            100.5
+          ],
+          "mm3": 13284.0
+        },
+        {
+          "kind": "support",
+          "region": "pocket_bot",
+          "centroid_mm": [
+            1.6,
+            41.5,
+            -10.2
+          ],
+          "mm3": 14364.0
+        },
+        {
+          "kind": "support",
+          "region": "band_mid",
+          "centroid_mm": [
+            1.9,
+            39.6,
+            100.5
+          ],
+          "mm3": 17685.0
+        },
+        {
+          "kind": "support",
+          "region": "pocket_top",
+          "centroid_mm": [
+            1.9,
+            39.8,
+            209.6
+          ],
+          "mm3": 16902.0
+        },
+        {
+          "kind": "load",
+          "region": "latch_lo",
+          "centroid_mm": [
+            63.2,
+            22.2,
+            40.5
+          ],
+          "mm3": 1755.0
+        },
+        {
+          "kind": "load",
+          "region": "latch_hi",
+          "centroid_mm": [
+            63.2,
+            22.2,
+            169.5
+          ],
+          "mm3": 1755.0
+        },
+        {
+          "kind": "load",
+          "region": "knuckles",
+          "centroid_mm": [
+            -71.7,
+            9.8,
+            100.4
+          ],
+          "mm3": 20736.0
+        }
+      ],
+      "ground_zones": [],
+      "note_fixed_points": "11 load/support footprint(s) sit on preserve at positions the CAD model chose. The optimiser decides how to reach them, not where they are."
+    },
+    "runtime_estimate": {
+      "iters": 80,
+      "cases": 5,
+      "elements": 96696,
+      "voxel_mm": 3.0,
+      "solver": {
+        "backend": "cuda",
+        "device": "NVIDIA GeForce RTX 4060 Ti",
+        "torch": "2.12.0+cu130",
+        "preconditioner": "mg",
+        "precision": "mixed32",
+        "multigrid": {
+          "levels": [
+            {
+              "shape": [
+                60,
+                64,
+                108
+              ],
+              "elements": 40662,
+              "ndof": 1296555
+            },
+            {
+              "shape": [
+                30,
+                32,
+                54
+              ],
+              "elements": 6019,
+              "ndof": 168795
+            },
+            {
+              "shape": [
+                15,
+                16,
+                27
+              ],
+              "elements": 1024,
+              "ndof": 22848
+            },
+            {
+              "shape": [
+                8,
+                8,
+                14
+              ],
+              "elements": 236,
+              "ndof": 3645
+            }
+          ],
+          "smoother": "chebyshev(degree 2, D^-1 K, lambda ratio 30)",
+          "coarse_solver": "dense cholesky",
+          "precision": "mixed (float32 cycle, float64 coarse solve and outer CG)",
+          "setup_seconds": 0.416
+        }
+      },
+      "probe_cg_iterations": 49,
+      "probe_seconds": 3.69,
+      "probe_converged": true,
+      "seconds": 1476.7,
+      "seconds_low": 738.4,
+      "seconds_high": 2215.1,
+      "human": "25 min",
+      "basis": "one cold conjugate-gradient solve of load case 1 at uniform density, times cases times iterations. Warm starting makes later iterations cheaper; continuation towards a 0/1 field makes them dearer. Measured runs land within 0.5x - 1.5x."
+    }
+  },
+  "bodies": [
+    {
+      "name": "interfaces",
+      "kind": "preserve",
+      "source": "stl:preserve.stl",
+      "voxels": 4739,
+      "mm3": 127953.0,
+      "bbox_mm": [
+        [
+          -80.0,
+          1.08,
+          -18.0
+        ],
+        [
+          73.0,
+          73.08,
+          219.0
+        ]
+      ],
+      "mesh": {
+        "triangles": 8420,
+        "open_edges": 0,
+        "non_manifold_edges": 0,
+        "degenerate": 0,
+        "closed_shell": true,
+        "components": 10,
+        "edge_components": 10,
+        "self_intersections": 0,
+        "self_intersection_examples": []
+      },
+      "attach": {
+        "specs": [
+          {
+            "region": "join_free_space"
+          }
+        ],
+        "attach_voxels": 4584,
+        "attach_usable_voxels": 3815,
+        "attach_area_mm2": 34335.0,
+        "no_attach_voxels": 0,
+        "no_attach_mm3": 0.0,
+        "standoff_mm": 3.0
+      }
+    },
+    {
+      "name": "design_space",
+      "kind": "design_space",
+      "source": "stl:design_space.stl",
+      "voxels": 96696,
+      "mm3": 2610792.0,
+      "bbox_mm": [
+        [
+          -80.0,
+          1.08,
+          -18.0
+        ],
+        [
+          73.0,
+          73.08,
+          219.0
+        ]
+      ],
+      "mesh": {
+        "triangles": 12,
+        "open_edges": 0,
+        "non_manifold_edges": 0,
+        "degenerate": 0,
+        "closed_shell": true,
+        "components": 1,
+        "edge_components": 1,
+        "self_intersections": 0,
+        "self_intersection_examples": []
+      }
+    },
+    {
+      "name": "keep_out",
+      "kind": "obstacle",
+      "source": "stl:obstacle.stl",
+      "voxels": 63624,
+      "mm3": 1717848.0,
+      "bbox_mm": [
+        [
+          -83.0,
+          -7.92,
+          -21.0
+        ],
+        [
+          76.0,
+          76.08,
+          222.0
+        ]
+      ],
+      "clearance_requested_mm": 0.0,
+      "clearance_achieved_mm": 0.0,
+      "mesh": {
+        "triangles": 1704,
+        "open_edges": 0,
+        "non_manifold_edges": 0,
+        "degenerate": 0,
+        "closed_shell": true,
+        "components": 5,
+        "edge_components": 5,
+        "self_intersections": 0,
+        "self_intersection_examples": []
+      }
+    },
+    {
+      "name": "pressure_vessel",
+      "kind": "obstacle",
+      "source": "stl:pressure_vessel.stl",
+      "voxels": 94975,
+      "mm3": 2564325.0,
+      "bbox_mm": [
+        [
+          -59.0,
+          -58.92,
+          -15.0
+        ],
+        [
+          61.0,
+          61.08,
+          261.0
+        ]
+      ],
+      "clearance_requested_mm": 0.0,
+      "clearance_achieved_mm": 0.0,
+      "mesh": {
+        "triangles": 1820,
+        "open_edges": 0,
+        "non_manifold_edges": 0,
+        "degenerate": 0,
+        "closed_shell": true,
+        "components": 1,
+        "edge_components": 1,
+        "self_intersections": 0,
+        "self_intersection_examples": []
+      }
+    },
+    {
+      "name": "cables",
+      "kind": "obstacle",
+      "source": "stl:cables.stl",
+      "voxels": 5316,
+      "mm3": 143532.0,
+      "bbox_mm": [
+        [
+          -38.0,
+          -100.92,
+          -48.0
+        ],
+        [
+          85.0,
+          37.08,
+          231.0
+        ]
+      ],
+      "clearance_requested_mm": 0.0,
+      "clearance_achieved_mm": 0.0,
+      "mesh": {
+        "triangles": 2778,
+        "open_edges": 0,
+        "non_manifold_edges": 0,
+        "degenerate": 0,
+        "closed_shell": true,
+        "components": 8,
+        "edge_components": 8,
+        "self_intersections": 0,
+        "self_intersection_examples": []
+      }
+    },
+    {
+      "name": "preserve body 1",
+      "kind": "preserve_component",
+      "source": "interfaces",
+      "voxels": 1164,
+      "mm3": 31428.0,
+      "domain_component": 1
+    },
+    {
+      "name": "preserve body 2",
+      "kind": "preserve_component",
+      "source": "interfaces",
+      "voxels": 895,
+      "mm3": 24165.0,
+      "domain_component": 1
+    },
+    {
+      "name": "preserve body 3",
+      "kind": "preserve_component",
+      "source": "interfaces",
+      "voxels": 866,
+      "mm3": 23382.0,
+      "domain_component": 1
+    },
+    {
+      "name": "preserve body 4",
+      "kind": "preserve_component",
+      "source": "interfaces",
+      "voxels": 442,
+      "mm3": 11934.0,
+      "domain_component": 1
+    },
+    {
+      "name": "preserve body 5",
+      "kind": "preserve_component",
+      "source": "interfaces",
+      "voxels": 442,
+      "mm3": 11934.0,
+      "domain_component": 1
+    },
+    {
+      "name": "preserve body 6",
+      "kind": "preserve_component",
+      "source": "interfaces",
+      "voxels": 465,
+      "mm3": 12555.0,
+      "domain_component": 1
+    },
+    {
+      "name": "preserve body 7",
+      "kind": "preserve_component",
+      "source": "interfaces",
+      "voxels": 465,
+      "mm3": 12555.0,
+      "domain_component": 1
+    }
+  ]
+}

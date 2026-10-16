@@ -1,0 +1,53 @@
+{
+  "consumer": "parent_deck",
+  "references": [
+    {
+      "part": "wetlink_penetrator_m10",
+      "path": "parts/common/exterior/cots/wetlink_penetrator_m10",
+      "md_sha256": "0b122dc33e9b618abbaa21447a38dec380d2dabca191b2d183196427d3b73d2f",
+      "stl_sha256": null,
+      "bbox_mm": null,
+      "status_at_lock": [
+        "needs_measure",
+        "not_chosen",
+        "not_designed",
+        "provisional"
+      ],
+      "values": {
+        "pen_x_deck_td04a": -20.0,
+        "pen_x_deck_tether": 15.0,
+        "pen_head_y": 22.0
+      },
+      "confirmed_by_human": true,
+      "confirmed_at": "2026-09-04T20:52:56",
+      "note": "人間確認 2026-09-04: 南壁ペネトレータ ×2 (箱 x=85/120, z=65) の直下に南縁ケーブル切欠き"
+    },
+    {
+      "part": "bcas212310g",
+      "path": "parts/parent/exterior/cots/bcas212310g",
+      "md_sha256": "61a6d1694279d5b2813d8744f93fe7c2fb85dc80b3556249f680c0f50f294631",
+      "stl_sha256": "34b8056c89e3bade01bf0692027eb119c0b32aec2b6d8a02444717799a6572c7",
+      "bbox_mm": [
+        210.0,
+        230.0,
+        100.3
+      ],
+      "status_at_lock": [
+        "needs_measure",
+        "not_chosen",
+        "not_designed",
+        "provisional"
+      ],
+      "values": {
+        "ear_x": 96.0,
+        "ear_y": 106.0,
+        "ear_hole_d": 4.2,
+        "box_x": 210.0,
+        "box_y": 230.0
+      },
+      "confirmed_by_human": true,
+      "confirmed_at": "2026-09-05T01:32:55",
+      "note": "人間確認 2026-09-04: 箱固定は外部取付穴 Ø4.2 ×4 (図面 E-E, DXF r2.1 @ 図面(±106,±96) → 箱座標 (±96,±106))。ねじ方向 (上から/下から) は現物要確認。09-05 md 更新で再ロック"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "voxel_mm": 3.0,
+  "optimum_voxels": 6718,
+  "rebuild_voxels": 8944,
+  "overlap": 5084,
+  "missing": 1634,
+  "extra": 3860,
+  "fea": [
+    {
+      "shape": "optimum shape",
+      "case": "L1 operational hoist 3g: HP4/HP5 fixed, camera + case (0.35 kg each) hang off the mount seats, bridge self-weight at 3 g",
+      "deflection_mm": 0.03674158046889939,
+      "compliance_Nmm": 0.4576580241199828,
+      "safety_factor": 116.59107994481793
+    },
+    {
+      "shape": "optimum shape",
+      "case": "L4 frontal impact 150 N (-Y) on one front-edge bumper, HP4/HP5 react",
+      "deflection_mm": 0.9666208139154422,
+      "compliance_Nmm": 72.74666074731235,
+      "safety_factor": 8.627610891011647
+    },
+    {
+      "shape": "optimum shape",
+      "case": "L2s side impact 150 N (-X) on the starboard end plate through the side bumper, HP4/HP5 react",
+      "deflection_mm": 0.18866861641403868,
+      "compliance_Nmm": 14.095513393198011,
+      "safety_factor": 20.49823938183239
+    },
+    {
+      "shape": "optimum shape",
+      "case": "L6 handling: the unit is picked up by one camera, 100 N (+Z) on the starboard cam_mount seat, HP4/HP5 react",
+      "deflection_mm": 0.3683532075088698,
+      "compliance_Nmm": 18.1419356890445,
+      "safety_factor": 16.960842444895658
+    },
+    {
+      "shape": "rebuild",
+      "case": "L1 operational hoist 3g: HP4/HP5 fixed, camera + case (0.35 kg each) hang off the mount seats, bridge self-weight at 3 g",
+      "deflection_mm": 0.149967572935394,
+      "compliance_Nmm": 1.6471172354352341,
+      "safety_factor": 40.27164678864615
+    },
+    {
+      "shape": "rebuild",
+      "case": "L4 frontal impact 150 N (-Y) on one front-edge bumper, HP4/HP5 react",
+      "deflection_mm": 0.9310160864340367,
+      "compliance_Nmm": 72.4401965399945,
+      "safety_factor": 7.469955582229389
+    },
+    {
+      "shape": "rebuild",
+      "case": "L2s side impact 150 N (-X) on the starboard end plate through the side bumper, HP4/HP5 react",
+      "deflection_mm": 0.4037230765329075,
+      "compliance_Nmm": 17.10793094229037,
+      "safety_factor": 18.390128333732438
+    },
+    {
+      "shape": "rebuild",
+      "case": "L6 handling: the unit is picked up by one camera, 100 N (+Z) on the starboard cam_mount seat, HP4/HP5 react",
+      "deflection_mm": 1.0712214105021567,
+      "compliance_Nmm": 46.29156488055518,
+      "safety_factor": 8.477902360580838
+    }
+  ]
+}

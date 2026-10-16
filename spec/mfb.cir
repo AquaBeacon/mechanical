@@ -1,0 +1,19 @@
+* MFB BPF f0=200k Q=2.5 H0=2 (C=330p, R1=3.01k R2=12.06k R3=574)
+V1 in 0 AC 1
+R1 in n1 3.01k
+R3 n1 0 574
+C1 n1 out 330p
+C2 n1 inn 330p
+R2 out inn 12.06k
+* 理想オペアンプ近似: 高GBWのVCVS + 1極 (GBW=50MHz相当)
+E1 out 0 0 inn 1e5
+.ac dec 200 1k 10meg
+.control
+run
+let mag = db(v(out))
+meas ac fpeak MAX_AT vdb(out)
+meas ac gpeak MAX vdb(out)
+meas ac bw TRIG vdb(out) VAL=3.02 RISE=1 TARG vdb(out) VAL=3.02 FALL=1
+print fpeak gpeak bw
+.endc
+.end

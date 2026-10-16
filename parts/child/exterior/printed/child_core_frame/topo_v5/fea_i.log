@@ -1,0 +1,108 @@
+voxelised rebuild_i.stl: 261052 solid voxels at 1.250 mm (0.7 s)
+  NOTE  261052 elements x 6 case(s) is a long run (tens of minutes). Thin-walled parts are expensive in voxel FEA because resolving the wall sets the voxel size for the whole part. Iterate at a coarser --voxel and refine once.
+
+--- case: L1 hoist 3g: lugs fixed, container + guard + gate weights down ---
+  applied load        201.29 N [0.0, 0.0, -201.293]
+  max deflection      0.646 mm at [27.5, -101.2, -17.0]
+  von Mises           max 6.82 MPa / p99.5 1.50 MPa
+  safety factor       4.83 (worst) / 22.69 (p99.5)   [need >= 3.00]
+  [PASS] strength         safety factor >= 3.00 -> 4.83 (worst element) / 22.69 (p99.5)
+  [PASS] stiffness        max deflection <= 1.000 mm -> 0.646 mm
+  [FAIL] mesh resolution  >= 3 elements across the thinnest section -> 2.8 (thin 3.54 mm) / 4.0 (typical 5.00 mm)
+         re-run with --voxel 1.18
+  NOTE  max/p99.5 stress ratio is 4.5 -- the peak is probably a stair-step or clamp artefact. Check the hotspot list before trusting it.
+  hotspots (worst first):
+    at [54.38, -21.88, 203.62] SF 4.83
+    at [-54.38, -21.88, 203.62] SF 4.99
+    at [59.38, -23.12, 217.38] SF 5.48
+    at [-59.38, -23.12, 217.38] SF 5.59
+    at [53.12, -26.88, 217.38] SF 7.32
+
+--- case: L2s transport side hit 300 N (+X on back wall and lugs), container reacts ---
+  applied load        300.00 N [300.0, 0.0, 0.0]
+  max deflection      0.126 mm at [-32.5, -102.5, 83.0]
+  von Mises           max 4.05 MPa / p99.5 1.07 MPa
+  safety factor       5.07 (worst) / 28.63 (p99.5)   [need >= 3.00]
+  [PASS] strength         safety factor >= 3.00 -> 5.07 (worst element) / 28.63 (p99.5)
+  [PASS] stiffness        max deflection <= 1.000 mm -> 0.126 mm
+  [FAIL] mesh resolution  >= 3 elements across the thinnest section -> 2.8 (thin 3.54 mm) / 4.0 (typical 5.00 mm)
+         re-run with --voxel 1.18
+  NOTE  max/p99.5 stress ratio is 3.8 -- the peak is probably a stair-step or clamp artefact. Check the hotspot list before trusting it.
+  hotspots (worst first):
+    at [1.88, -91.88, 197.38] SF 5.07
+    at [29.38, -88.12, 182.38] SF 6.39
+    at [-1.88, -91.88, 181.12] SF 6.5
+    at [-29.38, -88.12, 182.38] SF 8.49
+    at [-30.62, -86.88, 6.12] SF 8.49
+
+--- case: L2h transport landing on the hinge side (300 N +X through the knuckles), container reacts ---
+  applied load        300.00 N [300.0, 0.0, 0.0]
+  max deflection      0.831 mm at [-76.2, 17.5, 85.5]
+  von Mises           max 12.96 MPa / p99.5 3.34 MPa
+  safety factor       2.65 (worst) / 9.33 (p99.5)   [need >= 3.00]
+  [PASS] strength         safety factor >= 3.00 -> 2.65 (worst element) / 9.33 (p99.5)
+  [PASS] stiffness        max deflection <= 1.000 mm -> 0.831 mm
+  [FAIL] mesh resolution  >= 3 elements across the thinnest section -> 2.8 (thin 3.54 mm) / 4.0 (typical 5.00 mm)
+         re-run with --voxel 1.18
+  NOTE  max/p99.5 stress ratio is 3.9 -- the peak is probably a stair-step or clamp artefact. Check the hotspot list before trusting it.
+  hotspots (worst first):
+    at [-66.88, -11.88, -1.38] SF 2.65
+    at [-59.38, -0.62, -1.38] SF 2.75
+    at [-59.38, -0.62, 199.88] SF 2.76
+    at [-66.88, -11.88, 199.88] SF 3.04
+    at [-66.88, -0.62, -1.38] SF 3.25
+
+--- case: L2r transport rear hit 300 N on the back wall (+Y), container reacts ---
+  applied load        300.00 N [0.0, 300.0, 0.0]
+  max deflection      0.306 mm at [1.2, -90.0, 115.5]
+  von Mises           max 12.24 MPa / p99.5 2.07 MPa
+  safety factor       3.29 (worst) / 19.28 (p99.5)   [need >= 3.00]
+  [PASS] strength         safety factor >= 3.00 -> 3.29 (worst element) / 19.28 (p99.5)
+  [PASS] stiffness        max deflection <= 1.000 mm -> 0.306 mm
+  [FAIL] mesh resolution  >= 3 elements across the thinnest section -> 2.8 (thin 3.54 mm) / 4.0 (typical 5.00 mm)
+         re-run with --voxel 1.18
+  NOTE  max/p99.5 stress ratio is 5.9 -- the peak is probably a stair-step or clamp artefact. Check the hotspot list before trusting it.
+  hotspots (worst first):
+    at [29.38, -86.88, 183.62] SF 3.29
+    at [-29.38, -86.88, 183.62] SF 3.41
+    at [-33.12, -86.88, 69.88] SF 5.02
+    at [-33.12, -86.88, 78.62] SF 5.34
+    at [33.12, -86.88, 69.88] SF 5.55
+
+--- case: L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands ---
+  applied load        900.00 N [0.0, 900.0, 0.0]
+  max deflection      0.462 mm at [72.5, 0.0, 49.2]
+  von Mises           max 14.91 MPa / p99.5 3.86 MPa
+  safety factor       1.41 (worst) / 7.77 (p99.5)   [need >= 3.00]
+  [PASS] strength         safety factor >= 3.00 -> 1.41 (worst element) / 7.77 (p99.5)
+  [PASS] stiffness        max deflection <= 1.000 mm -> 0.462 mm
+  [FAIL] mesh resolution  >= 3 elements across the thinnest section -> 2.8 (thin 3.54 mm) / 4.0 (typical 5.00 mm)
+         re-run with --voxel 1.18
+  NOTE  max/p99.5 stress ratio is 3.9 -- the peak is probably a stair-step or clamp artefact. Check the hotspot list before trusting it.
+  hotspots (worst first):
+    at [56.88, -29.38, 16.12] SF 1.41
+    at [56.88, -29.38, 194.88] SF 1.6
+    at [58.12, -5.62, 38.62]  SF 1.91
+    at [66.88, -9.38, 199.88] SF 2.14
+    at [56.88, -29.38, 87.38] SF 2.21
+
+--- case: L5 landing 600 N up through the guard bosses, container reacts ---
+  applied load        600.00 N [0.0, 0.0, 600.0]
+  max deflection      0.007 mm at [61.2, -35.0, 10.5]
+  von Mises           max 1.14 MPa / p99.5 0.32 MPa
+  safety factor       19.05 (worst) / 69.41 (p99.5)   [need >= 3.00]
+  [PASS] strength         safety factor >= 3.00 -> 19.05 (worst element) / 69.41 (p99.5)
+  [PASS] stiffness        max deflection <= 1.000 mm -> 0.007 mm
+  [FAIL] mesh resolution  >= 3 elements across the thinnest section -> 2.8 (thin 3.54 mm) / 4.0 (typical 5.00 mm)
+         re-run with --voxel 1.18
+  NOTE  max/p99.5 stress ratio is 3.6 -- the peak is probably a stair-step or clamp artefact. Check the hotspot list before trusting it.
+  hotspots (worst first):
+    at [61.88, -31.88, 2.38]  SF 19.05
+    at [-61.88, -31.88, 2.38] SF 19.32
+    at [56.88, -36.88, 4.88]  SF 22.18
+    at [-56.88, -36.88, 4.88] SF 22.34
+    at [56.88, -40.62, -1.38] SF 23.0
+
+wrote fea_i
+
+=== FAIL ===

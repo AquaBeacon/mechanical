@@ -1,0 +1,279 @@
+{
+  "width": 340,
+  "thickness": 12,
+  "max_depth": 45,
+  "rail_depth": 45,
+  "rim_base_thickness": 4,
+  "rail_wall": 3,
+  "rim_crop_overlap": 0.6,
+  "grip_root_preserve_y": 250,
+  "inner_face_x": 84.95,
+  "bottom": -132,
+  "top": 276,
+  "rim": 22,
+  "split_x": 0,
+  "split_y": 80,
+  "joint_gap": 0.3,
+  "edge_fillet_r": 3,
+  "edge_chamfer": 0.6,
+  "window_corner_r": 6,
+  "clamp_holes_yz": [
+    [
+      -18.0,
+      32.0
+    ],
+    [
+      -18.0,
+      48.0
+    ],
+    [
+      18.0,
+      32.0
+    ],
+    [
+      18.0,
+      48.0
+    ],
+    [
+      -18.0,
+      92.0
+    ],
+    [
+      -18.0,
+      108.0
+    ],
+    [
+      18.0,
+      92.0
+    ],
+    [
+      18.0,
+      108.0
+    ],
+    [
+      -18.0,
+      152.0
+    ],
+    [
+      -18.0,
+      168.0
+    ],
+    [
+      18.0,
+      152.0
+    ],
+    [
+      18.0,
+      168.0
+    ]
+  ],
+  "c_interface_rev": "FRAME-A-C-M3-REV1",
+  "c_holes_yz": [
+    [
+      -158,
+      30
+    ],
+    [
+      -158,
+      50
+    ],
+    [
+      -158,
+      240
+    ],
+    [
+      -158,
+      260
+    ],
+    [
+      158,
+      30
+    ],
+    [
+      158,
+      50
+    ],
+    [
+      158,
+      240
+    ],
+    [
+      158,
+      260
+    ]
+  ],
+  "joint_holes_yz": [
+    [
+      -12,
+      -116
+    ],
+    [
+      -12,
+      -104
+    ],
+    [
+      12,
+      -116
+    ],
+    [
+      12,
+      -104
+    ],
+    [
+      -12,
+      64
+    ],
+    [
+      -12,
+      76
+    ],
+    [
+      12,
+      64
+    ],
+    [
+      12,
+      76
+    ],
+    [
+      -12,
+      184
+    ],
+    [
+      -12,
+      196
+    ],
+    [
+      12,
+      184
+    ],
+    [
+      12,
+      196
+    ],
+    [
+      -12,
+      258
+    ],
+    [
+      -12,
+      270
+    ],
+    [
+      12,
+      258
+    ],
+    [
+      12,
+      270
+    ],
+    [
+      -164,
+      68
+    ],
+    [
+      -164,
+      92
+    ],
+    [
+      -152,
+      68
+    ],
+    [
+      -152,
+      92
+    ],
+    [
+      152,
+      68
+    ],
+    [
+      152,
+      92
+    ],
+    [
+      164,
+      68
+    ],
+    [
+      164,
+      92
+    ]
+  ],
+  "splice_centres_y": [
+    -110,
+    70,
+    190,
+    264
+  ],
+  "m3_clearance": 3.5,
+  "nut_af": 5.8,
+  "nut_pocket_depth": 6.4,
+  "splice_thickness": 20,
+  "splice_width": 26,
+  "splice_seat_depth": 8,
+  "splice_well_diameter": 10,
+  "joint_screw_length": 50,
+  "joint_seat_depth": 45,
+  "hand_window_yz_mm": [
+    [
+      -147,
+      147
+    ],
+    [
+      -88,
+      24
+    ]
+  ],
+  "clear_hand_rectangle_mm": [
+    270,
+    100
+  ],
+  "finger_window_mm": [
+    100,
+    40
+  ],
+  "material": "Bambu Lab PETG Basic: inherited provisional anisotropic TDS V3 card",
+  "design_total_mass_kg_provisional": 10,
+  "handling_g": 2,
+  "clamp_cad_sha256": "ff7add5fa8fa54db408c691fca79db0e9074852ae6ad30126051ec0493db654b",
+  "clamp_interface": {
+    "tube_od": 114.3,
+    "inner_r": 57.95,
+    "outer_r": 77.95,
+    "bolt_x": 85.95,
+    "mount_y": -84.95,
+    "shoulder_y": -69.95,
+    "frame_pitch_x": 36,
+    "bolt_zs": [
+      8,
+      24
+    ],
+    "band_width": 32
+  },
+  "cage_interface": {
+    "centres": [
+      40,
+      100,
+      160
+    ],
+    "eye": [
+      0,
+      -73,
+      194
+    ],
+    "eye_width": 24,
+    "eye_r": 16,
+    "rope_hole_d": 10.5,
+    "rubber_free_t": 1,
+    "rubber_compression": 0.2,
+    "eye_radial_r": 12
+  },
+  "eye_recess": {
+    "width": 26,
+    "height": 34,
+    "centre_y": 194,
+    "depth": 0.7999999999999972
+  },
+  "status": "prototype_pending_final_strength_and_joint_verification"
+}

@@ -1,0 +1,2 @@
+// Generated from the same CSG operations as STEP. Rebuild with spec/build_parent_hand_service.py.
+union(){union(){union(){translate([92.5,175.5,86]) cube([5,41,1]);translate([92.5,175.5,52.1]) cube([5,0.5,34.9]);}translate([92.5,216,52.1]) cube([5,0.5,34.9]);}translate([92.5,175.5,52.1]) cube([5,41,1]);}

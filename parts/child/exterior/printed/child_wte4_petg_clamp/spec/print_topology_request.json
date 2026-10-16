@@ -1,0 +1,55 @@
+{
+  "status": "optimization_attempts_rejected_no_adoption",
+  "scope": "upper_and_lower_linked_clamps_only",
+  "confirmed": {
+    "rubber_thickness_mm": 1,
+    "printer": "X1C",
+    "material": "Bambu PETG Basic",
+    "print_priority": "avoid long horizontal bridges and inaccessible supports",
+    "supported_mass_upper_bound_kg": 1.0,
+    "handling_acceleration_g": 2.0,
+    "handling_resultant_N": 19.6133
+  },
+  "provisional": {
+    "rubber_compression_mm_per_side": 0.2,
+    "required_safety_factor": 2.0,
+    "bolt_preload_sensitivity_N_per_bolt": [
+      50,
+      100,
+      150
+    ],
+    "material_card": "generic PETG orthotropic; not measured X1C properties"
+  },
+  "interfaces": {
+    "vessel_diameter_mm": 114.3,
+    "clamp_inner_diameter_mm": 115.9,
+    "band_width_mm": 40,
+    "station_pitch_mm": 120,
+    "total_axial_length_mm": 160,
+    "mount_plane_mm": 62.8
+  },
+  "analysis_plan": {
+    "build_axis": "Z",
+    "raster_axis": "X",
+    "voxel_mm": 2.0,
+    "filter_mm": 6.0,
+    "overhang": true,
+    "finish": "smooth the actual density field and restore local exact interfaces",
+    "acceptance": [
+      "one connected half",
+      "functional dimensions and access unchanged",
+      "minimum thickness and drainability checked",
+      "finished shape re-analysis and convergence",
+      "support quality and removal paths checked in real X1C slicing"
+    ],
+    "connection_revision": {
+      "preserved": "Original complete functional bands",
+      "optimized": "Connecting material between bands only",
+      "volume_budget": "1 percent below baseline CAD; require no worse real slice",
+      "native_smoothing": "Direct density smoothing; crop links with4mm overlap; union original bands once"
+    }
+  },
+  "missing": [],
+  "note": "User mass <1 kg and 2x handling bound, 2026-10-08. Preload is an assumption, not a torque specification. Production adoption requires finished geometry checks.",
+  "result": "No qualifying topology-optimized replacement achieved. Existing connected printable prototype retained; no new strength certification."
+}

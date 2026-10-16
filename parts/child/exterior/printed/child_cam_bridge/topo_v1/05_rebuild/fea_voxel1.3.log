@@ -1,0 +1,32 @@
+  NOTE  122170 elements x 4 case(s) is a long run (tens of minutes). Thin-walled parts are expensive in voxel FEA because resolving the wall sets the voxel size for the whole part. Iterate at a coarser --voxel and refine once.
+--- case: L1 operational hoist 3g: HP4/HP5 fixed, camera + case (0.35 kg each) hang off the mount seats, bridge self-weight at 3 g ---
+  max deflection      0.122 mm at [120.5, 128.1, 45.0]
+  von Mises           max 3.17 MPa / p99.5 0.59 MPa
+  safety factor       8.52 (worst) / 57.12 (p99.5)   [need >= 3.00]
+  [PASS] strength         safety factor >= 3.00 -> 8.52 (worst element) / 57.12 (p99.5)
+  [PASS] stiffness        max deflection <= 1.000 mm -> 0.122 mm
+  [PASS] mesh resolution  >= 3 elements across the thinnest section -> 4.0 (thin 5.20 mm) / 6.0 (typical 7.80 mm)
+--- case: L4 frontal impact 150 N (-Y) on one front-edge bumper, HP4/HP5 react ---
+  max deflection      0.633 mm at [120.5, 128.1, 45.0]
+  von Mises           max 25.54 MPa / p99.5 2.74 MPa
+  safety factor       1.37 (worst) / 12.68 (p99.5)   [need >= 3.00]
+  [PASS] strength         safety factor >= 3.00 -> 1.37 (worst element) / 12.68 (p99.5)
+  [PASS] stiffness        max deflection <= 1.000 mm -> 0.633 mm
+  [PASS] mesh resolution  >= 3 elements across the thinnest section -> 4.0 (thin 5.20 mm) / 6.0 (typical 7.80 mm)
+--- case: L2s side impact 150 N (-X) on the starboard end plate through the side bumper, HP4/HP5 react ---
+  max deflection      0.152 mm at [120.5, 99.5, 80.1]
+  von Mises           max 6.18 MPa / p99.5 1.04 MPa
+  safety factor       7.42 (worst) / 33.67 (p99.5)   [need >= 3.00]
+  [PASS] strength         safety factor >= 3.00 -> 7.42 (worst element) / 33.67 (p99.5)
+  [PASS] stiffness        max deflection <= 1.000 mm -> 0.152 mm
+  [PASS] mesh resolution  >= 3 elements across the thinnest section -> 4.0 (thin 5.20 mm) / 6.0 (typical 7.80 mm)
+--- case: L6 handling: the unit is picked up by one camera, 100 N (+Z) on the starboard cam_mount seat, HP4/HP5 react ---
+  max deflection      0.782 mm at [120.5, 128.1, 45.0]
+  von Mises           max 18.42 MPa / p99.5 2.57 MPa
+  safety factor       1.86 (worst) / 14.14 (p99.5)   [need >= 3.00]
+  [PASS] strength         safety factor >= 3.00 -> 1.86 (worst element) / 14.14 (p99.5)
+  [PASS] stiffness        max deflection <= 1.000 mm -> 0.782 mm
+  [PASS] mesh resolution  >= 3 elements across the thinnest section -> 4.0 (thin 5.20 mm) / 6.0 (typical 7.80 mm)
+=== PASS ===
+
+[exited with code 0]

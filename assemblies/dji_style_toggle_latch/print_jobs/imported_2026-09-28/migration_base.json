@@ -1,0 +1,8 @@
+{
+  "date": "2026-09-29",
+  "source": "assemblies/dji_style_toggle_latch/parts/dji_style_toggle_latch_base.3mf",
+  "destination": "assemblies/dji_style_toggle_latch/print_jobs/imported_2026-09-28/dji_style_toggle_latch_base.3mf",
+  "sha256": "08BD9E16BF989B68B128C9F07767286456055783ABE89E93E382AFA27B82288C",
+  "reason": "Preserve existing slicer project outside generated print set; model and settings unchanged",
+  "current_release_verified": false
+}

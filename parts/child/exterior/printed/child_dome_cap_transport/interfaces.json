@@ -1,0 +1,47 @@
+{
+  "consumer": "child_dome_cap_transport",
+  "references": [
+    {
+      "part": "child_top_crown",
+      "path": "parts/child/exterior/printed/child_top_crown",
+      "md_sha256": "99484bba13aadfb2e27e7932b3339f035e42dba7f8db0cd784889d8afc4ef5e8",
+      "stl_sha256": "ee9725a4bb854b7ffb66ea29fa107a6f9369f660cbace49035692000179433d5",
+      "bbox_mm": [
+        150.0,
+        128.03,
+        38.0
+      ],
+      "status_at_lock": [
+        "needs_measure",
+        "obsolete",
+        "provisional"
+      ],
+      "values": {
+        "cap_bolt_z": 227.0,
+        "cap_bolt_x": 75.0
+      },
+      "confirmed_by_human": true,
+      "confirmed_at": "2026-09-05T00:21:15",
+      "note": "改善要件 2026-09-04 (ユーザ承認) で確定した取合い: ノブボルト M5 ×2 の位置 (二重定義) [2026-09-05 再ロック: 改善実装後の md 更新に追従]"
+    },
+    {
+      "part": "wte4_dome_cap",
+      "path": "parts/child/exterior/cots/wte4_dome_cap",
+      "md_sha256": "650a17fea041a53dc6845782c2732a68d24edd3864cfab671ad98697b3764bf8",
+      "stl_sha256": null,
+      "bbox_mm": null,
+      "status_at_lock": [
+        "needs_measure",
+        "not_bought",
+        "not_designed",
+        "provisional"
+      ],
+      "values": {
+        "dome_h": 53.25
+      },
+      "confirmed_by_human": false,
+      "confirmed_at": "2026-09-05T00:21:16",
+      "note": "仮値。天板高さ z265.75 の根拠 (隙間 4.5) [2026-09-05 再ロック: 改善実装後の md 更新に追従]"
+    }
+  ]
+}

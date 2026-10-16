@@ -1,0 +1,13 @@
+{
+  "step_valid": true,
+  "solids": 1,
+  "step_volume_mm3": 56667.678750181316,
+  "bounds_mm": [
+    28.0,
+    100.0,
+    76.00000003780718
+  ],
+  "working_cavity_added_material_mm3": 0.0,
+  "original_step_volume_mm3": 6737.6812194213435,
+  "note": "Geometry validation only. No material test or torque rating."
+}

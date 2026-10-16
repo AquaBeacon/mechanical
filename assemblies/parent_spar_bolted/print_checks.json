@@ -1,0 +1,258 @@
+{
+  "dji_osmo_action6_mount": {
+    "quantity": 1,
+    "size_mm": [
+      104.0,
+      79.45000076293945,
+      84.5
+    ],
+    "watertight": true,
+    "bodies": 1,
+    "volume_cm3": 144.19996123025567,
+    "sha256": "43bb3a495352e0908b8743c074a54752cf14b28d6beda0037fc9ada749f14605",
+    "slice_return_code": 0,
+    "slice_warning": "",
+    "filament_g_including_support_and_brim": 129.0419921875,
+    "estimated_seconds": 14965.1328125
+  },
+  "parent_deck": {
+    "quantity": 1,
+    "size_mm": [
+      216.0,
+      236.0,
+      60.000000000000014
+    ],
+    "watertight": true,
+    "bodies": 1,
+    "volume_cm3": 839.0179148460397,
+    "sha256": "2d52899492e26c64bda6b3ece5c0c50f2ba1d877fcd17943081094df278ae0f7",
+    "slice_return_code": 0,
+    "slice_warning": "",
+    "filament_g_including_support_and_brim": 757.2820434570312,
+    "estimated_seconds": 82011.65625
+  },
+  "parent_spar_ballast_body": {
+    "quantity": 1,
+    "size_mm": [
+      120.0,
+      120.0,
+      51.0
+    ],
+    "watertight": true,
+    "bodies": 1,
+    "volume_cm3": 158.09947846547095,
+    "sha256": "b2f88e20c20468d3d04423924687c32bf2f65ebef25c272ade62046d8612a7ec",
+    "slice_return_code": 0,
+    "slice_warning": "",
+    "filament_g_including_support_and_brim": 152.91943359375,
+    "estimated_seconds": 16977.125
+  },
+  "parent_spar_ballast_lid": {
+    "quantity": 1,
+    "size_mm": [
+      120.0,
+      120.0,
+      6.0
+    ],
+    "watertight": true,
+    "bodies": 1,
+    "volume_cm3": 66.72734656770433,
+    "sha256": "b3404cfb4ac564258fa700b19bc609f3ff415a8202f3a9679a0df80f3eee214a",
+    "slice_return_code": 0,
+    "slice_warning": "",
+    "filament_g_including_support_and_brim": 56.09864807128906,
+    "estimated_seconds": 6565.98193359375
+  },
+  "parent_spar_beam_lower": {
+    "quantity": 1,
+    "size_mm": [
+      180.0,
+      32.0,
+      32.0
+    ],
+    "watertight": true,
+    "bodies": 1,
+    "volume_cm3": 179.51660858949927,
+    "sha256": "9fb066d66843bb04c6a1ab2cdc00a9d144e059b8bbb9c2af5c1dbcfc591af38f",
+    "slice_return_code": 0,
+    "slice_warning": "",
+    "filament_g_including_support_and_brim": 122.53168487548828,
+    "estimated_seconds": 15424.4267578125
+  },
+  "parent_spar_beam_upper": {
+    "quantity": 1,
+    "size_mm": [
+      107.0,
+      32.0,
+      32.0
+    ],
+    "watertight": true,
+    "bodies": 1,
+    "volume_cm3": 107.43744087275519,
+    "sha256": "b8888b7a904a9edd87057d8656911a537d1f3e738113b8dff48a9496d3251c97",
+    "slice_return_code": 0,
+    "slice_warning": "",
+    "filament_g_including_support_and_brim": 74.78373718261719,
+    "estimated_seconds": 9486.373046875
+  },
+  "parent_spar_camera_bridge": {
+    "quantity": 1,
+    "size_mm": [
+      140.0,
+      78.0,
+      180.0
+    ],
+    "watertight": true,
+    "bodies": 1,
+    "volume_cm3": 286.55457419203196,
+    "sha256": "a5ec36380c75cc1792345d723c4a87a9f8389b6204cd2560da1e32539ce4462e",
+    "slice_return_code": 0,
+    "slice_warning": "",
+    "filament_g_including_support_and_brim": 396.12615966796875,
+    "estimated_seconds": 39508.703125
+  },
+  "parent_spar_coupler_half": {
+    "quantity": 2,
+    "size_mm": [
+      54.0,
+      64.0,
+      26.75
+    ],
+    "watertight": true,
+    "bodies": 1,
+    "volume_cm3": 55.97185152084424,
+    "sha256": "71d62c555232a3fb47473c837d450cf6123830a218a323ae88682c34a988cb68",
+    "slice_return_code": 0,
+    "slice_warning": "",
+    "filament_g_including_support_and_brim": 47.55692672729492,
+    "estimated_seconds": 6665.54443359375
+  },
+  "parent_spar_disk": {
+    "quantity": 1,
+    "size_mm": [
+      225.0,
+      225.0,
+      5.0
+    ],
+    "watertight": true,
+    "bodies": 1,
+    "volume_cm3": 192.90410563759997,
+    "sha256": "27adbd5abe6fc8efd3d8d2e73e9e22d0502524c00981e9283c3ae014f0f194f5",
+    "slice_return_code": 0,
+    "slice_warning": "",
+    "filament_g_including_support_and_brim": 166.9785919189453,
+    "estimated_seconds": 17114.994140625
+  },
+  "parent_spar_fin": {
+    "quantity": 4,
+    "size_mm": [
+      65.0,
+      125.0,
+      4.0
+    ],
+    "watertight": true,
+    "bodies": 1,
+    "volume_cm3": 32.309322592492,
+    "sha256": "cebd037b4c08404376ab433236e65b6076fcb014e9b3d38ac0305a4c205ae164",
+    "slice_return_code": 0,
+    "slice_warning": "",
+    "filament_g_including_support_and_brim": 32.024539947509766,
+    "estimated_seconds": 3539.743896484375
+  },
+  "parent_spar_float_body": {
+    "quantity": 2,
+    "size_mm": [
+      225.0,
+      225.0,
+      180.0
+    ],
+    "watertight": true,
+    "bodies": 1,
+    "volume_cm3": 775.1898613753002,
+    "sha256": "bf496ef57a523275c51679f7f03f7fbca402d6992ce6cce75df265bb6095ab4d",
+    "slice_return_code": 0,
+    "slice_warning": "",
+    "filament_g_including_support_and_brim": 920.4983520507812,
+    "estimated_seconds": 82654.015625
+  },
+  "parent_spar_float_bottom": {
+    "quantity": 1,
+    "size_mm": [
+      225.0,
+      225.0,
+      48.0
+    ],
+    "watertight": true,
+    "bodies": 1,
+    "volume_cm3": 358.7345968129478,
+    "sha256": "5acd5d9625808192fa188187615b4272ded5c3a477c8d308bea9eddb3d21420b",
+    "slice_return_code": 0,
+    "slice_warning": "",
+    "filament_g_including_support_and_brim": 272.5849304199219,
+    "estimated_seconds": 29753.87109375
+  },
+  "parent_spar_float_lid": {
+    "quantity": 2,
+    "size_mm": [
+      225.0,
+      225.0,
+      6.0
+    ],
+    "watertight": true,
+    "bodies": 1,
+    "volume_cm3": 214.544155084656,
+    "sha256": "8a5c745ef77d652c6a4a44ab8b468b827c77750d98d9ddaddca510752e549661",
+    "slice_return_code": 0,
+    "slice_warning": "",
+    "filament_g_including_support_and_brim": 181.51768493652344,
+    "estimated_seconds": 19912.380859375
+  },
+  "parent_spar_float_top": {
+    "quantity": 1,
+    "size_mm": [
+      225.0,
+      225.0,
+      28.0
+    ],
+    "watertight": true,
+    "bodies": 1,
+    "volume_cm3": 373.7148219222399,
+    "sha256": "77072847ad3220b97f5b62fd61f165241fbfa14955e5dce3f2f1d2879a82c2b5",
+    "slice_return_code": 0,
+    "slice_warning": "",
+    "filament_g_including_support_and_brim": 274.0150451660156,
+    "estimated_seconds": 32711.19140625
+  },
+  "parent_spar_gps_bridge": {
+    "quantity": 1,
+    "size_mm": [
+      183.0,
+      96.0,
+      100.0
+    ],
+    "watertight": true,
+    "bodies": 1,
+    "volume_cm3": 175.86700806585992,
+    "sha256": "362d0bd20990ad294b5637fc269de60f1191a4abf1a22812e9a721422339e543",
+    "slice_return_code": 0,
+    "slice_warning": "",
+    "filament_g_including_support_and_brim": 148.9974365234375,
+    "estimated_seconds": 16661.744140625
+  },
+  "parent_spar_hub": {
+    "quantity": 2,
+    "size_mm": [
+      88.0,
+      88.0,
+      32.0
+    ],
+    "watertight": true,
+    "bodies": 1,
+    "volume_cm3": 123.01564235773998,
+    "sha256": "17025a78ef2b16e2ef32d299556e2b8168a930a281545882808a8f31813efe53",
+    "slice_return_code": 0,
+    "slice_warning": "",
+    "filament_g_including_support_and_brim": 109.90411376953125,
+    "estimated_seconds": 14204.76953125
+  }
+}

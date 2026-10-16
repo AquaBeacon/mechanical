@@ -1,0 +1,16 @@
+{
+  "parts": 5,
+  "bed_mm": [
+    256,
+    256
+  ],
+  "excluded_mm": [
+    0,
+    0,
+    18,
+    28
+  ],
+  "brim_margin_mm": 5,
+  "all_projections_with_brim_inside_bed": true,
+  "brim_projection_collisions": 0
+}

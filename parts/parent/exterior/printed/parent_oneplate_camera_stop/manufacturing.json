@@ -1,0 +1,20 @@
+{
+  "print_rotations_deg": {
+    "parent_oneplate_camera_stop": [
+      0,
+      0,
+      0
+    ]
+  },
+  "source_dependencies": [
+    "../../../../../spec/prepare_parent_oneplate.py",
+    "../../../../../spec/parent_oneplate_frame_sources.py",
+    "../../../../../spec/parent_oneplate_sensor_sources.py",
+    "../../../../../scad/lib/parent_oneplate_interfaces.scad",
+    "../../../../../scad/lib/edge_finished_profiles.scad",
+    "../../../../../scad/lib/util.scad"
+  ],
+  "stl_export_format": "asciistl",
+  "portable_stl_export_format": "stl_ascii",
+  "step_coplanar_merge": true
+}

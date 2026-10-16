@@ -1,0 +1,4 @@
+{
+  "status": "exploration_only",
+  "note": "形状不一致の旧試作。写真の防水カメラハウジング用ラッチとは異なるため機体用に採用しない。元の試作条件は厚1mm EPDMシート、Bambu Lab PETG Basic、0.4mmノズル、0.2mm層、6周壁、100%インフィル。STLは履歴として保持。公開CAD調査はspec/dji_style_toggle_latch/PUBLIC_CAD_REVIEW.md。"
+}

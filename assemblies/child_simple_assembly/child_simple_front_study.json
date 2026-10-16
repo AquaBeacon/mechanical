@@ -1,0 +1,176 @@
+{
+  "part": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\parts\\child\\exterior\\printed\\child_simple_front\\child_simple_front.stl",
+  "units": "mm_N_MPa",
+  "material": "PETG",
+  "build_axis": "Y",
+  "ground_axis": "Z",
+  "printer": "X1C",
+  "safety_factor": 4,
+  "max_deflection_mm": 2,
+  "voxel_mm": 3,
+  "regions": {
+    "bolt_-1_20": {
+      "type": "box",
+      "min": [
+        -82,
+        0,
+        15
+      ],
+      "max": [
+        -72,
+        5,
+        25
+      ]
+    },
+    "bolt_-1_180": {
+      "type": "box",
+      "min": [
+        -82,
+        0,
+        175
+      ],
+      "max": [
+        -72,
+        5,
+        185
+      ]
+    },
+    "bolt_1_20": {
+      "type": "box",
+      "min": [
+        72,
+        0,
+        15
+      ],
+      "max": [
+        82,
+        5,
+        25
+      ]
+    },
+    "bolt_1_180": {
+      "type": "box",
+      "min": [
+        72,
+        0,
+        175
+      ],
+      "max": [
+        82,
+        5,
+        185
+      ]
+    },
+    "pad": {
+      "type": "box",
+      "min": [
+        -24,
+        78,
+        76
+      ],
+      "max": [
+        24,
+        83,
+        124
+      ]
+    },
+    "lift_-1": {
+      "type": "box",
+      "min": [
+        -83,
+        0,
+        203
+      ],
+      "max": [
+        -71,
+        10,
+        218
+      ]
+    },
+    "lift_1": {
+      "type": "box",
+      "min": [
+        71,
+        0,
+        203
+      ],
+      "max": [
+        83,
+        10,
+        218
+      ]
+    },
+    "bottom": {
+      "type": "box",
+      "min": [
+        -71,
+        0,
+        -19
+      ],
+      "max": [
+        71,
+        71,
+        -14
+      ]
+    }
+  },
+  "cases": [
+    {
+      "name": "mount_pull_100N",
+      "load_class": "normal",
+      "supports": [
+        {
+          "region": "bolt_-1_20",
+          "fix": "xyz"
+        },
+        {
+          "region": "bolt_-1_180",
+          "fix": "xyz"
+        },
+        {
+          "region": "bolt_1_20",
+          "fix": "xyz"
+        },
+        {
+          "region": "bolt_1_180",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "pad",
+          "force": [
+            0,
+            100,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "vessel_axial_300N",
+      "load_class": "normal",
+      "supports": [
+        {
+          "region": "lift_-1",
+          "fix": "xyz"
+        },
+        {
+          "region": "lift_1",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "bottom",
+          "force": [
+            0,
+            0,
+            -300
+          ]
+        }
+      ]
+    }
+  ],
+  "_scope": "Screening only: ideal fixed bolt patches, no bolt preload, EVA contact or joint slip. 300N inherited transport/landing envelope; 100N mount load is a design assumption. Do not cite an unconverged run as final strength."
+}

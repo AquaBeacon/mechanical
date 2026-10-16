@@ -1,0 +1,799 @@
+{
+  "_what": "lower linked clamp, vertical X1C printing",
+  "_why": "Minimise material with an actual density field and self support; keep the rubber skin, mount faces, ears, bores and nut entries.",
+  "_not_a_part": "exploration_only until smoothing, exact interfaces, connectedness, finished CCX convergence and slicer validation pass",
+  "_load_basis": "User: vessel plus contents <1 kg; 2x selfweight sufficient. Bound =19.6133 N at [0,0,80], transferred by force couples to actual preserved contact patches. Signs reverse in linear elasticity. One-station cases represent temporary attachment during assembly.",
+  "_preload": "Finished-shape verification uses six actual bolt-seat patches (150 N each, total900 N). Earlier optimization used broad ear patches overlapping contact support; their equilibrium is not accepted as finished-shape evidence. No load reduction.",
+  "_material": "Generic PETG orthotropic registry card; no printer-specific coupon calibration. Solid 100% infill assumption.",
+  "units": "mm_N_MPa",
+  "material": "PETG",
+  "build_axis": "Z",
+  "raster_axis": "X",
+  "printer": "X1C",
+  "safety_factor": 2.0,
+  "max_deflection_mm": 1.0,
+  "voxel_mm": 2.0,
+  "geometry": {
+    "preserve": {
+      "interfaces": {
+        "stl": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\parts\\child\\exterior\\printed\\child_wte4_petg_clamp\\_work\\analysis\\topology_print\\lower_preserve.stl",
+        "attach": [
+          "join_surfaces"
+        ]
+      }
+    },
+    "design_space": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\parts\\child\\exterior\\printed\\child_wte4_petg_clamp\\_work\\analysis\\topology_print\\lower_design_space.stl",
+    "obstacle": {
+      "functional_voids": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\parts\\child\\exterior\\printed\\child_wte4_petg_clamp\\_work\\analysis\\topology_print\\lower_cuts.stl",
+      "C_retainer_driver_access": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\parts\\child\\exterior\\printed\\child_wte4_petg_clamp\\_work\\analysis\\topology_print\\lower_access_tool_obstacles.stl"
+    }
+  },
+  "regions": {
+    "mount0": {
+      "type": "box",
+      "min": [
+        -28,
+        59,
+        2
+      ],
+      "max": [
+        28,
+        64,
+        38
+      ]
+    },
+    "crown0": {
+      "type": "box",
+      "min": [
+        -12,
+        56,
+        3
+      ],
+      "max": [
+        12,
+        62,
+        37
+      ]
+    },
+    "contact0": {
+      "type": "cylinder",
+      "axis": "Z",
+      "centre": [
+        0,
+        0,
+        0
+      ],
+      "r": 61.95,
+      "range": [
+        0.1,
+        39.9
+      ]
+    },
+    "left_ear0": {
+      "type": "box",
+      "min": [
+        -77.8481282,
+        11,
+        3
+      ],
+      "max": [
+        -57.848128200000005,
+        15,
+        37
+      ]
+    },
+    "right_ear0": {
+      "type": "box",
+      "min": [
+        57.848128200000005,
+        11,
+        3
+      ],
+      "max": [
+        77.8481282,
+        15,
+        37
+      ]
+    },
+    "left_shoulder0": {
+      "type": "box",
+      "min": [
+        -46,
+        38,
+        3
+      ],
+      "max": [
+        -38,
+        46,
+        37
+      ]
+    },
+    "right_shoulder0": {
+      "type": "box",
+      "min": [
+        38,
+        38,
+        3
+      ],
+      "max": [
+        46,
+        46,
+        37
+      ]
+    },
+    "mount1": {
+      "type": "box",
+      "min": [
+        -28,
+        59,
+        122
+      ],
+      "max": [
+        28,
+        64,
+        158
+      ]
+    },
+    "crown1": {
+      "type": "box",
+      "min": [
+        -12,
+        56,
+        123
+      ],
+      "max": [
+        12,
+        62,
+        157
+      ]
+    },
+    "contact1": {
+      "type": "cylinder",
+      "axis": "Z",
+      "centre": [
+        0,
+        0,
+        0
+      ],
+      "r": 61.95,
+      "range": [
+        120.1,
+        159.9
+      ]
+    },
+    "left_ear1": {
+      "type": "box",
+      "min": [
+        -77.8481282,
+        11,
+        123
+      ],
+      "max": [
+        -57.848128200000005,
+        15,
+        157
+      ]
+    },
+    "right_ear1": {
+      "type": "box",
+      "min": [
+        57.848128200000005,
+        11,
+        123
+      ],
+      "max": [
+        77.8481282,
+        15,
+        157
+      ]
+    },
+    "left_shoulder1": {
+      "type": "box",
+      "min": [
+        -46,
+        38,
+        123
+      ],
+      "max": [
+        -38,
+        46,
+        157
+      ]
+    },
+    "right_shoulder1": {
+      "type": "box",
+      "min": [
+        38,
+        38,
+        123
+      ],
+      "max": [
+        46,
+        46,
+        157
+      ]
+    },
+    "join_surfaces": {
+      "type": "box",
+      "min": [
+        -83,
+        0.8,
+        -1
+      ],
+      "max": [
+        83,
+        62.8,
+        161
+      ]
+    },
+    "bolt_seat0_0": {
+      "type": "box",
+      "min": [
+        -71.8481282,
+        13,
+        6
+      ],
+      "max": [
+        -63.848128200000005,
+        15,
+        14
+      ]
+    },
+    "bolt_seat0_1": {
+      "type": "box",
+      "min": [
+        -71.8481282,
+        13,
+        26
+      ],
+      "max": [
+        -63.848128200000005,
+        15,
+        34
+      ]
+    },
+    "bolt_seat0_2": {
+      "type": "box",
+      "min": [
+        63.848128200000005,
+        13,
+        16
+      ],
+      "max": [
+        71.8481282,
+        15,
+        24
+      ]
+    },
+    "bolt_seat1_0": {
+      "type": "box",
+      "min": [
+        -71.8481282,
+        13,
+        126
+      ],
+      "max": [
+        -63.848128200000005,
+        15,
+        134
+      ]
+    },
+    "bolt_seat1_1": {
+      "type": "box",
+      "min": [
+        -71.8481282,
+        13,
+        146
+      ],
+      "max": [
+        -63.848128200000005,
+        15,
+        154
+      ]
+    },
+    "bolt_seat1_2": {
+      "type": "box",
+      "min": [
+        63.848128200000005,
+        13,
+        136
+      ],
+      "max": [
+        71.8481282,
+        15,
+        144
+      ]
+    }
+  },
+  "cases": [
+    {
+      "name": "handling_X_2g",
+      "supports": [
+        {
+          "region": "mount0",
+          "fix": "xyz"
+        },
+        {
+          "region": "mount1",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "left_shoulder0",
+          "force": [
+            4.903325,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "region": "right_shoulder0",
+          "force": [
+            4.903325,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "region": "left_shoulder1",
+          "force": [
+            4.903325,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "region": "right_shoulder1",
+          "force": [
+            4.903325,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "region": "left_shoulder0",
+          "force": [
+            0,
+            -4.903325000000001,
+            0
+          ]
+        },
+        {
+          "region": "right_shoulder0",
+          "force": [
+            0,
+            4.903325000000001,
+            0
+          ]
+        },
+        {
+          "region": "left_shoulder1",
+          "force": [
+            0,
+            -4.903325000000001,
+            0
+          ]
+        },
+        {
+          "region": "right_shoulder1",
+          "force": [
+            0,
+            4.903325000000001,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "handling_Y_2g",
+      "supports": [
+        {
+          "region": "mount0",
+          "fix": "xyz"
+        },
+        {
+          "region": "mount1",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "left_shoulder0",
+          "force": [
+            0.0,
+            4.903325,
+            0.0
+          ]
+        },
+        {
+          "region": "right_shoulder0",
+          "force": [
+            0.0,
+            4.903325,
+            0.0
+          ]
+        },
+        {
+          "region": "left_shoulder1",
+          "force": [
+            0.0,
+            4.903325,
+            0.0
+          ]
+        },
+        {
+          "region": "right_shoulder1",
+          "force": [
+            0.0,
+            4.903325,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "handling_Z_2g",
+      "supports": [
+        {
+          "region": "mount0",
+          "fix": "xyz"
+        },
+        {
+          "region": "mount1",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "left_shoulder0",
+          "force": [
+            0.0,
+            0.0,
+            4.903325
+          ]
+        },
+        {
+          "region": "right_shoulder0",
+          "force": [
+            0.0,
+            0.0,
+            4.903325
+          ]
+        },
+        {
+          "region": "left_shoulder1",
+          "force": [
+            0.0,
+            0.0,
+            4.903325
+          ]
+        },
+        {
+          "region": "right_shoulder1",
+          "force": [
+            0.0,
+            0.0,
+            4.903325
+          ]
+        },
+        {
+          "region": "left_shoulder0",
+          "force": [
+            0,
+            -3.4547102689616604,
+            0
+          ]
+        },
+        {
+          "region": "right_shoulder0",
+          "force": [
+            0,
+            -3.4547102689616604,
+            0
+          ]
+        },
+        {
+          "region": "left_shoulder1",
+          "force": [
+            0,
+            3.4547102689616604,
+            0
+          ]
+        },
+        {
+          "region": "right_shoulder1",
+          "force": [
+            0,
+            3.4547102689616604,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "one_station_transfer_X_2g",
+      "supports": [
+        {
+          "region": "mount0",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "left_shoulder0",
+          "force": [
+            4.903325,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "region": "right_shoulder0",
+          "force": [
+            4.903325,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "region": "left_shoulder1",
+          "force": [
+            4.903325,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "region": "right_shoulder1",
+          "force": [
+            4.903325,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "region": "left_shoulder0",
+          "force": [
+            0,
+            -4.903325000000001,
+            0
+          ]
+        },
+        {
+          "region": "right_shoulder0",
+          "force": [
+            0,
+            4.903325000000001,
+            0
+          ]
+        },
+        {
+          "region": "left_shoulder1",
+          "force": [
+            0,
+            -4.903325000000001,
+            0
+          ]
+        },
+        {
+          "region": "right_shoulder1",
+          "force": [
+            0,
+            4.903325000000001,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "one_station_transfer_Y_2g",
+      "supports": [
+        {
+          "region": "mount0",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "left_shoulder0",
+          "force": [
+            0.0,
+            4.903325,
+            0.0
+          ]
+        },
+        {
+          "region": "right_shoulder0",
+          "force": [
+            0.0,
+            4.903325,
+            0.0
+          ]
+        },
+        {
+          "region": "left_shoulder1",
+          "force": [
+            0.0,
+            4.903325,
+            0.0
+          ]
+        },
+        {
+          "region": "right_shoulder1",
+          "force": [
+            0.0,
+            4.903325,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "one_station_transfer_Z_2g",
+      "supports": [
+        {
+          "region": "mount0",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "left_shoulder0",
+          "force": [
+            0.0,
+            0.0,
+            4.903325
+          ]
+        },
+        {
+          "region": "right_shoulder0",
+          "force": [
+            0.0,
+            0.0,
+            4.903325
+          ]
+        },
+        {
+          "region": "left_shoulder1",
+          "force": [
+            0.0,
+            0.0,
+            4.903325
+          ]
+        },
+        {
+          "region": "right_shoulder1",
+          "force": [
+            0.0,
+            0.0,
+            4.903325
+          ]
+        },
+        {
+          "region": "left_shoulder0",
+          "force": [
+            0,
+            -3.4547102689616604,
+            0
+          ]
+        },
+        {
+          "region": "right_shoulder0",
+          "force": [
+            0,
+            -3.4547102689616604,
+            0
+          ]
+        },
+        {
+          "region": "left_shoulder1",
+          "force": [
+            0,
+            3.4547102689616604,
+            0
+          ]
+        },
+        {
+          "region": "right_shoulder1",
+          "force": [
+            0,
+            3.4547102689616604,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "assumed_preload_150N_per_bolt",
+      "supports": [
+        {
+          "region": "contact0",
+          "fix": "xyz"
+        },
+        {
+          "region": "contact1",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "bolt_seat0_0",
+          "force": [
+            0,
+            -150,
+            0
+          ]
+        },
+        {
+          "region": "bolt_seat0_1",
+          "force": [
+            0,
+            -150,
+            0
+          ]
+        },
+        {
+          "region": "bolt_seat0_2",
+          "force": [
+            0,
+            -150,
+            0
+          ]
+        },
+        {
+          "region": "bolt_seat1_0",
+          "force": [
+            0,
+            -150,
+            0
+          ]
+        },
+        {
+          "region": "bolt_seat1_1",
+          "force": [
+            0,
+            -150,
+            0
+          ]
+        },
+        {
+          "region": "bolt_seat1_2",
+          "force": [
+            0,
+            -150,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "required_cases": [
+    "handling_X_2g",
+    "handling_Y_2g",
+    "handling_Z_2g",
+    "one_station_transfer_X_2g",
+    "one_station_transfer_Y_2g",
+    "one_station_transfer_Z_2g",
+    "assumed_preload_150N_per_bolt"
+  ],
+  "design": {
+    "volfrac": 0.35,
+    "filter_mm": 6.0,
+    "overhang": true,
+    "symmetry": [],
+    "move": 0.05
+  },
+  "finish": {
+    "voxel_mm": 0.6,
+    "smooth_mm": "auto",
+    "add": {
+      "interfaces": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\parts\\child\\exterior\\printed\\child_wte4_petg_clamp\\_work\\analysis\\topology_print\\lower_preserve.stl"
+    },
+    "cut": {
+      "functional_voids": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\parts\\child\\exterior\\printed\\child_wte4_petg_clamp\\_work\\analysis\\topology_print\\lower_cuts.stl",
+      "C_retainer_driver_access": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\parts\\child\\exterior\\printed\\child_wte4_petg_clamp\\_work\\analysis\\topology_print\\lower_access_tool_obstacles.stl"
+    }
+  },
+  "_tool_access": "Actual C-retainer 8 mm driver paths +0.5 mm radial clearance from assembly placement; no manual guessed positions."
+}

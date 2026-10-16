@@ -1,0 +1,5 @@
+﻿# child_lcd_support のバリアント定義 (2026-09-03)
+# lower = z 22..27 (下アーチ): 下フランジ BCD94 90° の固定耳あり。印刷は上面 (z=5) をベッドにして裏返す。
+# upper = z 117..122 (上アーチ): 耳無し。モデルの向きのまま印刷。
+lower  have_ear=true
+upper  have_ear=false

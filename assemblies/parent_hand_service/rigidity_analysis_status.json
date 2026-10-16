@@ -1,0 +1,958 @@
+{
+  "current_carrier_stl_sha256": "c6dc5168d77ee4f81111dfa1c2a390d07a3ba97760e65b3dd5ab9f960b09d02b",
+  "attempts": [
+    {
+      "attempt": "iteration_02",
+      "current_carrier_stl_matches": false,
+      "scope": "Carrier-only, ideally clamped service-cap faces. Not PCB/assembly/physical certification.",
+      "mesher_override": null,
+      "execution": {
+        "exit_code": 1,
+        "completed": true,
+        "successful": false
+      },
+      "analysis_status": "NO_COMPLETE_SUMMARY; no stiffness approval"
+    },
+    {
+      "attempt": "iteration_03",
+      "current_carrier_stl_matches": false,
+      "scope": "Carrier-only, ideally clamped service-cap faces. Not PCB/assembly/physical certification.",
+      "mesher_override": null,
+      "execution": {
+        "exit_code": 1,
+        "completed": true,
+        "successful": false
+      },
+      "analysis_status": "NO_COMPLETE_SUMMARY; no stiffness approval"
+    },
+    {
+      "attempt": "iteration_04",
+      "current_carrier_stl_matches": false,
+      "scope": "Carrier-only, ideally clamped service-cap faces. Not PCB/assembly/physical certification.",
+      "mesher_override": null,
+      "execution": {
+        "exit_code": 1,
+        "completed": true,
+        "successful": false
+      },
+      "analysis_status": "NO_COMPLETE_SUMMARY; no stiffness approval"
+    },
+    {
+      "attempt": "iteration_05",
+      "current_carrier_stl_matches": false,
+      "scope": "Carrier-only, ideally clamped service-cap faces. Not PCB/assembly/physical certification.",
+      "mesher_override": null,
+      "execution": {
+        "exit_code": 1,
+        "completed": true,
+        "successful": false
+      },
+      "analysis_status": "NO_COMPLETE_SUMMARY; no stiffness approval"
+    },
+    {
+      "attempt": "iteration_06",
+      "current_carrier_stl_matches": false,
+      "scope": "Carrier-only, ideally clamped service-cap faces. Not PCB/assembly/physical certification.",
+      "mesher_override": {
+        "method": "Native STEP surfaces remeshed at each requested size; legacy STL surface_refinement metadata is not the mesh actually solved.",
+        "step": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\assemblies\\parent_hand_service\\rigidity\\iteration_06\\carrier.step",
+        "step_sha256": "00a1b4560829c6e497a91e28806ef84b947b2a050397e3aed02a69f160867e10",
+        "algorithm3D": 1,
+        "second_order_linear": true,
+        "optimize_netgen": false
+      },
+      "execution": {
+        "exit_code": 1,
+        "completed": true,
+        "successful": false
+      },
+      "mesh_convergence": {
+        "runs": [
+          {
+            "target_mm": 8.0,
+            "nodes": 28048,
+            "max_disp_mm": 0.43642,
+            "p99_5_stress_MPa": 2.9332,
+            "hotspot_xyz_mm": [
+              131.4,
+              74.95,
+              54.5
+            ],
+            "max_stress_MPa": 67.5648
+          },
+          {
+            "target_mm": 4.0,
+            "nodes": 63343,
+            "max_disp_mm": 0.45766,
+            "p99_5_stress_MPa": 2.8177,
+            "hotspot_xyz_mm": [
+              131.4,
+              74.95,
+              54.5
+            ],
+            "max_stress_MPa": 49.951
+          },
+          {
+            "target_mm": 2.0,
+            "nodes": 259816,
+            "max_disp_mm": 0.46423,
+            "p99_5_stress_MPa": 2.2117,
+            "hotspot_xyz_mm": [
+              131.4,
+              74.95,
+              54.5
+            ],
+            "max_stress_MPa": 69.7705
+          }
+        ],
+        "steps": [
+          {
+            "displacement_change": 0.04641,
+            "stress_change": 0.04099,
+            "hotspot_shift_mm": 0.0
+          },
+          {
+            "displacement_change": 0.01415,
+            "stress_change": 0.274,
+            "hotspot_shift_mm": 0.0
+          }
+        ],
+        "tolerance": 0.05,
+        "hotspot_tolerance_mm": 4.0,
+        "pass": false,
+        "note": "the answer is still moving with the mesh; it is a property of the discretisation, not of the part"
+      },
+      "assembly_guarantee": false,
+      "warning": "Ideal clamps, carrier only; connector/PCB, joints, floor, props and case not represented. A numerical PASS is not assembly approval.",
+      "runs": [
+        {
+          "mesh_target_mm": 8.0,
+          "tool_pass": false,
+          "mesh_quality": {
+            "min": 0.04309,
+            "sliver_count": 0,
+            "sliver_fraction": 0.0,
+            "p1": 0.14243,
+            "p5": 0.27376,
+            "median": 0.71646,
+            "poor_count": 90,
+            "poor_fraction": 0.00613,
+            "elements": 14683,
+            "pass": true,
+            "note": "no sliver elements"
+          },
+          "cases": [
+            {
+              "name": "MAIN_USB_X+",
+              "safety_factor_p99_5": 26.336,
+              "worst_element_safety_factor": 5.945,
+              "max_disp_mm": 0.0731,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_USB_Y+",
+              "safety_factor_p99_5": 21.236,
+              "worst_element_safety_factor": 7.254,
+              "max_disp_mm": 0.08326,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_USB_Z+",
+              "safety_factor_p99_5": 28.608,
+              "worst_element_safety_factor": 3.549,
+              "max_disp_mm": 0.12476,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_SD_X+",
+              "safety_factor_p99_5": 138.597,
+              "worst_element_safety_factor": 17.383,
+              "max_disp_mm": 0.0108,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_SD_Y+",
+              "safety_factor_p99_5": 143.499,
+              "worst_element_safety_factor": 16.756,
+              "max_disp_mm": 0.02014,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_SD_Z+",
+              "safety_factor_p99_5": 28.653,
+              "worst_element_safety_factor": 2.964,
+              "max_disp_mm": 0.13097,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_FRONT_X+",
+              "safety_factor_p99_5": 15.437,
+              "worst_element_safety_factor": 3.97,
+              "max_disp_mm": 0.04829,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_FRONT_Y+",
+              "safety_factor_p99_5": 15.547,
+              "worst_element_safety_factor": 4.414,
+              "max_disp_mm": 0.04387,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_FRONT_Z+",
+              "safety_factor_p99_5": 26.512,
+              "worst_element_safety_factor": 2.444,
+              "max_disp_mm": 0.12687,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_REAR_X+",
+              "safety_factor_p99_5": 15.273,
+              "worst_element_safety_factor": 4.258,
+              "max_disp_mm": 0.07665,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_REAR_Y+",
+              "safety_factor_p99_5": 15.441,
+              "worst_element_safety_factor": 3.523,
+              "max_disp_mm": 0.05833,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_REAR_Z+",
+              "safety_factor_p99_5": 13.779,
+              "worst_element_safety_factor": 0.516,
+              "max_disp_mm": 0.43642,
+              "tool_pass": false
+            }
+          ]
+        },
+        {
+          "mesh_target_mm": 4.0,
+          "tool_pass": false,
+          "mesh_quality": {
+            "min": 0.06793,
+            "sliver_count": 0,
+            "sliver_fraction": 0.0,
+            "p1": 0.29243,
+            "p5": 0.44726,
+            "median": 0.79228,
+            "poor_count": 2,
+            "poor_fraction": 6e-05,
+            "elements": 34824,
+            "pass": true,
+            "note": "no sliver elements"
+          },
+          "cases": [
+            {
+              "name": "MAIN_USB_X+",
+              "safety_factor_p99_5": 41.498,
+              "worst_element_safety_factor": 4.93,
+              "max_disp_mm": 0.07592,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_USB_Y+",
+              "safety_factor_p99_5": 29.305,
+              "worst_element_safety_factor": 6.704,
+              "max_disp_mm": 0.08716,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_USB_Z+",
+              "safety_factor_p99_5": 28.61,
+              "worst_element_safety_factor": 2.679,
+              "max_disp_mm": 0.1323,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_SD_X+",
+              "safety_factor_p99_5": 154.228,
+              "worst_element_safety_factor": 13.875,
+              "max_disp_mm": 0.01162,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_SD_Y+",
+              "safety_factor_p99_5": 150.892,
+              "worst_element_safety_factor": 17.814,
+              "max_disp_mm": 0.02103,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_SD_Z+",
+              "safety_factor_p99_5": 29.463,
+              "worst_element_safety_factor": 2.14,
+              "max_disp_mm": 0.13855,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_FRONT_X+",
+              "safety_factor_p99_5": 26.688,
+              "worst_element_safety_factor": 4.127,
+              "max_disp_mm": 0.05076,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_FRONT_Y+",
+              "safety_factor_p99_5": 25.83,
+              "worst_element_safety_factor": 4.446,
+              "max_disp_mm": 0.04587,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_FRONT_Z+",
+              "safety_factor_p99_5": 31.856,
+              "worst_element_safety_factor": 2.675,
+              "max_disp_mm": 0.13024,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_REAR_X+",
+              "safety_factor_p99_5": 27.48,
+              "worst_element_safety_factor": 4.118,
+              "max_disp_mm": 0.07972,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_REAR_Y+",
+              "safety_factor_p99_5": 25.916,
+              "worst_element_safety_factor": 4.002,
+              "max_disp_mm": 0.06087,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_REAR_Z+",
+              "safety_factor_p99_5": 13.576,
+              "worst_element_safety_factor": 0.613,
+              "max_disp_mm": 0.45766,
+              "tool_pass": false
+            }
+          ]
+        },
+        {
+          "mesh_target_mm": 2.0,
+          "tool_pass": false,
+          "mesh_quality": {
+            "min": 0.0558,
+            "sliver_count": 0,
+            "sliver_fraction": 0.0,
+            "p1": 0.44248,
+            "p5": 0.56428,
+            "median": 0.8333,
+            "poor_count": 1,
+            "poor_fraction": 1e-05,
+            "elements": 159824,
+            "pass": true,
+            "note": "no sliver elements"
+          },
+          "cases": [
+            {
+              "name": "MAIN_USB_X+",
+              "safety_factor_p99_5": 59.567,
+              "worst_element_safety_factor": 4.07,
+              "max_disp_mm": 0.08111,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_USB_Y+",
+              "safety_factor_p99_5": 40.312,
+              "worst_element_safety_factor": 5.174,
+              "max_disp_mm": 0.09466,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_USB_Z+",
+              "safety_factor_p99_5": 32.16,
+              "worst_element_safety_factor": 2.968,
+              "max_disp_mm": 0.13838,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_SD_X+",
+              "safety_factor_p99_5": 176.747,
+              "worst_element_safety_factor": 13.459,
+              "max_disp_mm": 0.01208,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_SD_Y+",
+              "safety_factor_p99_5": 173.068,
+              "worst_element_safety_factor": 11.993,
+              "max_disp_mm": 0.02209,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_SD_Z+",
+              "safety_factor_p99_5": 35.423,
+              "worst_element_safety_factor": 2.476,
+              "max_disp_mm": 0.14456,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_FRONT_X+",
+              "safety_factor_p99_5": 74.208,
+              "worst_element_safety_factor": 3.152,
+              "max_disp_mm": 0.04933,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_FRONT_Y+",
+              "safety_factor_p99_5": 83.517,
+              "worst_element_safety_factor": 4.694,
+              "max_disp_mm": 0.04565,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_FRONT_Z+",
+              "safety_factor_p99_5": 43.071,
+              "worst_element_safety_factor": 1.706,
+              "max_disp_mm": 0.13142,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_REAR_X+",
+              "safety_factor_p99_5": 80.156,
+              "worst_element_safety_factor": 3.333,
+              "max_disp_mm": 0.07903,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_REAR_Y+",
+              "safety_factor_p99_5": 74.495,
+              "worst_element_safety_factor": 3.452,
+              "max_disp_mm": 0.05958,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_REAR_Z+",
+              "safety_factor_p99_5": 16.512,
+              "worst_element_safety_factor": 0.372,
+              "max_disp_mm": 0.46423,
+              "tool_pass": false
+            }
+          ]
+        }
+      ],
+      "displacement_gate_all_recorded_cases": false
+    },
+    {
+      "attempt": "iteration_07",
+      "current_carrier_stl_matches": true,
+      "scope": "COARSE SCREEN WITHOUT MESH CONVERGENCE. Carrier-only, ideally clamped service-cap faces. Not PCB/assembly/physical certification.",
+      "mesher_override": {
+        "method": "Native STEP surfaces remeshed at each requested size; legacy STL surface_refinement metadata is not the mesh actually solved.",
+        "step": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\assemblies\\parent_hand_service\\rigidity\\iteration_07\\carrier.step",
+        "step_sha256": "d091f1fcef3385ac7d3ec1ef223ef73fc71ffa0a467ab6852cbc4fa4a0561354",
+        "algorithm3D": 1,
+        "second_order_linear": true,
+        "optimize_netgen": false
+      },
+      "execution": {
+        "exit_code": 0,
+        "completed": true,
+        "successful": true
+      },
+      "mesh_convergence": null,
+      "assembly_guarantee": false,
+      "warning": "Ideal clamps, carrier only; connector/PCB, joints, floor, props and case not represented. A numerical PASS is not assembly approval.",
+      "runs": [
+        {
+          "mesh_target_mm": 8.0,
+          "tool_pass": true,
+          "mesh_quality": {
+            "min": 0.04309,
+            "sliver_count": 0,
+            "sliver_fraction": 0.0,
+            "p1": 0.15295,
+            "p5": 0.27733,
+            "median": 0.70269,
+            "poor_count": 91,
+            "poor_fraction": 0.00569,
+            "elements": 16006,
+            "pass": true,
+            "note": "no sliver elements"
+          },
+          "cases": [
+            {
+              "name": "MAIN_USB_X+",
+              "safety_factor_p99_5": 29.419,
+              "worst_element_safety_factor": 6.289,
+              "max_disp_mm": 0.07259,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_USB_Y+",
+              "safety_factor_p99_5": 22.571,
+              "worst_element_safety_factor": 7.065,
+              "max_disp_mm": 0.08321,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_USB_Z+",
+              "safety_factor_p99_5": 29.195,
+              "worst_element_safety_factor": 3.574,
+              "max_disp_mm": 0.1237,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_SD_X+",
+              "safety_factor_p99_5": 145.319,
+              "worst_element_safety_factor": 18.622,
+              "max_disp_mm": 0.01068,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_SD_Y+",
+              "safety_factor_p99_5": 146.45,
+              "worst_element_safety_factor": 16.756,
+              "max_disp_mm": 0.0201,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_SD_Z+",
+              "safety_factor_p99_5": 28.999,
+              "worst_element_safety_factor": 3.05,
+              "max_disp_mm": 0.12893,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_FRONT_X+",
+              "safety_factor_p99_5": 16.602,
+              "worst_element_safety_factor": 4.836,
+              "max_disp_mm": 0.04043,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_FRONT_Y+",
+              "safety_factor_p99_5": 15.969,
+              "worst_element_safety_factor": 4.413,
+              "max_disp_mm": 0.04369,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_FRONT_Z+",
+              "safety_factor_p99_5": 30.113,
+              "worst_element_safety_factor": 10.467,
+              "max_disp_mm": 0.06328,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_REAR_X+",
+              "safety_factor_p99_5": 16.142,
+              "worst_element_safety_factor": 4.256,
+              "max_disp_mm": 0.05621,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_REAR_Y+",
+              "safety_factor_p99_5": 16.552,
+              "worst_element_safety_factor": 4.472,
+              "max_disp_mm": 0.04621,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_REAR_Z+",
+              "safety_factor_p99_5": 22.458,
+              "worst_element_safety_factor": 2.14,
+              "max_disp_mm": 0.14176,
+              "tool_pass": true
+            }
+          ]
+        }
+      ],
+      "displacement_gate_all_recorded_cases": true
+    },
+    {
+      "attempt": "iteration_08",
+      "current_carrier_stl_matches": true,
+      "scope": "Carrier-only, ideally clamped service-cap faces. Not PCB/assembly/physical certification.",
+      "mesher_override": {
+        "method": "Native STEP surfaces remeshed at each requested size; legacy STL surface_refinement metadata is not the mesh actually solved.",
+        "step": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\assemblies\\parent_hand_service\\rigidity\\iteration_08\\carrier.step",
+        "step_sha256": "d091f1fcef3385ac7d3ec1ef223ef73fc71ffa0a467ab6852cbc4fa4a0561354",
+        "algorithm3D": 1,
+        "second_order_linear": true,
+        "optimize_netgen": false
+      },
+      "execution": {
+        "exit_code": 1,
+        "completed": true,
+        "successful": false
+      },
+      "mesh_convergence": {
+        "runs": [
+          {
+            "target_mm": 8.0,
+            "nodes": 30702,
+            "max_disp_mm": 0.14176,
+            "p99_5_stress_MPa": 2.0206,
+            "hotspot_xyz_mm": [
+              157.634,
+              72.268,
+              63.0
+            ],
+            "max_stress_MPa": 13.8959
+          },
+          {
+            "target_mm": 4.0,
+            "nodes": 67878,
+            "max_disp_mm": 0.14335,
+            "p99_5_stress_MPa": 1.4893,
+            "hotspot_xyz_mm": [
+              131.4,
+              74.95,
+              54.5
+            ],
+            "max_stress_MPa": 16.7334
+          },
+          {
+            "target_mm": 2.0,
+            "nodes": 264915,
+            "max_disp_mm": 0.14242,
+            "p99_5_stress_MPa": 1.087,
+            "hotspot_xyz_mm": [
+              131.4,
+              74.95,
+              54.5
+            ],
+            "max_stress_MPa": 22.6773
+          }
+        ],
+        "steps": [
+          {
+            "displacement_change": 0.01109,
+            "stress_change": 0.35674,
+            "hotspot_shift_mm": 27.70678
+          },
+          {
+            "displacement_change": 0.00653,
+            "stress_change": 0.3701,
+            "hotspot_shift_mm": 0.0
+          }
+        ],
+        "tolerance": 0.05,
+        "hotspot_tolerance_mm": 4.0,
+        "pass": false,
+        "note": "the answer is still moving with the mesh; it is a property of the discretisation, not of the part"
+      },
+      "assembly_guarantee": false,
+      "warning": "Ideal clamps, carrier only; connector/PCB, joints, floor, props and case not represented. A numerical PASS is not assembly approval.",
+      "runs": [
+        {
+          "mesh_target_mm": 8.0,
+          "tool_pass": true,
+          "mesh_quality": {
+            "min": 0.04309,
+            "sliver_count": 0,
+            "sliver_fraction": 0.0,
+            "p1": 0.15295,
+            "p5": 0.27733,
+            "median": 0.70269,
+            "poor_count": 91,
+            "poor_fraction": 0.00569,
+            "elements": 16006,
+            "pass": true,
+            "note": "no sliver elements"
+          },
+          "cases": [
+            {
+              "name": "MAIN_USB_X+",
+              "safety_factor_p99_5": 29.419,
+              "worst_element_safety_factor": 6.289,
+              "max_disp_mm": 0.07259,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_USB_Y+",
+              "safety_factor_p99_5": 22.571,
+              "worst_element_safety_factor": 7.065,
+              "max_disp_mm": 0.08321,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_USB_Z+",
+              "safety_factor_p99_5": 29.195,
+              "worst_element_safety_factor": 3.574,
+              "max_disp_mm": 0.1237,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_SD_X+",
+              "safety_factor_p99_5": 145.319,
+              "worst_element_safety_factor": 18.622,
+              "max_disp_mm": 0.01068,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_SD_Y+",
+              "safety_factor_p99_5": 146.45,
+              "worst_element_safety_factor": 16.756,
+              "max_disp_mm": 0.0201,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_SD_Z+",
+              "safety_factor_p99_5": 28.999,
+              "worst_element_safety_factor": 3.05,
+              "max_disp_mm": 0.12893,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_FRONT_X+",
+              "safety_factor_p99_5": 16.602,
+              "worst_element_safety_factor": 4.836,
+              "max_disp_mm": 0.04043,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_FRONT_Y+",
+              "safety_factor_p99_5": 15.969,
+              "worst_element_safety_factor": 4.413,
+              "max_disp_mm": 0.04369,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_FRONT_Z+",
+              "safety_factor_p99_5": 30.113,
+              "worst_element_safety_factor": 10.467,
+              "max_disp_mm": 0.06328,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_REAR_X+",
+              "safety_factor_p99_5": 16.142,
+              "worst_element_safety_factor": 4.256,
+              "max_disp_mm": 0.05621,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_REAR_Y+",
+              "safety_factor_p99_5": 16.552,
+              "worst_element_safety_factor": 4.472,
+              "max_disp_mm": 0.04621,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_REAR_Z+",
+              "safety_factor_p99_5": 22.458,
+              "worst_element_safety_factor": 2.14,
+              "max_disp_mm": 0.14176,
+              "tool_pass": true
+            }
+          ]
+        },
+        {
+          "mesh_target_mm": 4.0,
+          "tool_pass": true,
+          "mesh_quality": {
+            "min": 0.06793,
+            "sliver_count": 0,
+            "sliver_fraction": 0.0,
+            "p1": 0.3008,
+            "p5": 0.44883,
+            "median": 0.7894,
+            "poor_count": 2,
+            "poor_fraction": 5e-05,
+            "elements": 37313,
+            "pass": true,
+            "note": "no sliver elements"
+          },
+          "cases": [
+            {
+              "name": "MAIN_USB_X+",
+              "safety_factor_p99_5": 44.577,
+              "worst_element_safety_factor": 4.944,
+              "max_disp_mm": 0.07592,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_USB_Y+",
+              "safety_factor_p99_5": 32.226,
+              "worst_element_safety_factor": 6.694,
+              "max_disp_mm": 0.0883,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_USB_Z+",
+              "safety_factor_p99_5": 29.412,
+              "worst_element_safety_factor": 2.73,
+              "max_disp_mm": 0.13117,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_SD_X+",
+              "safety_factor_p99_5": 167.524,
+              "worst_element_safety_factor": 15.423,
+              "max_disp_mm": 0.01148,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_SD_Y+",
+              "safety_factor_p99_5": 154.435,
+              "worst_element_safety_factor": 17.814,
+              "max_disp_mm": 0.021,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_SD_Z+",
+              "safety_factor_p99_5": 30.594,
+              "worst_element_safety_factor": 2.198,
+              "max_disp_mm": 0.13651,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_FRONT_X+",
+              "safety_factor_p99_5": 30.641,
+              "worst_element_safety_factor": 4.128,
+              "max_disp_mm": 0.04265,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_FRONT_Y+",
+              "safety_factor_p99_5": 29.285,
+              "worst_element_safety_factor": 4.447,
+              "max_disp_mm": 0.04561,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_FRONT_Z+",
+              "safety_factor_p99_5": 40.48,
+              "worst_element_safety_factor": 7.379,
+              "max_disp_mm": 0.06332,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_REAR_X+",
+              "safety_factor_p99_5": 31.798,
+              "worst_element_safety_factor": 4.122,
+              "max_disp_mm": 0.05787,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_REAR_Y+",
+              "safety_factor_p99_5": 29.142,
+              "worst_element_safety_factor": 4.482,
+              "max_disp_mm": 0.04897,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_REAR_Z+",
+              "safety_factor_p99_5": 24.947,
+              "worst_element_safety_factor": 1.917,
+              "max_disp_mm": 0.14335,
+              "tool_pass": true
+            }
+          ]
+        },
+        {
+          "mesh_target_mm": 2.0,
+          "tool_pass": false,
+          "mesh_quality": {
+            "min": 0.0558,
+            "sliver_count": 0,
+            "sliver_fraction": 0.0,
+            "p1": 0.44362,
+            "p5": 0.56493,
+            "median": 0.83231,
+            "poor_count": 1,
+            "poor_fraction": 1e-05,
+            "elements": 162338,
+            "pass": true,
+            "note": "no sliver elements"
+          },
+          "cases": [
+            {
+              "name": "MAIN_USB_X+",
+              "safety_factor_p99_5": 61.791,
+              "worst_element_safety_factor": 4.071,
+              "max_disp_mm": 0.08077,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_USB_Y+",
+              "safety_factor_p99_5": 41.749,
+              "worst_element_safety_factor": 5.174,
+              "max_disp_mm": 0.09464,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_USB_Z+",
+              "safety_factor_p99_5": 32.637,
+              "worst_element_safety_factor": 3.017,
+              "max_disp_mm": 0.13721,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_SD_X+",
+              "safety_factor_p99_5": 190.393,
+              "worst_element_safety_factor": 14.193,
+              "max_disp_mm": 0.01194,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_SD_Y+",
+              "safety_factor_p99_5": 174.277,
+              "worst_element_safety_factor": 11.994,
+              "max_disp_mm": 0.02205,
+              "tool_pass": true
+            },
+            {
+              "name": "MAIN_SD_Z+",
+              "safety_factor_p99_5": 36.39,
+              "worst_element_safety_factor": 2.539,
+              "max_disp_mm": 0.14242,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_FRONT_X+",
+              "safety_factor_p99_5": 95.471,
+              "worst_element_safety_factor": 3.88,
+              "max_disp_mm": 0.04085,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_FRONT_Y+",
+              "safety_factor_p99_5": 92.345,
+              "worst_element_safety_factor": 4.692,
+              "max_disp_mm": 0.04509,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_FRONT_Z+",
+              "safety_factor_p99_5": 65.716,
+              "worst_element_safety_factor": 5.396,
+              "max_disp_mm": 0.06126,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_REAR_X+",
+              "safety_factor_p99_5": 90.782,
+              "worst_element_safety_factor": 3.897,
+              "max_disp_mm": 0.05582,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_REAR_Y+",
+              "safety_factor_p99_5": 81.187,
+              "worst_element_safety_factor": 4.319,
+              "max_disp_mm": 0.04725,
+              "tool_pass": true
+            },
+            {
+              "name": "SONY_REAR_Z+",
+              "safety_factor_p99_5": 32.474,
+              "worst_element_safety_factor": 1.207,
+              "max_disp_mm": 0.13909,
+              "tool_pass": false
+            }
+          ]
+        }
+      ],
+      "displacement_gate_all_recorded_cases": true
+    }
+  ],
+  "assembly_guarantee": false,
+  "physical_test_records_complete": 0
+}

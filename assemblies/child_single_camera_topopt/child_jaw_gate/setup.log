@@ -1,0 +1,56 @@
+grid 60 x 64 x 108 at 3.000 mm (origin [-89.0, -106.92, -54.0])
+
+runtime  80 iterations x 5 case(s) ~ 17 min  (range 8 min - 25 min; one cold solve of case 1 took 2.5 s on 96696 elements [cuda/mg])
+
+--- setup ---
+  voxel               3.000 mm, grid [60, 64, 108]
+  design space        2610792 mm3
+  preserve            127953 mm3 in 7 bodies
+  obstacle            3233952 mm3 declared -> 3233952 mm3 with clearance
+  free (optimisable)  969921 mm3 (35923 cells)
+  attach              interfaces may be joined at 3815 cell(s), 34335 mm2 (join_free_space); 0 cell(s) / 0 mm3 of no-contact shell around the rest of it, 3.00 mm thick
+  build volume        250x250x250 on Bambu Lab X1-Carbon -- design space 153x72x237, fits
+  free to decide      37 % of the domain; preserve is 72 % of the expected part
+    preserve   interfaces               127953 mm3  stl:preserve.stl
+    design_space design_space            2610792 mm3  stl:design_space.stl
+    obstacle   keep_out                1717848 mm3  stl:obstacle.stl
+    obstacle   pressure_vessel         2564325 mm3  stl:pressure_vessel.stl
+    obstacle   cables                   143532 mm3  stl:cables.stl
+  WARN  support region 'knuckles' in case 'L1 hoist 3g: single camera + smaller adapter, 20N total on HP4/HP5 plus gate self-weight' reaches 73 % (56052.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 27 % only.
+  WARN  support region 'latch_lo' in case 'L1 hoist 3g: single camera + smaller adapter, 20N total on HP4/HP5 plus gate self-weight' reaches 7 % (135.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 93 % only.
+  WARN  support region 'latch_hi' in case 'L1 hoist 3g: single camera + smaller adapter, 20N total on HP4/HP5 plus gate self-weight' reaches 7 % (135.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 93 % only.
+  WARN  load region 'hp4' in case 'L1 hoist 3g: single camera + smaller adapter, 20N total on HP4/HP5 plus gate self-weight' reaches 62 % (19278.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 38 % only.
+  WARN  load region 'hp5' in case 'L1 hoist 3g: single camera + smaller adapter, 20N total on HP4/HP5 plus gate self-weight' reaches 57 % (17928.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 43 % only.
+  WARN  support region 'pocket_bot' in case 'L2f transport frontal 300 N (-Y) through the cam bridge into HP4/HP5, the container reacts on the three bands' reaches 89 % (116316.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 11 % only.
+  WARN  support region 'band_mid' in case 'L2f transport frontal 300 N (-Y) through the cam bridge into HP4/HP5, the container reacts on the three bands' reaches 86 % (112995.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 14 % only.
+  WARN  support region 'pocket_top' in case 'L2f transport frontal 300 N (-Y) through the cam bridge into HP4/HP5, the container reacts on the three bands' reaches 89 % (139914.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 11 % only.
+  WARN  load region 'hp4' in case 'L2f transport frontal 300 N (-Y) through the cam bridge into HP4/HP5, the container reacts on the three bands' reaches 62 % (19278.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 38 % only.
+  WARN  load region 'hp5' in case 'L2f transport frontal 300 N (-Y) through the cam bridge into HP4/HP5, the container reacts on the three bands' reaches 57 % (17928.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 43 % only.
+  WARN  support region 'pocket_bot' in case 'L2s transport side 300 N (-X on the latch edge), the container reacts on the three bands' reaches 89 % (116316.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 11 % only.
+  WARN  support region 'band_mid' in case 'L2s transport side 300 N (-X on the latch edge), the container reacts on the three bands' reaches 86 % (112995.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 14 % only.
+  WARN  support region 'pocket_top' in case 'L2s transport side 300 N (-X on the latch edge), the container reacts on the three bands' reaches 89 % (139914.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 11 % only.
+  WARN  load region 'latch_lo' in case 'L2s transport side 300 N (-X on the latch edge), the container reacts on the three bands' reaches 7 % (135.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 93 % only.
+  WARN  load region 'latch_hi' in case 'L2s transport side 300 N (-X on the latch edge), the container reacts on the three bands' reaches 7 % (135.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 93 % only.
+  WARN  support region 'pocket_bot' in case 'L3 clamp preload: the two M5 knob bolts pull the latch bosses -Y (300 N each) and the hinge pin pulls the knuckles -Y, the tube + EVA react on the three bands' reaches 89 % (116316.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 11 % only.
+  WARN  support region 'band_mid' in case 'L3 clamp preload: the two M5 knob bolts pull the latch bosses -Y (300 N each) and the hinge pin pulls the knuckles -Y, the tube + EVA react on the three bands' reaches 86 % (112995.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 14 % only.
+  WARN  support region 'pocket_top' in case 'L3 clamp preload: the two M5 knob bolts pull the latch bosses -Y (300 N each) and the hinge pin pulls the knuckles -Y, the tube + EVA react on the three bands' reaches 89 % (139914.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 11 % only.
+  WARN  load region 'latch_lo' in case 'L3 clamp preload: the two M5 knob bolts pull the latch bosses -Y (300 N each) and the hinge pin pulls the knuckles -Y, the tube + EVA react on the three bands' reaches 7 % (135.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 93 % only.
+  WARN  load region 'latch_hi' in case 'L3 clamp preload: the two M5 knob bolts pull the latch bosses -Y (300 N each) and the hinge pin pulls the knuckles -Y, the tube + EVA react on the three bands' reaches 7 % (135.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 93 % only.
+  WARN  load region 'knuckles' in case 'L3 clamp preload: the two M5 knob bolts pull the latch bosses -Y (300 N each) and the hinge pin pulls the knuckles -Y, the tube + EVA react on the three bands' reaches 73 % (56052.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 27 % only.
+  WARN  support region 'pocket_bot' in case 'L4 frontal collision 300 N on the top of the bridge column (z 195): statics on the HP4/HP5 bolt pair (z 170 / 100) gives -400 N on HP4 and +100 N pull-out on HP5, the container reacts on the three bands' reaches 89 % (116316.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 11 % only.
+  WARN  support region 'band_mid' in case 'L4 frontal collision 300 N on the top of the bridge column (z 195): statics on the HP4/HP5 bolt pair (z 170 / 100) gives -400 N on HP4 and +100 N pull-out on HP5, the container reacts on the three bands' reaches 86 % (112995.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 14 % only.
+  WARN  support region 'pocket_top' in case 'L4 frontal collision 300 N on the top of the bridge column (z 195): statics on the HP4/HP5 bolt pair (z 170 / 100) gives -400 N on HP4 and +100 N pull-out on HP5, the container reacts on the three bands' reaches 89 % (139914.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 11 % only.
+  WARN  load region 'hp4' in case 'L4 frontal collision 300 N on the top of the bridge column (z 195): statics on the HP4/HP5 bolt pair (z 170 / 100) gives -400 N on HP4 and +100 N pull-out on HP5, the container reacts on the three bands' reaches 62 % (19278.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 38 % only.
+  WARN  load region 'hp5' in case 'L4 frontal collision 300 N on the top of the bridge column (z 195): statics on the HP4/HP5 bolt pair (z 170 / 100) gives -400 N on HP4 and +100 N pull-out on HP5, the container reacts on the three bands' reaches 57 % (17928.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 43 % only.
+  WARN  only 37 % of the domain is free for the optimiser to decide.
+  WARN  preserve is 72 % of the expected final part (127953 mm3 of 178389 mm3 at volfrac 0.05). Most of this shape is drawn, not optimised; say so wherever the result is presented.
+  WARN  the free region is only 2.0 voxels (6.00 mm) thick at its thinnest. Below about 3 voxels there is no room for a hole, so the topology there is set by the outline rather than chosen -- refine the grid or widen the design space.
+  WARN  the free region's median thickness is 6.00 mm, below the 9.00 mm filter radius. The filter cannot form a member narrower than itself, so most of the free region will come out grey and the threshold, not the optimisation, will decide what is material.
+  WARN  the 6 support point(s) are fixed by preserve at knuckles at [-71.7, 9.8, 100.4]; latch_lo at [63.2, 22.2, 40.5]; latch_hi at [63.2, 22.2, 169.5]; pocket_bot at [1.6, 41.5, -10.2]; band_mid at [1.9, 39.6, 100.5]; pocket_top at [1.9, 39.8, 209.6]. Where the part is held is an input to this study, not a result of it -- if the layout of the supports is itself meant to be optimised, that decision is currently being made in CAD.
+  => setup OK
+
+wrote C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\child_single_camera_topopt\child_jaw_gate\setup
+  look at C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\child_single_camera_topopt\child_jaw_gate\setup\study_setup.png
+  look at C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\child_single_camera_topopt\child_jaw_gate\setup\study_setup.scad
+
+NEXT: topopt opt C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\child_single_camera_topopt\child_jaw_gate\study.json --out DIR

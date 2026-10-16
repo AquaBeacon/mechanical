@@ -1,0 +1,239 @@
+{
+ "floating": [],
+ "pairs": [
+  {
+   "a": "box_bcas212310g",
+   "b": "pen_tether",
+   "gap": 0.09964079064820601,
+   "penetration": 0.0
+  },
+  {
+   "a": "box_bcas212310g",
+   "b": "pen_td04a",
+   "gap": 0.07630021012747262,
+   "penetration": 0.0
+  },
+  {
+   "a": "box_bcas212310g",
+   "b": "plate",
+   "gap": 0.04426097316496102,
+   "penetration": 0.0
+  },
+  {
+   "a": "box_bcas212310g",
+   "b": "p_main",
+   "gap": 4.155678747012192,
+   "penetration": 0.0
+  },
+  {
+   "a": "box_bcas212310g",
+   "b": "p_pwr",
+   "gap": 9.406167665090358,
+   "penetration": 0.0
+  },
+  {
+   "a": "box_bcas212310g",
+   "b": "spresense",
+   "gap": 7.962030236526477,
+   "penetration": 0.0
+  },
+  {
+   "a": "box_bcas212310g",
+   "b": "lipo_tray",
+   "gap": 6.992664329095389,
+   "penetration": 0.0
+  },
+  {
+   "a": "box_bcas212310g",
+   "b": "main_spacer_0",
+   "gap": 6.559999999999999,
+   "penetration": 0.0
+  },
+  {
+   "a": "pen_tether",
+   "b": "lipo_tray",
+   "gap": 0.6387039675472123,
+   "penetration": 0.0
+  },
+  {
+   "a": "pen_tether",
+   "b": "main_spacer_1",
+   "gap": 8.073088185626366,
+   "penetration": 0.0
+  },
+  {
+   "a": "pen_td04a",
+   "b": "lipo_tray",
+   "gap": 8.500804843367124,
+   "penetration": 0.0
+  },
+  {
+   "a": "plate",
+   "b": "p_main",
+   "gap": 0.09255088702088149,
+   "penetration": 0.0
+  },
+  {
+   "a": "plate",
+   "b": "p_pwr",
+   "gap": 0.02642219815963807,
+   "penetration": 2.235812727758261
+  },
+  {
+   "a": "plate",
+   "b": "tx_improved",
+   "gap": 0.07362701329829095,
+   "penetration": 0.0
+  },
+  {
+   "a": "plate",
+   "b": "spresense",
+   "gap": 0.04681947418994523,
+   "penetration": 1.921118566982029
+  },
+  {
+   "a": "plate",
+   "b": "main_spacer_0",
+   "gap": 0.19240888071287782,
+   "penetration": 1.8093315401316417
+  },
+  {
+   "a": "plate",
+   "b": "main_spacer_1",
+   "gap": 0.20099526791657746,
+   "penetration": 1.9772334113256556
+  },
+  {
+   "a": "plate",
+   "b": "main_spacer_2",
+   "gap": 0.14556744282633494,
+   "penetration": 2.252524173993115
+  },
+  {
+   "a": "plate",
+   "b": "main_spacer_3",
+   "gap": 0.19108742840765247,
+   "penetration": 1.6577863428970516
+  },
+  {
+   "a": "p_main",
+   "b": "p_pwr",
+   "gap": 5.0,
+   "penetration": 0.0
+  },
+  {
+   "a": "p_main",
+   "b": "tx_improved",
+   "gap": 7.060348350360921,
+   "penetration": 0.0
+  },
+  {
+   "a": "p_main",
+   "b": "spresense",
+   "gap": 7.0,
+   "penetration": 0.0
+  },
+  {
+   "a": "p_main",
+   "b": "lipo_tray",
+   "gap": 6.763236405752827,
+   "penetration": 0.0
+  },
+  {
+   "a": "p_main",
+   "b": "main_spacer_0",
+   "gap": 0.10058838157532744,
+   "penetration": 0.0
+  },
+  {
+   "a": "p_main",
+   "b": "main_spacer_1",
+   "gap": 0.1057734071222927,
+   "penetration": 0.0
+  },
+  {
+   "a": "p_main",
+   "b": "main_spacer_2",
+   "gap": 0.1012183316738747,
+   "penetration": 0.0
+  },
+  {
+   "a": "p_main",
+   "b": "main_spacer_3",
+   "gap": 0.09257577947159976,
+   "penetration": 0.0
+  },
+  {
+   "a": "p_pwr",
+   "b": "main_spacer_2",
+   "gap": 6.772474062747536,
+   "penetration": 0.0
+  },
+  {
+   "a": "p_pwr",
+   "b": "main_spacer_3",
+   "gap": 8.973615383211863,
+   "penetration": 0.0
+  },
+  {
+   "a": "tx_improved",
+   "b": "spresense",
+   "gap": 6.400000000000006,
+   "penetration": 0.0
+  },
+  {
+   "a": "tx_improved",
+   "b": "main_spacer_3",
+   "gap": 8.617200861571133,
+   "penetration": 0.0
+  },
+  {
+   "a": "spresense",
+   "b": "main_spacer_1",
+   "gap": 8.507390642834327,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo_tray",
+   "b": "lipo",
+   "gap": 0.054890869914229506,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo_tray",
+   "b": "main_spacer_0",
+   "gap": 0.02158992940039353,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo_tray",
+   "b": "main_spacer_1",
+   "gap": 0.04313685957468716,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo_tray",
+   "b": "main_spacer_2",
+   "gap": 0.07369681464950002,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo_tray",
+   "b": "main_spacer_3",
+   "gap": 0.016895364219613875,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo",
+   "b": "main_spacer_0",
+   "gap": 8.330969051280087,
+   "penetration": 0.0
+  },
+  {
+   "a": "lipo",
+   "b": "main_spacer_1",
+   "gap": 8.33856345341126,
+   "penetration": 0.0
+  }
+ ]
+}

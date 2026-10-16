@@ -1,0 +1,91 @@
+{
+  "schema": "topopt/run/1",
+  "study": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\assemblies\\child_single_camera_topopt\\child_cam_bridge\\study.json",
+  "outdir": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\assemblies\\child_single_camera_topopt\\child_cam_bridge\\exploration\\03_optimization",
+  "model_dir": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\assemblies\\child_single_camera_topopt\\child_cam_bridge\\exploration",
+  "quick": true,
+  "seconds": 120.5,
+  "stages": [
+    {
+      "stage": "setup",
+      "exit_code": 0,
+      "error": null,
+      "skipped": null,
+      "note": null,
+      "seconds": 6.2
+    },
+    {
+      "stage": "opt",
+      "exit_code": 1,
+      "error": null,
+      "skipped": null,
+      "note": "shape does not meet the requirement; continuing so the report says why",
+      "seconds": 102.5
+    },
+    {
+      "stage": "extract",
+      "exit_code": 1,
+      "error": null,
+      "skipped": null,
+      "note": null,
+      "seconds": 2.8
+    },
+    {
+      "stage": "ccx",
+      "exit_code": null,
+      "error": null,
+      "skipped": true,
+      "note": "disabled by --quick",
+      "seconds": 0.0
+    },
+    {
+      "stage": "print",
+      "exit_code": 0,
+      "error": null,
+      "skipped": null,
+      "note": "wrote printcheck.json (threshold 0.50)",
+      "seconds": 0.4
+    },
+    {
+      "stage": "slice",
+      "exit_code": null,
+      "error": null,
+      "skipped": true,
+      "note": "disabled by --quick",
+      "seconds": 0.3
+    },
+    {
+      "stage": "report",
+      "exit_code": 1,
+      "error": null,
+      "skipped": null,
+      "note": null,
+      "seconds": 4.1
+    },
+    {
+      "stage": "assumptions",
+      "exit_code": 0,
+      "error": null,
+      "skipped": null,
+      "note": "wrote C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\assemblies\\child_single_camera_topopt\\child_cam_bridge\\exploration\\01_assumptions\\assumptions.md",
+      "seconds": 0.3
+    },
+    {
+      "stage": "publish",
+      "exit_code": 0,
+      "error": null,
+      "skipped": null,
+      "note": "wrote C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\assemblies\\child_single_camera_topopt\\child_cam_bridge\\exploration\\04_print\\PRINT.md",
+      "seconds": 3.9
+    }
+  ],
+  "stopped_at": null,
+  "valid_through": [
+    "setup",
+    "opt",
+    "extract",
+    "print",
+    "assumptions",
+    "publish"
+  ]
+}

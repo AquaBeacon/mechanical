@@ -1,0 +1,5 @@
+# xdcr_pole_jig のバリアント定義 (build.ps1 / build.sh が読む)
+# 書式: <接尾辞>  <変数=値> [<変数=値> ...]        '#' 始まりはコメント
+# 出力: xdcr_pole_jig_<接尾辞>.stl / .step / _preview.png
+body   part="body"
+cap    part="cap"

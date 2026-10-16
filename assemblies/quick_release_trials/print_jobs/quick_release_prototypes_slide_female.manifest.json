@@ -1,0 +1,69 @@
+{
+  "file": "quick_release_prototypes_slide_female.3mf",
+  "sha256": "5117eee4958796cdc53023ba22eab4e18d553323e78acfbb21b2b79e4730258e",
+  "moved_from": "parts/quick_release_prototypes_slide_female.3mf",
+  "note": "User-added slicer project archived unchanged during revision. Geometry alignment with final CAD has NOT been verified. Use parts/PRINT.md for the current set. Seven named object definitions; no dedicated slide_gib object. All three trial types appear in this project despite the filename.",
+  "settings": {
+    "filament_type": [
+      "PETG",
+      "PLA-CF",
+      "PLA",
+      "PLA"
+    ],
+    "filament_settings_id": [
+      "eSUN PETG ベーシック @Bambu Lab X1 Carbon 0.4 nozzle",
+      "Bambu PLA-CF @BBL X1C",
+      "Bambu PLA Matte @BBL X1C",
+      "Bambu PLA Matte @BBL X1C"
+    ],
+    "print_settings_id": "0.20mm Standard @BBL X1C For esun-PETG-Basic",
+    "printer_settings_id": "Bambu Lab X1 Carbon 0.4 nozzle",
+    "layer_height": "0.2",
+    "wall_loops": "2",
+    "sparse_infill_density": "15%",
+    "enable_support": "0",
+    "support_type": "tree(auto)"
+  },
+  "objects": [
+    {
+      "name": "quick_release_prototypes_twist_male.stl",
+      "extruder": "1"
+    },
+    {
+      "name": "quick_release_prototypes_twist_female.stl",
+      "extruder": "1"
+    },
+    {
+      "name": "quick_release_prototypes_slide_male.stl",
+      "extruder": "1"
+    },
+    {
+      "name": "quick_release_prototypes_snap_female.stl",
+      "extruder": "1"
+    },
+    {
+      "name": "quick_release_prototypes_snap_male.stl",
+      "extruder": "1"
+    },
+    {
+      "name": "quick_release_prototypes_slide_female.stl",
+      "extruder": "1"
+    },
+    {
+      "name": "quick_release_prototypes_knob.stl",
+      "extruder": "1"
+    }
+  ],
+  "related_stl_at_archive": {
+    "quick_release_prototypes_knob.stl": "2fc1f3ff482099be7ef61a92ef8b70a27407051226721bac6a3b99be9d8ed266",
+    "quick_release_prototypes_slide_female.stl": "0a1ac3f684d99d3e6b195d6d7eddf0847d85cb743adac474754e7342773d599c",
+    "quick_release_prototypes_slide_gib.stl": "032f523eb5455ff8ddc817432001f4b50a28af1aefea40a49eb6b95e6dbef2ac",
+    "quick_release_prototypes_slide_male.stl": "fafc6c963c9aec896f66b21901c657ed7dc26c1c1fee5b558030848c9ac5d40f",
+    "quick_release_prototypes_snap_female.stl": "4bb6122b5113e66937aa432a3aed94ccf2ce48ea04d0a94eec72d855ecacacf2",
+    "quick_release_prototypes_snap_male.stl": "b2788791da7609d2d049d1d136fd5463e8145cd51793a8e415173c970cc8a004",
+    "quick_release_prototypes_twist_female.stl": "dc124ae8a72a6c8cbdcb5e9b9d9e64eea08ad0a98d4db0636ced7c3e51cd479e",
+    "quick_release_prototypes_twist_male.stl": "e3db276992d147741654e1d5beed6cbb0ae87c99e78a3402bce93c1e1e1b2af6"
+  },
+  "moved_at": "2026-09-27T18:18:42.568253+09:00",
+  "current_print_set_complete": false
+}

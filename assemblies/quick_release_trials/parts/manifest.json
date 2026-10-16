@@ -1,0 +1,657 @@
+{
+  "schema_version": 1,
+  "assembly": "quick_release_trials",
+  "release_status": "geometry_checked_physical_trial_pending",
+  "note": "内蔵固定ナット版、9種類9点。A上側板10 mm、C上側板6 mm。A/CともM3×40六角ボルト、合計ボルト2・ナット2・ワッシャ2。固定ナットとノブ内ボルト頭は六角で回り止めし、少量のエポキシで脱落防止（ねじ山へ付けない）。Cはノブ付きボルトを右へ抜き60°戻す。A押さえは外側X面を下、Bメスは入口を上。STLは姿勢・接地済み。PETG、0.4 mmノズル、0.2 mm層、5周壁、上下6層、40% infillは仮条件。まずサポートOFFで短い橋・C爪根元をスライス確認。必要なら外側だけ局所サポート。ナットポケット・横穴・C回転溝はサポート禁止。詳細はDESIGN_NOTES.md。実造形・強度・接着保持未検証。 外周フィレット付き: 取付板縦角R3・上縁R0.8、受け縦角R1、ノブ自由端R0.8。 Cは下降カム溝で60°回すと0.60 mm引込み。厚さ1.0 mmゴムを5×8 mmに2枚切り、Cオス（蓋）の下面X=±10.5 mmにある5.4×8.4×0.4 mmの開放くぼみへ薄く接着。ゴムの0.6 mmがくぼみから出て、メス上面は平坦。公称圧縮0.10 mm。ゴムは印刷しない。Cオス・メスは0.1 mm層で試作。材質・硬さ・接着方法・操作力は実物確認。",
+  "source_hashes": {
+    "assemblies/quick_release_trials/placement.json": "bc8c96a9e91abd99d48ca42e59e19dbc211db58ac5fa86448000944493dffba1",
+    "assemblies/quick_release_trials/print_config.json": "3ada68c3d4246429d91eb513dc91135924b4be0311e56ce2c6cad3c60e0ae3c6",
+    "assemblies/quick_release_trials/README.md": "0c1f9cd9d87f8668262700d2ffdafc1f88607364ed4b3ec801d8ae6971c95df9",
+    "parts/common/jigs/quick_release_prototypes/manufacturing.json": "41214e9f82ab1550ccfbbc37407b0191a6329e284960976115100f96f3de2632",
+    "parts/common/jigs/quick_release_prototypes/quick_release_prototypes.md": "232d4479e19c7747eac42b91b00de34f09291e2bab632f6f633c14f26fe19891",
+    "parts/common/jigs/quick_release_prototypes/quick_release_prototypes.scad": "2276676313cbcf4d8e183911cc3431dde9574570a4106cafefb3d1f72c4cf054",
+    "parts/common/jigs/quick_release_prototypes/variants.txt": "cbe71de12e7d2632ef5c4cff0421b4dee3a448f5ef906b8fee77a0d4cf546128",
+    "scad/lib/util.scad": "13fed014ff5835aef1559d05600e2b4b0e284c93a4325485f4ef1be3ede6ddb3"
+  },
+  "parts": [
+    {
+      "part": "parts/common/jigs/quick_release_prototypes",
+      "stem": "quick_release_prototypes_slide_female",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "A slide female"
+      ],
+      "file": "quick_release_prototypes_slide_female.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/common/jigs/quick_release_prototypes/quick_release_prototypes_slide_female.stl",
+      "source_sha256": "4852a3bd1a9df55815e7134e88bd261050c5bb0e0de60b12be36942417543282",
+      "sha256": "cb4f45d6c26fe0a9a382db3ce7d001859a0689bc81106143b011552640636a43",
+      "extents_mm": [
+        40.0,
+        40.0,
+        16.2
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          20.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/common/jigs/quick_release_prototypes",
+      "stem": "quick_release_prototypes_slide_male",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "A slide male"
+      ],
+      "file": "quick_release_prototypes_slide_male.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/common/jigs/quick_release_prototypes/quick_release_prototypes_slide_male.stl",
+      "source_sha256": "9aac0d7a54b11ea0846389521aff6c9d65108a102d22a485e349ff6ef1653f6e",
+      "sha256": "15f4649700265c67e369dd9e7c848da067971491e7a5b648ec07515b53adef6a",
+      "extents_mm": [
+        40.0,
+        40.0,
+        16.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          20.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/common/jigs/quick_release_prototypes",
+      "stem": "quick_release_prototypes_slide_gib",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "A pressure gib"
+      ],
+      "file": "quick_release_prototypes_slide_gib.stl",
+      "rotation_deg": [
+        0,
+        90,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/common/jigs/quick_release_prototypes/quick_release_prototypes_slide_gib.stl",
+      "source_sha256": "6c909716da102a91a7c1b027e34691324be673d2b99cbb048f2c4c1ab3f50244",
+      "sha256": "290cc4e6e39fe2fde06394a1d56a036da3f2b8c47bc4b7a723e73ddb3d45e165",
+      "extents_mm": [
+        8.4,
+        20.0,
+        11.5
+      ],
+      "model_to_print": [
+        [
+          6.123233995736766e-17,
+          0.0,
+          1.0,
+          -7.799990000000001
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          -1.0,
+          0.0,
+          6.123233995736766e-17,
+          18.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/common/jigs/quick_release_prototypes",
+      "stem": "quick_release_prototypes_knob",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "A knob"
+      ],
+      "file": "quick_release_prototypes_knob.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/common/jigs/quick_release_prototypes/quick_release_prototypes_knob.stl",
+      "source_sha256": "8e2ceb18cfb0c13e567f18a1df6fd90c1aeb5185a8258f5384a78e8ad4e584a1",
+      "sha256": "031c5501e962a090ba0efccc207ea286073a0dee7ab851d63866ca8e81a09bd8",
+      "extents_mm": [
+        22.0,
+        19.7198,
+        10.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          11.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          9.85988
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/common/jigs/quick_release_prototypes",
+      "stem": "quick_release_prototypes_snap_female",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "B snap female"
+      ],
+      "file": "quick_release_prototypes_snap_female.stl",
+      "rotation_deg": [
+        -90,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/common/jigs/quick_release_prototypes/quick_release_prototypes_snap_female.stl",
+      "source_sha256": "c9483069c1441f498f8be69fe5a2152297ea3f0635aa6ca73ef440953522d955",
+      "sha256": "91f5e81ee80a2670e3a12398af869876a7725f08399a982593dc7bab2ce23900",
+      "extents_mm": [
+        40.0,
+        10.0,
+        39.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          20.0
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          1.0,
+          7.060946049843894e-16
+        ],
+        [
+          0.0,
+          -1.0,
+          6.123233995736766e-17,
+          27.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/common/jigs/quick_release_prototypes",
+      "stem": "quick_release_prototypes_snap_male",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "B snap male"
+      ],
+      "file": "quick_release_prototypes_snap_male.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/common/jigs/quick_release_prototypes/quick_release_prototypes_snap_male.stl",
+      "source_sha256": "89117e4f8a2104f868db3e5a3e73547b51691a807dea5b02d1d2e33b86947ffb",
+      "sha256": "5916f6b38bc6322d42ab8cc46968f4ee9deb5a38676c625325013ee188f766dd",
+      "extents_mm": [
+        40.0,
+        48.0,
+        4.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          20.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/common/jigs/quick_release_prototypes",
+      "stem": "quick_release_prototypes_twist_female",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "C twist female"
+      ],
+      "file": "quick_release_prototypes_twist_female.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/common/jigs/quick_release_prototypes/quick_release_prototypes_twist_female.stl",
+      "source_sha256": "0c9f1402699235419a067d3f5d553a1394bfea70229b260f13d32491b3221e87",
+      "sha256": "9727c525e8278b2dfe1fda322236a98ad6189b4401ff31336a46cf1555ba7355",
+      "extents_mm": [
+        40.0,
+        40.0,
+        18.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          20.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/common/jigs/quick_release_prototypes",
+      "stem": "quick_release_prototypes_twist_male",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "C twist male"
+      ],
+      "file": "quick_release_prototypes_twist_male.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/common/jigs/quick_release_prototypes/quick_release_prototypes_twist_male.stl",
+      "source_sha256": "06a80af72d52b4e6d634b4acdd3bbc81532c523b33f139621cb97fe7944250d2",
+      "sha256": "ea1c3cab37937c516eba61d1f289c4e692e0209ac65163ff23de9b285f84e8fd",
+      "extents_mm": [
+        40.0,
+        40.0,
+        14.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          20.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/common/jigs/quick_release_prototypes",
+      "stem": "quick_release_prototypes_twist_knob",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "C knob"
+      ],
+      "file": "quick_release_prototypes_twist_knob.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/common/jigs/quick_release_prototypes/quick_release_prototypes_twist_knob.stl",
+      "source_sha256": "a5699e9f0e6c08601bd55f3c452c65ab03d0987ff08ead47f1002e639ed41d16",
+      "sha256": "4937289e0a7dc0aa10f12c761e14c217befe0a074c2df8252e1f93170d629747",
+      "extents_mm": [
+        16.0,
+        14.5236,
+        10.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          8.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          7.2618
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    }
+  ],
+  "modifiers": [],
+  "generated_files": [
+    "quick_release_prototypes_slide_female.stl",
+    "quick_release_prototypes_slide_male.stl",
+    "quick_release_prototypes_slide_gib.stl",
+    "quick_release_prototypes_knob.stl",
+    "quick_release_prototypes_snap_female.stl",
+    "quick_release_prototypes_snap_male.stl",
+    "quick_release_prototypes_twist_female.stl",
+    "quick_release_prototypes_twist_male.stl",
+    "quick_release_prototypes_twist_knob.stl",
+    "DESIGN_NOTES.md",
+    "PRINT.md"
+  ],
+  "document_hashes": {
+    "DESIGN_NOTES.md": "1bc313eadadbb977673c0af23f332127f4ba0ffa5aced6b4b60e386f19a9754d",
+    "PRINT.md": "a7542cc8b0c9f8c8234bc127e5ef2e928ca6f6325ea3105b91687f38c3f440ad"
+  }
+}

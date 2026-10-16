@@ -1,0 +1,5 @@
+# parent_float_yoke variants (ASCII only so build.sh/build.ps1 both read it)
+# a = hand +1 (arm toward +Y): starboard-aft / port-fore (rotated 180)
+# b = hand -1 (Y mirror):     starboard-fore / port-aft (rotated 180)
+a   hand=1
+b   hand=-1

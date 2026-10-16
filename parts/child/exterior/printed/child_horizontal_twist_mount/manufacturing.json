@@ -1,0 +1,38 @@
+{
+  "print_rotations_deg": {
+    "child_horizontal_twist_mount_frame_receiver": [
+      0,
+      0,
+      0
+    ],
+    "child_horizontal_twist_mount_light_twist": [
+      90,
+      0,
+      0
+    ]
+  },
+  "layer_heights_mm": {
+    "child_horizontal_twist_mount_frame_receiver": 0.1,
+    "child_horizontal_twist_mount_light_twist": 0.1
+  },
+  "support_modes": {
+    "child_horizontal_twist_mount_frame_receiver": "none",
+    "child_horizontal_twist_mount_light_twist": "auto"
+  },
+  "support_process_overrides": {
+    "support_on_build_plate_only": "1",
+    "support_top_z_distance": "0.2",
+    "support_bottom_z_distance": "0.2"
+  },
+  "portable_stl_export_format": "stl_ascii",
+  "source_dependencies": [
+    "../../../../../tools/build_child_horizontal_accessories.py",
+    "../child_simple_light_mount/child_simple_light_mount.scad",
+    "../../../../common/jigs/quick_release_prototypes/quick_release_prototypes.scad",
+    "../../../../../tools/clean_stl_degenerates.py"
+  ],
+  "degenerate_edge_flip_files": [
+    "child_horizontal_twist_mount_frame_receiver",
+    "child_horizontal_twist_mount_light_twist"
+  ]
+}

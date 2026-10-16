@@ -1,0 +1,439 @@
+{
+  "part": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\parts\\parent\\exterior\\printed\\parent_float_yoke\\fea\\../parent_float_yoke_a.stl",
+  "material": "PETG",
+  "pass": true,
+  "cases": [
+    {
+      "elements": 74230,
+      "voxel_mm": 1.8,
+      "volume_mm3": 432909.36000000004,
+      "converged": true,
+      "cg_iterations": 2135,
+      "compliance_Nmm": 4.746150510883884,
+      "max_displacement_mm": 0.16488075492343085,
+      "max_displacement_at": [
+        113.4,
+        67.4,
+        67.4
+      ],
+      "von_mises_max_MPa": 2.678659906123373,
+      "von_mises_p99_5_MPa": 0.5697771899587692,
+      "stress_concentration_ratio": 4.7012410347932825,
+      "failure_index_max": 0.07160191004245861,
+      "failure_index_p99_5": 0.016021059417183424,
+      "failure_criterion": "max_stress_material_axes",
+      "material_axes": {
+        "build_axis": "X",
+        "raster_axis": null,
+        "stiffness": "orthotropic",
+        "card_id": "petg_generic_fff_orthotropic_v1"
+      },
+      "min_safety_factor": 13.96610787906382,
+      "safety_factor_p99_5": 62.41784478543583,
+      "mesh": {
+        "thin_section_mm": 10.8,
+        "typical_section_mm": 36.0,
+        "elements_across_thin": 6.0,
+        "elements_across_typical": 20.0
+      },
+      "warnings": [],
+      "checks": [
+        {
+          "name": "strength",
+          "required": "safety factor >= 2.00",
+          "got": "13.97 (worst element) / 62.42 (p99.5)",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "stiffness",
+          "required": "max deflection <= 1.000 mm",
+          "got": "0.165 mm",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "mesh resolution",
+          "required": ">= 3 elements across the thinnest section",
+          "got": "6.0 (thin 10.80 mm) / 20.0 (typical 36.00 mm)",
+          "pass": true,
+          "inspect": false
+        }
+      ],
+      "pass": true,
+      "hotspots": [
+        {
+          "pos": [
+            18.9,
+            68.3,
+            -16.3
+          ],
+          "failure_index": 0.072,
+          "safety_factor": 13.97
+        },
+        {
+          "pos": [
+            0.9,
+            28.7,
+            28.7
+          ],
+          "failure_index": 0.058,
+          "safety_factor": 17.3
+        },
+        {
+          "pos": [
+            0.9,
+            28.7,
+            -27.1
+          ],
+          "failure_index": 0.052,
+          "safety_factor": 19.41
+        },
+        {
+          "pos": [
+            0.9,
+            28.7,
+            -19.9
+          ],
+          "failure_index": 0.041,
+          "safety_factor": 24.62
+        },
+        {
+          "pos": [
+            0.9,
+            21.5,
+            28.7
+          ],
+          "failure_index": 0.031,
+          "safety_factor": 31.99
+        }
+      ],
+      "case": "L2 buoyancy/handling: float pushes seat up 65 N (13 N steady x5), held at HP40 adapter face",
+      "total_applied_load_N": [
+        0.0,
+        0.0,
+        44.774
+      ],
+      "resultant_load_N": 44.774,
+      "material": "PETG",
+      "material_model": {
+        "material_model": "orthotropic_equivalent_solid",
+        "card_id": "petg_generic_fff_orthotropic_v1",
+        "classification": "conservative_literature_based_default",
+        "measured_for_specific_printer": false,
+        "solid_fraction_applied": 1.0,
+        "Ex_Ey_Ez_MPa": [
+          2100,
+          1750,
+          1150
+        ],
+        "Gxy_Gyz_Gzx_MPa": [
+          700,
+          420,
+          420
+        ],
+        "strengths_MPa": {
+          "Xt": 42,
+          "Xc": 50,
+          "Yt": 33,
+          "Yc": 42,
+          "Zt": 25,
+          "Zc": 35,
+          "Sxy": 20,
+          "Syz": 14,
+          "Szx": 14
+        },
+        "source": "docs/FFF_PLA_PETG_orthotropic_material_reference.md section 6"
+      },
+      "solve_seconds": 85.7
+    },
+    {
+      "elements": 74230,
+      "voxel_mm": 1.8,
+      "volume_mm3": 432909.36000000004,
+      "converged": true,
+      "cg_iterations": 2147,
+      "compliance_Nmm": 28.752884275407464,
+      "max_displacement_mm": 0.5476419780352916,
+      "max_displacement_at": [
+        113.4,
+        99.8,
+        67.4
+      ],
+      "von_mises_max_MPa": 4.503097533211388,
+      "von_mises_p99_5_MPa": 1.428810787662889,
+      "stress_concentration_ratio": 3.151640211631605,
+      "failure_index_max": 0.13332717962659654,
+      "failure_index_p99_5": 0.03339488875883124,
+      "failure_criterion": "max_stress_material_axes",
+      "material_axes": {
+        "build_axis": "X",
+        "raster_axis": null,
+        "stiffness": "orthotropic",
+        "card_id": "petg_generic_fff_orthotropic_v1"
+      },
+      "min_safety_factor": 7.500346161980289,
+      "safety_factor_p99_5": 29.94470223337849,
+      "mesh": {
+        "thin_section_mm": 10.8,
+        "typical_section_mm": 36.0,
+        "elements_across_thin": 6.0,
+        "elements_across_typical": 20.0
+      },
+      "warnings": [],
+      "checks": [
+        {
+          "name": "strength",
+          "required": "safety factor >= 2.00",
+          "got": "7.50 (worst element) / 29.94 (p99.5)",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "stiffness",
+          "required": "max deflection <= 1.000 mm",
+          "got": "0.548 mm",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "mesh resolution",
+          "required": ">= 3 elements across the thinnest section",
+          "got": "6.0 (thin 10.80 mm) / 20.0 (typical 36.00 mm)",
+          "pass": true,
+          "inspect": false
+        }
+      ],
+      "pass": true,
+      "hotspots": [
+        {
+          "pos": [
+            0.9,
+            28.7,
+            28.7
+          ],
+          "failure_index": 0.133,
+          "safety_factor": 7.5
+        },
+        {
+          "pos": [
+            0.9,
+            28.7,
+            21.5
+          ],
+          "failure_index": 0.087,
+          "safety_factor": 11.47
+        },
+        {
+          "pos": [
+            0.9,
+            28.7,
+            12.5
+          ],
+          "failure_index": 0.079,
+          "safety_factor": 12.73
+        },
+        {
+          "pos": [
+            0.9,
+            28.7,
+            3.5
+          ],
+          "failure_index": 0.073,
+          "safety_factor": 13.75
+        },
+        {
+          "pos": [
+            0.9,
+            35.9,
+            -5.5
+          ],
+          "failure_index": 0.065,
+          "safety_factor": 15.27
+        }
+      ],
+      "case": "L2r rope tension 100 N pulling post toward float (-Y), held at adapter face",
+      "total_applied_load_N": [
+        0.0,
+        -100.0,
+        -12.135
+      ],
+      "resultant_load_N": 100.734,
+      "material": "PETG",
+      "material_model": {
+        "material_model": "orthotropic_equivalent_solid",
+        "card_id": "petg_generic_fff_orthotropic_v1",
+        "classification": "conservative_literature_based_default",
+        "measured_for_specific_printer": false,
+        "solid_fraction_applied": 1.0,
+        "Ex_Ey_Ez_MPa": [
+          2100,
+          1750,
+          1150
+        ],
+        "Gxy_Gyz_Gzx_MPa": [
+          700,
+          420,
+          420
+        ],
+        "strengths_MPa": {
+          "Xt": 42,
+          "Xc": 50,
+          "Yt": 33,
+          "Yc": 42,
+          "Zt": 25,
+          "Zc": 35,
+          "Sxy": 20,
+          "Syz": 14,
+          "Szx": 14
+        },
+        "source": "docs/FFF_PLA_PETG_orthotropic_material_reference.md section 6"
+      },
+      "solve_seconds": 88.6
+    },
+    {
+      "elements": 74230,
+      "voxel_mm": 1.8,
+      "volume_mm3": 432909.36000000004,
+      "converged": true,
+      "cg_iterations": 2152,
+      "compliance_Nmm": 3.3017877312859483,
+      "max_displacement_mm": 0.1586881587915553,
+      "max_displacement_at": [
+        113.4,
+        99.8,
+        -17.2
+      ],
+      "von_mises_max_MPa": 1.8857544626182827,
+      "von_mises_p99_5_MPa": 0.6256799370240959,
+      "stress_concentration_ratio": 3.0139282898976183,
+      "failure_index_max": 0.05423996317673831,
+      "failure_index_p99_5": 0.0154737358781566,
+      "failure_criterion": "max_stress_material_axes",
+      "material_axes": {
+        "build_axis": "X",
+        "raster_axis": null,
+        "stiffness": "orthotropic",
+        "card_id": "petg_generic_fff_orthotropic_v1"
+      },
+      "min_safety_factor": 18.436590687599626,
+      "safety_factor_p99_5": 64.62563455097121,
+      "mesh": {
+        "thin_section_mm": 10.8,
+        "typical_section_mm": 36.0,
+        "elements_across_thin": 6.0,
+        "elements_across_typical": 20.0
+      },
+      "warnings": [],
+      "checks": [
+        {
+          "name": "strength",
+          "required": "safety factor >= 2.00",
+          "got": "18.44 (worst element) / 64.63 (p99.5)",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "stiffness",
+          "required": "max deflection <= 1.000 mm",
+          "got": "0.159 mm",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "mesh resolution",
+          "required": ">= 3 elements across the thinnest section",
+          "got": "6.0 (thin 10.80 mm) / 20.0 (typical 36.00 mm)",
+          "pass": true,
+          "inspect": false
+        }
+      ],
+      "pass": true,
+      "hotspots": [
+        {
+          "pos": [
+            0.9,
+            28.7,
+            28.7
+          ],
+          "failure_index": 0.054,
+          "safety_factor": 18.44
+        },
+        {
+          "pos": [
+            0.9,
+            28.7,
+            -27.1
+          ],
+          "failure_index": 0.042,
+          "safety_factor": 23.92
+        },
+        {
+          "pos": [
+            0.9,
+            28.7,
+            -18.1
+          ],
+          "failure_index": 0.04,
+          "safety_factor": 25.12
+        },
+        {
+          "pos": [
+            0.9,
+            28.7,
+            3.5
+          ],
+          "failure_index": 0.04,
+          "safety_factor": 25.13
+        },
+        {
+          "pos": [
+            0.9,
+            28.7,
+            10.7
+          ],
+          "failure_index": 0.039,
+          "safety_factor": 25.57
+        }
+      ],
+      "case": "L3 side knock: 50 N along +X on post bottom (float swung against yoke), held at adapter face",
+      "total_applied_load_N": [
+        50.0,
+        0.0,
+        -12.135
+      ],
+      "resultant_load_N": 51.452,
+      "material": "PETG",
+      "material_model": {
+        "material_model": "orthotropic_equivalent_solid",
+        "card_id": "petg_generic_fff_orthotropic_v1",
+        "classification": "conservative_literature_based_default",
+        "measured_for_specific_printer": false,
+        "solid_fraction_applied": 1.0,
+        "Ex_Ey_Ez_MPa": [
+          2100,
+          1750,
+          1150
+        ],
+        "Gxy_Gyz_Gzx_MPa": [
+          700,
+          420,
+          420
+        ],
+        "strengths_MPa": {
+          "Xt": 42,
+          "Xc": 50,
+          "Yt": 33,
+          "Yc": 42,
+          "Zt": 25,
+          "Zc": 35,
+          "Sxy": 20,
+          "Syz": 14,
+          "Szx": 14
+        },
+        "source": "docs/FFF_PLA_PETG_orthotropic_material_reference.md section 6"
+      },
+      "solve_seconds": 88.7
+    }
+  ]
+}

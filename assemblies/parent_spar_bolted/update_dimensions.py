@@ -1,0 +1,11 @@
+from pathlib import Path
+p=Path('spec/assemble_parent_spar_bolted.py')
+s=p.read_text(encoding='utf-8')
+s=s.replace('[0,116]', '[0,186]').replace('z+110','z+180').replace('(0,0,232)','(0,0,372)')
+s=s.replace('(0,0,182)','(0,0,322)').replace('(108,70,270)','(108,70,410)').replace('(0,0,320)','(0,0,460)').replace('[0,0,320]','[0,0,460]')
+s=s.replace('(0,175,190)','(0,190,330)').replace('(0,175,226.5)','(0,190,366.5)').replace('(65,70,453)','(65,70,593)').replace('(-105,-115,416.3)','(-105,-115,556.3)')
+s=s.replace('98*math.', '105.5*math.').replace('z+116','z+186')
+s=s.replace("hw('rod',6,280", "hw('rod',6,420").replace('[-9,240]','[-9,380]').replace('[-14,241]','[-14,381]')
+s=s.replace('(x,y,250)','(x,y,390)').replace('(x,y,252)','(x,y,392)').replace('[159,191]','[174,206]').replace('(x,y,198)','(x,y,338)')
+s=s.replace('[275,315]','[415,455]').replace('(65,y,459)','(65,y,599)').replace('(x,y,326)','(x,y,466)').replace('box bottom Z=320','box bottom Z=460')
+p.write_text(s,encoding='utf-8')

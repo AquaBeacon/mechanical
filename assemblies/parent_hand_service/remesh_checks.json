@@ -1,0 +1,184 @@
+[
+  {
+    "part": "parts/parent/interior/printed/parent_hand_service/battery_base.step",
+    "closed_stl": true,
+    "solids": 1,
+    "bbox_difference_mm": 9.536692857636808e-08,
+    "relative_volume_difference": 2.807340054490545e-07
+  },
+  {
+    "part": "parts/parent/interior/printed/parent_hand_service/floor_plate.step",
+    "closed_stl": true,
+    "solids": 1,
+    "bbox_difference_mm": 2.5258789371207513e-07,
+    "relative_volume_difference": 1.9376226046636826e-06
+  },
+  {
+    "part": "parts/parent/interior/printed/parent_hand_service/guide_0.step",
+    "closed_stl": true,
+    "solids": 1,
+    "bbox_difference_mm": 7.629394538355427e-07,
+    "relative_volume_difference": 1.0564492928585459e-06
+  },
+  {
+    "part": "parts/parent/interior/printed/parent_hand_service/guide_1.step",
+    "closed_stl": true,
+    "solids": 1,
+    "bbox_difference_mm": 7.629394538355427e-07,
+    "relative_volume_difference": 1.0564492928585459e-06
+  },
+  {
+    "part": "parts/parent/interior/printed/parent_hand_service/guide_2.step",
+    "closed_stl": true,
+    "solids": 1,
+    "bbox_difference_mm": 7.629394538355427e-07,
+    "relative_volume_difference": 8.653745331518614e-07
+  },
+  {
+    "part": "parts/parent/interior/printed/parent_hand_service/guide_3.step",
+    "closed_stl": true,
+    "solids": 1,
+    "bbox_difference_mm": 7.629394538355427e-07,
+    "relative_volume_difference": 8.653745330126006e-07
+  },
+  {
+    "part": "parts/parent/interior/printed/parent_hand_service/lift_carrier.step",
+    "closed_stl": true,
+    "solids": 1,
+    "bbox_difference_mm": 0.0008935546875079581,
+    "relative_volume_difference": 9.123266202208218e-06
+  },
+  {
+    "part": "parts/parent/interior/printed/parent_hand_service/main_corner_column.step",
+    "closed_stl": true,
+    "solids": 1,
+    "bbox_difference_mm": 0.0010879039764404297,
+    "relative_volume_difference": 0.00041439010494766687
+  },
+  {
+    "part": "parts/parent/interior/printed/parent_hand_service/main_mount_plate.step",
+    "closed_stl": true,
+    "solids": 1,
+    "bbox_difference_mm": 0.0007305145263671875,
+    "relative_volume_difference": 2.4880497141533966e-05
+  },
+  {
+    "part": "parts/parent/interior/printed/parent_hand_service/service_prop_0.step",
+    "closed_stl": true,
+    "solids": 1,
+    "bbox_difference_mm": 7.629373151019081e-07,
+    "relative_volume_difference": 1.9217641513889457e-07
+  },
+  {
+    "part": "parts/parent/interior/printed/parent_hand_service/service_prop_1.step",
+    "closed_stl": true,
+    "solids": 1,
+    "bbox_difference_mm": 7.629373079964807e-07,
+    "relative_volume_difference": 3.4123042969913937e-08
+  },
+  {
+    "part": "parts/parent/interior/printed/parent_hand_service/service_prop_2.step",
+    "closed_stl": true,
+    "solids": 1,
+    "bbox_difference_mm": 7.629373079964807e-07,
+    "relative_volume_difference": 1.5192493433809813e-07
+  },
+  {
+    "part": "parts/parent/interior/printed/parent_hand_service/service_prop_3.step",
+    "closed_stl": true,
+    "solids": 1,
+    "bbox_difference_mm": 7.629349525473117e-07,
+    "relative_volume_difference": 3.863235122381319e-07
+  },
+  {
+    "part": "parts/parent/interior/printed/parent_hand_service/service_prop_4.step",
+    "closed_stl": true,
+    "solids": 1,
+    "bbox_difference_mm": 7.629355387450687e-07,
+    "relative_volume_difference": 9.366653350684601e-08
+  },
+  {
+    "part": "parts/parent/interior/printed/parent_hand_service/sony_mount_plate.step",
+    "closed_stl": true,
+    "solids": 1,
+    "bbox_difference_mm": 0.0004730224609375,
+    "relative_volume_difference": 4.3718910848819814e-05
+  },
+  {
+    "part": "parts/parent/interior/printed/ann_mb1_internal_rack/ann_mb1_coax_ring.step",
+    "closed_stl": true,
+    "solids": 1,
+    "bbox_difference_mm": 0.0031090782714855436,
+    "relative_volume_difference": 7.854440092296684e-05
+  },
+  {
+    "part": "parts/parent/interior/printed/ann_mb1_internal_rack/ann_mb1_internal_rack.step",
+    "closed_stl": true,
+    "solids": 1,
+    "bbox_difference_mm": 0.000492095947265625,
+    "relative_volume_difference": 1.666386946019859e-06
+  },
+  {
+    "part": "parts/parent/interior/printed/ann_mb1_internal_rack/stored_prop_rail.step",
+    "closed_stl": true,
+    "solids": 1,
+    "bbox_difference_mm": 5.329070518200751e-15,
+    "relative_volume_difference": 5.545548143051652e-09
+  },
+  {
+    "part": "parts/parent/interior/printed/gnss_universal_carrier/gnss_column_front.step",
+    "closed_stl": true,
+    "solids": 1,
+    "bbox_difference_mm": 0.0,
+    "relative_volume_difference": 5.4709548422739216e-05
+  },
+  {
+    "part": "parts/parent/interior/printed/gnss_universal_carrier/gnss_column_rear.step",
+    "closed_stl": true,
+    "solids": 1,
+    "bbox_difference_mm": 4.440892098500626e-16,
+    "relative_volume_difference": 0.00010189564726848788
+  },
+  {
+    "part": "parts/parent/interior/printed/gnss_universal_carrier/gnss_edge_cap.step",
+    "closed_stl": true,
+    "solids": 1,
+    "bbox_difference_mm": 4.884981308350689e-15,
+    "relative_volume_difference": 1.5409314600318772e-05
+  },
+  {
+    "part": "parts/parent/interior/printed/gnss_universal_carrier/gnss_edge_cap_front.step",
+    "closed_stl": true,
+    "solids": 1,
+    "bbox_difference_mm": 4.884981308350689e-15,
+    "relative_volume_difference": 1.5408206243741536e-05
+  },
+  {
+    "part": "parts/parent/interior/printed/gnss_universal_carrier/gnss_universal_carrier.step",
+    "closed_stl": true,
+    "solids": 1,
+    "bbox_difference_mm": 7.629394573882564e-07,
+    "relative_volume_difference": 1.4372665485043947e-05
+  },
+  {
+    "part": "parts/parent/interior/printed/parent_lipo_retainer/parent_lipo_retainer_base.step",
+    "closed_stl": true,
+    "solids": 1,
+    "bbox_difference_mm": 0.0,
+    "relative_volume_difference": 1.2180131593759764e-05
+  },
+  {
+    "part": "parts/parent/interior/printed/parent_lipo_retainer/parent_lipo_retainer_lid.step",
+    "closed_stl": true,
+    "solids": 1,
+    "bbox_difference_mm": 0.0,
+    "relative_volume_difference": 6.354168465666284e-10
+  },
+  {
+    "part": "parts/parent/interior/printed/parent_lipo_retainer/parent_lipo_retainer_lid_narrow.step",
+    "closed_stl": true,
+    "solids": 1,
+    "bbox_difference_mm": 9.536743172944284e-08,
+    "relative_volume_difference": 2.3063073728575434e-10
+  }
+]

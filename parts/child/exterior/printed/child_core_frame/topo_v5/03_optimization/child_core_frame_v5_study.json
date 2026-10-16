@@ -1,0 +1,5959 @@
+{
+  "study": "child_core_frame_v5_study.json",
+  "schema": "geometry",
+  "material": {
+    "material_model": "orthotropic_equivalent_solid",
+    "card_id": "petg_generic_fff_orthotropic_v1",
+    "classification": "conservative_literature_based_default",
+    "measured_for_specific_printer": false,
+    "solid_fraction_applied": 1.0,
+    "Ex_Ey_Ez_MPa": [
+      2100,
+      1750,
+      1150
+    ],
+    "Gxy_Gyz_Gzx_MPa": [
+      700,
+      420,
+      420
+    ],
+    "strengths_MPa": {
+      "Xt": 42,
+      "Xc": 50,
+      "Yt": 33,
+      "Yc": 42,
+      "Zt": 25,
+      "Zc": 35,
+      "Sxy": 20,
+      "Syz": 14,
+      "Szx": 14
+    },
+    "source": "docs/FFF_PLA_PETG_orthotropic_material_reference.md section 6"
+  },
+  "setup": {
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "support region 'lug_boss_R' in case 'L1 hoist 3g: lugs fixed, container + guard + gate weights down' reaches 36 % (1890.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 64 % only.",
+      "support region 'lug_boss_L' in case 'L1 hoist 3g: lugs fixed, container + guard + gate weights down' reaches 37 % (1944.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 63 % only.",
+      "load region 'pocket_bot' in case 'L1 hoist 3g: lugs fixed, container + guard + gate weights down' reaches 86 % (113022.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 14 % only.",
+      "load region 'guard_boss_R' in case 'L1 hoist 3g: lugs fixed, container + guard + gate weights down' reaches 60 % (8235.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 40 % only.",
+      "load region 'guard_boss_L' in case 'L1 hoist 3g: lugs fixed, container + guard + gate weights down' reaches 60 % (8289.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 40 % only.",
+      "load region 'latch_lo' in case 'L1 hoist 3g: lugs fixed, container + guard + gate weights down' reaches 29 % (2592.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 71 % only.",
+      "load region 'latch_hi' in case 'L1 hoist 3g: lugs fixed, container + guard + gate weights down' reaches 29 % (2592.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 71 % only.",
+      "support region 'pocket_bot' in case 'L2s transport side hit 300 N (+X on back wall and lugs), container reacts' reaches 86 % (113022.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 14 % only.",
+      "support region 'pocket_top' in case 'L2s transport side hit 300 N (+X on back wall and lugs), container reacts' reaches 87 % (137106.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.",
+      "load region 'back_wall' in case 'L2s transport side hit 300 N (+X on back wall and lugs), container reacts' reaches 84 % (68040.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 16 % only.",
+      "load region 'lug_boss_R' in case 'L2s transport side hit 300 N (+X on back wall and lugs), container reacts' reaches 36 % (1890.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 64 % only.",
+      "load region 'lug_boss_L' in case 'L2s transport side hit 300 N (+X on back wall and lugs), container reacts' reaches 37 % (1944.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 63 % only.",
+      "support region 'pocket_bot' in case 'L2h transport landing on the hinge side (300 N +X through the knuckles), container reacts' reaches 86 % (113022.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 14 % only.",
+      "support region 'pocket_top' in case 'L2h transport landing on the hinge side (300 N +X through the knuckles), container reacts' reaches 87 % (137106.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.",
+      "load region 'knuckles' in case 'L2h transport landing on the hinge side (300 N +X through the knuckles), container reacts' reaches 65 % (54756.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 35 % only.",
+      "support region 'pocket_bot' in case 'L2r transport rear hit 300 N on the back wall (+Y), container reacts' reaches 86 % (113022.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 14 % only.",
+      "support region 'pocket_top' in case 'L2r transport rear hit 300 N on the back wall (+Y), container reacts' reaches 87 % (137106.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.",
+      "load region 'back_wall' in case 'L2r transport rear hit 300 N on the back wall (+Y), container reacts' reaches 84 % (68040.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 16 % only.",
+      "load region 'grip_bar' in case 'L2r transport rear hit 300 N on the back wall (+Y), container reacts' reaches 44 % (9504.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 56 % only.",
+      "support region 'pocket_bot' in case 'L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands' reaches 86 % (113022.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 14 % only.",
+      "support region 'band_mid' in case 'L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands' reaches 85 % (132840.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 15 % only.",
+      "support region 'pocket_top' in case 'L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands' reaches 87 % (137106.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.",
+      "load region 'latch_lo' in case 'L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands' reaches 29 % (2592.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 71 % only.",
+      "load region 'latch_hi' in case 'L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands' reaches 29 % (2592.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 71 % only.",
+      "load region 'knuckles' in case 'L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands' reaches 65 % (54756.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 35 % only.",
+      "support region 'pocket_bot' in case 'L5 landing 600 N up through the guard bosses, container reacts' reaches 86 % (113022.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 14 % only.",
+      "support region 'pocket_top' in case 'L5 landing 600 N up through the guard bosses, container reacts' reaches 87 % (137106.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the support acts on the preserve 13 % only.",
+      "load region 'guard_boss_R' in case 'L5 landing 600 N up through the guard bosses, container reacts' reaches 60 % (8235.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 40 % only.",
+      "load region 'guard_boss_L' in case 'L5 landing 600 N up through the guard bosses, container reacts' reaches 60 % (8289.0 mm3) beyond preserve -- a hole it crosses, or free material. That part is dropped; the load acts on the preserve 40 % only.",
+      "the free region is only 2.0 voxels (6.00 mm) thick at its thinnest. Below about 3 voxels there is no room for a hole, so the topology there is set by the outline rather than chosen -- refine the grid or widen the design space.",
+      "the 5 support point(s) are fixed by preserve at lug_boss_R at [65.3, -10.9, 210.8]; lug_boss_L at [-65.1, -10.8, 210.8]; pocket_bot at [0.6, -37.8, -9.1]; pocket_top at [0.7, -38.7, 207.7]; band_mid at [0.6, -41.7, 100.0]. Where the part is held is an input to this study, not a result of it -- if the layout of the supports is itself meant to be optimised, that decision is currently being made in CAD."
+    ],
+    "info": {
+      "voxel_mm": 3.0,
+      "grid_shape": [
+        66,
+        63,
+        86
+      ],
+      "origin_mm": [
+        -98.892,
+        -117.0,
+        -26.0
+      ],
+      "design_space_mm3": 4049838.0,
+      "preserve_mm3": 186138.0,
+      "obstacle_mm3": 3105594.0,
+      "obstacle_declared_mm3": 3105594.0,
+      "domain_mm3": 4049838.0,
+      "free_mm3": 2456460.0,
+      "free_voxels": 90980,
+      "domain_voxels": 149994,
+      "ground": {
+        "axis": "Z",
+        "plane_mm": -17.0,
+        "band_voxels": 1923,
+        "band_area_mm2": 17307.0
+      },
+      "preserve_outside_design_space_mm3": 0.0,
+      "preserve_bodies": 10,
+      "domain_components": 1,
+      "preserve_bodies_by_domain_component": {
+        "1": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "note_preserve_bodies": "10 separate preserve bodies, all reachable through the design space -- that is the normal generative-design setup.",
+      "design_space_blocked_pct": 34.7,
+      "boundary_conditions": [
+        {
+          "case": "L1 hoist 3g: lugs fixed, container + guard + gate weights down",
+          "kind": "support",
+          "region": "lug_boss_R",
+          "voxels_in_domain": 196,
+          "voxels_on_preserve": 126
+        },
+        {
+          "case": "L1 hoist 3g: lugs fixed, container + guard + gate weights down",
+          "kind": "support",
+          "region": "lug_boss_L",
+          "voxels_in_domain": 196,
+          "voxels_on_preserve": 124
+        },
+        {
+          "case": "L1 hoist 3g: lugs fixed, container + guard + gate weights down",
+          "kind": "load",
+          "region": "pocket_bot",
+          "voxels_in_domain": 4840,
+          "voxels_on_preserve": 654
+        },
+        {
+          "case": "L1 hoist 3g: lugs fixed, container + guard + gate weights down",
+          "kind": "load",
+          "region": "guard_boss_R",
+          "voxels_in_domain": 512,
+          "voxels_on_preserve": 207
+        },
+        {
+          "case": "L1 hoist 3g: lugs fixed, container + guard + gate weights down",
+          "kind": "load",
+          "region": "guard_boss_L",
+          "voxels_in_domain": 512,
+          "voxels_on_preserve": 205
+        },
+        {
+          "case": "L1 hoist 3g: lugs fixed, container + guard + gate weights down",
+          "kind": "load",
+          "region": "latch_lo",
+          "voxels_in_domain": 336,
+          "voxels_on_preserve": 240
+        },
+        {
+          "case": "L1 hoist 3g: lugs fixed, container + guard + gate weights down",
+          "kind": "load",
+          "region": "latch_hi",
+          "voxels_in_domain": 336,
+          "voxels_on_preserve": 240
+        },
+        {
+          "case": "L2s transport side hit 300 N (+X on back wall and lugs), container reacts",
+          "kind": "support",
+          "region": "pocket_bot",
+          "voxels_in_domain": 4840,
+          "voxels_on_preserve": 654
+        },
+        {
+          "case": "L2s transport side hit 300 N (+X on back wall and lugs), container reacts",
+          "kind": "support",
+          "region": "pocket_top",
+          "voxels_in_domain": 5808,
+          "voxels_on_preserve": 730
+        },
+        {
+          "case": "L2s transport side hit 300 N (+X on back wall and lugs), container reacts",
+          "kind": "load",
+          "region": "back_wall",
+          "voxels_in_domain": 3000,
+          "voxels_on_preserve": 480
+        },
+        {
+          "case": "L2s transport side hit 300 N (+X on back wall and lugs), container reacts",
+          "kind": "load",
+          "region": "lug_boss_R",
+          "voxels_in_domain": 196,
+          "voxels_on_preserve": 126
+        },
+        {
+          "case": "L2s transport side hit 300 N (+X on back wall and lugs), container reacts",
+          "kind": "load",
+          "region": "lug_boss_L",
+          "voxels_in_domain": 196,
+          "voxels_on_preserve": 124
+        },
+        {
+          "case": "L2h transport landing on the hinge side (300 N +X through the knuckles), container reacts",
+          "kind": "support",
+          "region": "pocket_bot",
+          "voxels_in_domain": 4840,
+          "voxels_on_preserve": 654
+        },
+        {
+          "case": "L2h transport landing on the hinge side (300 N +X through the knuckles), container reacts",
+          "kind": "support",
+          "region": "pocket_top",
+          "voxels_in_domain": 5808,
+          "voxels_on_preserve": 730
+        },
+        {
+          "case": "L2h transport landing on the hinge side (300 N +X through the knuckles), container reacts",
+          "kind": "load",
+          "region": "knuckles",
+          "voxels_in_domain": 3132,
+          "voxels_on_preserve": 1104
+        },
+        {
+          "case": "L2r transport rear hit 300 N on the back wall (+Y), container reacts",
+          "kind": "support",
+          "region": "pocket_bot",
+          "voxels_in_domain": 4840,
+          "voxels_on_preserve": 654
+        },
+        {
+          "case": "L2r transport rear hit 300 N on the back wall (+Y), container reacts",
+          "kind": "support",
+          "region": "pocket_top",
+          "voxels_in_domain": 5808,
+          "voxels_on_preserve": 730
+        },
+        {
+          "case": "L2r transport rear hit 300 N on the back wall (+Y), container reacts",
+          "kind": "load",
+          "region": "back_wall",
+          "voxels_in_domain": 3000,
+          "voxels_on_preserve": 480
+        },
+        {
+          "case": "L2r transport rear hit 300 N on the back wall (+Y), container reacts",
+          "kind": "load",
+          "region": "grip_bar",
+          "voxels_in_domain": 800,
+          "voxels_on_preserve": 448
+        },
+        {
+          "case": "L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands",
+          "kind": "support",
+          "region": "pocket_bot",
+          "voxels_in_domain": 4840,
+          "voxels_on_preserve": 654
+        },
+        {
+          "case": "L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands",
+          "kind": "support",
+          "region": "band_mid",
+          "voxels_in_domain": 5808,
+          "voxels_on_preserve": 888
+        },
+        {
+          "case": "L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands",
+          "kind": "support",
+          "region": "pocket_top",
+          "voxels_in_domain": 5808,
+          "voxels_on_preserve": 730
+        },
+        {
+          "case": "L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands",
+          "kind": "load",
+          "region": "latch_lo",
+          "voxels_in_domain": 336,
+          "voxels_on_preserve": 240
+        },
+        {
+          "case": "L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands",
+          "kind": "load",
+          "region": "latch_hi",
+          "voxels_in_domain": 336,
+          "voxels_on_preserve": 240
+        },
+        {
+          "case": "L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands",
+          "kind": "load",
+          "region": "knuckles",
+          "voxels_in_domain": 3132,
+          "voxels_on_preserve": 1104
+        },
+        {
+          "case": "L5 landing 600 N up through the guard bosses, container reacts",
+          "kind": "support",
+          "region": "pocket_bot",
+          "voxels_in_domain": 4840,
+          "voxels_on_preserve": 654
+        },
+        {
+          "case": "L5 landing 600 N up through the guard bosses, container reacts",
+          "kind": "support",
+          "region": "pocket_top",
+          "voxels_in_domain": 5808,
+          "voxels_on_preserve": 730
+        },
+        {
+          "case": "L5 landing 600 N up through the guard bosses, container reacts",
+          "kind": "load",
+          "region": "guard_boss_R",
+          "voxels_in_domain": 512,
+          "voxels_on_preserve": 207
+        },
+        {
+          "case": "L5 landing 600 N up through the guard bosses, container reacts",
+          "kind": "load",
+          "region": "guard_boss_L",
+          "voxels_in_domain": 512,
+          "voxels_on_preserve": 205
+        }
+      ],
+      "build_volume": {
+        "printer": {
+          "key": "X1C",
+          "name": "Bambu Lab X1-Carbon",
+          "nominal_mm": [
+            256.0,
+            256.0,
+            256.0
+          ],
+          "usable_mm": [
+            250.0,
+            250.0,
+            250.0
+          ],
+          "margin_mm": 0.0,
+          "envelope_mm": [
+            250.0,
+            250.0,
+            250.0
+          ],
+          "nozzle_mm": 0.4,
+          "min_feature_mm": 0.8,
+          "note": "AMS-fed; the purge tower needs ~60x60 mm of plate on multi-material prints.",
+          "source": "built-in",
+          "allow_oversize_design_space": false
+        },
+        "build_axis": "Z",
+        "domain": {
+          "what": "design space",
+          "printer": "X1C",
+          "printer_name": "Bambu Lab X1-Carbon",
+          "printer_source": "built-in",
+          "size_mm": [
+            153.0,
+            129.0,
+            234.0
+          ],
+          "usable_mm": [
+            250.0,
+            250.0,
+            250.0
+          ],
+          "margin_mm": 0.0,
+          "envelope_mm": [
+            250.0,
+            250.0,
+            250.0
+          ],
+          "fits_any_orientation": true,
+          "up_axes_that_fit": [
+            "X",
+            "Y",
+            "Z"
+          ],
+          "by_up_axis": {
+            "X": {
+              "fits": true,
+              "overflow_mm": {
+                "Z": -16.0,
+                "Y": -121.0,
+                "X": -97.0
+              }
+            },
+            "Y": {
+              "fits": true,
+              "overflow_mm": {
+                "Z": -16.0,
+                "X": -97.0,
+                "Y": -121.0
+              }
+            },
+            "Z": {
+              "fits": true,
+              "overflow_mm": {
+                "X": -97.0,
+                "Y": -121.0,
+                "Z": -16.0
+              }
+            }
+          },
+          "declared_build_axis": "Z",
+          "fits_as_declared": true,
+          "overflow_mm": {
+            "X": -97.0,
+            "Y": -121.0,
+            "Z": -16.0
+          },
+          "margin_to_envelope_mm": 16.0,
+          "lo_mm": [
+            -80.89,
+            -111.0,
+            -17.0
+          ],
+          "hi_mm": [
+            72.11,
+            18.0,
+            217.0
+          ]
+        },
+        "preserve": {
+          "what": "preserve",
+          "printer": "X1C",
+          "printer_name": "Bambu Lab X1-Carbon",
+          "printer_source": "built-in",
+          "size_mm": [
+            153.0,
+            129.0,
+            234.0
+          ],
+          "usable_mm": [
+            250.0,
+            250.0,
+            250.0
+          ],
+          "margin_mm": 0.0,
+          "envelope_mm": [
+            250.0,
+            250.0,
+            250.0
+          ],
+          "fits_any_orientation": true,
+          "up_axes_that_fit": [
+            "X",
+            "Y",
+            "Z"
+          ],
+          "by_up_axis": {
+            "X": {
+              "fits": true,
+              "overflow_mm": {
+                "Z": -16.0,
+                "Y": -121.0,
+                "X": -97.0
+              }
+            },
+            "Y": {
+              "fits": true,
+              "overflow_mm": {
+                "Z": -16.0,
+                "X": -97.0,
+                "Y": -121.0
+              }
+            },
+            "Z": {
+              "fits": true,
+              "overflow_mm": {
+                "X": -97.0,
+                "Y": -121.0,
+                "Z": -16.0
+              }
+            }
+          },
+          "declared_build_axis": "Z",
+          "fits_as_declared": true,
+          "overflow_mm": {
+            "X": -97.0,
+            "Y": -121.0,
+            "Z": -16.0
+          },
+          "margin_to_envelope_mm": 16.0
+        },
+        "voxel_vs_min_feature": "one voxel is 3.00 mm and the smallest printable wall is 0.80 mm, so the grid cannot represent the printer's limit; minimum-feature checks on this run are about the grid, not the machine."
+      },
+      "design_freedom": {
+        "free_voxels": 90980,
+        "domain_voxels": 149994,
+        "free_fraction_of_domain": 0.6066,
+        "volfrac": 0.1,
+        "expected_final_mm3": 431784.0,
+        "preserve_mm3": 186138.0,
+        "preserve_fraction_of_expected_part": 0.4311,
+        "free_min_thickness_mm": 6.0,
+        "free_median_thickness_mm": 18.0,
+        "free_min_thickness_voxels": 2.0,
+        "fixed_points": [
+          {
+            "kind": "support",
+            "region": "lug_boss_R",
+            "centroid_mm": [
+              65.3,
+              -10.9,
+              210.8
+            ],
+            "mm3": 3402.0
+          },
+          {
+            "kind": "support",
+            "region": "lug_boss_L",
+            "centroid_mm": [
+              -65.1,
+              -10.8,
+              210.8
+            ],
+            "mm3": 3348.0
+          },
+          {
+            "kind": "load",
+            "region": "pocket_bot",
+            "centroid_mm": [
+              0.6,
+              -37.8,
+              -9.1
+            ],
+            "mm3": 17658.0
+          },
+          {
+            "kind": "load",
+            "region": "guard_boss_R",
+            "centroid_mm": [
+              56.6,
+              -32.4,
+              -2.3
+            ],
+            "mm3": 5589.0
+          },
+          {
+            "kind": "load",
+            "region": "guard_boss_L",
+            "centroid_mm": [
+              -56.4,
+              -32.5,
+              -2.3
+            ],
+            "mm3": 5535.0
+          },
+          {
+            "kind": "load",
+            "region": "latch_lo",
+            "centroid_mm": [
+              64.6,
+              -9.0,
+              40.0
+            ],
+            "mm3": 6480.0
+          },
+          {
+            "kind": "load",
+            "region": "latch_hi",
+            "centroid_mm": [
+              64.6,
+              -9.0,
+              169.0
+            ],
+            "mm3": 6480.0
+          },
+          {
+            "kind": "support",
+            "region": "pocket_bot",
+            "centroid_mm": [
+              0.6,
+              -37.8,
+              -9.1
+            ],
+            "mm3": 17658.0
+          },
+          {
+            "kind": "support",
+            "region": "pocket_top",
+            "centroid_mm": [
+              0.7,
+              -38.7,
+              207.7
+            ],
+            "mm3": 19710.0
+          },
+          {
+            "kind": "load",
+            "region": "back_wall",
+            "centroid_mm": [
+              -3.6,
+              -93.8,
+              64.0
+            ],
+            "mm3": 12960.0
+          },
+          {
+            "kind": "load",
+            "region": "lug_boss_R",
+            "centroid_mm": [
+              65.3,
+              -10.9,
+              210.8
+            ],
+            "mm3": 3402.0
+          },
+          {
+            "kind": "load",
+            "region": "lug_boss_L",
+            "centroid_mm": [
+              -65.1,
+              -10.8,
+              210.8
+            ],
+            "mm3": 3348.0
+          },
+          {
+            "kind": "load",
+            "region": "knuckles",
+            "centroid_mm": [
+              -72.2,
+              10.4,
+              100.0
+            ],
+            "mm3": 29808.0
+          },
+          {
+            "kind": "load",
+            "region": "grip_bar",
+            "centroid_mm": [
+              0.1,
+              -95.4,
+              157.0
+            ],
+            "mm3": 12096.0
+          },
+          {
+            "kind": "support",
+            "region": "band_mid",
+            "centroid_mm": [
+              0.6,
+              -41.7,
+              100.0
+            ],
+            "mm3": 23976.0
+          }
+        ],
+        "ground_zones": [],
+        "note_fixed_points": "15 load/support footprint(s) sit on preserve at positions the CAD model chose. The optimiser decides how to reach them, not where they are."
+      }
+    },
+    "bodies": [
+      {
+        "name": "interfaces",
+        "kind": "preserve",
+        "source": "stl:child_core_frame_v5_preserve.stl",
+        "voxels": 6894,
+        "mm3": 186138.0,
+        "bbox_mm": [
+          [
+            -80.89,
+            -111.0,
+            -17.0
+          ],
+          [
+            72.11,
+            18.0,
+            217.0
+          ]
+        ],
+        "mesh": {
+          "triangles": 8304,
+          "open_edges": 0,
+          "non_manifold_edges": 0,
+          "degenerate": 0,
+          "closed_shell": true
+        }
+      },
+      {
+        "name": "design_space",
+        "kind": "design_space",
+        "source": "stl:child_core_frame_v5_design_space.stl",
+        "voxels": 149994,
+        "mm3": 4049838.0,
+        "bbox_mm": [
+          [
+            -80.89,
+            -111.0,
+            -17.0
+          ],
+          [
+            72.11,
+            18.0,
+            217.0
+          ]
+        ],
+        "mesh": {
+          "triangles": 20,
+          "open_edges": 0,
+          "non_manifold_edges": 0,
+          "degenerate": 0,
+          "closed_shell": true
+        }
+      },
+      {
+        "name": "keep_out",
+        "kind": "obstacle",
+        "source": "stl:child_core_frame_v5_obstacle.stl",
+        "voxels": 115022,
+        "mm3": 3105594.0,
+        "bbox_mm": [
+          [
+            -92.89,
+            -108.0,
+            -20.0
+          ],
+          [
+            93.11,
+            63.0,
+            223.0
+          ]
+        ],
+        "clearance_requested_mm": 0.0,
+        "clearance_achieved_mm": 0.0,
+        "mesh": {
+          "triangles": 5268,
+          "open_edges": 0,
+          "non_manifold_edges": 0,
+          "degenerate": 0,
+          "closed_shell": true
+        }
+      },
+      {
+        "name": "preserve body 1",
+        "kind": "preserve_component",
+        "source": "interfaces",
+        "voxels": 552,
+        "mm3": 14904.0,
+        "domain_component": 1
+      },
+      {
+        "name": "preserve body 2",
+        "kind": "preserve_component",
+        "source": "interfaces",
+        "voxels": 552,
+        "mm3": 14904.0,
+        "domain_component": 1
+      },
+      {
+        "name": "preserve body 3",
+        "kind": "preserve_component",
+        "source": "interfaces",
+        "voxels": 1216,
+        "mm3": 32832.0,
+        "domain_component": 1
+      },
+      {
+        "name": "preserve body 4",
+        "kind": "preserve_component",
+        "source": "interfaces",
+        "voxels": 878,
+        "mm3": 23706.0,
+        "domain_component": 1
+      },
+      {
+        "name": "preserve body 5",
+        "kind": "preserve_component",
+        "source": "interfaces",
+        "voxels": 2000,
+        "mm3": 54000.0,
+        "domain_component": 1
+      },
+      {
+        "name": "preserve body 6",
+        "kind": "preserve_component",
+        "source": "interfaces",
+        "voxels": 512,
+        "mm3": 13824.0,
+        "domain_component": 1
+      },
+      {
+        "name": "preserve body 7",
+        "kind": "preserve_component",
+        "source": "interfaces",
+        "voxels": 352,
+        "mm3": 9504.0,
+        "domain_component": 1
+      },
+      {
+        "name": "preserve body 8",
+        "kind": "preserve_component",
+        "source": "interfaces",
+        "voxels": 352,
+        "mm3": 9504.0,
+        "domain_component": 1
+      },
+      {
+        "name": "preserve body 9",
+        "kind": "preserve_component",
+        "source": "interfaces",
+        "voxels": 240,
+        "mm3": 6480.0,
+        "domain_component": 1
+      },
+      {
+        "name": "preserve body 10",
+        "kind": "preserve_component",
+        "source": "interfaces",
+        "voxels": 240,
+        "mm3": 6480.0,
+        "domain_component": 1
+      }
+    ]
+  },
+  "converged": false,
+  "termination_reason": "max_iterations",
+  "density_converged": false,
+  "objective_converged": false,
+  "volume_converged": true,
+  "shape_converged": false,
+  "convergence_streak_required": 5,
+  "settings": {
+    "volfrac_of_free_cells": 0.1,
+    "filter_mm": 6.0,
+    "projection_eta": 0.5,
+    "beta_final": 16.0,
+    "penal_final": 3.0,
+    "symmetry": [],
+    "overhang": {
+      "self_support": true,
+      "rule": "45 deg cone, AM filter",
+      "axis": "Z",
+      "up": "+",
+      "p": 40.0,
+      "ramp_iterations": 27,
+      "max_support_mm": 12.0,
+      "reach_layers": 4,
+      "allow_support": [],
+      "allow_support_voxels": 0
+    },
+    "move_limit": 0.2,
+    "move_taper": true,
+    "volume_exact": true,
+    "iterations_run": 80,
+    "iterations_requested": 80,
+    "build_axis": "Z",
+    "raster_axis": "X",
+    "load_case_reference_compliance_Nmm": [
+      202281.989015,
+      9.502674,
+      133.525333,
+      14.68747,
+      86.96467,
+      0.490271
+    ]
+  },
+  "solver": {
+    "non_converged_solves": 0,
+    "total_solves": 480,
+    "warnings": [],
+    "solve_seconds": 24390.776,
+    "cg_iterations": 520246,
+    "backend": "cuda",
+    "device": "NVIDIA GeForce RTX 4060 Ti",
+    "torch": "2.12.0+cu130",
+    "preconditioner": "mg",
+    "multigrid": {
+      "levels": [
+        {
+          "shape": [
+            66,
+            63,
+            86
+          ],
+          "elements": 149994,
+          "ndof": 1119168
+        },
+        {
+          "shape": [
+            33,
+            32,
+            43
+          ],
+          "elements": 20120,
+          "ndof": 148104
+        },
+        {
+          "shape": [
+            17,
+            16,
+            22
+          ],
+          "elements": 3024,
+          "ndof": 21114
+        },
+        {
+          "shape": [
+            9,
+            8,
+            11
+          ],
+          "elements": 462,
+          "ndof": 3240
+        }
+      ],
+      "smoother": "chebyshev(degree 2, D^-1 K, lambda ratio 30)",
+      "coarse_solver": "dense cholesky",
+      "setup_seconds": 0.464
+    }
+  },
+  "volumes": {
+    "final_mm3": 400707.0,
+    "preserve_mm3": 186138.0,
+    "design_space_mm3": 4049838.0,
+    "domain_mm3": 4049838.0,
+    "volume_fraction_of_free_cells": 0.0873,
+    "volume_fraction_of_domain": 0.0989,
+    "mass_saving_vs_domain_pct": 90.1,
+    "min_member": {
+      "min_mm": 6.0,
+      "p5_mm": 6.0,
+      "median_mm": 6.0
+    },
+    "min_member_optimised": {
+      "min_mm": 6.0,
+      "p5_mm": 6.0,
+      "median_mm": 6.0
+    },
+    "ground_contact": {
+      "plane_mm": -17.0,
+      "axis": "Z",
+      "area_mm2": 1377.0,
+      "pads": 3,
+      "band_area_mm2": 17307.0
+    },
+    "unsupported": {
+      "voxels": 15,
+      "area_mm2": 135.0,
+      "on_preserve_voxels": 298,
+      "on_preserve_area_mm2": 2682.0,
+      "axis": "Z",
+      "up": "+",
+      "max_support_mm": 12.0,
+      "allow_support": [],
+      "rule": "solid voxel with no solid voxel in the 45 degree cone below within 12 mm; voxels touching preserve are listed separately",
+      "bbox_mm": [
+        [
+          -38.9,
+          -84.0,
+          94.0
+        ],
+        [
+          24.1,
+          -60.0,
+          196.0
+        ]
+      ]
+    }
+  },
+  "connectivity": {
+    "components": 42,
+    "preserve_bodies": 10,
+    "preserve_body_components": [
+      {
+        "body": 1,
+        "component": 1,
+        "preserve_voxels": 552,
+        "kept_fraction": 1.0
+      },
+      {
+        "body": 2,
+        "component": 1,
+        "preserve_voxels": 552,
+        "kept_fraction": 1.0
+      },
+      {
+        "body": 3,
+        "component": 1,
+        "preserve_voxels": 1216,
+        "kept_fraction": 1.0
+      },
+      {
+        "body": 4,
+        "component": 1,
+        "preserve_voxels": 878,
+        "kept_fraction": 1.0
+      },
+      {
+        "body": 5,
+        "component": 1,
+        "preserve_voxels": 2000,
+        "kept_fraction": 1.0
+      },
+      {
+        "body": 6,
+        "component": 1,
+        "preserve_voxels": 512,
+        "kept_fraction": 1.0
+      },
+      {
+        "body": 7,
+        "component": 1,
+        "preserve_voxels": 352,
+        "kept_fraction": 1.0
+      },
+      {
+        "body": 8,
+        "component": 1,
+        "preserve_voxels": 352,
+        "kept_fraction": 1.0
+      },
+      {
+        "body": 9,
+        "component": 1,
+        "preserve_voxels": 240,
+        "kept_fraction": 1.0
+      },
+      {
+        "body": 10,
+        "component": 1,
+        "preserve_voxels": 240,
+        "kept_fraction": 1.0
+      }
+    ],
+    "connected": true,
+    "island_voxels": 208,
+    "island_mm3": 5616.0,
+    "violations": [
+      "5616.0 mm3 of material is not connected to any preserve body; it was dropped from the final geometry"
+    ],
+    "unsupported_pruned_voxels": 0,
+    "unsupported_pruned_mm3": 0.0
+  },
+  "seconds": 24911.8,
+  "history": [
+    {
+      "iter": 1,
+      "penal": 1.0,
+      "beta": 1.0,
+      "overhang_alpha": 0.0,
+      "objective": 6.0,
+      "compliance_per_case_Nmm": [
+        202281.989,
+        9.5027,
+        133.5253,
+        14.6875,
+        86.9647,
+        0.4903
+      ],
+      "normalised_per_case": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "volume_fraction_free": 0.09940300970912061,
+      "greyness": 0.343473061524275,
+      "change": 0.20000000000000004,
+      "topology_change_frac": 1.0,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": null,
+        "volume_error_frac": 0.00597,
+        "topology_change_frac": 1.0
+      }
+    },
+    {
+      "iter": 2,
+      "penal": 1.0,
+      "beta": 1.0,
+      "overhang_alpha": 0.037,
+      "objective": 4.649042888770183,
+      "compliance_per_case_Nmm": [
+        202283.5485,
+        7.0732,
+        84.1122,
+        11.2883,
+        50.7798,
+        0.4522
+      ],
+      "normalised_per_case": [
+        1.0,
+        0.7443,
+        0.6299,
+        0.7686,
+        0.5839,
+        0.9223
+      ],
+      "volume_fraction_free": 0.09838811176195296,
+      "greyness": 0.3322402021481931,
+      "change": 0.20000000000000004,
+      "topology_change_frac": 0.00232,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.22515952,
+        "volume_error_frac": 0.016119,
+        "topology_change_frac": 0.002319
+      }
+    },
+    {
+      "iter": 3,
+      "penal": 1.0,
+      "beta": 1.0,
+      "overhang_alpha": 0.0741,
+      "objective": 4.3396176697063105,
+      "compliance_per_case_Nmm": [
+        202291.4225,
+        6.5731,
+        73.1566,
+        10.588,
+        44.2764,
+        0.4265
+      ],
+      "normalised_per_case": [
+        1.0,
+        0.6917,
+        0.5479,
+        0.7209,
+        0.5091,
+        0.87
+      ],
+      "volume_fraction_free": 0.09862008960842825,
+      "greyness": 0.3224169476236045,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.00188,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.06655676,
+        "volume_error_frac": 0.013799,
+        "topology_change_frac": 0.00188
+      }
+    },
+    {
+      "iter": 4,
+      "penal": 1.0,
+      "beta": 1.0,
+      "overhang_alpha": 0.1111,
+      "objective": 4.18463949088884,
+      "compliance_per_case_Nmm": [
+        202288.4278,
+        6.3667,
+        67.2334,
+        10.2615,
+        41.7842,
+        0.4079
+      ],
+      "normalised_per_case": [
+        1.0,
+        0.67,
+        0.5035,
+        0.6987,
+        0.4805,
+        0.832
+      ],
+      "volume_fraction_free": 0.09887155977373584,
+      "greyness": 0.3118785209274063,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.01001,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.0357124,
+        "volume_error_frac": 0.011284,
+        "topology_change_frac": 0.010013
+      }
+    },
+    {
+      "iter": 5,
+      "penal": 1.0,
+      "beta": 1.0,
+      "overhang_alpha": 0.1481,
+      "objective": 4.094199288714441,
+      "compliance_per_case_Nmm": [
+        202287.7586,
+        6.2363,
+        64.7223,
+        10.0548,
+        40.5089,
+        0.3936
+      ],
+      "normalised_per_case": [
+        1.0,
+        0.6563,
+        0.4847,
+        0.6846,
+        0.4658,
+        0.8028
+      ],
+      "volume_fraction_free": 0.09887418254280844,
+      "greyness": 0.3019846189686225,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.00492,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.02161242,
+        "volume_error_frac": 0.011258,
+        "topology_change_frac": 0.004924
+      }
+    },
+    {
+      "iter": 6,
+      "penal": 1.0,
+      "beta": 1.0,
+      "overhang_alpha": 0.1852,
+      "objective": 4.043595460780752,
+      "compliance_per_case_Nmm": [
+        202287.2939,
+        6.1507,
+        63.4761,
+        9.9189,
+        39.983,
+        0.3853
+      ],
+      "normalised_per_case": [
+        1.0,
+        0.6473,
+        0.4754,
+        0.6753,
+        0.4598,
+        0.7858
+      ],
+      "volume_fraction_free": 0.09885652780443942,
+      "greyness": 0.2947192685876149,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.00256,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.01235988,
+        "volume_error_frac": 0.011435,
+        "topology_change_frac": 0.002561
+      }
+    },
+    {
+      "iter": 7,
+      "penal": 1.0,
+      "beta": 1.0,
+      "overhang_alpha": 0.2222,
+      "objective": 4.021660234280266,
+      "compliance_per_case_Nmm": [
+        202286.9237,
+        6.0779,
+        63.1783,
+        9.817,
+        39.9081,
+        0.3832
+      ],
+      "normalised_per_case": [
+        1.0,
+        0.6396,
+        0.4732,
+        0.6684,
+        0.4589,
+        0.7816
+      ],
+      "volume_fraction_free": 0.09882930191172888,
+      "greyness": 0.29124728770187824,
+      "change": 0.16699647525899053,
+      "topology_change_frac": 0.00162,
+      "criteria": {
+        "max_density_change": 0.166996,
+        "objective_rel_change": 0.00542468,
+        "volume_error_frac": 0.011707,
+        "topology_change_frac": 0.001616
+      }
+    },
+    {
+      "iter": 8,
+      "penal": 1.0,
+      "beta": 1.0,
+      "overhang_alpha": 0.2593,
+      "objective": 4.006999673952394,
+      "compliance_per_case_Nmm": [
+        202286.616,
+        6.0292,
+        62.9492,
+        9.7468,
+        39.8878,
+        0.3818
+      ],
+      "normalised_per_case": [
+        1.0,
+        0.6345,
+        0.4714,
+        0.6636,
+        0.4587,
+        0.7788
+      ],
+      "volume_fraction_free": 0.0988061921508444,
+      "greyness": 0.28873144214958657,
+      "change": 0.186740798565747,
+      "topology_change_frac": 0.00113,
+      "criteria": {
+        "max_density_change": 0.186741,
+        "objective_rel_change": 0.0036454,
+        "volume_error_frac": 0.011938,
+        "topology_change_frac": 0.001132
+      }
+    },
+    {
+      "iter": 9,
+      "penal": 1.0,
+      "beta": 1.0,
+      "overhang_alpha": 0.2963,
+      "objective": 3.9966920807224433,
+      "compliance_per_case_Nmm": [
+        202286.3521,
+        5.9954,
+        62.7421,
+        9.7004,
+        39.8889,
+        0.3808
+      ],
+      "normalised_per_case": [
+        1.0,
+        0.6309,
+        0.4699,
+        0.6605,
+        0.4587,
+        0.7767
+      ],
+      "volume_fraction_free": 0.09876532063148308,
+      "greyness": 0.2867458055994713,
+      "change": 0.17504126360096406,
+      "topology_change_frac": 0.00103,
+      "criteria": {
+        "max_density_change": 0.175041,
+        "objective_rel_change": 0.0025724,
+        "volume_error_frac": 0.012347,
+        "topology_change_frac": 0.001033
+      }
+    },
+    {
+      "iter": 10,
+      "penal": 1.0,
+      "beta": 1.0,
+      "overhang_alpha": 0.3333,
+      "objective": 3.989235891401691,
+      "compliance_per_case_Nmm": [
+        202286.156,
+        5.9688,
+        62.5498,
+        9.6682,
+        39.9409,
+        0.38
+      ],
+      "normalised_per_case": [
+        1.0,
+        0.6281,
+        0.4684,
+        0.6583,
+        0.4593,
+        0.7751
+      ],
+      "volume_fraction_free": 0.09871954258237699,
+      "greyness": 0.28521250827464806,
+      "change": 0.19999999999999996,
+      "topology_change_frac": 0.0014,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.00186559,
+        "volume_error_frac": 0.012805,
+        "topology_change_frac": 0.001396
+      }
+    },
+    {
+      "iter": 11,
+      "penal": 1.5,
+      "beta": 1.0,
+      "overhang_alpha": 0.3704,
+      "objective": 6.373829725724385,
+      "compliance_per_case_Nmm": [
+        204056.3907,
+        12.8713,
+        118.0083,
+        21.6821,
+        71.4889,
+        0.4062
+      ],
+      "normalised_per_case": [
+        1.0088,
+        1.3545,
+        0.8838,
+        1.4762,
+        0.822,
+        0.8285
+      ],
+      "volume_fraction_free": 0.0986696959595997,
+      "greyness": 0.28398603610174256,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.00058,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.59775704,
+        "volume_error_frac": 0.013303,
+        "topology_change_frac": 0.000583
+      }
+    },
+    {
+      "iter": 12,
+      "penal": 1.5,
+      "beta": 1.0,
+      "overhang_alpha": 0.4074,
+      "objective": 6.180520191334127,
+      "compliance_per_case_Nmm": [
+        202511.1727,
+        11.8456,
+        117.0068,
+        20.2172,
+        73.6322,
+        0.4086
+      ],
+      "normalised_per_case": [
+        1.0011,
+        1.2465,
+        0.8763,
+        1.3765,
+        0.8467,
+        0.8334
+      ],
+      "volume_fraction_free": 0.09860805370454352,
+      "greyness": 0.2832092174360849,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.00267,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.03032863,
+        "volume_error_frac": 0.013919,
+        "topology_change_frac": 0.002671
+      }
+    },
+    {
+      "iter": 13,
+      "penal": 1.5,
+      "beta": 1.0,
+      "overhang_alpha": 0.4444,
+      "objective": 6.0792110262455505,
+      "compliance_per_case_Nmm": [
+        202563.8365,
+        11.4444,
+        115.62,
+        19.5921,
+        73.2309,
+        0.4077
+      ],
+      "normalised_per_case": [
+        1.0014,
+        1.2043,
+        0.8659,
+        1.3339,
+        0.8421,
+        0.8316
+      ],
+      "volume_fraction_free": 0.0985541311362838,
+      "greyness": 0.27895276933674296,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.0016,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.01639169,
+        "volume_error_frac": 0.014459,
+        "topology_change_frac": 0.001605
+      }
+    },
+    {
+      "iter": 14,
+      "penal": 1.5,
+      "beta": 1.0,
+      "overhang_alpha": 0.4815,
+      "objective": 6.013468437663121,
+      "compliance_per_case_Nmm": [
+        202539.6076,
+        11.1717,
+        114.632,
+        19.2326,
+        72.9595,
+        0.4067
+      ],
+      "normalised_per_case": [
+        1.0013,
+        1.1756,
+        0.8585,
+        1.3095,
+        0.839,
+        0.8296
+      ],
+      "volume_fraction_free": 0.09847110860891603,
+      "greyness": 0.2749404071712708,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.00159,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.01081433,
+        "volume_error_frac": 0.015289,
+        "topology_change_frac": 0.001594
+      }
+    },
+    {
+      "iter": 15,
+      "penal": 1.5,
+      "beta": 1.0,
+      "overhang_alpha": 0.5185,
+      "objective": 5.970355149441391,
+      "compliance_per_case_Nmm": [
+        202544.7818,
+        10.9749,
+        113.8218,
+        19.0407,
+        72.8289,
+        0.4059
+      ],
+      "normalised_per_case": [
+        1.0013,
+        1.1549,
+        0.8524,
+        1.2964,
+        0.8375,
+        0.8278
+      ],
+      "volume_fraction_free": 0.09840236929222752,
+      "greyness": 0.27149808182680846,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.00302,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.00716945,
+        "volume_error_frac": 0.015976,
+        "topology_change_frac": 0.003023
+      }
+    },
+    {
+      "iter": 16,
+      "penal": 1.5,
+      "beta": 1.0,
+      "overhang_alpha": 0.5556,
+      "objective": 5.9445733375144245,
+      "compliance_per_case_Nmm": [
+        202547.4481,
+        10.8381,
+        113.1322,
+        18.9735,
+        72.8159,
+        0.4051
+      ],
+      "normalised_per_case": [
+        1.0013,
+        1.1405,
+        0.8473,
+        1.2918,
+        0.8373,
+        0.8263
+      ],
+      "volume_fraction_free": 0.09832773862662295,
+      "greyness": 0.26852300258241996,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.00125,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.0043183,
+        "volume_error_frac": 0.016723,
+        "topology_change_frac": 0.001253
+      }
+    },
+    {
+      "iter": 17,
+      "penal": 1.5,
+      "beta": 2.0,
+      "overhang_alpha": 0.5926,
+      "objective": 6.710238932082407,
+      "compliance_per_case_Nmm": [
+        202790.1778,
+        12.8075,
+        128.7796,
+        23.7041,
+        83.0439,
+        0.4053
+      ],
+      "normalised_per_case": [
+        1.0025,
+        1.3478,
+        0.9645,
+        1.6139,
+        0.9549,
+        0.8267
+      ],
+      "volume_fraction_free": 0.08510496855900804,
+      "greyness": 0.22628854304402365,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.00125,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.12880077,
+        "volume_error_frac": 0.14895,
+        "topology_change_frac": 0.001253
+      }
+    },
+    {
+      "iter": 18,
+      "penal": 1.5,
+      "beta": 2.0,
+      "overhang_alpha": 0.6296,
+      "objective": 5.837285934396531,
+      "compliance_per_case_Nmm": [
+        202560.3733,
+        10.9125,
+        115.8945,
+        19.6661,
+        57.3939,
+        0.4023
+      ],
+      "normalised_per_case": [
+        1.0014,
+        1.1484,
+        0.868,
+        1.339,
+        0.66,
+        0.8206
+      ],
+      "volume_fraction_free": 0.0983722128239132,
+      "greyness": 0.2485135686308273,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.01619,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.13009268,
+        "volume_error_frac": 0.016278,
+        "topology_change_frac": 0.01619
+      }
+    },
+    {
+      "iter": 19,
+      "penal": 1.5,
+      "beta": 2.0,
+      "overhang_alpha": 0.6667,
+      "objective": 5.883815978834161,
+      "compliance_per_case_Nmm": [
+        202570.8131,
+        9.97,
+        109.8171,
+        18.5523,
+        81.2281,
+        0.3989
+      ],
+      "normalised_per_case": [
+        1.0014,
+        1.0492,
+        0.8224,
+        1.2631,
+        0.934,
+        0.8136
+      ],
+      "volume_fraction_free": 0.09817341045818334,
+      "greyness": 0.2513589419363971,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.01861,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.00797118,
+        "volume_error_frac": 0.018266,
+        "topology_change_frac": 0.018608
+      }
+    },
+    {
+      "iter": 20,
+      "penal": 1.5,
+      "beta": 2.0,
+      "overhang_alpha": 0.7037,
+      "objective": 5.888801167087252,
+      "compliance_per_case_Nmm": [
+        202590.4888,
+        11.5588,
+        116.4204,
+        20.3244,
+        51.4988,
+        0.4035
+      ],
+      "normalised_per_case": [
+        1.0015,
+        1.2164,
+        0.8719,
+        1.3838,
+        0.5922,
+        0.823
+      ],
+      "volume_fraction_free": 0.09858582201473706,
+      "greyness": 0.237281291538016,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.02318,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.00084727,
+        "volume_error_frac": 0.014142,
+        "topology_change_frac": 0.023181
+      }
+    },
+    {
+      "iter": 21,
+      "penal": 2.0,
+      "beta": 2.0,
+      "overhang_alpha": 0.7407,
+      "objective": 8.499677625539238,
+      "compliance_per_case_Nmm": [
+        216181.7013,
+        16.2257,
+        176.4159,
+        31.8835,
+        119.3631,
+        0.4211
+      ],
+      "normalised_per_case": [
+        1.0687,
+        1.7075,
+        1.3212,
+        2.1708,
+        1.3725,
+        0.8589
+      ],
+      "volume_fraction_free": 0.09846732839601705,
+      "greyness": 0.24896972138374618,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.02333,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.44336298,
+        "volume_error_frac": 0.015327,
+        "topology_change_frac": 0.023335
+      }
+    },
+    {
+      "iter": 22,
+      "penal": 2.0,
+      "beta": 2.0,
+      "overhang_alpha": 0.7778,
+      "objective": 8.025123598003097,
+      "compliance_per_case_Nmm": [
+        204276.8074,
+        16.3649,
+        187.867,
+        31.2166,
+        77.4237,
+        0.4268
+      ],
+      "normalised_per_case": [
+        1.0099,
+        1.7221,
+        1.407,
+        2.1254,
+        0.8903,
+        0.8705
+      ],
+      "volume_fraction_free": 0.09874597984337172,
+      "greyness": 0.23526933281198695,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.0172,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.055832,
+        "volume_error_frac": 0.01254,
+        "topology_change_frac": 0.017202
+      }
+    },
+    {
+      "iter": 23,
+      "penal": 2.0,
+      "beta": 2.0,
+      "overhang_alpha": 0.8148,
+      "objective": 7.840402360347142,
+      "compliance_per_case_Nmm": [
+        204706.5942,
+        13.7163,
+        182.7743,
+        28.1863,
+        107.4659,
+        0.4223
+      ],
+      "normalised_per_case": [
+        1.012,
+        1.4434,
+        1.3688,
+        1.9191,
+        1.2357,
+        0.8614
+      ],
+      "volume_fraction_free": 0.09872665510625037,
+      "greyness": 0.23065529566166612,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.02165,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.02301787,
+        "volume_error_frac": 0.012733,
+        "topology_change_frac": 0.021653
+      }
+    },
+    {
+      "iter": 24,
+      "penal": 2.0,
+      "beta": 2.0,
+      "overhang_alpha": 0.8519,
+      "objective": 7.495760939053911,
+      "compliance_per_case_Nmm": [
+        204338.4753,
+        14.5469,
+        189.2932,
+        26.6295,
+        74.5146,
+        0.4252
+      ],
+      "normalised_per_case": [
+        1.0102,
+        1.5308,
+        1.4177,
+        1.8131,
+        0.8568,
+        0.8672
+      ],
+      "volume_fraction_free": 0.09898300731589547,
+      "greyness": 0.21503566184571615,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.01683,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.04395711,
+        "volume_error_frac": 0.01017,
+        "topology_change_frac": 0.016828
+      }
+    },
+    {
+      "iter": 25,
+      "penal": 2.0,
+      "beta": 2.0,
+      "overhang_alpha": 0.8889,
+      "objective": 7.408198626520894,
+      "compliance_per_case_Nmm": [
+        204229.7394,
+        12.5752,
+        189.3705,
+        23.4438,
+        104.1217,
+        0.4234
+      ],
+      "normalised_per_case": [
+        1.0096,
+        1.3233,
+        1.4182,
+        1.5962,
+        1.1973,
+        0.8635
+      ],
+      "volume_fraction_free": 0.0991419151362254,
+      "greyness": 0.20917534477193817,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.01799,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.01168158,
+        "volume_error_frac": 0.008581,
+        "topology_change_frac": 0.017993
+      }
+    },
+    {
+      "iter": 26,
+      "penal": 2.0,
+      "beta": 2.0,
+      "overhang_alpha": 0.9259,
+      "objective": 7.082427379876898,
+      "compliance_per_case_Nmm": [
+        204159.8854,
+        12.8621,
+        191.542,
+        23.6668,
+        70.4414,
+        0.4235
+      ],
+      "normalised_per_case": [
+        1.0093,
+        1.3535,
+        1.4345,
+        1.6114,
+        0.81,
+        0.8638
+      ],
+      "volume_fraction_free": 0.09934178931171478,
+      "greyness": 0.19656905982682685,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.01433,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.04397442,
+        "volume_error_frac": 0.006582,
+        "topology_change_frac": 0.014333
+      }
+    },
+    {
+      "iter": 27,
+      "penal": 2.0,
+      "beta": 2.0,
+      "overhang_alpha": 0.963,
+      "objective": 7.072665868829711,
+      "compliance_per_case_Nmm": [
+        204151.5951,
+        11.9929,
+        191.4878,
+        21.2702,
+        91.7099,
+        0.4238
+      ],
+      "normalised_per_case": [
+        1.0092,
+        1.2621,
+        1.4341,
+        1.4482,
+        1.0546,
+        0.8645
+      ],
+      "volume_fraction_free": 0.09947819823024273,
+      "greyness": 0.19327607336340283,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.02281,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.00137827,
+        "volume_error_frac": 0.005218,
+        "topology_change_frac": 0.022807
+      }
+    },
+    {
+      "iter": 28,
+      "penal": 2.0,
+      "beta": 2.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.800662218762995,
+      "compliance_per_case_Nmm": [
+        204110.1292,
+        11.9746,
+        187.0496,
+        21.7337,
+        68.6308,
+        0.4225
+      ],
+      "normalised_per_case": [
+        1.009,
+        1.2601,
+        1.4009,
+        1.4797,
+        0.7892,
+        0.8617
+      ],
+      "volume_fraction_free": 0.09957826487424692,
+      "greyness": 0.18352040790448457,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.02138,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.03845843,
+        "volume_error_frac": 0.004217,
+        "topology_change_frac": 0.021378
+      }
+    },
+    {
+      "iter": 29,
+      "penal": 2.0,
+      "beta": 2.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.672968374317174,
+      "compliance_per_case_Nmm": [
+        204168.2456,
+        11.3146,
+        179.797,
+        20.2423,
+        77.299,
+        0.4213
+      ],
+      "normalised_per_case": [
+        1.0093,
+        1.1907,
+        1.3465,
+        1.3782,
+        0.8889,
+        0.8594
+      ],
+      "volume_fraction_free": 0.1000017732058057,
+      "greyness": 0.1830689276661404,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.01246,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.01877668,
+        "volume_error_frac": 1.8e-05,
+        "topology_change_frac": 0.012464
+      }
+    },
+    {
+      "iter": 30,
+      "penal": 2.0,
+      "beta": 2.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.5549851905388685,
+      "compliance_per_case_Nmm": [
+        204311.2423,
+        11.3638,
+        176.7939,
+        20.3133,
+        68.1221,
+        0.421
+      ],
+      "normalised_per_case": [
+        1.01,
+        1.1959,
+        1.324,
+        1.383,
+        0.7833,
+        0.8587
+      ],
+      "volume_fraction_free": 0.10000152244654054,
+      "greyness": 0.1757020971703576,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.00875,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.01768076,
+        "volume_error_frac": 1.5e-05,
+        "topology_change_frac": 0.008749
+      }
+    },
+    {
+      "iter": 31,
+      "penal": 2.5,
+      "beta": 2.0,
+      "overhang_alpha": 1.0,
+      "objective": 7.699193477257565,
+      "compliance_per_case_Nmm": [
+        248174.7513,
+        13.4863,
+        196.8743,
+        24.5698,
+        89.3286,
+        0.4308
+      ],
+      "normalised_per_case": [
+        1.2269,
+        1.4192,
+        1.4744,
+        1.6728,
+        1.0272,
+        0.8786
+      ],
+      "volume_fraction_free": 0.100002265313852,
+      "greyness": 0.17489976979005034,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.00675,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.17455543,
+        "volume_error_frac": 2.3e-05,
+        "topology_change_frac": 0.006749
+      }
+    },
+    {
+      "iter": 32,
+      "penal": 2.5,
+      "beta": 2.0,
+      "overhang_alpha": 1.0,
+      "objective": 7.4085164333279225,
+      "compliance_per_case_Nmm": [
+        213569.0158,
+        13.6462,
+        197.398,
+        24.0655,
+        79.887,
+        0.432
+      ],
+      "normalised_per_case": [
+        1.0558,
+        1.436,
+        1.4784,
+        1.6385,
+        0.9186,
+        0.8812
+      ],
+      "volume_fraction_free": 0.0999964520516439,
+      "greyness": 0.17049911119564704,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.00526,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.03775422,
+        "volume_error_frac": 3.5e-05,
+        "topology_change_frac": 0.005265
+      }
+    },
+    {
+      "iter": 33,
+      "penal": 2.5,
+      "beta": 4.0,
+      "overhang_alpha": 1.0,
+      "objective": 7.959698806433119,
+      "compliance_per_case_Nmm": [
+        419872.4686,
+        12.5168,
+        173.8079,
+        22.6877,
+        75.0083,
+        0.4206
+      ],
+      "normalised_per_case": [
+        2.0757,
+        1.3172,
+        1.3017,
+        1.5447,
+        0.8625,
+        0.8579
+      ],
+      "volume_fraction_free": 0.09134681072578697,
+      "greyness": 0.11819907284778376,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.00414,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.07439848,
+        "volume_error_frac": 0.086532,
+        "topology_change_frac": 0.004144
+      }
+    },
+    {
+      "iter": 34,
+      "penal": 2.5,
+      "beta": 4.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.552443782884909,
+      "compliance_per_case_Nmm": [
+        254501.4388,
+        10.9513,
+        164.1151,
+        19.2215,
+        65.4903,
+        0.4172
+      ],
+      "normalised_per_case": [
+        1.2582,
+        1.1524,
+        1.2291,
+        1.3087,
+        0.7531,
+        0.851
+      ],
+      "volume_fraction_free": 0.1000054696166445,
+      "greyness": 0.12238913908012963,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.00953,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.17679752,
+        "volume_error_frac": 5.5e-05,
+        "topology_change_frac": 0.00953
+      }
+    },
+    {
+      "iter": 35,
+      "penal": 2.5,
+      "beta": 4.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.4051962195906365,
+      "compliance_per_case_Nmm": [
+        238730.3611,
+        10.6713,
+        159.8433,
+        19.0547,
+        65.9997,
+        0.4161
+      ],
+      "normalised_per_case": [
+        1.1802,
+        1.123,
+        1.1971,
+        1.2973,
+        0.7589,
+        0.8487
+      ],
+      "volume_fraction_free": 0.0999932278486138,
+      "greyness": 0.12164097871820753,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.0052,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.02247216,
+        "volume_error_frac": 6.8e-05,
+        "topology_change_frac": 0.005199
+      }
+    },
+    {
+      "iter": 36,
+      "penal": 2.5,
+      "beta": 4.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.294644635246113,
+      "compliance_per_case_Nmm": [
+        226072.2311,
+        10.6572,
+        158.587,
+        18.5892,
+        65.5177,
+        0.4161
+      ],
+      "normalised_per_case": [
+        1.1176,
+        1.1215,
+        1.1877,
+        1.2656,
+        0.7534,
+        0.8488
+      ],
+      "volume_fraction_free": 0.10000879981916296,
+      "greyness": 0.11991006969886614,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.00318,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.01725967,
+        "volume_error_frac": 8.8e-05,
+        "topology_change_frac": 0.003177
+      }
+    },
+    {
+      "iter": 37,
+      "penal": 2.5,
+      "beta": 4.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.247469075975745,
+      "compliance_per_case_Nmm": [
+        221570.1653,
+        10.524,
+        158.2319,
+        18.4955,
+        65.4532,
+        0.4156
+      ],
+      "normalised_per_case": [
+        1.0954,
+        1.1075,
+        1.185,
+        1.2593,
+        0.7526,
+        0.8477
+      ],
+      "volume_fraction_free": 0.10000151994967989,
+      "greyness": 0.11895430235033612,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.00282,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.00749455,
+        "volume_error_frac": 1.5e-05,
+        "topology_change_frac": 0.002825
+      }
+    },
+    {
+      "iter": 38,
+      "penal": 2.5,
+      "beta": 4.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.201944542019163,
+      "compliance_per_case_Nmm": [
+        219002.8114,
+        10.5194,
+        156.4196,
+        18.2842,
+        65.0784,
+        0.4156
+      ],
+      "normalised_per_case": [
+        1.0827,
+        1.107,
+        1.1715,
+        1.2449,
+        0.7483,
+        0.8476
+      ],
+      "volume_fraction_free": 0.09999230872474989,
+      "greyness": 0.11784897992209503,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.00202,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.00728688,
+        "volume_error_frac": 7.7e-05,
+        "topology_change_frac": 0.002022
+      }
+    },
+    {
+      "iter": 39,
+      "penal": 2.5,
+      "beta": 4.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.182031460050272,
+      "compliance_per_case_Nmm": [
+        218038.9935,
+        10.4369,
+        156.2164,
+        18.2626,
+        64.8394,
+        0.4152
+      ],
+      "normalised_per_case": [
+        1.0779,
+        1.0983,
+        1.1699,
+        1.2434,
+        0.7456,
+        0.8469
+      ],
+      "volume_fraction_free": 0.10000556185516365,
+      "greyness": 0.11703541168027515,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.0019,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.00321078,
+        "volume_error_frac": 5.6e-05,
+        "topology_change_frac": 0.001902
+      }
+    },
+    {
+      "iter": 40,
+      "penal": 2.5,
+      "beta": 4.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.1506260483777435,
+      "compliance_per_case_Nmm": [
+        216827.035,
+        10.4277,
+        154.5103,
+        18.0828,
+        64.8925,
+        0.4152
+      ],
+      "normalised_per_case": [
+        1.0719,
+        1.0973,
+        1.1572,
+        1.2312,
+        0.7462,
+        0.8469
+      ],
+      "volume_fraction_free": 0.10000504628236283,
+      "greyness": 0.11637506778024749,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.00147,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.00508011,
+        "volume_error_frac": 5e-05,
+        "topology_change_frac": 0.001473
+      }
+    },
+    {
+      "iter": 41,
+      "penal": 3.0,
+      "beta": 4.0,
+      "overhang_alpha": 1.0,
+      "objective": 7.304673202361743,
+      "compliance_per_case_Nmm": [
+        376094.5376,
+        11.3592,
+        165.6278,
+        19.8442,
+        69.7216,
+        0.4201
+      ],
+      "normalised_per_case": [
+        1.8593,
+        1.1954,
+        1.2404,
+        1.3511,
+        0.8017,
+        0.8568
+      ],
+      "volume_fraction_free": 0.10000131221673539,
+      "greyness": 0.11548597363238307,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.00125,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.18763084,
+        "volume_error_frac": 1.3e-05,
+        "topology_change_frac": 0.001253
+      }
+    },
+    {
+      "iter": 42,
+      "penal": 3.0,
+      "beta": 4.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.9804798264480805,
+      "compliance_per_case_Nmm": [
+        280169.0629,
+        11.838,
+        166.846,
+        20.5436,
+        73.1183,
+        0.4219
+      ],
+      "normalised_per_case": [
+        1.385,
+        1.2458,
+        1.2495,
+        1.3987,
+        0.8408,
+        0.8606
+      ],
+      "volume_fraction_free": 0.10000044326663904,
+      "greyness": 0.12456973820778716,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.00318,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.04438164,
+        "volume_error_frac": 4e-06,
+        "topology_change_frac": 0.003177
+      }
+    },
+    {
+      "iter": 43,
+      "penal": 3.0,
+      "beta": 4.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.932730137063214,
+      "compliance_per_case_Nmm": [
+        293751.6067,
+        11.4995,
+        166.031,
+        19.8924,
+        70.701,
+        0.4214
+      ],
+      "normalised_per_case": [
+        1.4522,
+        1.2101,
+        1.2434,
+        1.3544,
+        0.813,
+        0.8596
+      ],
+      "volume_fraction_free": 0.1000054094628504,
+      "greyness": 0.11849983244756336,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.00193,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.00684046,
+        "volume_error_frac": 5.4e-05,
+        "topology_change_frac": 0.001934
+      }
+    },
+    {
+      "iter": 44,
+      "penal": 3.0,
+      "beta": 4.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.8585472885344965,
+      "compliance_per_case_Nmm": [
+        262360.9044,
+        11.7248,
+        166.4791,
+        20.382,
+        72.357,
+        0.4222
+      ],
+      "normalised_per_case": [
+        1.297,
+        1.2338,
+        1.2468,
+        1.3877,
+        0.832,
+        0.8612
+      ],
+      "volume_fraction_free": 0.09999676308801402,
+      "greyness": 0.12322977208829297,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.00168,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.01070038,
+        "volume_error_frac": 3.2e-05,
+        "topology_change_frac": 0.001682
+      }
+    },
+    {
+      "iter": 45,
+      "penal": 3.0,
+      "beta": 4.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.854589044867659,
+      "compliance_per_case_Nmm": [
+        282339.5631,
+        11.4177,
+        165.8306,
+        19.7279,
+        70.6074,
+        0.4218
+      ],
+      "normalised_per_case": [
+        1.3958,
+        1.2015,
+        1.2419,
+        1.3432,
+        0.8119,
+        0.8603
+      ],
+      "volume_fraction_free": 0.09999498786133444,
+      "greyness": 0.1175605457680861,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.00166,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.00057713,
+        "volume_error_frac": 5e-05,
+        "topology_change_frac": 0.00166
+      }
+    },
+    {
+      "iter": 46,
+      "penal": 3.0,
+      "beta": 4.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.794692313283355,
+      "compliance_per_case_Nmm": [
+        255360.5676,
+        11.6233,
+        165.7387,
+        20.2214,
+        72.1622,
+        0.4223
+      ],
+      "normalised_per_case": [
+        1.2624,
+        1.2232,
+        1.2413,
+        1.3768,
+        0.8298,
+        0.8613
+      ],
+      "volume_fraction_free": 0.10000537905959234,
+      "greyness": 0.12211658671938845,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.00159,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.00873819,
+        "volume_error_frac": 5.4e-05,
+        "topology_change_frac": 0.001594
+      }
+    },
+    {
+      "iter": 47,
+      "penal": 3.0,
+      "beta": 4.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.811387381590126,
+      "compliance_per_case_Nmm": [
+        277919.6947,
+        11.3473,
+        165.3836,
+        19.5999,
+        70.4289,
+        0.4218
+      ],
+      "normalised_per_case": [
+        1.3739,
+        1.1941,
+        1.2386,
+        1.3345,
+        0.8099,
+        0.8604
+      ],
+      "volume_fraction_free": 0.09999976390374395,
+      "greyness": 0.11658694182908783,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.00157,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.00245707,
+        "volume_error_frac": 2e-06,
+        "topology_change_frac": 0.001572
+      }
+    },
+    {
+      "iter": 48,
+      "penal": 3.0,
+      "beta": 4.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.759563636778312,
+      "compliance_per_case_Nmm": [
+        253450.5631,
+        11.5449,
+        164.8772,
+        20.1064,
+        71.8917,
+        0.4223
+      ],
+      "normalised_per_case": [
+        1.253,
+        1.2149,
+        1.2348,
+        1.3689,
+        0.8267,
+        0.8613
+      ],
+      "volume_fraction_free": 0.10000829043980121,
+      "greyness": 0.12098693445357198,
+      "change": 0.20000000000000007,
+      "topology_change_frac": 0.00169,
+      "criteria": {
+        "max_density_change": 0.2,
+        "objective_rel_change": 0.0076084,
+        "volume_error_frac": 8.3e-05,
+        "topology_change_frac": 0.001693
+      }
+    },
+    {
+      "iter": 49,
+      "penal": 3.0,
+      "beta": 8.0,
+      "overhang_alpha": 1.0,
+      "objective": 14.233505984775936,
+      "compliance_per_case_Nmm": [
+        1931445.8679,
+        9.5816,
+        141.0856,
+        16.4509,
+        58.3826,
+        0.4064
+      ],
+      "normalised_per_case": [
+        9.5483,
+        1.0083,
+        1.0566,
+        1.1201,
+        0.6713,
+        0.8289
+      ],
+      "volume_fraction_free": 0.09343505241433402,
+      "greyness": 0.052620366024438286,
+      "change": 0.10000000000000003,
+      "topology_change_frac": 0.00153,
+      "criteria": {
+        "max_density_change": 0.1,
+        "objective_rel_change": 1.10568415,
+        "volume_error_frac": 0.065649,
+        "topology_change_frac": 0.001528
+      }
+    },
+    {
+      "iter": 50,
+      "penal": 3.0,
+      "beta": 8.0,
+      "overhang_alpha": 1.0,
+      "objective": 9.449755388628404,
+      "compliance_per_case_Nmm": [
+        1014357.9431,
+        8.8907,
+        134.7134,
+        15.1949,
+        55.1067,
+        0.4032
+      ],
+      "normalised_per_case": [
+        5.0146,
+        0.9356,
+        1.0089,
+        1.0345,
+        0.6337,
+        0.8225
+      ],
+      "volume_fraction_free": 0.09999406975175534,
+      "greyness": 0.05697830040942572,
+      "change": 0.10000000000000003,
+      "topology_change_frac": 0.00529,
+      "criteria": {
+        "max_density_change": 0.1,
+        "objective_rel_change": 0.33609081,
+        "volume_error_frac": 5.9e-05,
+        "topology_change_frac": 0.005287
+      }
+    },
+    {
+      "iter": 51,
+      "penal": 3.0,
+      "beta": 8.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.7470069571157705,
+      "compliance_per_case_Nmm": [
+        447736.349,
+        9.299,
+        132.6527,
+        15.7684,
+        57.8213,
+        0.4035
+      ],
+      "normalised_per_case": [
+        2.2134,
+        0.9786,
+        0.9935,
+        1.0736,
+        0.6649,
+        0.8231
+      ],
+      "volume_fraction_free": 0.10000240775678233,
+      "greyness": 0.07003224930486905,
+      "change": 0.10000000000000003,
+      "topology_change_frac": 0.00487,
+      "criteria": {
+        "max_density_change": 0.1,
+        "objective_rel_change": 0.28601253,
+        "volume_error_frac": 2.4e-05,
+        "topology_change_frac": 0.004869
+      }
+    },
+    {
+      "iter": 52,
+      "penal": 3.0,
+      "beta": 8.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.485584851329235,
+      "compliance_per_case_Nmm": [
+        354434.5452,
+        9.7926,
+        136.8238,
+        16.9274,
+        60.705,
+        0.4058
+      ],
+      "normalised_per_case": [
+        1.7522,
+        1.0305,
+        1.0247,
+        1.1525,
+        0.698,
+        0.8276
+      ],
+      "volume_fraction_free": 0.10000205420693521,
+      "greyness": 0.08556465644538955,
+      "change": 0.10000000000000003,
+      "topology_change_frac": 0.0049,
+      "criteria": {
+        "max_density_change": 0.1,
+        "objective_rel_change": 0.03874638,
+        "volume_error_frac": 2.1e-05,
+        "topology_change_frac": 0.004902
+      }
+    },
+    {
+      "iter": 53,
+      "penal": 3.0,
+      "beta": 8.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.379960347330558,
+      "compliance_per_case_Nmm": [
+        368360.2725,
+        9.3474,
+        134.3769,
+        15.8217,
+        57.9088,
+        0.4049
+      ],
+      "normalised_per_case": [
+        1.821,
+        0.9837,
+        1.0064,
+        1.0772,
+        0.6659,
+        0.8258
+      ],
+      "volume_fraction_free": 0.10000293902203351,
+      "greyness": 0.07247343592046607,
+      "change": 0.10000000000000003,
+      "topology_change_frac": 0.00328,
+      "criteria": {
+        "max_density_change": 0.1,
+        "objective_rel_change": 0.01628604,
+        "volume_error_frac": 2.9e-05,
+        "topology_change_frac": 0.003275
+      }
+    },
+    {
+      "iter": 54,
+      "penal": 3.0,
+      "beta": 8.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.377857202612567,
+      "compliance_per_case_Nmm": [
+        336825.8648,
+        9.7162,
+        135.4946,
+        16.9118,
+        60.6164,
+        0.4055
+      ],
+      "normalised_per_case": [
+        1.6651,
+        1.0225,
+        1.0147,
+        1.1514,
+        0.697,
+        0.827
+      ],
+      "volume_fraction_free": 0.10000930571494114,
+      "greyness": 0.08495965195144854,
+      "change": 0.10000000000000003,
+      "topology_change_frac": 0.00332,
+      "criteria": {
+        "max_density_change": 0.1,
+        "objective_rel_change": 0.00032965,
+        "volume_error_frac": 9.3e-05,
+        "topology_change_frac": 0.003319
+      }
+    },
+    {
+      "iter": 55,
+      "penal": 3.0,
+      "beta": 8.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.341250593307193,
+      "compliance_per_case_Nmm": [
+        365785.2887,
+        9.2787,
+        133.0809,
+        15.7201,
+        57.7494,
+        0.4047
+      ],
+      "normalised_per_case": [
+        1.8083,
+        0.9764,
+        0.9967,
+        1.0703,
+        0.6641,
+        0.8255
+      ],
+      "volume_fraction_free": 0.1000055561036649,
+      "greyness": 0.07103678789233886,
+      "change": 0.10000000000000003,
+      "topology_change_frac": 0.00331,
+      "criteria": {
+        "max_density_change": 0.1,
+        "objective_rel_change": 0.00573964,
+        "volume_error_frac": 5.6e-05,
+        "topology_change_frac": 0.003308
+      }
+    },
+    {
+      "iter": 56,
+      "penal": 3.0,
+      "beta": 8.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.332717117190988,
+      "compliance_per_case_Nmm": [
+        327397.9558,
+        9.7319,
+        135.0122,
+        16.9286,
+        60.8074,
+        0.4055
+      ],
+      "normalised_per_case": [
+        1.6185,
+        1.0241,
+        1.0111,
+        1.1526,
+        0.6992,
+        0.8271
+      ],
+      "volume_fraction_free": 0.0999969447841114,
+      "greyness": 0.08519766724068886,
+      "change": 0.10000000000000003,
+      "topology_change_frac": 0.00364,
+      "criteria": {
+        "max_density_change": 0.1,
+        "objective_rel_change": 0.00134571,
+        "volume_error_frac": 3.1e-05,
+        "topology_change_frac": 0.003638
+      }
+    },
+    {
+      "iter": 57,
+      "penal": 3.0,
+      "beta": 8.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.305987513607129,
+      "compliance_per_case_Nmm": [
+        367954.1173,
+        9.1328,
+        131.7647,
+        15.5189,
+        57.2329,
+        0.4042
+      ],
+      "normalised_per_case": [
+        1.819,
+        0.9611,
+        0.9868,
+        1.0566,
+        0.6581,
+        0.8244
+      ],
+      "volume_fraction_free": 0.10000967141838618,
+      "greyness": 0.06812853589189474,
+      "change": 0.10000000000000003,
+      "topology_change_frac": 0.00397,
+      "criteria": {
+        "max_density_change": 0.1,
+        "objective_rel_change": 0.00422087,
+        "volume_error_frac": 9.7e-05,
+        "topology_change_frac": 0.003968
+      }
+    },
+    {
+      "iter": 58,
+      "penal": 3.0,
+      "beta": 8.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.299199541830591,
+      "compliance_per_case_Nmm": [
+        322643.803,
+        9.7319,
+        134.3634,
+        16.8673,
+        60.7391,
+        0.4054
+      ],
+      "normalised_per_case": [
+        1.595,
+        1.0241,
+        1.0063,
+        1.1484,
+        0.6984,
+        0.8269
+      ],
+      "volume_fraction_free": 0.09999551453933334,
+      "greyness": 0.08461937199614826,
+      "change": 0.10000000000000003,
+      "topology_change_frac": 0.00386,
+      "criteria": {
+        "max_density_change": 0.1,
+        "objective_rel_change": 0.00107643,
+        "volume_error_frac": 4.5e-05,
+        "topology_change_frac": 0.003858
+      }
+    },
+    {
+      "iter": 59,
+      "penal": 3.0,
+      "beta": 8.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.285849308124775,
+      "compliance_per_case_Nmm": [
+        366519.3011,
+        9.0864,
+        131.5843,
+        15.4475,
+        57.082,
+        0.404
+      ],
+      "normalised_per_case": [
+        1.8119,
+        0.9562,
+        0.9855,
+        1.0517,
+        0.6564,
+        0.8241
+      ],
+      "volume_fraction_free": 0.10000889676227213,
+      "greyness": 0.06731543452680334,
+      "change": 0.10000000000000003,
+      "topology_change_frac": 0.0038,
+      "criteria": {
+        "max_density_change": 0.1,
+        "objective_rel_change": 0.00211935,
+        "volume_error_frac": 8.9e-05,
+        "topology_change_frac": 0.003803
+      }
+    },
+    {
+      "iter": 60,
+      "penal": 3.0,
+      "beta": 8.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.284783519502106,
+      "compliance_per_case_Nmm": [
+        320079.0827,
+        9.726,
+        134.1147,
+        16.8608,
+        60.8387,
+        0.4054
+      ],
+      "normalised_per_case": [
+        1.5823,
+        1.0235,
+        1.0044,
+        1.148,
+        0.6996,
+        0.827
+      ],
+      "volume_fraction_free": 0.09999307403766806,
+      "greyness": 0.08450128773629265,
+      "change": 0.10000000000000003,
+      "topology_change_frac": 0.00381,
+      "criteria": {
+        "max_density_change": 0.1,
+        "objective_rel_change": 0.00016955,
+        "volume_error_frac": 6.9e-05,
+        "topology_change_frac": 0.003814
+      }
+    },
+    {
+      "iter": 61,
+      "penal": 3.0,
+      "beta": 8.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.279173883691845,
+      "compliance_per_case_Nmm": [
+        367211.1946,
+        9.0414,
+        131.4894,
+        15.3965,
+        56.9941,
+        0.404
+      ],
+      "normalised_per_case": [
+        1.8153,
+        0.9515,
+        0.9848,
+        1.0483,
+        0.6554,
+        0.824
+      ],
+      "volume_fraction_free": 0.09999777422724675,
+      "greyness": 0.06657815485245164,
+      "change": 0.10000000000000003,
+      "topology_change_frac": 0.00384,
+      "criteria": {
+        "max_density_change": 0.1,
+        "objective_rel_change": 0.00089257,
+        "volume_error_frac": 2.2e-05,
+        "topology_change_frac": 0.003836
+      }
+    },
+    {
+      "iter": 62,
+      "penal": 3.0,
+      "beta": 8.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.2713831450597,
+      "compliance_per_case_Nmm": [
+        319372.0589,
+        9.6964,
+        133.8168,
+        16.8162,
+        60.7245,
+        0.4053
+      ],
+      "normalised_per_case": [
+        1.5788,
+        1.0204,
+        1.0022,
+        1.1449,
+        0.6983,
+        0.8268
+      ],
+      "volume_fraction_free": 0.1000016705246203,
+      "greyness": 0.08395411794869811,
+      "change": 0.10000000000000003,
+      "topology_change_frac": 0.00368,
+      "criteria": {
+        "max_density_change": 0.1,
+        "objective_rel_change": 0.00124073,
+        "volume_error_frac": 1.7e-05,
+        "topology_change_frac": 0.003682
+      }
+    },
+    {
+      "iter": 63,
+      "penal": 3.0,
+      "beta": 8.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.270364400329667,
+      "compliance_per_case_Nmm": [
+        366812.1747,
+        9.0137,
+        131.3799,
+        15.3563,
+        56.9694,
+        0.4039
+      ],
+      "normalised_per_case": [
+        1.8134,
+        0.9485,
+        0.9839,
+        1.0455,
+        0.6551,
+        0.8239
+      ],
+      "volume_fraction_free": 0.09999549310117035,
+      "greyness": 0.06615393124769048,
+      "change": 0.10000000000000003,
+      "topology_change_frac": 0.00368,
+      "criteria": {
+        "max_density_change": 0.1,
+        "objective_rel_change": 0.00016244,
+        "volume_error_frac": 4.5e-05,
+        "topology_change_frac": 0.003682
+      }
+    },
+    {
+      "iter": 64,
+      "penal": 3.0,
+      "beta": 8.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.261111812624693,
+      "compliance_per_case_Nmm": [
+        319104.5832,
+        9.6691,
+        133.6299,
+        16.7689,
+        60.6117,
+        0.4053
+      ],
+      "normalised_per_case": [
+        1.5775,
+        1.0175,
+        1.0008,
+        1.1417,
+        0.697,
+        0.8266
+      ],
+      "volume_fraction_free": 0.09999796402025539,
+      "greyness": 0.08342030601759537,
+      "change": 0.10000000000000003,
+      "topology_change_frac": 0.00359,
+      "criteria": {
+        "max_density_change": 0.1,
+        "objective_rel_change": 0.00147561,
+        "volume_error_frac": 2e-05,
+        "topology_change_frac": 0.003594
+      }
+    },
+    {
+      "iter": 65,
+      "penal": 3.0,
+      "beta": 16.0,
+      "overhang_alpha": 1.0,
+      "objective": 15.41183584381163,
+      "compliance_per_case_Nmm": [
+        2283344.6385,
+        8.167,
+        121.9141,
+        13.9237,
+        51.6645,
+        0.3968
+      ],
+      "normalised_per_case": [
+        11.2879,
+        0.8594,
+        0.913,
+        0.948,
+        0.5941,
+        0.8093
+      ],
+      "volume_fraction_free": 0.09554717959396475,
+      "greyness": 0.020623080733657137,
+      "change": 0.050000000000000044,
+      "topology_change_frac": 0.00362,
+      "criteria": {
+        "max_density_change": 0.05,
+        "objective_rel_change": 1.46151743,
+        "volume_error_frac": 0.044528,
+        "topology_change_frac": 0.003616
+      }
+    },
+    {
+      "iter": 66,
+      "penal": 3.0,
+      "beta": 16.0,
+      "overhang_alpha": 1.0,
+      "objective": 13.032248660703694,
+      "compliance_per_case_Nmm": [
+        1824793.7485,
+        7.8778,
+        118.4335,
+        13.3793,
+        50.2581,
+        0.3953
+      ],
+      "normalised_per_case": [
+        9.021,
+        0.829,
+        0.887,
+        0.9109,
+        0.5779,
+        0.8064
+      ],
+      "volume_fraction_free": 0.10000950543680683,
+      "greyness": 0.023371279258765806,
+      "change": 0.050000000000000044,
+      "topology_change_frac": 0.00326,
+      "criteria": {
+        "max_density_change": 0.05,
+        "objective_rel_change": 0.15439998,
+        "volume_error_frac": 9.5e-05,
+        "topology_change_frac": 0.003264
+      }
+    },
+    {
+      "iter": 67,
+      "penal": 3.0,
+      "beta": 16.0,
+      "overhang_alpha": 1.0,
+      "objective": 9.167718527819101,
+      "compliance_per_case_Nmm": [
+        1029953.0306,
+        8.041,
+        120.4547,
+        13.6163,
+        51.5525,
+        0.3961
+      ],
+      "normalised_per_case": [
+        5.0917,
+        0.8462,
+        0.9021,
+        0.9271,
+        0.5928,
+        0.8079
+      ],
+      "volume_fraction_free": 0.10000406683504263,
+      "greyness": 0.02995121833099525,
+      "change": 0.050000000000000044,
+      "topology_change_frac": 0.00309,
+      "criteria": {
+        "max_density_change": 0.05,
+        "objective_rel_change": 0.29653594,
+        "volume_error_frac": 4.1e-05,
+        "topology_change_frac": 0.003089
+      }
+    },
+    {
+      "iter": 68,
+      "penal": 3.0,
+      "beta": 16.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.8537357242799555,
+      "compliance_per_case_Nmm": [
+        537998.714,
+        8.409,
+        121.5263,
+        14.1766,
+        54.1824,
+        0.3975
+      ],
+      "normalised_per_case": [
+        2.6596,
+        0.8849,
+        0.9101,
+        0.9652,
+        0.623,
+        0.8108
+      ],
+      "volume_fraction_free": 0.10000005384472542,
+      "greyness": 0.040950053431075904,
+      "change": 0.050000000000000044,
+      "topology_change_frac": 0.00415,
+      "criteria": {
+        "max_density_change": 0.05,
+        "objective_rel_change": 0.25240552,
+        "volume_error_frac": 1e-06,
+        "topology_change_frac": 0.004155
+      }
+    },
+    {
+      "iter": 69,
+      "penal": 3.0,
+      "beta": 16.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.6043226408870925,
+      "compliance_per_case_Nmm": [
+        419165.801,
+        9.3636,
+        128.5204,
+        15.8552,
+        59.6811,
+        0.4013
+      ],
+      "normalised_per_case": [
+        2.0722,
+        0.9854,
+        0.9625,
+        1.0795,
+        0.6863,
+        0.8185
+      ],
+      "volume_fraction_free": 0.10000766094954995,
+      "greyness": 0.06579569978147874,
+      "change": 0.050000000000000044,
+      "topology_change_frac": 0.00692,
+      "criteria": {
+        "max_density_change": 0.05,
+        "objective_rel_change": 0.03639082,
+        "volume_error_frac": 7.7e-05,
+        "topology_change_frac": 0.006925
+      }
+    },
+    {
+      "iter": 70,
+      "penal": 3.0,
+      "beta": 16.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.370411948883003,
+      "compliance_per_case_Nmm": [
+        406405.2485,
+        8.9071,
+        124.3996,
+        15.0108,
+        56.855,
+        0.4003
+      ],
+      "normalised_per_case": [
+        2.0091,
+        0.9373,
+        0.9317,
+        1.022,
+        0.6538,
+        0.8165
+      ],
+      "volume_fraction_free": 0.10000542140317915,
+      "greyness": 0.05598418363246824,
+      "change": 0.050000000000000044,
+      "topology_change_frac": 0.00601,
+      "criteria": {
+        "max_density_change": 0.05,
+        "objective_rel_change": 0.03541782,
+        "volume_error_frac": 5.4e-05,
+        "topology_change_frac": 0.006012
+      }
+    },
+    {
+      "iter": 71,
+      "penal": 3.0,
+      "beta": 16.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.595934183462706,
+      "compliance_per_case_Nmm": [
+        398121.0565,
+        9.6221,
+        128.7424,
+        16.6833,
+        60.3283,
+        0.4027
+      ],
+      "normalised_per_case": [
+        1.9681,
+        1.0126,
+        0.9642,
+        1.1359,
+        0.6937,
+        0.8214
+      ],
+      "volume_fraction_free": 0.10000480238234902,
+      "greyness": 0.0748875263546976,
+      "change": 0.050000000000000044,
+      "topology_change_frac": 0.00646,
+      "criteria": {
+        "max_density_change": 0.05,
+        "objective_rel_change": 0.03540152,
+        "volume_error_frac": 4.8e-05,
+        "topology_change_frac": 0.006463
+      }
+    },
+    {
+      "iter": 72,
+      "penal": 3.0,
+      "beta": 16.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.333470587592865,
+      "compliance_per_case_Nmm": [
+        406022.0864,
+        8.8151,
+        123.7495,
+        14.8772,
+        55.8485,
+        0.4004
+      ],
+      "normalised_per_case": [
+        2.0072,
+        0.9276,
+        0.9268,
+        1.0129,
+        0.6422,
+        0.8167
+      ],
+      "volume_fraction_free": 0.09999933644953761,
+      "greyness": 0.05475675852261026,
+      "change": 0.050000000000000044,
+      "topology_change_frac": 0.00574,
+      "criteria": {
+        "max_density_change": 0.05,
+        "objective_rel_change": 0.03979172,
+        "volume_error_frac": 7e-06,
+        "topology_change_frac": 0.005738
+      }
+    },
+    {
+      "iter": 73,
+      "penal": 3.0,
+      "beta": 16.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.5568229969218095,
+      "compliance_per_case_Nmm": [
+        390677.5482,
+        9.6047,
+        128.5865,
+        16.6682,
+        60.4812,
+        0.4027
+      ],
+      "normalised_per_case": [
+        1.9314,
+        1.0107,
+        0.963,
+        1.1349,
+        0.6955,
+        0.8214
+      ],
+      "volume_fraction_free": 0.10000634874655566,
+      "greyness": 0.07540358400228551,
+      "change": 0.050000000000000044,
+      "topology_change_frac": 0.00608,
+      "criteria": {
+        "max_density_change": 0.05,
+        "objective_rel_change": 0.03526541,
+        "volume_error_frac": 6.3e-05,
+        "topology_change_frac": 0.006078
+      }
+    },
+    {
+      "iter": 74,
+      "penal": 3.0,
+      "beta": 16.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.2921537989774725,
+      "compliance_per_case_Nmm": [
+        397695.1679,
+        8.8055,
+        123.8287,
+        14.8602,
+        55.9556,
+        0.4005
+      ],
+      "normalised_per_case": [
+        1.966,
+        0.9266,
+        0.9274,
+        1.0118,
+        0.6434,
+        0.8169
+      ],
+      "volume_fraction_free": 0.09999765277565428,
+      "greyness": 0.05388180188549179,
+      "change": 0.050000000000000044,
+      "topology_change_frac": 0.00564,
+      "criteria": {
+        "max_density_change": 0.05,
+        "objective_rel_change": 0.04036546,
+        "volume_error_frac": 2.3e-05,
+        "topology_change_frac": 0.005639
+      }
+    },
+    {
+      "iter": 75,
+      "penal": 3.0,
+      "beta": 16.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.514946215442062,
+      "compliance_per_case_Nmm": [
+        389173.9475,
+        9.5051,
+        127.7634,
+        16.4849,
+        60.0905,
+        0.4023
+      ],
+      "normalised_per_case": [
+        1.9239,
+        1.0003,
+        0.9568,
+        1.1224,
+        0.691,
+        0.8206
+      ],
+      "volume_fraction_free": 0.1000009865781876,
+      "greyness": 0.07397223094091294,
+      "change": 0.050000000000000044,
+      "topology_change_frac": 0.0053,
+      "criteria": {
+        "max_density_change": 0.05,
+        "objective_rel_change": 0.03540797,
+        "volume_error_frac": 1e-05,
+        "topology_change_frac": 0.005298
+      }
+    },
+    {
+      "iter": 76,
+      "penal": 3.0,
+      "beta": 16.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.265126581765167,
+      "compliance_per_case_Nmm": [
+        394828.7277,
+        8.7676,
+        123.4958,
+        14.8033,
+        55.775,
+        0.4003
+      ],
+      "normalised_per_case": [
+        1.9519,
+        0.9226,
+        0.9249,
+        1.0079,
+        0.6414,
+        0.8165
+      ],
+      "volume_fraction_free": 0.09999660270158117,
+      "greyness": 0.05286188614024897,
+      "change": 0.050000000000000044,
+      "topology_change_frac": 0.00508,
+      "criteria": {
+        "max_density_change": 0.05,
+        "objective_rel_change": 0.03834562,
+        "volume_error_frac": 3.4e-05,
+        "topology_change_frac": 0.005078
+      }
+    },
+    {
+      "iter": 77,
+      "penal": 3.0,
+      "beta": 16.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.5115100908300425,
+      "compliance_per_case_Nmm": [
+        388768.0564,
+        9.5114,
+        127.649,
+        16.4647,
+        60.1008,
+        0.4023
+      ],
+      "normalised_per_case": [
+        1.9219,
+        1.0009,
+        0.956,
+        1.121,
+        0.6911,
+        0.8206
+      ],
+      "volume_fraction_free": 0.09999812303228683,
+      "greyness": 0.07431169233553178,
+      "change": 0.050000000000000044,
+      "topology_change_frac": 0.00518,
+      "criteria": {
+        "max_density_change": 0.05,
+        "objective_rel_change": 0.03932618,
+        "volume_error_frac": 1.9e-05,
+        "topology_change_frac": 0.005177
+      }
+    },
+    {
+      "iter": 78,
+      "penal": 3.0,
+      "beta": 16.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.252322884707439,
+      "compliance_per_case_Nmm": [
+        392891.6731,
+        8.7622,
+        123.3342,
+        14.7906,
+        55.7282,
+        0.4003
+      ],
+      "normalised_per_case": [
+        1.9423,
+        0.9221,
+        0.9237,
+        1.007,
+        0.6408,
+        0.8164
+      ],
+      "volume_fraction_free": 0.09999613390582901,
+      "greyness": 0.052733348698107724,
+      "change": 0.050000000000000044,
+      "topology_change_frac": 0.00502,
+      "criteria": {
+        "max_density_change": 0.05,
+        "objective_rel_change": 0.03980447,
+        "volume_error_frac": 3.9e-05,
+        "topology_change_frac": 0.005023
+      }
+    },
+    {
+      "iter": 79,
+      "penal": 3.0,
+      "beta": 16.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.491562976228785,
+      "compliance_per_case_Nmm": [
+        387330.0531,
+        9.4817,
+        127.3159,
+        16.3996,
+        59.8822,
+        0.4022
+      ],
+      "normalised_per_case": [
+        1.9148,
+        0.9978,
+        0.9535,
+        1.1166,
+        0.6886,
+        0.8203
+      ],
+      "volume_fraction_free": 0.09999912542747391,
+      "greyness": 0.07352337783199818,
+      "change": 0.050000000000000044,
+      "topology_change_frac": 0.00483,
+      "criteria": {
+        "max_density_change": 0.05,
+        "objective_rel_change": 0.03826419,
+        "volume_error_frac": 9e-06,
+        "topology_change_frac": 0.004825
+      }
+    },
+    {
+      "iter": 80,
+      "penal": 3.0,
+      "beta": 16.0,
+      "overhang_alpha": 1.0,
+      "objective": 6.241115796565538,
+      "compliance_per_case_Nmm": [
+        391380.8198,
+        8.7547,
+        123.209,
+        14.776,
+        55.6478,
+        0.4002
+      ],
+      "normalised_per_case": [
+        1.9348,
+        0.9213,
+        0.9227,
+        1.006,
+        0.6399,
+        0.8163
+      ],
+      "volume_fraction_free": 0.09999537207897115,
+      "greyness": 0.05230251663963196,
+      "change": 0.050000000000000044,
+      "topology_change_frac": 0.00487,
+      "criteria": {
+        "max_density_change": 0.05,
+        "objective_rel_change": 0.03858041,
+        "volume_error_frac": 4.6e-05,
+        "topology_change_frac": 0.004869
+      }
+    }
+  ],
+  "final_stl_triangles": 41888,
+  "final_smooth_stl_triangles": 36856,
+  "final_step": {
+    "faces": 6150,
+    "vertices": 7926,
+    "edges": 14216,
+    "entities": 120868,
+    "voxel_faces_before_merge": 20944,
+    "open_edges": 0,
+    "non_manifold_edges": 120,
+    "misoriented_edges": 0,
+    "closed_shell": false
+  },
+  "final_fea": [
+    {
+      "error": "linalg.cholesky: The factorization could not be completed because the input is not positive-definite (the leading minor of order 757 is not positive-definite)."
+    }
+  ],
+  "extracted_members": {
+    "prismatic_axis": null,
+    "prismatic_iou": 0.181,
+    "level": 0.5,
+    "members": [],
+    "note": "structure is not prismatic; 895 skeleton voxels reported as a point cloud rather than clean members. Slice the domain or add symmetry to get a cleaner result.",
+    "skeleton_points_mm": [
+      [
+        -79.39,
+        -19.5,
+        29.5
+      ],
+      [
+        -79.39,
+        -7.5,
+        95.5
+      ],
+      [
+        -79.39,
+        -7.5,
+        101.5
+      ],
+      [
+        -79.39,
+        -7.5,
+        107.5
+      ],
+      [
+        -79.39,
+        -4.5,
+        182.5
+      ],
+      [
+        -79.39,
+        4.5,
+        44.5
+      ],
+      [
+        -76.39,
+        -25.5,
+        95.5
+      ],
+      [
+        -76.39,
+        -16.5,
+        29.5
+      ],
+      [
+        -76.39,
+        -7.5,
+        35.5
+      ],
+      [
+        -76.39,
+        -7.5,
+        110.5
+      ],
+      [
+        -76.39,
+        -4.5,
+        38.5
+      ],
+      [
+        -76.39,
+        -1.5,
+        182.5
+      ],
+      [
+        -76.39,
+        4.5,
+        119.5
+      ],
+      [
+        -76.39,
+        7.5,
+        77.5
+      ],
+      [
+        -73.39,
+        -67.5,
+        -3.5
+      ],
+      [
+        -73.39,
+        -25.5,
+        26.5
+      ],
+      [
+        -73.39,
+        -4.5,
+        86.5
+      ],
+      [
+        -73.39,
+        -4.5,
+        191.5
+      ],
+      [
+        -73.39,
+        1.5,
+        116.5
+      ],
+      [
+        -73.39,
+        4.5,
+        179.5
+      ],
+      [
+        -73.39,
+        10.5,
+        23.5
+      ],
+      [
+        -73.39,
+        10.5,
+        29.5
+      ],
+      [
+        -73.39,
+        10.5,
+        35.5
+      ],
+      [
+        -73.39,
+        10.5,
+        41.5
+      ],
+      [
+        -73.39,
+        10.5,
+        50.5
+      ],
+      [
+        -73.39,
+        10.5,
+        56.5
+      ],
+      [
+        -73.39,
+        10.5,
+        62.5
+      ],
+      [
+        -73.39,
+        10.5,
+        68.5
+      ],
+      [
+        -73.39,
+        10.5,
+        74.5
+      ],
+      [
+        -73.39,
+        10.5,
+        128.5
+      ],
+      [
+        -73.39,
+        10.5,
+        134.5
+      ],
+      [
+        -73.39,
+        10.5,
+        140.5
+      ],
+      [
+        -73.39,
+        10.5,
+        146.5
+      ],
+      [
+        -73.39,
+        10.5,
+        152.5
+      ],
+      [
+        -73.39,
+        10.5,
+        158.5
+      ],
+      [
+        -73.39,
+        10.5,
+        164.5
+      ],
+      [
+        -73.39,
+        10.5,
+        170.5
+      ],
+      [
+        -73.39,
+        10.5,
+        176.5
+      ],
+      [
+        -70.39,
+        -22.5,
+        26.5
+      ],
+      [
+        -70.39,
+        -4.5,
+        194.5
+      ],
+      [
+        -70.39,
+        1.5,
+        83.5
+      ],
+      [
+        -70.39,
+        7.5,
+        20.5
+      ],
+      [
+        -67.39,
+        -22.5,
+        26.5
+      ],
+      [
+        -67.39,
+        -7.5,
+        110.5
+      ],
+      [
+        -67.39,
+        -7.5,
+        206.5
+      ],
+      [
+        -67.39,
+        -4.5,
+        194.5
+      ],
+      [
+        -67.39,
+        1.5,
+        14.5
+      ],
+      [
+        -64.39,
+        -22.5,
+        23.5
+      ],
+      [
+        -64.39,
+        -7.5,
+        197.5
+      ],
+      [
+        -64.39,
+        -4.5,
+        11.5
+      ],
+      [
+        -64.39,
+        -4.5,
+        110.5
+      ],
+      [
+        -61.39,
+        -19.5,
+        8.5
+      ],
+      [
+        -61.39,
+        -19.5,
+        20.5
+      ],
+      [
+        -61.39,
+        -16.5,
+        11.5
+      ],
+      [
+        -61.39,
+        -16.5,
+        101.5
+      ],
+      [
+        -61.39,
+        -13.5,
+        5.5
+      ],
+      [
+        -61.39,
+        -10.5,
+        8.5
+      ],
+      [
+        -61.39,
+        -10.5,
+        101.5
+      ],
+      [
+        -61.39,
+        -7.5,
+        92.5
+      ],
+      [
+        -61.39,
+        -7.5,
+        104.5
+      ],
+      [
+        -58.39,
+        -103.5,
+        101.5
+      ],
+      [
+        -58.39,
+        -91.5,
+        134.5
+      ],
+      [
+        -58.39,
+        -85.5,
+        134.5
+      ],
+      [
+        -58.39,
+        -79.5,
+        149.5
+      ],
+      [
+        -58.39,
+        -52.5,
+        134.5
+      ],
+      [
+        -58.39,
+        -28.5,
+        8.5
+      ],
+      [
+        -58.39,
+        -22.5,
+        8.5
+      ],
+      [
+        -58.39,
+        -22.5,
+        206.5
+      ],
+      [
+        -58.39,
+        -19.5,
+        209.5
+      ],
+      [
+        -55.39,
+        -76.5,
+        143.5
+      ],
+      [
+        -55.39,
+        -28.5,
+        101.5
+      ],
+      [
+        -55.39,
+        -25.5,
+        101.5
+      ],
+      [
+        -55.39,
+        -22.5,
+        74.5
+      ],
+      [
+        -52.39,
+        -103.5,
+        95.5
+      ],
+      [
+        -52.39,
+        -34.5,
+        8.5
+      ],
+      [
+        -52.39,
+        -31.5,
+        206.5
+      ],
+      [
+        -49.39,
+        -100.5,
+        11.5
+      ],
+      [
+        -49.39,
+        -97.5,
+        14.5
+      ],
+      [
+        -49.39,
+        -37.5,
+        101.5
+      ],
+      [
+        -49.39,
+        -34.5,
+        101.5
+      ],
+      [
+        -49.39,
+        -31.5,
+        74.5
+      ],
+      [
+        -46.39,
+        -43.5,
+        8.5
+      ],
+      [
+        -46.39,
+        -40.5,
+        101.5
+      ],
+      [
+        -46.39,
+        -40.5,
+        206.5
+      ],
+      [
+        -43.39,
+        -88.5,
+        44.5
+      ],
+      [
+        -43.39,
+        -88.5,
+        83.5
+      ],
+      [
+        -43.39,
+        -88.5,
+        113.5
+      ],
+      [
+        -43.39,
+        -85.5,
+        110.5
+      ],
+      [
+        -43.39,
+        -82.5,
+        107.5
+      ],
+      [
+        -43.39,
+        -79.5,
+        104.5
+      ],
+      [
+        -43.39,
+        -76.5,
+        101.5
+      ],
+      [
+        -43.39,
+        -73.5,
+        101.5
+      ],
+      [
+        -43.39,
+        -70.5,
+        104.5
+      ],
+      [
+        -43.39,
+        -67.5,
+        107.5
+      ],
+      [
+        -43.39,
+        -64.5,
+        98.5
+      ],
+      [
+        -43.39,
+        -61.5,
+        86.5
+      ],
+      [
+        -43.39,
+        -58.5,
+        83.5
+      ],
+      [
+        -43.39,
+        -58.5,
+        116.5
+      ],
+      [
+        -43.39,
+        -52.5,
+        26.5
+      ],
+      [
+        -43.39,
+        -49.5,
+        137.5
+      ],
+      [
+        -43.39,
+        -46.5,
+        11.5
+      ],
+      [
+        -43.39,
+        -46.5,
+        17.5
+      ],
+      [
+        -43.39,
+        -43.5,
+        206.5
+      ],
+      [
+        -43.39,
+        -7.5,
+        200.5
+      ],
+      [
+        -40.39,
+        -91.5,
+        77.5
+      ],
+      [
+        -40.39,
+        -67.5,
+        92.5
+      ],
+      [
+        -40.39,
+        -55.5,
+        80.5
+      ],
+      [
+        -40.39,
+        -52.5,
+        23.5
+      ],
+      [
+        -40.39,
+        -49.5,
+        101.5
+      ],
+      [
+        -40.39,
+        -46.5,
+        101.5
+      ],
+      [
+        -37.39,
+        -94.5,
+        119.5
+      ],
+      [
+        -37.39,
+        -91.5,
+        107.5
+      ],
+      [
+        -37.39,
+        -61.5,
+        95.5
+      ],
+      [
+        -37.39,
+        -55.5,
+        80.5
+      ],
+      [
+        -37.39,
+        -49.5,
+        8.5
+      ],
+      [
+        -37.39,
+        -46.5,
+        203.5
+      ],
+      [
+        -34.39,
+        -91.5,
+        71.5
+      ],
+      [
+        -34.39,
+        -79.5,
+        53.5
+      ],
+      [
+        -34.39,
+        -58.5,
+        29.5
+      ],
+      [
+        -34.39,
+        -55.5,
+        80.5
+      ],
+      [
+        -34.39,
+        -49.5,
+        5.5
+      ],
+      [
+        -34.39,
+        -49.5,
+        203.5
+      ],
+      [
+        -31.39,
+        -91.5,
+        68.5
+      ],
+      [
+        -31.39,
+        -82.5,
+        164.5
+      ],
+      [
+        -31.39,
+        -79.5,
+        167.5
+      ],
+      [
+        -31.39,
+        -76.5,
+        170.5
+      ],
+      [
+        -31.39,
+        -73.5,
+        92.5
+      ],
+      [
+        -31.39,
+        -64.5,
+        188.5
+      ],
+      [
+        -31.39,
+        -55.5,
+        101.5
+      ],
+      [
+        -31.39,
+        -52.5,
+        101.5
+      ],
+      [
+        -31.39,
+        -52.5,
+        203.5
+      ],
+      [
+        -28.39,
+        -91.5,
+        65.5
+      ],
+      [
+        -28.39,
+        -88.5,
+        161.5
+      ],
+      [
+        -28.39,
+        -85.5,
+        164.5
+      ],
+      [
+        -28.39,
+        -82.5,
+        89.5
+      ],
+      [
+        -28.39,
+        -79.5,
+        47.5
+      ],
+      [
+        -28.39,
+        -76.5,
+        38.5
+      ],
+      [
+        -28.39,
+        -70.5,
+        182.5
+      ],
+      [
+        -28.39,
+        -64.5,
+        32.5
+      ],
+      [
+        -28.39,
+        -55.5,
+        -0.5
+      ],
+      [
+        -28.39,
+        -52.5,
+        101.5
+      ],
+      [
+        -25.39,
+        -97.5,
+        110.5
+      ],
+      [
+        -25.39,
+        -94.5,
+        68.5
+      ],
+      [
+        -25.39,
+        -94.5,
+        74.5
+      ],
+      [
+        -25.39,
+        -94.5,
+        80.5
+      ],
+      [
+        -25.39,
+        -94.5,
+        86.5
+      ],
+      [
+        -25.39,
+        -94.5,
+        95.5
+      ],
+      [
+        -25.39,
+        -94.5,
+        104.5
+      ],
+      [
+        -25.39,
+        -94.5,
+        125.5
+      ],
+      [
+        -25.39,
+        -91.5,
+        158.5
+      ],
+      [
+        -25.39,
+        -85.5,
+        89.5
+      ],
+      [
+        -25.39,
+        -73.5,
+        41.5
+      ],
+      [
+        -25.39,
+        -61.5,
+        194.5
+      ],
+      [
+        -25.39,
+        -55.5,
+        -0.5
+      ],
+      [
+        -25.39,
+        -55.5,
+        200.5
+      ],
+      [
+        -22.39,
+        -97.5,
+        119.5
+      ],
+      [
+        -22.39,
+        -94.5,
+        128.5
+      ],
+      [
+        -22.39,
+        -91.5,
+        35.5
+      ],
+      [
+        -22.39,
+        -91.5,
+        41.5
+      ],
+      [
+        -22.39,
+        -91.5,
+        47.5
+      ],
+      [
+        -22.39,
+        -91.5,
+        98.5
+      ],
+      [
+        -22.39,
+        -88.5,
+        89.5
+      ],
+      [
+        -22.39,
+        -61.5,
+        197.5
+      ],
+      [
+        -22.39,
+        -55.5,
+        101.5
+      ],
+      [
+        -19.39,
+        -103.5,
+        212.5
+      ],
+      [
+        -19.39,
+        -97.5,
+        131.5
+      ],
+      [
+        -19.39,
+        -91.5,
+        98.5
+      ],
+      [
+        -19.39,
+        -88.5,
+        26.5
+      ],
+      [
+        -19.39,
+        -76.5,
+        41.5
+      ],
+      [
+        -19.39,
+        -64.5,
+        194.5
+      ],
+      [
+        -19.39,
+        -58.5,
+        173.5
+      ],
+      [
+        -16.39,
+        -100.5,
+        134.5
+      ],
+      [
+        -16.39,
+        -97.5,
+        215.5
+      ],
+      [
+        -16.39,
+        -91.5,
+        155.5
+      ],
+      [
+        -16.39,
+        -88.5,
+        53.5
+      ],
+      [
+        -16.39,
+        -85.5,
+        47.5
+      ],
+      [
+        -16.39,
+        -67.5,
+        194.5
+      ],
+      [
+        -16.39,
+        -61.5,
+        197.5
+      ],
+      [
+        -16.39,
+        -58.5,
+        101.5
+      ],
+      [
+        -16.39,
+        -58.5,
+        179.5
+      ],
+      [
+        -13.39,
+        -100.5,
+        137.5
+      ],
+      [
+        -13.39,
+        -91.5,
+        98.5
+      ],
+      [
+        -13.39,
+        -88.5,
+        26.5
+      ],
+      [
+        -13.39,
+        -79.5,
+        185.5
+      ],
+      [
+        -13.39,
+        -73.5,
+        191.5
+      ],
+      [
+        -13.39,
+        -64.5,
+        197.5
+      ],
+      [
+        -13.39,
+        -58.5,
+        -3.5
+      ],
+      [
+        -13.39,
+        -58.5,
+        203.5
+      ],
+      [
+        -10.39,
+        -94.5,
+        155.5
+      ],
+      [
+        -10.39,
+        -91.5,
+        215.5
+      ],
+      [
+        -10.39,
+        -82.5,
+        47.5
+      ],
+      [
+        -10.39,
+        -67.5,
+        197.5
+      ],
+      [
+        -10.39,
+        -61.5,
+        -3.5
+      ],
+      [
+        -10.39,
+        -58.5,
+        206.5
+      ],
+      [
+        -7.39,
+        -100.5,
+        146.5
+      ],
+      [
+        -7.39,
+        -94.5,
+        161.5
+      ],
+      [
+        -7.39,
+        -94.5,
+        167.5
+      ],
+      [
+        -7.39,
+        -88.5,
+        98.5
+      ],
+      [
+        -7.39,
+        -88.5,
+        215.5
+      ],
+      [
+        -7.39,
+        -82.5,
+        20.5
+      ],
+      [
+        -7.39,
+        -67.5,
+        197.5
+      ],
+      [
+        -7.39,
+        -64.5,
+        215.5
+      ],
+      [
+        -7.39,
+        -61.5,
+        209.5
+      ],
+      [
+        -7.39,
+        -58.5,
+        101.5
+      ],
+      [
+        -4.39,
+        -103.5,
+        143.5
+      ],
+      [
+        -4.39,
+        -94.5,
+        152.5
+      ],
+      [
+        -4.39,
+        -94.5,
+        158.5
+      ],
+      [
+        -4.39,
+        -94.5,
+        173.5
+      ],
+      [
+        -4.39,
+        -85.5,
+        215.5
+      ],
+      [
+        -4.39,
+        -79.5,
+        17.5
+      ],
+      [
+        -4.39,
+        -76.5,
+        83.5
+      ],
+      [
+        -4.39,
+        -67.5,
+        197.5
+      ],
+      [
+        -4.39,
+        -61.5,
+        -6.5
+      ],
+      [
+        -1.39,
+        -103.5,
+        140.5
+      ],
+      [
+        -1.39,
+        -91.5,
+        176.5
+      ],
+      [
+        -1.39,
+        -79.5,
+        47.5
+      ],
+      [
+        -1.39,
+        -76.5,
+        14.5
+      ],
+      [
+        -1.39,
+        -73.5,
+        215.5
+      ],
+      [
+        -1.39,
+        -70.5,
+        101.5
+      ],
+      [
+        -1.39,
+        -67.5,
+        98.5
+      ],
+      [
+        -1.39,
+        -67.5,
+        197.5
+      ],
+      [
+        -1.39,
+        -64.5,
+        104.5
+      ],
+      [
+        -1.39,
+        -61.5,
+        98.5
+      ],
+      [
+        -1.39,
+        -58.5,
+        101.5
+      ],
+      [
+        1.61,
+        -94.5,
+        158.5
+      ],
+      [
+        1.61,
+        -79.5,
+        44.5
+      ],
+      [
+        1.61,
+        -79.5,
+        215.5
+      ],
+      [
+        1.61,
+        -76.5,
+        215.5
+      ],
+      [
+        1.61,
+        -70.5,
+        194.5
+      ],
+      [
+        1.61,
+        -58.5,
+        71.5
+      ],
+      [
+        4.61,
+        -103.5,
+        131.5
+      ],
+      [
+        4.61,
+        -94.5,
+        158.5
+      ],
+      [
+        4.61,
+        -85.5,
+        98.5
+      ],
+      [
+        4.61,
+        -82.5,
+        215.5
+      ],
+      [
+        4.61,
+        -73.5,
+        14.5
+      ],
+      [
+        4.61,
+        -73.5,
+        215.5
+      ],
+      [
+        4.61,
+        -58.5,
+        74.5
+      ],
+      [
+        7.61,
+        -103.5,
+        125.5
+      ],
+      [
+        7.61,
+        -94.5,
+        155.5
+      ],
+      [
+        7.61,
+        -88.5,
+        179.5
+      ],
+      [
+        7.61,
+        -82.5,
+        47.5
+      ],
+      [
+        7.61,
+        -73.5,
+        191.5
+      ],
+      [
+        7.61,
+        -67.5,
+        215.5
+      ],
+      [
+        7.61,
+        -58.5,
+        74.5
+      ],
+      [
+        10.61,
+        -100.5,
+        110.5
+      ],
+      [
+        10.61,
+        -100.5,
+        116.5
+      ],
+      [
+        10.61,
+        -100.5,
+        122.5
+      ],
+      [
+        10.61,
+        -97.5,
+        83.5
+      ],
+      [
+        10.61,
+        -97.5,
+        92.5
+      ],
+      [
+        10.61,
+        -97.5,
+        101.5
+      ],
+      [
+        10.61,
+        -97.5,
+        107.5
+      ],
+      [
+        10.61,
+        -94.5,
+        29.5
+      ],
+      [
+        10.61,
+        -94.5,
+        77.5
+      ],
+      [
+        10.61,
+        -94.5,
+        86.5
+      ],
+      [
+        10.61,
+        -94.5,
+        107.5
+      ],
+      [
+        10.61,
+        -94.5,
+        173.5
+      ],
+      [
+        10.61,
+        -91.5,
+        95.5
+      ],
+      [
+        10.61,
+        -88.5,
+        215.5
+      ],
+      [
+        10.61,
+        -85.5,
+        182.5
+      ],
+      [
+        10.61,
+        -79.5,
+        17.5
+      ],
+      [
+        10.61,
+        -76.5,
+        188.5
+      ],
+      [
+        10.61,
+        -64.5,
+        215.5
+      ],
+      [
+        10.61,
+        -58.5,
+        77.5
+      ],
+      [
+        10.61,
+        -58.5,
+        176.5
+      ],
+      [
+        13.61,
+        -91.5,
+        26.5
+      ],
+      [
+        13.61,
+        -91.5,
+        35.5
+      ],
+      [
+        13.61,
+        -91.5,
+        44.5
+      ],
+      [
+        13.61,
+        -91.5,
+        53.5
+      ],
+      [
+        13.61,
+        -91.5,
+        59.5
+      ],
+      [
+        13.61,
+        -91.5,
+        68.5
+      ],
+      [
+        13.61,
+        -91.5,
+        107.5
+      ],
+      [
+        13.61,
+        -91.5,
+        170.5
+      ],
+      [
+        13.61,
+        -88.5,
+        23.5
+      ],
+      [
+        13.61,
+        -85.5,
+        20.5
+      ],
+      [
+        13.61,
+        -79.5,
+        44.5
+      ],
+      [
+        13.61,
+        -76.5,
+        17.5
+      ],
+      [
+        13.61,
+        -67.5,
+        197.5
+      ],
+      [
+        13.61,
+        -61.5,
+        212.5
+      ],
+      [
+        13.61,
+        -58.5,
+        182.5
+      ],
+      [
+        16.61,
+        -91.5,
+        41.5
+      ],
+      [
+        16.61,
+        -91.5,
+        86.5
+      ],
+      [
+        16.61,
+        -91.5,
+        161.5
+      ],
+      [
+        16.61,
+        -91.5,
+        167.5
+      ],
+      [
+        16.61,
+        -76.5,
+        44.5
+      ],
+      [
+        16.61,
+        -70.5,
+        11.5
+      ],
+      [
+        16.61,
+        -61.5,
+        200.5
+      ],
+      [
+        16.61,
+        -58.5,
+        -6.5
+      ],
+      [
+        16.61,
+        -58.5,
+        185.5
+      ],
+      [
+        19.61,
+        -106.5,
+        212.5
+      ],
+      [
+        19.61,
+        -100.5,
+        215.5
+      ],
+      [
+        19.61,
+        -91.5,
+        62.5
+      ],
+      [
+        19.61,
+        -91.5,
+        107.5
+      ],
+      [
+        19.61,
+        -91.5,
+        173.5
+      ],
+      [
+        19.61,
+        -76.5,
+        185.5
+      ],
+      [
+        19.61,
+        -67.5,
+        8.5
+      ],
+      [
+        19.61,
+        -58.5,
+        206.5
+      ],
+      [
+        19.61,
+        -55.5,
+        182.5
+      ],
+      [
+        22.61,
+        -91.5,
+        155.5
+      ],
+      [
+        22.61,
+        -91.5,
+        179.5
+      ],
+      [
+        22.61,
+        -88.5,
+        86.5
+      ],
+      [
+        22.61,
+        -73.5,
+        188.5
+      ],
+      [
+        22.61,
+        -64.5,
+        8.5
+      ],
+      [
+        22.61,
+        -58.5,
+        -3.5
+      ],
+      [
+        22.61,
+        -55.5,
+        203.5
+      ],
+      [
+        25.61,
+        -91.5,
+        161.5
+      ],
+      [
+        25.61,
+        -88.5,
+        86.5
+      ],
+      [
+        25.61,
+        -88.5,
+        179.5
+      ],
+      [
+        25.61,
+        -70.5,
+        188.5
+      ],
+      [
+        25.61,
+        -64.5,
+        32.5
+      ],
+      [
+        25.61,
+        -55.5,
+        -3.5
+      ],
+      [
+        25.61,
+        -55.5,
+        65.5
+      ],
+      [
+        25.61,
+        -55.5,
+        203.5
+      ],
+      [
+        28.61,
+        -94.5,
+        143.5
+      ],
+      [
+        28.61,
+        -91.5,
+        65.5
+      ],
+      [
+        28.61,
+        -88.5,
+        86.5
+      ],
+      [
+        28.61,
+        -85.5,
+        86.5
+      ],
+      [
+        28.61,
+        -85.5,
+        176.5
+      ],
+      [
+        28.61,
+        -82.5,
+        107.5
+      ],
+      [
+        28.61,
+        -82.5,
+        176.5
+      ],
+      [
+        28.61,
+        -70.5,
+        185.5
+      ],
+      [
+        28.61,
+        -58.5,
+        2.5
+      ],
+      [
+        28.61,
+        -52.5,
+        -3.5
+      ],
+      [
+        31.61,
+        -94.5,
+        -12.5
+      ],
+      [
+        31.61,
+        -94.5,
+        140.5
+      ],
+      [
+        31.61,
+        -91.5,
+        83.5
+      ],
+      [
+        31.61,
+        -79.5,
+        89.5
+      ],
+      [
+        31.61,
+        -79.5,
+        167.5
+      ],
+      [
+        31.61,
+        -70.5,
+        182.5
+      ],
+      [
+        31.61,
+        -58.5,
+        29.5
+      ],
+      [
+        31.61,
+        -52.5,
+        -0.5
+      ],
+      [
+        31.61,
+        -52.5,
+        149.5
+      ],
+      [
+        31.61,
+        -52.5,
+        200.5
+      ],
+      [
+        34.61,
+        -94.5,
+        119.5
+      ],
+      [
+        34.61,
+        -94.5,
+        134.5
+      ],
+      [
+        34.61,
+        -76.5,
+        89.5
+      ],
+      [
+        34.61,
+        -73.5,
+        173.5
+      ],
+      [
+        34.61,
+        -67.5,
+        179.5
+      ],
+      [
+        34.61,
+        -55.5,
+        26.5
+      ],
+      [
+        34.61,
+        -55.5,
+        119.5
+      ],
+      [
+        34.61,
+        -52.5,
+        197.5
+      ],
+      [
+        37.61,
+        -94.5,
+        80.5
+      ],
+      [
+        37.61,
+        -94.5,
+        125.5
+      ],
+      [
+        37.61,
+        -91.5,
+        53.5
+      ],
+      [
+        37.61,
+        -76.5,
+        110.5
+      ],
+      [
+        37.61,
+        -67.5,
+        176.5
+      ],
+      [
+        37.61,
+        -55.5,
+        80.5
+      ],
+      [
+        37.61,
+        -52.5,
+        23.5
+      ],
+      [
+        37.61,
+        -49.5,
+        197.5
+      ],
+      [
+        40.61,
+        -94.5,
+        119.5
+      ],
+      [
+        40.61,
+        -91.5,
+        80.5
+      ],
+      [
+        40.61,
+        -88.5,
+        83.5
+      ],
+      [
+        40.61,
+        -85.5,
+        86.5
+      ],
+      [
+        40.61,
+        -82.5,
+        89.5
+      ],
+      [
+        40.61,
+        -79.5,
+        92.5
+      ],
+      [
+        40.61,
+        -79.5,
+        104.5
+      ],
+      [
+        40.61,
+        -76.5,
+        104.5
+      ],
+      [
+        40.61,
+        -73.5,
+        101.5
+      ],
+      [
+        40.61,
+        -70.5,
+        98.5
+      ],
+      [
+        40.61,
+        -70.5,
+        107.5
+      ],
+      [
+        40.61,
+        -67.5,
+        98.5
+      ],
+      [
+        40.61,
+        -67.5,
+        110.5
+      ],
+      [
+        40.61,
+        -64.5,
+        98.5
+      ],
+      [
+        40.61,
+        -64.5,
+        113.5
+      ],
+      [
+        40.61,
+        -64.5,
+        173.5
+      ],
+      [
+        40.61,
+        -61.5,
+        98.5
+      ],
+      [
+        40.61,
+        -61.5,
+        176.5
+      ],
+      [
+        40.61,
+        -58.5,
+        98.5
+      ],
+      [
+        40.61,
+        -55.5,
+        101.5
+      ],
+      [
+        40.61,
+        -49.5,
+        8.5
+      ],
+      [
+        40.61,
+        -49.5,
+        101.5
+      ],
+      [
+        40.61,
+        -46.5,
+        101.5
+      ],
+      [
+        43.61,
+        -94.5,
+        2.5
+      ],
+      [
+        43.61,
+        -61.5,
+        122.5
+      ],
+      [
+        43.61,
+        -61.5,
+        128.5
+      ],
+      [
+        43.61,
+        -55.5,
+        179.5
+      ],
+      [
+        43.61,
+        -46.5,
+        8.5
+      ],
+      [
+        43.61,
+        -43.5,
+        101.5
+      ],
+      [
+        46.61,
+        -55.5,
+        134.5
+      ],
+      [
+        46.61,
+        -52.5,
+        182.5
+      ],
+      [
+        46.61,
+        -49.5,
+        185.5
+      ],
+      [
+        46.61,
+        -46.5,
+        194.5
+      ],
+      [
+        46.61,
+        -43.5,
+        17.5
+      ],
+      [
+        49.61,
+        -46.5,
+        140.5
+      ],
+      [
+        49.61,
+        -43.5,
+        191.5
+      ],
+      [
+        49.61,
+        -40.5,
+        14.5
+      ],
+      [
+        49.61,
+        -40.5,
+        188.5
+      ],
+      [
+        49.61,
+        -34.5,
+        101.5
+      ],
+      [
+        52.61,
+        -37.5,
+        149.5
+      ],
+      [
+        52.61,
+        -34.5,
+        8.5
+      ],
+      [
+        52.61,
+        -34.5,
+        191.5
+      ],
+      [
+        52.61,
+        -31.5,
+        155.5
+      ],
+      [
+        55.61,
+        -34.5,
+        -6.5
+      ],
+      [
+        55.61,
+        -31.5,
+        8.5
+      ],
+      [
+        55.61,
+        -28.5,
+        -0.5
+      ],
+      [
+        55.61,
+        -28.5,
+        5.5
+      ],
+      [
+        55.61,
+        -28.5,
+        188.5
+      ],
+      [
+        55.61,
+        -25.5,
+        161.5
+      ],
+      [
+        55.61,
+        -22.5,
+        101.5
+      ],
+      [
+        55.61,
+        -19.5,
+        77.5
+      ],
+      [
+        58.61,
+        -25.5,
+        188.5
+      ],
+      [
+        58.61,
+        -19.5,
+        167.5
+      ],
+      [
+        58.61,
+        -19.5,
+        173.5
+      ],
+      [
+        58.61,
+        -16.5,
+        95.5
+      ],
+      [
+        58.61,
+        -16.5,
+        197.5
+      ],
+      [
+        58.61,
+        -13.5,
+        203.5
+      ],
+      [
+        58.61,
+        -10.5,
+        98.5
+      ],
+      [
+        58.61,
+        -7.5,
+        104.5
+      ],
+      [
+        58.61,
+        -4.5,
+        158.5
+      ],
+      [
+        61.61,
+        -22.5,
+        188.5
+      ],
+      [
+        61.61,
+        -19.5,
+        14.5
+      ],
+      [
+        61.61,
+        -16.5,
+        5.5
+      ],
+      [
+        61.61,
+        -16.5,
+        191.5
+      ],
+      [
+        61.61,
+        -13.5,
+        2.5
+      ],
+      [
+        61.61,
+        -13.5,
+        89.5
+      ],
+      [
+        61.61,
+        -13.5,
+        179.5
+      ],
+      [
+        61.61,
+        -13.5,
+        206.5
+      ],
+      [
+        61.61,
+        -10.5,
+        83.5
+      ],
+      [
+        61.61,
+        -10.5,
+        146.5
+      ],
+      [
+        61.61,
+        -7.5,
+        116.5
+      ],
+      [
+        61.61,
+        -7.5,
+        161.5
+      ],
+      [
+        61.61,
+        -4.5,
+        152.5
+      ],
+      [
+        64.61,
+        -73.5,
+        -3.5
+      ],
+      [
+        64.61,
+        -16.5,
+        140.5
+      ],
+      [
+        64.61,
+        -13.5,
+        23.5
+      ],
+      [
+        64.61,
+        -13.5,
+        122.5
+      ],
+      [
+        64.61,
+        -13.5,
+        149.5
+      ],
+      [
+        64.61,
+        -10.5,
+        119.5
+      ],
+      [
+        64.61,
+        -10.5,
+        176.5
+      ],
+      [
+        64.61,
+        -7.5,
+        164.5
+      ],
+      [
+        64.61,
+        -7.5,
+        173.5
+      ],
+      [
+        67.61,
+        -25.5,
+        140.5
+      ],
+      [
+        67.61,
+        -22.5,
+        134.5
+      ],
+      [
+        67.61,
+        -19.5,
+        56.5
+      ],
+      [
+        67.61,
+        -19.5,
+        62.5
+      ],
+      [
+        67.61,
+        -19.5,
+        137.5
+      ],
+      [
+        67.61,
+        -16.5,
+        29.5
+      ],
+      [
+        67.61,
+        -16.5,
+        50.5
+      ],
+      [
+        67.61,
+        -16.5,
+        65.5
+      ],
+      [
+        67.61,
+        -16.5,
+        71.5
+      ],
+      [
+        67.61,
+        -16.5,
+        152.5
+      ],
+      [
+        67.61,
+        -13.5,
+        170.5
+      ],
+      [
+        70.61,
+        -25.5,
+        146.5
+      ],
+      [
+        70.61,
+        -25.5,
+        152.5
+      ],
+      [
+        70.61,
+        -22.5,
+        161.5
+      ],
+      [
+        70.61,
+        -19.5,
+        158.5
+      ],
+      [
+        70.61,
+        -16.5,
+        35.5
+      ],
+      [
+        70.61,
+        -16.5,
+        44.5
+      ],
+      [
+        70.61,
+        -16.5,
+        167.5
+      ]
+    ],
+    "skeleton_width_mm": 7.68
+  },
+  "outputs": {
+    "preserve": "child_core_frame_v5_study_preserve.stl",
+    "obstacle": "child_core_frame_v5_study_obstacle.stl",
+    "obstacle_declared": "child_core_frame_v5_study_obstacle_declared.stl",
+    "design_space": "child_core_frame_v5_study_design_space.stl",
+    "setup": "child_core_frame_v5_study_setup.stl",
+    "scad": "child_core_frame_v5_study_setup.scad",
+    "png": "../../_work/images/topo_v5/03_optimization/child_core_frame_v5_study_setup.png",
+    "json": "child_core_frame_v5_study_setup.json",
+    "density_raw": "child_core_frame_v5_study_density_raw.npy",
+    "density_phys": "child_core_frame_v5_study_density_phys.npy",
+    "binary": "child_core_frame_v5_study_binary.npy",
+    "final_stl": "child_core_frame_v5_study_final.stl",
+    "final_smooth_stl": "child_core_frame_v5_study_final_smooth.stl",
+    "final_step": "child_core_frame_v5_study_final.step",
+    "result_png": "../../_work/images/topo_v5/03_optimization/child_core_frame_v5_study_topo.png"
+  }
+}

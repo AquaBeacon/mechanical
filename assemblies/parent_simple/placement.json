@@ -1,0 +1,156 @@
+{
+  "name": "parent_simple",
+  "note": "Simple deck with reserved underside mount holes. Floats are reference envelopes; ropes and accessory mounts are not modelled.",
+  "coordinate_system": "Box bottom Z=0. Deck Z=-12..0.",
+  "groups": {
+    "exterior": true,
+    "vessel": true,
+    "floats": true
+  },
+  "items": [
+    {
+      "label": "simple_deck",
+      "part": "parts/parent/exterior/printed/parent_simple_deck",
+      "group": "exterior",
+      "color": "Orange",
+      "ops": []
+    },
+    {
+      "label": "box_bcas212310g",
+      "part": "assemblies/parent_bottom_sensors/reference",
+      "group": "vessel",
+      "color": "LightSteelBlue",
+      "alpha": 0.22,
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            460
+          ]
+        },
+        {
+          "translate": [
+            -105,
+            -115,
+            0
+          ]
+        }
+      ],
+      "file": "bcas_mounting_reference"
+    },
+    {
+      "label": "pen_tether",
+      "part": "parts/common/exterior/cots/wetlink_penetrator_m10",
+      "file": "wetlink_penetrator_m10_ref_bcas",
+      "group": "vessel",
+      "color": "Silver",
+      "alpha": 1.0,
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            460
+          ]
+        },
+        {
+          "translate": [
+            15,
+            -115,
+            65
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pen_td04a",
+      "part": "parts/common/exterior/cots/wetlink_penetrator_m10",
+      "file": "wetlink_penetrator_m10_ref_bcas",
+      "group": "vessel",
+      "color": "Silver",
+      "alpha": 1.0,
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            460
+          ]
+        },
+        {
+          "translate": [
+            -20,
+            -115,
+            65
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rope_float_-1",
+      "part": "parts/parent/exterior/cots/parent_fender",
+      "color": "LightSkyBlue",
+      "group": "floats",
+      "ops": [
+        {
+          "translate": [
+            -178,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rope_float_1",
+      "part": "parts/parent/exterior/cots/parent_fender",
+      "color": "LightSkyBlue",
+      "group": "floats",
+      "ops": [
+        {
+          "translate": [
+            178,
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  ]
+}

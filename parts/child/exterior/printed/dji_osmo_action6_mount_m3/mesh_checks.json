@@ -1,0 +1,39 @@
+{
+  "original": {
+    "bounds": [
+      [
+        -52.0,
+        -52.45,
+        0.0
+      ],
+      [
+        52.0,
+        27.0,
+        84.5
+      ]
+    ],
+    "volume_cm3": 144.19996101920006,
+    "watertight": true,
+    "components": 1,
+    "sha256": "ec75fb6f29c35e78a030d1cb3341c41a9d4e603702c1b030936f32a32c373be1"
+  },
+  "camera_mount": {
+    "bounds": [
+      [
+        -50.0,
+        -52.45,
+        0.0
+      ],
+      [
+        50.0,
+        35.0,
+        84.5
+      ]
+    ],
+    "volume_cm3": 124.78070190780385,
+    "watertight": true,
+    "components": 1,
+    "sha256": "d583ef452f596bcad143fe4bffdd2cb6411b786025105ef01480581538405f38"
+  },
+  "mount_volume_reduction_percent": 13.466896228086057
+}

@@ -1,0 +1,67 @@
+{
+    "error_string": "Success.",
+    "export_time": 383,
+    "layer_height": 0.10000000149011612,
+    "plate_index": 0,
+    "prepare_time": 58,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Bottom surface": 59.174251556396484,
+                "Bridge": 37.83077621459961,
+                "Custom": 35.09866714477539,
+                "Gap infill": 76.45853424072266,
+                "Inner wall": 2335.625244140625,
+                "Internal solid infill": 348.0429382324219,
+                "Outer wall": 572.4417114257813,
+                "Overhang wall": 79.47310638427734,
+                "Sparse infill": 1591.8978271484375,
+                "Support": 212.67779541015625,
+                "Support interface": 37.22184371948242,
+                "Support transition": 29.905183792114258,
+                "Top surface": 126.49539184570313,
+                "Travel": 615.5999145507813,
+                "Undefined": 600.3099365234375
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFG00",
+                    "id": 1,
+                    "main_used_g": 35.282840728759766,
+                    "total_used_g": 37.77474594116211
+                }
+            ],
+            "generate_support_material_time": 91,
+            "id": 1,
+            "infill_time": 30,
+            "layer_filament_change": 0,
+            "main_predication": 6122.80908203125,
+            "make_perimeters_time": 109,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 84.0,
+                        "height": 27.0,
+                        "width": 58.22079849243164,
+                        "x": 98.88880920410156,
+                        "y": 86.0,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "child_horizontal_twist_mount_frame_receiver.stl",
+                    "triangle_count": 8476
+                }
+            ],
+            "sliced_time": 691,
+            "sliced_time_with_cache": 423,
+            "total_predication": 6142.5869140625,
+            "triangle_count": 8476,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 100.0,
+    "wall_loops": 8
+}

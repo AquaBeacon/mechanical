@@ -1,0 +1,7 @@
+{
+  "from": "assemblies\\parent_hand_service\\parts\\ann_mb1_internal_rack.3mf",
+  "to": "assemblies\\parent_hand_service\\print_jobs\\history_from_parts_20261011\\ann_mb1_internal_rack.3mf",
+  "sha256": "a0ec1b93940f14e0d312e6d4a25a86ba667a8d75c878907ed913b51ff631b606",
+  "model_changed": false,
+  "reason": "Preserve existing slicer project; canonical portable pack uses generated STL only."
+}

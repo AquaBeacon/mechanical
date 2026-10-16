@@ -1,0 +1,617 @@
+{
+  "schema": "topopt/setup/1",
+  "ok": true,
+  "errors": [],
+  "warnings": [
+    "the free region is only 2.0 voxels (6.00 mm) thick at its thinnest. Below about 3 voxels there is no room for a hole, so the topology there is set by the outline rather than chosen -- refine the grid or widen the design space.",
+    "the 2 support point(s) are fixed by preserve at hp4_seat at [0.0, 76.0, 169.4]; hp5_seat at [0.0, 76.0, 100.5]. Where the part is held is an input to this study, not a result of it -- if the layout of the supports is itself meant to be optimised, that decision is currently being made in CAD."
+  ],
+  "info": {
+    "voxel_mm": 3.0,
+    "grid_shape": [
+      44,
+      30,
+      55
+    ],
+    "origin_mm": [
+      -66.0,
+      58.0,
+      38.95
+    ],
+    "design_space_mm3": 1242000.0,
+    "preserve_mm3": 88344.0,
+    "obstacle_mm3": 521856.0,
+    "obstacle_declared_mm3": 521856.0,
+    "domain_mm3": 1242000.0,
+    "free_mm3": 661554.0,
+    "free_voxels": 24502,
+    "domain_voxels": 46000,
+    "ground": {
+      "axis": "Y",
+      "plane_mm": 67.0,
+      "band_voxels": 2000,
+      "band_area_mm2": 18000.0
+    },
+    "attach": {
+      "interfaces": {
+        "specs": [
+          {
+            "region": "join_free_space"
+          }
+        ],
+        "attach_voxels": 2640,
+        "attach_usable_voxels": 1840,
+        "attach_area_mm2": 16560.0,
+        "no_attach_voxels": 0,
+        "no_attach_mm3": 0.0,
+        "standoff_mm": 3.0
+      }
+    },
+    "no_attach_mm3": 0.0,
+    "attach_standoff_mm": 3.0,
+    "preserve_outside_design_space_mm3": 0.0,
+    "preserve_bodies": 4,
+    "domain_components": 1,
+    "preserve_bodies_by_domain_component": {
+      "1": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "note_preserve_bodies": "4 separate preserve bodies, all reachable through the design space -- that is the normal generative-design setup.",
+    "design_space_blocked_pct": 39.6,
+    "boundary_conditions": [
+      {
+        "case": "L1 single 0.35kg camera at 3g, adapter self-weight at 3g",
+        "kind": "support",
+        "region": "hp4_seat",
+        "voxels_in_domain": 544,
+        "voxels_on_preserve": 544
+      },
+      {
+        "case": "L1 single 0.35kg camera at 3g, adapter self-weight at 3g",
+        "kind": "support",
+        "region": "hp5_seat",
+        "voxels_in_domain": 544,
+        "voxels_on_preserve": 544
+      },
+      {
+        "case": "L1 single 0.35kg camera at 3g, adapter self-weight at 3g",
+        "kind": "load",
+        "region": "mount_C",
+        "voxels_in_domain": 504,
+        "voxels_on_preserve": 504
+      },
+      {
+        "case": "L4 frontal impact 150 N (-Y) on one front-edge bumper, HP4/HP5 react",
+        "kind": "support",
+        "region": "hp4_seat",
+        "voxels_in_domain": 544,
+        "voxels_on_preserve": 544
+      },
+      {
+        "case": "L4 frontal impact 150 N (-Y) on one front-edge bumper, HP4/HP5 react",
+        "kind": "support",
+        "region": "hp5_seat",
+        "voxels_in_domain": 544,
+        "voxels_on_preserve": 544
+      },
+      {
+        "case": "L4 frontal impact 150 N (-Y) on one front-edge bumper, HP4/HP5 react",
+        "kind": "load",
+        "region": "fbump_R",
+        "voxels_in_domain": 240,
+        "voxels_on_preserve": 240
+      },
+      {
+        "case": "L2s side impact 150 N (-X) on the starboard end plate through the side bumper, HP4/HP5 react",
+        "kind": "support",
+        "region": "hp4_seat",
+        "voxels_in_domain": 544,
+        "voxels_on_preserve": 544
+      },
+      {
+        "case": "L2s side impact 150 N (-X) on the starboard end plate through the side bumper, HP4/HP5 react",
+        "kind": "support",
+        "region": "hp5_seat",
+        "voxels_in_domain": 544,
+        "voxels_on_preserve": 544
+      },
+      {
+        "case": "L2s side impact 150 N (-X) on the starboard end plate through the side bumper, HP4/HP5 react",
+        "kind": "load",
+        "region": "endp_R",
+        "voxels_in_domain": 552,
+        "voxels_on_preserve": 552
+      },
+      {
+        "case": "L6 unit handled by central camera, 100N +Z on single mounting seat",
+        "kind": "support",
+        "region": "hp4_seat",
+        "voxels_in_domain": 544,
+        "voxels_on_preserve": 544
+      },
+      {
+        "case": "L6 unit handled by central camera, 100N +Z on single mounting seat",
+        "kind": "support",
+        "region": "hp5_seat",
+        "voxels_in_domain": 544,
+        "voxels_on_preserve": 544
+      },
+      {
+        "case": "L6 unit handled by central camera, 100N +Z on single mounting seat",
+        "kind": "load",
+        "region": "mount_C",
+        "voxels_in_domain": 504,
+        "voxels_on_preserve": 504
+      }
+    ],
+    "build_volume": {
+      "printer": {
+        "key": "X1C",
+        "name": "Bambu Lab X1-Carbon",
+        "nominal_mm": [
+          256.0,
+          256.0,
+          256.0
+        ],
+        "usable_mm": [
+          250.0,
+          250.0,
+          250.0
+        ],
+        "margin_mm": 0.0,
+        "envelope_mm": [
+          250.0,
+          250.0,
+          250.0
+        ],
+        "nozzle_mm": 0.4,
+        "min_feature_mm": 0.8,
+        "note": "AMS-fed; the purge tower needs ~60x60 mm of plate on multi-material prints.",
+        "source": "built-in",
+        "allow_oversize_design_space": false
+      },
+      "build_axis": "Y",
+      "domain": {
+        "what": "design space",
+        "printer": "X1C",
+        "printer_name": "Bambu Lab X1-Carbon",
+        "printer_source": "built-in",
+        "size_mm": [
+          120.0,
+          69.0,
+          150.0
+        ],
+        "usable_mm": [
+          250.0,
+          250.0,
+          250.0
+        ],
+        "margin_mm": 0.0,
+        "envelope_mm": [
+          250.0,
+          250.0,
+          250.0
+        ],
+        "fits_any_orientation": true,
+        "up_axes_that_fit": [
+          "X",
+          "Y",
+          "Z"
+        ],
+        "by_up_axis": {
+          "X": {
+            "fits": true,
+            "overflow_mm": {
+              "Z": -100.0,
+              "Y": -181.0,
+              "X": -130.0
+            }
+          },
+          "Y": {
+            "fits": true,
+            "overflow_mm": {
+              "Z": -100.0,
+              "X": -130.0,
+              "Y": -181.0
+            }
+          },
+          "Z": {
+            "fits": true,
+            "overflow_mm": {
+              "X": -130.0,
+              "Y": -181.0,
+              "Z": -100.0
+            }
+          }
+        },
+        "declared_build_axis": "Y",
+        "fits_as_declared": true,
+        "overflow_mm": {
+          "Z": -100.0,
+          "X": -130.0,
+          "Y": -181.0
+        },
+        "margin_to_envelope_mm": 100.0,
+        "lo_mm": [
+          -60.0,
+          67.0,
+          44.95
+        ],
+        "hi_mm": [
+          60.0,
+          136.0,
+          194.95
+        ]
+      },
+      "preserve": {
+        "what": "preserve",
+        "printer": "X1C",
+        "printer_name": "Bambu Lab X1-Carbon",
+        "printer_source": "built-in",
+        "size_mm": [
+          120.0,
+          69.0,
+          150.0
+        ],
+        "usable_mm": [
+          250.0,
+          250.0,
+          250.0
+        ],
+        "margin_mm": 0.0,
+        "envelope_mm": [
+          250.0,
+          250.0,
+          250.0
+        ],
+        "fits_any_orientation": true,
+        "up_axes_that_fit": [
+          "X",
+          "Y",
+          "Z"
+        ],
+        "by_up_axis": {
+          "X": {
+            "fits": true,
+            "overflow_mm": {
+              "Z": -100.0,
+              "Y": -181.0,
+              "X": -130.0
+            }
+          },
+          "Y": {
+            "fits": true,
+            "overflow_mm": {
+              "Z": -100.0,
+              "X": -130.0,
+              "Y": -181.0
+            }
+          },
+          "Z": {
+            "fits": true,
+            "overflow_mm": {
+              "X": -130.0,
+              "Y": -181.0,
+              "Z": -100.0
+            }
+          }
+        },
+        "declared_build_axis": "Y",
+        "fits_as_declared": true,
+        "overflow_mm": {
+          "Z": -100.0,
+          "X": -130.0,
+          "Y": -181.0
+        },
+        "margin_to_envelope_mm": 100.0
+      },
+      "voxel_vs_min_feature": "one voxel is 3.00 mm and the smallest printable wall is 0.80 mm, so the grid cannot represent the printer's limit; minimum-feature checks on this run are about the grid, not the machine."
+    },
+    "design_freedom": {
+      "free_voxels": 24502,
+      "domain_voxels": 46000,
+      "free_fraction_of_domain": 0.5327,
+      "volfrac": 0.2,
+      "expected_final_mm3": 220654.8,
+      "preserve_mm3": 88344.0,
+      "preserve_fraction_of_expected_part": 0.4004,
+      "free_min_thickness_mm": 6.0,
+      "free_median_thickness_mm": 12.0,
+      "free_min_thickness_voxels": 2.0,
+      "fixed_points": [
+        {
+          "kind": "support",
+          "region": "hp4_seat",
+          "centroid_mm": [
+            0.0,
+            76.0,
+            169.4
+          ],
+          "mm3": 14688.0
+        },
+        {
+          "kind": "support",
+          "region": "hp5_seat",
+          "centroid_mm": [
+            0.0,
+            76.0,
+            100.5
+          ],
+          "mm3": 14688.0
+        },
+        {
+          "kind": "load",
+          "region": "mount_C",
+          "centroid_mm": [
+            0.0,
+            106.0,
+            49.5
+          ],
+          "mm3": 13608.0
+        },
+        {
+          "kind": "load",
+          "region": "fbump_R",
+          "centroid_mm": [
+            45.0,
+            133.0,
+            63.0
+          ],
+          "mm3": 6480.0
+        },
+        {
+          "kind": "load",
+          "region": "endp_R",
+          "centroid_mm": [
+            57.0,
+            101.5,
+            63.0
+          ],
+          "mm3": 14904.0
+        }
+      ],
+      "ground_zones": [],
+      "note_fixed_points": "5 load/support footprint(s) sit on preserve at positions the CAD model chose. The optimiser decides how to reach them, not where they are."
+    },
+    "runtime_estimate": {
+      "iters": 80,
+      "cases": 4,
+      "elements": 46000,
+      "voxel_mm": 3.0,
+      "solver": {
+        "backend": "cuda",
+        "device": "NVIDIA GeForce RTX 4060 Ti",
+        "torch": "2.12.0+cu130",
+        "preconditioner": "mg",
+        "precision": "mixed32",
+        "multigrid": {
+          "levels": [
+            {
+              "shape": [
+                44,
+                30,
+                55
+              ],
+              "elements": 27774,
+              "ndof": 234360
+            },
+            {
+              "shape": [
+                22,
+                15,
+                28
+              ],
+              "elements": 3964,
+              "ndof": 32016
+            },
+            {
+              "shape": [
+                11,
+                8,
+                14
+              ],
+              "elements": 796,
+              "ndof": 4860
+            },
+            {
+              "shape": [
+                6,
+                4,
+                7
+              ],
+              "elements": 150,
+              "ndof": 840
+            }
+          ],
+          "smoother": "chebyshev(degree 2, D^-1 K, lambda ratio 30)",
+          "coarse_solver": "dense cholesky",
+          "precision": "mixed (float32 cycle, float64 coarse solve and outer CG)",
+          "setup_seconds": 0.342
+        }
+      },
+      "probe_cg_iterations": 28,
+      "probe_seconds": 2.16,
+      "probe_converged": true,
+      "seconds": 690.9,
+      "seconds_low": 345.5,
+      "seconds_high": 1036.4,
+      "human": "12 min",
+      "basis": "one cold conjugate-gradient solve of load case 1 at uniform density, times cases times iterations. Warm starting makes later iterations cheaper; continuation towards a 0/1 field makes them dearer. Measured runs land within 0.5x - 1.5x."
+    }
+  },
+  "bodies": [
+    {
+      "name": "interfaces",
+      "kind": "preserve",
+      "source": "stl:preserve.stl",
+      "voxels": 3272,
+      "mm3": 88344.0,
+      "bbox_mm": [
+        [
+          -60.0,
+          67.0,
+          44.95
+        ],
+        [
+          60.0,
+          136.0,
+          194.95
+        ]
+      ],
+      "mesh": {
+        "triangles": 64,
+        "open_edges": 0,
+        "non_manifold_edges": 0,
+        "degenerate": 0,
+        "closed_shell": true,
+        "components": 4,
+        "edge_components": 4,
+        "self_intersections": 0,
+        "self_intersection_examples": []
+      },
+      "attach": {
+        "specs": [
+          {
+            "region": "join_free_space"
+          }
+        ],
+        "attach_voxels": 2640,
+        "attach_usable_voxels": 1840,
+        "attach_area_mm2": 16560.0,
+        "no_attach_voxels": 0,
+        "no_attach_mm3": 0.0,
+        "standoff_mm": 3.0
+      }
+    },
+    {
+      "name": "design_space",
+      "kind": "design_space",
+      "source": "stl:design_space.stl",
+      "voxels": 46000,
+      "mm3": 1242000.0,
+      "bbox_mm": [
+        [
+          -60.0,
+          67.0,
+          44.95
+        ],
+        [
+          60.0,
+          136.0,
+          194.95
+        ]
+      ],
+      "mesh": {
+        "triangles": 12,
+        "open_edges": 0,
+        "non_manifold_edges": 0,
+        "degenerate": 0,
+        "closed_shell": true,
+        "components": 1,
+        "edge_components": 1,
+        "self_intersections": 0,
+        "self_intersection_examples": []
+      }
+    },
+    {
+      "name": "keep_out",
+      "kind": "obstacle",
+      "source": "stl:obstacle.stl",
+      "voxels": 19328,
+      "mm3": 521856.0,
+      "bbox_mm": [
+        [
+          -48.0,
+          64.0,
+          53.95
+        ],
+        [
+          48.0,
+          139.0,
+          194.95
+        ]
+      ],
+      "clearance_requested_mm": 0.0,
+      "clearance_achieved_mm": 0.0,
+      "mesh": {
+        "triangles": 2842,
+        "open_edges": 0,
+        "non_manifold_edges": 0,
+        "degenerate": 0,
+        "closed_shell": true,
+        "components": 5,
+        "edge_components": 5,
+        "self_intersections": 0,
+        "self_intersection_examples": []
+      }
+    },
+    {
+      "name": "cameras",
+      "kind": "obstacle",
+      "source": "stl:cameras.stl",
+      "voxels": 14336,
+      "mm3": 387072.0,
+      "bbox_mm": [
+        [
+          -48.0,
+          82.0,
+          83.95
+        ],
+        [
+          48.0,
+          130.0,
+          167.95
+        ]
+      ],
+      "clearance_requested_mm": 0.0,
+      "clearance_achieved_mm": 0.0,
+      "mesh": {
+        "triangles": 12,
+        "open_edges": 0,
+        "non_manifold_edges": 0,
+        "degenerate": 0,
+        "closed_shell": true,
+        "components": 1,
+        "edge_components": 1,
+        "self_intersections": 0,
+        "self_intersection_examples": []
+      }
+    },
+    {
+      "name": "preserve body 1",
+      "kind": "preserve_component",
+      "source": "interfaces",
+      "voxels": 744,
+      "mm3": 20088.0,
+      "domain_component": 1
+    },
+    {
+      "name": "preserve body 2",
+      "kind": "preserve_component",
+      "source": "interfaces",
+      "voxels": 1280,
+      "mm3": 34560.0,
+      "domain_component": 1
+    },
+    {
+      "name": "preserve body 3",
+      "kind": "preserve_component",
+      "source": "interfaces",
+      "voxels": 504,
+      "mm3": 13608.0,
+      "domain_component": 1
+    },
+    {
+      "name": "preserve body 4",
+      "kind": "preserve_component",
+      "source": "interfaces",
+      "voxels": 744,
+      "mm3": 20088.0,
+      "domain_component": 1
+    }
+  ]
+}

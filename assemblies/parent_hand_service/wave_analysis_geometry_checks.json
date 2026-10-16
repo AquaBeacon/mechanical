@@ -1,0 +1,7 @@
+{
+  "status": "STALE_AFTER_CASE_CORRECTION",
+  "current_geometry": false,
+  "manufacturing_release": false,
+  "reason": "Floor/upper carriers/supports changed; retained native runs cannot qualify current CAD.",
+  "historical_report": "_work/analysis/case_cad_correction_20261010/before/checks/wave_rigidity_acceptance.json"
+}

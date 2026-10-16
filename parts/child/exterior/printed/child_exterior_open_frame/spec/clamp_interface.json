@@ -1,0 +1,59 @@
+{
+  "source": "parts/child/exterior/printed/child_wte4_suspension_clamp",
+  "source_sha256": "6540428c92e386e470b236632cc6f89825b0494d48edfd38e755067a375ea498",
+  "reference_mesh_sha256": "83bfb19e0406d22348c92873db1c4a7a5d7086ac960c0bc7c9fc79a5095b1272",
+  "interface": {
+    "CLAMP_INTERFACE": {
+      "tube_od": 114.3,
+      "inner_r": 57.95,
+      "outer_r": 77.95,
+      "bolt_x": 85.95,
+      "mount_y": -84.95,
+      "shoulder_y": -69.95,
+      "frame_pitch_x": 36,
+      "bolt_zs": [
+        8,
+        24
+      ],
+      "band_width": 32,
+      "ear_t": 24,
+      "contact_width": 32,
+      "contact_preserve_t": 4,
+      "split_gap": 1.6
+    },
+    "CAGE_INTERFACE": {
+      "centres": [
+        40,
+        100,
+        160
+      ],
+      "eye": [
+        0,
+        -73,
+        194
+      ],
+      "eye_width": 24,
+      "eye_r": 16,
+      "rope_hole_d": 10.5,
+      "rubber_free_t": 1,
+      "rubber_compression": 0.2
+    }
+  },
+  "layout": {
+    "clamp_mount_y": -84.95,
+    "clamp_shoulder_y": -69.95,
+    "clamp_frame_pitch": 36,
+    "clamp_centres": [
+      40,
+      100,
+      160
+    ],
+    "clamp_band_width": 32,
+    "clamp_bolt_zs": [
+      8,
+      24
+    ],
+    "vessel_y0": -100,
+    "vessel_z": 140
+  }
+}

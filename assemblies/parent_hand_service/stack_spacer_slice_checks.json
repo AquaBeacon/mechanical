@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "label": "main_column_0",
+      "extrusion_layers_mm": [
+        0.2,
+        0.4
+      ],
+      "pass_": true
+    },
+    {
+      "label": "main_column_1",
+      "extrusion_layers_mm": [
+        0.2,
+        0.4
+      ],
+      "pass_": true
+    },
+    {
+      "label": "main_column_2",
+      "extrusion_layers_mm": [
+        0.2,
+        0.4
+      ],
+      "pass_": true
+    },
+    {
+      "label": "main_column_3",
+      "extrusion_layers_mm": [
+        0.2,
+        0.4
+      ],
+      "pass_": true
+    },
+    {
+      "label": "sony_column_0",
+      "extrusion_layers_mm": [
+        0.2,
+        0.4
+      ],
+      "pass_": true
+    },
+    {
+      "label": "sony_column_1",
+      "extrusion_layers_mm": [
+        0.2,
+        0.4
+      ],
+      "pass_": true
+    },
+    {
+      "label": "sony_column_2",
+      "extrusion_layers_mm": [
+        0.2,
+        0.4
+      ],
+      "pass_": true
+    },
+    {
+      "label": "sony_column_3",
+      "extrusion_layers_mm": [
+        0.2,
+        0.4
+      ],
+      "pass_": true
+    },
+    {
+      "label": "gnss_column_0",
+      "extrusion_layers_mm": [
+        0.2,
+        0.4
+      ],
+      "pass_": true
+    },
+    {
+      "label": "gnss_column_1",
+      "extrusion_layers_mm": [
+        0.2,
+        0.4
+      ],
+      "pass_": true
+    },
+    {
+      "label": "gnss_column_2",
+      "extrusion_layers_mm": [
+        0.2,
+        0.4
+      ],
+      "pass_": true
+    },
+    {
+      "label": "gnss_column_3",
+      "extrusion_layers_mm": [
+        0.2,
+        0.4
+      ],
+      "pass_": true
+    }
+  ],
+  "limitation": "Toolpaths establish printed neck presence, not physical break force or adhesion."
+}

@@ -1,0 +1,188 @@
+{
+  "_what": "Horizontal cantilever screening at 200 g payload, 5g comparison allowance, plus deck self-weight",
+  "_material_limit": "Generic PLA card only, not a verified PLA matte material model. Full-solid proposed print; relative geometry comparison only.",
+  "_joint_limit": "Two bolt hole regions rigidly fixed. Front brace and heel contact are not credited. No preload, screw/spacer flexibility, contact separation or impact transient.",
+  "part": "deck_before.stl",
+  "units": "mm_N_MPa",
+  "material": "PLA",
+  "build_axis": "Y",
+  "raster_axis": "Z",
+  "infill": 1.0,
+  "walls": 6,
+  "safety_factor": 4.0,
+  "max_deflection_mm": 1.0,
+  "resolution_mm": 1.6,
+  "regions": {
+    "bolt_p": {
+      "type": "cylinder",
+      "axis": "Z",
+      "centre": [
+        47,
+        0,
+        0
+      ],
+      "r": 3.2,
+      "range": [
+        29,
+        41
+      ]
+    },
+    "bolt_n": {
+      "type": "cylinder",
+      "axis": "Z",
+      "centre": [
+        -47,
+        0,
+        0
+      ],
+      "r": 3.2,
+      "range": [
+        29,
+        41
+      ]
+    },
+    "tip": {
+      "type": "box",
+      "min": [
+        -38,
+        -10.1,
+        184
+      ],
+      "max": [
+        38,
+        -5.9,
+        202.1
+      ]
+    }
+  },
+  "cases": [
+    {
+      "name": "200g_5g_X_-1",
+      "load_class": "normal",
+      "supports": [
+        {
+          "region": "bolt_p",
+          "fix": "xyz"
+        },
+        {
+          "region": "bolt_n",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "tip",
+          "force": [
+            -9.81,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "gravity": {
+        "direction": [
+          -1,
+          0,
+          0
+        ],
+        "g_factor": 5
+      }
+    },
+    {
+      "name": "200g_5g_X_+1",
+      "load_class": "normal",
+      "supports": [
+        {
+          "region": "bolt_p",
+          "fix": "xyz"
+        },
+        {
+          "region": "bolt_n",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "tip",
+          "force": [
+            9.81,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "gravity": {
+        "direction": [
+          1,
+          0,
+          0
+        ],
+        "g_factor": 5
+      }
+    },
+    {
+      "name": "200g_5g_Y_-1",
+      "load_class": "normal",
+      "supports": [
+        {
+          "region": "bolt_p",
+          "fix": "xyz"
+        },
+        {
+          "region": "bolt_n",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "tip",
+          "force": [
+            0.0,
+            -9.81,
+            0.0
+          ]
+        }
+      ],
+      "gravity": {
+        "direction": [
+          0,
+          -1,
+          0
+        ],
+        "g_factor": 5
+      }
+    },
+    {
+      "name": "200g_5g_Y_+1",
+      "load_class": "normal",
+      "supports": [
+        {
+          "region": "bolt_p",
+          "fix": "xyz"
+        },
+        {
+          "region": "bolt_n",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "tip",
+          "force": [
+            0.0,
+            9.81,
+            0.0
+          ]
+        }
+      ],
+      "gravity": {
+        "direction": [
+          0,
+          1,
+          0
+        ],
+        "g_factor": 5
+      }
+    }
+  ]
+}

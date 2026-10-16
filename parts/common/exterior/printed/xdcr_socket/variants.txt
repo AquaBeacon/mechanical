@@ -1,0 +1,8 @@
+﻿# xdcr_socket のバリアント定義 (build.ps1 / build.sh が読む)
+# 書式: <接尾辞>  <変数=値> [<変数=値> ...]        '#' 始まりはコメント
+# 出力: xdcr_socket_<接尾辞>.stl / .step / _preview.png
+child   tilt_deg=0 base_w=50
+# parent: 2026-09-04 の親機外装 (支柱なし・デッキ下面 HP40 座に開口下向き) では傾き 0 で使う。
+#   形状は child と同一だが、親機アセンブリが参照する名前として分けておく。
+#   旧 parent (tilt_deg=20, マストヘッド用) は assert 停止のまま廃止 (xdcr_socket.md)。
+parent  tilt_deg=0 base_w=50

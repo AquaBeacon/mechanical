@@ -1,0 +1,117 @@
+{
+  "printed_parts": [
+    "battery_base",
+    "floor_plate",
+    "main_mount_plate",
+    "sony_mount_plate"
+  ],
+  "material": "PETG provisional, actual printed properties not measured",
+  "infill_for_structural_model": "100%",
+  "metal_fasteners": {
+    "main_pwr_tx_M3x8": 9,
+    "sony_M2_5x6": 4,
+    "case_M4x12_button": 3,
+    "floor_M3_nuts": 16,
+    "main_combined_M3x30": 3,
+    "main_carrier_M3x25": 1,
+    "sony_carrier_M3x50": 4,
+    "gnss_frame_M3x40": 4,
+    "antenna_rack_M3x50": 4,
+    "gnss_pcb_M3x10": 4,
+    "gnss_pcb_M3_nuts": 4,
+    "battery_lid_M3x12": 1,
+    "battery_lid_M3_nuts": 1
+  },
+  "not_for_print": [
+    "tie_rod_*",
+    "stop_pin_*",
+    "storage_strap_*",
+    "lid_keepout",
+    "PCB",
+    "battery",
+    "COTS case",
+    "all nuts/screws/washers"
+  ],
+  "release": false,
+  "additional_printed_parts": [
+    {
+      "part": "parts/parent/interior/printed/ann_mb1_internal_rack",
+      "file": "ann_mb1_internal_rack",
+      "quantity": 1
+    },
+    {
+      "part": "parts/parent/interior/printed/gnss_universal_carrier",
+      "file": "gnss_universal_carrier",
+      "quantity": 1
+    },
+    {
+      "part": "parts/parent/interior/printed/parent_lipo_retainer",
+      "file": "parent_lipo_retainer_lid_slide",
+      "quantity": 1
+    },
+    {
+      "part": "parts/parent/interior/printed/ann_mb1_internal_rack",
+      "file": "ann_mb1_coax_ring",
+      "quantity": 1
+    },
+    {
+      "part": "parts/parent/interior/printed/gnss_universal_carrier",
+      "file": "gnss_column_front",
+      "quantity": 2
+    },
+    {
+      "part": "parts/parent/interior/printed/gnss_universal_carrier",
+      "file": "gnss_column_rear",
+      "quantity": 2
+    },
+    {
+      "part": "parts/common/interior/printed/stack_spacers",
+      "file": "sony_column_left",
+      "quantity": 2,
+      "print_set": "parent_stack_spacer_set"
+    },
+    {
+      "part": "parts/common/interior/printed/stack_spacers",
+      "file": "sony_column_right",
+      "quantity": 2,
+      "print_set": "parent_stack_spacer_set"
+    },
+    {
+      "part": "parts/parent/interior/printed/parent_hand_service",
+      "file": "main_corner_column",
+      "quantity": 4,
+      "print_set": "parent_stack_spacer_set"
+    }
+  ],
+  "note": "Placement is canonical. Current fixed carrier variant: no lift guides, props or stop pins; previous rigidity evidence is historical.",
+  "nonmagnetic_fasteners": {
+    "LIS3MDL_nylon_M2x8": 4,
+    "LIS3MDL_nylon_M2_nut": 4
+  },
+  "purchased_fasteners_by_file": {
+    "screw_m3x12": 1,
+    "screw_nut_m3": 25,
+    "screw_m3x8": 13,
+    "screw_m4x12_button": 3,
+    "screw_m3x30": 3,
+    "screw_m2_5x6": 4,
+    "screw_m3x25": 1,
+    "screw_m3x50": 8,
+    "screw_m3x40": 4,
+    "nylon_m2x8_envelope": 4,
+    "nylon_nut_m2_envelope": 4,
+    "screw_m3x6": 4,
+    "screw_m4x12": 2,
+    "screw_nut_m4": 2,
+    "screw_m3x10": 4
+  },
+  "print_sets": [
+    {
+      "part": "parts/common/interior/printed/stack_spacers",
+      "file": "parent_stack_spacer_set",
+      "quantity": 1,
+      "contents": "Sony columns4; GNSS columns4; MAIN columns4"
+    }
+  ],
+  "sensor_fixture_revision": "2026-10-11: four M3x10/nuts for universal PCB; existing nylon M2x8/nuts for LIS3MDL"
+}

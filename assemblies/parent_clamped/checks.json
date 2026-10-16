@@ -1,0 +1,39 @@
+{
+  "parent_clamped_deck": {
+    "watertight": true,
+    "components": 1,
+    "extents_mm": [
+      236.0,
+      236.0,
+      12.0
+    ]
+  },
+  "parent_clamp_bar": {
+    "watertight": true,
+    "components": 1,
+    "extents_mm": [
+      236.0,
+      24.0,
+      12.0
+    ]
+  },
+  "parent_float_lug": {
+    "watertight": true,
+    "components": 1,
+    "extents_mm": [
+      24.0,
+      32.0,
+      44.0
+    ]
+  },
+  "clearances_mm": {
+    "rod_to_box": 4.5,
+    "washer_to_deck_edge": 1,
+    "lug_to_clamp_rod": 11.5,
+    "lug_to_box": 13,
+    "lug_to_float_envelope": 2,
+    "bar_to_lid_screw_y": 39,
+    "top_bar_to_lid": 2
+  },
+  "limitations": "Nominal envelope checks only. Real lid profile, wet slip resistance, clamp load and slicing unverified."
+}

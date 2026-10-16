@@ -1,0 +1,505 @@
+{
+  "status": "PASS",
+  "hardware": [
+    {
+      "name": "main_carrier_mount_0",
+      "collisions": []
+    },
+    {
+      "name": "sony_carrier_mount_0",
+      "collisions": []
+    },
+    {
+      "name": "sony_carrier_mount_1",
+      "collisions": []
+    },
+    {
+      "name": "sony_carrier_mount_2",
+      "collisions": []
+    },
+    {
+      "name": "sony_carrier_mount_3",
+      "collisions": []
+    },
+    {
+      "name": "gnss_frame_mount_0",
+      "collisions": []
+    },
+    {
+      "name": "gnss_frame_mount_1",
+      "collisions": []
+    },
+    {
+      "name": "gnss_frame_mount_2",
+      "collisions": []
+    },
+    {
+      "name": "gnss_frame_mount_3",
+      "collisions": []
+    },
+    {
+      "name": "antenna_rack_mount_0",
+      "collisions": []
+    },
+    {
+      "name": "antenna_rack_mount_1",
+      "collisions": []
+    },
+    {
+      "name": "antenna_rack_mount_2",
+      "collisions": []
+    },
+    {
+      "name": "antenna_rack_mount_3",
+      "collisions": []
+    },
+    {
+      "name": "ground_plate_mount_0",
+      "collisions": []
+    },
+    {
+      "name": "ground_plate_nut_0",
+      "collisions": []
+    },
+    {
+      "name": "ground_plate_mount_1",
+      "collisions": []
+    },
+    {
+      "name": "ground_plate_nut_1",
+      "collisions": []
+    },
+    {
+      "name": "ground_plate_mount_2",
+      "collisions": []
+    },
+    {
+      "name": "ground_plate_nut_2",
+      "collisions": []
+    },
+    {
+      "name": "ground_plate_mount_3",
+      "collisions": []
+    },
+    {
+      "name": "ground_plate_nut_3",
+      "collisions": []
+    },
+    {
+      "name": "antenna_mount_0",
+      "collisions": []
+    },
+    {
+      "name": "antenna_nut_0",
+      "collisions": []
+    },
+    {
+      "name": "antenna_mount_1",
+      "collisions": []
+    },
+    {
+      "name": "antenna_nut_1",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pcb_bolt_0",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pcb_nut_0",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pcb_bolt_1",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pcb_nut_1",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pcb_bolt_2",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pcb_nut_2",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pcb_bolt_3",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pcb_nut_3",
+      "collisions": []
+    }
+  ],
+  "tools": [
+    {
+      "name": "main_carrier_mount_0",
+      "stage": "Module installation from above; PCB/antenna accessories not yet fitted, per wave_assembly_checks",
+      "collisions": []
+    },
+    {
+      "name": "sony_carrier_mount_0",
+      "stage": "Module installation from above; PCB/antenna accessories not yet fitted, per wave_assembly_checks",
+      "collisions": []
+    },
+    {
+      "name": "sony_carrier_mount_1",
+      "stage": "Module installation from above; PCB/antenna accessories not yet fitted, per wave_assembly_checks",
+      "collisions": []
+    },
+    {
+      "name": "sony_carrier_mount_2",
+      "stage": "Module installation from above; PCB/antenna accessories not yet fitted, per wave_assembly_checks",
+      "collisions": []
+    },
+    {
+      "name": "sony_carrier_mount_3",
+      "stage": "Module installation from above; PCB/antenna accessories not yet fitted, per wave_assembly_checks",
+      "collisions": []
+    },
+    {
+      "name": "gnss_frame_mount_0",
+      "stage": "Module installation from above; PCB/antenna accessories not yet fitted, per wave_assembly_checks",
+      "collisions": []
+    },
+    {
+      "name": "gnss_frame_mount_1",
+      "stage": "Module installation from above; PCB/antenna accessories not yet fitted, per wave_assembly_checks",
+      "collisions": []
+    },
+    {
+      "name": "gnss_frame_mount_2",
+      "stage": "Module installation from above; PCB/antenna accessories not yet fitted, per wave_assembly_checks",
+      "collisions": []
+    },
+    {
+      "name": "gnss_frame_mount_3",
+      "stage": "Module installation from above; PCB/antenna accessories not yet fitted, per wave_assembly_checks",
+      "collisions": []
+    },
+    {
+      "name": "antenna_rack_mount_0",
+      "stage": "Module installation from above; PCB/antenna accessories not yet fitted, per wave_assembly_checks",
+      "collisions": []
+    },
+    {
+      "name": "antenna_rack_mount_1",
+      "stage": "Module installation from above; PCB/antenna accessories not yet fitted, per wave_assembly_checks",
+      "collisions": []
+    },
+    {
+      "name": "antenna_rack_mount_2",
+      "stage": "Module installation from above; PCB/antenna accessories not yet fitted, per wave_assembly_checks",
+      "collisions": []
+    },
+    {
+      "name": "antenna_rack_mount_3",
+      "stage": "Module installation from above; PCB/antenna accessories not yet fitted, per wave_assembly_checks",
+      "collisions": []
+    },
+    {
+      "name": "ground_plate_mount_0",
+      "stage": "Lid open",
+      "collisions": []
+    },
+    {
+      "name": "ground_plate_nut_0",
+      "stage": "Insert captive nut from above before steel plate/antenna; turn-stop checked in wave_assembly_checks",
+      "collisions": []
+    },
+    {
+      "name": "ground_plate_mount_1",
+      "stage": "Lid open",
+      "collisions": []
+    },
+    {
+      "name": "ground_plate_nut_1",
+      "stage": "Insert captive nut from above before steel plate/antenna; turn-stop checked in wave_assembly_checks",
+      "collisions": []
+    },
+    {
+      "name": "ground_plate_mount_2",
+      "stage": "Lid open",
+      "collisions": []
+    },
+    {
+      "name": "ground_plate_nut_2",
+      "stage": "Insert captive nut from above before steel plate/antenna; turn-stop checked in wave_assembly_checks",
+      "collisions": []
+    },
+    {
+      "name": "ground_plate_mount_3",
+      "stage": "Lid open",
+      "collisions": []
+    },
+    {
+      "name": "ground_plate_nut_3",
+      "stage": "Insert captive nut from above before steel plate/antenna; turn-stop checked in wave_assembly_checks",
+      "collisions": []
+    },
+    {
+      "name": "antenna_mount_0",
+      "stage": "Lid open",
+      "collisions": []
+    },
+    {
+      "name": "antenna_nut_0",
+      "stage": "Insert captive nut from above before steel plate/antenna; turn-stop checked in wave_assembly_checks",
+      "collisions": []
+    },
+    {
+      "name": "antenna_mount_1",
+      "stage": "Lid open",
+      "collisions": []
+    },
+    {
+      "name": "antenna_nut_1",
+      "stage": "Insert captive nut from above before steel plate/antenna; turn-stop checked in wave_assembly_checks",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pcb_bolt_0",
+      "stage": "Lid open",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pcb_nut_0",
+      "stage": "Hold M3 nut from below before tightening PCB",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pcb_bolt_1",
+      "stage": "Lid open",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pcb_nut_1",
+      "stage": "Hold M3 nut from below before tightening PCB",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pcb_bolt_2",
+      "stage": "Lid open",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pcb_nut_2",
+      "stage": "Hold M3 nut from below before tightening PCB",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pcb_bolt_3",
+      "stage": "Lid open",
+      "collisions": []
+    },
+    {
+      "name": "gnss_pcb_nut_3",
+      "stage": "Hold M3 nut from below before tightening PCB",
+      "collisions": []
+    }
+  ],
+  "removal": [
+    {
+      "part": "gnss_universal_pcb",
+      "solid": 0,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 0,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 1,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 2,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 3,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 4,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 5,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 6,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 7,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 8,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 9,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 10,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 11,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 12,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 13,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 14,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 15,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 16,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 17,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 18,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 19,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 20,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 21,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 22,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 23,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 24,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 25,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 26,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 27,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 28,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 29,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 30,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 31,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 32,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 33,
+      "collisions": []
+    },
+    {
+      "part": "gnss_receiver",
+      "solid": 34,
+      "collisions": []
+    },
+    {
+      "part": "gnss_pin_headers",
+      "solid": 0,
+      "collisions": []
+    },
+    {
+      "part": "gnss_pin_headers",
+      "solid": 1,
+      "collisions": []
+    },
+    {
+      "part": "gnss_xh_keepout",
+      "solid": 0,
+      "collisions": []
+    }
+  ],
+  "parked_coax_collisions": [],
+  "removal_conditions": "Lid open. Four M3 PCB bolts/nuts removed, SMA and XH disconnected, coax parked at antenna rear. Cartridge lifts straight up with MAIN/Sony installed. Continuous swept boxes through 110 mm extraction.",
+  "floor_mount": "16 top-loaded M3 metal nuts atZ16.2; main3PCB-shared M3x30+1carrier M3x25, Sony4M3x50, GNSS4M3x40, antenna4M3x50. Install from above per wave_assembly_checks. Torque/creep/loosening unverified.",
+  "tool_assumption": "Driver diameter5; nut access diameter8.6/7.4. Human grip, wrench swing and real harness unverified."
+}

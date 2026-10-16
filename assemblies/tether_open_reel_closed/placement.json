@@ -1,0 +1,295 @@
+{
+  "name": "tether_open_reel_closed",
+  "parts": [
+    {
+      "part": "parts/common/jigs/tether_open_reel",
+      "file": "tether_open_reel_stand",
+      "label": "Upright cradle",
+      "ops": [],
+      "color": "DarkSlateGray",
+      "group": "reel"
+    },
+    {
+      "part": "parts/common/jigs/tether_open_reel",
+      "file": "tether_open_reel_base",
+      "label": "Single winding chamber",
+      "ops": [
+        {
+          "translate": [
+            0,
+            90.0,
+            128.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "SlateGray",
+      "group": "reel"
+    },
+    {
+      "part": "parts/common/jigs/tether_open_reel",
+      "file": "tether_open_reel_lid",
+      "label": "Side plate with two release latches",
+      "ops": [
+        {
+          "translate": [
+            0,
+            90.0,
+            128.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            180.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Orange",
+      "group": "reel"
+    },
+    {
+      "part": "parts/common/jigs/tether_open_reel",
+      "file": "tether_open_reel_cover_half",
+      "label": "Transport half 0",
+      "ops": [
+        {
+          "translate": [
+            0,
+            90.0,
+            128.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            -3.4
+          ]
+        }
+      ],
+      "color": "LightSteelBlue",
+      "group": "reel"
+    },
+    {
+      "part": "parts/common/jigs/tether_open_reel",
+      "file": "tether_open_reel_cover_half",
+      "label": "Transport half 180",
+      "ops": [
+        {
+          "translate": [
+            0,
+            90.0,
+            128.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            180
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            -3.4
+          ]
+        }
+      ],
+      "color": "LightSteelBlue",
+      "group": "reel"
+    },
+    {
+      "part": "parts/common/jigs/tether_open_reel",
+      "file": "tether_open_reel_clip",
+      "label": "Removable clip 0/30",
+      "ops": [
+        {
+          "translate": [
+            0,
+            90.0,
+            128.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            107.2,
+            0,
+            22.0
+          ]
+        }
+      ],
+      "color": "Tomato",
+      "group": "reel"
+    },
+    {
+      "part": "parts/common/jigs/tether_open_reel",
+      "file": "tether_open_reel_clip",
+      "label": "Removable clip 0/150.0",
+      "ops": [
+        {
+          "translate": [
+            0,
+            90.0,
+            128.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            107.2,
+            0,
+            142.0
+          ]
+        }
+      ],
+      "color": "Tomato",
+      "group": "reel"
+    },
+    {
+      "part": "parts/common/jigs/tether_open_reel",
+      "file": "tether_open_reel_clip",
+      "label": "Removable clip 180/30",
+      "ops": [
+        {
+          "translate": [
+            0,
+            90.0,
+            128.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            180
+          ]
+        },
+        {
+          "translate": [
+            107.2,
+            0,
+            22.0
+          ]
+        }
+      ],
+      "color": "Tomato",
+      "group": "reel"
+    },
+    {
+      "part": "parts/common/jigs/tether_open_reel",
+      "file": "tether_open_reel_clip",
+      "label": "Removable clip 180/150.0",
+      "ops": [
+        {
+          "translate": [
+            0,
+            90.0,
+            128.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            180
+          ]
+        },
+        {
+          "translate": [
+            107.2,
+            0,
+            142.0
+          ]
+        }
+      ],
+      "color": "Tomato",
+      "group": "reel"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "5A153D5594F011E4D4AF8B8F31AF2564D042E008138877352380A6168C15DA5D",
+    "Path": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\parts\\child\\exterior\\printed\\child_simple_front\\child_simple_front.stl"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "E2231A85150068DB79B47E0932E56E96D967950A07848A24EB829A804F91293B",
+    "Path": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\print_jobs\\child_simple\\child_simple_front_x1c_petg.3mf"
+  }
+]

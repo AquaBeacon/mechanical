@@ -1,0 +1,27 @@
+{
+  "source_dependencies": [
+    "../../../../../spec/build_parent_gnss.py",
+    "../../../../../spec/remesh_parent_gnss_outputs.py",
+    "../../../../../scad/lib/parent_gnss.py",
+    "../../../../../scad/lib/cad_edge_finish.py",
+    "../../cots/sparkfun_neo_f9p/ref/SparkFun NEO-F9P.brd",
+    "../../cots/sparkfun_neo_f9p/ref/NEO-F9P.STEP",
+    "../../../../../scad/lib/parent_case_access.py"
+  ],
+  "print_rotations_deg": {
+    "ann_mb1_internal_rack": [
+      180,
+      0,
+      0
+    ]
+  },
+  "release_status": "fit_check_prototype",
+  "structural_print_conditions": {
+    "material": "PETG",
+    "layer_height_mm": 0.2,
+    "walls": 4,
+    "infill_percent": 100,
+    "build_axis": "Z",
+    "note": "Dense equivalent-solid assumption for historical FEA; current case-corrected geometry not structurally analyzed. Supports as PRINT.md. No fatigue/creep qualification."
+  }
+}

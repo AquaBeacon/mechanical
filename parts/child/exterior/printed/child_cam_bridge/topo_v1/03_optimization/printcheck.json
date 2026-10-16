@@ -1,0 +1,126 @@
+{
+  "build_axis": "Y",
+  "voxel_mm": 3.0,
+  "flat_overhang_area_mm2": 18882.0,
+  "support_volume_mm3": 496206.0,
+  "support_on_critical_faces": {
+    "support_contact_area_mm2": 810.0,
+    "contact_voxels": 90,
+    "total_landing_area_mm2": 3636.0,
+    "pass": false,
+    "required": "no support may land on a preserve surface",
+    "locations_voxel": [
+      [
+        12,
+        19,
+        2
+      ],
+      [
+        13,
+        19,
+        2
+      ],
+      [
+        14,
+        19,
+        2
+      ],
+      [
+        14,
+        19,
+        4
+      ],
+      [
+        15,
+        19,
+        2
+      ],
+      [
+        15,
+        19,
+        4
+      ],
+      [
+        16,
+        19,
+        2
+      ],
+      [
+        16,
+        19,
+        4
+      ],
+      [
+        17,
+        19,
+        2
+      ],
+      [
+        17,
+        19,
+        4
+      ],
+      [
+        18,
+        19,
+        2
+      ],
+      [
+        18,
+        19,
+        4
+      ],
+      [
+        19,
+        19,
+        2
+      ],
+      [
+        19,
+        19,
+        4
+      ],
+      [
+        20,
+        19,
+        2
+      ],
+      [
+        20,
+        19,
+        4
+      ],
+      [
+        21,
+        19,
+        2
+      ],
+      [
+        21,
+        19,
+        4
+      ],
+      [
+        22,
+        19,
+        2
+      ],
+      [
+        22,
+        19,
+        4
+      ]
+    ],
+    "note": "support rests on 90 preserve voxel(s) (810.0 mm2). Those faces come off the printer rough and out of tolerance. Reorient the part, or accept the finish and say so explicitly."
+  },
+  "enclosed_support": {
+    "enclosed_support_mm3": 0.0,
+    "enclosed_voxels": 0,
+    "total_support_mm3": 496206.0,
+    "pass": true,
+    "required": "no support inside a sealed cavity",
+    "note": "all support is reachable from outside"
+  },
+  "note": "measured on the voxel grid, so overhang angles are only 0 or 90 degrees. A 60-degree face that would self-support is not counted here; `topopt overhang` reads real angles off the STL.",
+  "threshold": 0.5
+}

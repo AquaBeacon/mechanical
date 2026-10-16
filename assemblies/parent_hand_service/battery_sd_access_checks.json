@@ -1,0 +1,158 @@
+{
+  "status": "PASS",
+  "carrier_lift_mm": 0,
+  "conditions": "Case lid open; disconnect power lead, remove four tray mount screws, lift closed battery module90, remove one lid screw and slide south108; no board, floor or GNSS removal",
+  "envelope_assumptions": {
+    "card_mm": [
+      11,
+      15,
+      1
+    ],
+    "card_slide_mm": 16,
+    "fingertip_mm": [
+      14,
+      12,
+      45
+    ],
+    "driver_diameter_mm": 5
+  },
+  "checks": [
+    {
+      "name": "plate vs case",
+      "collisions": []
+    },
+    {
+      "name": "lipo_tray vs case",
+      "collisions": []
+    },
+    {
+      "name": "lipo_ret_lid vs case",
+      "collisions": []
+    },
+    {
+      "name": "antenna_rack vs case",
+      "collisions": []
+    },
+    {
+      "name": "coax_ring vs case",
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_carrier vs case",
+      "collisions": []
+    },
+    {
+      "name": "main_column_0 vs case",
+      "collisions": []
+    },
+    {
+      "name": "main_column_1 vs case",
+      "collisions": []
+    },
+    {
+      "name": "main_column_2 vs case",
+      "collisions": []
+    },
+    {
+      "name": "main_column_3 vs case",
+      "collisions": []
+    },
+    {
+      "name": "main_mount_plate vs case",
+      "collisions": []
+    },
+    {
+      "name": "sony_mount_plate vs case",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_0 vs case",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_1 vs case",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_2 vs case",
+      "collisions": []
+    },
+    {
+      "name": "sony_column_3 vs case",
+      "collisions": []
+    },
+    {
+      "name": "gnss_column_0 vs case",
+      "collisions": []
+    },
+    {
+      "name": "gnss_column_1 vs case",
+      "collisions": []
+    },
+    {
+      "name": "gnss_column_2 vs case",
+      "collisions": []
+    },
+    {
+      "name": "gnss_column_3 vs case",
+      "collisions": []
+    },
+    {
+      "name": "LiPo continuous vertical extraction",
+      "collisions": []
+    },
+    {
+      "name": "Slide lid continuous release/lift",
+      "collisions": [],
+      "evidence": "battery_slide_lid_checks.json"
+    },
+    {
+      "name": "lipo_ret_bolt_0 driver",
+      "collisions": []
+    },
+    {
+      "name": "MAIN_SD card_slide",
+      "collisions": []
+    },
+    {
+      "name": "MAIN_SD card_lift",
+      "collisions": []
+    },
+    {
+      "name": "MAIN_SD fingertip",
+      "collisions": []
+    },
+    {
+      "name": "SONY_SD card_slide",
+      "collisions": []
+    },
+    {
+      "name": "SONY_SD card_lift",
+      "collisions": []
+    },
+    {
+      "name": "SONY_SD fingertip",
+      "collisions": []
+    },
+    {
+      "name": "Winding OD100 ID75 H10 minus SW tool guard clearance",
+      "collisions": [],
+      "guard_excluded_mm3": 592.3694787121785
+    },
+    {
+      "name": "Winding centre ID75 empty through H10",
+      "collisions": []
+    }
+  ],
+  "user_coil_mm": {
+    "outer_diameter": 100,
+    "inner_diameter": 75,
+    "height": 10,
+    "centre_xy": [
+      60,
+      60
+    ],
+    "bottom_z": 22.3
+  },
+  "limitations": "Actual card latch/finger grip, LiPo lead/plug and winding transitions require fit check. Reserved winding size does not certify 5 m capacity."
+}

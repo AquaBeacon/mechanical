@@ -1,0 +1,8 @@
+ECHO: "v1 setup: r_in 58.35 r_out 64.35 gate z -17..218 knu_zc [-17, 85.5, 188] bands [-17, -2][92, 108][200, 218]"
+Geometries in cache: 2
+Geometry cache size in bytes: 1456
+CGAL Polyhedrons in cache: 0
+CGAL cache size in bytes: 0
+Total rendering time: 0:00:00.000
+   Top level object is a 3D object:
+   Facets:          6

@@ -1,0 +1,35 @@
+optimum from child_core_frame_v5_study (voxel 3.000 mm, origin [-98.892, -117.0, -26.0])
+geometry (voxel 3.000 mm)
+  optimum            14841 voxels     400707 mm3
+  rebuild            18790 voxels     507330 mm3  (+26.6 % mass)
+  overlap             9574 voxels  (64.5 % of the optimum)
+  missing             5267 voxels  (optimum wanted it, rebuild has not)
+  extra               9216 voxels  (rebuild added it, optimum did not)
+  wrote compare_c\topo_compare.png
+
+structure (same study, same voxel size)
+  shape          case                        defl mm   compliance       SF
+  optimum shape  L1 hoist 3g: lugs fixed, container + guard + gate weights down      0.749        66.98     8.26
+  optimum shape  L2s transport side hit 300 N (+X on back wall and lugs), container reacts      0.057         8.04    52.27
+  optimum shape  L2h transport landing on the hinge side (300 N +X through the knuckles), container reacts      0.679       106.44     9.99
+  optimum shape  L2r transport rear hit 300 N on the back wall (+Y), container reacts      0.145        14.12    40.32
+  optimum shape  L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands      0.111        48.97    14.79
+  optimum shape  L5 landing 600 N up through the guard bosses, container reacts      0.006         0.42    73.84
+  rebuild        L1 hoist 3g: lugs fixed, container + guard + gate weights down      0.834        26.79    16.28
+  rebuild        L2s transport side hit 300 N (+X on back wall and lugs), container reacts      0.114        17.93    27.21
+  rebuild        L2h transport landing on the hinge side (300 N +X through the knuckles), container reacts      0.920       133.68     7.76
+  rebuild        L2r transport rear hit 300 N on the back wall (+Y), container reacts      0.264        50.34    17.99
+  rebuild        L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands      0.429       122.07     6.76
+  rebuild        L5 landing 600 N up through the guard bosses, container reacts      0.010         0.56    60.29
+
+  L1 hoist 3g: lugs fixed, container + guard + gate weights down rebuild is 0.40x the optimum's compliance (60 % stiffer)
+  L2s transport side hit 300 N (+X on back wall and lugs), container reacts rebuild is 2.23x the optimum's compliance (123 % softer)
+      -> the rebuild lost the load path. Look at MISSING in the PNG: material the optimum put near the outer surfaces matters most, because bending stiffness goes with the square of the distance from the neutral axis. Widen those members or move them outward and re-check.
+  L2h transport landing on the hinge side (300 N +X through the knuckles), container reacts rebuild is 1.26x the optimum's compliance (26 % softer)
+      -> the rebuild lost the load path. Look at MISSING in the PNG: material the optimum put near the outer surfaces matters most, because bending stiffness goes with the square of the distance from the neutral axis. Widen those members or move them outward and re-check.
+  L2r transport rear hit 300 N on the back wall (+Y), container reacts rebuild is 3.57x the optimum's compliance (257 % softer)
+      -> the rebuild lost the load path. Look at MISSING in the PNG: material the optimum put near the outer surfaces matters most, because bending stiffness goes with the square of the distance from the neutral axis. Widen those members or move them outward and re-check.
+  L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands rebuild is 2.49x the optimum's compliance (149 % softer)
+      -> the rebuild lost the load path. Look at MISSING in the PNG: material the optimum put near the outer surfaces matters most, because bending stiffness goes with the square of the distance from the neutral axis. Widen those members or move them outward and re-check.
+  L5 landing 600 N up through the guard bosses, container reacts rebuild is 1.33x the optimum's compliance (33 % softer)
+      -> the rebuild lost the load path. Look at MISSING in the PNG: material the optimum put near the outer surfaces matters most, because bending stiffness goes with the square of the distance from the neutral axis. Widen those members or move them outward and re-check.

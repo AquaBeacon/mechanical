@@ -1,0 +1,65 @@
+{
+  "schema": "topopt/manifest/1",
+  "tool": {
+    "name": "topopt",
+    "version": "1.0.0"
+  },
+  "command": {
+    "name": "print",
+    "argv": [
+      "parts/parent/exterior/printed/parent_float_cradle/parent_float_cradle.stl",
+      "--printer",
+      "X1C",
+      "--load-axis",
+      "0,0,1",
+      "--json",
+      "parts/parent/exterior/printed/parent_float_cradle/parent_float_cradle_print.json"
+    ],
+    "line": "print parts/parent/exterior/printed/parent_float_cradle/parent_float_cradle.stl --printer X1C --load-axis 0,0,1 --json parts/parent/exterior/printed/parent_float_cradle/parent_float_cradle_print.json",
+    "cwd": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models"
+  },
+  "run": {
+    "started_utc": "2026-09-04T11:43:34Z",
+    "finished_utc": "2026-09-04T11:43:34Z",
+    "seconds": 0.165,
+    "exit_code": 1,
+    "exit_code_meaning": "fail / invalid"
+  },
+  "source": {
+    "git_commit": "1ffa0c88feb867a77f4af8b1ab36e8b11eb7f5ef",
+    "git_dirty": true
+  },
+  "environment": {
+    "python": "3.13.5",
+    "python_full": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "packages": {
+      "numpy": "2.4.2",
+      "scipy": "1.18.0",
+      "matplotlib": "3.10.8",
+      "skimage": "0.26.0",
+      "pytest": "9.1.1"
+    },
+    "external_tools": {
+      "freecad": null,
+      "calculix": null,
+      "gmsh": null,
+      "openscad": null
+    }
+  },
+  "inputs": [
+    {
+      "path": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\parts\\parent\\exterior\\printed\\parent_float_cradle\\parent_float_cradle.stl",
+      "bytes": 1286927,
+      "sha256": "757d53ceaee8626f71afa2a6c609bbe4ee01368a64e13ae952063750238d6556"
+    },
+    {
+      "path": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\parts\\parent\\exterior\\printed\\parent_float_cradle\\parent_float_cradle_print.json",
+      "bytes": 4080,
+      "sha256": "ac566a5af3d9d0d3e0e2fde98b95fc449588d0e39eb8c4d0b2b2f1ef1242936d"
+    }
+  ],
+  "random_seed": null,
+  "random_seed_note": "no seed was declared by the study. The voxel path is deterministic (uniform initial density, OC update, CG solve), so a seed is not currently required for reproducibility."
+}

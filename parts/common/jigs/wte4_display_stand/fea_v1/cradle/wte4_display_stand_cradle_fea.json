@@ -1,0 +1,151 @@
+{
+  "part": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\parts\\common\\jigs\\wte4_display_stand\\wte4_display_stand_cradle.stl",
+  "material": "PLA",
+  "pass": true,
+  "cases": [
+    {
+      "elements": 48384,
+      "voxel_mm": 0.7113786608980126,
+      "volume_mm3": 17418.24,
+      "converged": true,
+      "cg_iterations": 813,
+      "compliance_Nmm": 0.021023885964339722,
+      "max_displacement_mm": 0.0016387209338423437,
+      "max_displacement_at": [
+        -2.0,
+        53.75953762254028,
+        47.66237028016685
+      ],
+      "von_mises_max_MPa": 0.15265777623907842,
+      "von_mises_p99_5_MPa": 0.10674394101358019,
+      "stress_concentration_ratio": 1.4301305984164194,
+      "failure_index_max": 0.003149735003923819,
+      "failure_index_p99_5": 0.002208653960448396,
+      "failure_criterion": "max_stress_material_axes",
+      "material_axes": {
+        "build_axis": "X",
+        "raster_axis": null,
+        "stiffness": "orthotropic",
+        "card_id": "pla_generic_fff_orthotropic_v1"
+      },
+      "min_safety_factor": 317.48702629085886,
+      "safety_factor_p99_5": 452.7644519728126,
+      "mesh": {
+        "thin_section_mm": 15.650330539756277,
+        "typical_section_mm": 21.341359826940376,
+        "elements_across_thin": 22.0,
+        "elements_across_typical": 29.999999999999996
+      },
+      "warnings": [],
+      "checks": [
+        {
+          "name": "strength",
+          "required": "safety factor >= 3.00",
+          "got": "317.49 (worst element) / 452.76 (p99.5)",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "stiffness",
+          "required": "max deflection <= 0.500 mm",
+          "got": "0.002 mm",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "mesh resolution",
+          "required": ">= 3 elements across the thinnest section",
+          "got": "22.0 (thin 15.65 mm) / 30.0 (typical 21.34 mm)",
+          "pass": true,
+          "inspect": false
+        }
+      ],
+      "pass": true,
+      "hotspots": [
+        {
+          "pos": [
+            1.91,
+            44.87,
+            30.94
+          ],
+          "failure_index": 0.003,
+          "safety_factor": 317.49
+        },
+        {
+          "pos": [
+            -1.64,
+            44.87,
+            30.94
+          ],
+          "failure_index": 0.003,
+          "safety_factor": 317.49
+        },
+        {
+          "pos": [
+            -1.64,
+            -44.77,
+            30.94
+          ],
+          "failure_index": 0.003,
+          "safety_factor": 329.5
+        },
+        {
+          "pos": [
+            1.91,
+            -44.77,
+            30.94
+          ],
+          "failure_index": 0.003,
+          "safety_factor": 329.5
+        },
+        {
+          "pos": [
+            1.91,
+            47.0,
+            33.79
+          ],
+          "failure_index": 0.003,
+          "safety_factor": 333.08
+        }
+      ],
+      "case": "tube on cradle, handling x3 (2.2 kg tube assy / 2 cradles x 3 = 35 N)",
+      "total_applied_load_N": [
+        0.0,
+        0.0,
+        -35.159
+      ],
+      "resultant_load_N": 35.159,
+      "material": "PLA",
+      "material_model": {
+        "material_model": "orthotropic_equivalent_solid",
+        "card_id": "pla_generic_fff_orthotropic_v1",
+        "classification": "conservative_literature_based_default",
+        "measured_for_specific_printer": false,
+        "solid_fraction_applied": 1.0,
+        "Ex_Ey_Ez_MPa": [
+          3000,
+          2400,
+          1500
+        ],
+        "Gxy_Gyz_Gzx_MPa": [
+          1000,
+          550,
+          550
+        ],
+        "strengths_MPa": {
+          "Xt": 50,
+          "Xc": 60,
+          "Yt": 35,
+          "Yc": 50,
+          "Zt": 22,
+          "Zc": 40,
+          "Sxy": 25,
+          "Syz": 15,
+          "Szx": 15
+        },
+        "source": "docs/FFF_PLA_PETG_orthotropic_material_reference.md section 5"
+      },
+      "solve_seconds": 19.3
+    }
+  ]
+}

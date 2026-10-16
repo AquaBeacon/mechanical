@@ -1,0 +1,812 @@
+[
+  {
+    "label": "screw_m5x40_000",
+    "type": "screw_m5x40",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "washer_m5x1_001",
+    "type": "washer_m5x1",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "washer_m5x1_002",
+    "type": "washer_m5x1",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "nut_m5_003",
+    "type": "nut_m5",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "screw_m5x40_004",
+    "type": "screw_m5x40",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "washer_m5x1_005",
+    "type": "washer_m5x1",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "washer_m5x1_006",
+    "type": "washer_m5x1",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "nut_m5_007",
+    "type": "nut_m5",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "screw_m5x40_008",
+    "type": "screw_m5x40",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "washer_m5x1_009",
+    "type": "washer_m5x1",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "washer_m5x1_010",
+    "type": "washer_m5x1",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "nut_m5_011",
+    "type": "nut_m5",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "screw_m5x40_012",
+    "type": "screw_m5x40",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "washer_m5x1_013",
+    "type": "washer_m5x1",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "washer_m5x1_014",
+    "type": "washer_m5x1",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "nut_m5_015",
+    "type": "nut_m5",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "screw_m5x40_016",
+    "type": "screw_m5x40",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "washer_m5x1_017",
+    "type": "washer_m5x1",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "washer_m5x1_018",
+    "type": "washer_m5x1",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "nut_m5_019",
+    "type": "nut_m5",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "screw_m5x40_020",
+    "type": "screw_m5x40",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "washer_m5x1_021",
+    "type": "washer_m5x1",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "washer_m5x1_022",
+    "type": "washer_m5x1",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "nut_m5_023",
+    "type": "nut_m5",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "screw_m5x40_024",
+    "type": "screw_m5x40",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "washer_m5x1_025",
+    "type": "washer_m5x1",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "washer_m5x1_026",
+    "type": "washer_m5x1",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "nut_m5_027",
+    "type": "nut_m5",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "screw_m5x40_028",
+    "type": "screw_m5x40",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "washer_m5x1_029",
+    "type": "washer_m5x1",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "washer_m5x1_030",
+    "type": "washer_m5x1",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "nut_m5_031",
+    "type": "nut_m5",
+    "note": "fin -> hub"
+  },
+  {
+    "label": "screw_m6x100_032",
+    "type": "screw_m6x100",
+    "note": "hub -> beam"
+  },
+  {
+    "label": "washer_m6x1_033",
+    "type": "washer_m6x1",
+    "note": "hub -> beam"
+  },
+  {
+    "label": "washer_m6x1_034",
+    "type": "washer_m6x1",
+    "note": "hub -> beam"
+  },
+  {
+    "label": "nut_m6_035",
+    "type": "nut_m6",
+    "note": "hub -> beam"
+  },
+  {
+    "label": "screw_m6x100_036",
+    "type": "screw_m6x100",
+    "note": "hub -> beam"
+  },
+  {
+    "label": "washer_m6x1_037",
+    "type": "washer_m6x1",
+    "note": "hub -> beam"
+  },
+  {
+    "label": "washer_m6x1_038",
+    "type": "washer_m6x1",
+    "note": "hub -> beam"
+  },
+  {
+    "label": "nut_m6_039",
+    "type": "nut_m6",
+    "note": "hub -> beam"
+  },
+  {
+    "label": "screw_m6x70_040",
+    "type": "screw_m6x70",
+    "note": "coupler -> beam"
+  },
+  {
+    "label": "washer_m6x1_041",
+    "type": "washer_m6x1",
+    "note": "coupler -> beam"
+  },
+  {
+    "label": "washer_m6x1_042",
+    "type": "washer_m6x1",
+    "note": "coupler -> beam"
+  },
+  {
+    "label": "nut_m6_043",
+    "type": "nut_m6",
+    "note": "coupler -> beam"
+  },
+  {
+    "label": "screw_m6x70_044",
+    "type": "screw_m6x70",
+    "note": "coupler -> beam"
+  },
+  {
+    "label": "washer_m6x1_045",
+    "type": "washer_m6x1",
+    "note": "coupler -> beam"
+  },
+  {
+    "label": "washer_m6x1_046",
+    "type": "washer_m6x1",
+    "note": "coupler -> beam"
+  },
+  {
+    "label": "nut_m6_047",
+    "type": "nut_m6",
+    "note": "coupler -> beam"
+  },
+  {
+    "label": "screw_m5x65_048",
+    "type": "screw_m5x65",
+    "note": "coupler halves"
+  },
+  {
+    "label": "washer_m5x1_049",
+    "type": "washer_m5x1",
+    "note": "coupler halves"
+  },
+  {
+    "label": "washer_m5x1_050",
+    "type": "washer_m5x1",
+    "note": "coupler halves"
+  },
+  {
+    "label": "nut_m5_051",
+    "type": "nut_m5",
+    "note": "coupler halves"
+  },
+  {
+    "label": "screw_m5x65_052",
+    "type": "screw_m5x65",
+    "note": "coupler halves"
+  },
+  {
+    "label": "washer_m5x1_053",
+    "type": "washer_m5x1",
+    "note": "coupler halves"
+  },
+  {
+    "label": "washer_m5x1_054",
+    "type": "washer_m5x1",
+    "note": "coupler halves"
+  },
+  {
+    "label": "nut_m5_055",
+    "type": "nut_m5",
+    "note": "coupler halves"
+  },
+  {
+    "label": "screw_m5x65_056",
+    "type": "screw_m5x65",
+    "note": "coupler halves"
+  },
+  {
+    "label": "washer_m5x1_057",
+    "type": "washer_m5x1",
+    "note": "coupler halves"
+  },
+  {
+    "label": "washer_m5x1_058",
+    "type": "washer_m5x1",
+    "note": "coupler halves"
+  },
+  {
+    "label": "nut_m5_059",
+    "type": "nut_m5",
+    "note": "coupler halves"
+  },
+  {
+    "label": "screw_m5x65_060",
+    "type": "screw_m5x65",
+    "note": "coupler halves"
+  },
+  {
+    "label": "washer_m5x1_061",
+    "type": "washer_m5x1",
+    "note": "coupler halves"
+  },
+  {
+    "label": "washer_m5x1_062",
+    "type": "washer_m5x1",
+    "note": "coupler halves"
+  },
+  {
+    "label": "nut_m5_063",
+    "type": "nut_m5",
+    "note": "coupler halves"
+  },
+  {
+    "label": "screw_m5x55_068",
+    "type": "screw_m5x55",
+    "note": "hub -> disk -> ballast roof"
+  },
+  {
+    "label": "washer_m5x1_069",
+    "type": "washer_m5x1",
+    "note": "hub -> disk -> ballast roof"
+  },
+  {
+    "label": "washer_m5x1_070",
+    "type": "washer_m5x1",
+    "note": "hub -> disk -> ballast roof"
+  },
+  {
+    "label": "nut_m5_071",
+    "type": "nut_m5",
+    "note": "hub -> disk -> ballast roof"
+  },
+  {
+    "label": "screw_m5x55_072",
+    "type": "screw_m5x55",
+    "note": "hub -> disk -> ballast roof"
+  },
+  {
+    "label": "washer_m5x1_073",
+    "type": "washer_m5x1",
+    "note": "hub -> disk -> ballast roof"
+  },
+  {
+    "label": "washer_m5x1_074",
+    "type": "washer_m5x1",
+    "note": "hub -> disk -> ballast roof"
+  },
+  {
+    "label": "nut_m5_075",
+    "type": "nut_m5",
+    "note": "hub -> disk -> ballast roof"
+  },
+  {
+    "label": "screw_m5x55_076",
+    "type": "screw_m5x55",
+    "note": "hub -> disk -> ballast roof"
+  },
+  {
+    "label": "washer_m5x1_077",
+    "type": "washer_m5x1",
+    "note": "hub -> disk -> ballast roof"
+  },
+  {
+    "label": "washer_m5x1_078",
+    "type": "washer_m5x1",
+    "note": "hub -> disk -> ballast roof"
+  },
+  {
+    "label": "nut_m5_079",
+    "type": "nut_m5",
+    "note": "hub -> disk -> ballast roof"
+  },
+  {
+    "label": "screw_m5x55_080",
+    "type": "screw_m5x55",
+    "note": "hub -> disk -> ballast roof"
+  },
+  {
+    "label": "washer_m5x1_081",
+    "type": "washer_m5x1",
+    "note": "hub -> disk -> ballast roof"
+  },
+  {
+    "label": "washer_m5x1_082",
+    "type": "washer_m5x1",
+    "note": "hub -> disk -> ballast roof"
+  },
+  {
+    "label": "nut_m5_083",
+    "type": "nut_m5",
+    "note": "hub -> disk -> ballast roof"
+  },
+  {
+    "label": "screw_m5x20_084",
+    "type": "screw_m5x20",
+    "note": "ballast lid"
+  },
+  {
+    "label": "washer_m5x1_085",
+    "type": "washer_m5x1",
+    "note": "ballast lid"
+  },
+  {
+    "label": "washer_m5x1_086",
+    "type": "washer_m5x1",
+    "note": "ballast lid"
+  },
+  {
+    "label": "nut_m5_087",
+    "type": "nut_m5",
+    "note": "ballast lid"
+  },
+  {
+    "label": "screw_m5x20_088",
+    "type": "screw_m5x20",
+    "note": "ballast lid"
+  },
+  {
+    "label": "washer_m5x1_089",
+    "type": "washer_m5x1",
+    "note": "ballast lid"
+  },
+  {
+    "label": "washer_m5x1_090",
+    "type": "washer_m5x1",
+    "note": "ballast lid"
+  },
+  {
+    "label": "nut_m5_091",
+    "type": "nut_m5",
+    "note": "ballast lid"
+  },
+  {
+    "label": "screw_m5x20_092",
+    "type": "screw_m5x20",
+    "note": "ballast lid"
+  },
+  {
+    "label": "washer_m5x1_093",
+    "type": "washer_m5x1",
+    "note": "ballast lid"
+  },
+  {
+    "label": "washer_m5x1_094",
+    "type": "washer_m5x1",
+    "note": "ballast lid"
+  },
+  {
+    "label": "nut_m5_095",
+    "type": "nut_m5",
+    "note": "ballast lid"
+  },
+  {
+    "label": "screw_m5x20_096",
+    "type": "screw_m5x20",
+    "note": "ballast lid"
+  },
+  {
+    "label": "washer_m5x1_097",
+    "type": "washer_m5x1",
+    "note": "ballast lid"
+  },
+  {
+    "label": "washer_m5x1_098",
+    "type": "washer_m5x1",
+    "note": "ballast lid"
+  },
+  {
+    "label": "nut_m5_099",
+    "type": "nut_m5",
+    "note": "ballast lid"
+  },
+  {
+    "label": "screw_m8x50_100",
+    "type": "screw_m8x50",
+    "note": "metal ballast rings"
+  },
+  {
+    "label": "washer_m8x1_101",
+    "type": "washer_m8x1",
+    "note": "metal ballast rings"
+  },
+  {
+    "label": "washer_m8x1_102",
+    "type": "washer_m8x1",
+    "note": "metal ballast rings"
+  },
+  {
+    "label": "nut_m8_103",
+    "type": "nut_m8",
+    "note": "metal ballast rings"
+  },
+  {
+    "label": "screw_m5x16_202",
+    "type": "screw_m5x16",
+    "note": "camera bridge -> deck insert"
+  },
+  {
+    "label": "washer_m5x1_203",
+    "type": "washer_m5x1",
+    "note": "camera bridge -> deck insert"
+  },
+  {
+    "label": "screw_m5x16_204",
+    "type": "screw_m5x16",
+    "note": "camera bridge -> deck insert"
+  },
+  {
+    "label": "washer_m5x1_205",
+    "type": "washer_m5x1",
+    "note": "camera bridge -> deck insert"
+  },
+  {
+    "label": "screw_m5x16_212",
+    "type": "screw_m5x16",
+    "note": "camera bridge -> deck insert"
+  },
+  {
+    "label": "washer_m5x1_213",
+    "type": "washer_m5x1",
+    "note": "camera bridge -> deck insert"
+  },
+  {
+    "label": "screw_m5x16_214",
+    "type": "screw_m5x16",
+    "note": "camera bridge -> deck insert"
+  },
+  {
+    "label": "washer_m5x1_215",
+    "type": "washer_m5x1",
+    "note": "camera bridge -> deck insert"
+  },
+  {
+    "label": "screw_m5x25_216",
+    "type": "screw_m5x25",
+    "note": "camera mount -> bridge"
+  },
+  {
+    "label": "washer_m5x1_217",
+    "type": "washer_m5x1",
+    "note": "camera mount -> bridge"
+  },
+  {
+    "label": "washer_m5x1_218",
+    "type": "washer_m5x1",
+    "note": "camera mount -> bridge"
+  },
+  {
+    "label": "nut_m5_219",
+    "type": "nut_m5",
+    "note": "camera mount -> bridge"
+  },
+  {
+    "label": "screw_m5x25_220",
+    "type": "screw_m5x25",
+    "note": "camera mount -> bridge"
+  },
+  {
+    "label": "washer_m5x1_221",
+    "type": "washer_m5x1",
+    "note": "camera mount -> bridge"
+  },
+  {
+    "label": "washer_m5x1_222",
+    "type": "washer_m5x1",
+    "note": "camera mount -> bridge"
+  },
+  {
+    "label": "nut_m5_223",
+    "type": "nut_m5",
+    "note": "camera mount -> bridge"
+  },
+  {
+    "label": "screw_m5x25_224",
+    "type": "screw_m5x25",
+    "note": "camera mount -> bridge"
+  },
+  {
+    "label": "washer_m5x1_225",
+    "type": "washer_m5x1",
+    "note": "camera mount -> bridge"
+  },
+  {
+    "label": "washer_m5x1_226",
+    "type": "washer_m5x1",
+    "note": "camera mount -> bridge"
+  },
+  {
+    "label": "nut_m5_227",
+    "type": "nut_m5",
+    "note": "camera mount -> bridge"
+  },
+  {
+    "label": "screw_m5x25_228",
+    "type": "screw_m5x25",
+    "note": "camera mount -> bridge"
+  },
+  {
+    "label": "washer_m5x1_229",
+    "type": "washer_m5x1",
+    "note": "camera mount -> bridge"
+  },
+  {
+    "label": "washer_m5x1_230",
+    "type": "washer_m5x1",
+    "note": "camera mount -> bridge"
+  },
+  {
+    "label": "nut_m5_231",
+    "type": "nut_m5",
+    "note": "camera mount -> bridge"
+  },
+  {
+    "label": "screw_m5x20_232",
+    "type": "screw_m5x20",
+    "note": "GPS bridge -> deck side insert"
+  },
+  {
+    "label": "washer_m5x1_233",
+    "type": "washer_m5x1",
+    "note": "GPS bridge -> deck side insert"
+  },
+  {
+    "label": "screw_m5x20_234",
+    "type": "screw_m5x20",
+    "note": "GPS bridge -> deck side insert"
+  },
+  {
+    "label": "washer_m5x1_235",
+    "type": "washer_m5x1",
+    "note": "GPS bridge -> deck side insert"
+  },
+  {
+    "label": "screw_m5x20_236",
+    "type": "screw_m5x20",
+    "note": "GPS bridge -> deck side insert"
+  },
+  {
+    "label": "washer_m5x1_237",
+    "type": "washer_m5x1",
+    "note": "GPS bridge -> deck side insert"
+  },
+  {
+    "label": "screw_m5x20_238",
+    "type": "screw_m5x20",
+    "note": "GPS bridge -> deck side insert"
+  },
+  {
+    "label": "washer_m5x1_239",
+    "type": "washer_m5x1",
+    "note": "GPS bridge -> deck side insert"
+  },
+  {
+    "label": "screw_m4x25_240",
+    "type": "screw_m4x25",
+    "note": "antenna ears -> GPS shelf"
+  },
+  {
+    "label": "washer_m4x1_241",
+    "type": "washer_m4x1",
+    "note": "antenna ears -> GPS shelf"
+  },
+  {
+    "label": "washer_m4x1_242",
+    "type": "washer_m4x1",
+    "note": "antenna ears -> GPS shelf"
+  },
+  {
+    "label": "nut_m4_243",
+    "type": "nut_m4",
+    "note": "antenna ears -> GPS shelf"
+  },
+  {
+    "label": "screw_m4x25_244",
+    "type": "screw_m4x25",
+    "note": "antenna ears -> GPS shelf"
+  },
+  {
+    "label": "washer_m4x1_245",
+    "type": "washer_m4x1",
+    "note": "antenna ears -> GPS shelf"
+  },
+  {
+    "label": "washer_m4x1_246",
+    "type": "washer_m4x1",
+    "note": "antenna ears -> GPS shelf"
+  },
+  {
+    "label": "nut_m4_247",
+    "type": "nut_m4",
+    "note": "antenna ears -> GPS shelf"
+  },
+  {
+    "label": "screw_m4x16_248",
+    "type": "screw_m4x16",
+    "note": "box external feet -> deck M4 insert"
+  },
+  {
+    "label": "washer_m4x1_249",
+    "type": "washer_m4x1",
+    "note": "box external feet -> deck M4 insert"
+  },
+  {
+    "label": "screw_m4x16_250",
+    "type": "screw_m4x16",
+    "note": "box external feet -> deck M4 insert"
+  },
+  {
+    "label": "washer_m4x1_251",
+    "type": "washer_m4x1",
+    "note": "box external feet -> deck M4 insert"
+  },
+  {
+    "label": "screw_m4x16_252",
+    "type": "screw_m4x16",
+    "note": "box external feet -> deck M4 insert"
+  },
+  {
+    "label": "washer_m4x1_253",
+    "type": "washer_m4x1",
+    "note": "box external feet -> deck M4 insert"
+  },
+  {
+    "label": "screw_m4x16_254",
+    "type": "screw_m4x16",
+    "note": "box external feet -> deck M4 insert"
+  },
+  {
+    "label": "washer_m4x1_255",
+    "type": "washer_m4x1",
+    "note": "box external feet -> deck M4 insert"
+  },
+  {
+    "label": "screw_m5x20_256",
+    "type": "screw_m5x20",
+    "note": "camera case fingers; verify against OEM screw"
+  },
+  {
+    "label": "nut_m5_257",
+    "type": "nut_m5",
+    "note": "camera mount captive nut"
+  },
+  {
+    "label": "new_screw_m5x16_150",
+    "type": "screw_m5x16",
+    "note": "keel adapter -> deck M5 insert"
+  },
+  {
+    "label": "new_washer_m5x1_151",
+    "type": "washer_m5x1",
+    "note": "keel adapter -> deck M5 insert"
+  },
+  {
+    "label": "new_screw_m5x16_152",
+    "type": "screw_m5x16",
+    "note": "keel adapter -> deck M5 insert"
+  },
+  {
+    "label": "new_washer_m5x1_153",
+    "type": "washer_m5x1",
+    "note": "keel adapter -> deck M5 insert"
+  },
+  {
+    "label": "new_screw_m5x16_154",
+    "type": "screw_m5x16",
+    "note": "keel adapter -> deck M5 insert"
+  },
+  {
+    "label": "new_washer_m5x1_155",
+    "type": "washer_m5x1",
+    "note": "keel adapter -> deck M5 insert"
+  },
+  {
+    "label": "new_screw_m5x16_156",
+    "type": "screw_m5x16",
+    "note": "keel adapter -> deck M5 insert"
+  },
+  {
+    "label": "new_washer_m5x1_157",
+    "type": "washer_m5x1",
+    "note": "keel adapter -> deck M5 insert"
+  },
+  {
+    "label": "new_screw_m6x60_158",
+    "type": "screw_m6x60",
+    "note": "keel adapter -> beam"
+  },
+  {
+    "label": "new_washer_m6x1_159",
+    "type": "washer_m6x1",
+    "note": "keel adapter -> beam"
+  },
+  {
+    "label": "new_washer_m6x1_160",
+    "type": "washer_m6x1",
+    "note": "keel adapter -> beam"
+  },
+  {
+    "label": "new_nut_m6_161",
+    "type": "nut_m6",
+    "note": "keel adapter -> beam"
+  }
+]

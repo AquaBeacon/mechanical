@@ -1,0 +1,21 @@
+vtray_deck watertight True components 1
+vtray_deck vtray_rib_bot gap 0.243 penetration 0
+vtray_deck vtray_rib_top gap 0.212 penetration 0
+vtray_deck cable_rail_power gap 0.071 penetration 0
+vtray_deck cable_rail_signal gap 0.06 penetration 0
+vtray_deck vtray_batt_box gap 0.065 penetration 0
+vtray_deck child_main gap 0.025 penetration 0
+vtray_deck child_pwr gap 0.026 penetration 0
+vtray_deck flange_sleeve_p gap 0.2 penetration 0
+vtray_deck flange_plate_p gap 0.203 penetration 1.934
+vtray_deck flange_sleeve_n gap 0.2 penetration 0
+vtray_deck flange_plate_n gap 0.2 penetration 1.459
+flange_brace watertight True components 1
+flange_brace harness_xh9_pwr gap 0.233 penetration 1.382
+flange_brace brace_sleeve_l gap 0.06 penetration 0.807
+flange_brace brace_plate_l gap 0.067 penetration 0.944
+flange_brace brace_sleeve_r gap 0.111 penetration 0.738
+flange_brace brace_plate_r gap 0.059 penetration 1.331
+flange_brace flange_sleeve_y gap 0.2 penetration 0
+flange_brace flange_plate_y gap 0.2 penetration 0
+INTERFERENCES [('vtray_deck', 'flange_plate_p', 1.9336937035117792), ('vtray_deck', 'flange_plate_n', 1.459076542019523), ('flange_brace', 'harness_xh9_pwr', 1.3820977124461493), ('flange_brace', 'brace_sleeve_l', 0.8069484030740894), ('flange_brace', 'brace_plate_l', 0.9444727372063723), ('flange_brace', 'brace_sleeve_r', 0.7375844904102178), ('flange_brace', 'brace_plate_r', 1.3305269516666796)]

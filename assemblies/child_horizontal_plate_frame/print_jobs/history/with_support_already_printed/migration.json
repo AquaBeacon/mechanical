@@ -1,0 +1,26 @@
+[
+  {
+    "original_path": "print_jobs/x1c_petg_basic/child_horizontal_plate_frame_side",
+    "destination": "print_jobs/history/with_support_already_printed/child_horizontal_plate_frame_side",
+    "note": "Already printed; auto-support job retained as history, no reprint required",
+    "source_manifest_sha256": "2669744942e55db886a916290966c50144432196ebf906244da256ca47416322"
+  },
+  {
+    "original_path": "print_jobs/x1c_petg_basic/child_horizontal_plate_frame_bottom",
+    "destination": "print_jobs/history/with_support_already_printed/child_horizontal_plate_frame_bottom",
+    "note": "Already printed; auto-support job retained as history, no reprint required",
+    "source_manifest_sha256": "d968373d34a4282474c16867b8799e200c8fac151d09b265520f9ce2eebb65e1"
+  },
+  {
+    "original_path": "print_jobs/x1c_petg_basic/child_wte4_petg_clamp_upper_linked",
+    "destination": "print_jobs/history/with_support_already_printed/child_wte4_petg_clamp_upper_linked",
+    "note": "Already printed; auto-support job retained as history, no reprint required",
+    "source_manifest_sha256": "4e85c8b55dcbaa0635ff13a0f0a3776032167b3271bf9b15faf329487bd604a5"
+  },
+  {
+    "original_path": "print_jobs/x1c_petg_basic/child_wte4_petg_clamp_lower_linked",
+    "destination": "print_jobs/history/with_support_already_printed/child_wte4_petg_clamp_lower_linked",
+    "note": "Already printed; auto-support job retained as history, no reprint required",
+    "source_manifest_sha256": "572c4bf59c74de672199f0841bf4206aa49962c6a83d6596f11945d20f726b9d"
+  }
+]

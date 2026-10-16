@@ -1,0 +1,241 @@
+{
+  "schema_version": 1,
+  "assembly": "child_simple_assembly",
+  "release_status": "existing_prototype",
+  "note": "既存構成の印刷データを整理。強度・造形性の新規認証ではない。",
+  "source_hashes": {
+    "assemblies/child_simple_assembly/placement.json": "2acd0ca406092ed4779cc9a3f21e47b853563f3e3db7c3afc0d87ef288cf6b1f",
+    "assemblies/child_simple_assembly/README.md": "60be8d838bdb6dcccc3b07dfb9f5992d77c82b1204e63b5968a05f3694da8339",
+    "parts/child/exterior/printed/child_simple_front/child_simple_front.md": "b0e2904dcff7fde13c8d72e61913b519366ba2a6f6a3cb29d8066285b4c2e567",
+    "parts/child/exterior/printed/child_simple_front/child_simple_front.scad": "4fe4a1e0b64155e558355d97826ac9d0ccac228deac964784a38ce31fc9a153e",
+    "parts/child/exterior/printed/child_simple_front/manufacturing.json": "8e2bd073eb7e3202ffdb94446b135ca398fcff7be88c972d1ce61a8d011d9ec1",
+    "parts/child/exterior/printed/child_simple_guard/child_simple_guard.md": "b1d875dbff680abf99c7cff3026096a5b02f4155c62203160e0abe854520cb0b",
+    "parts/child/exterior/printed/child_simple_guard/child_simple_guard.scad": "d85802575375a75975fb21f970a1619f0278640935c46d82aa545fecfee11c39",
+    "parts/child/exterior/printed/child_simple_guard/manufacturing.json": "b6d3d08b0713f0e3876d41594f6e61fb09c89e637dbde65aef57f4159a9a05bd",
+    "parts/child/exterior/printed/child_simple_rear/child_simple_rear.md": "06d70bb7cc25b35e890ee959269c58f701c63a191a08c993d9a011c5496b8629",
+    "parts/child/exterior/printed/child_simple_rear/child_simple_rear.scad": "04d0f21b1cd20381acab3c443fd60d9e8689693df77289dfc0a8b304ad6857dd",
+    "parts/child/exterior/printed/child_simple_rear/manufacturing.json": "7ff4362e7d42d16be1c5e29b97482391355ecf5da86e604ce32c4d2c906080ae",
+    "scad/lib/child_simple_frame.scad": "a0f6813cfac7191da48482ffe0ae434fb6d7521b607b2c4b4bdab7c7828553e1"
+  },
+  "parts": [
+    {
+      "part": "parts/child/exterior/printed/child_simple_front",
+      "stem": "child_simple_front",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "child_simple_front"
+      ],
+      "file": "child_simple_front.stl",
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/exterior/printed/child_simple_front/child_simple_front.stl",
+      "source_sha256": "5a153d5594f011e4d4af8b8f31af2564d042e008138877352380a6168c15da5d",
+      "sha256": "361cb70189bd9d1117c7157f49220d4b561337a33918e5252136da0f7093608b",
+      "extents_mm": [
+        220.0,
+        238.0,
+        82.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          110.0
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          -1.0,
+          219.0
+        ],
+        [
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          1.1205518212198281e-15
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/exterior/printed/child_simple_rear",
+      "stem": "child_simple_rear",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "child_simple_rear"
+      ],
+      "file": "child_simple_rear.stl",
+      "rotation_deg": [
+        -90,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/exterior/printed/child_simple_rear/child_simple_rear.stl",
+      "source_sha256": "f5fae7756906eb2576db8dfa6a8537e9def584bb04cd19ddd2baa85172ed7486",
+      "sha256": "1b427315aaf1a7176ba0f0f8635cfb56e002fff9e2f556d57eb1894f88c71308",
+      "extents_mm": [
+        220.0,
+        239.0,
+        82.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          110.0
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          1.0,
+          19.000000000000004
+        ],
+        [
+          0.0,
+          -1.0,
+          6.123233995736766e-17,
+          1.1205518212198281e-15
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/exterior/printed/child_simple_guard",
+      "stem": "child_simple_guard",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "child_simple_guard"
+      ],
+      "file": "child_simple_guard.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/exterior/printed/child_simple_guard/child_simple_guard.stl",
+      "source_sha256": "9d559988f352b5cd4a9459a046f843d93e9faa23d42f28143e4fdc4eca2bfe13",
+      "sha256": "61f7ed7f91b270a4f43810b3d6f95f7540863b7e2f3fbdf7301e472f8878ae5b",
+      "extents_mm": [
+        220.0,
+        168.0,
+        97.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          110.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          84.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          85.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    }
+  ],
+  "modifiers": [],
+  "generated_files": [
+    "child_simple_front.stl",
+    "child_simple_rear.stl",
+    "child_simple_guard.stl",
+    "DESIGN_NOTES.md",
+    "PRINT.md"
+  ],
+  "document_hashes": {
+    "DESIGN_NOTES.md": "d094a6dddcc17b359e8a2ecc1ae9c70b644aca1b7e554f765398aac85ed3a0d3",
+    "PRINT.md": "f99525bdbfa172270d35412d3215f8ba7940b6f835d998733898aaba0609f307"
+  }
+}

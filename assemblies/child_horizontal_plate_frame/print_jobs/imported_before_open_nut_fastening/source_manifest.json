@@ -1,0 +1,18 @@
+[
+  {
+    "source_stl_sha256": "unknown in imported history",
+    "original_path": "assemblies/child_horizontal_plate_frame/parts/child_horizontal_plate_frame_ballast_cap.3mf",
+    "sha256": "2c59ea128877b0b95c1a852dd74c4f6da6084bd134fd181b77896cc727116b2f",
+    "material_and_settings": "not verified",
+    "note": "Unmanaged pre-existing 3MF preserved as history; not current print entry",
+    "file": "child_horizontal_plate_frame_ballast_cap.3mf"
+  },
+  {
+    "source_stl_sha256": "unknown in imported history",
+    "original_path": "assemblies/child_horizontal_plate_frame/parts/child_wte4_petg_clamp_upper_linked.3mf",
+    "sha256": "2d5e87d339721c01677e74210270efbefff8e07ba3ae3abe4867dfbb83f58100",
+    "material_and_settings": "not verified",
+    "note": "Unmanaged pre-existing 3MF preserved as history; not current print entry",
+    "file": "child_wte4_petg_clamp_upper_linked.3mf"
+  }
+]

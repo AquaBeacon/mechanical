@@ -1,0 +1,10 @@
+{
+  "non_print_files": ["camera_housing_clasp_axle_a", "camera_housing_clasp_axle_b", "camera_housing_clasp_epdm", "camera_housing_clasp_seam_epdm"],
+  "degenerate_edge_flip_files": ["camera_housing_clasp_keeper", "camera_housing_clasp_lever"],
+  "print_rotations_deg": {
+    "camera_housing_clasp_base": [0, 0, 0],
+    "camera_housing_clasp_link": [90, 0, 0],
+    "camera_housing_clasp_lever": [180, 0, 0],
+    "camera_housing_clasp_keeper": [0, 0, 0]
+  }
+}

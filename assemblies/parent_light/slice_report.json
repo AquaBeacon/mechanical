@@ -1,0 +1,42 @@
+[
+  {
+    "part": "parent_light_frame",
+    "quantity": 1,
+    "sha256": "ea98a52ab59754fb1ead9c6d17125c18c2347f6a367f8c70309ec6b830bcc3b3",
+    "support_feature_sections": 0,
+    "grams": 201.43421936035156,
+    "seconds": 23129.97265625,
+    "warnings": "",
+    "support_enabled": true
+  },
+  {
+    "part": "parent_light_bar",
+    "quantity": 2,
+    "sha256": "b7281d92faf5c2059104966e869d30a3ae4a9f86c0f48fa81edc37e8d86bb5c8",
+    "support_feature_sections": 0,
+    "grams": 48.68181610107422,
+    "seconds": 5643.15478515625,
+    "warnings": "",
+    "support_enabled": true
+  },
+  {
+    "part": "parent_light_carrier",
+    "quantity": 1,
+    "sha256": "a24af865a969d86fb0d45a790451279c5536e6da64eff76ae33d5e7e8056a78c",
+    "support_feature_sections": 0,
+    "grams": 168.08424377441406,
+    "seconds": 18362.9453125,
+    "warnings": "",
+    "support_enabled": true
+  },
+  {
+    "part": "parent_light_jaw",
+    "quantity": 1,
+    "sha256": "137a9944fcf0779e66c86257bb5af3eff09f552975c6aeb4c3cac54cafdd2e37",
+    "support_feature_sections": 0,
+    "grams": 5.894188404083252,
+    "seconds": 1241.1231689453125,
+    "warnings": "",
+    "support_enabled": true
+  }
+]

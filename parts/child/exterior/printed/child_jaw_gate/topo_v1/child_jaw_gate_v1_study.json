@@ -1,0 +1,125 @@
+{
+  "_what": "child_jaw_gate v1: lightweight the movable jaw of the AquaBeacon child unit by topology optimisation, keeping every functional interface of the current part (308.3 cm3).",
+  "_geometry_source": "child_jaw_gate_v1.scad (part=preserve/obstacle/design_space/preserve_cuts). All dimensions are the child_jaw_gate.scad Customizer values (double definition).",
+  "_preserve": "pocket bands (bottom z-17..-2 / mid z92..108 / top z200..218 half-shell bands that capture the end-cap rim, the tube and the dome ring), gate knuckle cylinders x3 (Ø16, z -17..13 / 85.5..115.5 / 188..218), latch bosses x2 (20x16x24 carrying the knob-head pocket), HP4/HP5/HP-L seat plates (50x50x4 at y 70.35..74.35) + M5 insert bosses (Ø12 x 12) x4 each",
+  "_obstacle": "tube bore + end-cap/dome pockets + 45 deg cones, the core frame half-shell (y<=0, declared 3 voxels deep because the design space already stops at y=0), core-side knuckles (z 13.4..85.1 / 115.9..187.6 at x -81..-63, y 0..19), the hinge opening sweep / tool access (x<-72, y>18), the knob-bolt insertion channel Ø24 in front of each latch boss (y>16), the child_cam_bridge occupancy + 2.65 mm clearance (deck z44.95..52.95, keel z..74, rear webs and camera cases |x|>=27 up to z167 -- all at y>=64.35), the accessory envelope outside each HP seat (y>74.35, 50x50), and the HP40 insert / Ø14 cable holes",
+  "_design_space": "plain box x -80..72, y 0..74.35, z -17..218 = the current part bbox. The hinge column needs no special body because the knuckles sit at y 2..18.",
+  "_loads": "docs/子機外装フレーム再設計_要件.md §3 (L1 hoist 3g / L2 transport / L3 clamp preload / L4 frontal collision) with docs/子機外装_改善要件.md C6 (L2 = 6 kg x 5 g = 300 N).",
+
+  "units": "mm_N_MPa",
+  "material": "PETG",
+  "build_axis": "Z",
+  "raster_axis": "X",
+  "printer": "X1C",
+  "safety_factor": 3.0,
+  "max_deflection_mm": 1.0,
+
+  "voxel_mm": 3.0,
+
+  "design": {
+    "volfrac": 0.052,
+    "filter_mm": 6.0,
+    "symmetry": [],
+    "move": 0.2,
+    "tol_change": 0.002,
+    "overhang": {"max_support_mm": 12}
+  },
+
+  "geometry": {
+    "voxel_mm": 3.0,
+    "clearance_mm": 0.0,
+    "pad_voxels": 2,
+    "preserve": {
+      "interfaces": "02_setup/child_jaw_gate_v1_preserve.stl"
+    },
+    "design_space": "02_setup/child_jaw_gate_v1_design_space.stl",
+    "obstacle": {
+      "keep_out": "02_setup/child_jaw_gate_v1_obstacle.stl"
+    }
+  },
+
+  "finish": {
+    "voxel_mm": 0.5,
+    "add": {"interfaces": "02_setup/child_jaw_gate_v1_preserve.stl"},
+    "cut": {"features": "02_setup/child_jaw_gate_v1_preserve_cuts.stl"}
+  },
+
+  "regions": {
+    "pocket_bot": {"type": "box", "min": [-66, -1, -17],  "max": [66, 66, -2]},
+    "band_mid":   {"type": "box", "min": [-66, -1, 92],   "max": [66, 66, 108]},
+    "pocket_top": {"type": "box", "min": [-66, -1, 200],  "max": [66, 66, 218]},
+    "knuckles":   {"type": "box", "min": [-81, 1, -17],   "max": [-63, 19, 218]},
+    "latch_lo":   {"type": "box", "min": [51, -1, 27],    "max": [73, 17, 53]},
+    "latch_hi":   {"type": "box", "min": [51, -1, 157],   "max": [73, 17, 183]},
+    "hp4":        {"type": "box", "min": [-26, 61, 144],  "max": [26, 75, 196]},
+    "hp5":        {"type": "box", "min": [-26, 61, 74],   "max": [26, 75, 126]},
+    "hpl":        {"type": "box", "min": [-26, 61, -11],  "max": [26, 75, 41]}
+  },
+
+  "required_cases": ["L1", "L2f", "L2s", "L3", "L4"],
+
+  "cases": [
+    {
+      "name": "L1 hoist 3g: the gate hangs on the hinge pin and the two knob bolts; bridge + cameras (1.2 kg x 3 g = 35 N) pull down on HP4/HP5",
+      "supports": [
+        {"region": "knuckles", "fix": "xyz"},
+        {"region": "latch_lo", "fix": "xyz"},
+        {"region": "latch_hi", "fix": "xyz"}
+      ],
+      "loads": [
+        {"region": "hp4", "force": [0, 0, -18]},
+        {"region": "hp5", "force": [0, 0, -17]}
+      ],
+      "gravity": {"direction": [0, 0, -1], "g_factor": 3.0}
+    },
+    {
+      "name": "L2f transport frontal 300 N (-Y) through the cam bridge into HP4/HP5, the container reacts on the three bands",
+      "supports": [
+        {"region": "pocket_bot", "fix": "xyz"},
+        {"region": "band_mid",   "fix": "xyz"},
+        {"region": "pocket_top", "fix": "xyz"}
+      ],
+      "loads": [
+        {"region": "hp4", "force": [0, -150, 0]},
+        {"region": "hp5", "force": [0, -150, 0]}
+      ]
+    },
+    {
+      "name": "L2s transport side 300 N (-X on the latch edge), the container reacts on the three bands",
+      "supports": [
+        {"region": "pocket_bot", "fix": "xyz"},
+        {"region": "band_mid",   "fix": "xyz"},
+        {"region": "pocket_top", "fix": "xyz"}
+      ],
+      "loads": [
+        {"region": "latch_lo", "force": [-150, 0, 0]},
+        {"region": "latch_hi", "force": [-150, 0, 0]}
+      ]
+    },
+    {
+      "name": "L3 clamp preload: the two M5 knob bolts pull the latch bosses -Y (300 N each) and the hinge pin pulls the knuckles -Y, the tube + EVA react on the three bands",
+      "supports": [
+        {"region": "pocket_bot", "fix": "xyz"},
+        {"region": "band_mid",   "fix": "xyz"},
+        {"region": "pocket_top", "fix": "xyz"}
+      ],
+      "loads": [
+        {"region": "latch_lo", "force": [0, -300, 0]},
+        {"region": "latch_hi", "force": [0, -300, 0]},
+        {"region": "knuckles", "force": [0, -300, 0]}
+      ]
+    },
+    {
+      "name": "L4 frontal collision 300 N on the top of the bridge column (z 195): statics on the HP4/HP5 bolt pair (z 170 / 100) gives -400 N on HP4 and +100 N pull-out on HP5, the container reacts on the three bands",
+      "supports": [
+        {"region": "pocket_bot", "fix": "xyz"},
+        {"region": "band_mid",   "fix": "xyz"},
+        {"region": "pocket_top", "fix": "xyz"}
+      ],
+      "loads": [
+        {"region": "hp4", "force": [0, -400, 0]},
+        {"region": "hp5", "force": [0, 100, 0]}
+      ]
+    }
+  ]
+}

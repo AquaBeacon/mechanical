@@ -1,0 +1,23 @@
+{
+  "consumer": "child_simple_guard",
+  "references": [
+    {
+      "part": "wte4_acrylic_tube",
+      "path": "parts/child/exterior/cots/wte4_acrylic_tube",
+      "md_sha256": "7fa4906abdcab6de947c6f3c802be6d8278c22715319922ded2f55a859d11476",
+      "stl_sha256": null,
+      "bbox_mm": null,
+      "status_at_lock": [
+        "needs_measure",
+        "provisional"
+      ],
+      "values": {
+        "tube_od": 114.3,
+        "tube_length": 200.0
+      },
+      "confirmed_by_human": true,
+      "confirmed_at": "2026-09-16T00:30:08",
+      "note": "User confirmed vertical 200 mm vessel; guard connects to new frame, not directly to tube."
+    }
+  ]
+}

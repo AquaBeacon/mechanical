@@ -1,0 +1,120 @@
+{
+  "non_print_files": [
+    "lid_keepout",
+    "stop_pin_0",
+    "stop_pin_1",
+    "stop_pin_2",
+    "stop_pin_3",
+    "tie_rod_0_0",
+    "tie_rod_0_1",
+    "tie_rod_1_0",
+    "tie_rod_1_1",
+    "tie_rod_2_0",
+    "tie_rod_2_1",
+    "tie_rod_3_0",
+    "tie_rod_3_1",
+    "tie_rod_4_0",
+    "tie_rod_4_1",
+    "storage_strap_0",
+    "storage_strap_1",
+    "tx_top_keepout",
+    "main_lower_carrier",
+    "sony_upper_carrier",
+    "main_offset_corner",
+    "sony_corner_0",
+    "sony_corner_1",
+    "sony_corner_2",
+    "sony_corner_3",
+    "battery_pads_open_end",
+    "battery_lid_nut_support_blocker",
+    "battery_slide_rail_support_blocker"
+  ],
+  "note": "Metal fasteners, straps and lid exclusion volume are not printable. manufacturing_parts.json is the existing manufacturing list.",
+  "source_dependencies": [
+    "../../../../../spec/build_parent_hand_service.py",
+    "../../../../../spec/remesh_parent_gnss_outputs.py",
+    "../../../../../scad/lib/parent_gnss.py",
+    "../../../../../scad/lib/cad_edge_finish.py",
+    "../../cots/sparkfun_neo_f9p/ref/SparkFun NEO-F9P.brd",
+    "../../cots/sparkfun_neo_f9p/ref/NEO-F9P.STEP",
+    "../../../../../scad/lib/parent_corner_mounts.py",
+    "../../../../../spec/parent_switch_tx_body.py",
+    "../../../../../spec/build_bcas212310g.py",
+    "../../../exterior/cots/bcas212310g/dimensions.json",
+    "../../../exterior/cots/bcas212310g/interior_corner_clearance.step",
+    "../../../../../scad/lib/parent_case_access.py",
+    "../../../../../scad/lib/parent_battery_slide.py",
+    "../../../../../parts/child/interior/printed/child_vtray_batt_floor/child_vtray_batt_floor.scad"
+  ],
+  "print_rotations_deg": {
+    "guide_0": [
+      0,
+      -90,
+      0
+    ],
+    "guide_1": [
+      0,
+      -90,
+      0
+    ],
+    "guide_2": [
+      0,
+      90,
+      0
+    ],
+    "guide_3": [
+      0,
+      90,
+      0
+    ],
+    "service_prop_0": [
+      0,
+      90,
+      0
+    ],
+    "service_prop_1": [
+      0,
+      90,
+      0
+    ],
+    "service_prop_2": [
+      0,
+      90,
+      0
+    ],
+    "service_prop_3": [
+      0,
+      90,
+      0
+    ],
+    "service_prop_4": [
+      0,
+      90,
+      0
+    ],
+    "main_corner_column": [
+      0,
+      0,
+      0
+    ],
+    "main_mount_plate": [
+      0,
+      0,
+      0
+    ],
+    "sony_mount_plate": [
+      0,
+      0,
+      0
+    ]
+  },
+  "release_status": "fit_check_prototype",
+  "structural_print_conditions": {
+    "material": "PETG",
+    "layer_height_mm": 0.2,
+    "walls": 4,
+    "infill_percent": 100,
+    "build_axis": "Z",
+    "note": "Dense equivalent-solid assumption for historical FEA; current case-corrected geometry not structurally analyzed. Supports as PRINT.md. No fatigue/creep qualification."
+  }
+}

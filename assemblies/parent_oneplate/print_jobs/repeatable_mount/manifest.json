@@ -1,0 +1,462 @@
+{
+  "schema_version": 1,
+  "assembly": "parent_oneplate",
+  "job": "repeatable_mount",
+  "material": "PETG",
+  "layer_height_mm": 0.2,
+  "walls": 6,
+  "top_layers": 6,
+  "bottom_layers": 6,
+  "infill_percent": 40,
+  "supports": true,
+  "brim_mm": 5.0,
+  "bed_mm": [
+    256.0,
+    256.0
+  ],
+  "excluded_zone_mm": [
+    0.0,
+    0.0,
+    18.0,
+    28.0
+  ],
+  "placement_sha256": "cb4faf7682b39f3761489177ccbdfa44b7e75d3c98e7000f07bac08adb54edbb",
+  "source_manifest_sha256": "048a65bd4d473f176f2e2b828de060a7da0a135caa0eb9ddaed8d2c5c15aa8f2",
+  "skipped": [
+    {
+      "part": "camera_mount",
+      "reason": "shared existing mount excluded from new print job"
+    }
+  ],
+  "plates": [
+    {
+      "plate": 1,
+      "stl": "plate_1.stl",
+      "sha256": "a973fd9c0221c504b8335873354bf90902d6208df06968cb4aee45746a3a6039",
+      "bbox_min_mm": [
+        10.0,
+        38.0,
+        0.0
+      ],
+      "bbox_max_mm": [
+        242.0,
+        245.0,
+        42.0
+      ],
+      "bbox_mm": [
+        232.0,
+        207.0,
+        42.0
+      ],
+      "closed_mesh": true,
+      "winding_consistent": true,
+      "zero_area_faces": 0,
+      "part_count": 7,
+      "parts": [
+        {
+          "part": "parts/parent/exterior/printed/parent_oneplate_frame",
+          "stem": "parent_oneplate_frame",
+          "file": "parent_oneplate_frame.stl",
+          "instance": 1,
+          "quantity": 1,
+          "material": "PETG",
+          "rotation_deg": [
+            180,
+            0,
+            0
+          ],
+          "extents_mm": [
+            232.0,
+            134.0,
+            42.000000000000014
+          ],
+          "source_sha256": "0dd6846d4a3898346d96a0d4725349e28fef17745454bb6254849eca2acaf301",
+          "plate_xy_mm": [
+            10.0,
+            38.0
+          ],
+          "brim_envelope_xy_mm": [
+            5.0,
+            33.0,
+            247.0,
+            177.0
+          ]
+        },
+        {
+          "part": "parts/parent/exterior/printed/parent_oneplate_bar",
+          "stem": "parent_oneplate_bar",
+          "file": "parent_oneplate_bar.stl",
+          "instance": 1,
+          "quantity": 2,
+          "material": "PETG",
+          "rotation_deg": [
+            0.0,
+            -0.0,
+            -180.0
+          ],
+          "extents_mm": [
+            232.0,
+            24.0,
+            12.0
+          ],
+          "source_sha256": "caebb7f4c5d9c4ff67d237de38e7185cfff147b86c364f216e41791dc254ff59",
+          "plate_xy_mm": [
+            10.0,
+            187.0
+          ],
+          "brim_envelope_xy_mm": [
+            5.0,
+            182.0,
+            247.0,
+            216.0
+          ]
+        },
+        {
+          "part": "parts/parent/exterior/printed/parent_oneplate_camera_stop",
+          "stem": "parent_oneplate_camera_stop",
+          "file": "parent_oneplate_camera_stop.stl",
+          "instance": 1,
+          "quantity": 1,
+          "material": "PETG",
+          "rotation_deg": [
+            0,
+            0,
+            0
+          ],
+          "extents_mm": [
+            52.0,
+            19.0,
+            22.799999999999997
+          ],
+          "source_sha256": "4ebb6a8b67b3ee693b5b2395158d806d81ebce812ea4af8684ab5d36f46f4b18",
+          "plate_xy_mm": [
+            10.0,
+            226.0
+          ],
+          "brim_envelope_xy_mm": [
+            5.0,
+            221.0,
+            67.0,
+            250.0
+          ]
+        },
+        {
+          "part": "parts/parent/exterior/printed/parent_light_jaw",
+          "stem": "parent_light_jaw",
+          "file": "parent_light_jaw.stl",
+          "instance": 1,
+          "quantity": 1,
+          "material": "PETG",
+          "rotation_deg": [
+            -90.0,
+            0.0,
+            -180.0
+          ],
+          "extents_mm": [
+            50.0,
+            14.0,
+            8.0
+          ],
+          "source_sha256": "e98b1b9472087481bd3db7ee84fa24593ca91cbdda31b3146e0822f0e9c279c4",
+          "plate_xy_mm": [
+            77.0,
+            226.0
+          ],
+          "brim_envelope_xy_mm": [
+            72.0,
+            221.0,
+            132.0,
+            245.0
+          ]
+        },
+        {
+          "part": "parts/parent/exterior/printed/parent_oneplate_box_locator",
+          "stem": "parent_oneplate_box_locator_pressure_pad",
+          "file": "parent_oneplate_box_locator_pressure_pad.stl",
+          "instance": 1,
+          "quantity": 3,
+          "material": "PETG",
+          "rotation_deg": [
+            0,
+            0,
+            0
+          ],
+          "extents_mm": [
+            14.0,
+            12.0,
+            5.4
+          ],
+          "source_sha256": "26b15e6dce7c80b48dfb7fe3d65b8435d8115b2d235054266b75d37f239bd47e",
+          "plate_xy_mm": [
+            142.0,
+            226.0
+          ],
+          "brim_envelope_xy_mm": [
+            137.0,
+            221.0,
+            161.0,
+            243.0
+          ]
+        },
+        {
+          "part": "parts/parent/exterior/printed/parent_oneplate_box_locator",
+          "stem": "parent_oneplate_box_locator_pressure_pad",
+          "file": "parent_oneplate_box_locator_pressure_pad.stl",
+          "instance": 2,
+          "quantity": 3,
+          "material": "PETG",
+          "rotation_deg": [
+            0,
+            0,
+            0
+          ],
+          "extents_mm": [
+            14.0,
+            12.0,
+            5.4
+          ],
+          "source_sha256": "26b15e6dce7c80b48dfb7fe3d65b8435d8115b2d235054266b75d37f239bd47e",
+          "plate_xy_mm": [
+            171.0,
+            226.0
+          ],
+          "brim_envelope_xy_mm": [
+            166.0,
+            221.0,
+            190.0,
+            243.0
+          ]
+        },
+        {
+          "part": "parts/parent/exterior/printed/parent_oneplate_box_locator",
+          "stem": "parent_oneplate_box_locator_pressure_pad",
+          "file": "parent_oneplate_box_locator_pressure_pad.stl",
+          "instance": 3,
+          "quantity": 3,
+          "material": "PETG",
+          "rotation_deg": [
+            0,
+            0,
+            0
+          ],
+          "extents_mm": [
+            14.0,
+            12.0,
+            5.4
+          ],
+          "source_sha256": "26b15e6dce7c80b48dfb7fe3d65b8435d8115b2d235054266b75d37f239bd47e",
+          "plate_xy_mm": [
+            200.0,
+            226.0
+          ],
+          "brim_envelope_xy_mm": [
+            195.0,
+            221.0,
+            219.0,
+            243.0
+          ]
+        }
+      ]
+    },
+    {
+      "plate": 2,
+      "stl": "plate_2.stl",
+      "sha256": "6b00cdfcbc318c399a0276000384be33c3dfc664500d61319bc4b8a7bf4cb23a",
+      "bbox_min_mm": [
+        10.0,
+        38.0,
+        0.0
+      ],
+      "bbox_max_mm": [
+        242.0,
+        175.0,
+        69.0
+      ],
+      "bbox_mm": [
+        232.0,
+        137.0,
+        69.0
+      ],
+      "closed_mesh": true,
+      "winding_consistent": true,
+      "zero_area_faces": 0,
+      "part_count": 6,
+      "parts": [
+        {
+          "part": "parts/parent/exterior/printed/parent_oneplate_bar",
+          "stem": "parent_oneplate_bar",
+          "file": "parent_oneplate_bar.stl",
+          "instance": 2,
+          "quantity": 2,
+          "material": "PETG",
+          "rotation_deg": [
+            0.0,
+            -0.0,
+            -180.0
+          ],
+          "extents_mm": [
+            232.0,
+            24.0,
+            12.0
+          ],
+          "source_sha256": "caebb7f4c5d9c4ff67d237de38e7185cfff147b86c364f216e41791dc254ff59",
+          "plate_xy_mm": [
+            10.0,
+            38.0
+          ],
+          "brim_envelope_xy_mm": [
+            5.0,
+            33.0,
+            247.0,
+            67.0
+          ]
+        },
+        {
+          "part": "parts/parent/exterior/printed/parent_oneplate_td_support",
+          "stem": "parent_oneplate_td_support",
+          "file": "parent_oneplate_td_support.stl",
+          "instance": 1,
+          "quantity": 1,
+          "material": "PETG",
+          "rotation_deg": [
+            -90,
+            0,
+            0
+          ],
+          "extents_mm": [
+            80.0,
+            43.849999999999994,
+            69.0
+          ],
+          "source_sha256": "58a862def1ba6ea267be641e0da1ff055de505f13563570c34fa1853c74d5195",
+          "plate_xy_mm": [
+            10.0,
+            77.0
+          ],
+          "brim_envelope_xy_mm": [
+            5.0,
+            72.0,
+            95.0,
+            125.85
+          ]
+        },
+        {
+          "part": "parts/parent/exterior/printed/parent_oneplate_box_locator",
+          "stem": "parent_oneplate_box_locator_end_push",
+          "file": "parent_oneplate_box_locator_end_push.stl",
+          "instance": 1,
+          "quantity": 1,
+          "material": "PETG",
+          "rotation_deg": [
+            0,
+            0,
+            0
+          ],
+          "extents_mm": [
+            20.0,
+            80.0,
+            33.0
+          ],
+          "source_sha256": "a6cf7ceab45e531595979b3b3926ad0102e5cb8169c68610950ccdaa96d29b61",
+          "plate_xy_mm": [
+            105.0,
+            77.0
+          ],
+          "brim_envelope_xy_mm": [
+            100.0,
+            72.0,
+            130.0,
+            162.0
+          ]
+        },
+        {
+          "part": "parts/parent/exterior/printed/parent_oneplate_box_locator",
+          "stem": "parent_oneplate_box_locator_end_fixed",
+          "file": "parent_oneplate_box_locator_end_fixed.stl",
+          "instance": 1,
+          "quantity": 1,
+          "material": "PETG",
+          "rotation_deg": [
+            0,
+            0,
+            0
+          ],
+          "extents_mm": [
+            20.0,
+            74.0,
+            33.0
+          ],
+          "source_sha256": "993127efcdc0d16995b5a8b50798fb0a5f128db80e8c66ec794cf45fb8f13d82",
+          "plate_xy_mm": [
+            140.0,
+            77.0
+          ],
+          "brim_envelope_xy_mm": [
+            135.0,
+            72.0,
+            165.0,
+            156.0
+          ]
+        },
+        {
+          "part": "parts/parent/exterior/printed/parent_oneplate_box_locator",
+          "stem": "parent_oneplate_box_locator_side_left",
+          "file": "parent_oneplate_box_locator_side_left.stl",
+          "instance": 1,
+          "quantity": 1,
+          "material": "PETG",
+          "rotation_deg": [
+            0,
+            0,
+            0
+          ],
+          "extents_mm": [
+            11.0,
+            98.0,
+            17.65
+          ],
+          "source_sha256": "1e41c337e4b28f8b1587209a23db815c71f99bc3ce2fd345dd4576c80b1adede",
+          "plate_xy_mm": [
+            175.0,
+            77.0
+          ],
+          "brim_envelope_xy_mm": [
+            170.0,
+            72.0,
+            191.0,
+            180.0
+          ]
+        },
+        {
+          "part": "parts/parent/exterior/printed/parent_oneplate_box_locator",
+          "stem": "parent_oneplate_box_locator_side_right",
+          "file": "parent_oneplate_box_locator_side_right.stl",
+          "instance": 1,
+          "quantity": 1,
+          "material": "PETG",
+          "rotation_deg": [
+            0,
+            0,
+            0
+          ],
+          "extents_mm": [
+            10.5,
+            98.0,
+            21.65
+          ],
+          "source_sha256": "8ec80c92bb249a315964a68b8e332d2b509b379f48328ac7e757ffb3e02f44f4",
+          "plate_xy_mm": [
+            201.0,
+            77.0
+          ],
+          "brim_envelope_xy_mm": [
+            196.0,
+            72.0,
+            216.5,
+            180.0
+          ]
+        }
+      ]
+    }
+  ]
+}

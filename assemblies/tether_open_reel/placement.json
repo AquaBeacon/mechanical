@@ -1,0 +1,73 @@
+{
+  "name": "tether_open_reel",
+  "parts": [
+    {
+      "part": "parts/common/jigs/tether_open_reel",
+      "file": "tether_open_reel_stand",
+      "label": "Upright cradle",
+      "ops": [],
+      "color": "DarkSlateGray",
+      "group": "reel"
+    },
+    {
+      "part": "parts/common/jigs/tether_open_reel",
+      "file": "tether_open_reel_base",
+      "label": "Single winding chamber",
+      "ops": [
+        {
+          "translate": [
+            0,
+            90.0,
+            125.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "SlateGray",
+      "group": "reel"
+    },
+    {
+      "part": "parts/common/jigs/tether_open_reel",
+      "file": "tether_open_reel_lid",
+      "label": "Side plate with two release latches",
+      "ops": [
+        {
+          "translate": [
+            0,
+            90.0,
+            125.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            180.0
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Orange",
+      "group": "reel"
+    }
+  ]
+}

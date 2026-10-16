@@ -1,0 +1,24 @@
+{
+  "print_rotations_deg": {
+    "child_rx_edge_clamp_base": [
+      -90,
+      0,
+      0
+    ],
+    "child_rx_edge_clamp_cap": [
+      90,
+      0,
+      0
+    ],
+    "child_rx_edge_clamp_base_pair": [
+      -90,
+      0,
+      0
+    ],
+    "child_rx_edge_clamp_cap_pair": [
+      90,
+      0,
+      0
+    ]
+  }
+}

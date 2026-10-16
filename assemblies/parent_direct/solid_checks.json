@@ -1,0 +1,12 @@
+{
+  "checked_components": 13,
+  "collisions": [],
+  "omitted_references": [
+    "lid_schematic",
+    "pad_-98_-55",
+    "pad_98_-55",
+    "pad_-98_55",
+    "pad_98_55"
+  ],
+  "hardware_checked": false
+}

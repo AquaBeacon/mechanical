@@ -1,0 +1,18 @@
+{
+  "status": "exploration_only",
+  "kind": "camera",
+  "source": "action_camera.md; existing DJI Osmo Action 6 and waterproof-case record",
+  "dimensions_status": "Parametric OpenSCAD proxy only, not a certified manufacturer mesh or an interface drawing; shell details and lens center remain provisional.",
+  "case_mm": [94.7,45.9,84.1],
+  "cad_source": "visual_proxy.scad",
+  "mounting_tabs": {
+    "thickness_mm": 3,
+    "inner_gap_mm": 3,
+    "hole_diameter_mm": 5,
+    "hole_center_from_proxy_bottom_mm": 12.5,
+    "width_mm": 18,
+    "width_status": "provisional"
+  },
+  "lens_radius_mm": 16,
+  "view_axis_local": [0,1,0]
+}

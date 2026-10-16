@@ -1,0 +1,159 @@
+{
+  "name": "child_simple_assembly",
+  "note": "Simple vertical enclosure. M3 40x40 camera and TD04A interfaces; mounts added later. Dome is a provisional reference. User confirmed vertical OD114.3 x 200 on 2026-09-16.",
+  "coordinate_system": "X left/right; +Y front; Z up; tube bottom z=0; mm",
+  "groups": {
+    "vessel": true,
+    "frame": true
+  },
+  "items": [
+    {
+      "label": "acrylic_tube_200",
+      "part": "parts/child/exterior/cots/wte4_acrylic_tube",
+      "file": "BR-101052-200_RevB",
+      "group": "vessel",
+      "color": "LightSteelBlue",
+      "alpha": 0.3,
+      "ops": [
+        {
+          "rotate": [
+            0,
+            -90,
+            0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            -57.15,
+            -57.15
+          ]
+        }
+      ]
+    },
+    {
+      "label": "flange_bot",
+      "part": "parts/child/exterior/cots/wte4_flange",
+      "file": "BR-101040_RevC",
+      "group": "vessel",
+      "color": "LightSteelBlue",
+      "alpha": 0.6,
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            19
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -57.15,
+            -57.15,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "flange_top",
+      "part": "parts/child/exterior/cots/wte4_flange",
+      "file": "BR-101040_RevC",
+      "group": "vessel",
+      "color": "LightSteelBlue",
+      "alpha": 0.6,
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            181
+          ]
+        },
+        {
+          "translate": [
+            -57.15,
+            -57.15,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "end_cap_bottom",
+      "part": "parts/child/exterior/cots/wte4_end_cap_5xm10",
+      "file": "WTE4-M-END-CAP-5XM10-R2",
+      "group": "vessel",
+      "color": "Gainsboro",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -3.8
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -60.15,
+            -57.15,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "dome_top",
+      "part": "parts/child/exterior/cots/wte4_dome_cap",
+      "file": "wte4_dome_cap_ref",
+      "group": "vessel",
+      "color": "PowderBlue",
+      "alpha": 0.35,
+      "note": "参考モデル (仮)。dome_h 要実測",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            208
+          ]
+        }
+      ]
+    },
+    {
+      "label": "child_simple_front",
+      "part": "parts/child/exterior/printed/child_simple_front",
+      "group": "frame",
+      "color": "SteelBlue",
+      "ops": []
+    },
+    {
+      "label": "child_simple_rear",
+      "part": "parts/child/exterior/printed/child_simple_rear",
+      "group": "frame",
+      "color": "SeaGreen",
+      "ops": []
+    },
+    {
+      "label": "child_simple_guard",
+      "part": "parts/child/exterior/printed/child_simple_guard",
+      "group": "frame",
+      "color": "DimGray",
+      "ops": []
+    }
+  ]
+}

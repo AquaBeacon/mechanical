@@ -1,0 +1,21 @@
+{
+  "status": "finished",
+  "supervisor_pid": 117040,
+  "created": 1789023974.8654172,
+  "pid": 115024,
+  "started": 1789026345.2145112,
+  "command": [
+    "C:\\Python313\\python.exe",
+    "-m",
+    "topopt",
+    "run",
+    "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\assemblies\\child_single_camera_topopt\\child_cam_bridge\\study_refined.json",
+    "--model",
+    "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\assemblies\\child_single_camera_topopt\\child_cam_bridge\\refined",
+    "--iters",
+    "160",
+    "--quick"
+  ],
+  "exit_code": 1,
+  "finished": 1789027425.431658
+}

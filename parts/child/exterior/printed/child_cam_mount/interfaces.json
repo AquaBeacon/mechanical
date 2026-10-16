@@ -1,0 +1,47 @@
+{
+  "consumer": "child_cam_mount",
+  "references": [
+    {
+      "part": "action_camera",
+      "path": "parts/child/exterior/cots/action_camera",
+      "md_sha256": "d1b59d0913b4de1e32504f29ed00ec98780400af50d4cf679640ef0dfd86af1e",
+      "stl_sha256": null,
+      "bbox_mm": null,
+      "status_at_lock": [
+        "needs_measure",
+        "provisional"
+      ],
+      "values": {
+        "case_w": 94.7,
+        "case_h": 84.1,
+        "case_d": 45.9,
+        "tab_t": 3.0,
+        "tab_hole_off": 9.0
+      },
+      "confirmed_by_human": true,
+      "confirmed_at": "2026-09-05T00:21:11",
+      "note": "人間確認 2026-08-02: 防水ケース入りOsmo Action 6を縦向き搭載、ケース底面デュアルタブ+M5で固定。寸法は公称/推定の仮値 — 実測後に置換 (ユーザ指示) [2026-09-05 再ロック: 改善実装後の md 更新に追従]"
+    },
+    {
+      "part": "child_cam_bridge",
+      "path": "parts/child/exterior/printed/child_cam_bridge",
+      "md_sha256": "8ae64f86665d58d92589314973782a8ca1668115a2b3c23f1576de57b33ed863",
+      "stl_sha256": "4c2b6db63249dcbd5218cf6e82267cb555100c6c25ce6ba7225af4dba6eaee4c",
+      "bbox_mm": [
+        240.0,
+        61.0,
+        150.05
+      ],
+      "status_at_lock": [
+        "needs_measure"
+      ],
+      "values": {
+        "deck_top": 52.95,
+        "mount_y0": 97.05
+      },
+      "confirmed_by_human": false,
+      "confirmed_at": "2026-09-06T04:26:40",
+      "note": "2026-09-06 再ロック (人間確認待ち): ブリッジ v2 (トポロジー最適化、266 cm³) でも座・端板の値は不変"
+    }
+  ]
+}

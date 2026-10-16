@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-12",
+  "from": "assemblies/parent_hand_service/parts/ann_mb1_coax_ring.3mf",
+  "to": "assemblies/parent_hand_service/print_jobs/history_case_screw_access_20261012/ann_mb1_coax_ring.3mf",
+  "sha256": "534e72a2a685f90bbb8d610ba422583002b1b6f57a1bf83357a084ec7055b44c",
+  "content_changed": false,
+  "reason": "Preserve old slicer project; current canonical coil-ring geometry changed"
+}

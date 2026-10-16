@@ -1,0 +1,60 @@
+{
+    "error_string": "Success.",
+    "export_time": 201,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 35,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Brim": 15.975849151611328,
+                "Custom": 35.15104293823242,
+                "Gap infill": 23.774517059326172,
+                "Inner wall": 446.7191467285156,
+                "Outer wall": 112.07791137695313,
+                "Top surface": 16.51182746887207,
+                "Travel": 153.9107666015625,
+                "Undefined": 138.5504608154297
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFG00",
+                    "id": 1,
+                    "main_used_g": 1.842663288116455,
+                    "total_used_g": 1.842663288116455
+                }
+            ],
+            "generate_support_material_time": 6,
+            "id": 1,
+            "infill_time": 6,
+            "layer_filament_change": 0,
+            "main_predication": 769.0015258789063,
+            "make_perimeters_time": 37,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 21.118202209472656,
+                        "height": 10.0,
+                        "width": 20.577800750732422,
+                        "x": 117.71109008789063,
+                        "y": 117.44091033935547,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "quick_release_prototypes_twist_knob.stl",
+                    "triangle_count": 3744
+                }
+            ],
+            "sliced_time": 182,
+            "sliced_time_with_cache": 122,
+            "total_predication": 788.7616577148438,
+            "triangle_count": 3744,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 100.0,
+    "wall_loops": 8
+}

@@ -1,0 +1,26 @@
+grid 44 x 30 x 55 at 3.000 mm (origin [-66.0, 58.0, 38.95])
+
+runtime  80 iterations x 4 case(s) ~ 12 min  (range 6 min - 17 min; one cold solve of case 1 took 2.2 s on 46000 elements [cuda/mg])
+
+--- setup ---
+  voxel               3.000 mm, grid [44, 30, 55]
+  design space        1242000 mm3
+  preserve            88344 mm3 in 4 bodies
+  obstacle            521856 mm3 declared -> 521856 mm3 with clearance
+  free (optimisable)  661554 mm3 (24502 cells)
+  attach              interfaces may be joined at 1840 cell(s), 16560 mm2 (join_free_space); 0 cell(s) / 0 mm3 of no-contact shell around the rest of it, 3.00 mm thick
+  build volume        250x250x250 on Bambu Lab X1-Carbon -- design space 120x69x150, fits
+  free to decide      53 % of the domain; preserve is 40 % of the expected part
+    preserve   interfaces                88344 mm3  stl:preserve.stl
+    design_space design_space            1242000 mm3  stl:design_space.stl
+    obstacle   keep_out                 521856 mm3  stl:obstacle.stl
+    obstacle   cameras                  387072 mm3  stl:cameras.stl
+  WARN  the free region is only 2.0 voxels (6.00 mm) thick at its thinnest. Below about 3 voxels there is no room for a hole, so the topology there is set by the outline rather than chosen -- refine the grid or widen the design space.
+  WARN  the 2 support point(s) are fixed by preserve at hp4_seat at [0.0, 76.0, 169.4]; hp5_seat at [0.0, 76.0, 100.5]. Where the part is held is an input to this study, not a result of it -- if the layout of the supports is itself meant to be optimised, that decision is currently being made in CAD.
+  => setup OK
+
+wrote C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\child_single_camera_topopt\child_cam_bridge\setup
+  look at C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\child_single_camera_topopt\child_cam_bridge\setup\study_setup.png
+  look at C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\child_single_camera_topopt\child_cam_bridge\setup\study_setup.scad
+
+NEXT: topopt opt C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\child_single_camera_topopt\child_cam_bridge\study.json --out DIR

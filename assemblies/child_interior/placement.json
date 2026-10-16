@@ -1,0 +1,1560 @@
+{
+  "name": "child_interior",
+  "note": "2026-10-01 bolted revision: battery M3x12/nut x4, floor M3x10 flat/nut, printed broader roots, front flange M3x16. Earlier notes below are history.\n2026-09-27: WetLink M10×5を実配置。下円形リブと下デッキ尾部を廃止。電池用ねじをZ36側面へ移動し、床板の下端Z22.5と解除ストロークを確保。旧記述は履歴。\n子機 (水中ユニット) 内装のみのサブアセンブリ。親機の parent_interior_p1 と同じ位置づけ。\n容器: WTE4 4in × 200mm アクリルチューブ + 上下フランジ BR-101040 (透明表示・取合い確認用)。下エンドキャップ (5×M10) と上ドーム (仮モデル) も透明表示 (2026-09-03 追加)。外装シェル / カメラは表示しない。\n2026-08-28: 浮いていた部品を全部固定 — スペーサ・ねじ・ワッシャ・シム・フォームパッドを実体化し、貫通していた 4 箇所 (LCD/ベゼル前板、電池箱アンカー/デッキ、ヒンジ枠ラグ/アーチ、ナックル/ドア板) を部品形状で修正。\n2026-09-03: 電池を 35×26×110 (リード −Z 出し) に変更。電池箱を ∩ チャンネル + 着脱床板 (皿ねじ 1 本) に作り直し、電池だけを取り出せるようにした。電源リードは切って XT30 メスを付け、基板側は J_BAT パッド直付けのピグテール (XT30 ペアは +X レール z 25..55)。基板間 XH ハーネスをモデル化 (parts/common/cabling/child_harness)。\n2026-09-03: 下フランジ固定を 3 点化 — 0°/180° (デッキラグ + MF10) に加え、90° (0,+47) を下 LCD アーチ (child_lcd_support_lower) の耳で直接フランジ内面へ M3×12。270° は電池箱床が塞ぐため未使用。上フランジ 4 穴は内側からねじが回せないので使わない。穴の根拠: parts/child/exterior/cots/wte4_flange/_work/images/ref/BR-101040_hole_map.png + WTE データシート Rev C.5。\ninterior グループは assemblies/child_vertical_assembly/placement.json と同一 (生成元: 本 placement を正とし、spec/child_interior_reinforcement/sync_bolted_mount.py で複製)。\n配置根拠: docs/子機内装_収まり検討.md / docs/子機内装_サービス設計.md。検証: scad/lib/verify_child_interior.py, scad/lib/check_asm_contacts.py。",
+  "coordinate_system": "X=左右(カメラ基線) / Y=前後(+Y が前・カメラとライトの向き) / Z=上。アクリルチューブ下端面が z=0。",
+  "groups": {
+    "vessel": true,
+    "interior": true,
+    "penetrators": true
+  },
+  "items": [
+    {
+      "label": "acrylic_tube_200",
+      "part": "parts/child/exterior/cots/wte4_acrylic_tube",
+      "file": "BR-101052-200_RevB",
+      "group": "vessel",
+      "color": "LightSteelBlue",
+      "alpha": 0.22,
+      "note": "アクリルチューブ 4in x 200mm。元モデルは軸=X(0..200)/断面中心(57.15,57.15) → 軸を Z へ立てる。下端面が z=0",
+      "ops": [
+        {
+          "rotate": [
+            0,
+            -90,
+            0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            -57.15,
+            -57.15
+          ]
+        }
+      ]
+    },
+    {
+      "label": "flange_bot",
+      "part": "parts/child/exterior/cots/wte4_flange",
+      "file": "BR-101040_RevC",
+      "group": "vessel",
+      "color": "LightSteelBlue",
+      "alpha": 0.22,
+      "note": "下フランジ。ピストン(局所 z0..19)を上へ向けてチューブ座ぐりへ 19mm 挿入 → カラー(Ø114.3)が z -8..0 に露出",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            19
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -57.15,
+            -57.15,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "flange_top",
+      "part": "parts/child/exterior/cots/wte4_flange",
+      "file": "BR-101040_RevC",
+      "group": "vessel",
+      "color": "LightSteelBlue",
+      "alpha": 0.22,
+      "note": "上フランジ。ピストンを下へ向けて挿入 → カラー上面が z=208 (= ドームの座面)",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            181
+          ]
+        },
+        {
+          "translate": [
+            -57.15,
+            -57.15,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "end_cap_bottom",
+      "part": "parts/child/exterior/cots/wte4_end_cap_5xm10",
+      "file": "WTE4-M-END-CAP-5XM10-R2",
+      "group": "vessel",
+      "color": "LightSteelBlue",
+      "alpha": 0.22,
+      "note": "下アルミキャップ (M10 x5 / BCD56)。プラグ(局所 z0..4.2)を下フランジ口へ差し込み、外面が z=-13.8。キャップ固定ねじ 6× M3×12 は BCD108 (フランジ外面)。内装固定はこのキャップではなくフランジ内面 BCD94",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -3.8
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -60.15,
+            -57.15,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "dome_top",
+      "part": "parts/child/exterior/cots/wte4_dome_cap",
+      "file": "wte4_dome_cap_ref",
+      "group": "vessel",
+      "color": "LightSteelBlue",
+      "alpha": 0.22,
+      "note": "上ドーム BR-100495 の参考モデル(仮)。座面 z=208 (上フランジのカラー上面)。child_vertical_assembly と同じ配置",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            208
+          ]
+        }
+      ]
+    },
+    {
+      "label": "vtray_deck",
+      "part": "parts/child/interior/printed/child_vtray_deck",
+      "file": "child_vtray_deck_t200",
+      "group": "interior",
+      "color": "Orange",
+      "alpha": 0.9,
+      "note": "t200 deck: broadened printed flange roots X28..48.7, Z20..100, bed Y-10; confirmed battery hole locations",
+      "ops": []
+    },
+    {
+      "label": "vtray_rib_top",
+      "part": "parts/child/interior/printed/child_vtray_rib",
+      "group": "interior",
+      "color": "DarkOrange",
+      "alpha": 0.9,
+      "note": "上センタリングリブ z 191.5..197.5。内側ショルダー (z 190.5) に当てる",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            191.5
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rib_stop_screw_top",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x6",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3x6 top rib stop, M3 pilot and exposed 6.6 mm head/tool reserve",
+      "ops": [
+        {
+          "translate": [
+            0,
+            -6,
+            200
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "vtray_batt_box",
+      "part": "parts/child/interior/printed/child_vtray_batt_box",
+      "group": "interior",
+      "color": "Chocolate",
+      "alpha": 0.9,
+      "note": "Reinforced battery bay: four 8 mm pads, M3x12 through bolts and plain captive M3 nuts",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "label": "vtray_batt_floor",
+      "part": "parts/child/interior/printed/child_vtray_batt_floor",
+      "group": "interior",
+      "color": "Peru",
+      "alpha": 1.0,
+      "note": "3 mm removable floor with 14 mm service tab, M3x10 flat and captive nut; slide -Z2 then withdraw -Y",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lipo",
+      "part": "parts/child/interior/cots/lipo_35x26x110",
+      "file": "lipo_35x26x110_leads",
+      "group": "interior",
+      "color": "Crimson",
+      "alpha": 1.0,
+      "note": "LiPo 35×26×110 (ユーザー指定 2026-09-03、型番要確認)。リード側端面 (モデル +X) を −Z に向けて z 21..131。床板に載り、上 3 / 側 2 / 端 1 のフォームで拘束。リードスタブ ×2 は端壁の切欠きへ",
+      "ops": [
+        {
+          "translate": [
+            -17.5,
+            -14,
+            131
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            -90
+          ]
+        }
+      ]
+    },
+    {
+      "label": "child_main",
+      "part": "parts/child/interior/pcb/child_main",
+      "group": "interior",
+      "color": "ForestGreen",
+      "alpha": 1.0,
+      "note": "C-MAIN 104x88: lower two holes secured by brace MF30/12; upper two by M3x8",
+      "ops": [
+        {
+          "translate": [
+            44,
+            3,
+            20
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            -90,
+            -90
+          ]
+        }
+      ]
+    },
+    {
+      "label": "child_pwr",
+      "part": "parts/child/interior/pcb/child_pwr",
+      "group": "interior",
+      "color": "SeaGreen",
+      "alpha": 1.0,
+      "note": "CHILD_PWR v2.1 (62×70)。基板下面 y=4 (ボス 10)。M3×8 ×4",
+      "ops": [
+        {
+          "translate": [
+            35,
+            4,
+            126
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            -90,
+            -90
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rx_improved_mini",
+      "part": "parts/child/interior/pcb/rx_improved_mini",
+      "group": "interior",
+      "color": "MediumSeaGreen",
+      "alpha": 1.0,
+      "note": "RX_improved_mini (68×46)。デッキ下面に M2 FF6 スペーサ ×4 で吊る (基板上面 y=-16、部品は -Y)",
+      "ops": [
+        {
+          "translate": [
+            34,
+            -16,
+            134
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            180
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pwr_screw_p_z130",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3×8。CHILD_PWR 取付穴 → デッキ PWR ボス (10) 下穴へセルフタップ",
+      "ops": [
+        {
+          "translate": [
+            31,
+            5.6,
+            130
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pwr_screw_p_z184",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3×8。CHILD_PWR 取付穴 → デッキ PWR ボス (10) 下穴へセルフタップ",
+      "ops": [
+        {
+          "translate": [
+            31,
+            5.6,
+            184
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pwr_screw_n_z130",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3×8。CHILD_PWR 取付穴 → デッキ PWR ボス (10) 下穴へセルフタップ",
+      "ops": [
+        {
+          "translate": [
+            -31,
+            5.6,
+            130
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pwr_screw_n_z184",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3×8。CHILD_PWR 取付穴 → デッキ PWR ボス (10) 下穴へセルフタップ",
+      "ops": [
+        {
+          "translate": [
+            -31,
+            5.6,
+            184
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "batt_box_screw_p_z32",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x12",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3x12 through deck 4 mm and bay pad 8 mm; captive nut, no plastic thread",
+      "ops": [
+        {
+          "translate": [
+            24,
+            -6,
+            32
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "batt_box_screw_p_z110",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x12",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3x12 through deck 4 mm and bay pad 8 mm; captive nut, no plastic thread",
+      "ops": [
+        {
+          "translate": [
+            24,
+            -6,
+            110
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "batt_box_screw_n_z32",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x12",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3x12 through deck 4 mm and bay pad 8 mm; captive nut, no plastic thread",
+      "ops": [
+        {
+          "translate": [
+            -24,
+            -6,
+            32
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "batt_box_screw_n_z110",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x12",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3x12 through deck 4 mm and bay pad 8 mm; captive nut, no plastic thread",
+      "ops": [
+        {
+          "translate": [
+            -24,
+            -6,
+            110
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "batt_floor_screw",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x10_flat",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3x10 flat: reinforced service tab and captive M3 nut; 1.1 mm nominal tip projection",
+      "ops": [
+        {
+          "translate": [
+            22.5,
+            -43,
+            36
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "flange_spacer_p",
+      "part": "parts/common/interior/cots/hex_spacer",
+      "file": "hex_spacer_m3_mf10",
+      "group": "interior",
+      "color": "Goldenrod",
+      "alpha": 1.0,
+      "note": "M3 MF10。下フランジ内面 (z=19) の BCD94 M3 穴へオスを 4〜5mm ねじ込む (6 を超えない)。オス部はフランジ金属の中 = 包絡検証対象外",
+      "ops": [
+        {
+          "translate": [
+            47,
+            0,
+            19
+          ]
+        }
+      ],
+      "skip_envelope": true
+    },
+    {
+      "label": "flange_screw_p",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x18",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3x18: printed 12 mm bearing seat, MF10 engagement 6 mm",
+      "ops": [
+        {
+          "translate": [
+            47,
+            0,
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "label": "flange_spacer_n",
+      "part": "parts/common/interior/cots/hex_spacer",
+      "file": "hex_spacer_m3_mf10",
+      "group": "interior",
+      "color": "Goldenrod",
+      "alpha": 1.0,
+      "note": "M3 MF10。下フランジ内面 (z=19) の BCD94 M3 穴へオスを 4〜5mm ねじ込む (6 を超えない)。オス部はフランジ金属の中 = 包絡検証対象外",
+      "ops": [
+        {
+          "translate": [
+            -47,
+            0,
+            19
+          ]
+        }
+      ],
+      "skip_envelope": true
+    },
+    {
+      "label": "flange_screw_n",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x18",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3x18: printed 12 mm bearing seat, MF10 engagement 6 mm",
+      "ops": [
+        {
+          "translate": [
+            -47,
+            0,
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "label": "flange_screw_y",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x16",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3x16 through 12 mm printed seat; flange engagement 4 mm, blind-hole depth respected",
+      "ops": [
+        {
+          "translate": [
+            0,
+            47,
+            31
+          ]
+        }
+      ],
+      "skip_envelope": true
+    },
+    {
+      "label": "lipo_foam_top",
+      "part": "parts/common/interior/cots/foam_pad",
+      "file": "foam_pad_clipo_top",
+      "group": "interior",
+      "color": "LightPink",
+      "alpha": 0.8,
+      "note": "独立気泡フォーム 3t (106×33)。LiPo 上面 (y=-14) とデッキ下面 (-10) の間 (残り 1mm = 公差代)",
+      "ops": [
+        {
+          "translate": [
+            0,
+            -14,
+            76
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lipo_foam_side_p",
+      "part": "parts/common/interior/cots/foam_pad",
+      "file": "foam_pad_clipo_side_service",
+      "group": "interior",
+      "color": "LightPink",
+      "alpha": 0.8,
+      "note": "独立気泡フォーム2t 102×24、Z23..125。側面サービスねじボスの逃げ切欠き付き",
+      "ops": [
+        {
+          "translate": [
+            18,
+            -27,
+            74
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lipo_foam_side_n",
+      "part": "parts/common/interior/cots/foam_pad",
+      "file": "foam_pad_clipo_side_short",
+      "group": "interior",
+      "color": "LightPink",
+      "alpha": 0.8,
+      "note": "同 -X 側",
+      "ops": [
+        {
+          "translate": [
+            -18,
+            -27,
+            74
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            -90,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lipo_foam_end_bot",
+      "part": "parts/common/interior/cots/foam_pad",
+      "file": "foam_pad_clipo_end",
+      "group": "interior",
+      "color": "LightPink",
+      "alpha": 0.8,
+      "note": "独立気泡フォーム 1t (20×24)。LiPo -Z 端 (リード側) と端壁の中央柱 (z=20) の間。リード出口 (|x|>10.5) は覆わない",
+      "ops": [
+        {
+          "translate": [
+            0,
+            -27,
+            21
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lipo_foam_end_top",
+      "part": "parts/common/interior/cots/foam_pad",
+      "file": "foam_pad_clipo_end",
+      "group": "interior",
+      "color": "LightPink",
+      "alpha": 0.8,
+      "note": "独立気泡フォーム 1t。LiPo +Z 端 (z=131) とリップ (z=132) の間",
+      "ops": [
+        {
+          "translate": [
+            0,
+            -27,
+            131
+          ]
+        }
+      ]
+    },
+    {
+      "label": "harness_xh9_pwr",
+      "part": "parts/common/cabling/child_harness",
+      "file": "child_harness_xh9_pwr",
+      "group": "interior",
+      "color": "DarkSlateGray",
+      "alpha": 0.9,
+      "note": "C-MAIN J_PWR1 ↔ C-PWR J_MAIN (XH9 ストレート 9 芯、Ø5.5)。MAIN 低背部の上 (x≈4, y≈15) を +Z へ",
+      "ops": []
+    },
+    {
+      "label": "harness_xh6_rx",
+      "part": "parts/common/cabling/child_harness",
+      "file": "child_harness_xh6_rx",
+      "group": "interior",
+      "color": "DarkSlateGray",
+      "alpha": 0.9,
+      "note": "C-MAIN J_RX1 ↔ RX J2 (XH6、Ø4.5)。−X スリット (z 96) → −X レール溝 → RX 下面",
+      "ops": []
+    },
+    {
+      "label": "harness_xh3_teth",
+      "part": "parts/common/cabling/child_harness",
+      "file": "child_harness_xh3_teth",
+      "group": "interior",
+      "color": "DarkSlateGray",
+      "alpha": 0.9,
+      "note": "C-MAIN J_TETH1 → 下キャップ ペネトレータ (XH3、Ø3)。−X スリット → −X レール溝 → 下リブ開口",
+      "ops": []
+    },
+    {
+      "label": "harness_xh4_temp",
+      "part": "parts/common/cabling/child_harness",
+      "file": "child_harness_xh4_temp",
+      "group": "interior",
+      "color": "DarkSlateGray",
+      "alpha": 0.9,
+      "note": "C-MAIN J_TEMP1 → ペネトレータ (XH4、Ø3.5)。teth と同経路",
+      "ops": []
+    },
+    {
+      "label": "harness_xh2_leak",
+      "part": "parts/common/cabling/child_harness",
+      "file": "child_harness_xh2_leak",
+      "group": "interior",
+      "color": "DarkSlateGray",
+      "alpha": 0.9,
+      "note": "C-MAIN J_LEAK1 → ペネトレータ (XH2、Ø2.5)。teth と同経路",
+      "ops": []
+    },
+    {
+      "label": "harness_xh4_prs",
+      "part": "parts/common/cabling/child_harness",
+      "file": "child_harness_xh4_prs",
+      "group": "interior",
+      "color": "DarkSlateGray",
+      "alpha": 0.9,
+      "note": "C-MAIN J_PRS1 → ペネトレータ (XH4、Ø3.5)。+X スリット → +X レール溝 → 下リブ開口",
+      "ops": []
+    },
+    {
+      "label": "harness_bat",
+      "part": "parts/common/cabling/child_harness",
+      "file": "child_harness_bat",
+      "group": "interior",
+      "color": "DarkSlateGray",
+      "alpha": 0.9,
+      "note": "電池リード (切って XT30 メス) → XT30 嵌合ペア (+X レール溝 z 25..55) → ピグテール → +X スリット (z 157) → C-PWR J_BAT パッド直付け。充電リード (XH4) は −X 側で下リブに結束",
+      "ops": []
+    },
+    {
+      "label": "harness_led",
+      "part": "parts/common/cabling/child_harness",
+      "file": "child_harness_led",
+      "group": "interior",
+      "color": "DarkSlateGray",
+      "alpha": 0.9,
+      "note": "C-PWR J_LED パッド直付けピグテール → −X スリット (z 157) → −X レール溝 → 下リブ開口 → ライト",
+      "ops": []
+    },
+    {
+      "label": "brace_spacer_l",
+      "part": "parts/common/interior/cots/hex_spacer",
+      "file": "hex_spacer_m3_mf30",
+      "group": "interior",
+      "color": "Goldenrod",
+      "alpha": 1.0,
+      "note": "M3 MF30: C-MAIN and lower flange brace mounting",
+      "ops": [
+        {
+          "translate": [
+            -22,
+            4.6,
+            24.5
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "brace_screw_l",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x12",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3x12 pan screw: flat printed seat, spacer engagement 6.5 mm",
+      "ops": [
+        {
+          "translate": [
+            -22,
+            40.1,
+            24.5
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "brace_spacer_r",
+      "part": "parts/common/interior/cots/hex_spacer",
+      "file": "hex_spacer_m3_mf12",
+      "group": "interior",
+      "color": "Goldenrod",
+      "alpha": 1.0,
+      "note": "M3 MF12: C-MAIN and lower flange brace mounting",
+      "ops": [
+        {
+          "translate": [
+            39.5,
+            4.6,
+            24.5
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "brace_screw_r",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x12",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3x12 pan screw: flat printed seat, spacer engagement 6.5 mm",
+      "ops": [
+        {
+          "translate": [
+            39.5,
+            22.1,
+            24.5
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "main_upper_screw_x-22",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3x8: board 1.6 mm + deck boss engagement 6.4 mm",
+      "ops": [
+        {
+          "translate": [
+            -22,
+            4.6,
+            119.5
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "main_upper_screw_x39.5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3x8: board 1.6 mm + deck boss engagement 6.4 mm",
+      "ops": [
+        {
+          "translate": [
+            39.5,
+            4.6,
+            119.5
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "flange_brace",
+      "part": "parts/child/interior/printed/child_flange_brace",
+      "group": "interior",
+      "color": "Gold",
+      "alpha": 1.0,
+      "note": "Printed brace: 12 mm beams, 24 mm webs, 20 mm tangential flange seat, existing M3 spacers",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            22
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rx_clamp_base_pair_-1",
+      "part": "parts/child/interior/printed/child_rx_edge_clamp",
+      "file": "child_rx_edge_clamp_base_pair",
+      "group": "interior",
+      "color": "Orange",
+      "alpha": 1.0,
+      "note": "Paired RX clamp: original Z140.5/174.5 contacts and screw axes retained; bridge outside PCB",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            140.5
+          ]
+        },
+        {
+          "scale": [
+            -1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rx_clamp_cap_pair_-1",
+      "part": "parts/child/interior/printed/child_rx_edge_clamp",
+      "file": "child_rx_edge_clamp_cap_pair",
+      "group": "interior",
+      "color": "Orange",
+      "alpha": 1.0,
+      "note": "Paired RX clamp: original Z140.5/174.5 contacts and screw axes retained; bridge outside PCB",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            140.5
+          ]
+        },
+        {
+          "scale": [
+            -1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rx_clamp_mount_-1_140.5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3x8: deck 4 mm, printed base engagement 4 mm",
+      "ops": [
+        {
+          "translate": [
+            -37.5,
+            -6,
+            134.5
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rx_clamp_cap_screw_-1_140.5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3x8: cap 2.6 mm, base engagement 5.4 mm; 6 mm offset from mounting screw",
+      "ops": [
+        {
+          "translate": [
+            -37.5,
+            -20.6,
+            140.5
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rx_clamp_mount_-1_174.5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3x8: deck 4 mm, printed base engagement 4 mm",
+      "ops": [
+        {
+          "translate": [
+            -37.5,
+            -6,
+            180.5
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rx_clamp_cap_screw_-1_174.5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3x8: cap 2.6 mm, base engagement 5.4 mm; 6 mm offset from mounting screw",
+      "ops": [
+        {
+          "translate": [
+            -37.5,
+            -20.6,
+            174.5
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rx_clamp_base_pair_1",
+      "part": "parts/child/interior/printed/child_rx_edge_clamp",
+      "file": "child_rx_edge_clamp_base_pair",
+      "group": "interior",
+      "color": "Orange",
+      "alpha": 1.0,
+      "note": "Paired RX clamp: original Z140.5/174.5 contacts and screw axes retained; bridge outside PCB",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            140.5
+          ]
+        },
+        {
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rx_clamp_cap_pair_1",
+      "part": "parts/child/interior/printed/child_rx_edge_clamp",
+      "file": "child_rx_edge_clamp_cap_pair",
+      "group": "interior",
+      "color": "Orange",
+      "alpha": 1.0,
+      "note": "Paired RX clamp: original Z140.5/174.5 contacts and screw axes retained; bridge outside PCB",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            140.5
+          ]
+        },
+        {
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rx_clamp_mount_1_140.5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3x8: deck 4 mm, printed base engagement 4 mm",
+      "ops": [
+        {
+          "translate": [
+            37.5,
+            -6,
+            134.5
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rx_clamp_cap_screw_1_140.5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3x8: cap 2.6 mm, base engagement 5.4 mm; 6 mm offset from mounting screw",
+      "ops": [
+        {
+          "translate": [
+            37.5,
+            -20.6,
+            140.5
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rx_clamp_mount_1_174.5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3x8: deck 4 mm, printed base engagement 4 mm",
+      "ops": [
+        {
+          "translate": [
+            37.5,
+            -6,
+            180.5
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rx_clamp_cap_screw_1_174.5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "M3x8: cap 2.6 mm, base engagement 5.4 mm; 6 mm offset from mounting screw",
+      "ops": [
+        {
+          "translate": [
+            37.5,
+            -20.6,
+            174.5
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "penetrator_1",
+      "part": "parts/child/exterior/cots/wetlink_m10_confirmed",
+      "file": "wetlink_m10_confirmed",
+      "group": "penetrators",
+      "color": "SlateGray",
+      "alpha": 1.0,
+      "note": "WetLink M10: thread20, cap10, nutAF16 height8; dry tip Z6.2",
+      "ops": [
+        {
+          "translate": [
+            1.7145055188062944e-15,
+            28.0,
+            -13.8
+          ]
+        }
+      ]
+    },
+    {
+      "label": "penetrator_2",
+      "part": "parts/child/exterior/cots/wetlink_m10_confirmed",
+      "file": "wetlink_m10_confirmed",
+      "group": "penetrators",
+      "color": "SlateGray",
+      "alpha": 1.0,
+      "note": "WetLink M10: thread20, cap10, nutAF16 height8; dry tip Z6.2",
+      "ops": [
+        {
+          "translate": [
+            26.6295824562643,
+            8.652475842498527,
+            -13.8
+          ]
+        }
+      ]
+    },
+    {
+      "label": "penetrator_3",
+      "part": "parts/child/exterior/cots/wetlink_m10_confirmed",
+      "file": "wetlink_m10_confirmed",
+      "group": "penetrators",
+      "color": "SlateGray",
+      "alpha": 1.0,
+      "note": "WetLink M10: thread20, cap10, nutAF16 height8; dry tip Z6.2",
+      "ops": [
+        {
+          "translate": [
+            16.457987064189247,
+            -22.65247584249853,
+            -13.8
+          ]
+        }
+      ]
+    },
+    {
+      "label": "penetrator_4",
+      "part": "parts/child/exterior/cots/wetlink_m10_confirmed",
+      "file": "wetlink_m10_confirmed",
+      "group": "penetrators",
+      "color": "SlateGray",
+      "alpha": 1.0,
+      "note": "WetLink M10: thread20, cap10, nutAF16 height8; dry tip Z6.2",
+      "ops": [
+        {
+          "translate": [
+            -16.457987064189243,
+            -22.65247584249853,
+            -13.8
+          ]
+        }
+      ]
+    },
+    {
+      "label": "penetrator_5",
+      "part": "parts/child/exterior/cots/wetlink_m10_confirmed",
+      "file": "wetlink_m10_confirmed",
+      "group": "penetrators",
+      "color": "SlateGray",
+      "alpha": 1.0,
+      "note": "WetLink M10: thread20, cap10, nutAF16 height8; dry tip Z6.2",
+      "ops": [
+        {
+          "translate": [
+            -26.6295824562643,
+            8.65247584249853,
+            -13.8
+          ]
+        }
+      ]
+    },
+    {
+      "label": "bolted_nut_batt_box_screw_p_z32",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "Purchased plain M3 nut AF5.5/t2.4; insert before cable rails",
+      "ops": [
+        {
+          "translate": [
+            24,
+            -15.5,
+            32
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "label": "bolted_nut_batt_box_screw_p_z110",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "Purchased plain M3 nut AF5.5/t2.4; insert before cable rails",
+      "ops": [
+        {
+          "translate": [
+            24,
+            -15.5,
+            110
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "label": "bolted_nut_batt_box_screw_n_z32",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "Purchased plain M3 nut AF5.5/t2.4; insert before cable rails",
+      "ops": [
+        {
+          "translate": [
+            -24,
+            -15.5,
+            32
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "label": "bolted_nut_batt_box_screw_n_z110",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "Purchased plain M3 nut AF5.5/t2.4; insert before cable rails",
+      "ops": [
+        {
+          "translate": [
+            -24,
+            -15.5,
+            110
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "label": "bolted_nut_floor",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "Purchased plain M3 nut AF5.5/t2.4; insert before cable rails",
+      "ops": [
+        {
+          "translate": [
+            22.5,
+            -36.5,
+            36
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ]
+    }
+  ]
+}

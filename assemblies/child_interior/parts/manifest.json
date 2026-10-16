@@ -1,0 +1,688 @@
+{
+  "schema_version": 1,
+  "assembly": "child_interior",
+  "release_status": "existing_prototype",
+  "note": "電池ナット締結・印刷根元補強版。ケースM3×12＋普通M3ナット4組、床板M3×10皿＋普通M3ナット1組、前側フランジM3×16。ナットは二面幅5.5／厚2.4 mm。ケース・床板・ブレース100%、デッキ通常15%／根元100%、壁8周。床板の容器すきまは公称0.71 mm、仮組みを確認。強度試験未実施。 2026-10-04: RXクランプは左右連結4個。小部品を減らし、フランジ梁のくびれ・床板窓・ケース耳を補強。連結クランプ100%充填。配線はクランプ外側へ迂回。 2026-10-06:軸径4 mmの工具で組立順を指定。左右フランジMF10のオス突出長は現物確認待ち（CAD6 mm／取付記録4〜5 mm）。 2026-10-07：未使用ケーブルレール2本と固定ねじ8本を撤去。デッキの既存穴は残置（使用不要）。バッテリーの普通M3ナット5個は横差しポケットに収まり、樹脂との重なり・横挿入・床板着脱の122検査で干渉なし。ナットの熱圧入や造形途中の埋込みは不要。",
+  "source_hashes": {
+    "assemblies/child_interior/placement.json": "dfe5db64ecab48eac4dc0764be7a0e086fe730d3387a7840be5e4c8e0594d770",
+    "assemblies/child_interior/print_config.json": "3b712997ce54d82050236cbd00cf3d14c3023d3f9c0ea3949ce327d80407d6f8",
+    "assemblies/child_interior/README.md": "58b9790a30129c48e365e20da9e32692343d2dba0977c4b9f9e7f79072696cbf",
+    "parts/child/interior/printed/child_flange_brace/child_flange_brace.md": "30c3b993c3027d5f04ce4266abc0574af4b9358ef3dda7e072514f13ae45409b",
+    "parts/child/interior/printed/child_flange_brace/child_flange_brace.scad": "e792e94a822077e5e3af1674493193b04357e8808a7bfc25071b4eedcc48eb35",
+    "parts/child/interior/printed/child_flange_brace/manufacturing.json": "60e6187cd5f6d86fa9a19a2466fe3db3a6ef63e6c1da8db5453bfff317a714ee",
+    "parts/child/interior/printed/child_rx_edge_clamp/child_rx_edge_clamp.md": "f4c153689da66db0c3d160be7f2a47c7fb1cbf865bd9bc29df6280dc42d25dbb",
+    "parts/child/interior/printed/child_rx_edge_clamp/child_rx_edge_clamp.scad": "45433ba44c2c36546160dff4408c3a2d4b5ec3094a618a38f3f3b6dbcd361d7d",
+    "parts/child/interior/printed/child_rx_edge_clamp/manufacturing.json": "b4f817671bc2ade9795d91dff23bfdcf1357e46ac9cabcd48378988d88312ee8",
+    "parts/child/interior/printed/child_rx_edge_clamp/variants.txt": "65aca5a0aef41536d57616125b27cbd939759b76cca942507d678a464408565c",
+    "parts/child/interior/printed/child_vtray_batt_box/child_vtray_batt_box.md": "2fd012efcd8479c2217a91212983e7239f6f5342b6e9f3bb15d3bcab5c4255b2",
+    "parts/child/interior/printed/child_vtray_batt_box/child_vtray_batt_box.scad": "a29ca8d26b4220d43a45e2f24e9dddc93dd00c9bb54d5d465c628caac63d1b3d",
+    "parts/child/interior/printed/child_vtray_batt_box/manufacturing.json": "90e5db4b3522494fbbce537527d1cf90a1668bed216930fedbe61b74425f61ef",
+    "parts/child/interior/printed/child_vtray_batt_floor/child_vtray_batt_floor.md": "97276fb973729f02017ab3fdc9f9d3ea77291f7028acfd6fff30b9a6a64fb8cb",
+    "parts/child/interior/printed/child_vtray_batt_floor/child_vtray_batt_floor.scad": "614300f65c6bc6cdaf22c5b4792dbe5bb5d86677b4a3bfa967cfed868039e4a5",
+    "parts/child/interior/printed/child_vtray_batt_floor/manufacturing.json": "f1cc9134c4ed5b41778fcda6d4a1bfe602a4729e5c01566a68b6617515e7f1c7",
+    "parts/child/interior/printed/child_vtray_deck/child_vtray_deck.md": "f42bd8019cebd58888677176ecf6440e9a41a9ec00d83d285a8a895bca4bc01f",
+    "parts/child/interior/printed/child_vtray_deck/child_vtray_deck.scad": "ad351586307049a1d239a1839eb21d72a6b407803ddef92fedb591fe56564f23",
+    "parts/child/interior/printed/child_vtray_deck/manufacturing.json": "777004b32eb4333fc992cdb6f4fa66aa1ef7d03e4db425fa8be2b1bff2ca1ea6",
+    "parts/child/interior/printed/child_vtray_deck/variants.txt": "6e100291da8ea34be43997c2221ad42e39846d05aff482f29503b9028985cda8",
+    "parts/child/interior/printed/child_vtray_rib/child_vtray_rib.md": "70b0164b30b8f8fbe7a9a6811d1b56214a920e7f3e2a6253d0e08404f9578158",
+    "parts/child/interior/printed/child_vtray_rib/child_vtray_rib.scad": "4f000e4941fbd1fa602f0840d89511b952a4156412331c6135efb153b885c9be",
+    "scad/lib/child_interior_mounts.scad": "ef9f0865bd61bc8ebc9421d1a189db73c38257c5e49adeef2acb3ee204ec0990",
+    "spec/child_interior_reinforcement/BOLTED_MOUNT_REVISION.md": "cda39e4a59dc2f1fa9a816f35de9be86ebbe82eb73889eb140d611d5fdcdb03e",
+    "spec/child_interior_reinforcement/FASTENER_ASSEMBLY.md": "adb95c617a0daaf1d6657d42df2b4e52835d87e140285dadf521a1226630ecab",
+    "spec/child_interior_reinforcement/M3_SUPPORT_REVISION.md": "2c5ee0019d7bd4def32bf64f0d4efaad358b0db17e45a032152b08ff7918216a",
+    "spec/child_interior_reinforcement/PLA_MATTE_REVISION.md": "9ff4801b6447f69038b045813942b18548ff62daa7942247a5983eee02c17ff7",
+    "spec/child_interior_reinforcement/PRINT_STRENGTH_REVISION.md": "d53c6bdbdb379f00397ed0447aca27c228aa6b474542e0001b3df95a135decd0",
+    "spec/child_interior_reinforcement/SERVICE_REVISION.md": "0b0c10809841b261044f61a879e77a95bae20c1c183e75e60c6dd2e9a6280ed8"
+  },
+  "parts": [
+    {
+      "part": "parts/child/interior/printed/child_vtray_deck",
+      "stem": "child_vtray_deck_t200",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "vtray_deck"
+      ],
+      "file": "child_vtray_deck_t200.stl",
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/interior/printed/child_vtray_deck/child_vtray_deck_t200.stl",
+      "source_sha256": "c684bbaac191b33998216455da4b4669288d83c020bf9bf5359c9f529359a3fb",
+      "sha256": "a3c8de7a5543147ec3b6b2d00f35a97d8f70ed0f7c1cdc15ff37a7b9b9bbfeb5",
+      "extents_mm": [
+        99.5136,
+        183.5,
+        22.7
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          49.75679016113281
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          -1.0,
+          202.5
+        ],
+        [
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          9.999999999999998
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/interior/printed/child_vtray_rib",
+      "stem": "child_vtray_rib",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "vtray_rib_top"
+      ],
+      "file": "child_vtray_rib.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/interior/printed/child_vtray_rib/child_vtray_rib.stl",
+      "source_sha256": "3f5d45ddafc49eb497dae014f869395f6ef81a63db1680aa5ee9c0beaa83d502",
+      "sha256": "5d4505ad59a2c12628dcd537c9602d7bab785a0509d6f979ec77571406a76fb1",
+      "extents_mm": [
+        87.5,
+        87.5,
+        6.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          43.75
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          43.75
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/interior/printed/child_vtray_batt_box",
+      "stem": "child_vtray_batt_box",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "vtray_batt_box"
+      ],
+      "file": "child_vtray_batt_box.stl",
+      "rotation_deg": [
+        -90,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/interior/printed/child_vtray_batt_box/child_vtray_batt_box.stl",
+      "source_sha256": "a3e9bf473be6c6f78ef2867ff3ef8d771b3a37cd2a0b4c24c100d1022582b2dc",
+      "sha256": "945882a14f304a05e90d72d4bdb5f5ffa3299a26bf1ea51fe8c3b0ccc5795f21",
+      "extents_mm": [
+        55.4,
+        119.5,
+        33.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          27.700000762939453
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          1.0,
+          6.000000000000003
+        ],
+        [
+          0.0,
+          -1.0,
+          6.123233995736766e-17,
+          -10.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/interior/printed/child_vtray_batt_floor",
+      "stem": "child_vtray_batt_floor",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "vtray_batt_floor"
+      ],
+      "file": "child_vtray_batt_floor.stl",
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/interior/printed/child_vtray_batt_floor/child_vtray_batt_floor.stl",
+      "source_sha256": "fa1b17b76cd4715c01c1ab99b57b84964e749f989c5297836c40f6a3e0399b45",
+      "sha256": "a055454194472d5e1883a1eb4d5c80b62e9b5b05f9917926ca29b0b8dcfaa0af",
+      "extents_mm": [
+        45.7,
+        111.0,
+        5.5
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          19.7
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          -1.0,
+          113.5
+        ],
+        [
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          43.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/interior/printed/child_flange_brace",
+      "stem": "child_flange_brace",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "flange_brace"
+      ],
+      "file": "child_flange_brace.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/interior/printed/child_flange_brace/child_flange_brace.stl",
+      "source_sha256": "b651f64ecaaeca2ddc555220b529f748a3eb3bb867158cbfe4617ea83e7bb344",
+      "sha256": "325c8ab1241b5348bc04c9bd83cdb36ddf043923b30d98d90bbb39c42c0ed965",
+      "extents_mm": [
+        71.477,
+        32.977,
+        12.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          26.9885
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -16.6115
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/interior/printed/child_rx_edge_clamp",
+      "stem": "child_rx_edge_clamp_base_pair",
+      "shape": [
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "rx_clamp_base_pair_-1"
+      ],
+      "file": "child_rx_edge_clamp_base_pair_mirrored.stl",
+      "rotation_deg": [
+        -90,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/interior/printed/child_rx_edge_clamp/child_rx_edge_clamp_base_pair.stl",
+      "source_sha256": "50d02e2473bfb494cfd17399c9e8c10fc54695a8ff7e056696b43671e21a1241",
+      "sha256": "82c1b295d9d32df767f3107769e535fcb732499bc9ff39819451d9ab26f7f7a0",
+      "extents_mm": [
+        10.4,
+        53.0,
+        8.0
+      ],
+      "model_to_print": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          42.2
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          1.0,
+          9.500000000000002
+        ],
+        [
+          0.0,
+          -1.0,
+          6.123233995736766e-17,
+          -10.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/interior/printed/child_rx_edge_clamp",
+      "stem": "child_rx_edge_clamp_cap_pair",
+      "shape": [
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "rx_clamp_cap_pair_-1"
+      ],
+      "file": "child_rx_edge_clamp_cap_pair_mirrored.stl",
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/interior/printed/child_rx_edge_clamp/child_rx_edge_clamp_cap_pair.stl",
+      "source_sha256": "8eba9c803acb377f65236a3aeb22f6ce8d0eb3cb3e8042a00d69ebefaca86b7c",
+      "sha256": "6f7d8d51e95f5c301c728ed1aaea23d6c36c1034e57f1f249be948b7ff420b08",
+      "extents_mm": [
+        10.4,
+        41.0,
+        3.0
+      ],
+      "model_to_print": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          42.2
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          -1.0,
+          37.5
+        ],
+        [
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          20.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/interior/printed/child_rx_edge_clamp",
+      "stem": "child_rx_edge_clamp_base_pair",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "rx_clamp_base_pair_1"
+      ],
+      "file": "child_rx_edge_clamp_base_pair.stl",
+      "rotation_deg": [
+        -90,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/interior/printed/child_rx_edge_clamp/child_rx_edge_clamp_base_pair.stl",
+      "source_sha256": "50d02e2473bfb494cfd17399c9e8c10fc54695a8ff7e056696b43671e21a1241",
+      "sha256": "b209c7f0a0be4290f4162f97f0a24a12eda5bf26d061695a287759849549a48b",
+      "extents_mm": [
+        10.4,
+        53.0,
+        8.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -31.8
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          1.0,
+          9.500000000000002
+        ],
+        [
+          0.0,
+          -1.0,
+          6.123233995736766e-17,
+          -10.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/interior/printed/child_rx_edge_clamp",
+      "stem": "child_rx_edge_clamp_cap_pair",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "rx_clamp_cap_pair_1"
+      ],
+      "file": "child_rx_edge_clamp_cap_pair.stl",
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/interior/printed/child_rx_edge_clamp/child_rx_edge_clamp_cap_pair.stl",
+      "source_sha256": "8eba9c803acb377f65236a3aeb22f6ce8d0eb3cb3e8042a00d69ebefaca86b7c",
+      "sha256": "f924093ebfceb1c0f664554e2408a79d4cc3a01c2edf7ab5a75d785a5497bb92",
+      "extents_mm": [
+        10.4,
+        41.0,
+        3.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -31.8
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          -1.0,
+          37.5
+        ],
+        [
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          20.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    }
+  ],
+  "modifiers": [
+    {
+      "host": "child_vtray_deck_t200",
+      "source": "spec/child_interior_reinforcement/pla_matte_lever/root_dense_modifier.stl",
+      "file": "modifiers/root_dense_modifier.stl",
+      "host_file": "child_vtray_deck_t200.stl",
+      "source_sha256": "6c992b36dd081ad9dd9424c9cdd7c469e5b3bf805f54bff53478e11449b1e822",
+      "sha256": "a2f3afaf1b0081c9a5b3074a361724f5454c08165dd183b8e426b32afc430f96"
+    }
+  ],
+  "generated_files": [
+    "child_vtray_deck_t200.stl",
+    "child_vtray_rib.stl",
+    "child_vtray_batt_box.stl",
+    "child_vtray_batt_floor.stl",
+    "child_flange_brace.stl",
+    "child_rx_edge_clamp_base_pair_mirrored.stl",
+    "child_rx_edge_clamp_cap_pair_mirrored.stl",
+    "child_rx_edge_clamp_base_pair.stl",
+    "child_rx_edge_clamp_cap_pair.stl",
+    "modifiers/root_dense_modifier.stl",
+    "DESIGN_NOTES.md",
+    "PRINT.md"
+  ],
+  "document_hashes": {
+    "DESIGN_NOTES.md": "c87778cc42ffbc32d61bbeb0fef00b447572f42ae97696310a2d6ace024ea5b6",
+    "PRINT.md": "17afb6d58b08306e558055d3a42c76b6172a88e85b4d18a98ca13cb6c03a26c0"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "status": "PASS",
+  "tool_checks": [
+    {
+      "anchor": 0,
+      "xy": [
+        25,
+        25
+      ],
+      "tool_diameter_mm": 3.5,
+      "direction": [
+        -0.12278780396897282,
+        -0.12278780396897282,
+        0.984807753012208
+      ],
+      "required": true,
+      "pass_": true,
+      "hits": []
+    },
+    {
+      "anchor": 1,
+      "xy": [
+        185,
+        25
+      ],
+      "tool_diameter_mm": 3.5,
+      "direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "required": true,
+      "pass_": true,
+      "hits": []
+    },
+    {
+      "anchor": 2,
+      "xy": [
+        25,
+        205
+      ],
+      "tool_diameter_mm": 3.5,
+      "direction": [
+        -0.17364817766693033,
+        0.0,
+        0.984807753012208
+      ],
+      "required": true,
+      "pass_": true,
+      "hits": []
+    },
+    {
+      "anchor": 3,
+      "xy": [
+        185,
+        205
+      ],
+      "tool_diameter_mm": 3.5,
+      "direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "required": false,
+      "pass_": null,
+      "hits": [
+        {
+          "label": "tx_improved",
+          "volume_mm3": 15.201381452557609,
+          "z_range": [
+            24.75,
+            26.36
+          ]
+        },
+        {
+          "label": "spresense",
+          "volume_mm3": 143.17592940098567,
+          "z_range": [
+            65.6,
+            84.6
+          ]
+        },
+        {
+          "label": "sony_mount_plate",
+          "volume_mm3": 4.860737130686217,
+          "z_range": [
+            60.49999999999964,
+            62.100000000000385
+          ]
+        },
+        {
+          "label": "tx_top_keepout",
+          "volume_mm3": 192.42255003237506,
+          "z_range": [
+            40.195,
+            60.195
+          ]
+        }
+      ]
+    }
+  ],
+  "floor_files": [
+    {
+      "file": "parts/parent/interior/printed/parent_hand_service/floor_plate.scad",
+      "unchanged": true,
+      "sha256": "09c6aebf38b29ed4b1993721209f669fde7287367d9cb5f19d2092b712446774"
+    },
+    {
+      "file": "parts/parent/interior/printed/parent_hand_service/floor_plate.step",
+      "unchanged": true,
+      "sha256": "15df0d37ca4c3748fa5b00ae3633ad13cfad5317a187b82eb354766abcc4fb11"
+    },
+    {
+      "file": "parts/parent/interior/printed/parent_hand_service/floor_plate.stl",
+      "unchanged": true,
+      "sha256": "4b46f40ca07589f87a2ee18f7bd24196069de564b1639b800297d86125dc1070"
+    }
+  ],
+  "interference_checks": [
+    {
+      "parts": [
+        "main_mount_plate",
+        "main_mount_1"
+      ],
+      "before_mm3": 11.161162400347006,
+      "after_mm3": 11.161162400347006,
+      "pass_": true
+    }
+  ],
+  "tool": "Long 2.5 mm ball-end hex key; SW tilt10 degrees southwest, NW tilt10 degrees west, SE vertical",
+  "guide_id_mm": 4.2,
+  "guide_od_mm": 11.4,
+  "battery_removal": "Disconnect lead; remove four tray mount screws, lift closed module90 mm, remove one lid screw and slide south108 mm. SE case anchor is also exposed by removing the module.",
+  "excluded_anchor": "NE under TX/Sony, inaccessible with electronics installed; not counted among three accessible screws",
+  "limitations": [
+    "Tool socket engagement, torque and actual key dimensions need physical check.",
+    "Three-anchor wave rigidity and creep not qualified.",
+    "Coil must remain outside new guard, within OD100/ID75/H10; actual 5 m winding capacity and R20 bends require physical check."
+  ],
+  "guard_minimum_wall_mm": 0.9342917812631193,
+  "guide_to_main_column_gap_mm": 0.19414711402796758,
+  "battery_tray_tool_opening_mm": 8.0
+}

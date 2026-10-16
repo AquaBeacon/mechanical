@@ -1,0 +1,23 @@
+{
+  "consumer": "child_simple_light_mount",
+  "references": [
+    {
+      "part": "child_simple_rear",
+      "path": "parts/child/exterior/printed/child_simple_rear",
+      "md_sha256": "06d70bb7cc25b35e890ee959269c58f701c63a191a08c993d9a011c5496b8629",
+      "stl_sha256": "f5fae7756906eb2576db8dfa6a8537e9def584bb04cd19ddd2baa85172ed7486",
+      "bbox_mm": [
+        220.0,
+        82.0,
+        239.0
+      ],
+      "status_at_lock": [
+        "needs_measure"
+      ],
+      "values": {},
+      "confirmed_by_human": true,
+      "confirmed_at": "2026-09-17T01:14:10",
+      "note": "User confirmed rear-center M3 40x40 interface and short reference holder bore 33mm, height 81mm on 2026-09-17"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+// Generated from the same CSG operations as STEP. Rebuild with spec/build_parent_hand_service.py.
+difference(){union(){translate([132,97,10.3]) cylinder(r=1.5,h=110,$fn=64);translate([132,97,120.3]) cylinder(r=2.75,h=3,$fn=64);}translate([132,97,121.9]) cylinder(r=1.4433756729740643,h=1.5,$fn=6);}

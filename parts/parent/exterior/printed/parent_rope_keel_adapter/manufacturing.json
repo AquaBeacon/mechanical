@@ -1,0 +1,9 @@
+{
+  "print_rotations_deg": {
+    "parent_rope_keel_adapter": [
+      -180.0,
+      0.0,
+      180.0
+    ]
+  }
+}

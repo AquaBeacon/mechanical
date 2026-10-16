@@ -1,0 +1,5 @@
+side_left part="side_left"
+side_right part="side_right"
+end_fixed part="end_fixed"
+end_push part="end_push"
+pressure_pad part="pressure_pad"

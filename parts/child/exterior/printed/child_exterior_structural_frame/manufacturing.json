@@ -1,0 +1,55 @@
+{
+  "material": "Bambu Lab PETG Basic",
+  "stl_export_format": "binstl",
+  "non_print_files": [
+    "child_exterior_structural_frame_full"
+  ],
+  "step_coplanar_merge": true,
+  "degenerate_precision_weld_files": [
+    "child_exterior_structural_frame_splice"
+  ],
+  "print_rotations_deg": {
+    "child_exterior_structural_frame_lower_minus": [
+      0,
+      0,
+      0
+    ],
+    "child_exterior_structural_frame_lower_plus": [
+      0,
+      0,
+      0
+    ],
+    "child_exterior_structural_frame_upper_minus": [
+      0,
+      0,
+      0
+    ],
+    "child_exterior_structural_frame_upper_plus": [
+      0,
+      0,
+      0
+    ],
+    "child_exterior_structural_frame_splice": [
+      0,
+      0,
+      0
+    ]
+  },
+  "source_dependencies": [
+    "spec/frame_a_density_surface.stl",
+    "spec/frame_a_finished_surface.stl",
+    "spec/frame_a_lower_minus.stl",
+    "spec/frame_a_lower_plus.stl",
+    "spec/frame_a_upper_minus.stl",
+    "spec/frame_a_upper_plus.stl",
+    "spec/design_parameters.json",
+    "../../../../../tools/prepare_child_exterior_structure.py",
+    "../../../../../tools/finish_child_frame_a.py",
+    "../../../../../tools/clean_stl_degenerates.py",
+    "../../../../../tools/compact_coplanar_mesh.py",
+    "../child_wte4_suspension_clamp/child_wte4_suspension_clamp.scad",
+    "../child_wte4_suspension_clamp/spec/bambu_petg_basic_material.json",
+    "../child_wte4_suspension_clamp/spec/cage_density_surface.stl"
+  ],
+  "note": "Prototype, bed-flat, 100% infill/eight walls/0.20mm. Recessed nuts install before cage. Joint and full assembly strength unqualified."
+}

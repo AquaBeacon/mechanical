@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "assembly": "parent_oneplate",
+  "job": "repeatable_mount",
+  "source_manifest_sha256": "283993619ee833051732a142a173f7dafd4fe55a3edae3194ac81619901e6e1f",
+  "plates": [
+    {
+      "plate": 1,
+      "stl": "plate_1.stl",
+      "stl_sha256": "a973fd9c0221c504b8335873354bf90902d6208df06968cb4aee45746a3a6039",
+      "three_mf": "plate_1_X1C.3mf",
+      "three_mf_sha256": "a5ed54b48d946942483e7c7585e95ebaafe56989e06eadac9334fc44a91739f5",
+      "part_count": 7,
+      "support_enabled": true,
+      "support_feature_sections": 222,
+      "grams": 255.91136169433594,
+      "seconds": 32241.259765625,
+      "warnings": "",
+      "process_json": "_work/analysis/repeatable_mount/slice_plate_1/process.json",
+      "slice_log": "_work/analysis/repeatable_mount/slice_plate_1/slice.log"
+    },
+    {
+      "plate": 2,
+      "stl": "plate_2.stl",
+      "stl_sha256": "6b00cdfcbc318c399a0276000384be33c3dfc664500d61319bc4b8a7bf4cb23a",
+      "three_mf": "plate_2_X1C.3mf",
+      "three_mf_sha256": "433366d59f4895a1e248546ec4ae101d0d05ad3d13fe61c427f98abc2ff0aef9",
+      "part_count": 6,
+      "support_enabled": true,
+      "support_feature_sections": 353,
+      "grams": 154.13621520996094,
+      "seconds": 18924.5703125,
+      "warnings": "",
+      "process_json": "_work/analysis/repeatable_mount/slice_plate_2/process.json",
+      "slice_log": "_work/analysis/repeatable_mount/slice_plate_2/slice.log"
+    }
+  ]
+}

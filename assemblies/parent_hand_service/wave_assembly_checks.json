@@ -1,0 +1,484 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "main_carrier_nut_0 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_carrier_nut_1 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_carrier_nut_2 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_carrier_nut_3 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "sony_carrier_nut_0 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "sony_carrier_nut_1 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "sony_carrier_nut_2 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "sony_carrier_nut_3 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "gnss_frame_nut_0 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "gnss_frame_nut_1 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "gnss_frame_nut_2 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "gnss_frame_nut_3 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "antenna_rack_nut_0 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "antenna_rack_nut_1 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "antenna_rack_nut_2 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "antenna_rack_nut_3 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "coax ring vertical insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "antenna rack vertical insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_column_0 north raised insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_column_0 south slide",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_column_0 lower",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_column_1 north raised insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_column_1 south slide",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_column_1 lower",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_column_2 north raised insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_column_2 south slide",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_column_2 lower",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_column_3 north raised insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_column_3 south slide",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_column_3 lower",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_mount_plate north raised insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_mount_plate south slide",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_mount_plate lower",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "MAIN PCB north raised insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "MAIN PCB south slide raised",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "MAIN PCB lower at final XY",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_mount_0 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_mount_0 driver",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_mount_1 actual2.6mm pilot",
+      "overlap_mm3": 0.0,
+      "pass_": true
+    },
+    {
+      "name": "main_mount_1 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_mount_1 driver",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_mount_2 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_mount_2 driver",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_mount_3 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_mount_3 driver",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "ground_plate_nut_0 top insertion before steel plate",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "ground_plate_nut_0 captured hex rotation stop",
+      "interference_at30deg_mm3": 1.8921066133590783,
+      "pass_": true
+    },
+    {
+      "name": "ground_plate_nut_1 top insertion before steel plate",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "ground_plate_nut_1 captured hex rotation stop",
+      "interference_at30deg_mm3": 1.892106613360498,
+      "pass_": true
+    },
+    {
+      "name": "ground_plate_nut_2 top insertion before steel plate",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "ground_plate_nut_2 captured hex rotation stop",
+      "interference_at30deg_mm3": 1.8921066133557,
+      "pass_": true
+    },
+    {
+      "name": "ground_plate_nut_3 top insertion before steel plate",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "ground_plate_nut_3 captured hex rotation stop",
+      "interference_at30deg_mm3": 1.8921066133590365,
+      "pass_": true
+    },
+    {
+      "name": "antenna_nut_0 top insertion before steel plate",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "antenna_nut_0 captured hex rotation stop",
+      "interference_at30deg_mm3": 5.095824363470855,
+      "pass_": true
+    },
+    {
+      "name": "antenna_nut_1 top insertion before steel plate",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "antenna_nut_1 captured hex rotation stop",
+      "interference_at30deg_mm3": 5.095824363491478,
+      "pass_": true
+    },
+    {
+      "name": "Sony column 0 vertical insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "Sony column 1 vertical insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "Sony column 2 vertical insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "Sony column 3 vertical insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "sony_mount_plate over installed TX",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "GNSS column 0 vertical insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "GNSS column 1 vertical insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "GNSS column 2 vertical insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "GNSS column 3 vertical insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "GNSS frame vertical insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_carrier_mount_0 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "main_carrier_mount_0 driver",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "sony_carrier_mount_0 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "sony_carrier_mount_0 driver",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "sony_carrier_mount_1 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "sony_carrier_mount_1 driver",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "sony_carrier_mount_2 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "sony_carrier_mount_2 driver",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "sony_carrier_mount_3 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "sony_carrier_mount_3 driver",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "gnss_frame_mount_0 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "gnss_frame_mount_0 driver",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "gnss_frame_mount_1 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "gnss_frame_mount_1 driver",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "gnss_frame_mount_2 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "gnss_frame_mount_2 driver",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "gnss_frame_mount_3 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "gnss_frame_mount_3 driver",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "antenna_rack_mount_0 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "antenna_rack_mount_0 driver",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "antenna_rack_mount_1 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "antenna_rack_mount_1 driver",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "antenna_rack_mount_2 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "antenna_rack_mount_2 driver",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "antenna_rack_mount_3 insertion",
+      "collisions": [],
+      "pass_": true
+    },
+    {
+      "name": "antenna_rack_mount_3 driver",
+      "collisions": [],
+      "pass_": true
+    }
+  ],
+  "sequence": [
+    "Anchor unchanged floor to SW/SE/NW case M4 inserts; NE unused.",
+    "Insert16 M3 nuts from above, flats parallel X.",
+    "Install antenna rack with four M3x50; keep antenna, steel plate and cable off for MAIN installation.",
+    "Insert four MAIN lower columns and flat fixing plate north92/up14.2, slide south92 then lower.",
+    "Insert MAIN PCB north92/up4.8, slide south92, lower4.8; install three M3x30 and one short PCB screw plus front carrier M3x25.",
+    "Insert four M3 and two M4 captive nuts from above, then steel plate/antenna.",
+    "Install PWR, TX, Sony columns/fixing plate/PCB, GNSS frame/PCB. Case anchors accessible with installed modules, SE after pack/lid/top foam removal. Full interior lift-out still requires disconnected case harness and a separate extraction-path check."
+  ],
+  "limitations": [
+    "Case inner envelope is a conservative DXF-based proxy; real boss height and screw dimensions require fit check.",
+    "Continuous PCB paths use each actual solid bounding box; conservative PASS is sufficient, FAIL needs geometry review.",
+    "Assembly paths assume loose cables disconnected/parked; user handling and harness slack need physical trial."
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "print_rotations_deg": {
+    "quick_release_prototypes_slide_male": [
+      0,
+      0,
+      0
+    ],
+    "quick_release_prototypes_slide_female": [
+      0,
+      0,
+      0
+    ],
+    "quick_release_prototypes_snap_male": [
+      0,
+      0,
+      0
+    ],
+    "quick_release_prototypes_snap_female": [
+      -90,
+      0,
+      0
+    ],
+    "quick_release_prototypes_twist_male": [
+      0,
+      0,
+      0
+    ],
+    "quick_release_prototypes_twist_female": [
+      0,
+      0,
+      0
+    ],
+    "quick_release_prototypes_knob": [
+      0,
+      0,
+      0
+    ],
+    "quick_release_prototypes_slide_gib": [
+      0,
+      90,
+      0
+    ],
+    "quick_release_prototypes_twist_knob": [
+      0,
+      0,
+      0
+    ],
+    "quick_release_prototypes_twist_male_mount": [
+      0,
+      0,
+      0
+    ]
+  },
+  "portable_stl_export_format": "stl_ascii",
+  "layer_heights_mm": {
+    "quick_release_prototypes_twist_female": 0.1,
+    "quick_release_prototypes_twist_male_mount": 0.1
+  }
+}

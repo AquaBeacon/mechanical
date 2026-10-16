@@ -1,0 +1,730 @@
+{
+  "washers": 80,
+  "failures": [],
+  "results": [
+    {
+      "label": "washer_m6x1_041",
+      "support": [
+        "coupler_front",
+        "coupler_back"
+      ],
+      "median_gap_mm": 6.661338147750939e-16,
+      "contact_points_of_24": 22,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m6x1_042",
+      "support": [
+        "coupler_front",
+        "coupler_back"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 22,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m6x1_045",
+      "support": [
+        "coupler_front",
+        "coupler_back"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 22,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m6x1_046",
+      "support": [
+        "coupler_front",
+        "coupler_back"
+      ],
+      "median_gap_mm": 6.661338147750939e-16,
+      "contact_points_of_24": 22,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m5x1_049",
+      "support": [
+        "coupler_back"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m5x1_050",
+      "support": [
+        "coupler_front"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m5x1_053",
+      "support": [
+        "coupler_back"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m5x1_054",
+      "support": [
+        "coupler_front"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m5x1_057",
+      "support": [
+        "coupler_back"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m5x1_058",
+      "support": [
+        "coupler_front"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m5x1_061",
+      "support": [
+        "coupler_back"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m5x1_062",
+      "support": [
+        "coupler_front"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m5x1_085",
+      "support": [
+        "ballast_lid"
+      ],
+      "median_gap_mm": 3.3306690738754696e-16,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m5x1_086",
+      "support": [
+        "ballast_body"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m5x1_089",
+      "support": [
+        "ballast_lid"
+      ],
+      "median_gap_mm": 1.3322676295501878e-15,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m5x1_090",
+      "support": [
+        "ballast_body"
+      ],
+      "median_gap_mm": 3.3306690738754696e-16,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m5x1_093",
+      "support": [
+        "ballast_lid"
+      ],
+      "median_gap_mm": 4.440892098500626e-16,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m5x1_094",
+      "support": [
+        "ballast_body"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m5x1_097",
+      "support": [
+        "ballast_lid"
+      ],
+      "median_gap_mm": 3.3306690738754696e-16,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m5x1_098",
+      "support": [
+        "ballast_body"
+      ],
+      "median_gap_mm": 3.3306690738754696e-16,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m8x1_101",
+      "support": [
+        "ballast_body"
+      ],
+      "median_gap_mm": 2.1514049216391276e-15,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m8x1_102",
+      "support": [
+        "ballast_rings"
+      ],
+      "median_gap_mm": 3.121766619339583e-15,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m5x1_233",
+      "support": [
+        "gps_bridge"
+      ],
+      "median_gap_mm": 3.552713678800501e-15,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m5x1_235",
+      "support": [
+        "gps_bridge"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m5x1_237",
+      "support": [
+        "gps_bridge"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m5x1_239",
+      "support": [
+        "gps_bridge"
+      ],
+      "median_gap_mm": 5.551115123125783e-16,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m4x1_241",
+      "support": [
+        "gps_ann_mb1"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m4x1_242",
+      "support": [
+        "gps_bridge"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m4x1_245",
+      "support": [
+        "gps_ann_mb1"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m4x1_246",
+      "support": [
+        "gps_bridge"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m4x1_249",
+      "support": [
+        "box_bcas212310g"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m4x1_251",
+      "support": [
+        "box_bcas212310g"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m4x1_253",
+      "support": [
+        "box_bcas212310g"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "washer_m4x1_255",
+      "support": [
+        "box_bcas212310g"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "new_washer_m5x1_151",
+      "support": [
+        "keel_adapter"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "new_washer_m5x1_153",
+      "support": [
+        "keel_adapter"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "new_washer_m5x1_155",
+      "support": [
+        "keel_adapter"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "new_washer_m5x1_157",
+      "support": [
+        "keel_adapter"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "new_washer_m6x1_159",
+      "support": [
+        "keel_adapter"
+      ],
+      "median_gap_mm": 1.7217726984030977e-16,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "new_washer_m6x1_160",
+      "support": [
+        "keel_adapter"
+      ],
+      "median_gap_mm": 1.7217726984030977e-16,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m6x1_081",
+      "support": [
+        "parent_fin_cartridge"
+      ],
+      "median_gap_mm": 8.881784197001252e-16,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m6x1_082",
+      "support": [
+        "parent_fin_cartridge"
+      ],
+      "median_gap_mm": 2.6645352591003757e-15,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m6x1_085",
+      "support": [
+        "parent_fin_cartridge"
+      ],
+      "median_gap_mm": 8.881784197001252e-16,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m6x1_086",
+      "support": [
+        "parent_fin_cartridge"
+      ],
+      "median_gap_mm": 8.881784197001252e-16,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_089",
+      "support": [
+        "parent_fin_cartridge"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_090",
+      "support": [
+        "ballast_body"
+      ],
+      "median_gap_mm": 1.7763568394002505e-15,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_093",
+      "support": [
+        "parent_fin_cartridge"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_094",
+      "support": [
+        "ballast_body"
+      ],
+      "median_gap_mm": 1.7763568394002505e-15,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_097",
+      "support": [
+        "parent_fin_cartridge"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_098",
+      "support": [
+        "ballast_body"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_101",
+      "support": [
+        "parent_fin_cartridge"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_102",
+      "support": [
+        "ballast_body"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_105",
+      "support": [
+        "parent_fin_cartridge"
+      ],
+      "median_gap_mm": 7.105427357601002e-15,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_106",
+      "support": [
+        "parent_sensor_carrier"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_109",
+      "support": [
+        "parent_fin_cartridge"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_110",
+      "support": [
+        "parent_sensor_carrier"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_113",
+      "support": [
+        "parent_fin_cartridge"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_114",
+      "support": [
+        "parent_sensor_carrier"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_117",
+      "support": [
+        "parent_fin_cartridge"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_118",
+      "support": [
+        "parent_sensor_carrier"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_121",
+      "support": [
+        "camera_mount"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_122",
+      "support": [
+        "parent_sensor_carrier"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_125",
+      "support": [
+        "camera_mount"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_126",
+      "support": [
+        "parent_sensor_carrier"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_129",
+      "support": [
+        "camera_mount"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_130",
+      "support": [
+        "parent_sensor_carrier"
+      ],
+      "median_gap_mm": 1.7763568394002505e-15,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_133",
+      "support": [
+        "camera_mount"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_134",
+      "support": [
+        "parent_sensor_carrier"
+      ],
+      "median_gap_mm": 1.7763568394002505e-15,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_137",
+      "support": [
+        "parent_td04a_clamp_body"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_138",
+      "support": [
+        "parent_sensor_carrier"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_141",
+      "support": [
+        "parent_td04a_clamp_body"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_142",
+      "support": [
+        "parent_sensor_carrier"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_145",
+      "support": [
+        "parent_td04a_clamp_body"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_146",
+      "support": [
+        "parent_sensor_carrier"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_149",
+      "support": [
+        "parent_td04a_clamp_body"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m5x1_150",
+      "support": [
+        "parent_sensor_carrier"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m4x1_153",
+      "support": [
+        "parent_td04a_clamp_cap"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m4x1_154",
+      "support": [
+        "parent_sensor_carrier"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m4x1_157",
+      "support": [
+        "parent_td04a_clamp_cap"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    },
+    {
+      "label": "bottom_washer_m4x1_158",
+      "support": [
+        "parent_sensor_carrier"
+      ],
+      "median_gap_mm": 0.0,
+      "contact_points_of_24": 24,
+      "pass_bearing": true
+    }
+  ]
+}

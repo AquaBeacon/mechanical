@@ -1,0 +1,322 @@
+{
+  "schema_version": 1,
+  "assembly": "over_center_latch",
+  "release_status": "prototype_strength_unverified",
+  "note": "強度検証未完了の試作版。40 Nは実測校正が必要。構造解析の収束と固定部の局所応力は未解決で、100 N手押し耐力を認定しない。X1C PETG Basic / 0.4 nozzle / 0.2 layer / 6 walls / 100% infill. Four types, five printed pieces. M3x20 countersunk A, M3x35 cap B. No dedicated stop; hood seats on platform.",
+  "source_hashes": {
+    "assemblies/over_center_latch/placement.json": "08317a23537846bcdc69b1f37f69c4ba10733746b189185a70633f6997157202",
+    "assemblies/over_center_latch/print_config.json": "0a19e38eeb5710232975ebe1f0f11bb1322bcd22129ffa0a57775ef65613f96e",
+    "assemblies/over_center_latch/README.md": "2ffdb58bc7b050d9f87b788671a99d1281d54d5f80447506a032336098c9986a",
+    "parts/common/jigs/over_center_latch/manufacturing.json": "58d6e29a2d6c98299ed21fbdfebe953854a1609c2674c909403fd2eede0fb8f5",
+    "parts/common/jigs/over_center_latch/over_center_latch.scad": "f29fa98aaa4fd74f1e121a971dd4126689f59371e7c97c8373df4a9680861277",
+    "parts/common/jigs/over_center_latch/parameters.json": "a734e5320921d69bd04c634ea4d4a0bf2b55ab4c2b8da4e32594367db853f374",
+    "parts/common/jigs/over_center_latch/README.md": "8ec1915eb5aadf3556674d2038a42335698ba0596a888b237573964af58674ce",
+    "parts/common/jigs/over_center_latch/variants.txt": "524c7ddd910b4233aeb6035acefe14129c2dfee6c5aed4b03a568151b079da60",
+    "scad/lib/util.scad": "13fed014ff5835aef1559d05600e2b4b0e284c93a4325485f4ef1be3ede6ddb3",
+    "spec/over_center_latch/build_verify.py": "70d4e2093021bbab95fec97ddfb23a8ee6c1106a603e753ccffee4cb906a4045",
+    "spec/over_center_latch/clamp_loads.py": "7df5325de6ff38791671252d8232e1bb949010f2ec3b3c6d0b72e054b3af4385",
+    "spec/over_center_latch/clamp_studies.py": "f3904acfc2e2cc8e324f023a45c4cde46bfea9d6eefecae1df8b1efcc631bbbd",
+    "spec/over_center_latch/dji_generate.py": "0c1a92e7a173e44f72e46739238c636cadab8d41b07583e4138edddc693b0e8d",
+    "spec/over_center_latch/dji_geometry.py": "b2b6a59487f6648a6ba9a157c93df8d9bf0fde615895f04379d20ca6b3930f8b",
+    "spec/over_center_latch/dji_studies.py": "f17329fffe753fc07ffc9c526bd9dd95a1ca80a57f79ffd78a6c851a7c3515ac",
+    "spec/over_center_latch/dji_verify.py": "fcd942a0af33421607dcd1eddc9cf603b02046e0f60a7b396ef4d902d2aac012",
+    "spec/over_center_latch/generate.py": "aece3130823ee8a29779fef74aef3a16cf4d043314cf1aa11eef0f66926beb45",
+    "spec/over_center_latch/geometry.py": "7d3e89c03e69eb497f39e5ab5e4915eb6f98614ce8808d663c281ff26ee1312f",
+    "spec/over_center_latch/latch_body.scad": "523bca6f27ef5afe75a109ce792adfc4d9298546f5715c9e992b4410aa428f42",
+    "spec/over_center_latch/motion_video.py": "c5817d6169ec7d70762b68ce516884dcefa8ace9619d55a14ba3439dd85e4b86",
+    "spec/over_center_latch/petg_basic_fea.py": "ed3d5bc2bfbfc1edc70712a64ee942205bcac56618f95a4984c106592ecd402c",
+    "spec/over_center_latch/rubber_estimate.py": "a7d97c9a801149967541909a3afba5808e7ec6ac79911bcbf20f7719f1de2d40"
+  },
+  "parts": [
+    {
+      "part": "parts/common/jigs/over_center_latch",
+      "stem": "over_center_latch_base",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "base"
+      ],
+      "file": "over_center_latch_base.stl",
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/common/jigs/over_center_latch/over_center_latch_base.stl",
+      "source_sha256": "d92ddf682b5531c5e88803d8c7792526726106796d1d299ed579d5f46f4e5a73",
+      "sha256": "456d389610f82f4691481406cd386454468fcf8c2811ebc5c94c6f47c4048d05",
+      "extents_mm": [
+        61.12,
+        16.2974,
+        70.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          55.0
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          -1.0,
+          10.2974
+        ],
+        [
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          35.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/common/jigs/over_center_latch",
+      "stem": "over_center_latch_bail",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 2,
+      "labels": [
+        "link_left",
+        "link_right"
+      ],
+      "file": "over_center_latch_bail.stl",
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/common/jigs/over_center_latch/over_center_latch_bail.stl",
+      "source_sha256": "ff1678e80d647c2e3fae751bd7ce1a9c1d03d2390ea1fdeeb671f7d4f856f08f",
+      "sha256": "af73a151c3bb790068c561e8124cfa51342199e3191abf9aac7d39d621341989",
+      "extents_mm": [
+        16.799,
+        8.8,
+        3.6
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.39946
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          -1.0,
+          4.39999
+        ],
+        [
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          2.541135984996762e-16
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/common/jigs/over_center_latch",
+      "stem": "over_center_latch_lever",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "lever"
+      ],
+      "file": "over_center_latch_lever.stl",
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/common/jigs/over_center_latch/over_center_latch_lever.stl",
+      "source_sha256": "9487afba3991f19dbbee4401d08808ef6576dca79a501b88ca57ab4f7edd5baa",
+      "sha256": "fdcdd57d603f14cf05d9d8e6cf9df93421fade30d1cdbf9cddffe356ca4d378a",
+      "extents_mm": [
+        68.4,
+        19.0,
+        44.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          43.0718
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          -1.0,
+          5.000000000000001
+        ],
+        [
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          22.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/common/jigs/over_center_latch",
+      "stem": "over_center_latch_keeper",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "keeper"
+      ],
+      "file": "over_center_latch_keeper.stl",
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/common/jigs/over_center_latch/over_center_latch_keeper.stl",
+      "source_sha256": "2a9efa481d955a53b3835eebf0f7d89061242071f1ee406c793139f17e4e8c20",
+      "sha256": "2890f9d7826fd51f7b7bab00992cde5c2518d8b9fd4f5f06c3fd9e4a393af237",
+      "extents_mm": [
+        47.9,
+        8.0,
+        70.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          10.3
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          -1.0,
+          2.1278238135185264e-15
+        ],
+        [
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          35.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    }
+  ],
+  "modifiers": [],
+  "generated_files": [
+    "over_center_latch_base.stl",
+    "over_center_latch_bail.stl",
+    "over_center_latch_lever.stl",
+    "over_center_latch_keeper.stl",
+    "DESIGN_NOTES.md",
+    "PRINT.md"
+  ],
+  "document_hashes": {
+    "DESIGN_NOTES.md": "9e8fd88b3114086f396406f0cc1e0d6929fd3bcf43c60d617ea0564fee9969db",
+    "PRINT.md": "8780c2c8bf0f06d2fe5f1cbf58bb66beeaf3699d9f97a81c95028afa95935b53"
+  }
+}

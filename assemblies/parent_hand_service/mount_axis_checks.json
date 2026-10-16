@@ -1,0 +1,166 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "board": "MAIN",
+      "hole": 0,
+      "xy_mm": [
+        22.5,
+        107.5
+      ],
+      "axis_probe_diameter_mm": 3.0,
+      "board_intersection_mm3": 0.0
+    },
+    {
+      "board": "MAIN",
+      "hole": 1,
+      "xy_mm": [
+        22.5,
+        32.0
+      ],
+      "axis_probe_diameter_mm": 3.0,
+      "board_intersection_mm3": 0.0
+    },
+    {
+      "board": "MAIN",
+      "hole": 2,
+      "xy_mm": [
+        125.5,
+        32.0
+      ],
+      "axis_probe_diameter_mm": 3.0,
+      "board_intersection_mm3": 0.0
+    },
+    {
+      "board": "MAIN",
+      "hole": 3,
+      "xy_mm": [
+        125.5,
+        107.5
+      ],
+      "axis_probe_diameter_mm": 3.0,
+      "board_intersection_mm3": 0.0
+    },
+    {
+      "board": "PWR",
+      "hole": 0,
+      "xy_mm": [
+        30.8,
+        120.0
+      ],
+      "axis_probe_diameter_mm": 3.0,
+      "board_intersection_mm3": 0.0
+    },
+    {
+      "board": "PWR",
+      "hole": 1,
+      "xy_mm": [
+        104.8,
+        210.0
+      ],
+      "axis_probe_diameter_mm": 3.0,
+      "board_intersection_mm3": 0.0
+    },
+    {
+      "board": "PWR",
+      "hole": 2,
+      "xy_mm": [
+        30.8,
+        210.0
+      ],
+      "axis_probe_diameter_mm": 3.0,
+      "board_intersection_mm3": 0.0
+    },
+    {
+      "board": "PWR",
+      "hole": 3,
+      "xy_mm": [
+        104.8,
+        120.0
+      ],
+      "axis_probe_diameter_mm": 3.0,
+      "board_intersection_mm3": 0.0
+    },
+    {
+      "board": "TX",
+      "hole": 0,
+      "xy_mm": [
+        194.0,
+        206.5
+      ],
+      "axis_probe_diameter_mm": 3.0,
+      "board_intersection_mm3": 0.0
+    },
+    {
+      "board": "TX",
+      "hole": 1,
+      "xy_mm": [
+        194.0,
+        140.5
+      ],
+      "axis_probe_diameter_mm": 3.0,
+      "board_intersection_mm3": 0.0
+    },
+    {
+      "board": "TX",
+      "hole": 2,
+      "xy_mm": [
+        152.0,
+        206.5
+      ],
+      "axis_probe_diameter_mm": 3.0,
+      "board_intersection_mm3": 0.0
+    },
+    {
+      "board": "TX",
+      "hole": 3,
+      "xy_mm": [
+        152.0,
+        140.5
+      ],
+      "axis_probe_diameter_mm": 3.0,
+      "board_intersection_mm3": 0.0
+    },
+    {
+      "board": "SONY",
+      "hole": 0,
+      "xy_mm": [
+        199.8,
+        153.39
+      ],
+      "axis_probe_diameter_mm": 2.4,
+      "board_intersection_mm3": 0.0
+    },
+    {
+      "board": "SONY",
+      "hole": 1,
+      "xy_mm": [
+        151.54000000000002,
+        154.66
+      ],
+      "axis_probe_diameter_mm": 2.4,
+      "board_intersection_mm3": 0.0
+    },
+    {
+      "board": "SONY",
+      "hole": 2,
+      "xy_mm": [
+        194.72,
+        205.46
+      ],
+      "axis_probe_diameter_mm": 2.4,
+      "board_intersection_mm3": 0.0
+    },
+    {
+      "board": "SONY",
+      "hole": 3,
+      "xy_mm": [
+        166.78,
+        205.46
+      ],
+      "axis_probe_diameter_mm": 2.4,
+      "board_intersection_mm3": 0.0
+    }
+  ],
+  "scope": "Clear axis and stated shaft diameters through imported PCB substrate; thread retention and clamp torque are not structural verification."
+}

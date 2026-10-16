@@ -1,0 +1,387 @@
+{
+  "schema_version": 1,
+  "assembly": "parent_direct",
+  "release_status": "existing_prototype",
+  "note": "既存構成の印刷データを整理。強度・造形性の新規認証ではない。",
+  "source_hashes": {
+    "assemblies/parent_direct/placement.json": "733faad3dcc4786bc65d23553df703b8ddac6ca5da275503435d09197222c73f",
+    "assemblies/parent_direct/README.md": "6c36043adf80a4c1e4705efb51afc1c6fcc6091073003d921bb83514a82468a5",
+    "parts/child/exterior/printed/dji_osmo_action6_mount_m3/assembly.scad": "5340f1dc0990e459ea63653badceb904d1ab239aadda115fa9487a1302479adc",
+    "parts/child/exterior/printed/dji_osmo_action6_mount_m3/camera_mount.scad": "3d33acfcb29fd7f483b25d01eba1c0c46c41caacf8c5256610dedca8f2fd8cb2",
+    "parts/child/exterior/printed/dji_osmo_action6_mount_m3/frame_view.scad": "1dbc3a84b452fa6cc7e3d04bcb86928d250539591ddeecfe1fef20305b80df8d",
+    "parts/child/exterior/printed/dji_osmo_action6_mount_m3/README.md": "dcf765fcdfe2d4f43dd83950ec25ab3abe4176b01f1b5f03af27d62bc1bd0412",
+    "parts/parent/exterior/printed/parent_direct_frame/manufacturing.json": "42d27a1edab4afe96cb6e88c3f158e2e3b7169ae84bf30e6b71f291afd3a6515",
+    "parts/parent/exterior/printed/parent_direct_frame/parent_direct_frame.scad": "4dc4b61851336af32c541b656ab308d585114334fe333382ca85c71ca3dcac19",
+    "parts/parent/exterior/printed/parent_light_bar/manufacturing.json": "de1e343ea3913f41dc38a21e8471ce41dd8e67798ea102d9c045c804b8655fa0",
+    "parts/parent/exterior/printed/parent_light_bar/parent_light_bar.scad": "28dd40a48e2c7278f84d0d2d655163f4c66555bfced7d08c94ab7824dbe23919",
+    "parts/parent/exterior/printed/parent_light_jaw/manufacturing.json": "f5ea739210a3737bcd9eb6d87f5a650eaeb1a65f8cf060e03e6e828504cd083e",
+    "parts/parent/exterior/printed/parent_light_jaw/parent_light_jaw.scad": "19ebaff2ac3a91544c53f42c3f72165ad6ede1790406dcce963d67a43678f002",
+    "parts/parent/exterior/printed/parent_td_support/manufacturing.json": "e970537d955cb4918d98ac4644b0ea1bd36fca6374d2c6311fbd70406e2aa349",
+    "parts/parent/exterior/printed/parent_td_support/parent_td_support.scad": "1bf960b530b2defd58f26c26b024e42780ac0ade4d48a6fe48616753d9067c61",
+    "spec/build_camera_mount_m3.py": "f12b7e0d88e6d178853a33d9113d4c97b6a975ede9df5496101e0eb1fdf2894a",
+    "spec/export_camera_mount_m3.py": "75be8cdfd9ba55dce4dd7322c2370f792f818c5360a16099ec9ee48043ff758e",
+    "spec/slice_camera_mount_m3.py": "84e759fda649b7d4fefe05f5cd51befb846825bdebb744f8aeff309dca45bdd1"
+  },
+  "parts": [
+    {
+      "part": "parts/parent/exterior/printed/parent_direct_frame",
+      "stem": "parent_direct_frame",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "open_frame"
+      ],
+      "file": "parent_direct_frame.stl",
+      "rotation_deg": [
+        -180.0,
+        0.0,
+        -0.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_direct_frame/parent_direct_frame.stl",
+      "source_sha256": "4a390702febb0ab9d0cc0b110c4f35e9f25b90fed93cf581197e97447b9bcce8",
+      "sha256": "f0a966fb407c3be295e83913ddaf92da12b8452077f37097f0c69bf06f2d633c",
+      "extents_mm": [
+        236.0,
+        236.0,
+        42.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          118.0
+        ],
+        [
+          0.0,
+          -1.0,
+          1.2246467991473532e-16,
+          118.0
+        ],
+        [
+          0.0,
+          -1.2246467991473532e-16,
+          -1.0,
+          1.4450832229938766e-14
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_light_bar",
+      "stem": "parent_light_bar",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 2,
+      "labels": [
+        "upper_bar_-55",
+        "upper_bar_55"
+      ],
+      "file": "parent_light_bar.stl",
+      "rotation_deg": [
+        0.0,
+        -0.0,
+        -180.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_light_bar/parent_light_bar.stl",
+      "source_sha256": "0bcb60267b457c9776cdbad10cc5ef3bd2bf53002f497bd87c184b359dcb9587",
+      "sha256": "417ec44da59001f28e0a23223ee0fbb83700616ae6c55b5c048f129f7001e075",
+      "extents_mm": [
+        236.0,
+        24.0,
+        12.0
+      ],
+      "model_to_print": [
+        [
+          -1.0,
+          1.2246467991473532e-16,
+          0.0,
+          118.0
+        ],
+        [
+          -1.2246467991473532e-16,
+          -1.0,
+          0.0,
+          12.000000000000014
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_td_support",
+      "stem": "parent_td_support",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "sensor_carrier"
+      ],
+      "file": "parent_td_support.stl",
+      "rotation_deg": [
+        -90.0,
+        0.0,
+        0.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_td_support/parent_td_support.stl",
+      "source_sha256": "661339a1c597289925fd765566d213a8f85b0799e5237ac6c87e52ae45ffff7d",
+      "sha256": "526430572fa608e926fb3b1a071301746c52cca92b5aaedb6fe06a27ea3bf918",
+      "extents_mm": [
+        85.0,
+        42.0,
+        67.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -20.0
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          1.0,
+          54.0
+        ],
+        [
+          0.0,
+          -1.0,
+          6.123233995736766e-17,
+          3.3065463576978537e-15
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/exterior/printed/dji_osmo_action6_mount_m3",
+      "stem": "camera_mount",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "camera_mount"
+      ],
+      "file": "camera_mount.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/exterior/printed/dji_osmo_action6_mount_m3/camera_mount.stl",
+      "source_sha256": "d583ef452f596bcad143fe4bffdd2cb6411b786025105ef01480581538405f38",
+      "sha256": "86a70959b0ff5184d980703d45eab77490813da1334081df37628da83ea535aa",
+      "extents_mm": [
+        100.0,
+        87.45,
+        84.5
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          50.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          52.45
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_light_jaw",
+      "stem": "parent_light_jaw",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "td_bracket_jaw"
+      ],
+      "file": "parent_light_jaw.stl",
+      "rotation_deg": [
+        -90.0,
+        0.0,
+        -180.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_light_jaw/parent_light_jaw.stl",
+      "source_sha256": "8417e3979724879adcbe8ba201e1dba28fecbacbd079a5ccfcbc0866482857f9",
+      "sha256": "e98b1b9472087481bd3db7ee84fa24593ca91cbdda31b3146e0822f0e9c279c4",
+      "extents_mm": [
+        50.0,
+        14.0,
+        8.0
+      ],
+      "model_to_print": [
+        [
+          -1.0,
+          7.498798913309288e-33,
+          1.2246467991473532e-16,
+          25.0
+        ],
+        [
+          -1.2246467991473532e-16,
+          -6.123233995736766e-17,
+          -1.0,
+          7.0000000000000036
+        ],
+        [
+          0.0,
+          -1.0,
+          6.123233995736766e-17,
+          8.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    }
+  ],
+  "modifiers": [],
+  "generated_files": [
+    "parent_direct_frame.stl",
+    "parent_light_bar.stl",
+    "parent_td_support.stl",
+    "camera_mount.stl",
+    "parent_light_jaw.stl",
+    "DESIGN_NOTES.md",
+    "PRINT.md"
+  ],
+  "document_hashes": {
+    "DESIGN_NOTES.md": "70693db1753208e77d455e8c722b05f0169399ed7eadaa51f8bd79846ff8b172",
+    "PRINT.md": "af380fa96abd423aa0736d4d6950592f5af219e826d159567064d3d2715800f8"
+  }
+}

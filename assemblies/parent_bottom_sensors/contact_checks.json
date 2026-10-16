@@ -1,0 +1,3419 @@
+{
+ "floating": [],
+ "pairs": [
+  {
+   "a": "beam_lower",
+   "b": "beam_upper",
+   "gap": 0.0,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "coupler_front",
+   "gap": 0.25,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "coupler_back",
+   "gap": 0.25,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "ballast_body",
+   "gap": 5.0000939949198315,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "screw_m6x70_040",
+   "gap": 0.2682838414334152,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "screw_m5x65_048",
+   "gap": 3.5052787780153927,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "screw_m5x65_052",
+   "gap": 7.5524920373289,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "screw_m5x65_056",
+   "gap": 3.5173720527274273,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "screw_m5x65_060",
+   "gap": 7.510613678729378,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "screw_m8x50_100",
+   "gap": 1.232801662762413,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "washer_m8x1_101",
+   "gap": 4.000187259829219,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "parent_fin_cartridge",
+   "gap": 0.05641214674196952,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "bottom_screw_m6x60_080",
+   "gap": 0.2644511120103526,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "bottom_washer_m6x1_081",
+   "gap": 7.000017551442283,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "bottom_washer_m6x1_082",
+   "gap": 7.000017551442283,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "bottom_nut_m6_083",
+   "gap": 8.000009307796306,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "bottom_screw_m6x60_084",
+   "gap": 0.26472654176935295,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "bottom_washer_m6x1_085",
+   "gap": 7.000016963436589,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "bottom_washer_m6x1_086",
+   "gap": 7.000016963436589,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "bottom_nut_m6_087",
+   "gap": 8.000195488708414,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "bottom_screw_m5x35_088",
+   "gap": 5.715053685319534,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "bottom_washer_m5x1_089",
+   "gap": 5.084516012464861,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "bottom_screw_m5x35_092",
+   "gap": 6.0656554681404,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "bottom_washer_m5x1_093",
+   "gap": 5.278989812332548,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "bottom_screw_m5x35_096",
+   "gap": 6.326206515558384,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "bottom_washer_m5x1_097",
+   "gap": 5.677783816138251,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "bottom_screw_m5x35_100",
+   "gap": 5.863895457805928,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_lower",
+   "b": "bottom_washer_m5x1_101",
+   "gap": 5.624644848691501,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_upper",
+   "b": "coupler_front",
+   "gap": 0.25,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_upper",
+   "b": "coupler_back",
+   "gap": 0.25,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_upper",
+   "b": "deck",
+   "gap": 8.000197235357938,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_upper",
+   "b": "screw_m6x70_044",
+   "gap": 0.26677339378656906,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_upper",
+   "b": "screw_m5x65_048",
+   "gap": 7.523773596776746,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_upper",
+   "b": "screw_m5x65_052",
+   "gap": 3.5082113586207604,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_upper",
+   "b": "screw_m5x65_056",
+   "gap": 7.514447067354319,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_upper",
+   "b": "screw_m5x65_060",
+   "gap": 3.5135065081120773,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_upper",
+   "b": "keel_adapter",
+   "gap": 0.08932898230922104,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_upper",
+   "b": "new_screw_m5x16_150",
+   "gap": 1.7260515867146051,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_upper",
+   "b": "new_washer_m5x1_151",
+   "gap": 0.6568597733154296,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_upper",
+   "b": "new_screw_m5x16_152",
+   "gap": 1.4363839840188652,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_upper",
+   "b": "new_washer_m5x1_153",
+   "gap": 0.6568597733154296,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_upper",
+   "b": "new_screw_m5x16_154",
+   "gap": 1.6120849795825114,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_upper",
+   "b": "new_washer_m5x1_155",
+   "gap": 0.6568597733154296,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_upper",
+   "b": "new_screw_m5x16_156",
+   "gap": 1.5587721672385917,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_upper",
+   "b": "new_washer_m5x1_157",
+   "gap": 0.6568597733154296,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_upper",
+   "b": "new_screw_m6x60_158",
+   "gap": 0.2741850990878292,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_upper",
+   "b": "new_washer_m6x1_159",
+   "gap": 8.00000746601212,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_upper",
+   "b": "new_washer_m6x1_160",
+   "gap": 8.000015369235236,
+   "penetration": 0.0
+  },
+  {
+   "a": "beam_upper",
+   "b": "new_nut_m6_161",
+   "gap": 9.000069484064838,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_front",
+   "b": "coupler_back",
+   "gap": 0.5,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_front",
+   "b": "screw_m6x70_040",
+   "gap": 0.26660680482372795,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_front",
+   "b": "washer_m6x1_041",
+   "gap": 0.01569077754605733,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_front",
+   "b": "washer_m6x1_042",
+   "gap": 0.01569077754605733,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_front",
+   "b": "nut_m6_043",
+   "gap": 1.0056797372282997,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_front",
+   "b": "screw_m6x70_044",
+   "gap": 0.27380233621240846,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_front",
+   "b": "washer_m6x1_045",
+   "gap": 0.01569077754605733,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_front",
+   "b": "washer_m6x1_046",
+   "gap": 0.01569077754605733,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_front",
+   "b": "nut_m6_047",
+   "gap": 1.000341726080752,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_front",
+   "b": "screw_m5x65_048",
+   "gap": 0.2653181141993312,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_front",
+   "b": "washer_m5x1_050",
+   "gap": 0.009256435061069901,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_front",
+   "b": "nut_m5_051",
+   "gap": 1.0000266298827223,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_front",
+   "b": "screw_m5x65_052",
+   "gap": 0.26286230461312027,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_front",
+   "b": "washer_m5x1_054",
+   "gap": 0.013296164860579754,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_front",
+   "b": "nut_m5_055",
+   "gap": 1.0002172902616684,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_front",
+   "b": "screw_m5x65_056",
+   "gap": 0.2700778859382033,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_front",
+   "b": "washer_m5x1_058",
+   "gap": 0.013296164860579754,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_front",
+   "b": "nut_m5_059",
+   "gap": 1.0000406268313784,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_front",
+   "b": "screw_m5x65_060",
+   "gap": 0.2669330632014047,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_front",
+   "b": "washer_m5x1_062",
+   "gap": 0.013296164860579754,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_front",
+   "b": "nut_m5_063",
+   "gap": 1.000054047576141,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_back",
+   "b": "screw_m6x70_040",
+   "gap": 0.270815403480002,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_back",
+   "b": "washer_m6x1_041",
+   "gap": 0.011765073166932089,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_back",
+   "b": "washer_m6x1_042",
+   "gap": 0.01569077754605733,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_back",
+   "b": "nut_m6_043",
+   "gap": 1.001300529590365,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_back",
+   "b": "screw_m6x70_044",
+   "gap": 0.2650052026676311,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_back",
+   "b": "washer_m6x1_045",
+   "gap": 0.013757511314968706,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_back",
+   "b": "washer_m6x1_046",
+   "gap": 0.01569077754605733,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_back",
+   "b": "nut_m6_047",
+   "gap": 1.0022746616715343,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_back",
+   "b": "screw_m5x65_048",
+   "gap": 0.26563695875353455,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_back",
+   "b": "washer_m5x1_049",
+   "gap": 0.013296164860579754,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_back",
+   "b": "screw_m5x65_052",
+   "gap": 0.2632259885661453,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_back",
+   "b": "washer_m5x1_053",
+   "gap": 0.013296164860579754,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_back",
+   "b": "screw_m5x65_056",
+   "gap": 0.2640835781542297,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_back",
+   "b": "washer_m5x1_057",
+   "gap": 0.013296164860579754,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_back",
+   "b": "screw_m5x65_060",
+   "gap": 0.2689966690475105,
+   "penetration": 0.0
+  },
+  {
+   "a": "coupler_back",
+   "b": "washer_m5x1_061",
+   "gap": 0.013296164860579754,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "ballast_lid",
+   "gap": 6.217248937900877e-15,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "ballast_rings",
+   "gap": 0.030315748827086385,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "screw_m5x20_084",
+   "gap": 0.2692174093930428,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "washer_m5x1_085",
+   "gap": 6.000014731716581,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "washer_m5x1_086",
+   "gap": 0.004232314568554581,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "nut_m5_087",
+   "gap": 1.000031979820573,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "screw_m5x20_088",
+   "gap": 0.2673567342902686,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "washer_m5x1_089",
+   "gap": 6.000014731716581,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "washer_m5x1_090",
+   "gap": 0.013295894704753588,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "nut_m5_091",
+   "gap": 1.0002882872098873,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "screw_m5x20_092",
+   "gap": 0.2629129206539586,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "washer_m5x1_093",
+   "gap": 6.000004931212608,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "washer_m5x1_094",
+   "gap": 0.008897057527003389,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "nut_m5_095",
+   "gap": 1.0000371112984008,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "screw_m5x20_096",
+   "gap": 0.26559043537581317,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "washer_m5x1_097",
+   "gap": 6.000014731716581,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "washer_m5x1_098",
+   "gap": 0.013295894704752353,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "nut_m5_099",
+   "gap": 1.0001023052873754,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "screw_m8x50_100",
+   "gap": 0.2727950109698856,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "washer_m8x1_101",
+   "gap": 0.02055998540855508,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "parent_fin_cartridge",
+   "gap": 0.0,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "parent_sensor_carrier",
+   "gap": 7.026592158950299,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "camera_mount",
+   "gap": 6.557779271451019,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "bottom_screw_m5x35_088",
+   "gap": 0.2735062866080652,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "bottom_washer_m5x1_090",
+   "gap": 0.013296164860588619,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "bottom_nut_m5_091",
+   "gap": 1.0008507674520868,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "bottom_screw_m5x35_092",
+   "gap": 0.2652058942912957,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "bottom_washer_m5x1_094",
+   "gap": 0.013296164860588619,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "bottom_nut_m5_095",
+   "gap": 1.0000257926506375,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "bottom_screw_m5x35_096",
+   "gap": 0.2659404548447754,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "bottom_washer_m5x1_098",
+   "gap": 0.013296164860588619,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "bottom_nut_m5_099",
+   "gap": 1.000518818501361,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "bottom_screw_m5x35_100",
+   "gap": 0.274801367709325,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "bottom_washer_m5x1_102",
+   "gap": 0.013296164860588619,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_body",
+   "b": "bottom_nut_m5_103",
+   "gap": 1.0006020603898844,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_lid",
+   "b": "screw_m5x20_084",
+   "gap": 0.2692174093930459,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_lid",
+   "b": "washer_m5x1_085",
+   "gap": 0.013295894704761186,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_lid",
+   "b": "washer_m5x1_086",
+   "gap": 6.000014731716581,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_lid",
+   "b": "nut_m5_087",
+   "gap": 7.0000045686173555,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_lid",
+   "b": "screw_m5x20_088",
+   "gap": 0.26772031470189733,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_lid",
+   "b": "washer_m5x1_089",
+   "gap": 0.013295894704760556,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_lid",
+   "b": "washer_m5x1_090",
+   "gap": 6.000001923942215,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_lid",
+   "b": "nut_m5_091",
+   "gap": 7.000041189702335,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_lid",
+   "b": "screw_m5x20_092",
+   "gap": 0.26350516630886706,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_lid",
+   "b": "washer_m5x1_093",
+   "gap": 0.011341655176295554,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_lid",
+   "b": "washer_m5x1_094",
+   "gap": 6.00000659646576,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_lid",
+   "b": "nut_m5_095",
+   "gap": 7.0000053017104245,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_lid",
+   "b": "screw_m5x20_096",
+   "gap": 0.26559043537580673,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_lid",
+   "b": "washer_m5x1_097",
+   "gap": 0.013295894704759321,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_lid",
+   "b": "washer_m5x1_098",
+   "gap": 6.000014731716581,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_lid",
+   "b": "nut_m5_099",
+   "gap": 7.0000146157733925,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_lid",
+   "b": "screw_m8x50_100",
+   "gap": 2.00050238903424,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_lid",
+   "b": "nut_m8_103",
+   "gap": 7.500414201403496,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_lid",
+   "b": "parent_sensor_carrier",
+   "gap": 7.0206970810674685,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_lid",
+   "b": "camera_mount",
+   "gap": 0.6877469958840647,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_bridge",
+   "b": "deck",
+   "gap": 0.0234361051255822,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_bridge",
+   "b": "box_bcas212310g",
+   "gap": 3.0003351721910425,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_bridge",
+   "b": "gps_ann_mb1",
+   "gap": 0.0,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_bridge",
+   "b": "screw_m5x20_232",
+   "gap": 0.2672106715015577,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_bridge",
+   "b": "washer_m5x1_233",
+   "gap": 0.013295114290599255,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_bridge",
+   "b": "screw_m5x20_234",
+   "gap": 0.26711621333504026,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_bridge",
+   "b": "washer_m5x1_235",
+   "gap": 0.01012411237053155,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_bridge",
+   "b": "screw_m5x20_236",
+   "gap": 0.2650839192240164,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_bridge",
+   "b": "washer_m5x1_237",
+   "gap": 0.013295114290599255,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_bridge",
+   "b": "screw_m5x20_238",
+   "gap": 0.26889163368572117,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_bridge",
+   "b": "washer_m5x1_239",
+   "gap": 0.01329616486059108,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_bridge",
+   "b": "screw_m4x25_240",
+   "gap": 0.26008505501891704,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_bridge",
+   "b": "washer_m4x1_241",
+   "gap": 6.000009800892328,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_bridge",
+   "b": "washer_m4x1_242",
+   "gap": 0.010844851497361356,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_bridge",
+   "b": "nut_m4_243",
+   "gap": 1.0003306793883413,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_bridge",
+   "b": "screw_m4x25_244",
+   "gap": 0.262759698638628,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_bridge",
+   "b": "washer_m4x1_245",
+   "gap": 6.000009800892328,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_bridge",
+   "b": "washer_m4x1_246",
+   "gap": 0.01080989813981489,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_bridge",
+   "b": "nut_m4_247",
+   "gap": 1.0000579403652385,
+   "penetration": 0.0
+  },
+  {
+   "a": "deck",
+   "b": "box_bcas212310g",
+   "gap": 0.036043034701021416,
+   "penetration": 0.0
+  },
+  {
+   "a": "deck",
+   "b": "screw_m5x20_232",
+   "gap": 0.1612645603620872,
+   "penetration": 0.0
+  },
+  {
+   "a": "deck",
+   "b": "screw_m5x20_234",
+   "gap": 0.2025603449043698,
+   "penetration": 0.0
+  },
+  {
+   "a": "deck",
+   "b": "screw_m5x20_236",
+   "gap": 0.11326986806769565,
+   "penetration": 0.0
+  },
+  {
+   "a": "deck",
+   "b": "screw_m5x20_238",
+   "gap": 0.11625853406509025,
+   "penetration": 0.0
+  },
+  {
+   "a": "deck",
+   "b": "screw_m4x16_248",
+   "gap": 0.18624682911157303,
+   "penetration": 0.0
+  },
+  {
+   "a": "deck",
+   "b": "washer_m4x1_249",
+   "gap": 6.000040048236418,
+   "penetration": 0.0
+  },
+  {
+   "a": "deck",
+   "b": "screw_m4x16_250",
+   "gap": 0.08819785502660434,
+   "penetration": 0.0
+  },
+  {
+   "a": "deck",
+   "b": "washer_m4x1_251",
+   "gap": 6.000048783656527,
+   "penetration": 0.0
+  },
+  {
+   "a": "deck",
+   "b": "screw_m4x16_252",
+   "gap": 0.0909492917439855,
+   "penetration": 0.0
+  },
+  {
+   "a": "deck",
+   "b": "washer_m4x1_253",
+   "gap": 6.00000745637942,
+   "penetration": 0.0
+  },
+  {
+   "a": "deck",
+   "b": "screw_m4x16_254",
+   "gap": 0.25027171158585665,
+   "penetration": 0.0
+  },
+  {
+   "a": "deck",
+   "b": "washer_m4x1_255",
+   "gap": 6.000128810398836,
+   "penetration": 0.0
+  },
+  {
+   "a": "deck",
+   "b": "keel_adapter",
+   "gap": 0.08782782529922123,
+   "penetration": 0.0
+  },
+  {
+   "a": "deck",
+   "b": "new_screw_m5x16_150",
+   "gap": 0.703101572773161,
+   "penetration": 0.0
+  },
+  {
+   "a": "deck",
+   "b": "new_washer_m5x1_151",
+   "gap": 8.00000441434047,
+   "penetration": 0.0
+  },
+  {
+   "a": "deck",
+   "b": "new_screw_m5x16_152",
+   "gap": 0.7026829327549977,
+   "penetration": 0.0
+  },
+  {
+   "a": "deck",
+   "b": "new_washer_m5x1_153",
+   "gap": 8.000063412341259,
+   "penetration": 0.0
+  },
+  {
+   "a": "deck",
+   "b": "new_screw_m5x16_154",
+   "gap": 0.6988453314928122,
+   "penetration": 0.0
+  },
+  {
+   "a": "deck",
+   "b": "new_washer_m5x1_155",
+   "gap": 8.000076153558163,
+   "penetration": 0.0
+  },
+  {
+   "a": "deck",
+   "b": "new_screw_m5x16_156",
+   "gap": 0.6994851318969949,
+   "penetration": 0.0
+  },
+  {
+   "a": "deck",
+   "b": "new_washer_m5x1_157",
+   "gap": 8.000001476414148,
+   "penetration": 0.0
+  },
+  {
+   "a": "box_bcas212310g",
+   "b": "pen_tether",
+   "gap": 0.0879254759834918,
+   "penetration": 0.0
+  },
+  {
+   "a": "box_bcas212310g",
+   "b": "pen_td04a",
+   "gap": 0.06758380362894117,
+   "penetration": 0.0
+  },
+  {
+   "a": "box_bcas212310g",
+   "b": "screw_m5x20_234",
+   "gap": 3.054060127744251,
+   "penetration": 0.0
+  },
+  {
+   "a": "box_bcas212310g",
+   "b": "screw_m5x20_238",
+   "gap": 2.622365810864644,
+   "penetration": 0.0
+  },
+  {
+   "a": "box_bcas212310g",
+   "b": "screw_m4x16_248",
+   "gap": 0.10426662581509269,
+   "penetration": 0.0
+  },
+  {
+   "a": "box_bcas212310g",
+   "b": "washer_m4x1_249",
+   "gap": 0.11511833604281646,
+   "penetration": 0.0
+  },
+  {
+   "a": "box_bcas212310g",
+   "b": "screw_m4x16_250",
+   "gap": 0.10965209918803658,
+   "penetration": 0.0
+  },
+  {
+   "a": "box_bcas212310g",
+   "b": "washer_m4x1_251",
+   "gap": 0.07194627331248407,
+   "penetration": 0.0
+  },
+  {
+   "a": "box_bcas212310g",
+   "b": "screw_m4x16_252",
+   "gap": 0.10533425494874495,
+   "penetration": 0.0
+  },
+  {
+   "a": "box_bcas212310g",
+   "b": "washer_m4x1_253",
+   "gap": 0.018331899448687447,
+   "penetration": 0.0
+  },
+  {
+   "a": "box_bcas212310g",
+   "b": "screw_m4x16_254",
+   "gap": 0.10530378829443636,
+   "penetration": 0.0
+  },
+  {
+   "a": "box_bcas212310g",
+   "b": "washer_m4x1_255",
+   "gap": 0.08821012655305642,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_ann_mb1",
+   "b": "screw_m4x25_240",
+   "gap": 0.2622881344289143,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_ann_mb1",
+   "b": "washer_m4x1_241",
+   "gap": 0.010840123431029636,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_ann_mb1",
+   "b": "washer_m4x1_242",
+   "gap": 8.00000734426388,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_ann_mb1",
+   "b": "nut_m4_243",
+   "gap": 9.00003673678407,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_ann_mb1",
+   "b": "screw_m4x25_244",
+   "gap": 0.26276112752164565,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_ann_mb1",
+   "b": "washer_m4x1_245",
+   "gap": 0.010840123431022669,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_ann_mb1",
+   "b": "washer_m4x1_246",
+   "gap": 8.00000729066873,
+   "penetration": 0.0
+  },
+  {
+   "a": "gps_ann_mb1",
+   "b": "nut_m4_247",
+   "gap": 9.000006419672667,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_rings",
+   "b": "screw_m8x50_100",
+   "gap": 0.5017796573255486,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_rings",
+   "b": "washer_m8x1_101",
+   "gap": 6.000123259208095,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_rings",
+   "b": "washer_m8x1_102",
+   "gap": 0.045681284603384456,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_rings",
+   "b": "nut_m8_103",
+   "gap": 1.000010946734316,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_rings",
+   "b": "parent_fin_cartridge",
+   "gap": 6.0007711796914265,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_rings",
+   "b": "bottom_screw_m5x35_088",
+   "gap": 5.032267554633043,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_rings",
+   "b": "bottom_washer_m5x1_090",
+   "gap": 2.5268743668413736,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_rings",
+   "b": "bottom_nut_m5_091",
+   "gap": 3.2653175138626227,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_rings",
+   "b": "bottom_screw_m5x35_092",
+   "gap": 5.034907187018812,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_rings",
+   "b": "bottom_washer_m5x1_094",
+   "gap": 2.5268743668413687,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_rings",
+   "b": "bottom_nut_m5_095",
+   "gap": 3.280064996042909,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_rings",
+   "b": "bottom_screw_m5x35_096",
+   "gap": 5.043590710342806,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_rings",
+   "b": "bottom_washer_m5x1_098",
+   "gap": 2.5268743668413736,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_rings",
+   "b": "bottom_nut_m5_099",
+   "gap": 3.1875862341590926,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_rings",
+   "b": "bottom_screw_m5x35_100",
+   "gap": 5.044680763336487,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_rings",
+   "b": "bottom_washer_m5x1_102",
+   "gap": 2.5268743668413687,
+   "penetration": 0.0
+  },
+  {
+   "a": "ballast_rings",
+   "b": "bottom_nut_m5_103",
+   "gap": 3.1962929816672245,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m6x70_040",
+   "b": "washer_m6x1_041",
+   "gap": 0.011601018176846075,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m6x70_040",
+   "b": "washer_m6x1_042",
+   "gap": 0.2525099729322086,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m6x70_040",
+   "b": "nut_m6_043",
+   "gap": 0.006190952640341653,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m6x70_040",
+   "b": "screw_m5x65_048",
+   "gap": 6.541682644684067,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m6x70_040",
+   "b": "screw_m5x65_056",
+   "gap": 6.556142673796932,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m6x1_041",
+   "b": "screw_m5x65_048",
+   "gap": 5.383036821658319,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m6x1_042",
+   "b": "nut_m6_043",
+   "gap": 0.009990843803212478,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m6x1_042",
+   "b": "screw_m5x65_056",
+   "gap": 5.37072048790361,
+   "penetration": 0.0
+  },
+  {
+   "a": "nut_m6_043",
+   "b": "screw_m5x65_056",
+   "gap": 6.25487053757062,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m6x70_044",
+   "b": "washer_m6x1_045",
+   "gap": 0.009918367073189872,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m6x70_044",
+   "b": "washer_m6x1_046",
+   "gap": 0.2516744535039176,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m6x70_044",
+   "b": "nut_m6_047",
+   "gap": 0.04311757846255887,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m6x70_044",
+   "b": "screw_m5x65_052",
+   "gap": 6.576947440973606,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m6x70_044",
+   "b": "screw_m5x65_060",
+   "gap": 6.564992577669998,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m6x1_045",
+   "b": "screw_m5x65_052",
+   "gap": 5.343204484845371,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m6x1_046",
+   "b": "nut_m6_047",
+   "gap": 0.011806535046175194,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m6x1_046",
+   "b": "screw_m5x65_060",
+   "gap": 5.324341712263274,
+   "penetration": 0.0
+  },
+  {
+   "a": "nut_m6_047",
+   "b": "screw_m5x65_060",
+   "gap": 6.172639970888138,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x65_048",
+   "b": "washer_m5x1_049",
+   "gap": 0.020612623346067192,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x65_048",
+   "b": "washer_m5x1_050",
+   "gap": 0.2539719818575853,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x65_048",
+   "b": "nut_m5_051",
+   "gap": 0.010018835491678726,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x65_048",
+   "b": "screw_m5x65_052",
+   "gap": 7.5,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x65_048",
+   "b": "washer_m5x1_053",
+   "gap": 6.75,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x65_048",
+   "b": "washer_m5x1_054",
+   "gap": 8.515489324021557,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x65_048",
+   "b": "nut_m5_055",
+   "gap": 9.502131931392691,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m5x1_049",
+   "b": "screw_m5x65_052",
+   "gap": 6.75,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m5x1_049",
+   "b": "washer_m5x1_053",
+   "gap": 6.0,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m5x1_050",
+   "b": "nut_m5_051",
+   "gap": 0.010379179441740194,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m5x1_050",
+   "b": "screw_m5x65_052",
+   "gap": 8.501020027824074,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m5x1_050",
+   "b": "washer_m5x1_054",
+   "gap": 6.0,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m5x1_050",
+   "b": "nut_m5_055",
+   "gap": 7.004492993612185,
+   "penetration": 0.0
+  },
+  {
+   "a": "nut_m5_051",
+   "b": "screw_m5x65_052",
+   "gap": 9.50920151803166,
+   "penetration": 0.0
+  },
+  {
+   "a": "nut_m5_051",
+   "b": "washer_m5x1_054",
+   "gap": 7.0099648842971165,
+   "penetration": 0.0
+  },
+  {
+   "a": "nut_m5_051",
+   "b": "nut_m5_055",
+   "gap": 8.0,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x65_052",
+   "b": "washer_m5x1_053",
+   "gap": 0.0426800097100206,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x65_052",
+   "b": "washer_m5x1_054",
+   "gap": 0.24993283159620874,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x65_052",
+   "b": "nut_m5_055",
+   "gap": 0.017136497819926867,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m5x1_054",
+   "b": "nut_m5_055",
+   "gap": 0.009115503070411408,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x65_056",
+   "b": "washer_m5x1_057",
+   "gap": 0.025550787147930354,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x65_056",
+   "b": "washer_m5x1_058",
+   "gap": 0.24892640626763174,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x65_056",
+   "b": "nut_m5_059",
+   "gap": 0.009100951964899294,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x65_056",
+   "b": "screw_m5x65_060",
+   "gap": 7.5,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x65_056",
+   "b": "washer_m5x1_061",
+   "gap": 6.75,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x65_056",
+   "b": "washer_m5x1_062",
+   "gap": 8.526715891307814,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x65_056",
+   "b": "nut_m5_063",
+   "gap": 9.514956840845093,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m5x1_057",
+   "b": "screw_m5x65_060",
+   "gap": 6.75,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m5x1_057",
+   "b": "washer_m5x1_061",
+   "gap": 6.0,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m5x1_058",
+   "b": "nut_m5_059",
+   "gap": 0.0065768066074169415,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m5x1_058",
+   "b": "screw_m5x65_060",
+   "gap": 8.506975130131146,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m5x1_058",
+   "b": "washer_m5x1_062",
+   "gap": 6.0,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m5x1_058",
+   "b": "nut_m5_063",
+   "gap": 7.0107201598015685,
+   "penetration": 0.0
+  },
+  {
+   "a": "nut_m5_059",
+   "b": "screw_m5x65_060",
+   "gap": 9.505387864664542,
+   "penetration": 0.0
+  },
+  {
+   "a": "nut_m5_059",
+   "b": "washer_m5x1_062",
+   "gap": 7.003587491070817,
+   "penetration": 0.0
+  },
+  {
+   "a": "nut_m5_059",
+   "b": "nut_m5_063",
+   "gap": 8.0,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x65_060",
+   "b": "washer_m5x1_061",
+   "gap": 0.02313461267780217,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x65_060",
+   "b": "washer_m5x1_062",
+   "gap": 0.2499556433184071,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x65_060",
+   "b": "nut_m5_063",
+   "gap": 0.008918358150976882,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m5x1_062",
+   "b": "nut_m5_063",
+   "gap": 0.003138257559636411,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x20_084",
+   "b": "washer_m5x1_085",
+   "gap": 0.019652470305685406,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x20_084",
+   "b": "washer_m5x1_086",
+   "gap": 0.2505247844258583,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x20_084",
+   "b": "nut_m5_087",
+   "gap": 0.00598447765282353,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m5x1_086",
+   "b": "nut_m5_087",
+   "gap": 0.00784773448652373,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x20_088",
+   "b": "washer_m5x1_089",
+   "gap": 0.006519639899811694,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x20_088",
+   "b": "washer_m5x1_090",
+   "gap": 0.25037281740233014,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x20_088",
+   "b": "nut_m5_091",
+   "gap": 0.004158564737775544,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m5x1_090",
+   "b": "nut_m5_091",
+   "gap": 0.010522147938114965,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x20_092",
+   "b": "washer_m5x1_093",
+   "gap": 0.012346583733547538,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x20_092",
+   "b": "washer_m5x1_094",
+   "gap": 0.250191664559251,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x20_092",
+   "b": "nut_m5_095",
+   "gap": 0.006371086882000264,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m5x1_094",
+   "b": "nut_m5_095",
+   "gap": 0.0012983449671908013,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x20_096",
+   "b": "washer_m5x1_097",
+   "gap": 0.006435369638767989,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x20_096",
+   "b": "washer_m5x1_098",
+   "gap": 0.25042653992122094,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x20_096",
+   "b": "nut_m5_099",
+   "gap": 0.006631848501439508,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x20_096",
+   "b": "camera_mount",
+   "gap": 2.781875303813636,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m5x1_097",
+   "b": "camera_mount",
+   "gap": 2.2292047356160416,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m5x1_098",
+   "b": "nut_m5_099",
+   "gap": 0.0046986456367845136,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m8x50_100",
+   "b": "washer_m8x1_101",
+   "gap": 0.023544924441343925,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m8x50_100",
+   "b": "washer_m8x1_102",
+   "gap": 0.25500579822232194,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m8x50_100",
+   "b": "nut_m8_103",
+   "gap": 0.019025443360965056,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m8x50_100",
+   "b": "parent_fin_cartridge",
+   "gap": 2.2371431378475997,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m8x1_101",
+   "b": "parent_fin_cartridge",
+   "gap": 1.0430948082376132,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m8x1_102",
+   "b": "nut_m8_103",
+   "gap": 0.006785974194682355,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x20_232",
+   "b": "washer_m5x1_233",
+   "gap": 0.009663162747831244,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x20_234",
+   "b": "washer_m5x1_235",
+   "gap": 0.014910171272491838,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x20_236",
+   "b": "washer_m5x1_237",
+   "gap": 0.009392448615501647,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m5x20_238",
+   "b": "washer_m5x1_239",
+   "gap": 0.020532706346230802,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m4x25_240",
+   "b": "washer_m4x1_241",
+   "gap": 0.009303683369355007,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m4x25_240",
+   "b": "washer_m4x1_242",
+   "gap": 0.24934343346171098,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m4x25_240",
+   "b": "nut_m4_243",
+   "gap": 0.00759164431949381,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m4x1_242",
+   "b": "nut_m4_243",
+   "gap": 0.007242771091576045,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m4x25_244",
+   "b": "washer_m4x1_245",
+   "gap": 0.0023586903033786396,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m4x25_244",
+   "b": "washer_m4x1_246",
+   "gap": 0.24963286385627814,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m4x25_244",
+   "b": "nut_m4_247",
+   "gap": 0.0143882013997581,
+   "penetration": 0.0
+  },
+  {
+   "a": "washer_m4x1_246",
+   "b": "nut_m4_247",
+   "gap": 0.003521272147804592,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m4x16_248",
+   "b": "washer_m4x1_249",
+   "gap": 0.013658927632957299,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m4x16_250",
+   "b": "washer_m4x1_251",
+   "gap": 0.012323102109882604,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m4x16_252",
+   "b": "washer_m4x1_253",
+   "gap": 0.01997107163578494,
+   "penetration": 0.0
+  },
+  {
+   "a": "screw_m4x16_254",
+   "b": "washer_m4x1_255",
+   "gap": 0.0065986626733814235,
+   "penetration": 0.0
+  },
+  {
+   "a": "keel_adapter",
+   "b": "new_screw_m5x16_150",
+   "gap": 0.2634905962463552,
+   "penetration": 0.0
+  },
+  {
+   "a": "keel_adapter",
+   "b": "new_washer_m5x1_151",
+   "gap": 0.013296164860591575,
+   "penetration": 0.0
+  },
+  {
+   "a": "keel_adapter",
+   "b": "new_screw_m5x16_152",
+   "gap": 0.2628214820414022,
+   "penetration": 0.0
+  },
+  {
+   "a": "keel_adapter",
+   "b": "new_washer_m5x1_153",
+   "gap": 0.013296164860591575,
+   "penetration": 0.0
+  },
+  {
+   "a": "keel_adapter",
+   "b": "new_screw_m5x16_154",
+   "gap": 0.26394350352388485,
+   "penetration": 0.0
+  },
+  {
+   "a": "keel_adapter",
+   "b": "new_washer_m5x1_155",
+   "gap": 0.012795371503976182,
+   "penetration": 0.0
+  },
+  {
+   "a": "keel_adapter",
+   "b": "new_screw_m5x16_156",
+   "gap": 0.2707376447043459,
+   "penetration": 0.0
+  },
+  {
+   "a": "keel_adapter",
+   "b": "new_washer_m5x1_157",
+   "gap": 0.009883673386394898,
+   "penetration": 0.0
+  },
+  {
+   "a": "keel_adapter",
+   "b": "new_screw_m6x60_158",
+   "gap": 0.26515066183810965,
+   "penetration": 0.0
+  },
+  {
+   "a": "keel_adapter",
+   "b": "new_washer_m6x1_159",
+   "gap": 0.01092960427736203,
+   "penetration": 0.0
+  },
+  {
+   "a": "keel_adapter",
+   "b": "new_washer_m6x1_160",
+   "gap": 0.01569077754605733,
+   "penetration": 0.0
+  },
+  {
+   "a": "keel_adapter",
+   "b": "new_nut_m6_161",
+   "gap": 1.0006270241937931,
+   "penetration": 0.0
+  },
+  {
+   "a": "new_screw_m5x16_150",
+   "b": "new_washer_m5x1_151",
+   "gap": 0.02103629710461624,
+   "penetration": 0.0
+  },
+  {
+   "a": "new_screw_m5x16_152",
+   "b": "new_washer_m5x1_153",
+   "gap": 0.01185188492789025,
+   "penetration": 0.0
+  },
+  {
+   "a": "new_screw_m5x16_154",
+   "b": "new_washer_m5x1_155",
+   "gap": 0.00486742147151887,
+   "penetration": 0.0
+  },
+  {
+   "a": "new_screw_m5x16_156",
+   "b": "new_washer_m5x1_157",
+   "gap": 0.01727790315101381,
+   "penetration": 0.0
+  },
+  {
+   "a": "new_screw_m6x60_158",
+   "b": "new_washer_m6x1_159",
+   "gap": 0.010435617943508868,
+   "penetration": 0.0
+  },
+  {
+   "a": "new_screw_m6x60_158",
+   "b": "new_washer_m6x1_160",
+   "gap": 0.2517713118468796,
+   "penetration": 0.0
+  },
+  {
+   "a": "new_screw_m6x60_158",
+   "b": "new_nut_m6_161",
+   "gap": 0.009041257457288326,
+   "penetration": 0.0
+  },
+  {
+   "a": "new_washer_m6x1_160",
+   "b": "new_nut_m6_161",
+   "gap": 0.008060376038154076,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "parent_sensor_carrier",
+   "gap": 0.0,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_screw_m6x60_080",
+   "gap": 0.268814580150932,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_washer_m6x1_081",
+   "gap": 0.015675474474484814,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_washer_m6x1_082",
+   "gap": 0.015675474474484814,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_nut_m6_083",
+   "gap": 1.000045237591718,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_screw_m6x60_084",
+   "gap": 0.26706416750068157,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_washer_m6x1_085",
+   "gap": 0.01541065864913075,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_washer_m6x1_086",
+   "gap": 0.01541065864913075,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_nut_m6_087",
+   "gap": 1.0015627077474718,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_screw_m5x35_088",
+   "gap": 0.26614801518779097,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_washer_m5x1_089",
+   "gap": 0.013296164860591575,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_washer_m5x1_090",
+   "gap": 6.000013104117484,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_nut_m5_091",
+   "gap": 7.000121588851827,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_screw_m5x35_092",
+   "gap": 0.2651053233530507,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_washer_m5x1_093",
+   "gap": 0.013296164860591575,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_washer_m5x1_094",
+   "gap": 6.000014732315246,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_nut_m5_095",
+   "gap": 7.000003684710926,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_screw_m5x35_096",
+   "gap": 0.27208774199471153,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_washer_m5x1_097",
+   "gap": 0.013296164860591575,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_washer_m5x1_098",
+   "gap": 6.000014732315246,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_nut_m5_099",
+   "gap": 7.0001622391789615,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_screw_m5x35_100",
+   "gap": 0.26445469234537355,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_washer_m5x1_101",
+   "gap": 0.0035770553386858662,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_washer_m5x1_102",
+   "gap": 6.000014732315246,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_nut_m5_103",
+   "gap": 7.000086033989617,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_screw_m5x25_104",
+   "gap": 0.26586971672390797,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_washer_m5x1_105",
+   "gap": 0.013296164860589602,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_washer_m5x1_106",
+   "gap": 8.000011049242369,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_nut_m5_107",
+   "gap": 9.000048848396995,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_screw_m5x25_108",
+   "gap": 0.2646378113577687,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_washer_m5x1_109",
+   "gap": 0.013296164860589602,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_washer_m5x1_110",
+   "gap": 8.000011049242369,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_nut_m5_111",
+   "gap": 9.000026206287217,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_screw_m5x25_112",
+   "gap": 0.2657524990109361,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_washer_m5x1_113",
+   "gap": 0.013296164860589602,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_washer_m5x1_114",
+   "gap": 8.00000025624432,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_nut_m5_115",
+   "gap": 9.000011358811472,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_screw_m5x25_116",
+   "gap": 0.2660975748541102,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_washer_m5x1_117",
+   "gap": 0.013296164860589602,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_washer_m5x1_118",
+   "gap": 8.000011049242369,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_fin_cartridge",
+   "b": "bottom_nut_m5_119",
+   "gap": 9.00000116914228,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "parent_td04a_clamp_body",
+   "gap": 0.0,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "camera_mount",
+   "gap": 0.03597846224430061,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_screw_m5x25_104",
+   "gap": 0.26586971672390797,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_washer_m5x1_105",
+   "gap": 5.000017678768746,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_washer_m5x1_106",
+   "gap": 0.013296164860589602,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_nut_m5_107",
+   "gap": 1.0001026757612124,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_screw_m5x25_108",
+   "gap": 0.26321355945413694,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_washer_m5x1_109",
+   "gap": 5.000017678768746,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_washer_m5x1_110",
+   "gap": 0.013296164860589602,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_nut_m5_111",
+   "gap": 1.0002358291206577,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_screw_m5x25_112",
+   "gap": 0.26904140036663005,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_washer_m5x1_113",
+   "gap": 5.000017678768746,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_washer_m5x1_114",
+   "gap": 0.0020248232501620567,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_nut_m5_115",
+   "gap": 1.0001022241428745,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_screw_m5x25_116",
+   "gap": 0.2690806869268895,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_washer_m5x1_117",
+   "gap": 5.000017678768746,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_washer_m5x1_118",
+   "gap": 0.013296164860589602,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_nut_m5_119",
+   "gap": 1.0000105222258422,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_screw_m5x25_120",
+   "gap": 0.26361421820198216,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_washer_m5x1_121",
+   "gap": 8.000010562493028,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_washer_m5x1_122",
+   "gap": 0.013000000000033651,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_nut_m5_123",
+   "gap": 1.000865722237617,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_screw_m5x25_124",
+   "gap": 0.2657601239162396,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_washer_m5x1_125",
+   "gap": 8.000011049242369,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_washer_m5x1_126",
+   "gap": 0.008561049677995558,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_nut_m5_127",
+   "gap": 1.0000123184612943,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_screw_m5x25_128",
+   "gap": 0.2644037152733787,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_washer_m5x1_129",
+   "gap": 8.000010562493028,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_washer_m5x1_130",
+   "gap": 0.011602108735247179,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_nut_m5_131",
+   "gap": 1.0006562670066612,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_screw_m5x25_132",
+   "gap": 0.2652606649310711,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_washer_m5x1_133",
+   "gap": 8.000011049242369,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_washer_m5x1_134",
+   "gap": 0.013075273372199884,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_nut_m5_135",
+   "gap": 1.000002803760432,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_screw_m5x25_136",
+   "gap": 0.26481813822431616,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_washer_m5x1_137",
+   "gap": 8.000010562493028,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_washer_m5x1_138",
+   "gap": 0.013000000000033651,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_nut_m5_139",
+   "gap": 1.0001743991276157,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_screw_m5x25_140",
+   "gap": 0.273112670621699,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_washer_m5x1_141",
+   "gap": 8.000011049242369,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_washer_m5x1_142",
+   "gap": 0.013296164860581727,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_nut_m5_143",
+   "gap": 1.0001356568711897,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_screw_m5x25_144",
+   "gap": 0.26455163457145847,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_washer_m5x1_145",
+   "gap": 8.000010562493028,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_washer_m5x1_146",
+   "gap": 0.013000000000033651,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_nut_m5_147",
+   "gap": 1.000751344799135,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_screw_m5x25_148",
+   "gap": 0.2669672197438547,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_washer_m5x1_149",
+   "gap": 8.000001722217101,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_washer_m5x1_150",
+   "gap": 0.013237038943783329,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_nut_m5_151",
+   "gap": 1.0003829353711369,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_screw_m4x65_152",
+   "gap": 0.2624072725293735,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_washer_m4x1_154",
+   "gap": 0.010453076293587243,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_nut_m4_155",
+   "gap": 1.0000899932642877,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_screw_m4x65_156",
+   "gap": 0.26184969839980865,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_washer_m4x1_158",
+   "gap": 0.010453076293588702,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_sensor_carrier",
+   "b": "bottom_nut_m4_159",
+   "gap": 1.0004851040382592,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_td04a_clamp_body",
+   "b": "parent_td04a_clamp_cap",
+   "gap": 0.5,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_td04a_clamp_body",
+   "b": "bottom_screw_m5x25_136",
+   "gap": 0.2685191005155007,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_td04a_clamp_body",
+   "b": "bottom_washer_m5x1_137",
+   "gap": 0.01329616486056594,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_td04a_clamp_body",
+   "b": "bottom_washer_m5x1_138",
+   "gap": 8.000011049242369,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_td04a_clamp_body",
+   "b": "bottom_nut_m5_139",
+   "gap": 9.000019379349707,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_td04a_clamp_body",
+   "b": "bottom_screw_m5x25_140",
+   "gap": 0.264575876967927,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_td04a_clamp_body",
+   "b": "bottom_washer_m5x1_141",
+   "gap": 0.01329616486056594,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_td04a_clamp_body",
+   "b": "bottom_washer_m5x1_142",
+   "gap": 8.000011049242369,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_td04a_clamp_body",
+   "b": "bottom_nut_m5_143",
+   "gap": 9.00001507399544,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_td04a_clamp_body",
+   "b": "bottom_screw_m5x25_144",
+   "gap": 0.26602072361638923,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_td04a_clamp_body",
+   "b": "bottom_washer_m5x1_145",
+   "gap": 0.005286620882626238,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_td04a_clamp_body",
+   "b": "bottom_washer_m5x1_146",
+   "gap": 8.000011049242369,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_td04a_clamp_body",
+   "b": "bottom_nut_m5_147",
+   "gap": 9.000083202141958,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_td04a_clamp_body",
+   "b": "bottom_screw_m5x25_148",
+   "gap": 0.2678287022478525,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_td04a_clamp_body",
+   "b": "bottom_washer_m5x1_149",
+   "gap": 0.005389078873875339,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_td04a_clamp_body",
+   "b": "bottom_washer_m5x1_150",
+   "gap": 8.000011049242369,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_td04a_clamp_body",
+   "b": "bottom_nut_m5_151",
+   "gap": 9.000042556420595,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_td04a_clamp_body",
+   "b": "bottom_screw_m4x65_152",
+   "gap": 0.26062415941341155,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_td04a_clamp_body",
+   "b": "bottom_washer_m4x1_154",
+   "gap": 8.00000734426388,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_td04a_clamp_body",
+   "b": "bottom_nut_m4_155",
+   "gap": 9.000010010949316,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_td04a_clamp_body",
+   "b": "bottom_screw_m4x65_156",
+   "gap": 0.259654702430735,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_td04a_clamp_body",
+   "b": "bottom_washer_m4x1_158",
+   "gap": 8.00000734426388,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_td04a_clamp_body",
+   "b": "bottom_nut_m4_159",
+   "gap": 9.000054640144699,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_td04a_clamp_cap",
+   "b": "bottom_screw_m4x65_152",
+   "gap": 0.2611033797399226,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_td04a_clamp_cap",
+   "b": "bottom_washer_m4x1_153",
+   "gap": 0.010840123431037988,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_td04a_clamp_cap",
+   "b": "bottom_screw_m4x65_156",
+   "gap": 0.2618209170773885,
+   "penetration": 0.0
+  },
+  {
+   "a": "parent_td04a_clamp_cap",
+   "b": "bottom_washer_m4x1_157",
+   "gap": 0.010840123431031022,
+   "penetration": 0.0
+  },
+  {
+   "a": "camera_mount",
+   "b": "bottom_screw_m5x25_120",
+   "gap": 0.21264417419241421,
+   "penetration": 0.0
+  },
+  {
+   "a": "camera_mount",
+   "b": "bottom_washer_m5x1_121",
+   "gap": 0.03690000000000282,
+   "penetration": 0.0
+  },
+  {
+   "a": "camera_mount",
+   "b": "bottom_washer_m5x1_122",
+   "gap": 8.000043130400451,
+   "penetration": 0.0
+  },
+  {
+   "a": "camera_mount",
+   "b": "bottom_nut_m5_123",
+   "gap": 9.00003128103349,
+   "penetration": 0.0
+  },
+  {
+   "a": "camera_mount",
+   "b": "bottom_screw_m5x25_124",
+   "gap": 0.2145521202386809,
+   "penetration": 0.0
+  },
+  {
+   "a": "camera_mount",
+   "b": "bottom_washer_m5x1_125",
+   "gap": 0.022635199154934803,
+   "penetration": 0.0
+  },
+  {
+   "a": "camera_mount",
+   "b": "bottom_washer_m5x1_126",
+   "gap": 8.000085100172372,
+   "penetration": 0.0
+  },
+  {
+   "a": "camera_mount",
+   "b": "bottom_nut_m5_127",
+   "gap": 9.000003894089087,
+   "penetration": 0.0
+  },
+  {
+   "a": "camera_mount",
+   "b": "bottom_screw_m5x25_128",
+   "gap": 0.2138889625333652,
+   "penetration": 0.0
+  },
+  {
+   "a": "camera_mount",
+   "b": "bottom_washer_m5x1_129",
+   "gap": 0.03689999999999927,
+   "penetration": 0.0
+  },
+  {
+   "a": "camera_mount",
+   "b": "bottom_washer_m5x1_130",
+   "gap": 8.000006735098077,
+   "penetration": 0.0
+  },
+  {
+   "a": "camera_mount",
+   "b": "bottom_nut_m5_131",
+   "gap": 9.0000241794452,
+   "penetration": 0.0
+  },
+  {
+   "a": "camera_mount",
+   "b": "bottom_screw_m5x25_132",
+   "gap": 0.2153864897220715,
+   "penetration": 0.0
+  },
+  {
+   "a": "camera_mount",
+   "b": "bottom_washer_m5x1_133",
+   "gap": 0.03689999999999927,
+   "penetration": 0.0
+  },
+  {
+   "a": "camera_mount",
+   "b": "bottom_washer_m5x1_134",
+   "gap": 8.000085100172372,
+   "penetration": 0.0
+  },
+  {
+   "a": "camera_mount",
+   "b": "bottom_nut_m5_135",
+   "gap": 9.000068498934661,
+   "penetration": 0.0
+  },
+  {
+   "a": "camera_mount",
+   "b": "bottom_screw_m5x20_160",
+   "gap": 0.0745404920729658,
+   "penetration": 0.0
+  },
+  {
+   "a": "camera_mount",
+   "b": "bottom_nut_m5_161",
+   "gap": 0.1091335622024389,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m6x60_080",
+   "b": "bottom_washer_m6x1_081",
+   "gap": 0.02199274463121198,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m6x60_080",
+   "b": "bottom_washer_m6x1_082",
+   "gap": 0.25247847078309327,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m6x60_080",
+   "b": "bottom_nut_m6_083",
+   "gap": 0.025906040627522626,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m6x60_080",
+   "b": "bottom_screw_m5x35_092",
+   "gap": 5.579904096728625,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m6x60_080",
+   "b": "bottom_washer_m5x1_093",
+   "gap": 8.566482806157945,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m6x60_080",
+   "b": "bottom_screw_m5x35_100",
+   "gap": 7.634760787022244,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_washer_m6x1_081",
+   "b": "bottom_screw_m5x35_092",
+   "gap": 4.610544858126863,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_washer_m6x1_081",
+   "b": "bottom_washer_m5x1_093",
+   "gap": 7.609944407733889,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_washer_m6x1_082",
+   "b": "bottom_nut_m6_083",
+   "gap": 0.007077856424886443,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_washer_m6x1_082",
+   "b": "bottom_screw_m5x35_100",
+   "gap": 4.610544858126863,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_washer_m6x1_082",
+   "b": "bottom_washer_m5x1_101",
+   "gap": 7.609944407733889,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_nut_m6_083",
+   "b": "bottom_screw_m5x35_100",
+   "gap": 4.9399533853862385,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_nut_m6_083",
+   "b": "bottom_washer_m5x1_101",
+   "gap": 8.578621875441659,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m6x60_084",
+   "b": "bottom_washer_m6x1_085",
+   "gap": 0.009050530091874322,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m6x60_084",
+   "b": "bottom_washer_m6x1_086",
+   "gap": 0.25376527775600455,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m6x60_084",
+   "b": "bottom_nut_m6_087",
+   "gap": 0.02369184392785467,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_washer_m6x1_086",
+   "b": "bottom_nut_m6_087",
+   "gap": 0.004512257796521177,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x35_088",
+   "b": "bottom_washer_m5x1_089",
+   "gap": 0.01514123571730509,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x35_088",
+   "b": "bottom_washer_m5x1_090",
+   "gap": 0.2531976084257023,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x35_088",
+   "b": "bottom_nut_m5_091",
+   "gap": 0.013534947932028547,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_washer_m5x1_090",
+   "b": "bottom_nut_m5_091",
+   "gap": 0.007707966286519345,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x35_092",
+   "b": "bottom_washer_m5x1_093",
+   "gap": 0.01728229178618022,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x35_092",
+   "b": "bottom_washer_m5x1_094",
+   "gap": 0.2500288853526577,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x35_092",
+   "b": "bottom_nut_m5_095",
+   "gap": 0.007102774993294534,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_washer_m5x1_094",
+   "b": "bottom_nut_m5_095",
+   "gap": 0.013519209627792496,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x35_096",
+   "b": "bottom_washer_m5x1_097",
+   "gap": 0.0163396942206279,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x35_096",
+   "b": "bottom_washer_m5x1_098",
+   "gap": 0.25158563829779634,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x35_096",
+   "b": "bottom_nut_m5_099",
+   "gap": 0.016792704065997484,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_washer_m5x1_098",
+   "b": "bottom_nut_m5_099",
+   "gap": 0.014350447106185006,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x35_100",
+   "b": "bottom_washer_m5x1_101",
+   "gap": 0.02709908624952439,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x35_100",
+   "b": "bottom_washer_m5x1_102",
+   "gap": 0.24908081320165446,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x35_100",
+   "b": "bottom_nut_m5_103",
+   "gap": 0.01870666239609246,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_washer_m5x1_102",
+   "b": "bottom_nut_m5_103",
+   "gap": 0.007909596193144516,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_104",
+   "b": "bottom_washer_m5x1_105",
+   "gap": 0.011703450711379028,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_104",
+   "b": "bottom_washer_m5x1_106",
+   "gap": 0.2522775364279018,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_104",
+   "b": "bottom_nut_m5_107",
+   "gap": 0.012078560359307522,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_washer_m5x1_106",
+   "b": "bottom_nut_m5_107",
+   "gap": 0.002132585591293711,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_108",
+   "b": "bottom_washer_m5x1_109",
+   "gap": 0.01267807753257221,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_108",
+   "b": "bottom_washer_m5x1_110",
+   "gap": 0.2490162806060677,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_108",
+   "b": "bottom_nut_m5_111",
+   "gap": 0.0059482390667606674,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_washer_m5x1_110",
+   "b": "bottom_nut_m5_111",
+   "gap": 0.006545408264464456,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_112",
+   "b": "bottom_washer_m5x1_113",
+   "gap": 0.0076378874930350515,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_112",
+   "b": "bottom_washer_m5x1_114",
+   "gap": 0.24942160112828865,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_112",
+   "b": "bottom_nut_m5_115",
+   "gap": 0.005020519139442488,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_washer_m5x1_114",
+   "b": "bottom_nut_m5_115",
+   "gap": 0.014183354589481171,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_116",
+   "b": "bottom_washer_m5x1_117",
+   "gap": 0.02162772119891715,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_116",
+   "b": "bottom_washer_m5x1_118",
+   "gap": 0.24927195584071873,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_116",
+   "b": "bottom_nut_m5_119",
+   "gap": 0.01631162902133466,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_washer_m5x1_118",
+   "b": "bottom_nut_m5_119",
+   "gap": 0.0034524715412640496,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_120",
+   "b": "bottom_washer_m5x1_121",
+   "gap": 0.014763182923400708,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_120",
+   "b": "bottom_washer_m5x1_122",
+   "gap": 0.24906320273140128,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_120",
+   "b": "bottom_nut_m5_123",
+   "gap": 0.017540494938997588,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_washer_m5x1_122",
+   "b": "bottom_nut_m5_123",
+   "gap": 0.01619069485927895,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_124",
+   "b": "bottom_washer_m5x1_125",
+   "gap": 0.0026824678524016293,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_124",
+   "b": "bottom_washer_m5x1_126",
+   "gap": 0.25030953797425537,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_124",
+   "b": "bottom_nut_m5_127",
+   "gap": 0.014601442824287254,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_washer_m5x1_126",
+   "b": "bottom_nut_m5_127",
+   "gap": 0.00630885123668652,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_128",
+   "b": "bottom_washer_m5x1_129",
+   "gap": 0.02500220216323444,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_128",
+   "b": "bottom_washer_m5x1_130",
+   "gap": 0.24917712344879753,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_128",
+   "b": "bottom_nut_m5_131",
+   "gap": 0.013094089205785522,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_washer_m5x1_130",
+   "b": "bottom_nut_m5_131",
+   "gap": 0.0025298260563821917,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_132",
+   "b": "bottom_washer_m5x1_133",
+   "gap": 0.007204760715152868,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_132",
+   "b": "bottom_washer_m5x1_134",
+   "gap": 0.24895350632689608,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_132",
+   "b": "bottom_nut_m5_135",
+   "gap": 0.004321102180082322,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_washer_m5x1_134",
+   "b": "bottom_nut_m5_135",
+   "gap": 0.008834282807784392,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_136",
+   "b": "bottom_washer_m5x1_137",
+   "gap": 0.006034297170442143,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_136",
+   "b": "bottom_washer_m5x1_138",
+   "gap": 0.2490882783088026,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_136",
+   "b": "bottom_nut_m5_139",
+   "gap": 0.007172192553905369,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_washer_m5x1_138",
+   "b": "bottom_nut_m5_139",
+   "gap": 0.011456591836257949,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_140",
+   "b": "bottom_washer_m5x1_141",
+   "gap": 0.009755388944258725,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_140",
+   "b": "bottom_washer_m5x1_142",
+   "gap": 0.2498877694476614,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_140",
+   "b": "bottom_nut_m5_143",
+   "gap": 0.010402098987115412,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_washer_m5x1_142",
+   "b": "bottom_nut_m5_143",
+   "gap": 0.0006297046970068438,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_144",
+   "b": "bottom_washer_m5x1_145",
+   "gap": 0.003912215671025858,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_144",
+   "b": "bottom_washer_m5x1_146",
+   "gap": 0.2512900009016451,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_144",
+   "b": "bottom_nut_m5_147",
+   "gap": 0.011310175042598953,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_washer_m5x1_146",
+   "b": "bottom_nut_m5_147",
+   "gap": 0.00783303428204638,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_148",
+   "b": "bottom_washer_m5x1_149",
+   "gap": 0.011467589754649116,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_148",
+   "b": "bottom_washer_m5x1_150",
+   "gap": 0.25124713836472085,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x25_148",
+   "b": "bottom_nut_m5_151",
+   "gap": 0.010040642742546223,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_washer_m5x1_150",
+   "b": "bottom_nut_m5_151",
+   "gap": 0.005672418101070327,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m4x65_152",
+   "b": "bottom_washer_m4x1_153",
+   "gap": 0.013590976647928858,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m4x65_152",
+   "b": "bottom_washer_m4x1_154",
+   "gap": 0.25783528946122053,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m4x65_152",
+   "b": "bottom_nut_m4_155",
+   "gap": 0.010852745888981434,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_washer_m4x1_154",
+   "b": "bottom_nut_m4_155",
+   "gap": 0.006696836015784963,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m4x65_156",
+   "b": "bottom_washer_m4x1_157",
+   "gap": 0.004613933619589324,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m4x65_156",
+   "b": "bottom_washer_m4x1_158",
+   "gap": 0.25099798134628676,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m4x65_156",
+   "b": "bottom_nut_m4_159",
+   "gap": 0.010054674691320598,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_washer_m4x1_158",
+   "b": "bottom_nut_m4_159",
+   "gap": 0.003361078759135663,
+   "penetration": 0.0
+  },
+  {
+   "a": "bottom_screw_m5x20_160",
+   "b": "bottom_nut_m5_161",
+   "gap": 0.018836975159913418,
+   "penetration": 0.0
+  }
+ ]
+}

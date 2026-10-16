@@ -1,0 +1,183 @@
+{
+  "name": "over_center_latch",
+  "units": "mm",
+  "note": "DJI-type short links, extended B-mounted hood, 80deg recessed keeper. Nominal 40 N horizontal clamp; rubber properties provisional.",
+  "items": [
+    {
+      "part": "parts/common/jigs/over_center_latch",
+      "file": "over_center_latch_base",
+      "label": "base",
+      "color": "SlateGray",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "parts/common/jigs/over_center_latch",
+      "file": "over_center_latch_bail",
+      "label": "link_left",
+      "color": "Orange",
+      "ops": [
+        {
+          "translate": [
+            0,
+            -8.0,
+            6.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            -150,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "parts/common/jigs/over_center_latch",
+      "file": "over_center_latch_bail",
+      "label": "link_right",
+      "color": "Orange",
+      "ops": [
+        {
+          "translate": [
+            0,
+            4.4,
+            6.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            -150,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "parts/common/jigs/over_center_latch",
+      "file": "over_center_latch_lever",
+      "label": "lever",
+      "color": "SteelBlue",
+      "ops": [
+        {
+          "translate": [
+            -6.92820323027551,
+            0,
+            10.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            -0.0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "parts/common/jigs/over_center_latch",
+      "file": "over_center_latch_keeper",
+      "label": "keeper",
+      "color": "SeaGreen",
+      "ops": [
+        {
+          "translate": [
+            12.399999999999999,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "parts/common/jigs/over_center_latch",
+      "file": "over_center_latch_axis_a",
+      "label": "axis_a",
+      "color": "Silver",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            6.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "parts/common/jigs/over_center_latch",
+      "file": "over_center_latch_axis_b",
+      "label": "axis_b",
+      "color": "Silver",
+      "ops": [
+        {
+          "translate": [
+            -6.92820323027551,
+            0,
+            10.0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "parts/common/jigs/over_center_latch",
+      "file": "over_center_latch_epdm",
+      "label": "epdm",
+      "color": "Black",
+      "ops": [
+        {
+          "translate": [
+            12.399999999999999,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  ]
+}

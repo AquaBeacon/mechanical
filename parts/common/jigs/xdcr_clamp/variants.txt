@@ -1,0 +1,3 @@
+# <接尾辞>  <変数=値> ...
+body   part="body"
+cap    part="cap"

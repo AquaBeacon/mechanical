@@ -1,0 +1,131 @@
+grid 44 x 30 x 55 at 3.000 mm (origin [-66.0, 58.0, 38.95])
+
+runtime  80 iterations x 4 case(s) ~ 12 min  (range 6 min - 17 min; one cold solve of case 1 took 2.2 s on 46000 elements [cuda/mg])
+
+--- setup ---
+  voxel               3.000 mm, grid [44, 30, 55]
+  design space        1242000 mm3
+  preserve            88344 mm3 in 4 bodies
+  obstacle            521856 mm3 declared -> 521856 mm3 with clearance
+  free (optimisable)  661554 mm3 (24502 cells)
+  attach              interfaces may be joined at 1840 cell(s), 16560 mm2 (join_free_space); 0 cell(s) / 0 mm3 of no-contact shell around the rest of it, 3.00 mm thick
+  build volume        250x250x250 on Bambu Lab X1-Carbon -- design space 120x69x150, fits
+  free to decide      53 % of the domain; preserve is 40 % of the expected part
+    preserve   interfaces                88344 mm3  stl:preserve.stl
+    design_space design_space            1242000 mm3  stl:design_space.stl
+    obstacle   keep_out                 521856 mm3  stl:obstacle.stl
+    obstacle   cameras                  387072 mm3  stl:cameras.stl
+  WARN  the free region is only 2.0 voxels (6.00 mm) thick at its thinnest. Below about 3 voxels there is no room for a hole, so the topology there is set by the outline rather than chosen -- refine the grid or widen the design space.
+  WARN  the 2 support point(s) are fixed by preserve at hp4_seat at [0.0, 76.0, 169.4]; hp5_seat at [0.0, 76.0, 100.5]. Where the part is held is an input to this study, not a result of it -- if the layout of the supports is itself meant to be optimised, that decision is currently being made in CAD.
+  => setup OK
+
+wrote C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\child_single_camera_topopt\child_cam_bridge\exploration\02_setup
+  look at C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\child_single_camera_topopt\child_cam_bridge\exploration\02_setup\study_setup.png
+  look at C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\child_single_camera_topopt\child_cam_bridge\exploration\02_setup\study_setup.scad
+
+NEXT: topopt opt C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\child_single_camera_topopt\child_cam_bridge\study.json --out DIR
+[setup  ] ok            6 s  
+grid 44 x 30 x 55 at 3.000 mm (origin [-66.0, 58.0, 38.95])
+
+--- setup ---
+  voxel               3.000 mm, grid [44, 30, 55]
+  design space        1242000 mm3
+  preserve            88344 mm3 in 4 bodies
+  obstacle            521856 mm3 declared -> 521856 mm3 with clearance
+  free (optimisable)  661554 mm3 (24502 cells)
+  attach              interfaces may be joined at 1840 cell(s), 16560 mm2 (join_free_space); 0 cell(s) / 0 mm3 of no-contact shell around the rest of it, 3.00 mm thick
+  build volume        250x250x250 on Bambu Lab X1-Carbon -- design space 120x69x150, fits
+  free to decide      53 % of the domain; preserve is 40 % of the expected part
+    preserve   interfaces                88344 mm3  stl:preserve.stl
+    design_space design_space            1242000 mm3  stl:design_space.stl
+    obstacle   keep_out                 521856 mm3  stl:obstacle.stl
+    obstacle   cameras                  387072 mm3  stl:cameras.stl
+  WARN  the free region is only 2.0 voxels (6.00 mm) thick at its thinnest. Below about 3 voxels there is no room for a hole, so the topology there is set by the outline rather than chosen -- refine the grid or widen the design space.
+  WARN  the 2 support point(s) are fixed by preserve at hp4_seat at [0.0, 76.0, 169.4]; hp5_seat at [0.0, 76.0, 100.5]. Where the part is held is an input to this study, not a result of it -- if the layout of the supports is itself meant to be optimised, that decision is currently being made in CAD.
+  => setup OK
+
+domain 46000 voxels (24502 free, 3272 preserve, 18226 obstacle) at 3.000 mm
+volfrac 0.200 of the free cells, filter 9.00 mm, 4 load case(s), self-supporting along +Y (45 deg, support columns up to 12 mm allowed)
+ iter  penal  beta   objective       vol      grey    dshape
+    1   1.00   1.0      4.0000     0.173    0.5515    1.0000
+    6   1.00   1.0      2.0935     0.199    0.5235    0.0033
+   11   1.50   1.0      3.3863     0.199    0.5144    0.0005
+   16   1.50   1.0      3.3042     0.199    0.5040    0.0010
+   21   2.00   2.0      5.0549     0.199    0.4794    0.0010
+   26   2.00   2.0      4.9220     0.199    0.4679    0.0020
+   31   2.50   2.0      9.6817     0.200    0.4618    0.0010
+   36   2.50   4.0     62.4525     0.200    0.4330    0.0309
+   41   3.00   4.0   1097.6798     0.200    0.3920    0.0478
+   46   3.00   4.0   1094.1881     0.200    0.4430    0.0563
+   51   3.00   8.0   9903.4338     0.200    0.3604    0.0660
+   56   3.00   8.0   9844.8796     0.200    0.3546    0.0700
+   61   3.00   8.0   9832.6605     0.200    0.3825    0.0673
+   66   3.00  16.0  19279.6000     0.200    0.2464    0.0367
+   71   3.00  16.0  17739.9653     0.200    0.2933    0.0451
+   76   3.00  16.0  17632.9597     0.200    0.2858    0.0551
+   80   3.00  16.0  17596.9861     0.200    0.2842    0.0541
+
+final FEA on the thresholded solid geometry:
+  L1 single 0.35kg camera at 3g, adapter self- SF(p99.5)  89.74   max 0.789 mm   compliance 0.303 N*mm
+  L4 frontal impact 150 N (-Y) on one front-ed SF(p99.5)   8.04   max 0.575 mm   compliance 42.884 N*mm
+  L2s side impact 150 N (-X) on the starboard  SF(p99.5)  13.78   max 0.278 mm   compliance 18.681 N*mm
+  L6 unit handled by central camera, 100N +Z o SF(p99.5)  17.41   max 0.247 mm   compliance 10.928 N*mm
+
+--- verdict: FAIL ---
+  [PASS] connectivity       every preserve region connected through material -> 37 component(s), 4 preserve body(ies)
+  [PASS] volume constraint  volume fraction of the free cells <= 0.2000 (+2 % of the target) -> 0.1394 of the free cells, measured on the thresholded shape
+  [PASS] solver             every CG solve reaches the tolerance -> 320 of 320 solves converged
+  [FAIL] final FEA          every load case passes its own checks -> 4 of 4 case(s) fail: L1 single 0.35kg camera at 3g, adapter self-weight at 3g, L4 frontal impact 150 N (-Y) on one front-edge bumper, HP4/HP5 react, L2s side impact 150 N (-X) on the starboard end plate through the side bumper, HP4/HP5 react, L6 unit handled by central camera, 100N +Z on single mounting seat
+
+--- result ---
+  final volume        180576 mm3  (preserve 88344 mm3)
+  volume fraction     0.139 of the free cells / 0.145 of the domain
+  self-support        0 voxel(s) / 0 mm2 with nothing in the 45 deg cone below (build axis +Y; constraint on)
+  optimised members   min 6.00 mm, p5 6.00 mm, median 6.00 mm (asked for >= 9.00 mm)
+  whole part          min 6.00 mm, median 6.00 mm (includes preserve, which filter_mm does not govern)
+  connectivity        OK -- 37 component(s), 4 preserve body(ies), 10800.0 mm3 of islands dropped
+    ! 10800.0 mm3 of material is not connected to any preserve body; it was dropped from the final geometry
+  worst case          'L4 frontal impact 150 N (-Y) on one front-edge bumper, HP4/HP5 react'  SF(p99.5) 8.04, max 0.575 mm
+
+wrote C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\child_single_camera_topopt\child_cam_bridge\exploration\03_optimization (96.1 s)
+
+NEXT: this is a load-path map, not a part. Rebuild it as parametric OpenSCAD from cubes/cylinders (a starting sketch is in *_members.scad), keeping every preserve interface exactly, then:
+  topopt compare C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\child_single_camera_topopt\child_cam_bridge\exploration\03_optimization <rebuild>.stl --study C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\child_single_camera_topopt\child_cam_bridge\study.json
+  (the grid origin is read from the summary; no --origin needed)
+[opt    ] exit 1      102 s  shape does not meet the requirement; continuing so the report says why
+grid 44 x 30 x 55 at 3.000 mm (origin [-66.0, 58.0, 38.95])
+
+density field study at 3.0000 mm voxel, 44x30x55
+thresholds: 0.50
+
+level       volume  SF p99.5  SF worst    max mm   min thk   down A  verdict
+0.50        180576      8.04      2.82     0.789     6.00*    14679  FAIL: mesh resolution (2.0 (thin 6.00 mm) / 2.0 (typical 6.0
+  * grid-limited: min thickness is exactly 2 x voxel, i.e. the finest the grid can hold. Not a measurement of the structure.
+
+wrote threshold 0.50 to C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\child_single_camera_topopt\child_cam_bridge\exploration\03_optimization (--quick: blocky STL only)
+
+chosen threshold 0.50 -- no candidate passes every check; this is the strongest of the connected ones and is NOT a pass. Outstanding: mesh resolution (2.0 (thin 6.00 mm) / 2.0 (typical 6.00 mm), required >= 3 elements across the thinnest section)
+
+NEXT: this is still not a part. Interface dimensions are quantised to 3.000 mm. Rebuild them as parametric CAD and prove it carries the load with:
+  topopt compare C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\child_single_camera_topopt\child_cam_bridge\exploration\03_optimization <rebuild>.stl --study C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\child_single_camera_topopt\child_cam_bridge\study.json
+[extract] exit 1        3 s  
+[ccx    ] SKIPPED       0 s  disabled by --quick
+[print  ] ok            0 s  wrote printcheck.json (threshold 0.50)
+[slice  ] SKIPPED       0 s  disabled by --quick
+wrote C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\child_single_camera_topopt\child_cam_bridge\exploration\03_optimization\report.md
+verdict: FAIL  (3 fail, 3 unknown, 10 pass)
+  FAIL     The density field converged (not merely out of iterations) -- termination: max_iterations
+  FAIL     Mesh convergence confirmed -- TOO COARSE (voxel FEA only: 2.0 (thin 6.00 mm) / 2.0 (typical 6.00 mm) vs required >= 3 elements across the thinnest section). A three-mesh convergence study still has not been run.
+  FAIL     No support lands on a mating (preserve) face -- support rests on 42 preserve voxel(s) (378.0 mm2). Those faces come off the printer rough and out of tolerance. Reorient the part, or accept the finish and say so explicitly.
+  UNKNOWN  Load/reaction balance within 1 %
+  UNKNOWN  Final shape is watertight
+  UNKNOWN  Minimum wall thickness is met
+[report ] exit 1        4 s  
+[assumptions] ok            0 s  wrote C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\child_single_camera_topopt\child_cam_bridge\exploration\01_assumptions\assumptions.md
+04_print: PRINT.md, preview_design_space.png, preview_orientation.png, preview_print.png, preview_shape.png, study.stl
+[publish] ok            4 s  wrote C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\child_single_camera_topopt\child_cam_bridge\exploration\04_print\PRINT.md
+
+valid through: setup -> opt -> extract -> print -> assumptions -> publish
+skipped: ccx, slice
+C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\child_single_camera_topopt\child_cam_bridge\exploration\03_optimization\report.md (120 s)
+to print:      C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\child_single_camera_topopt\child_cam_bridge\exploration\04_print\PRINT.md

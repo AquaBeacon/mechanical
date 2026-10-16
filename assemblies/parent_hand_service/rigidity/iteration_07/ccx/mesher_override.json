@@ -1,0 +1,8 @@
+{
+  "method": "Native STEP surfaces remeshed at each requested size; legacy STL surface_refinement metadata is not the mesh actually solved.",
+  "step": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\assemblies\\parent_hand_service\\rigidity\\iteration_07\\carrier.step",
+  "step_sha256": "d091f1fcef3385ac7d3ec1ef223ef73fc71ffa0a467ab6852cbc4fa4a0561354",
+  "algorithm3D": 1,
+  "second_order_linear": true,
+  "optimize_netgen": false
+}

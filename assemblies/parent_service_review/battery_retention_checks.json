@@ -1,0 +1,136 @@
+{
+  "rigid_parts_vs_assembly": [
+    {
+      "part": "lipo_tray",
+      "other": "p_main",
+      "intersection_mm3": 0
+    },
+    {
+      "part": "lipo_tray",
+      "other": "p_pwr",
+      "intersection_mm3": 0
+    },
+    {
+      "part": "lipo_tray",
+      "other": "tx_improved",
+      "intersection_mm3": 0
+    },
+    {
+      "part": "lipo_tray",
+      "other": "spresense",
+      "intersection_mm3": 0
+    },
+    {
+      "part": "lipo_tray",
+      "other": "lipo",
+      "intersection_mm3": 0.0
+    },
+    {
+      "part": "lipo_tray",
+      "other": "box_bcas212310g",
+      "intersection_mm3": 0.0
+    },
+    {
+      "part": "lipo_tray",
+      "other": "pen_tether",
+      "intersection_mm3": 0
+    },
+    {
+      "part": "lipo_tray",
+      "other": "pen_td04a",
+      "intersection_mm3": 0
+    },
+    {
+      "part": "lipo_tray",
+      "other": "lipo_ret_pads",
+      "intersection_mm3": 0.0
+    },
+    {
+      "part": "lipo_ret_lid",
+      "other": "p_main",
+      "intersection_mm3": 0
+    },
+    {
+      "part": "lipo_ret_lid",
+      "other": "p_pwr",
+      "intersection_mm3": 0
+    },
+    {
+      "part": "lipo_ret_lid",
+      "other": "tx_improved",
+      "intersection_mm3": 0
+    },
+    {
+      "part": "lipo_ret_lid",
+      "other": "spresense",
+      "intersection_mm3": 0
+    },
+    {
+      "part": "lipo_ret_lid",
+      "other": "lipo",
+      "intersection_mm3": 0
+    },
+    {
+      "part": "lipo_ret_lid",
+      "other": "box_bcas212310g",
+      "intersection_mm3": 0.0
+    },
+    {
+      "part": "lipo_ret_lid",
+      "other": "pen_tether",
+      "intersection_mm3": 0
+    },
+    {
+      "part": "lipo_ret_lid",
+      "other": "pen_td04a",
+      "intersection_mm3": 0
+    },
+    {
+      "part": "lipo_ret_lid",
+      "other": "lipo_ret_pads",
+      "intersection_mm3": 0.0
+    }
+  ],
+  "driver_access_d8mm": [
+    {
+      "xy": [
+        32,
+        53.5
+      ],
+      "collisions": []
+    },
+    {
+      "xy": [
+        111,
+        53.5
+      ],
+      "collisions": []
+    },
+    {
+      "xy": [
+        32,
+        98.5
+      ],
+      "collisions": []
+    },
+    {
+      "xy": [
+        111,
+        98.5
+      ],
+      "collisions": []
+    }
+  ],
+  "upward_removal_paths": [
+    {
+      "path": "lid_lift_30mm",
+      "collisions": []
+    },
+    {
+      "path": "pack_lift_35mm",
+      "collisions": []
+    }
+  ],
+  "thread_intersection_excluded": true,
+  "nominal_pack_only": true
+}

@@ -1,0 +1,10 @@
+vtray_deck watertight True components 1
+vtray_deck vtray_rib_bot gap 0.232 penetration 0
+vtray_deck vtray_rib_top gap 0.24 penetration 0
+vtray_deck cable_rail_power gap 0.111 penetration 0
+vtray_deck cable_rail_signal gap 0.076 penetration 0
+vtray_deck vtray_batt_box gap 0.041 penetration 0
+vtray_deck child_main gap 0.041 penetration 0
+vtray_deck child_pwr gap 0.035 penetration 0
+flange_brace watertight True components 1
+INTERFERENCES []

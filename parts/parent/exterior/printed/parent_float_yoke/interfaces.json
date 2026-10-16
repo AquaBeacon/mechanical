@@ -1,0 +1,57 @@
+{
+  "consumer": "parent_float_yoke",
+  "references": [
+    {
+      "part": "parent_deck",
+      "path": "parts/parent/exterior/printed/parent_deck",
+      "md_sha256": "bc97953df376c06278ad8714324c9df8b3ffeacec0d2d21b88168987a7b9bff6",
+      "stl_sha256": "1e542027170d975801b43d316a052f5f5e89a054c251ad5fcbb1e9efcb420943",
+      "bbox_mm": [
+        216.0,
+        236.0,
+        60.0
+      ],
+      "status_at_lock": [
+        "needs_measure",
+        "not_chosen",
+        "not_designed",
+        "obsolete"
+      ],
+      "values": {
+        "hp_lip_y": 70.0,
+        "hp_lip_z": -25.0,
+        "lip_h": 50.0,
+        "rope_y": 108.0,
+        "rope_z": -35.0
+      },
+      "confirmed_by_human": true,
+      "confirmed_at": "2026-09-05T11:22:30",
+      "note": "human confirmed 2026-09-05: deck side-wall HP40 pads, fin t18 h96, float axis z 0"
+    },
+    {
+      "part": "parent_fender",
+      "path": "parts/parent/exterior/cots/parent_fender",
+      "md_sha256": "b5c7aec61e0a4b20e60f86dbc1a982e44d4e53f8ea69ad67f4bfab0edbd39073",
+      "stl_sha256": "9bcd7ae2cb4dfd8b2db24c8cc3d0b4df7c89fc83d66c4b4d73d9aec627d31e9a",
+      "bbox_mm": [
+        100.0,
+        300.0,
+        100.0
+      ],
+      "status_at_lock": [
+        "needs_measure",
+        "provisional"
+      ],
+      "values": {
+        "fender_d": 100.0,
+        "fender_len": 300.0,
+        "taper_len": 40.0,
+        "end_d": 40.0,
+        "bore_d": 15.0
+      },
+      "confirmed_by_human": true,
+      "confirmed_at": "2026-09-05T11:22:46",
+      "note": "human confirmed 2026-09-05: spindle float, rope through bore, axis z 0; all 5 values provisional until measured"
+    }
+  ]
+}

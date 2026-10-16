@@ -1,0 +1,1191 @@
+{
+  "schema_version": 1,
+  "assembly": "parent_bottom_sensors",
+  "release_status": "existing_prototype",
+  "note": "既存構成の印刷データを整理。強度・造形性の新規認証ではない。",
+  "source_hashes": {
+    "assemblies/parent_bottom_sensors/placement.json": "ec3f139a09c6dd2f22eb996b225e756c589c17057a3dbec88ae3555b7afed368",
+    "assemblies/parent_bottom_sensors/README.md": "ddc3e039a2046828c86bf3a4c74758f5ddb6fc037644d51c572d5df517997e16",
+    "parts/child/exterior/printed/dji_osmo_action6_mount/dji_osmo_action6_mount.md": "ec9f0ce48edbf77ae893316249bca86f5cbc375f20f14a3af7e821f0b1cd8db6",
+    "parts/child/exterior/printed/dji_osmo_action6_mount/dji_osmo_action6_mount.scad": "52c00273d8c6e2eb3c6f3a94267a4303b97db5689b8fdc07dba45add6aefa87c",
+    "parts/child/exterior/printed/dji_osmo_action6_mount/manufacturing.json": "fe15031485b19dd37a1d51a1653b0380985e55641618a0b5c430957d427a4d9c",
+    "parts/child/exterior/printed/dji_osmo_action6_mount/verify_step.py": "1e173671a580f058777a8ed72ed7a8cd6103988891505e26dee2e7732ceadabb",
+    "parts/parent/exterior/printed/parent_deck/manufacturing.json": "f3bea2e0fd2e0e3fd244a5cc85fc87fe21a7eab3c184aec782af4346bd49583a",
+    "parts/parent/exterior/printed/parent_deck/parent_deck.md": "bc97953df376c06278ad8714324c9df8b3ffeacec0d2d21b88168987a7b9bff6",
+    "parts/parent/exterior/printed/parent_deck/parent_deck.scad": "7930e5a7703e650432e5f4b896743ea34f8ad9b90abe5a9e6b93603f8fbead6a",
+    "parts/parent/exterior/printed/parent_fin_cartridge/manufacturing.json": "7a3d3853ade19e8a3378ab5fb4d5ef88d61257810ff4998db6f439dd62cb1c7f",
+    "parts/parent/exterior/printed/parent_fin_cartridge/parent_fin_cartridge.md": "3467c75cbd8fb37dfb19ada7a2c8c5dbe3dd56ded3dec8f40bf3c27233eb337c",
+    "parts/parent/exterior/printed/parent_fin_cartridge/parent_fin_cartridge.scad": "df408378967e0983397ccd119ffa2b7a91e8c752647f17b49daafdde313b8f12",
+    "parts/parent/exterior/printed/parent_rope_keel_adapter/manufacturing.json": "c59ab0abd2a17d9c40e86508990ae65861a130b1e0f3cfc7fa522bedef39bc62",
+    "parts/parent/exterior/printed/parent_rope_keel_adapter/parent_rope_keel_adapter.md": "ce6c72ded49b48305f932af6fd7167e64ecfdcea6cb74acad9c893fa0a5daf4a",
+    "parts/parent/exterior/printed/parent_rope_keel_adapter/parent_rope_keel_adapter.scad": "de39fa114929b98b44ef16592888a925aaab928717b753ae5154e0ce3084e445",
+    "parts/parent/exterior/printed/parent_sensor_carrier/manufacturing.json": "f66feb8595b2039c3f209f814bea42afd8e2ee4650e0b2db4bab83effe51880d",
+    "parts/parent/exterior/printed/parent_sensor_carrier/parent_sensor_carrier.md": "0493ee7092d3b1ca4eaf0ba530e652a120e874b9faa78b00458f15af96857d23",
+    "parts/parent/exterior/printed/parent_sensor_carrier/parent_sensor_carrier.scad": "a7c1fabbad6d4aa5b96dae6bff014a47ea38988261c1c13fb775b4a1f64b3aca",
+    "parts/parent/exterior/printed/parent_spar_ballast_body/manufacturing.json": "de9c3c516fc1b968c2af67df36b6676a5401ec353b68303822d1927acc51f29f",
+    "parts/parent/exterior/printed/parent_spar_ballast_body/parent_spar_ballast_body.md": "85607fe22955f4e734c01b511e174239c22d8bdf72de7e9f38fdebe1ba469dc9",
+    "parts/parent/exterior/printed/parent_spar_ballast_body/parent_spar_ballast_body.scad": "fe010ca809ed71520cbe62f3dfbc6d341b740678ccdf79f0a8272f1a07edab18",
+    "parts/parent/exterior/printed/parent_spar_ballast_lid/manufacturing.json": "c6f7e73e10716551e284a34185466566a7888f56e78d4d4f266d7a8885b69fc7",
+    "parts/parent/exterior/printed/parent_spar_ballast_lid/parent_spar_ballast_lid.md": "4d819e67c8483089b77609d872b26dbaf590db1bb7ff30cccd6a171341cd0817",
+    "parts/parent/exterior/printed/parent_spar_ballast_lid/parent_spar_ballast_lid.scad": "f9c93dd629b975932021369cee5d399109ebe79989b03e4c160c33a3e1ffb651",
+    "parts/parent/exterior/printed/parent_spar_beam_lower/manufacturing.json": "97b6029e9a23a3214c3f309fddc485ae277d2daf3b97398ffba81eb5b7388932",
+    "parts/parent/exterior/printed/parent_spar_beam_lower/parent_spar_beam_lower.md": "a1ba1570fd471cb97dd7dbfbdb65280c17ddab820d4f1bfbb8dd50c0915920c2",
+    "parts/parent/exterior/printed/parent_spar_beam_lower/parent_spar_beam_lower.scad": "13347473cba25dc3baabf79af0bb9f86ca1cf7fc9bd01cff7b785c65da1cea86",
+    "parts/parent/exterior/printed/parent_spar_beam_upper/manufacturing.json": "9b36b9e17cf9343d176938bf7765517b2f665447f1a190ad482d7b5d2a4ebc79",
+    "parts/parent/exterior/printed/parent_spar_beam_upper/parent_spar_beam_upper.md": "ff3d7cb66403e61f84a7afc0e8c142ddc3321edf624393649eedd4ff15ade376",
+    "parts/parent/exterior/printed/parent_spar_beam_upper/parent_spar_beam_upper.scad": "8e61a55c7622ef8eb10323ef88cfe666f66ffff75f70b0f6b6a78afa3926054f",
+    "parts/parent/exterior/printed/parent_spar_coupler_half/manufacturing.json": "7845380cfb90278283df8a591db01cc01b461937cc49f319995b7de7995748ff",
+    "parts/parent/exterior/printed/parent_spar_coupler_half/parent_spar_coupler_half.md": "c090844598f0f0ccb99525408e1f156f3cd7beb27ec523b981c478d4043ca2fa",
+    "parts/parent/exterior/printed/parent_spar_coupler_half/parent_spar_coupler_half.scad": "b26757233a21b4f2fc1fcc4e9998c25e8954e4a08979800a4dd81b0c5bda29f9",
+    "parts/parent/exterior/printed/parent_spar_gps_bridge/manufacturing.json": "73a0dcb6e407f8cb32c8ebe527dcc4e675b102517e1483fbc968406bc24b6342",
+    "parts/parent/exterior/printed/parent_spar_gps_bridge/parent_spar_gps_bridge.md": "35ff69507b36594dc6259a33af2ae921b8f9b6200c3c8957f3333b3ddbc9eef6",
+    "parts/parent/exterior/printed/parent_spar_gps_bridge/parent_spar_gps_bridge.scad": "85530b58190fdf05232a37106db2d4a91162c4b462dd70164e46091255670d2c",
+    "parts/parent/exterior/printed/parent_td04a_clamp_body/manufacturing.json": "14c2a9a0012ede28f81d15e0b02ab62e7594d0c605d85fafff93eeca487ed6dc",
+    "parts/parent/exterior/printed/parent_td04a_clamp_body/parent_td04a_clamp_body.md": "a3057437166c6ed126f9c705e639e18d037eedf26c2732402cf39d50afb93af5",
+    "parts/parent/exterior/printed/parent_td04a_clamp_body/parent_td04a_clamp_body.scad": "21c91b8329cc1a3588f1bc83fa941387eadcadaf5382d37f3f152bfbeee5a09d",
+    "parts/parent/exterior/printed/parent_td04a_clamp_cap/manufacturing.json": "a86caf8a0bcee907d1cc773f91e94ccbb88c456c16fe754c36d83abf9b0fcbf1",
+    "parts/parent/exterior/printed/parent_td04a_clamp_cap/parent_td04a_clamp_cap.md": "8f98a882c365bf020c8759aadb267775b73348c1411b2ad7fe6f9a2b2605e256",
+    "parts/parent/exterior/printed/parent_td04a_clamp_cap/parent_td04a_clamp_cap.scad": "3220524606769dcd1e2a9f3fa6d5611cdce50f090fc454985c610e775d04309a",
+    "parts/parent/interior/printed/parent_lipo_tray/parent_lipo_tray.md": "ed17599abd58ad15bbb3ad1ff838e24709cb614082ed847b17d2483ee1c22607",
+    "parts/parent/interior/printed/parent_lipo_tray/parent_lipo_tray.scad": "6142afab41fb20fe154828aae636994a315a9e487a53885bec8e3a241c4bb2bc",
+    "parts/parent/interior/printed/parent_plate/parent_plate.md": "8f7915cbda8fbaa2eeede07539587b12dbc748f7e33b0c30e72e3ba62ebc3660",
+    "parts/parent/interior/printed/parent_plate/parent_plate.scad": "297143f9878cc8ac2eb23a94fd239c141fe628b39c5d4ab5ab709ce0f246ded8",
+    "parts/parent/interior/printed/parent_plate/variants.txt": "0082df303675be8d98f89964eebea778d29342a033e60635a1cba43f38d23533",
+    "scad/lib/hardpoint.scad": "5a442026ba75c7cb3d7eac05f29da72952cfe55706bfb0b6f02be0ac1b5cc6c1",
+    "scad/lib/parent_bottom_sensors.scad": "620038f0a1366ff5424867e9e0afc6cfa1a714ec86cc4bf97e3c1a9fe1a8235b",
+    "scad/lib/parent_spar_bolted.scad": "69a7cc1e3f568b9959daa558c29864254d7e960ceb984428a605e0ca3378cd3a",
+    "spec/parent_hydrostatics.py": "c374b818b93aa7d7da073d4ca753ac3a78734b1db60aedc7ec7a59d25518edee",
+    "spec/parent_interior_layout.py": "94fcfd389470591cb68c24a3edce6ac5582092b5d994d7a6c6dde59de6ff92d5"
+  },
+  "parts": [
+    {
+      "part": "parts/parent/exterior/printed/parent_spar_beam_lower",
+      "stem": "parent_spar_beam_lower",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "beam_lower"
+      ],
+      "file": "parent_spar_beam_lower.stl",
+      "rotation_deg": [
+        -0.0,
+        90.0,
+        0.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_spar_beam_lower/parent_spar_beam_lower.stl",
+      "source_sha256": "64c5c7f317acec84be07acfad2003832c9e76736bb8b7b43739386ea780d0fbd",
+      "sha256": "e9cc55415764b029a538b6bc342683530cbb779aca0c8f2a404ebc74d04b4d48",
+      "extents_mm": [
+        180.0,
+        32.0,
+        32.0
+      ],
+      "model_to_print": [
+        [
+          6.123233995736766e-17,
+          0.0,
+          1.0,
+          9.797174393178826e-16
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          16.0
+        ],
+        [
+          -1.0,
+          0.0,
+          6.123233995736766e-17,
+          16.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_spar_beam_upper",
+      "stem": "parent_spar_beam_upper",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "beam_upper"
+      ],
+      "file": "parent_spar_beam_upper.stl",
+      "rotation_deg": [
+        180.0,
+        90.0,
+        0.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_spar_beam_upper/parent_spar_beam_upper.stl",
+      "source_sha256": "431e66314b09b517e8b2f3291c66ff747a94e5c43bc3da0b4ba48f3a0d41d877",
+      "sha256": "1a2c63f092ebaa31a9b2e482f8805295c82c09774c9b032e693395a50be21bca",
+      "extents_mm": [
+        107.0,
+        32.0,
+        32.0
+      ],
+      "model_to_print": [
+        [
+          6.123233995736766e-17,
+          1.2246467991473532e-16,
+          -1.0,
+          107.0
+        ],
+        [
+          0.0,
+          -1.0,
+          -1.2246467991473532e-16,
+          16.000000000000014
+        ],
+        [
+          -1.0,
+          7.498798913309288e-33,
+          -6.123233995736766e-17,
+          16.000000000000007
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_spar_coupler_half",
+      "stem": "parent_spar_coupler_half",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "coupler_front"
+      ],
+      "file": "parent_spar_coupler_half.stl",
+      "rotation_deg": [
+        -90.0,
+        0.0,
+        -180.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_spar_coupler_half/parent_spar_coupler_half.stl",
+      "source_sha256": "d88f7cc4dfcd13579f925696ad9ec93af32391e5ac05ed8be5b35a2c8af1c9cd",
+      "sha256": "f6469d85774ed89be7326a09c5d5487fd268eddb0f51db5629fa825326217aa1",
+      "extents_mm": [
+        54.0,
+        64.0,
+        26.75
+      ],
+      "model_to_print": [
+        [
+          -1.0,
+          7.498798913309288e-33,
+          1.2246467991473532e-16,
+          27.0
+        ],
+        [
+          -1.2246467991473532e-16,
+          -6.123233995736766e-17,
+          -1.0,
+          64.0
+        ],
+        [
+          0.0,
+          -1.0,
+          6.123233995736766e-17,
+          27.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_spar_coupler_half",
+      "stem": "parent_spar_coupler_half",
+      "shape": [
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "coupler_back"
+      ],
+      "file": "parent_spar_coupler_half_mirrored.stl",
+      "rotation_deg": [
+        -90.0,
+        0.0,
+        -180.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_spar_coupler_half/parent_spar_coupler_half.stl",
+      "source_sha256": "d88f7cc4dfcd13579f925696ad9ec93af32391e5ac05ed8be5b35a2c8af1c9cd",
+      "sha256": "96d43688f8e35c4272a8ac765aa23d028ea5ab9a7fb70ff68ddfe2d21f73b8c0",
+      "extents_mm": [
+        54.0,
+        64.0,
+        26.75
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          7.498798913309288e-33,
+          1.2246467991473532e-16,
+          27.0
+        ],
+        [
+          1.2246467991473532e-16,
+          -6.123233995736766e-17,
+          -1.0,
+          64.0
+        ],
+        [
+          0.0,
+          -1.0,
+          6.123233995736766e-17,
+          27.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_spar_ballast_body",
+      "stem": "parent_spar_ballast_body",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "ballast_body"
+      ],
+      "file": "parent_spar_ballast_body.stl",
+      "rotation_deg": [
+        0.0,
+        -0.0,
+        -180.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_spar_ballast_body/parent_spar_ballast_body.stl",
+      "source_sha256": "bfd392f7663b70da297023ba8b23832385c12ebbc378f956bed11e46453f4c7e",
+      "sha256": "7ee255b59768fddcf47a3c9c581169f1f1d6bf0833ba653b129853f0334385ba",
+      "extents_mm": [
+        120.0,
+        120.0,
+        51.0
+      ],
+      "model_to_print": [
+        [
+          -1.0,
+          1.2246467991473532e-16,
+          0.0,
+          60.0
+        ],
+        [
+          -1.2246467991473532e-16,
+          -1.0,
+          0.0,
+          60.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_spar_ballast_lid",
+      "stem": "parent_spar_ballast_lid",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "ballast_lid"
+      ],
+      "file": "parent_spar_ballast_lid.stl",
+      "rotation_deg": [
+        0.0,
+        -0.0,
+        -180.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_spar_ballast_lid/parent_spar_ballast_lid.stl",
+      "source_sha256": "8a8edeadef4b446ff055fcd595dbbce8a4fdc22c33c733e75555bb8da6ed869f",
+      "sha256": "891539b5906aa7beb69628d55dac25f55d48748fba606e9ba8830639f2499779",
+      "extents_mm": [
+        120.0,
+        120.0,
+        6.0
+      ],
+      "model_to_print": [
+        [
+          -1.0,
+          1.2246467991473532e-16,
+          0.0,
+          60.0
+        ],
+        [
+          -1.2246467991473532e-16,
+          -1.0,
+          0.0,
+          60.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_spar_gps_bridge",
+      "stem": "parent_spar_gps_bridge",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "gps_bridge"
+      ],
+      "file": "parent_spar_gps_bridge.stl",
+      "rotation_deg": [
+        -0.0,
+        90.0,
+        0.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_spar_gps_bridge/parent_spar_gps_bridge.stl",
+      "source_sha256": "9d4a7431b2e252cea16ba0f3cad1f68851b09cb8ba78d067f6ff3c652cb06285",
+      "sha256": "05ed623653e63fb28f5028f59ca4657e0b23d929e7ae967f15b0ce39b04b16cc",
+      "extents_mm": [
+        183.0,
+        96.0,
+        100.0
+      ],
+      "model_to_print": [
+        [
+          6.123233995736766e-17,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          48.0
+        ],
+        [
+          -1.0,
+          0.0,
+          6.123233995736766e-17,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_deck",
+      "stem": "parent_deck",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "deck"
+      ],
+      "file": "parent_deck.stl",
+      "rotation_deg": [
+        -180.0,
+        0.0,
+        -0.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_deck/parent_deck.stl",
+      "source_sha256": "1e542027170d975801b43d316a052f5f5e89a054c251ad5fcbb1e9efcb420943",
+      "sha256": "6c45f99facc9a2ccf3f4c4ca94d7c95927835259bc44bf78fe22e7e89d2789e4",
+      "extents_mm": [
+        216.0,
+        236.0,
+        60.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          108.0
+        ],
+        [
+          0.0,
+          -1.0,
+          1.2246467991473532e-16,
+          118.0
+        ],
+        [
+          0.0,
+          -1.2246467991473532e-16,
+          -1.0,
+          1.4450832229938766e-14
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/interior/printed/parent_plate",
+      "stem": "parent_plate_p1",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "plate"
+      ],
+      "file": "parent_plate_p1.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/interior/printed/parent_plate/parent_plate_p1.stl",
+      "source_sha256": "4e72e6f6b963bc74fa123b223e8d03d7763f584667ee5e193395b0e6d94202dd",
+      "sha256": "297dc2d1e92cab0fe24a13b1c08564b34f0f6ddfa38a44df96b4dc7bcf679776",
+      "extents_mm": [
+        183.0,
+        203.0,
+        17.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/interior/printed/parent_lipo_tray",
+      "stem": "parent_lipo_tray",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "lipo_tray"
+      ],
+      "file": "parent_lipo_tray.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/interior/printed/parent_lipo_tray/parent_lipo_tray.stl",
+      "source_sha256": "79293d4649b38714d3e8eed0c968741b62b0812ec3dae944b7067beab1de36dd",
+      "sha256": "bedbc9947401a32b0206a4962e99b37e26f8dab822b9e4f222b9aa204272485b",
+      "extents_mm": [
+        112.0,
+        84.5,
+        17.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          4.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_rope_keel_adapter",
+      "stem": "parent_rope_keel_adapter",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "keel_adapter"
+      ],
+      "file": "parent_rope_keel_adapter.stl",
+      "rotation_deg": [
+        -180.0,
+        0.0,
+        180.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_rope_keel_adapter/parent_rope_keel_adapter.stl",
+      "source_sha256": "799e11728bfc94ab5b2ac89ed19a24dcf7e038a85cfd5063d8cc775e1d76c65c",
+      "sha256": "ed59b57c20743eadca22fbb175444e32c0789a50a7afbd3b2366d7583de3fb12",
+      "extents_mm": [
+        60.0,
+        60.0,
+        48.0
+      ],
+      "model_to_print": [
+        [
+          -1.0,
+          1.2246467991473532e-16,
+          -1.4997597826618576e-32,
+          30.000000000000004
+        ],
+        [
+          1.2246467991473532e-16,
+          1.0,
+          -1.2246467991473532e-16,
+          30.000000000000004
+        ],
+        [
+          0.0,
+          -1.2246467991473532e-16,
+          -1.0,
+          8.000000000000004
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_fin_cartridge",
+      "stem": "parent_fin_cartridge",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "parent_fin_cartridge"
+      ],
+      "file": "parent_fin_cartridge.stl",
+      "rotation_deg": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_fin_cartridge/parent_fin_cartridge.stl",
+      "source_sha256": "01b1956e081f3187ad6840e19e35691a627c87c98f374776e4b7b3d78ab4f81f",
+      "sha256": "3d172246e3c125e35d9e5fc107d9705e4015468e93e055dd8365cb95f09a4f44",
+      "extents_mm": [
+        225.0,
+        225.0,
+        130.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          112.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          112.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_sensor_carrier",
+      "stem": "parent_sensor_carrier",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "parent_sensor_carrier"
+      ],
+      "file": "parent_sensor_carrier.stl",
+      "rotation_deg": [
+        90.0,
+        -0.0,
+        -0.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_sensor_carrier/parent_sensor_carrier.stl",
+      "source_sha256": "e184ec2a44507fc1821a81df2acce9f4afd1f37423bf85239aee0995679ed599",
+      "sha256": "c88090328242a4d6a3b709739fa4b41af8d53e06ca43f713f4c75d4bd63b59f0",
+      "extents_mm": [
+        210.0,
+        141.0,
+        55.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          105.0
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          -1.0,
+          4.592425496802574e-15
+        ],
+        [
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          75.00000000000001
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_td04a_clamp_body",
+      "stem": "parent_td04a_clamp_body",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "parent_td04a_clamp_body"
+      ],
+      "file": "parent_td04a_clamp_body.stl",
+      "rotation_deg": [
+        90.0,
+        -0.0,
+        180.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_td04a_clamp_body/parent_td04a_clamp_body.stl",
+      "source_sha256": "6b8331bbbccb5c43a8dd135e89a9ddcc42f4e7e2470dc3b64d4424d33675a56c",
+      "sha256": "5419f090c94d2b8b945d8b4783a80609929e0f6c9cccc430df8e5cc877e2ae8e",
+      "extents_mm": [
+        64.0,
+        60.0,
+        27.0
+      ],
+      "model_to_print": [
+        [
+          -1.0,
+          -7.498798913309288e-33,
+          1.2246467991473532e-16,
+          32.00000000000001
+        ],
+        [
+          1.2246467991473532e-16,
+          -6.123233995736766e-17,
+          1.0,
+          30.000000000000004
+        ],
+        [
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          1.83697019872103e-15
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_td04a_clamp_cap",
+      "stem": "parent_td04a_clamp_cap",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "parent_td04a_clamp_cap"
+      ],
+      "file": "parent_td04a_clamp_cap.stl",
+      "rotation_deg": [
+        -90.0,
+        0.0,
+        -180.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_td04a_clamp_cap/parent_td04a_clamp_cap.stl",
+      "source_sha256": "05a570f495287c9523292fc1524f4e0bad2f43aeb449235cfa4ebd4035f53489",
+      "sha256": "25888809c4812da2768c1bcc6e2408bb17dca5a60614e856c354f99c9ba97db3",
+      "extents_mm": [
+        58.0,
+        32.0,
+        19.0
+      ],
+      "model_to_print": [
+        [
+          -1.0,
+          7.498798913309288e-33,
+          1.2246467991473532e-16,
+          29.000000000000004
+        ],
+        [
+          -1.2246467991473532e-16,
+          -6.123233995736766e-17,
+          -1.0,
+          16.000000000000007
+        ],
+        [
+          0.0,
+          -1.0,
+          6.123233995736766e-17,
+          46.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/exterior/printed/dji_osmo_action6_mount",
+      "stem": "dji_osmo_action6_mount",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "camera_mount"
+      ],
+      "file": "dji_osmo_action6_mount.stl",
+      "rotation_deg": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/exterior/printed/dji_osmo_action6_mount/dji_osmo_action6_mount.stl",
+      "source_sha256": "ec75fb6f29c35e78a030d1cb3341c41a9d4e603702c1b030936f32a32c373be1",
+      "sha256": "53ed2d96d28fe89f3b667c46aa208c9d6ad4e9302d0afe1359c799a5e208a9a4",
+      "extents_mm": [
+        104.0,
+        79.45,
+        84.5
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          52.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          52.45
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    }
+  ],
+  "modifiers": [],
+  "generated_files": [
+    "parent_spar_beam_lower.stl",
+    "parent_spar_beam_upper.stl",
+    "parent_spar_coupler_half.stl",
+    "parent_spar_coupler_half_mirrored.stl",
+    "parent_spar_ballast_body.stl",
+    "parent_spar_ballast_lid.stl",
+    "parent_spar_gps_bridge.stl",
+    "parent_deck.stl",
+    "parent_plate_p1.stl",
+    "parent_lipo_tray.stl",
+    "parent_rope_keel_adapter.stl",
+    "parent_fin_cartridge.stl",
+    "parent_sensor_carrier.stl",
+    "parent_td04a_clamp_body.stl",
+    "parent_td04a_clamp_cap.stl",
+    "dji_osmo_action6_mount.stl",
+    "DESIGN_NOTES.md",
+    "PRINT.md"
+  ],
+  "document_hashes": {
+    "DESIGN_NOTES.md": "18f273a605bae22e7c7fd6fa7b830706c3a3b2a0d65c6760d88f2c99ef774550",
+    "PRINT.md": "1203380c4ca160bd88a0cc23c5a5575b38d5522241ef0c4d0802ed57f12dfc63"
+  }
+}

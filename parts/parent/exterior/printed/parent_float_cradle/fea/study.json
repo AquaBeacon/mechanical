@@ -1,0 +1,139 @@
+{
+  "part": "../parent_float_cradle.stl",
+  "material": "PETG",
+  "build_axis": "Z",
+  "target_elements": 90000,
+  "safety_factor": 2.0,
+  "max_deflection_mm": 1.0,
+  "regions": {
+    "adapter_wall": {
+      "type": "box",
+      "min": [
+        -0.5,
+        -95,
+        -50
+      ],
+      "max": [
+        3,
+        95,
+        0
+      ]
+    },
+    "arch": {
+      "type": "cylinder",
+      "axis": "Y",
+      "centre": [
+        64,
+        0,
+        -70
+      ],
+      "r": 56
+    },
+    "lug_S": {
+      "type": "cylinder",
+      "axis": "Y",
+      "centre": [
+        127,
+        -96,
+        -73
+      ],
+      "r": 7
+    },
+    "top_pad": {
+      "type": "box",
+      "min": [
+        39,
+        -25,
+        -4.5
+      ],
+      "max": [
+        89,
+        25,
+        0.5
+      ]
+    }
+  },
+  "cases": [
+    {
+      "name": "L2 lift by fender: buoyancy/handling 100 N up on arch surfaces, held at HP40 adapter wall (deck side)",
+      "supports": [
+        {
+          "region": "adapter_wall",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "arch",
+          "force": [
+            0,
+            0,
+            100
+          ]
+        }
+      ],
+      "gravity": {
+        "direction": [
+          0,
+          0,
+          -1
+        ],
+        "g_factor": 5.0
+      }
+    },
+    {
+      "name": "L2c cord pull: 50 N along -Y on south lug (fender eye bridle), held at adapter wall",
+      "supports": [
+        {
+          "region": "adapter_wall",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "lug_S",
+          "force": [
+            0,
+            -50,
+            0
+          ]
+        }
+      ],
+      "gravity": {
+        "direction": [
+          0,
+          0,
+          -1
+        ],
+        "g_factor": 3.0
+      }
+    },
+    {
+      "name": "L3 accessory drop 10g: 0.5 kg on top HP40 pad = 50 N down",
+      "supports": [
+        {
+          "region": "adapter_wall",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "top_pad",
+          "force": [
+            0,
+            0,
+            -50
+          ]
+        }
+      ],
+      "gravity": {
+        "direction": [
+          0,
+          0,
+          -1
+        ],
+        "g_factor": 10.0
+      }
+    }
+  ]
+}

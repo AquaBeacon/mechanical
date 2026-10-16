@@ -1,0 +1,56 @@
+{
+  "universal_origin_mm": [
+    69,
+    139,
+    56
+  ],
+  "universal_holes_xy_mm": [
+    [
+      71.5,
+      141.5
+    ],
+    [
+      126.5,
+      141.5
+    ],
+    [
+      71.5,
+      216.5
+    ],
+    [
+      126.5,
+      216.5
+    ]
+  ],
+  "universal_hole_pitch_mm": [
+    55.0,
+    75.0
+  ],
+  "printed_clearance_mm": 3.45,
+  "mag_origin_mm": [
+    62.78,
+    195,
+    56
+  ],
+  "mag_holes_xy_mm": [
+    [
+      47.54,
+      197.54
+    ],
+    [
+      47.54,
+      217.86
+    ],
+    [
+      60.24,
+      197.54
+    ],
+    [
+      60.24,
+      217.86
+    ]
+  ],
+  "frame_chamfer_mm": 0.05,
+  "gnss_fasteners": "M3x10 and M3 nuts, four each",
+  "mount": "Coplanar rectangular sensor frame connected at both ends to GNSS rails"
+}

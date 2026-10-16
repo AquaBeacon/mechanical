@@ -1,0 +1,29 @@
+{
+ "consumer": "bcas212310g",
+ "current_model_status": "2026-10-11 drawing-derived, separate body/cover, unmachined purchased case",
+ "current_penetrator_plan": {"south_wall_y_mm": 0, "z_mm": 65, "tether_x_mm": 28, "td04a_x_mm": 120, "machined_in_case_model": false, "physical_wall_and_seats_confirmed": false},
+ "history_note": "The references below retain the 2026-08-29 provisional lock. Do not treat their hole/seat envelopes as confirmed machining dimensions for the corrected case.",
+ "references": [
+  {
+   "part": "wetlink_penetrator_m10",
+   "path": "parts/common/exterior/cots/wetlink_penetrator_m10",
+   "md_sha256": "0b122dc33e9b618abbaa21447a38dec380d2dabca191b2d183196427d3b73d2f",
+   "stl_sha256": null,
+   "bbox_mm": null,
+   "status_at_lock": [
+    "needs_measure",
+    "not_chosen",
+    "not_designed",
+    "provisional"
+   ],
+   "values": {
+    "pen_d": 10.2,
+    "pen_seat": 18.5,
+    "pen_in": 19.7
+   },
+   "confirmed_by_human": false,
+   "confirmed_at": "2026-08-29T15:19:01",
+   "note": "2026-08-29 人間確認待ち: 南壁の追加工 Ø10.2 x2。座 18.5 / 内側ナット外接 19.7 は wetlink_penetrator_m10_ref の仮寸(head_h 8, nut 17x8.4)由来"
+  }
+ ]
+}

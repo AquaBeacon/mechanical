@@ -1,0 +1,226 @@
+{
+ "units": "mm_N_MPa",
+ "material": "PETG",
+ "build_axis": "Y",
+ "raster_axis": "X",
+ "printer": "X1C",
+ "safety_factor": 3.0,
+ "max_deflection_mm": 1.0,
+ "regions": {
+  "hp4_seat": {
+   "type": "box",
+   "min": [
+    -25,
+    74.35,
+    145
+   ],
+   "max": [
+    25,
+    80.35,
+    195
+   ]
+  },
+  "hp5_seat": {
+   "type": "box",
+   "min": [
+    -25,
+    74.35,
+    75
+   ],
+   "max": [
+    25,
+    80.35,
+    125
+   ]
+  },
+  "mount_R": {
+   "type": "box",
+   "min": [
+    58,
+    75.05,
+    44.95
+   ],
+   "max": [
+    92,
+    119.05,
+    52.95
+   ]
+  },
+  "mount_L": {
+   "type": "box",
+   "min": [
+    -92,
+    75.05,
+    44.95
+   ],
+   "max": [
+    -58,
+    119.05,
+    52.95
+   ]
+  },
+  "fbump_R": {
+   "type": "box",
+   "min": [
+    30,
+    122,
+    44.95
+   ],
+   "max": [
+    120,
+    128,
+    80
+   ]
+  },
+  "fbump_L": {
+   "type": "box",
+   "min": [
+    -120,
+    122,
+    44.95
+   ],
+   "max": [
+    -30,
+    128,
+    80
+   ]
+  },
+  "endp_R": {
+   "type": "box",
+   "min": [
+    114,
+    67,
+    44.95
+   ],
+   "max": [
+    120,
+    128,
+    80
+   ]
+  },
+  "endp_L": {
+   "type": "box",
+   "min": [
+    -120,
+    67,
+    44.95
+   ],
+   "max": [
+    -114,
+    128,
+    80
+   ]
+  }
+ },
+ "cases": [
+  {
+   "name": "L1 operational hoist 3g: HP4/HP5 fixed, camera + case (0.35 kg each) hang off the mount seats, bridge self-weight at 3 g",
+   "supports": [
+    {
+     "region": "hp4_seat",
+     "fix": "xyz"
+    },
+    {
+     "region": "hp5_seat",
+     "fix": "xyz"
+    }
+   ],
+   "loads": [
+    {
+     "region": "mount_R",
+     "force": [
+      0,
+      0,
+      -10.3
+     ]
+    },
+    {
+     "region": "mount_L",
+     "force": [
+      0,
+      0,
+      -10.3
+     ]
+    }
+   ],
+   "gravity": {
+    "direction": [
+     0,
+     0,
+     -1
+    ],
+    "g_factor": 3.0
+   }
+  },
+  {
+   "name": "L4 frontal impact 150 N (-Y) on one front-edge bumper, HP4/HP5 react",
+   "supports": [
+    {
+     "region": "hp4_seat",
+     "fix": "xyz"
+    },
+    {
+     "region": "hp5_seat",
+     "fix": "xyz"
+    }
+   ],
+   "loads": [
+    {
+     "region": "fbump_R",
+     "force": [
+      0,
+      -150,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "name": "L2s side impact 150 N (-X) on the starboard end plate through the side bumper, HP4/HP5 react",
+   "supports": [
+    {
+     "region": "hp4_seat",
+     "fix": "xyz"
+    },
+    {
+     "region": "hp5_seat",
+     "fix": "xyz"
+    }
+   ],
+   "loads": [
+    {
+     "region": "endp_R",
+     "force": [
+      -150,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "name": "L6 handling: the unit is picked up by one camera, 100 N (+Z) on the starboard cam_mount seat, HP4/HP5 react",
+   "supports": [
+    {
+     "region": "hp4_seat",
+     "fix": "xyz"
+    },
+    {
+     "region": "hp5_seat",
+     "fix": "xyz"
+    }
+   ],
+   "loads": [
+    {
+     "region": "mount_R",
+     "force": [
+      0,
+      0,
+      100
+     ]
+    }
+   ]
+  }
+ ],
+ "part": "child_cam_bridge_v2.stl"
+}

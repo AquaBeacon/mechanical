@@ -1,0 +1,283 @@
+{
+  "set_file": "parent_stack_spacer_set",
+  "quantity": 1,
+  "members": [
+    {
+      "label": "main_column_0",
+      "part": "parts/parent/interior/printed/parent_hand_service",
+      "file": "main_corner_column",
+      "translation_mm": [
+        6.0,
+        12.0,
+        -0.0
+      ],
+      "rotations_deg": [
+        0,
+        0,
+        0
+      ],
+      "source_step_sha256": "dcd77102bed06da88fdf88cc8ded374f27514b06947aba9b7450153a116c56bf",
+      "neck_width_mm": 1.2,
+      "neck_height_mm": 0.4,
+      "neck_length_mm": 1,
+      "neck_xy_mm": [
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "label": "main_column_1",
+      "part": "parts/parent/interior/printed/parent_hand_service",
+      "file": "main_corner_column",
+      "translation_mm": [
+        22.0,
+        12.0,
+        -0.0
+      ],
+      "rotations_deg": [
+        0,
+        0,
+        0
+      ],
+      "source_step_sha256": "dcd77102bed06da88fdf88cc8ded374f27514b06947aba9b7450153a116c56bf",
+      "neck_width_mm": 1.2,
+      "neck_height_mm": 0.4,
+      "neck_length_mm": 1,
+      "neck_xy_mm": [
+        22.0,
+        8.0
+      ]
+    },
+    {
+      "label": "main_column_2",
+      "part": "parts/parent/interior/printed/parent_hand_service",
+      "file": "main_corner_column",
+      "translation_mm": [
+        38.0,
+        12.0,
+        -0.0
+      ],
+      "rotations_deg": [
+        0,
+        0,
+        0
+      ],
+      "source_step_sha256": "dcd77102bed06da88fdf88cc8ded374f27514b06947aba9b7450153a116c56bf",
+      "neck_width_mm": 1.2,
+      "neck_height_mm": 0.4,
+      "neck_length_mm": 1,
+      "neck_xy_mm": [
+        38.0,
+        8.0
+      ]
+    },
+    {
+      "label": "main_column_3",
+      "part": "parts/parent/interior/printed/parent_hand_service",
+      "file": "main_corner_column",
+      "translation_mm": [
+        54.0,
+        12.0,
+        -0.0
+      ],
+      "rotations_deg": [
+        0,
+        0,
+        0
+      ],
+      "source_step_sha256": "dcd77102bed06da88fdf88cc8ded374f27514b06947aba9b7450153a116c56bf",
+      "neck_width_mm": 1.2,
+      "neck_height_mm": 0.4,
+      "neck_length_mm": 1,
+      "neck_xy_mm": [
+        54.0,
+        8.0
+      ]
+    },
+    {
+      "label": "sony_column_0",
+      "part": "parts/common/interior/printed/stack_spacers",
+      "file": "sony_column_left",
+      "translation_mm": [
+        70.0,
+        12.0,
+        -0.0
+      ],
+      "rotations_deg": [
+        0,
+        0,
+        0
+      ],
+      "source_step_sha256": "ec787ac47006986b2a6f220f5857ff9c3e8dfef649c3437bdaa47c70eac29f4b",
+      "neck_width_mm": 1.2,
+      "neck_height_mm": 0.4,
+      "neck_length_mm": 1,
+      "neck_xy_mm": [
+        70.0,
+        8.0
+      ]
+    },
+    {
+      "label": "sony_column_1",
+      "part": "parts/common/interior/printed/stack_spacers",
+      "file": "sony_column_right",
+      "translation_mm": [
+        86.0,
+        12.0,
+        -0.0
+      ],
+      "rotations_deg": [
+        0,
+        0,
+        0
+      ],
+      "source_step_sha256": "09a5bed127b1ebf65a79b7600c72f63c184fe799b3215d8fda2f01daeabcb870",
+      "neck_width_mm": 1.2,
+      "neck_height_mm": 0.4,
+      "neck_length_mm": 1,
+      "neck_xy_mm": [
+        86.0,
+        8.8
+      ]
+    },
+    {
+      "label": "sony_column_2",
+      "part": "parts/common/interior/printed/stack_spacers",
+      "file": "sony_column_left",
+      "translation_mm": [
+        102.0,
+        12.0,
+        -0.0
+      ],
+      "rotations_deg": [
+        0,
+        0,
+        0
+      ],
+      "source_step_sha256": "ec787ac47006986b2a6f220f5857ff9c3e8dfef649c3437bdaa47c70eac29f4b",
+      "neck_width_mm": 1.2,
+      "neck_height_mm": 0.4,
+      "neck_length_mm": 1,
+      "neck_xy_mm": [
+        102.0,
+        8.0
+      ]
+    },
+    {
+      "label": "sony_column_3",
+      "part": "parts/common/interior/printed/stack_spacers",
+      "file": "sony_column_right",
+      "translation_mm": [
+        118.0,
+        12.0,
+        -0.0
+      ],
+      "rotations_deg": [
+        0,
+        0,
+        0
+      ],
+      "source_step_sha256": "09a5bed127b1ebf65a79b7600c72f63c184fe799b3215d8fda2f01daeabcb870",
+      "neck_width_mm": 1.2,
+      "neck_height_mm": 0.4,
+      "neck_length_mm": 1,
+      "neck_xy_mm": [
+        118.0,
+        8.8
+      ]
+    },
+    {
+      "label": "gnss_column_0",
+      "part": "parts/parent/interior/printed/gnss_universal_carrier",
+      "file": "gnss_column_front",
+      "translation_mm": [
+        134.0,
+        12.0,
+        -0.0
+      ],
+      "rotations_deg": [
+        0,
+        0,
+        0
+      ],
+      "source_step_sha256": "62889132d19ae678a4648693e94eb7afaa61ce84c89646b3361151682ea12477",
+      "neck_width_mm": 1.2,
+      "neck_height_mm": 0.4,
+      "neck_length_mm": 1,
+      "neck_xy_mm": [
+        134.0,
+        7.0
+      ]
+    },
+    {
+      "label": "gnss_column_1",
+      "part": "parts/parent/interior/printed/gnss_universal_carrier",
+      "file": "gnss_column_front",
+      "translation_mm": [
+        150.0,
+        12.0,
+        -0.0
+      ],
+      "rotations_deg": [
+        0,
+        0,
+        0
+      ],
+      "source_step_sha256": "62889132d19ae678a4648693e94eb7afaa61ce84c89646b3361151682ea12477",
+      "neck_width_mm": 1.2,
+      "neck_height_mm": 0.4,
+      "neck_length_mm": 1,
+      "neck_xy_mm": [
+        150.0,
+        7.0
+      ]
+    },
+    {
+      "label": "gnss_column_2",
+      "part": "parts/parent/interior/printed/gnss_universal_carrier",
+      "file": "gnss_column_rear",
+      "translation_mm": [
+        166.0,
+        12.0,
+        2.3592239273284576e-16
+      ],
+      "rotations_deg": [
+        0,
+        0,
+        0
+      ],
+      "source_step_sha256": "1aa233e310a312d16e505d4976cb1fa4b84a8998d68fcc062c9454caeebbb966",
+      "neck_width_mm": 1.2,
+      "neck_height_mm": 0.4,
+      "neck_length_mm": 1,
+      "neck_xy_mm": [
+        166.0,
+        8.499999999999998
+      ]
+    },
+    {
+      "label": "gnss_column_3",
+      "part": "parts/parent/interior/printed/gnss_universal_carrier",
+      "file": "gnss_column_rear",
+      "translation_mm": [
+        182.0,
+        12.0,
+        2.3592239273284576e-16
+      ],
+      "rotations_deg": [
+        0,
+        0,
+        0
+      ],
+      "source_step_sha256": "1aa233e310a312d16e505d4976cb1fa4b84a8998d68fcc062c9454caeebbb966",
+      "neck_width_mm": 1.2,
+      "neck_height_mm": 0.4,
+      "neck_length_mm": 1,
+      "neck_xy_mm": [
+        182.0,
+        8.499999999999993
+      ]
+    }
+  ],
+  "breakaway_note": "Cut side neck flush. Keep both bearing faces, locator and bore intact. Runner is discarded; never assembled."
+}

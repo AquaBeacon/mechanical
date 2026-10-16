@@ -1,0 +1,24 @@
+tray : child_vtray_deck  [tube_len=200 have_pwr=true pwr_l=62]
+
+child_main  (CHILD_MAIN.kicad_pcb, 104 x 88 mm, 4 holes)
+   board (X=  -22.00, Z=   24.50)   tray (X=  -22.00, Z=   24.50)   dX= +0.00 dZ= +0.00  ok
+   board (X=  -22.00, Z=  119.50)   tray (X=  -22.00, Z=  119.50)   dX= +0.00 dZ= +0.00  ok
+   board (X=   39.50, Z=   24.50)   tray (X=   39.50, Z=   24.50)   dX= +0.00 dZ= +0.00  ok
+   board (X=   39.50, Z=  119.50)   tray (X=   39.50, Z=  119.50)   dX= +0.00 dZ= +0.00  ok
+   -> M3 into Ø3.2 drill, worst offset 0.00 mm  PASS
+
+child_pwr  (CHILD_PWR.kicad_pcb, 62 x 70 mm, 4 holes)
+   board (X=  -31.00, Z=  130.00)   tray (X=  -31.00, Z=  130.00)   dX= +0.00 dZ= +0.00  ok
+   board (X=  -31.00, Z=  184.00)   tray (X=  -31.00, Z=  184.00)   dX= +0.00 dZ= +0.00  ok
+   board (X=   31.00, Z=  130.00)   tray (X=   31.00, Z=  130.00)   dX= +0.00 dZ= +0.00  ok
+   board (X=   31.00, Z=  184.00)   tray (X=   31.00, Z=  184.00)   dX= +0.00 dZ= +0.00  ok
+   -> M3 into Ø3.2 drill, worst offset 0.00 mm  PASS
+
+rx_improved_mini  (RX_IMPROVED_MINI.kicad_pcb, 68 x 46 mm, 4 holes)
+   board (X=  -31.50, Z=  136.50)   tray (X=  -31.50, Z=  136.50)   dX= +0.00 dZ= +0.00  ok
+   board (X=  -31.50, Z=  177.50)   tray (X=  -31.50, Z=  177.50)   dX= +0.00 dZ= +0.00  ok
+   board (X=   31.50, Z=  136.50)   tray (X=   31.50, Z=  136.50)   dX= +0.00 dZ= +0.00  ok
+   board (X=   31.50, Z=  177.50)   tray (X=   31.50, Z=  177.50)   dX= +0.00 dZ= +0.00  ok
+   -> M2 into Ø2.2 drill, worst offset 0.00 mm  PASS
+
+All tray mounting features match the boards.

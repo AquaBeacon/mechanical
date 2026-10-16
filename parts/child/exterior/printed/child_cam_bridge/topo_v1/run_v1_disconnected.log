@@ -1,0 +1,134 @@
+grid 86 x 27 x 55 at 3.000 mm (origin [-129.0, 58.0, 38.95]), mirror plane on X
+
+runtime  80 iterations x 4 case(s) ~ 27 min  (range 14 min - 41 min; one cold solve of case 1 took 5.1 s on 80000 elements [cuda/mg])
+
+--- setup ---
+  voxel               3.000 mm, grid [86, 27, 55]
+  design space        2160000 mm3
+  preserve            118800 mm3 in 6 bodies
+  obstacle            996516 mm3 declared -> 996516 mm3 with clearance
+  free (optimisable)  1114020 mm3 (41260 cells)
+  build volume        250x250x250 on Bambu Lab X1-Carbon -- design space 240x60x150, fits
+  free to decide      52 % of the domain; preserve is 64 % of the expected part
+    preserve   interfaces               118800 mm3  stl:child_cam_bridge_v1_preserve.stl
+    design_space design_space            2160000 mm3  stl:child_cam_bridge_v1_design_space.stl
+    obstacle   keep_out                 996516 mm3  stl:child_cam_bridge_v1_obstacle.stl
+  WARN  preserve is 64 % of the expected final part (118800 mm3 of 185641 mm3 at volfrac 0.06). Most of this shape is drawn, not optimised; say so wherever the result is presented.
+  WARN  the free region is only 2.0 voxels (6.00 mm) thick at its thinnest. Below about 3 voxels there is no room for a hole, so the topology there is set by the outline rather than chosen -- refine the grid or widen the design space.
+  WARN  the 2 support point(s) are fixed by preserve at hp4_seat at [0.0, 76.0, 169.4]; hp5_seat at [0.0, 76.0, 100.5]. Where the part is held is an input to this study, not a result of it -- if the layout of the supports is itself meant to be optimised, that decision is currently being made in CAD.
+  => setup OK
+
+wrote topo_v1\02_setup
+  look at topo_v1\02_setup\child_cam_bridge_v1_study_setup.png
+  look at topo_v1\02_setup\child_cam_bridge_v1_study_setup.scad
+
+NEXT: topopt opt topo_v1/child_cam_bridge_v1_study.json --out DIR
+[setup  ] ok       
+grid 86 x 27 x 55 at 3.000 mm (origin [-129.0, 58.0, 38.95]), mirror plane on X
+
+--- setup ---
+  voxel               3.000 mm, grid [86, 27, 55]
+  design space        2160000 mm3
+  preserve            118800 mm3 in 6 bodies
+  obstacle            996516 mm3 declared -> 996516 mm3 with clearance
+  free (optimisable)  1114020 mm3 (41260 cells)
+  build volume        250x250x250 on Bambu Lab X1-Carbon -- design space 240x60x150, fits
+  free to decide      52 % of the domain; preserve is 64 % of the expected part
+    preserve   interfaces               118800 mm3  stl:child_cam_bridge_v1_preserve.stl
+    design_space design_space            2160000 mm3  stl:child_cam_bridge_v1_design_space.stl
+    obstacle   keep_out                 996516 mm3  stl:child_cam_bridge_v1_obstacle.stl
+  WARN  preserve is 64 % of the expected final part (118800 mm3 of 185641 mm3 at volfrac 0.06). Most of this shape is drawn, not optimised; say so wherever the result is presented.
+  WARN  the free region is only 2.0 voxels (6.00 mm) thick at its thinnest. Below about 3 voxels there is no room for a hole, so the topology there is set by the outline rather than chosen -- refine the grid or widen the design space.
+  WARN  the 2 support point(s) are fixed by preserve at hp4_seat at [0.0, 76.0, 169.4]; hp5_seat at [0.0, 76.0, 100.5]. Where the part is held is an input to this study, not a result of it -- if the layout of the supports is itself meant to be optimised, that decision is currently being made in CAD.
+  => setup OK
+
+domain 80000 voxels (41260 free, 4400 preserve, 34340 obstacle) at 3.000 mm
+volfrac 0.060 of the free cells, filter 6.00 mm, 4 load case(s), symmetry X, self-supporting along +Y (45 deg, support columns up to 12 mm allowed)
+ iter  penal  beta   objective       vol      grey    dshape
+    1   1.00   1.0      4.0000     0.059    0.2108    1.0000
+    6   1.00   1.0      2.5090     0.060    0.1974    0.0007
+   11   1.50   1.0      4.9335     0.060    0.1954    0.0000
+   16   1.50   1.0      4.4229     0.060    0.1874    0.0002
+   21   2.00   2.0      7.2138     0.060    0.1778    0.0004
+   26   2.00   2.0      5.7542     0.060    0.1600    0.0027
+   31   2.50   2.0      7.8888     0.060    0.1486    0.0014
+   36   2.50   4.0      5.3987     0.060    0.1131    0.0026
+   41   3.00   4.0      7.0131     0.060    0.1088    0.0010
+   46   3.00   4.0      6.3772     0.060    0.1159    0.0032
+   51   3.00   8.0      5.6438     0.060    0.0662    0.0034
+   56   3.00   8.0      5.3713     0.060    0.0953    0.0070
+   61   3.00   8.0      5.2386     0.060    0.0632    0.0067
+   66   3.00  16.0     20.1723     0.060    0.0220    0.0031
+   71   3.00  16.0      4.8856     0.060    0.0678    0.0049
+   76   3.00  16.0      4.9036     0.060    0.0499    0.0047
+   80   3.00  16.0      4.9069     0.060    0.0476    0.0044
+
+final FEA skipped: the geometry is not connected, so the stiffness matrix would be singular. Fix connectivity first.
+
+--- result ---
+  final volume        175500 mm3  (preserve 118800 mm3)
+  volume fraction     0.051 of the free cells / 0.081 of the domain
+  self-support        0 voxel(s) / 0 mm2 with nothing in the 45 deg cone below (build axis +Y; constraint on)
+  optimised members   min 6.00 mm, p5 6.00 mm, median 6.00 mm (asked for >= 6.00 mm)
+  whole part          min 6.00 mm, median 6.00 mm (includes preserve, which filter_mm does not govern)
+  connectivity        BROKEN -- 14 component(s), 6 preserve body(ies), 1026.0 mm3 of islands dropped
+    ! 1026.0 mm3 of material is not connected to any preserve body; it was dropped from the final geometry
+    ! the preserve bodies are NOT all joined by the final geometry -- raise volfrac, lower filter_mm, or widen the design space
+  STEP                1594 planar faces (from 9106 voxel faces), 0 open / 24 non-manifold edge(s)
+                      (voxels touching only along an edge -- four faces meet there; kernels sew it, some flag it)
+
+wrote topo_v1\03_optimization (3453.8 s)
+
+NEXT: this is a load-path map, not a part. Rebuild it as parametric OpenSCAD from cubes/cylinders (a starting sketch is in *_members.scad), keeping every preserve interface exactly, then:
+  topopt compare topo_v1\03_optimization <rebuild>.stl --study topo_v1/child_cam_bridge_v1_study.json
+  (the grid origin is read from the summary; no --origin needed)
+[opt    ] exit 1   shape does not meet the requirement; continuing so the report says why
+grid 86 x 27 x 55 at 3.000 mm (origin [-129.0, 58.0, 38.95]), mirror plane on X
+
+density field child_cam_bridge_v1_study at 3.0000 mm voxel, 86x27x55
+thresholds: 0.40, 0.50, 0.60
+
+level       volume  SF p99.5  SF worst    max mm   min thk   down A  verdict
+0.40        177174         -         -         -     6.00*    18072  NOT CONNECTED
+0.50        175500         -         -         -     6.00*    17946  NOT CONNECTED
+0.60        171504         -         -         -     6.00*    17694  NOT CONNECTED
+  * grid-limited: min thickness is exactly 2 x voxel, i.e. the finest the grid can hold. Not a measurement of the structure.
+
+finish (interface at CAD dimensions, 0.50 mm grid)
+  finish  + interfaces           918688 cells (+14875.0 mm3)
+  finish  - features            7862558 cells (17011.8 mm3)
+  finish  -> child_cam_bridge_v1_study_t50_finish.stl (9794 triangles at 0.500 mm)
+
+wrote threshold 0.50 to topo_v1\03_optimization
+  stl         topo_v1\03_optimization\child_cam_bridge_v1_study_t50.stl
+  smooth_stl  topo_v1\03_optimization\child_cam_bridge_v1_study_t50_smooth.stl
+  step        topo_v1\03_optimization\child_cam_bridge_v1_study_t50.step
+  finish_stl  topo_v1\03_optimization\child_cam_bridge_v1_study_t50_finish.stl
+
+chosen threshold 0.50 -- no candidate could be analysed; this is a placeholder, not a choice
+
+NEXT: this is still not a part. Interface dimensions are quantised to 3.000 mm. Rebuild them as parametric CAD and prove it carries the load with:
+  topopt compare topo_v1\03_optimization <rebuild>.stl --study topo_v1/child_cam_bridge_v1_study.json
+[extract] exit 1   
+[ccx    ] SKIPPED  gmsh and calculix not installed on this machine -- the independent re-analysis was not run, and the report lists its checks as UNKNOWN
+[print  ] ok       wrote printcheck.json (threshold 0.50)
+wrote topo_v1\03_optimization\report.md
+verdict: FAIL  (3 fail, 6 unknown, 6 pass)
+  FAIL     All preserve regions are connected -- 14 component(s); 1026 mm3 of floating islands were dropped
+  FAIL     The density field converged (not merely out of iterations) -- termination: max_iterations
+  FAIL     No support lands on a mating (preserve) face -- support rests on 84 preserve voxel(s) (756.0 mm2). Those faces come off the printer rough and out of tolerance. Reorient the part, or accept the finish and say so explicitly.
+  UNKNOWN  The final shape was re-analysed
+  UNKNOWN  Safety factor meets the requirement on every case
+  UNKNOWN  Load/reaction balance within 1 %
+  UNKNOWN  Mesh convergence confirmed
+  UNKNOWN  Final shape is watertight
+  UNKNOWN  Minimum wall thickness is met
+[report ] exit 1   
+[assumptions] ok       wrote topo_v1\01_assumptions\assumptions.md
+04_print: PRINT.md, child_cam_bridge_v1.step, child_cam_bridge_v1.stl, child_cam_bridge_v1_raw.stl, child_cam_bridge_v1_smooth.stl, preview_design_space.png, preview_orientation.png, preview_shape.png
+[publish] ok       wrote topo_v1\04_print\PRINT.md
+
+valid through: setup -> opt -> extract -> print -> assumptions -> publish
+skipped: ccx
+topo_v1\03_optimization\report.md (3480 s)
+to print:      topo_v1\04_print\PRINT.md

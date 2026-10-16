@@ -1,0 +1,382 @@
+{
+  "schema_version": 1,
+  "assembly": "parent_light",
+  "release_status": "existing_prototype",
+  "note": "既存構成の印刷データを整理。強度・造形性の新規認証ではない。",
+  "source_hashes": {
+    "assemblies/parent_light/placement.json": "0862b6559b3bd36f6ecc14cffe59947f06ebf2296c69b4067268a98075ddcbff",
+    "assemblies/parent_light/README.md": "c0eebeab10c26c71ae22421015c286d632b395514ed3899f69fa4840e56365ef",
+    "parts/parent/exterior/printed/parent_camera_mount/manufacturing.json": "0284676b8c54bb093279db824c6ec82ce36e8b3bd77796c5a7ad9e2e24d459f6",
+    "parts/parent/exterior/printed/parent_camera_mount/parent_camera_mount.scad": "52c00273d8c6e2eb3c6f3a94267a4303b97db5689b8fdc07dba45add6aefa87c",
+    "parts/parent/exterior/printed/parent_light_bar/manufacturing.json": "de1e343ea3913f41dc38a21e8471ce41dd8e67798ea102d9c045c804b8655fa0",
+    "parts/parent/exterior/printed/parent_light_bar/parent_light_bar.scad": "28dd40a48e2c7278f84d0d2d655163f4c66555bfced7d08c94ab7824dbe23919",
+    "parts/parent/exterior/printed/parent_light_carrier/manufacturing.json": "f3176770c69f575a3299b608eafc45b0b40e51ba88c2994f5d097f8de3b9bb8d",
+    "parts/parent/exterior/printed/parent_light_carrier/parent_light_carrier.scad": "b6dbd0c05fcbbd2d87a1804551b1c22cf76289e52cf336f93a2c97666318b5bf",
+    "parts/parent/exterior/printed/parent_light_frame/manufacturing.json": "3e78f84bf8b47db0c16d04fc23dc8cca19b8905e2c389e0195b537398e18b110",
+    "parts/parent/exterior/printed/parent_light_frame/parent_light_frame.scad": "be4b3a81a7987f0673d8bc325c8a466010fb7c5a8a1494a34ed5d35317b3c97f",
+    "parts/parent/exterior/printed/parent_light_jaw/manufacturing.json": "f5ea739210a3737bcd9eb6d87f5a650eaeb1a65f8cf060e03e6e828504cd083e",
+    "parts/parent/exterior/printed/parent_light_jaw/parent_light_jaw.scad": "19ebaff2ac3a91544c53f42c3f72165ad6ede1790406dcce963d67a43678f002"
+  },
+  "parts": [
+    {
+      "part": "parts/parent/exterior/printed/parent_light_frame",
+      "stem": "parent_light_frame",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "open_frame"
+      ],
+      "file": "parent_light_frame.stl",
+      "rotation_deg": [
+        -180.0,
+        0.0,
+        -0.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_light_frame/parent_light_frame.stl",
+      "source_sha256": "484cbb34a47978dec2326075f3c83002aa5670b2a471ab249bc67e8ab2a7df23",
+      "sha256": "4f584008c923952ae2ef35425d5582df153ab7cf3f801a8c49f385379e062bc1",
+      "extents_mm": [
+        236.0,
+        236.0,
+        42.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          118.0
+        ],
+        [
+          0.0,
+          -1.0,
+          1.2246467991473532e-16,
+          118.0
+        ],
+        [
+          0.0,
+          -1.2246467991473532e-16,
+          -1.0,
+          1.4450832229938766e-14
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_light_bar",
+      "stem": "parent_light_bar",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 2,
+      "labels": [
+        "upper_bar_-55",
+        "upper_bar_55"
+      ],
+      "file": "parent_light_bar.stl",
+      "rotation_deg": [
+        0.0,
+        -0.0,
+        -180.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_light_bar/parent_light_bar.stl",
+      "source_sha256": "0bcb60267b457c9776cdbad10cc5ef3bd2bf53002f497bd87c184b359dcb9587",
+      "sha256": "417ec44da59001f28e0a23223ee0fbb83700616ae6c55b5c048f129f7001e075",
+      "extents_mm": [
+        236.0,
+        24.0,
+        12.0
+      ],
+      "model_to_print": [
+        [
+          -1.0,
+          1.2246467991473532e-16,
+          0.0,
+          118.0
+        ],
+        [
+          -1.2246467991473532e-16,
+          -1.0,
+          0.0,
+          12.000000000000014
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_light_carrier",
+      "stem": "parent_light_carrier",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "sensor_carrier"
+      ],
+      "file": "parent_light_carrier.stl",
+      "rotation_deg": [
+        -90.0,
+        0.0,
+        0.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_light_carrier/parent_light_carrier.stl",
+      "source_sha256": "ade9bef6c83f00529099a99aa602183cea45acb78759c332168a2bb91b32ac8e",
+      "sha256": "ed07e4741130af26e4c650fbc2778c61f26f9556f5db6c587b3a44b514b657e7",
+      "extents_mm": [
+        210.0,
+        88.0,
+        67.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          105.0
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          1.0,
+          100.0
+        ],
+        [
+          0.0,
+          -1.0,
+          6.123233995736766e-17,
+          6.123233995736766e-15
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_camera_mount",
+      "stem": "parent_camera_mount",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "camera_mount"
+      ],
+      "file": "parent_camera_mount.stl",
+      "rotation_deg": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_camera_mount/parent_camera_mount.stl",
+      "source_sha256": "16f70b02348e8b1b804f43e7c2d666f4f5de4f3de507226bd86633440e52d7aa",
+      "sha256": "f8dbc8814128954a9a67e9ca7afe5dc867a517710b63f07ab1d9e4df01413e37",
+      "extents_mm": [
+        104.0,
+        79.45,
+        84.5
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          52.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          52.45
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_light_jaw",
+      "stem": "parent_light_jaw",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "td_bracket_jaw"
+      ],
+      "file": "parent_light_jaw.stl",
+      "rotation_deg": [
+        -90.0,
+        0.0,
+        -180.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_light_jaw/parent_light_jaw.stl",
+      "source_sha256": "8417e3979724879adcbe8ba201e1dba28fecbacbd079a5ccfcbc0866482857f9",
+      "sha256": "e98b1b9472087481bd3db7ee84fa24593ca91cbdda31b3146e0822f0e9c279c4",
+      "extents_mm": [
+        50.0,
+        14.0,
+        8.0
+      ],
+      "model_to_print": [
+        [
+          -1.0,
+          7.498798913309288e-33,
+          1.2246467991473532e-16,
+          25.0
+        ],
+        [
+          -1.2246467991473532e-16,
+          -6.123233995736766e-17,
+          -1.0,
+          7.0000000000000036
+        ],
+        [
+          0.0,
+          -1.0,
+          6.123233995736766e-17,
+          8.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    }
+  ],
+  "modifiers": [],
+  "generated_files": [
+    "parent_light_frame.stl",
+    "parent_light_bar.stl",
+    "parent_light_carrier.stl",
+    "parent_camera_mount.stl",
+    "parent_light_jaw.stl",
+    "DESIGN_NOTES.md",
+    "PRINT.md"
+  ],
+  "document_hashes": {
+    "DESIGN_NOTES.md": "1764773db77b1458d096de9caefd0aa9567bfeeb5afa58ae7b307abf13c48438",
+    "PRINT.md": "c8f7efbd406cdc0780c95341b150ba5202cc2be09420c404c4c2f6d03f24c23d"
+  }
+}

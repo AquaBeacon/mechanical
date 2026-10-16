@@ -1,0 +1,68 @@
+[
+  {
+    "part": "parent_open_frame",
+    "quantity": 1,
+    "print_extents_mm": [
+      236.0,
+      236.0,
+      12.000000000000028
+    ],
+    "watertight": true,
+    "volume_mm3": 238328.76712068004
+  },
+  {
+    "part": "parent_clamp_bar",
+    "quantity": 2,
+    "print_extents_mm": [
+      236.0,
+      24.0,
+      12.0
+    ],
+    "watertight": true,
+    "volume_mm3": 67395.97663488
+  },
+  {
+    "part": "parent_float_lug",
+    "quantity": 4,
+    "print_extents_mm": [
+      24.0,
+      32.0,
+      44.0
+    ],
+    "watertight": true,
+    "volume_mm3": 14283.695829259203
+  },
+  {
+    "part": "parent_compact_carrier",
+    "quantity": 1,
+    "print_extents_mm": [
+      210.0,
+      88.0,
+      67.0
+    ],
+    "watertight": true,
+    "volume_mm3": 244864.09626944
+  },
+  {
+    "part": "parent_camera_mount",
+    "quantity": 1,
+    "print_extents_mm": [
+      104.0,
+      79.45,
+      84.5
+    ],
+    "watertight": true,
+    "volume_mm3": 144199.96101920007
+  },
+  {
+    "part": "parent_td_bracket_jaw",
+    "quantity": 1,
+    "print_extents_mm": [
+      50.0,
+      14.0,
+      8.0
+    ],
+    "watertight": true,
+    "volume_mm3": 5344.7093764288
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "a": "p_main",
+    "b": "p_pwr",
+    "intersection_mm3": 0
+  },
+  {
+    "a": "p_main",
+    "b": "tx_improved",
+    "intersection_mm3": 0
+  },
+  {
+    "a": "p_main",
+    "b": "spresense",
+    "intersection_mm3": 0
+  },
+  {
+    "a": "p_main",
+    "b": "lipo_tray",
+    "intersection_mm3": 0
+  },
+  {
+    "a": "p_main",
+    "b": "lipo",
+    "intersection_mm3": 0
+  },
+  {
+    "a": "p_main",
+    "b": "box_bcas212310g",
+    "intersection_mm3": 0.0
+  },
+  {
+    "a": "p_pwr",
+    "b": "tx_improved",
+    "intersection_mm3": 0
+  },
+  {
+    "a": "p_pwr",
+    "b": "spresense",
+    "intersection_mm3": 0
+  },
+  {
+    "a": "p_pwr",
+    "b": "lipo_tray",
+    "intersection_mm3": 0
+  },
+  {
+    "a": "p_pwr",
+    "b": "lipo",
+    "intersection_mm3": 0
+  },
+  {
+    "a": "p_pwr",
+    "b": "box_bcas212310g",
+    "intersection_mm3": 0.0
+  },
+  {
+    "a": "tx_improved",
+    "b": "spresense",
+    "intersection_mm3": 0
+  },
+  {
+    "a": "tx_improved",
+    "b": "lipo_tray",
+    "intersection_mm3": 0
+  },
+  {
+    "a": "tx_improved",
+    "b": "lipo",
+    "intersection_mm3": 0
+  },
+  {
+    "a": "tx_improved",
+    "b": "box_bcas212310g",
+    "intersection_mm3": 0.0
+  },
+  {
+    "a": "spresense",
+    "b": "lipo_tray",
+    "intersection_mm3": 0
+  },
+  {
+    "a": "spresense",
+    "b": "lipo",
+    "intersection_mm3": 0
+  },
+  {
+    "a": "spresense",
+    "b": "box_bcas212310g",
+    "intersection_mm3": 0.0
+  },
+  {
+    "a": "lipo_tray",
+    "b": "lipo",
+    "intersection_mm3": 0.0
+  },
+  {
+    "a": "lipo_tray",
+    "b": "box_bcas212310g",
+    "intersection_mm3": 0.0
+  },
+  {
+    "a": "lipo",
+    "b": "box_bcas212310g",
+    "intersection_mm3": 0.0
+  }
+]

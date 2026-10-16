@@ -1,0 +1,112 @@
+{
+  "schema": "topopt/slice/1",
+  "part": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\assemblies\\child_horizontal_plate_frame\\parts\\child_horizontal_twist_mount_frame_adapter.stl",
+  "tool": {
+    "name": "Bambu Studio / OrcaSlicer CLI",
+    "path": "C:\\Program Files\\Bambu Studio\\bambu-studio.exe",
+    "version": null
+  },
+  "printer": "X1C",
+  "printer_name": "Bambu Lab X1-Carbon",
+  "material": "PETG",
+  "bed_type": "Textured PEI Plate",
+  "layer_mm": 0.2,
+  "supports": "none",
+  "support_type": null,
+  "orient": "keep",
+  "presets": {
+    "root": "C:\\Program Files\\Bambu Studio\\resources\\profiles",
+    "machine": "Bambu Lab X1 Carbon 0.4 nozzle",
+    "process": "0.20mm Standard @BBL X1C",
+    "filament": "Bambu PETG Basic @BBL X1C",
+    "files": {
+      "machine": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\assemblies\\child_horizontal_plate_frame\\print_jobs\\x1c_petg_basic\\child_horizontal_twist_mount_frame_adapter\\preset_machine.json",
+      "process": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\assemblies\\child_horizontal_plate_frame\\print_jobs\\x1c_petg_basic\\child_horizontal_twist_mount_frame_adapter\\preset_process.json",
+      "filament": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\assemblies\\child_horizontal_plate_frame\\print_jobs\\x1c_petg_basic\\child_horizontal_twist_mount_frame_adapter\\preset_filament.json"
+    }
+  },
+  "project_3mf": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\assemblies\\child_horizontal_plate_frame\\print_jobs\\x1c_petg_basic\\child_horizontal_twist_mount_frame_adapter\\child_horizontal_twist_mount_frame_adapter.3mf",
+  "plate_gcode": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\AquaBeacon-OSS\\mechanical\\assemblies\\child_horizontal_plate_frame\\print_jobs\\x1c_petg_basic\\child_horizontal_twist_mount_frame_adapter\\plate_1.gcode",
+  "seconds": 0.85,
+  "exit_code_slicer": 0,
+  "error": null,
+  "warnings": [],
+  "checks": [
+    {
+      "key": "sliced",
+      "condition": "The slicer produced a sliced plate",
+      "state": "PASS",
+      "detail": "3mf written and parsed"
+    },
+    {
+      "key": "bed_fits",
+      "condition": "The object sits inside the build volume in the orientation it was sliced in",
+      "state": "PASS",
+      "detail": "the slicer's own arrangement result"
+    },
+    {
+      "key": "no_support_in_sealed_cavity",
+      "condition": "No support is generated inside a sealed cavity",
+      "state": "UNKNOWN",
+      "detail": "the slicer reports how much support there is, never where it is; spec 13.3 is a question about location. `printcheck.json` answers the first and third of these on the voxel grid."
+    },
+    {
+      "key": "no_support_out_of_reach",
+      "condition": "No support is generated where a tool cannot reach it",
+      "state": "UNKNOWN",
+      "detail": "the slicer reports how much support there is, never where it is; spec 13.3 is a question about location. `printcheck.json` answers the first and third of these on the voxel grid."
+    },
+    {
+      "key": "no_support_on_mating_faces",
+      "condition": "No support touches a critical (preserve) mating face",
+      "state": "UNKNOWN",
+      "detail": "the slicer reports how much support there is, never where it is; spec 13.3 is a question about location. `printcheck.json` answers the first and third of these on the voxel grid."
+    },
+    {
+      "key": "removal_does_not_break_thin_members",
+      "condition": "Removing the support does not break a thin member",
+      "state": "UNKNOWN",
+      "detail": "the slicer reports how much support there is, never where it is; spec 13.3 is a question about location. `printcheck.json` answers the first and third of these on the voxel grid."
+    },
+    {
+      "key": "support_not_preferred_over_structure",
+      "condition": "Support quantity was not preferred over structural performance",
+      "state": "UNKNOWN",
+      "detail": "the slicer reports how much support there is, never where it is; spec 13.3 is a question about location. `printcheck.json` answers the first and third of these on the voxel grid."
+    }
+  ],
+  "pass": true,
+  "note": "`pass` means the slice ran and the object fits the plate. It is not a spec 13.3 verdict: all five 13.3 conditions are UNKNOWN here.",
+  "print_time_s": 4203.0,
+  "print_time_text": "1h 10m 3s",
+  "model_print_time_text": "1h 9m 43s",
+  "filament_g": 43.64,
+  "filament_mm": 14515.54,
+  "layers": 100,
+  "max_z_mm": 20.0,
+  "object_layers": 100,
+  "layers_note": "`layers` is every layer the machine executes. With `independent_support_layer_height` on (the stock profile) support adds layers of its own, so it exceeds `object_layers` (max_z / layer height).",
+  "bed_fits": true,
+  "support_used": false,
+  "material_density_g_cm3": 1.27,
+  "slicer_filament_density_g_cm3": 1.25,
+  "filament_mm3": 34913.96527371173,
+  "filament_mm3_source": "length x wire cross-section, both from the slicer's G-code header",
+  "filament_by_feature_mm": {
+    "Bottom surface": 281.16,
+    "Brim": 109.872,
+    "Custom": 30.0,
+    "Floating vertical shell": 14.394,
+    "Gap infill": 18.348,
+    "Inner wall": 4186.06,
+    "Internal solid infill": 1943.02,
+    "Outer wall": 628.692,
+    "Sparse infill": 6904.768,
+    "Top surface": 399.223
+  },
+  "support_filament_g": 0.0,
+  "support_mm3": 0.0,
+  "support_mm": 0,
+  "support_fraction": 0.0,
+  "support_note": "summed over the G-code's `; FEATURE: Support*` blocks (the slicer states no support total); the same sum reproduces its own filament total to 0.0000 %. Density 1.250 g/cm3 from the slicer preset. This is extruded 1.75 mm wire, not the part-space volume `printcheck.json` reports."
+}

@@ -1,0 +1,7 @@
+{
+  "status": "prototype_strength_unverified",
+  "note": "\u5f37\u5ea6\u691c\u8a3c\u672a\u5b8c\u4e86\u306e\u8a66\u4f5c\u7248\u300240 N\u306f\u5b9f\u6e2c\u6821\u6b63\u304c\u5fc5\u8981\u3002\u69cb\u9020\u89e3\u6790\u306e\u53ce\u675f\u3068\u56fa\u5b9a\u90e8\u306e\u5c40\u6240\u5fdc\u529b\u306f\u672a\u89e3\u6c7a\u3067\u3001100 N\u624b\u62bc\u3057\u8010\u529b\u3092\u8a8d\u5b9a\u3057\u306a\u3044\u3002X1C PETG Basic / 0.4 nozzle / 0.2 layer / 6 walls / 100% infill. Four types, five printed pieces. M3x20 countersunk A, M3x35 cap B. No dedicated stop; hood seats on platform.",
+  "notes": [
+    "parts/common/jigs/over_center_latch/README.md"
+  ]
+}

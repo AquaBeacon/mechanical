@@ -1,0 +1,132 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "Lid nut aligned with captured hex pocket",
+      "pass_": true,
+      "overlap_mm3": 0.0
+    },
+    {
+      "name": "Tapered roof captures lid nut",
+      "pass_": true,
+      "overlap_mm3": 0.6690223837884013
+    },
+    {
+      "name": "Continuous M3 nut side insertion",
+      "pass_": true,
+      "overlap_mm3": 0.0
+    },
+    {
+      "name": "Enlarged tray tool opening clears 7.8 mm envelope",
+      "pass_": true,
+      "diameter_mm": 7.8
+    },
+    {
+      "name": "Coax ring unchanged after cancelled request",
+      "pass_": true
+    },
+    {
+      "name": "One installed lid screw and one nut",
+      "pass_": true
+    },
+    {
+      "name": "Lid and base seated without penetration",
+      "pass_": true,
+      "overlap_mm3": 0.0
+    },
+    {
+      "name": "lipo_ret_lid installed clearance",
+      "pass_": true,
+      "hits": []
+    },
+    {
+      "name": "lipo_tray installed clearance",
+      "pass_": true,
+      "hits": []
+    },
+    {
+      "name": "Closed battery module continuous vertical removal",
+      "pass_": true,
+      "hits": [],
+      "lift_mm": 90.0
+    },
+    {
+      "name": "lipo_ret_mount_0 driver with lid closed",
+      "pass_": true,
+      "hits": []
+    },
+    {
+      "name": "lipo_ret_mount_1 driver with lid closed",
+      "pass_": true,
+      "hits": []
+    },
+    {
+      "name": "lipo_ret_mount_2 driver with lid closed",
+      "pass_": true,
+      "hits": []
+    },
+    {
+      "name": "lipo_ret_mount_3 driver with lid closed",
+      "pass_": true,
+      "hits": []
+    },
+    {
+      "name": "Removal envelopes contain actual chamfered lid",
+      "pass_": true,
+      "uncovered_mm3": 0.0
+    },
+    {
+      "name": "Continuous full-length slide after raising module",
+      "pass_": true,
+      "hits": []
+    },
+    {
+      "name": "Continuous released lid lift",
+      "pass_": true,
+      "hits": []
+    },
+    {
+      "name": "Side rail 0 prevents direct lift",
+      "pass_": true,
+      "overlap_mm3": 67.54822124793264
+    },
+    {
+      "name": "Side rail 1 prevents direct lift",
+      "pass_": true,
+      "overlap_mm3": 67.62399757870767
+    },
+    {
+      "name": "Retained screw blocks release slide",
+      "pass_": true,
+      "overlap_mm3": 5.896958359608682
+    },
+    {
+      "name": "Maximum rigid pack envelope clears lid and base",
+      "pass_": true
+    },
+    {
+      "name": "Floor scad unchanged",
+      "pass_": true
+    },
+    {
+      "name": "Floor step unchanged",
+      "pass_": true
+    },
+    {
+      "name": "Floor stl unchanged",
+      "pass_": true
+    },
+    {
+      "name": "Full lead-face opening retained",
+      "pass_": true
+    }
+  ],
+  "slide_mm": 108.0,
+  "module_lift_mm": 90.0,
+  "groove_depth_mm": 1.2,
+  "outer_wall_remaining_mm": 1.3,
+  "groove_roof_deg": 45,
+  "clearance_mm": 0.3,
+  "screw": "M3x12 + M3 nut, location0 unchanged",
+  "limitations": "Full-length slide requires removing four tray mount screws and lifting the closed module first. Geometry validation only; physical PETG fit and strength require trial."
+}

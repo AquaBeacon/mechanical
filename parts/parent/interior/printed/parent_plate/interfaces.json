@@ -1,0 +1,117 @@
+{
+ "consumer": "parent_plate",
+ "references": [
+  {
+   "part": "parent_main",
+   "path": "parts/parent/interior/pcb/parent_main",
+   "md_sha256": "ab7d1f080e3e655f03363c84abd9a2b4b33740e069c25b84a2363296fbd742dd",
+   "stl_sha256": "5c9116b796053014d6ef34bddf1d9236b9eeab60ea440bbbf7467b10d3d8e72a",
+   "bbox_mm": [
+    112.0,
+    88.0,
+    24.85
+   ],
+   "status_at_lock": [
+    "needs_measure",
+    "provisional"
+   ],
+   "values": {
+    "main_hole_pitch_x": 103.0,
+    "main_hole_pitch_y": 75.5
+   },
+   "confirmed_by_human": false,
+   "confirmed_at": "2026-08-28T13:23:29",
+   "note": "2026-08-28 PARENT_MAIN.kicad_pcb実座標"
+  },
+  {
+   "part": "parent_pwr",
+   "path": "parts/parent/interior/pcb/parent_pwr",
+   "md_sha256": "cd119b21a8eaa151b2cddc6eb78b99c0adb4642077288e98ead4ef35b294da6a",
+   "stl_sha256": "ab62964bf1bc3535bcfda3e7ace198a8235d723e34f963c627b8fdef1865a311",
+   "bbox_mm": [
+    100.0,
+    84.0,
+    33.28
+   ],
+   "status_at_lock": [
+    "needs_measure",
+    "provisional"
+   ],
+   "values": {
+    "pwr_hole_pitch_x": 90.0,
+    "pwr_hole_pitch_y": 74.0
+   },
+   "confirmed_by_human": false,
+   "confirmed_at": "2026-08-28T13:23:30",
+   "note": "2026-08-28 PARENT_PWR.kicad_pcb実座標"
+  },
+  {
+   "part": "tx_improved",
+   "path": "parts/parent/interior/pcb/tx_improved",
+   "md_sha256": "123a1748a1530ec0b0a9bea496f810020d655d8141c295ce1abb63a0ccbd4235",
+   "stl_sha256": "9400a66d33d8ef62025f0daeb222ec0a39ec89b4eb8a6134e94b2c4bed54eb7f",
+   "bbox_mm": [
+    75.43,
+    50.0,
+    21.14
+   ],
+   "status_at_lock": [
+    "needs_measure",
+    "ordered",
+    "provisional"
+   ],
+   "values": {
+    "tx_hole_pitch_x": 66.0,
+    "tx_hole_pitch_y": 42.0
+   },
+   "confirmed_by_human": false,
+   "confirmed_at": "2026-08-28T13:23:31",
+   "note": "2026-08-28 TX_improved.kicad_pcb実座標(発注済基板)"
+  },
+  {
+   "part": "lipo_3s_2200_zeee",
+   "path": "parts/common/interior/cots/lipo_3s_2200_zeee",
+   "md_sha256": "ad1b056bf2a6aa5104a74bd1b1f32c58651fdf2029ac9e8d736e38dd74cfe8de",
+   "stl_sha256": null,
+   "bbox_mm": null,
+   "status_at_lock": [
+    "needs_measure"
+   ],
+   "values": {
+    "lipo_l": 102.0,
+    "lipo_w": 34.0,
+    "lipo_h": 23.0
+   },
+   "confirmed_by_human": false,
+   "confirmed_at": "2026-08-28T18:02:12",
+   "note": "2026-08-28 商品仕様値。トレイ経由 (parent_lipo_tray) で載る"
+  },
+  {
+   "part": "bcas212310g",
+   "path": "parts/parent/exterior/cots/bcas212310g",
+   "md_sha256": "53245cbbda4d69bb9cde60c4deff080e25b6cbb8322c55d04cd09217622ff9ba",
+   "stl_sha256": "34b8056c89e3bade01bf0692027eb119c0b32aec2b6d8a02444717799a6572c7",
+   "bbox_mm": [
+    210.0,
+    230.0,
+    100.3
+   ],
+   "status_at_lock": [
+    "needs_measure",
+    "not_designed",
+    "provisional"
+   ],
+   "values": {
+    "px": 183.0,
+    "py": 203.0,
+    "m4_pitch_x": 160.0,
+    "m4_pitch_y": 180.0,
+    "corner_cut": 8.0,
+    "tap_pilot": 3.4
+   },
+   "confirmed_by_human": true,
+   "confirmed_at": "2026-08-28T18:02:31",
+   "note": "人間確認 2026-08-28: BCAS212310G で確定 (ユーザー指示)。寸法はタカチ図面 DXF 実座標 (ref/)。ボス高さのみ要実測 / 2026-08-29 ハッシュ更新: 南壁ペネトレータ穴 Ø10.2 x2 (z=65, x=135/170) を箱モデルに追加したことによる DRIFT。上記 values (px/py/M4ピッチ/corner_cut/tap_pilot) は不変なので人間確認は有効のまま。"
+  }
+ ]
+}

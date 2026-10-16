@@ -1,0 +1,571 @@
+### child_vtray_deck_t200
+WARNING: Token 'DOT' defined, but not used
+WARNING: Token 'WORD' defined, but not used
+WARNING: There are 2 unused tokens
+WARNING: Token 'DOT' defined, but not used
+WARNING: Token 'WORD' defined, but not used
+WARNING: There are 2 unused tokens
+Exception while processing file: C:/Users/ryupc/WorkSpace/Mitou26/Body_Models/scad/lib/csg_to_step.py ['Part.Feature' object has no attribute 'Base']
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+FreeCAD 1.0.0, Libs: 1.0.0R39109 (Git)
+(C) 2001-2024 FreeCAD contributors
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+
+  (CSG->STEP failed; using verified STL fallback)
+FreeCAD 1.0.0, Libs: 1.0.0R39109 (Git)
+(C) 2001-2024 FreeCAD contributors
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+
+Recompute......
+						(100 %)	
+								
+*******************************************************************
+******        Statistics on Transfer (Write)                 ******
+
+*******************************************************************
+******        Transfer Mode = 0  I.E.  As Is       ******
+******        Transferring Shape, ShapeType = 0                      ******
+** WorkSession : Sending all data
+ Step File Name : C:/Users/ryupc/WorkSpace/Mitou26/Body_Models/parts/child/interior/printed/child_vtray_deck/child_vtray_deck_t200.step(147266 ents)  Write  Done
+[stl2step] wrote C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\parts\child\interior\printed\child_vtray_deck\child_vtray_deck_t200.step solids=1 faces=7556
+
+Bounding box : 99.40 x 18.70 x 204.00 mm
+Watertight   : 6 open edge(s) — may have holes/non-manifold geometry
+  -> parts\child\interior\printed\child_vtray_deck\child_vtray_deck_t200.{stl,step,_preview.png}
+
+### child_vtray_deck_t300
+WARNING: Token 'DOT' defined, but not used
+WARNING: Token 'WORD' defined, but not used
+WARNING: There are 2 unused tokens
+WARNING: Token 'DOT' defined, but not used
+WARNING: Token 'WORD' defined, but not used
+WARNING: There are 2 unused tokens
+Exception while processing file: C:/Users/ryupc/WorkSpace/Mitou26/Body_Models/scad/lib/csg_to_step.py ['Part.Feature' object has no attribute 'Base']
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+obj [<Part::PartFeature>] has no Name & Shape
+FreeCAD 1.0.0, Libs: 1.0.0R39109 (Git)
+(C) 2001-2024 FreeCAD contributors
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+
+  (CSG->STEP failed; using verified STL fallback)
+FreeCAD 1.0.0, Libs: 1.0.0R39109 (Git)
+(C) 2001-2024 FreeCAD contributors
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+
+Recompute......
+						(100 %)	
+								
+*******************************************************************
+******        Statistics on Transfer (Write)                 ******
+
+*******************************************************************
+******        Transfer Mode = 0  I.E.  As Is       ******
+******        Transferring Shape, ShapeType = 0                      ******
+** WorkSession : Sending all data
+ Step File Name : C:/Users/ryupc/WorkSpace/Mitou26/Body_Models/parts/child/interior/printed/child_vtray_deck/child_vtray_deck_t300.step(147266 ents)  Write  Done
+[stl2step] wrote C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\parts\child\interior\printed\child_vtray_deck\child_vtray_deck_t300.step solids=1 faces=7556
+Bounding box : 99.40 x 18.70 x 304.00 mm
+Watertight   : 6 open edge(s) — may have holes/non-manifold geometry
+  -> parts\child\interior\printed\child_vtray_deck\child_vtray_deck_t300.{stl,step,_preview.png}
+
+### child_flange_brace
+WARNING: Token 'DOT' defined, but not used
+WARNING: Token 'WORD' defined, but not used
+WARNING: There are 2 unused tokens
+Recompute failed : LinearExtrude
+Recompute failed : LinearExtrude
+Recompute failed : LinearExtrude001
+Recompute failed : LinearExtrude001
+[csg2step] doc objects: 37
+[csg2step] tops: [('difference', 5553.9)]
+[csg2step] check vs STL: bbox maxdiff=0.00 mm  volume step=5553.8 stl=5553.7 (0.0%)
+FreeCAD 1.0.0, Libs: 1.0.0R39109 (Git)
+(C) 2001-2024 FreeCAD contributors
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+
+End processing CSG file
+Recompute......
+						(2 %)	
+						(5 %)	
+						(8 %)	
+						(10 %)	
+						(13 %)	
+						(16 %)	
+						(18 %)	
+						(21 %)	
+						(24 %)	
+						(27 %)	
+						(29 %)	
+						(32 %)	
+						(35 %)	
+						(37 %)	
+						(40 %)	
+						(43 %)	
+						(45 %)	
+						(48 %)	
+						(51 %)	
+						(54 %)	
+						(56 %)	
+						(59 %)	
+						(62 %)	
+						(64 %)	
+						(67 %)	
+						(70 %)	
+						(72 %)	
+						(75 %)	
+						(78 %)	
+						(81 %)	
+						(83 %)	
+						(86 %)	
+						(89 %)	
+						(91 %)	
+						(94 %)	
+						(97 %)	
+						(100 %)	
+								
+Recompute......
+						(2 %)	
+						(5 %)	
+						(7 %)	
+						(10 %)	
+						(13 %)	
+						(15 %)	
+						(18 %)	
+						(21 %)	
+						(23 %)	
+						(26 %)	
+						(28 %)	
+						(31 %)	
+						(34 %)	
+						(36 %)	
+						(39 %)	
+						(42 %)	
+						(44 %)	
+						(47 %)	
+						(50 %)	
+						(52 %)	
+						(55 %)	
+						(57 %)	
+						(60 %)	
+						(63 %)	
+						(65 %)	
+						(68 %)	
+						(71 %)	
+						(73 %)	
+						(76 %)	
+						(78 %)	
+						(81 %)	
+						(84 %)	
+						(86 %)	
+						(89 %)	
+						(92 %)	
+						(94 %)	
+						(97 %)	
+						(100 %)	
+								
+*******************************************************************
+******        Statistics on Transfer (Write)                 ******
+
+*******************************************************************
+******        Transfer Mode = 0  I.E.  As Is       ******
+******        Transferring Shape, ShapeType = 0                      ******
+** WorkSession : Sending all data
+ Step File Name : C:/Users/ryupc/WorkSpace/Mitou26/Body_Models/parts/child/interior/printed/child_flange_brace/child_flange_brace.step(1431 ents)  Write  Done
+[csg2step] wrote C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\parts\child\interior\printed\child_flange_brace\child_flange_brace.step volume= 5553.8 solids= 1 faces= 37
+Bounding box : 69.50 x 33.00 x 12.00 mm
+Watertight   : looks closed (every edge shared by 2 faces)
+  -> parts\child\interior\printed\child_flange_brace\child_flange_brace.{stl,step,_preview.png}
+
+### hex_spacer_m3_mf25
+WARNING: Token 'DOT' defined, but not used
+WARNING: Token 'WORD' defined, but not used
+WARNING: There are 2 unused tokens
+obj [<Part::PartFeature>] has no Name & Shape
+[csg2step] doc objects: 4
+[csg2step] tops: [('difference', 605.8), ('cylinder001', 42.5)]
+[csg2step] check vs STL: bbox maxdiff=0.00 mm  volume step=648.3 stl=648.3 (0.0%)
+FreeCAD 1.0.0, Libs: 1.0.0R39109 (Git)
+(C) 2001-2024 FreeCAD contributors
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+
+End processing CSG file
+Recompute......
+						(25 %)	
+						(50 %)	
+						(75 %)	
+						(100 %)	
+								
+Recompute......
+						(20 %)	
+						(40 %)	
+						(60 %)	
+						(80 %)	
+						(100 %)	
+								
+*******************************************************************
+******        Statistics on Transfer (Write)                 ******
+
+*******************************************************************
+******        Transfer Mode = 0  I.E.  As Is       ******
+******        Transferring Shape, ShapeType = 0                      ******
+** WorkSession : Sending all data
+ Step File Name : C:/Users/ryupc/WorkSpace/Mitou26/Body_Models/parts/common/interior/cots/hex_spacer/hex_spacer_m3_mf25.step(326 ents)  Write  Done
+[csg2step] wrote C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\parts\common\interior\cots\hex_spacer\hex_spacer_m3_mf25.step volume= 648.3 solids= 1 faces= 12
+Bounding box : 6.35 x 5.50 x 31.00 mm
+Watertight   : looks closed (every edge shared by 2 faces)
+  -> parts\common\interior\cots\hex_spacer\hex_spacer_m3_mf25.{stl,step,_preview.png}
+
+### hex_spacer_m3_mf30
+WARNING: Token 'DOT' defined, but not used
+WARNING: Token 'WORD' defined, but not used
+WARNING: There are 2 unused tokens
+obj [<Part::PartFeature>] has no Name & Shape
+[csg2step] doc objects: 4
+[csg2step] tops: [('difference', 736.8), ('cylinder001', 42.5)]
+[csg2step] check vs STL: bbox maxdiff=0.00 mm  volume step=779.2 stl=779.3 (0.0%)
+FreeCAD 1.0.0, Libs: 1.0.0R39109 (Git)
+(C) 2001-2024 FreeCAD contributors
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+
+End processing CSG file
+Recompute......
+						(25 %)	
+						(50 %)	
+						(75 %)	
+						(100 %)	
+								
+Recompute......
+						(20 %)	
+						(40 %)	
+						(60 %)	
+						(80 %)	
+						(100 %)	
+								
+*******************************************************************
+******        Statistics on Transfer (Write)                 ******
+
+*******************************************************************
+******        Transfer Mode = 0  I.E.  As Is       ******
+******        Transferring Shape, ShapeType = 0                      ******
+** WorkSession : Sending all data
+ Step File Name : C:/Users/ryupc/WorkSpace/Mitou26/Body_Models/parts/common/interior/cots/hex_spacer/hex_spacer_m3_mf30.step(326 ents)  Write  Done
+[csg2step] wrote C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\parts\common\interior\cots\hex_spacer\hex_spacer_m3_mf30.step volume= 779.2 solids= 1 faces= 12
+Bounding box : 6.35 x 5.50 x 36.00 mm
+Watertight   : looks closed (every edge shared by 2 faces)
+  -> parts\common\interior\cots\hex_spacer\hex_spacer_m3_mf30.{stl,step,_preview.png}
+
+### hex_spacer_m3_mf17
+WARNING: Token 'DOT' defined, but not used
+WARNING: Token 'WORD' defined, but not used
+WARNING: There are 2 unused tokens
+obj [<Part::PartFeature>] has no Name & Shape
+[csg2step] doc objects: 4
+[csg2step] tops: [('difference', 396.3), ('cylinder001', 42.5)]
+[csg2step] check vs STL: bbox maxdiff=0.00 mm  volume step=438.7 stl=438.8 (0.0%)
+FreeCAD 1.0.0, Libs: 1.0.0R39109 (Git)
+(C) 2001-2024 FreeCAD contributors
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+
+End processing CSG file
+Recompute......
+						(25 %)	
+						(50 %)	
+						(75 %)	
+						(100 %)	
+								
+Recompute......
+						(20 %)	
+						(40 %)	
+						(60 %)	
+						(80 %)	
+						(100 %)	
+								
+*******************************************************************
+******        Statistics on Transfer (Write)                 ******
+
+*******************************************************************
+******        Transfer Mode = 0  I.E.  As Is       ******
+******        Transferring Shape, ShapeType = 0                      ******
+** WorkSession : Sending all data
+ Step File Name : C:/Users/ryupc/WorkSpace/Mitou26/Body_Models/parts/common/interior/cots/hex_spacer/hex_spacer_m3_mf17.step(326 ents)  Write  Done
+[csg2step] wrote C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\parts\common\interior\cots\hex_spacer\hex_spacer_m3_mf17.step volume= 438.7 solids= 1 faces= 12
+Bounding box : 6.35 x 5.50 x 23.00 mm
+Watertight   : looks closed (every edge shared by 2 faces)
+  -> parts\common\interior\cots\hex_spacer\hex_spacer_m3_mf17.{stl,step,_preview.png}
+
+### hex_spacer_m3_mf10
+WARNING: Token 'DOT' defined, but not used
+WARNING: Token 'WORD' defined, but not used
+WARNING: There are 2 unused tokens
+obj [<Part::PartFeature>] has no Name & Shape
+[csg2step] doc objects: 4
+[csg2step] tops: [('difference', 212.9), ('cylinder001', 42.5)]
+[csg2step] check vs STL: bbox maxdiff=0.00 mm  volume step=255.3 stl=255.4 (0.0%)
+FreeCAD 1.0.0, Libs: 1.0.0R39109 (Git)
+(C) 2001-2024 FreeCAD contributors
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+
+End processing CSG file
+Recompute......
+						(25 %)	
+						(50 %)	
+						(75 %)	
+						(100 %)	
+								
+Recompute......
+						(20 %)	
+						(40 %)	
+						(60 %)	
+						(80 %)	
+						(100 %)	
+								
+*******************************************************************
+******        Statistics on Transfer (Write)                 ******
+
+*******************************************************************
+******        Transfer Mode = 0  I.E.  As Is       ******
+******        Transferring Shape, ShapeType = 0                      ******
+** WorkSession : Sending all data
+ Step File Name : C:/Users/ryupc/WorkSpace/Mitou26/Body_Models/parts/common/interior/cots/hex_spacer/hex_spacer_m3_mf10.step(326 ents)  Write  Done
+[csg2step] wrote C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\parts\common\interior\cots\hex_spacer\hex_spacer_m3_mf10.step volume= 255.3 solids= 1 faces= 12
+Bounding box : 6.35 x 5.50 x 16.00 mm
+Watertight   : looks closed (every edge shared by 2 faces)
+  -> parts\common\interior\cots\hex_spacer\hex_spacer_m3_mf10.{stl,step,_preview.png}
+
+### hex_spacer_m2_ff6
+WARNING: Token 'DOT' defined, but not used
+WARNING: Token 'WORD' defined, but not used
+WARNING: There are 2 unused tokens
+obj [<Part::PartFeature>] has no Name & Shape
+[csg2step] doc objects: 5
+[csg2step] tops: [('difference', 71.1)]
+[csg2step] check vs STL: bbox maxdiff=0.00 mm  volume step=71.1 stl=71.2 (0.2%)
+FreeCAD 1.0.0, Libs: 1.0.0R39109 (Git)
+(C) 2001-2024 FreeCAD contributors
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+
+End processing CSG file
+Recompute......
+						(20 %)	
+						(40 %)	
+						(60 %)	
+						(80 %)	
+						(100 %)	
+								
+Recompute......
+						(16 %)	
+						(33 %)	
+						(50 %)	
+						(66 %)	
+						(83 %)	
+						(100 %)	
+								
+*******************************************************************
+******        Statistics on Transfer (Write)                 ******
+
+*******************************************************************
+******        Transfer Mode = 0  I.E.  As Is       ******
+******        Transferring Shape, ShapeType = 0                      ******
+** WorkSession : Sending all data
+ Step File Name : C:/Users/ryupc/WorkSpace/Mitou26/Body_Models/parts/common/interior/cots/hex_spacer/hex_spacer_m2_ff6.step(274 ents)  Write  Done
+[csg2step] wrote C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\parts\common\interior\cots\hex_spacer\hex_spacer_m2_ff6.step volume= 71.1 solids= 1 faces= 9
+Bounding box : 4.62 x 4.00 x 6.00 mm
+Watertight   : looks closed (every edge shared by 2 faces)
+  -> parts\common\interior\cots\hex_spacer\hex_spacer_m2_ff6.{stl,step,_preview.png}
+
+### hex_spacer_m3_mf15
+WARNING: Token 'DOT' defined, but not used
+WARNING: Token 'WORD' defined, but not used
+WARNING: There are 2 unused tokens
+obj [<Part::PartFeature>] has no Name & Shape
+[csg2step] doc objects: 4
+[csg2step] tops: [('difference', 343.9), ('cylinder001', 42.5)]
+[csg2step] check vs STL: bbox maxdiff=0.00 mm  volume step=386.3 stl=386.4 (0.0%)
+FreeCAD 1.0.0, Libs: 1.0.0R39109 (Git)
+(C) 2001-2024 FreeCAD contributors
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+
+End processing CSG file
+Recompute......
+						(25 %)	
+						(50 %)	
+						(75 %)	
+						(100 %)	
+								
+Recompute......
+						(20 %)	
+						(40 %)	
+						(60 %)	
+						(80 %)	
+						(100 %)	
+								
+*******************************************************************
+******        Statistics on Transfer (Write)                 ******
+
+*******************************************************************
+******        Transfer Mode = 0  I.E.  As Is       ******
+******        Transferring Shape, ShapeType = 0                      ******
+** WorkSession : Sending all data
+ Step File Name : C:/Users/ryupc/WorkSpace/Mitou26/Body_Models/parts/common/interior/cots/hex_spacer/hex_spacer_m3_mf15.step(326 ents)  Write  Done
+[csg2step] wrote C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\parts\common\interior\cots\hex_spacer\hex_spacer_m3_mf15.step volume= 386.3 solids= 1 faces= 12
+Bounding box : 6.35 x 5.50 x 21.00 mm
+Watertight   : looks closed (every edge shared by 2 faces)
+  -> parts\common\interior\cots\hex_spacer\hex_spacer_m3_mf15.{stl,step,_preview.png}
+
+### hex_spacer_m3_mf12
+WARNING: Token 'DOT' defined, but not used
+WARNING: Token 'WORD' defined, but not used
+WARNING: There are 2 unused tokens
+obj [<Part::PartFeature>] has no Name & Shape
+[csg2step] doc objects: 4
+[csg2step] tops: [('difference', 265.3), ('cylinder001', 42.5)]
+[csg2step] check vs STL: bbox maxdiff=0.00 mm  volume step=307.7 stl=307.8 (0.0%)
+FreeCAD 1.0.0, Libs: 1.0.0R39109 (Git)
+(C) 2001-2024 FreeCAD contributors
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+
+End processing CSG file
+Recompute......
+						(25 %)	
+						(50 %)	
+						(75 %)	
+						(100 %)	
+								
+Recompute......
+						(20 %)	
+						(40 %)	
+						(60 %)	
+						(80 %)	
+						(100 %)	
+								
+*******************************************************************
+******        Statistics on Transfer (Write)                 ******
+
+*******************************************************************
+******        Transfer Mode = 0  I.E.  As Is       ******
+******        Transferring Shape, ShapeType = 0                      ******
+** WorkSession : Sending all data
+ Step File Name : C:/Users/ryupc/WorkSpace/Mitou26/Body_Models/parts/common/interior/cots/hex_spacer/hex_spacer_m3_mf12.step(326 ents)  Write  Done
+[csg2step] wrote C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\parts\common\interior\cots\hex_spacer\hex_spacer_m3_mf12.step volume= 307.7 solids= 1 faces= 12
+Bounding box : 6.35 x 5.50 x 18.00 mm
+Watertight   : looks closed (every edge shared by 2 faces)
+  -> parts\common\interior\cots\hex_spacer\hex_spacer_m3_mf12.{stl,step,_preview.png}
+
+

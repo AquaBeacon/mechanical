@@ -1,0 +1,49 @@
+{
+  "updated": "2026-09-10T19:13:25+09:00",
+  "runs": [
+    {
+      "part": "child_cam_bridge",
+      "phase": "exploration",
+      "status": "finished",
+      "min_safety_factor": 2.818221959058625,
+      "safety_factor_p99_5": 8.04044644330429,
+      "max_displacement_mm": 0.7890911562667182,
+      "termination_reason": "max_iterations",
+      "tool_pass": false,
+      "judgement": "未合格"
+    },
+    {
+      "part": "child_jaw_gate",
+      "phase": "exploration",
+      "status": "finished",
+      "min_safety_factor": 0.17223418259166032,
+      "safety_factor_p99_5": 0.4036564170025923,
+      "max_displacement_mm": 33.485946975487536,
+      "termination_reason": "max_iterations",
+      "tool_pass": false,
+      "judgement": "未合格"
+    },
+    {
+      "part": "child_core_frame",
+      "phase": "exploration",
+      "status": "finished",
+      "min_safety_factor": 1.119649458110596,
+      "safety_factor_p99_5": 2.2736003193204883,
+      "max_displacement_mm": 3.934495136979807,
+      "termination_reason": "max_iterations",
+      "tool_pass": false,
+      "judgement": "未合格"
+    },
+    {
+      "part": "child_cam_bridge",
+      "phase": "refined",
+      "status": "finished",
+      "min_safety_factor": 6.331918722822229,
+      "safety_factor_p99_5": 29.252266537291437,
+      "max_displacement_mm": 0.14146555429390414,
+      "termination_reason": "max_iterations",
+      "tool_pass": false,
+      "judgement": "未合格"
+    }
+  ]
+}

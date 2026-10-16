@@ -1,0 +1,789 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "PCB M3 through hole 0",
+      "pass_": true,
+      "overlap_mm3": 0.0
+    },
+    {
+      "name": "printed M3 bore 0",
+      "pass_": true,
+      "overlap_mm3": 0.0
+    },
+    {
+      "name": "PCB support contact 0",
+      "pass_": true
+    },
+    {
+      "name": "PCB M3 through hole 1",
+      "pass_": true,
+      "overlap_mm3": 0.0
+    },
+    {
+      "name": "printed M3 bore 1",
+      "pass_": true,
+      "overlap_mm3": 0.0
+    },
+    {
+      "name": "PCB support contact 1",
+      "pass_": true
+    },
+    {
+      "name": "PCB M3 through hole 2",
+      "pass_": true,
+      "overlap_mm3": 0.0
+    },
+    {
+      "name": "printed M3 bore 2",
+      "pass_": true,
+      "overlap_mm3": 0.0
+    },
+    {
+      "name": "PCB support contact 2",
+      "pass_": true
+    },
+    {
+      "name": "PCB M3 through hole 3",
+      "pass_": true,
+      "overlap_mm3": 0.0
+    },
+    {
+      "name": "printed M3 bore 3",
+      "pass_": true,
+      "overlap_mm3": 0.0
+    },
+    {
+      "name": "PCB support contact 3",
+      "pass_": true
+    },
+    {
+      "name": "Sensor and universal PCB bottoms both Z56",
+      "pass_": true
+    },
+    {
+      "name": "Connected support frame",
+      "pass_": true
+    },
+    {
+      "name": "Sensor longitudinal rail joins rear beam X47.54",
+      "pass_": true
+    },
+    {
+      "name": "Sensor longitudinal rail joins rear beam X60.24",
+      "pass_": true
+    },
+    {
+      "name": "Sensor transverse rail joins GNSS X rail Y197.54",
+      "pass_": true
+    },
+    {
+      "name": "Sensor transverse rail joins GNSS X rail Y217.86",
+      "pass_": true
+    },
+    {
+      "name": "gnss_universal_carrier final occupied geometry",
+      "pass_": true,
+      "collisions": []
+    },
+    {
+      "name": "gnss_universal_pcb final occupied geometry",
+      "pass_": true,
+      "collisions": []
+    },
+    {
+      "name": "gnss_receiver final occupied geometry",
+      "pass_": true,
+      "collisions": []
+    },
+    {
+      "name": "gnss_sma_plug final occupied geometry",
+      "pass_": true,
+      "collisions": []
+    },
+    {
+      "name": "gnss_pin_headers final occupied geometry",
+      "pass_": true,
+      "collisions": []
+    },
+    {
+      "name": "gnss_xh_keepout final occupied geometry",
+      "pass_": true,
+      "collisions": []
+    },
+    {
+      "name": "gnss_coax_route final occupied geometry",
+      "pass_": true,
+      "collisions": []
+    },
+    {
+      "name": "magnetometer final occupied geometry",
+      "pass_": true,
+      "collisions": []
+    },
+    {
+      "name": "mag_bolt_0 final occupied geometry",
+      "pass_": true,
+      "collisions": []
+    },
+    {
+      "name": "mag_nut_0 final occupied geometry",
+      "pass_": true,
+      "collisions": []
+    },
+    {
+      "name": "mag_bolt_1 final occupied geometry",
+      "pass_": true,
+      "collisions": []
+    },
+    {
+      "name": "mag_nut_1 final occupied geometry",
+      "pass_": true,
+      "collisions": []
+    },
+    {
+      "name": "mag_bolt_2 final occupied geometry",
+      "pass_": true,
+      "collisions": []
+    },
+    {
+      "name": "mag_nut_2 final occupied geometry",
+      "pass_": true,
+      "collisions": []
+    },
+    {
+      "name": "mag_bolt_3 final occupied geometry",
+      "pass_": true,
+      "collisions": []
+    },
+    {
+      "name": "mag_nut_3 final occupied geometry",
+      "pass_": true,
+      "collisions": []
+    },
+    {
+      "name": "gnss_pcb_bolt_0 final occupied geometry",
+      "pass_": true,
+      "collisions": []
+    },
+    {
+      "name": "gnss_pcb_nut_0 final occupied geometry",
+      "pass_": true,
+      "collisions": []
+    },
+    {
+      "name": "gnss_pcb_bolt_1 final occupied geometry",
+      "pass_": true,
+      "collisions": []
+    },
+    {
+      "name": "gnss_pcb_nut_1 final occupied geometry",
+      "pass_": true,
+      "collisions": []
+    },
+    {
+      "name": "gnss_pcb_bolt_2 final occupied geometry",
+      "pass_": true,
+      "collisions": []
+    },
+    {
+      "name": "gnss_pcb_nut_2 final occupied geometry",
+      "pass_": true,
+      "collisions": []
+    },
+    {
+      "name": "gnss_pcb_bolt_3 final occupied geometry",
+      "pass_": true,
+      "collisions": []
+    },
+    {
+      "name": "gnss_pcb_nut_3 final occupied geometry",
+      "pass_": true,
+      "collisions": []
+    },
+    {
+      "name": "Switch relief only removes material from the assembly-path-verified frame",
+      "pass_": true,
+      "added_material_mm3": 0.0,
+      "prior_volume_mm3": 20000.65082285856,
+      "current_volume_mm3": 19964.136289988935
+    },
+    {
+      "name": "plate unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "p_main unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "p_pwr unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "tx_improved unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "spresense unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "lipo_tray unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "lipo unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "pen_tether unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "pen_td04a unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "box_bcas212310g unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "lipo_ret_lid unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "lipo_ret_pads unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "lipo_ret_bolt_0 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "lipo_ret_nut_0 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "lipo_ret_bolt_1 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "lipo_ret_nut_1 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "lipo_ret_bolt_2 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "lipo_ret_nut_2 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "lipo_ret_bolt_3 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "lipo_ret_nut_3 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "lipo_ret_mount_0 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "lipo_ret_mount_1 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "lipo_ret_mount_2 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "lipo_ret_mount_3 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "case_anchor_0 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "case_anchor_1 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "case_anchor_2 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "case_anchor_3 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "main_column_0 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "main_column_1 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "main_column_2 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "main_column_3 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "main_mount_plate unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "sony_mount_plate unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "sony_column_0 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "sony_column_1 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "sony_column_2 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "sony_column_3 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "lid_keepout unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "main_mount_0 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "main_mount_1 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "main_mount_2 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "main_mount_3 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "sony_mount_0 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "sony_mount_1 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "sony_mount_2 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "sony_mount_3 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "pwr_mount_0 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "pwr_mount_1 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "pwr_mount_2 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "pwr_mount_3 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "tx_mount_0 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "tx_mount_1 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "tx_mount_2 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "tx_mount_3 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "main_carrier_nut_0 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "main_carrier_mount_0 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "main_carrier_nut_1 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "main_carrier_nut_2 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "main_carrier_nut_3 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "sony_carrier_nut_0 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "sony_carrier_mount_0 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "sony_carrier_nut_1 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "sony_carrier_mount_1 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "sony_carrier_nut_2 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "sony_carrier_mount_2 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "sony_carrier_nut_3 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "sony_carrier_mount_3 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "gnss_frame_nut_0 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "gnss_frame_mount_0 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "gnss_frame_nut_1 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "gnss_frame_mount_1 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "gnss_frame_nut_2 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "gnss_frame_mount_2 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "gnss_frame_nut_3 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "gnss_frame_mount_3 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "antenna_rack_nut_0 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "antenna_rack_mount_0 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "antenna_rack_nut_1 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "antenna_rack_mount_1 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "antenna_rack_nut_2 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "antenna_rack_mount_2 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "antenna_rack_nut_3 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "antenna_rack_mount_3 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "gnss_column_0 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "gnss_column_1 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "gnss_column_2 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "gnss_column_3 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "antenna_rack unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "coax_ring unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "antenna_ground_plate unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "gnss_antenna unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "coax_coil_keepout unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "ground_plate_mount_0 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "ground_plate_nut_0 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "ground_plate_mount_1 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "ground_plate_nut_1 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "ground_plate_mount_2 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "ground_plate_nut_2 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "ground_plate_mount_3 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "ground_plate_nut_3 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "antenna_mount_0 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "antenna_nut_0 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "antenna_mount_1 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "antenna_nut_1 unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "tx_top_keepout unchanged placement and STEP hash",
+      "pass_": true
+    },
+    {
+      "name": "Closed STL and analytic STEP agreement",
+      "pass_": true,
+      "bbox_difference_mm": 7.629394573882564e-07,
+      "relative_volume_difference": 1.43726654854084e-05
+    }
+  ],
+  "holes_xy_mm": [
+    [
+      71.5,
+      141.5
+    ],
+    [
+      126.5,
+      141.5
+    ],
+    [
+      71.5,
+      216.5
+    ],
+    [
+      126.5,
+      216.5
+    ]
+  ],
+  "pitch_XY_mm": [
+    55,
+    75
+  ],
+  "edge_offsets_mm": [
+    2.5,
+    2.5
+  ],
+  "unchanged_components": [
+    "plate",
+    "p_main",
+    "p_pwr",
+    "tx_improved",
+    "spresense",
+    "lipo_tray",
+    "lipo",
+    "pen_tether",
+    "pen_td04a",
+    "box_bcas212310g",
+    "lipo_ret_lid",
+    "lipo_ret_pads",
+    "lipo_ret_bolt_0",
+    "lipo_ret_nut_0",
+    "lipo_ret_bolt_1",
+    "lipo_ret_nut_1",
+    "lipo_ret_bolt_2",
+    "lipo_ret_nut_2",
+    "lipo_ret_bolt_3",
+    "lipo_ret_nut_3",
+    "lipo_ret_mount_0",
+    "lipo_ret_mount_1",
+    "lipo_ret_mount_2",
+    "lipo_ret_mount_3",
+    "case_anchor_0",
+    "case_anchor_1",
+    "case_anchor_2",
+    "case_anchor_3",
+    "main_column_0",
+    "main_column_1",
+    "main_column_2",
+    "main_column_3",
+    "main_mount_plate",
+    "sony_mount_plate",
+    "sony_column_0",
+    "sony_column_1",
+    "sony_column_2",
+    "sony_column_3",
+    "lid_keepout",
+    "main_mount_0",
+    "main_mount_1",
+    "main_mount_2",
+    "main_mount_3",
+    "sony_mount_0",
+    "sony_mount_1",
+    "sony_mount_2",
+    "sony_mount_3",
+    "pwr_mount_0",
+    "pwr_mount_1",
+    "pwr_mount_2",
+    "pwr_mount_3",
+    "tx_mount_0",
+    "tx_mount_1",
+    "tx_mount_2",
+    "tx_mount_3",
+    "main_carrier_nut_0",
+    "main_carrier_mount_0",
+    "main_carrier_nut_1",
+    "main_carrier_nut_2",
+    "main_carrier_nut_3",
+    "sony_carrier_nut_0",
+    "sony_carrier_mount_0",
+    "sony_carrier_nut_1",
+    "sony_carrier_mount_1",
+    "sony_carrier_nut_2",
+    "sony_carrier_mount_2",
+    "sony_carrier_nut_3",
+    "sony_carrier_mount_3",
+    "gnss_frame_nut_0",
+    "gnss_frame_mount_0",
+    "gnss_frame_nut_1",
+    "gnss_frame_mount_1",
+    "gnss_frame_nut_2",
+    "gnss_frame_mount_2",
+    "gnss_frame_nut_3",
+    "gnss_frame_mount_3",
+    "antenna_rack_nut_0",
+    "antenna_rack_mount_0",
+    "antenna_rack_nut_1",
+    "antenna_rack_mount_1",
+    "antenna_rack_nut_2",
+    "antenna_rack_mount_2",
+    "antenna_rack_nut_3",
+    "antenna_rack_mount_3",
+    "gnss_column_0",
+    "gnss_column_1",
+    "gnss_column_2",
+    "gnss_column_3",
+    "antenna_rack",
+    "coax_ring",
+    "antenna_ground_plate",
+    "gnss_antenna",
+    "coax_coil_keepout",
+    "ground_plate_mount_0",
+    "ground_plate_nut_0",
+    "ground_plate_mount_1",
+    "ground_plate_nut_1",
+    "ground_plate_mount_2",
+    "ground_plate_nut_2",
+    "ground_plate_mount_3",
+    "ground_plate_nut_3",
+    "antenna_mount_0",
+    "antenna_nut_0",
+    "antenna_mount_1",
+    "antenna_nut_1",
+    "tx_top_keepout"
+  ],
+  "frame_bounds_mm": [
+    8.5,
+    135.499999899997,
+    49.999999899999516,
+    139.50000000000003,
+    222.50000000000003,
+    57.300000000000004
+  ],
+  "frame_volume_mm3": 19964.136289988935,
+  "gnss_nut_to_right_column_nominal_X_gap_mm": 0.8245735194570614,
+  "minimum_M3_rail_edge_ligament_mm": 1.6328734544956203,
+  "structural_validation": "No load/FEA/creep/physical validation; connected geometry and four bearing contacts only",
+  "manufacturing_release": false
+}

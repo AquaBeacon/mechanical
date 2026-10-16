@@ -1,0 +1,22 @@
+{
+  "consumer": "child_lcd_support",
+  "references": [
+    {
+      "part": "wte4_flange",
+      "path": "parts/child/exterior/cots/wte4_flange",
+      "md_sha256": "d725b307fb5558fc33881ca3fd2eca7b61fa377a2483b0ffc25c98e4e96a178c",
+      "stl_sha256": null,
+      "bbox_mm": null,
+      "status_at_lock": [
+        "needs_measure"
+      ],
+      "values": {
+        "flange_bcd": 94.0,
+        "flange_face_z": 19.0
+      },
+      "confirmed_by_human": true,
+      "confirmed_at": "2026-09-03T22:01:47",
+      "note": "人間確認 2026-09-03: 内装固定の 4 穴はフランジ BR-101040 内面 (BCD94, 0/90/180/270)。90° を下アーチの耳で使う (3 点固定を選択)"
+    }
+  ]
+}

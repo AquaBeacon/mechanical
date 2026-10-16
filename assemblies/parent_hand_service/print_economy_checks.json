@@ -1,0 +1,311 @@
+{
+  "status": "PASS_CAD_AND_SLICING",
+  "before": {
+    "types": 9,
+    "pieces": 9,
+    "cad_dense_petg_g": 694.3465865076877,
+    "sliced_filament_g": 843.4223476648331,
+    "support_extrusion_g": 175.94980473390115,
+    "prediction_hours": 25.383996734619142
+  },
+  "after": {
+    "types": 12,
+    "pieces": 14,
+    "cad_dense_petg_g": 622.3415404742755,
+    "sliced_filament_g": 621.0865615606308,
+    "support_extrusion_g": 21.161121604093413,
+    "prediction_hours": 22.760298817952478
+  },
+  "cad_before": {
+    "floor_plate": {
+      "quantity": 1,
+      "volume_mm3": 241397.63522968465,
+      "dense_petg_g": 306.5749967416995,
+      "valid": true,
+      "solids": 1,
+      "bbox_mm": [
+        195.95000000000368,
+        212.75000000000003,
+        19.410000000004672
+      ],
+      "step_sha256": "ab34bbe743a0ec34726d1b22926d37725c0a929e0949a52b54328855e1944ac7"
+    },
+    "battery_base": {
+      "quantity": 1,
+      "volume_mm3": 36921.59843727206,
+      "dense_petg_g": 46.890430015335525,
+      "valid": true,
+      "solids": 1,
+      "bbox_mm": [
+        110.4,
+        63.500000000000014,
+        29.00000000000025
+      ],
+      "step_sha256": "a1d8964b3a3641cdddd4caa6c33a51efd4cfc0c6b281dca572e7127be3b8b6f6"
+    },
+    "parent_lipo_retainer_lid_narrow": {
+      "quantity": 1,
+      "volume_mm3": 17438.78645053518,
+      "dense_petg_g": 22.147258792179677,
+      "valid": true,
+      "solids": 1,
+      "bbox_mm": [
+        110.4,
+        53.0,
+        3.0
+      ],
+      "step_sha256": "37062e4cbaa0f3056b07a3efaaee958278f699d4a70466865bdf22f341830bab"
+    },
+    "main_lower_carrier": {
+      "quantity": 1,
+      "volume_mm3": 77342.56511329873,
+      "dense_petg_g": 98.22505769388938,
+      "valid": true,
+      "solids": 1,
+      "bbox_mm": [
+        113.5,
+        100.00000000000001,
+        23.150000200000004
+      ],
+      "step_sha256": "8d630e6edf3eabe1957ad9ca1f765e41f6e2efc03a024a02f49600be55faf2db"
+    },
+    "sony_upper_carrier": {
+      "quantity": 1,
+      "volume_mm3": 63619.766261284516,
+      "dense_petg_g": 80.79710315183134,
+      "valid": true,
+      "solids": 1,
+      "bbox_mm": [
+        63.300000000003024,
+        87.0,
+        46.800000100000005
+      ],
+      "step_sha256": "871010cf3c512d178b566b04c366e647ec1edd0f4d83b6462e3b8107eabfd95c"
+    },
+    "gnss_universal_carrier": {
+      "quantity": 1,
+      "volume_mm3": 24064.86610509456,
+      "dense_petg_g": 30.562379953470092,
+      "valid": true,
+      "solids": 1,
+      "bbox_mm": [
+        131.0000000000025,
+        87.00000000000105,
+        57.20000000000451
+      ],
+      "step_sha256": "cab6333baac8f8b5bf9c77a7d8e6628bc48a3caa4f65f24fa45ec62ad86bd466"
+    },
+    "gnss_edge_cap_front": {
+      "quantity": 1,
+      "volume_mm3": 578.5539971417923,
+      "dense_petg_g": 0.7347635763700762,
+      "valid": true,
+      "solids": 1,
+      "bbox_mm": [
+        60.0,
+        5.000000000000005,
+        2.0000000000000058
+      ],
+      "step_sha256": "047cead3e052e3c54e71d626700ae0dcca5bfd7d0defa63ed8ef8ad7bf280f74"
+    },
+    "gnss_edge_cap": {
+      "quantity": 1,
+      "volume_mm3": 578.5539971417923,
+      "dense_petg_g": 0.7347635763700762,
+      "valid": true,
+      "solids": 1,
+      "bbox_mm": [
+        60.0,
+        5.000000000000005,
+        2.0000000000000058
+      ],
+      "step_sha256": "ead8db97c62074d711a37e38e25d574a9f8d34d213c4a9fce8e3a9575c83ee77"
+    },
+    "ann_mb1_internal_rack": {
+      "quantity": 1,
+      "volume_mm3": 84787.27008389134,
+      "dense_petg_g": 107.67983300654201,
+      "valid": true,
+      "solids": 1,
+      "bbox_mm": [
+        131.0000002,
+        106.0000002,
+        44.800000200008924
+      ],
+      "step_sha256": "ba83bc3411aa2fbfd07e34a34ef658e8dabd04408629d0a0b08b37d56b59a56d"
+    }
+  },
+  "cad_after": {
+    "floor_plate": {
+      "quantity": 1,
+      "volume_mm3": 186274.4452636176,
+      "dense_petg_g": 236.56854548479438,
+      "valid": true,
+      "solids": 1,
+      "bbox_mm": [
+        195.95000000000385,
+        212.75000000000003,
+        19.410000100000005
+      ],
+      "step_sha256": "f0467d47485ae785fd68f739bbe110e336c1246148e3a7111b9cbce5f5e82bbc"
+    },
+    "battery_base": {
+      "quantity": 1,
+      "volume_mm3": 36921.59843727206,
+      "dense_petg_g": 46.890430015335525,
+      "valid": true,
+      "solids": 1,
+      "bbox_mm": [
+        110.4,
+        63.500000000000014,
+        29.00000000000025
+      ],
+      "step_sha256": "26b42d73fb9f5456a9f566d2691e1ff6ff0635d6eeb60f708bd95f7bd0c4b0e4"
+    },
+    "parent_lipo_retainer_lid_narrow": {
+      "quantity": 1,
+      "volume_mm3": 17438.78645053518,
+      "dense_petg_g": 22.147258792179677,
+      "valid": true,
+      "solids": 1,
+      "bbox_mm": [
+        110.4,
+        53.0,
+        3.0
+      ],
+      "step_sha256": "37062e4cbaa0f3056b07a3efaaee958278f699d4a70466865bdf22f341830bab"
+    },
+    "main_lower_carrier": {
+      "quantity": 1,
+      "volume_mm3": 71445.39812210087,
+      "dense_petg_g": 90.73565561506811,
+      "valid": true,
+      "solids": 1,
+      "bbox_mm": [
+        113.5,
+        100.00000000000001,
+        23.150000200000004
+      ],
+      "step_sha256": "fc637899cc112a1215e5a613194482b6ec28fe209a46b8e696bdfdcc0411c9db"
+    },
+    "sony_upper_carrier": {
+      "quantity": 1,
+      "volume_mm3": 66854.46632776925,
+      "dense_petg_g": 84.90517223626695,
+      "valid": true,
+      "solids": 1,
+      "bbox_mm": [
+        63.300000000003024,
+        87.0,
+        46.800000100000005
+      ],
+      "step_sha256": "48ca72968e4a40036cfe0af7c9bb5db8be22a854f5766fdf80dcd04517d3a317"
+    },
+    "gnss_universal_carrier": {
+      "quantity": 1,
+      "volume_mm3": 18201.193376156203,
+      "dense_petg_g": 23.11551558771838,
+      "valid": true,
+      "solids": 1,
+      "bbox_mm": [
+        131.0000000000045,
+        87.00000000000105,
+        26.000000000004
+      ],
+      "step_sha256": "650269dce830bb3615a2423998b8fbcd0f0ac72f61321bf1e2a5fb1c8d05c78f"
+    },
+    "gnss_column_front": {
+      "quantity": 2,
+      "volume_mm3": 2266.264214191846,
+      "dense_petg_g": 2.8781555520236446,
+      "valid": true,
+      "solids": 1,
+      "bbox_mm": [
+        9.0,
+        9.0,
+        32.0
+      ],
+      "step_sha256": "bb8ad7f238491a788c2c7f468233216e824136d37e10fd69d7f5bf6998241b03"
+    },
+    "gnss_column_rear": {
+      "quantity": 2,
+      "volume_mm3": 1216.7442141918477,
+      "dense_petg_g": 1.5452651520236467,
+      "valid": true,
+      "solids": 1,
+      "bbox_mm": [
+        8.0,
+        6.000000000000001,
+        32.0
+      ],
+      "step_sha256": "b9bcce63b286c893402334252ce343fd6123324c0de16fda9558e2686a069bbe"
+    },
+    "gnss_edge_cap_front": {
+      "quantity": 1,
+      "volume_mm3": 578.5539971417923,
+      "dense_petg_g": 0.7347635763700762,
+      "valid": true,
+      "solids": 1,
+      "bbox_mm": [
+        60.0,
+        5.000000000000005,
+        2.0000000000000058
+      ],
+      "step_sha256": "3087e40e91bd040e860033b70402b51945ecc205eeb33e5cde4ddf4fcfc8a2aa"
+    },
+    "gnss_edge_cap": {
+      "quantity": 1,
+      "volume_mm3": 578.5539971417923,
+      "dense_petg_g": 0.7347635763700762,
+      "valid": true,
+      "solids": 1,
+      "bbox_mm": [
+        60.0,
+        5.000000000000005,
+        2.0000000000000058
+      ],
+      "step_sha256": "00a4e48a1a32009db6207667f0673baa64e1f67ab2ca75d32326c9641a31935b"
+    },
+    "ann_mb1_internal_rack": {
+      "quantity": 1,
+      "volume_mm3": 61237.56905806978,
+      "dense_petg_g": 77.77171270374862,
+      "valid": true,
+      "solids": 1,
+      "bbox_mm": [
+        130.0,
+        78.0,
+        42.6000001
+      ],
+      "step_sha256": "e176b244bb485f271da8a4638fd779d980340dc3f778c8eae4443a47ccdba2a3"
+    },
+    "ann_mb1_coax_ring": {
+      "quantity": 1,
+      "volume_mm3": 23536.127148290747,
+      "dense_petg_g": 29.890881478329252,
+      "valid": true,
+      "solids": 1,
+      "bbox_mm": [
+        131.0000002,
+        106.0000002,
+        14.000000100008922
+      ],
+      "step_sha256": "5420b5e8bd47557dd0ab2c1f377c6dba9ac3ab304a06441489620e8b8efe7896"
+    }
+  },
+  "reduction_percent": {
+    "cad_dense_petg_g": 10.370187948294173,
+    "sliced_filament_g": 26.36114477162942,
+    "support_extrusion_g": 87.9732054058846,
+    "prediction_hours": 10.33603157176749
+  },
+  "floor_cad_reduction_percent": 22.835016554167364,
+  "slice_conditions": "Bambu Studio installed X1C0.4, generic PETG density1.27, textured PEI, 0.20mm,4walls,100%infill,3mmbrim,normal auto supports45deg,both sides0.2mm gap,dont_support_bridges enabled; identical before/after settings",
+  "support_measure": "Positive moving extrusion in G-code feature labels Support/Support interface/Support transition,1.75mm filament x density1.27; excludes retraction and stationary priming. Slicer total includes brim and priming.",
+  "warnings": {},
+  "limitations": [
+    "Printer and filament-specific bridge/overhang performance needs physical print; successful slicing does not prove printable strength.",
+    "Short bridges/local overhangs still use supports; do not disable all supports globally.",
+    "New split keys and floor lightening invalidate previous full-part FEA. No mechanical guarantee or manufacturing qualification."
+  ]
+}

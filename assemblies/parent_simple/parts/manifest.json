@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "assembly": "parent_simple",
+  "release_status": "existing_prototype",
+  "note": "既存構成の印刷データを整理。強度・造形性の新規認証ではない。",
+  "source_hashes": {
+    "assemblies/parent_simple/placement.json": "1e24b01f94961cf64eb10b2b9fc39294a5ab606ebad9bf59b81f85ec3a882180",
+    "assemblies/parent_simple/README.md": "c15da06a5670be5b727fa839c6e77b20cd5cf2c4575d73ad8dac3b145e6ea72a",
+    "parts/parent/exterior/printed/parent_simple_deck/parent_simple_deck.scad": "618a3809a4bb29adb83a60fc06ba963dace6007bd59352da5bf6eabaaffa093f"
+  },
+  "parts": [
+    {
+      "part": "parts/parent/exterior/printed/parent_simple_deck",
+      "stem": "parent_simple_deck",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "simple_deck"
+      ],
+      "file": "parent_simple_deck.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/exterior/printed/parent_simple_deck/parent_simple_deck.stl",
+      "source_sha256": "93372b34cdf35de29f1febae7afcfd7fbff0ff590ac99ece158cbc0eec48a170",
+      "sha256": "90b1feb32e458b07fed71192701aa9c506b8b86c4e00a51d358d38d30a0567e9",
+      "extents_mm": [
+        236.0,
+        236.0,
+        12.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          118.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          118.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          12.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    }
+  ],
+  "modifiers": [],
+  "generated_files": [
+    "parent_simple_deck.stl",
+    "DESIGN_NOTES.md",
+    "PRINT.md"
+  ],
+  "document_hashes": {
+    "DESIGN_NOTES.md": "945519086516e2aa6a8104d2ce795224730374ad112647c6c12434fc155cc828",
+    "PRINT.md": "7ed45b40c4499f82d859cf88acc51b7e56c63b614e20628e44af2441dc125d5b"
+  }
+}

@@ -1,0 +1,1655 @@
+{
+  "name": "parent_open",
+  "note": "Open lower frame with downward camera and TD04A metal-bracket sandwich mount. TD geometry remains provisional.",
+  "coordinate_system": "Box bottom Z=0. Deck Z=-12..0.",
+  "groups": {
+    "exterior": true,
+    "vessel": true,
+    "floats": true,
+    "hardware": true,
+    "pads": true,
+    "envelope": true
+  },
+  "items": [
+    {
+      "label": "open_frame",
+      "part": "parts/parent/exterior/printed/parent_open_frame",
+      "group": "exterior",
+      "color": "Orange",
+      "ops": []
+    },
+    {
+      "label": "box_bcas212310g",
+      "part": "parts/parent/exterior/cots/bcas212310g",
+      "group": "vessel",
+      "color": "LightSteelBlue",
+      "alpha": 0.65,
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            460
+          ]
+        },
+        {
+          "translate": [
+            -105,
+            -115,
+            0
+          ]
+        }
+      ],
+      "file": "bcas212310g"
+    },
+    {
+      "label": "pen_tether",
+      "part": "parts/common/exterior/cots/wetlink_penetrator_m10",
+      "file": "wetlink_penetrator_m10_ref_bcas",
+      "group": "vessel",
+      "color": "Silver",
+      "alpha": 1.0,
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            460
+          ]
+        },
+        {
+          "translate": [
+            15,
+            -115,
+            65
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pen_td04a",
+      "part": "parts/common/exterior/cots/wetlink_penetrator_m10",
+      "file": "wetlink_penetrator_m10_ref_bcas",
+      "group": "vessel",
+      "color": "Silver",
+      "alpha": 1.0,
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            460
+          ]
+        },
+        {
+          "translate": [
+            -20,
+            -115,
+            65
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rope_float_-1",
+      "part": "parts/parent/exterior/cots/parent_fender",
+      "color": "LightSkyBlue",
+      "group": "floats",
+      "ops": [
+        {
+          "translate": [
+            -178,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rope_float_1",
+      "part": "parts/parent/exterior/cots/parent_fender",
+      "color": "LightSkyBlue",
+      "group": "floats",
+      "ops": [
+        {
+          "translate": [
+            178,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "float_lug_-1_-85",
+      "part": "parts/parent/exterior/printed/parent_float_lug",
+      "ops": [
+        {
+          "translate": [
+            0,
+            -85,
+            0
+          ]
+        },
+        {
+          "mirror": [
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "exterior",
+      "color": "Orange"
+    },
+    {
+      "label": "float_lug_-1_85",
+      "part": "parts/parent/exterior/printed/parent_float_lug",
+      "ops": [
+        {
+          "translate": [
+            0,
+            85,
+            0
+          ]
+        },
+        {
+          "mirror": [
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "exterior",
+      "color": "Orange"
+    },
+    {
+      "label": "float_lug_1_-85",
+      "part": "parts/parent/exterior/printed/parent_float_lug",
+      "ops": [
+        {
+          "translate": [
+            0,
+            -85,
+            0
+          ]
+        }
+      ],
+      "group": "exterior",
+      "color": "Orange"
+    },
+    {
+      "label": "float_lug_1_85",
+      "part": "parts/parent/exterior/printed/parent_float_lug",
+      "ops": [
+        {
+          "translate": [
+            0,
+            85,
+            0
+          ]
+        }
+      ],
+      "group": "exterior",
+      "color": "Orange"
+    },
+    {
+      "label": "lid_schematic",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "lid_envelope",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            97.3
+          ]
+        }
+      ],
+      "group": "vessel",
+      "color": "LightSteelBlue"
+    },
+    {
+      "label": "lug_screw_-112_-93",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "screw_M5_30",
+      "ops": [
+        {
+          "translate": [
+            -112,
+            -93,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "lug_washer_-112_-93",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            -112,
+            -93,
+            -21
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "lug_nut_-112_-93",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "nut_M5",
+      "ops": [
+        {
+          "translate": [
+            -112,
+            -93,
+            -26
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "lug_screw_-112_-77",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "screw_M5_30",
+      "ops": [
+        {
+          "translate": [
+            -112,
+            -77,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "lug_washer_-112_-77",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            -112,
+            -77,
+            -21
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "lug_nut_-112_-77",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "nut_M5",
+      "ops": [
+        {
+          "translate": [
+            -112,
+            -77,
+            -26
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "lug_screw_-112_77",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "screw_M5_30",
+      "ops": [
+        {
+          "translate": [
+            -112,
+            77,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "lug_washer_-112_77",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            -112,
+            77,
+            -21
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "lug_nut_-112_77",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "nut_M5",
+      "ops": [
+        {
+          "translate": [
+            -112,
+            77,
+            -26
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "lug_screw_-112_93",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "screw_M5_30",
+      "ops": [
+        {
+          "translate": [
+            -112,
+            93,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "lug_washer_-112_93",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            -112,
+            93,
+            -21
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "lug_nut_-112_93",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "nut_M5",
+      "ops": [
+        {
+          "translate": [
+            -112,
+            93,
+            -26
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "lug_screw_112_-93",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "screw_M5_30",
+      "ops": [
+        {
+          "translate": [
+            112,
+            -93,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "lug_washer_112_-93",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            112,
+            -93,
+            -21
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "lug_nut_112_-93",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "nut_M5",
+      "ops": [
+        {
+          "translate": [
+            112,
+            -93,
+            -26
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "lug_screw_112_-77",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "screw_M5_30",
+      "ops": [
+        {
+          "translate": [
+            112,
+            -77,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "lug_washer_112_-77",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            112,
+            -77,
+            -21
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "lug_nut_112_-77",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "nut_M5",
+      "ops": [
+        {
+          "translate": [
+            112,
+            -77,
+            -26
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "lug_screw_112_77",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "screw_M5_30",
+      "ops": [
+        {
+          "translate": [
+            112,
+            77,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "lug_washer_112_77",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            112,
+            77,
+            -21
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "lug_nut_112_77",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "nut_M5",
+      "ops": [
+        {
+          "translate": [
+            112,
+            77,
+            -26
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "lug_screw_112_93",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "screw_M5_30",
+      "ops": [
+        {
+          "translate": [
+            112,
+            93,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "lug_washer_112_93",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            112,
+            93,
+            -21
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "lug_nut_112_93",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "nut_M5",
+      "ops": [
+        {
+          "translate": [
+            112,
+            93,
+            -26
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "upper_bar_-55",
+      "part": "parts/parent/exterior/printed/parent_clamp_bar",
+      "ops": [
+        {
+          "translate": [
+            0,
+            -55,
+            102.3
+          ]
+        }
+      ],
+      "group": "exterior",
+      "color": "Orange"
+    },
+    {
+      "label": "pad_-98_-55",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "rubber_pad",
+      "ops": [
+        {
+          "translate": [
+            -98,
+            -55,
+            100.3
+          ]
+        }
+      ],
+      "group": "pads",
+      "color": "DimGray"
+    },
+    {
+      "label": "pad_98_-55",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "rubber_pad",
+      "ops": [
+        {
+          "translate": [
+            98,
+            -55,
+            100.3
+          ]
+        }
+      ],
+      "group": "pads",
+      "color": "DimGray"
+    },
+    {
+      "label": "rod_-112_-55",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "rod_M5_150",
+      "ops": [
+        {
+          "translate": [
+            -112,
+            -55,
+            -20
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "washer_-112_-55_-13",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            -112,
+            -55,
+            -13
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "washer_-112_-55_114.3",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            -112,
+            -55,
+            114.3
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "nut_-112_-55_-18",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "nut_M5",
+      "ops": [
+        {
+          "translate": [
+            -112,
+            -55,
+            -18
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "nut_-112_-55_115.3",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "nut_M5",
+      "ops": [
+        {
+          "translate": [
+            -112,
+            -55,
+            115.3
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "rod_112_-55",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "rod_M5_150",
+      "ops": [
+        {
+          "translate": [
+            112,
+            -55,
+            -20
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "washer_112_-55_-13",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            112,
+            -55,
+            -13
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "washer_112_-55_114.3",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            112,
+            -55,
+            114.3
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "nut_112_-55_-18",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "nut_M5",
+      "ops": [
+        {
+          "translate": [
+            112,
+            -55,
+            -18
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "nut_112_-55_115.3",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "nut_M5",
+      "ops": [
+        {
+          "translate": [
+            112,
+            -55,
+            115.3
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "upper_bar_55",
+      "part": "parts/parent/exterior/printed/parent_clamp_bar",
+      "ops": [
+        {
+          "translate": [
+            0,
+            55,
+            102.3
+          ]
+        }
+      ],
+      "group": "exterior",
+      "color": "Orange"
+    },
+    {
+      "label": "pad_-98_55",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "rubber_pad",
+      "ops": [
+        {
+          "translate": [
+            -98,
+            55,
+            100.3
+          ]
+        }
+      ],
+      "group": "pads",
+      "color": "DimGray"
+    },
+    {
+      "label": "pad_98_55",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "rubber_pad",
+      "ops": [
+        {
+          "translate": [
+            98,
+            55,
+            100.3
+          ]
+        }
+      ],
+      "group": "pads",
+      "color": "DimGray"
+    },
+    {
+      "label": "rod_-112_55",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "rod_M5_150",
+      "ops": [
+        {
+          "translate": [
+            -112,
+            55,
+            -20
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "washer_-112_55_-13",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            -112,
+            55,
+            -13
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "washer_-112_55_114.3",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            -112,
+            55,
+            114.3
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "nut_-112_55_-18",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "nut_M5",
+      "ops": [
+        {
+          "translate": [
+            -112,
+            55,
+            -18
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "nut_-112_55_115.3",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "nut_M5",
+      "ops": [
+        {
+          "translate": [
+            -112,
+            55,
+            115.3
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "rod_112_55",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "rod_M5_150",
+      "ops": [
+        {
+          "translate": [
+            112,
+            55,
+            -20
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "washer_112_55_-13",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            112,
+            55,
+            -13
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "washer_112_55_114.3",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            112,
+            55,
+            114.3
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "nut_112_55_-18",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "nut_M5",
+      "ops": [
+        {
+          "translate": [
+            112,
+            55,
+            -18
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "nut_112_55_115.3",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "nut_M5",
+      "ops": [
+        {
+          "translate": [
+            112,
+            55,
+            115.3
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "sensor_carrier",
+      "part": "parts/parent/exterior/printed/parent_compact_carrier",
+      "file": "parent_compact_carrier",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "exterior",
+      "color": "Orange"
+    },
+    {
+      "label": "camera_mount",
+      "part": "parts/parent/exterior/printed/parent_camera_mount",
+      "file": "parent_camera_mount",
+      "ops": [
+        {
+          "translate": [
+            -48,
+            0,
+            -66
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "exterior",
+      "color": "SteelBlue"
+    },
+    {
+      "label": "td_bracket_jaw",
+      "part": "parts/parent/exterior/printed/parent_td_bracket_jaw",
+      "file": "parent_td_bracket_jaw",
+      "ops": [
+        {
+          "translate": [
+            55,
+            2,
+            -35
+          ]
+        }
+      ],
+      "group": "exterior",
+      "color": "Orange"
+    },
+    {
+      "label": "td04a_actual_shape_reference",
+      "part": "parts/common/exterior/cots/td04a_transducer",
+      "file": "td04a_transducer",
+      "ops": [
+        {
+          "translate": [
+            55,
+            0,
+            -100
+          ]
+        }
+      ],
+      "group": "envelope",
+      "color": "DimGray"
+    },
+    {
+      "label": "camera_case_reference",
+      "part": "assemblies/parent_spar_bolted/reference",
+      "file": "camera_case_envelope",
+      "ops": [
+        {
+          "translate": [
+            -48,
+            36.5,
+            -66
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "envelope",
+      "color": "DimGray"
+    },
+    {
+      "label": "carrier_screw_-85",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "screw_M5_25",
+      "ops": [
+        {
+          "translate": [
+            -85,
+            -55,
+            -6
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "carrier_washer_-85",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            -85,
+            -55,
+            -21
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "carrier_nut_-85",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "nut_M5",
+      "ops": [
+        {
+          "translate": [
+            -85,
+            -55,
+            -26
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "carrier_screw_-65",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "screw_M5_25",
+      "ops": [
+        {
+          "translate": [
+            -65,
+            -55,
+            -6
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "carrier_washer_-65",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            -65,
+            -55,
+            -21
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "carrier_nut_-65",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "nut_M5",
+      "ops": [
+        {
+          "translate": [
+            -65,
+            -55,
+            -26
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "carrier_screw_65",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "screw_M5_25",
+      "ops": [
+        {
+          "translate": [
+            65,
+            -55,
+            -6
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "carrier_washer_65",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            65,
+            -55,
+            -21
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "carrier_nut_65",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "nut_M5",
+      "ops": [
+        {
+          "translate": [
+            65,
+            -55,
+            -26
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "carrier_screw_85",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "screw_M5_25",
+      "ops": [
+        {
+          "translate": [
+            85,
+            -55,
+            -6
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "carrier_washer_85",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            85,
+            -55,
+            -21
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "carrier_nut_85",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "nut_M5",
+      "ops": [
+        {
+          "translate": [
+            85,
+            -55,
+            -26
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "camera_screw_-59_-82",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "screw_M5_25",
+      "ops": [
+        {
+          "translate": [
+            -59,
+            8,
+            -82
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "camera_washer_-59_-82",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            -59,
+            -9,
+            -82
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "camera_nut_-59_-82",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "nut_M5",
+      "ops": [
+        {
+          "translate": [
+            -59,
+            -14,
+            -82
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "camera_screw_-59_-50",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "screw_M5_25",
+      "ops": [
+        {
+          "translate": [
+            -59,
+            8,
+            -50
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "camera_washer_-59_-50",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            -59,
+            -9,
+            -50
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "camera_nut_-59_-50",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "nut_M5",
+      "ops": [
+        {
+          "translate": [
+            -59,
+            -14,
+            -50
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "camera_screw_-37_-82",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "screw_M5_25",
+      "ops": [
+        {
+          "translate": [
+            -37,
+            8,
+            -82
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "camera_washer_-37_-82",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            -37,
+            -9,
+            -82
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "camera_nut_-37_-82",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "nut_M5",
+      "ops": [
+        {
+          "translate": [
+            -37,
+            -14,
+            -82
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "camera_screw_-37_-50",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "screw_M5_25",
+      "ops": [
+        {
+          "translate": [
+            -37,
+            8,
+            -50
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "camera_washer_-37_-50",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            -37,
+            -9,
+            -50
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "camera_nut_-37_-50",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "nut_M5",
+      "ops": [
+        {
+          "translate": [
+            -37,
+            -14,
+            -50
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "td_screw_37",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "screw_M4_30",
+      "ops": [
+        {
+          "translate": [
+            37,
+            10,
+            -35
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "td_screw_73",
+      "part": "assemblies/parent_clamped/reference",
+      "file": "screw_M4_30",
+      "ops": [
+        {
+          "translate": [
+            73,
+            10,
+            -35
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "file": "ann_mb1_internal_rack.3mf",
+    "original_path": "parts/ann_mb1_internal_rack.3mf",
+    "sha256": "7a0c4ec85b16d0051360812400d0de8dc7ab5c5260bcc2911737979c217e69ec",
+    "status": "Existing user slice; source STL/profile association unverified; historical only"
+  },
+  {
+    "file": "floor_plate.3mf",
+    "original_path": "parts/floor_plate.3mf",
+    "sha256": "fc835e1bfc370e70eb326932c8fbe719d85ea0cc1c2d3d738d9773a96b99ce84",
+    "status": "Existing user slice; source STL/profile association unverified; historical only"
+  }
+]

@@ -1,0 +1,82 @@
+{
+  "part": "child_core_frame.stl",
+  "material": "PETG",
+  "build_axis": "Z",
+  "target_elements": 60000,
+  "safety_factor": 2.0,
+  "max_deflection_mm": 1.0,
+  "regions": {
+    "lug_boss_R":   {"type": "box", "min": [50, -22, 204],  "max": [72, 0, 218]},
+    "lug_boss_L":   {"type": "box", "min": [-72, -22, 204], "max": [-50, 0, 218]},
+    "latch_lo":     {"type": "box", "min": [50, -16, 28],   "max": [72, 0, 52]},
+    "latch_hi":     {"type": "box", "min": [50, -16, 158],  "max": [72, 0, 182]},
+    "hinge_zone":   {"type": "box", "min": [-80, -8, -17],  "max": [-56, 18, 218]},
+    "guard_boss_R": {"type": "box", "min": [48, -45, -14],  "max": [70, -22, 10]},
+    "guard_boss_L": {"type": "box", "min": [-70, -45, -14], "max": [-48, -22, 10]},
+    "pocket_bot":   {"type": "box", "min": [-65, -65, -17], "max": [65, 0, -4]},
+    "pocket_top":   {"type": "box", "min": [-65, -65, 203], "max": [65, 0, 218]},
+    "grip_bar":     {"type": "box", "min": [-36, -101, 143], "max": [36, -87, 178]},
+    "roof":         {"type": "box", "min": [-36, -101, 180], "max": [36, -49, 190]},
+    "clamp_band":   {"type": "box", "min": [-65, -65, 85],  "max": [65, 0, 105]},
+    "back_wall":    {"type": "box", "min": [-36, -101, 20], "max": [36, -89, 110]}
+  },
+  "design": {
+    "keep_in": ["lug_boss_R", "lug_boss_L", "latch_lo", "latch_hi", "hinge_zone",
+                "guard_boss_R", "guard_boss_L", "pocket_bot", "pocket_top",
+                "grip_bar", "roof", "clamp_band"],
+    "volfrac": 0.45,
+    "filter_mm": 4.0,
+    "symmetry": ["X"],
+    "overhang": true
+  },
+  "cases": [
+    {
+      "name": "L1 hoist 3g: lugs fixed, container + guard + gate weights down",
+      "supports": [
+        {"region": "lug_boss_R", "fix": "xyz"},
+        {"region": "lug_boss_L", "fix": "xyz"}
+      ],
+      "loads": [
+        {"region": "pocket_bot",   "force": [0, 0, -77]},
+        {"region": "guard_boss_R", "force": [0, 0, -37]},
+        {"region": "guard_boss_L", "force": [0, 0, -37]},
+        {"region": "latch_lo",     "force": [0, 0, -18]},
+        {"region": "latch_hi",     "force": [0, 0, -18]}
+      ],
+      "gravity": {"direction": [0, 0, -1], "g_factor": 3.0}
+    },
+    {
+      "name": "L2 transport side hit 300N (C6 hard case 5g): container reacts, load on pylon + lugs",
+      "supports": [
+        {"region": "pocket_bot", "fix": "xyz"},
+        {"region": "pocket_top", "fix": "xyz"}
+      ],
+      "loads": [
+        {"region": "back_wall",  "force": [200, 0, 0]},
+        {"region": "lug_boss_R", "force": [50, 0, 0]},
+        {"region": "lug_boss_L", "force": [50, 0, 0]}
+      ]
+    },
+    {
+      "name": "L2 transport rear hit 300N on back wall (C6)",
+      "supports": [
+        {"region": "pocket_bot", "fix": "xyz"},
+        {"region": "pocket_top", "fix": "xyz"}
+      ],
+      "loads": [
+        {"region": "back_wall", "force": [0, 300, 0]}
+      ]
+    },
+    {
+      "name": "L5 landing 600N up through guard bosses",
+      "supports": [
+        {"region": "pocket_bot", "fix": "xyz"},
+        {"region": "pocket_top", "fix": "xyz"}
+      ],
+      "loads": [
+        {"region": "guard_boss_R", "force": [0, 0, 300]},
+        {"region": "guard_boss_L", "force": [0, 0, 300]}
+      ]
+    }
+  ]
+}

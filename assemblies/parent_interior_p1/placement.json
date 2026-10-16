@@ -1,0 +1,292 @@
+{
+  "name": "parent_interior_p1",
+  "note": "親機 防水ボックス内装 パターン1 (親機カメラ = DJI Osmo Action 6 外付け)。\n容器: タカチ BCAS212310G (選定案 2026-08-28, 人間確認待ち)。\n配置根拠: docs/親機内装_収まり検討.md / spec/parent_interior_layout.py。\n蓋は表示しない (BCAS はビス止め蓋)。\nLiPo は P-MAIN 上のブリッジトレイ parent_lipo_tray (M3 MF25 スペーサ ×4) に上固定 = 最上段で交換しやすい (2026-08-28)。\n箱モデルはタカチ図面 DXF 実座標 (ref/BCAS212310G.dxf)。\n南壁 (Y=0) 上部 z=65 に WetLink M10 ペネトレータ ×2 (x=120 テザー / x=85 TD04A) を追加 (2026-08-29)。箱側の Ø10.2 追加工は bcas212310g.scad の pen_x/pen_z。",
+  "coordinate_system": "箱外形の左下手前が原点。X=210 / Y=230 / Z=上 (箱底外面 z=0, 内床 z=3.8, プレート下面 z=13.8 (ボス 10 仮))。ビューポート方位 (+X) は浮子/マストに対する箱の向き基準。",
+  "groups": {
+    "vessel": true,
+    "interior": true
+  },
+  "items": [
+    {
+      "label": "plate",
+      "part": "parts/parent/interior/printed/parent_plate",
+      "file": "parent_plate_p1",
+      "group": "interior",
+      "color": "Orange",
+      "alpha": 0.9,
+      "note": "183x203 t5。プレート左下 = 箱 (13.5,13.5)、下面 z=13.8 (床3.8+ボス10 仮)",
+      "ops": [
+        {
+          "translate": [
+            13.5,
+            13.5,
+            13.8
+          ]
+        }
+      ]
+    },
+    {
+      "label": "p_main",
+      "part": "parts/parent/interior/pcb/parent_main",
+      "group": "interior",
+      "color": "SteelBlue",
+      "alpha": 1.0,
+      "note": "モデルは Y=-88..0。プレート (2,2)-(114,90)、ボタン/LED/DS3231 縁が北 (+Y)。基板下面 z=24.8 (プレート上面18.8+ボス6)。取付ねじの代わりに M3 MF25 スペーサ ×4 (LiPo トレイ支持)",
+      "ops": [
+        {
+          "translate": [
+            15.5,
+            103.5,
+            24.8
+          ]
+        }
+      ]
+    },
+    {
+      "label": "p_pwr",
+      "part": "parts/parent/interior/pcb/parent_pwr",
+      "group": "interior",
+      "color": "MediumSeaGreen",
+      "alpha": 1.0,
+      "note": "モデルは Y=-84..0。プレート (2,95)-(102,179)",
+      "ops": [
+        {
+          "translate": [
+            15.5,
+            192.5,
+            24.8
+          ]
+        }
+      ]
+    },
+    {
+      "label": "tx_improved",
+      "part": "parts/parent/interior/pcb/tx_improved",
+      "group": "interior",
+      "color": "Gold",
+      "alpha": 1.0,
+      "note": "90度回転でプレート (121,77)-(171,151)。プレート直付け (p1)",
+      "ops": [
+        {
+          "translate": [
+            134.5,
+            94.5,
+            24.8
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            90
+          ]
+        }
+      ]
+    },
+    {
+      "label": "spresense",
+      "part": "parts/parent/interior/cots/spresense_logger",
+      "group": "interior",
+      "color": "SandyBrown",
+      "alpha": 1.0,
+      "note": "簡易モデル (穴・スタック高は仮)。90度回転でプレート (121,2)-(174.5,70.6)",
+      "ops": [
+        {
+          "translate": [
+            188,
+            15.5,
+            24.8
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            90
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lipo_tray",
+      "part": "parts/parent/interior/printed/parent_lipo_tray",
+      "group": "interior",
+      "color": "DarkOrange",
+      "alpha": 0.9,
+      "note": "ブリッジトレイ。原点 = MAIN 南西穴 (箱 20,23.5)、下面 z=51.4 (MAIN 基板上面 26.4 + スペーサ 25)。M3×6 ×4 でスペーサへ",
+      "ops": [
+        {
+          "translate": [
+            20,
+            23.5,
+            51.4
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lipo",
+      "part": "parts/common/interior/cots/lipo_3s_2200_zeee",
+      "file": "lipo_3s_2200_zeee_pack",
+      "group": "interior",
+      "color": "IndianRed",
+      "alpha": 1.0,
+      "note": "parent_lipo_tray 内 (セル下面 z=54.4、上面 77.4、蓋パッキン面 90.9)。180°回転でリードを -X (西) へ → P-PWR J_BAT",
+      "ops": [
+        {
+          "translate": [
+            122.5,
+            68,
+            54.4
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            180
+          ]
+        }
+      ]
+    },
+    {
+      "label": "main_spacer_0",
+      "part": "parts/common/interior/cots/hex_spacer",
+      "file": "hex_spacer_m3_mf25",
+      "group": "interior",
+      "color": "Goldenrod",
+      "alpha": 1.0,
+      "note": "M3 MF 25。MAIN 取付穴を通してプレートのボス下穴へ (MAIN 固定ねじ兼用)。胴下端 = MAIN 基板上面 z=26.4",
+      "ops": [
+        {
+          "translate": [
+            20,
+            23.5,
+            26.4
+          ]
+        }
+      ]
+    },
+    {
+      "label": "main_spacer_1",
+      "part": "parts/common/interior/cots/hex_spacer",
+      "file": "hex_spacer_m3_mf25",
+      "group": "interior",
+      "color": "Goldenrod",
+      "alpha": 1.0,
+      "note": "M3 MF 25。MAIN 取付穴を通してプレートのボス下穴へ (MAIN 固定ねじ兼用)。胴下端 = MAIN 基板上面 z=26.4",
+      "ops": [
+        {
+          "translate": [
+            123,
+            23.5,
+            26.4
+          ]
+        }
+      ]
+    },
+    {
+      "label": "main_spacer_2",
+      "part": "parts/common/interior/cots/hex_spacer",
+      "file": "hex_spacer_m3_mf25",
+      "group": "interior",
+      "color": "Goldenrod",
+      "alpha": 1.0,
+      "note": "M3 MF 25。MAIN 取付穴を通してプレートのボス下穴へ (MAIN 固定ねじ兼用)。胴下端 = MAIN 基板上面 z=26.4",
+      "ops": [
+        {
+          "translate": [
+            20,
+            99,
+            26.4
+          ]
+        }
+      ]
+    },
+    {
+      "label": "main_spacer_3",
+      "part": "parts/common/interior/cots/hex_spacer",
+      "file": "hex_spacer_m3_mf25",
+      "group": "interior",
+      "color": "Goldenrod",
+      "alpha": 1.0,
+      "note": "M3 MF 25。MAIN 取付穴を通してプレートのボス下穴へ (MAIN 固定ねじ兼用)。胴下端 = MAIN 基板上面 z=26.4",
+      "ops": [
+        {
+          "translate": [
+            123,
+            99,
+            26.4
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pen_tether",
+      "part": "parts/common/exterior/cots/wetlink_penetrator_m10",
+      "file": "wetlink_penetrator_m10_ref_bcas",
+      "group": "vessel",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "WetLink Penetrator M10 (参考モデル・仮寸)。南壁 (Y=0) x=120, 軸 z=65。C1 テザー → P-MAIN J_TETH1 (箱 x≈123 の直下)。頭+プラグは箱外 y=-22..0、ねじ+ナットが箱内 y=0..14.5 (モデル壁 6.1 基準。実壁 3.08 なら 11.5)。容器内に出るのは素の導体 (外被は濡れ側で終端)。型番 -045..-085 はテザー外径待ち",
+      "ops": [
+        {
+          "translate": [
+            120,
+            0,
+            65
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pen_td04a",
+      "part": "parts/common/exterior/cots/wetlink_penetrator_m10",
+      "file": "wetlink_penetrator_m10_ref_bcas",
+      "group": "vessel",
+      "color": "Silver",
+      "alpha": 1.0,
+      "note": "WetLink Penetrator M10 (参考モデル・仮寸)。南壁 (Y=0) x=85, 軸 z=65。C3 TD04A → TX (右列)。3P プラグは通らないのでケーブルを切って容器内で端子台に落とす前提 (td04a_transducer.md)。テザー側とのピッチ 35 = 16mm トルクレンチの振り代。東へ寄せられないのは SPRESENSE (箱 X 134.5-188) の天面が仮値 30 で、その上を通すと隙間 0.3 になるため (spec/parent_interior_layout.py check_penetrators)",
+      "ops": [
+        {
+          "translate": [
+            85,
+            0,
+            65
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "box_bcas212310g",
+      "part": "parts/parent/exterior/cots/bcas212310g",
+      "group": "vessel",
+      "color": "LightSteelBlue",
+      "alpha": 0.22,
+      "note": "タカチ図面 DXF 実座標モデル: 床 3.84 + リブ台 3 (193.2×173.2)、M4 インサート ×4、タッピングボス ×10、カバービス柱。ボス高さ 10 は仮値 (要実測)。3D STEP は会員 DL 待ち",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  ]
+}

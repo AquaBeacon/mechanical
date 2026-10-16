@@ -1,0 +1,67 @@
+{
+    "error_string": "Success.",
+    "export_time": 1269,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 106,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Bottom surface": 7.974052429199219,
+                "Bridge": 35.66697692871094,
+                "Custom": 34.25373077392578,
+                "Gap infill": 373.5484924316406,
+                "Inner wall": 9076.0595703125,
+                "Internal solid infill": 232.19679260253906,
+                "Outer wall": 1816.71923828125,
+                "Overhang wall": 332.3887939453125,
+                "Sparse infill": 4873.80322265625,
+                "Support": 4760.3994140625,
+                "Support interface": 259.37860107421875,
+                "Support transition": 82.26087951660156,
+                "Top surface": 128.65203857421875,
+                "Travel": 3340.310546875,
+                "Undefined": 3325.9130859375
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFG00",
+                    "id": 1,
+                    "main_used_g": 190.87425231933594,
+                    "total_used_g": 251.05560302734375
+                }
+            ],
+            "generate_support_material_time": 999,
+            "id": 1,
+            "infill_time": 70,
+            "layer_filament_change": 0,
+            "main_predication": 25323.255859375,
+            "make_perimeters_time": 382,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 61.9999885559082,
+                        "height": 160.0,
+                        "width": 163.6962127685547,
+                        "x": 46.15188980102539,
+                        "y": 97.00000762939453,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "child_wte4_petg_clamp_upper_linked.stl",
+                    "triangle_count": 16692
+                }
+            ],
+            "sliced_time": 3430,
+            "sliced_time_with_cache": 1858,
+            "total_predication": 25343.08203125,
+            "triangle_count": 16692,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 100.0,
+    "wall_loops": 8
+}

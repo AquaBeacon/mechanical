@@ -1,0 +1,6 @@
+{
+  "from": "assemblies\\child_interior\\parts\\child_vtray_batt_box.3mf",
+  "file": "child_vtray_batt_box.3mf",
+  "sha256": "656f907872d0a2b07c1f7a58ea497a76dc0dcf873b74e0f8538ee624aebe2a6f",
+  "note": "Existing user slicer project retained unchanged. Not verified against the current M3/support-reduction STL; replace model and re-slice before printing."
+}

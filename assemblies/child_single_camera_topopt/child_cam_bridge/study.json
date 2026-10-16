@@ -1,0 +1,257 @@
+{
+  "_what": "child_cam_bridge: current interface setup review, not a finished part",
+  "_geometry_source": "inputs/geometry.scad, newly authored central single-camera adapter. Camera back shifted from y74.1 to83.1 to clear HP column.",
+  "_preserve": "Continuous HP4/HP5 adapter plate; ONE central mount pad; side and front bumper seats within width120.",
+  "_obstacle": "One central camera, its mount body, optical field, gate HP seats, tool access.",
+  "_obstacles_not_declared": "child_side_bumper (L-foot starts at x=120 = ds_x1, main wall at x=124.35 -- outside the design space by construction), jaw-gate shell r64.35 (any y >= ds_y0 = 67 is at r >= 67 > 64.35, so it never reaches the box; jaw_gate has nothing else at y >= 67 outside |x| <= 25), HP-L shelf (z <= 40 < ds_z0 = 44.95). Declaring them would only inflate the domain bounding box.",
+  "_design_space": "120 x 70 x 150.05 mm (x+-60, y67..137).",
+  "_loads": "One 0.35kg camera, frontal/lateral impact150N, camera handling100N.",
+  "_not_covered": "The md names the M5 heat-set insert pull-out at HP4/HP5 (~355 N/bolt at L2 300 N) as the real governing item. Fixing those pads xyz means the FEA cannot report it -- it is still an open test item.",
+  "units": "mm_N_MPa",
+  "material": "PETG",
+  "build_axis": "Y",
+  "raster_axis": "X",
+  "printer": "X1C",
+  "safety_factor": 3.0,
+  "max_deflection_mm": 1.0,
+  "voxel_mm": 3.0,
+  "design": {
+    "volfrac": 0.2,
+    "filter_mm": 9.0,
+    "symmetry": [],
+    "move": 0.2,
+    "tol_change": 0.002,
+    "overhang": {
+      "max_support_mm": 12
+    }
+  },
+  "geometry": {
+    "voxel_mm": 3.0,
+    "clearance_mm": 0.0,
+    "pad_voxels": 2,
+    "preserve": {
+      "interfaces": {
+        "stl": "inputs/preserve.stl",
+        "attach": [
+          "join_free_space"
+        ]
+      }
+    },
+    "design_space": "inputs/design_space.stl",
+    "obstacle": {
+      "keep_out": "inputs/obstacle.stl",
+      "cameras": "../scene/cameras.stl"
+    }
+  },
+  "finish": {
+    "voxel_mm": 0.5,
+    "add": {
+      "interfaces": "inputs/preserve.stl"
+    },
+    "cut": {
+      "features": "inputs/preserve_cuts.stl"
+    }
+  },
+  "regions": {
+    "hp4_seat": {
+      "type": "box",
+      "min": [
+        -25,
+        74.35,
+        145
+      ],
+      "max": [
+        25,
+        80.35,
+        195
+      ]
+    },
+    "hp5_seat": {
+      "type": "box",
+      "min": [
+        -25,
+        74.35,
+        75
+      ],
+      "max": [
+        25,
+        80.35,
+        125
+      ]
+    },
+    "join_free_space": {
+      "type": "box",
+      "min": [
+        -60.0,
+        67.0,
+        44.95
+      ],
+      "max": [
+        60.0,
+        137.0,
+        195.0
+      ]
+    },
+    "mount_C": {
+      "type": "box",
+      "min": [
+        -17,
+        84.05,
+        44.95
+      ],
+      "max": [
+        17,
+        128.05,
+        52.95
+      ]
+    },
+    "fbump_R": {
+      "type": "box",
+      "min": [
+        30,
+        131,
+        44.95
+      ],
+      "max": [
+        60,
+        137,
+        80
+      ]
+    },
+    "endp_R": {
+      "type": "box",
+      "min": [
+        54,
+        67,
+        44.95
+      ],
+      "max": [
+        60,
+        137,
+        80
+      ]
+    }
+  },
+  "required_cases": [
+    "L1",
+    "L4",
+    "L2s",
+    "L6"
+  ],
+  "cases": [
+    {
+      "name": "L1 single 0.35kg camera at 3g, adapter self-weight at 3g",
+      "supports": [
+        {
+          "region": "hp4_seat",
+          "fix": "xyz"
+        },
+        {
+          "region": "hp5_seat",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "mount_C",
+          "force": [
+            0,
+            0,
+            -10.3
+          ]
+        }
+      ],
+      "gravity": {
+        "direction": [
+          0,
+          0,
+          -1
+        ],
+        "g_factor": 3.0
+      }
+    },
+    {
+      "name": "L4 frontal impact 150 N (-Y) on one front-edge bumper, HP4/HP5 react",
+      "supports": [
+        {
+          "region": "hp4_seat",
+          "fix": "xyz"
+        },
+        {
+          "region": "hp5_seat",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "fbump_R",
+          "force": [
+            0,
+            -150,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "L2s side impact 150 N (-X) on the starboard end plate through the side bumper, HP4/HP5 react",
+      "supports": [
+        {
+          "region": "hp4_seat",
+          "fix": "xyz"
+        },
+        {
+          "region": "hp5_seat",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "endp_R",
+          "force": [
+            -150,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "L6 unit handled by central camera, 100N +Z on single mounting seat",
+      "supports": [
+        {
+          "region": "hp4_seat",
+          "fix": "xyz"
+        },
+        {
+          "region": "hp5_seat",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "mount_C",
+          "force": [
+            0,
+            0,
+            100
+          ]
+        }
+      ]
+    }
+  ],
+  "_review_status": "Authorised by user on 2026-09-10: one camera, vertical light; run topopt.",
+  "_review_changes": "Filter 9 mm = 3 voxels; no imposed symmetry for asymmetric loads. Historical interfaces retained except current gate v3 latch.",
+  "_new_assumptions": "One central camera lens (0,129,125); one vertical D40x100 light at (80,-75), z50..150; D6 cable +1mm radial clearance. COTS dimensions remain provisional.",
+  "_scene_outside_design_space": [
+    "pressure_vessel",
+    "light_vertical",
+    "td04a",
+    "td04a_socket",
+    "hand_clearance",
+    "cables"
+  ],
+  "_scene_outside_note": "Full bodies are present in scene/exclusions.scad and review figures. No volume intersection with this design-space bbox, so excluded by design boundary itself.",
+  "_attach_policy": "Interface surfaces may connect wherever design_space permits, except explicit obstacle volumes and assembly/tool clearances. Composite preserve is retained; no additional face restriction is claimed.",
+  "_loads_updated": "Single camera and vertical light selected by user; existing transport/landing envelopes retained conservatively."
+}

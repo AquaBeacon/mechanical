@@ -1,0 +1,719 @@
+{
+  "status": "exploration_only",
+  "units": "mm",
+  "dimensions_status": "Provisional visual proportions only; not fabrication dimensions.",
+  "variants": {
+    "frame_a_lower": {
+      "kind": "panel",
+      "size_mm": [
+        12,
+        340,
+        242
+      ],
+      "bevel_mm": 2,
+      "normal_axis": "X",
+      "windows": [
+        {
+          "center_mm": [
+            0,
+            0,
+            -37
+          ],
+          "size_mm": [
+            40,
+            294,
+            112
+          ]
+        },
+        {
+          "center_mm": [
+            0,
+            0,
+            39
+          ],
+          "size_mm": [
+            40,
+            294,
+            70
+          ]
+        }
+      ],
+      "lap_cut": {
+        "center_mm": [
+          3,
+          0,
+          111
+        ],
+        "size_mm": [
+          6.1,
+          360,
+          24
+        ]
+      },
+      "mounting_webs": {
+        "local_z_mm": [
+          35,
+          95
+        ],
+        "size_mm": [
+          12,
+          316,
+          32
+        ],
+        "hole_y_mm": [
+          -18,
+          18
+        ],
+        "hole_z_mm": [
+          -8,
+          8
+        ],
+        "hole_radius_mm": 1.75
+      },
+      "post_holes": [
+        {
+          "center_mm": [
+            0,
+            -158,
+            25
+          ],
+          "radius_mm": 2.2,
+          "depth_mm": 32,
+          "axis": "X"
+        },
+        {
+          "center_mm": [
+            0,
+            -158,
+            45
+          ],
+          "radius_mm": 2.2,
+          "depth_mm": 32,
+          "axis": "X"
+        },
+        {
+          "center_mm": [
+            0,
+            158,
+            25
+          ],
+          "radius_mm": 2.2,
+          "depth_mm": 32,
+          "axis": "X"
+        },
+        {
+          "center_mm": [
+            0,
+            158,
+            45
+          ],
+          "radius_mm": 2.2,
+          "depth_mm": 32,
+          "axis": "X"
+        },
+        {
+          "center_mm": [
+            0,
+            -61.75,
+            -123
+          ],
+          "radius_mm": 2.75,
+          "depth_mm": 32,
+          "axis": "X"
+        },
+        {
+          "center_mm": [
+            0,
+            -61.75,
+            -103
+          ],
+          "radius_mm": 2.75,
+          "depth_mm": 32,
+          "axis": "X"
+        },
+        {
+          "center_mm": [
+            0,
+            -24.25,
+            -123
+          ],
+          "radius_mm": 2.75,
+          "depth_mm": 32,
+          "axis": "X"
+        },
+        {
+          "center_mm": [
+            0,
+            -24.25,
+            -103
+          ],
+          "radius_mm": 2.75,
+          "depth_mm": 32,
+          "axis": "X"
+        },
+        {
+          "center_mm": [
+            0,
+            24.25,
+            -123
+          ],
+          "radius_mm": 2.75,
+          "depth_mm": 32,
+          "axis": "X"
+        },
+        {
+          "center_mm": [
+            0,
+            24.25,
+            -103
+          ],
+          "radius_mm": 2.75,
+          "depth_mm": 32,
+          "axis": "X"
+        },
+        {
+          "center_mm": [
+            0,
+            61.75,
+            -123
+          ],
+          "radius_mm": 2.75,
+          "depth_mm": 32,
+          "axis": "X"
+        },
+        {
+          "center_mm": [
+            0,
+            61.75,
+            -103
+          ],
+          "radius_mm": 2.75,
+          "depth_mm": 32,
+          "axis": "X"
+        }
+      ],
+      "add_boxes": [
+        {
+          "center_mm": [
+            0,
+            0,
+            -115
+          ],
+          "size_mm": [
+            12,
+            340,
+            44
+          ]
+        }
+      ]
+    },
+    "frame_a_upper": {
+      "kind": "panel",
+      "size_mm": [
+        12,
+        340,
+        158
+      ],
+      "bevel_mm": 2,
+      "normal_axis": "X",
+      "windows": [
+        {
+          "center_mm": [
+            0,
+            0,
+            -24
+          ],
+          "size_mm": [
+            40,
+            294,
+            40
+          ]
+        },
+        {
+          "center_mm": [
+            0,
+            0,
+            35
+          ],
+          "size_mm": [
+            40,
+            294,
+            40
+          ]
+        }
+      ],
+      "lap_cut": {
+        "center_mm": [
+          -3,
+          0,
+          -68
+        ],
+        "size_mm": [
+          6.1,
+          360,
+          24
+        ]
+      },
+      "mounting_webs": {
+        "local_z_mm": [
+          -21
+        ],
+        "size_mm": [
+          12,
+          316,
+          32
+        ],
+        "hole_y_mm": [
+          -18,
+          18
+        ],
+        "hole_z_mm": [
+          -8,
+          8
+        ],
+        "hole_radius_mm": 1.75
+      }
+    },
+    "frame_c": {
+      "kind": "panel",
+      "size_mm": [
+        182.7,
+        10,
+        188
+      ],
+      "bevel_mm": 2,
+      "normal_axis": "Y",
+      "windows": [
+        {
+          "center_mm": [
+            0,
+            0,
+            6
+          ],
+          "size_mm": [
+            124.7,
+            40,
+            136
+          ]
+        }
+      ],
+      "add_boxes": [
+        {
+          "center_mm": [
+            -81.35,
+            -14,
+            -126
+          ],
+          "size_mm": [
+            8,
+            28,
+            36
+          ]
+        },
+        {
+          "center_mm": [
+            81.35,
+            -14,
+            -126
+          ],
+          "size_mm": [
+            8,
+            28,
+            36
+          ]
+        },
+        {
+          "center_mm": [
+            -81.35,
+            -26,
+            -130
+          ],
+          "size_mm": [
+            8,
+            32,
+            8
+          ]
+        },
+        {
+          "center_mm": [
+            81.35,
+            -26,
+            -130
+          ],
+          "size_mm": [
+            8,
+            32,
+            8
+          ]
+        },
+        {
+          "center_mm": [
+            0,
+            -38,
+            -130
+          ],
+          "size_mm": [
+            170.7,
+            12,
+            8
+          ]
+        },
+        {
+          "center_mm": [
+            0,
+            -38,
+            -130
+          ],
+          "size_mm": [
+            66,
+            54,
+            8
+          ]
+        },
+        {
+          "center_mm": [
+            0,
+            -8.5,
+            -84
+          ],
+          "size_mm": [
+            60,
+            10,
+            92
+          ]
+        },
+        {
+          "center_mm": [
+            -81.35,
+            -4,
+            -102
+          ],
+          "size_mm": [
+            8,
+            8,
+            28
+          ]
+        },
+        {
+          "center_mm": [
+            81.35,
+            -4,
+            -102
+          ],
+          "size_mm": [
+            8,
+            8,
+            28
+          ]
+        }
+      ],
+      "post_holes": [
+        {
+          "center_mm": [
+            -81.35,
+            -12,
+            -136
+          ],
+          "radius_mm": 2.2,
+          "depth_mm": 32,
+          "axis": "X"
+        },
+        {
+          "center_mm": [
+            -81.35,
+            -12,
+            -116
+          ],
+          "radius_mm": 2.2,
+          "depth_mm": 32,
+          "axis": "X"
+        },
+        {
+          "center_mm": [
+            81.35,
+            -12,
+            -136
+          ],
+          "radius_mm": 2.2,
+          "depth_mm": 32,
+          "axis": "X"
+        },
+        {
+          "center_mm": [
+            81.35,
+            -12,
+            -116
+          ],
+          "radius_mm": 2.2,
+          "depth_mm": 32,
+          "axis": "X"
+        }
+      ],
+      "note": "C panel, ballast seat, arms, back and A mounting ears form one connected union. Retaining bands remain removable."
+    },
+    "integrated_clamps": {
+      "kind": "integrated_clamps",
+      "reference_assembly": "assemblies/child_clamp_suspension/placement.json",
+      "spines": [
+        {
+          "center_mm": [
+            -95,
+            0,
+            100
+          ],
+          "size_mm": [
+            8,
+            26,
+            156
+          ]
+        },
+        {
+          "center_mm": [
+            95,
+            0,
+            100
+          ],
+          "size_mm": [
+            8,
+            26,
+            156
+          ]
+        },
+        {
+          "center_mm": [
+            -78,
+            0,
+            80
+          ],
+          "size_mm": [
+            18,
+            30,
+            194
+          ]
+        },
+        {
+          "center_mm": [
+            -108.5,
+            0,
+            9
+          ],
+          "size_mm": [
+            61,
+            36,
+            14
+          ]
+        }
+      ]
+    },
+    "equipment_saddle": {
+      "kind": "bar",
+      "size_mm": [
+        92,
+        31,
+        12
+      ],
+      "bevel_mm": 2
+    },
+    "transducer_inner_mount": {
+      "kind": "bar",
+      "size_mm": [
+        40,
+        14,
+        8
+      ],
+      "bevel_mm": 1.5
+    },
+    "ballast_retaining_bands": {
+      "kind": "composite",
+      "rings": [
+        {
+          "center_mm": [
+            0,
+            132,
+            51
+          ],
+          "outer_radius_mm": 28.5,
+          "inner_radius_mm": 24.75,
+          "height_mm": 10
+        },
+        {
+          "center_mm": [
+            0,
+            132,
+            82
+          ],
+          "outer_radius_mm": 28.5,
+          "inner_radius_mm": 24.75,
+          "height_mm": 10
+        },
+        {
+          "center_mm": [
+            0,
+            132,
+            101
+          ],
+          "outer_radius_mm": 28.5,
+          "inner_radius_mm": 18.5,
+          "height_mm": 6,
+          "split_gap_mm": 1.2
+        }
+      ],
+      "note": "Separate metal band/collar concepts; removable to install the 1 kg weight."
+    },
+    "horizontal_side": {
+      "kind": "panel",
+      "size_mm": [
+        12,
+        440,
+        200
+      ],
+      "normal_axis": "X",
+      "bevel_mm": 3,
+      "windows": [
+        {
+          "center_mm": [
+            0,
+            0,
+            0
+          ],
+          "size_mm": [
+            40,
+            388,
+            148
+          ]
+        }
+      ]
+    },
+    "horizontal_skid": {
+      "kind": "bar",
+      "size_mm": [
+        30,
+        480,
+        22
+      ],
+      "bevel_mm": 5
+    },
+    "horizontal_crossbar": {
+      "kind": "bar",
+      "size_mm": [
+        288,
+        22,
+        16
+      ],
+      "bevel_mm": 2
+    },
+    "horizontal_cradle_rail": {
+      "kind": "bar",
+      "size_mm": [
+        59,
+        196,
+        16
+      ],
+      "bevel_mm": 2
+    },
+    "horizontal_camera_mount": {
+      "kind": "bar",
+      "size_mm": [
+        90,
+        56,
+        12
+      ],
+      "bevel_mm": 2
+    },
+    "horizontal_camera_crossbar": {
+      "kind": "bar",
+      "size_mm": [
+        288,
+        30,
+        16
+      ],
+      "bevel_mm": 2
+    },
+    "horizontal_sensor_arm": {
+      "kind": "bar",
+      "size_mm": [
+        60,
+        38,
+        12
+      ],
+      "bevel_mm": 2
+    },
+    "horizontal_sensor_post": {
+      "kind": "bar",
+      "size_mm": [
+        16,
+        32,
+        55
+      ],
+      "bevel_mm": 2
+    },
+    "horizontal_weight_tray": {
+      "kind": "bar",
+      "size_mm": [
+        288,
+        106,
+        10
+      ],
+      "bevel_mm": 2
+    },
+    "horizontal_weight_stop": {
+      "kind": "bar",
+      "size_mm": [
+        16,
+        58,
+        18
+      ],
+      "bevel_mm": 2
+    },
+    "horizontal_foam_reservation": {
+      "kind": "bar",
+      "size_mm": [
+        54,
+        148,
+        34
+      ],
+      "bevel_mm": 8,
+      "note": "Buoyancy-space reservation only; material, density and volume to be sized."
+    },
+    "horizontal_rear_bumper": {
+      "kind": "panel",
+      "size_mm": [
+        288,
+        12,
+        82
+      ],
+      "normal_axis": "Y",
+      "bevel_mm": 3,
+      "windows": [
+        {
+          "center_mm": [
+            0,
+            0,
+            0
+          ],
+          "size_mm": [
+            200,
+            40,
+            46
+          ]
+        }
+      ]
+    },
+    "horizontal_weight_band": {
+      "kind": "composite",
+      "rings": [
+        {
+          "center_mm": [
+            0,
+            0,
+            0
+          ],
+          "outer_radius_mm": 27.5,
+          "inner_radius_mm": 24.75,
+          "height_mm": 8
+        }
+      ]
+    }
+  },
+  "current_layout": "horizontal_open_frame_20261007"
+}

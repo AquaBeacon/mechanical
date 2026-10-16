@@ -1,0 +1,86 @@
+{
+  "part": "wte4_display_stand_rail.stl",
+  "material": "PLA",
+  "build_axis": "Y",
+  "target_elements": 80000,
+  "safety_factor": 3.0,
+  "max_deflection_mm": 0.5,
+  "regions": {
+    "hand": {
+      "type": "box",
+      "min": [
+        -10,
+        -3,
+        31
+      ],
+      "max": [
+        10,
+        3,
+        36
+      ]
+    },
+    "slot_l": {
+      "type": "box",
+      "min": [
+        -57.2,
+        -3,
+        15.5
+      ],
+      "max": [
+        -52.8,
+        3,
+        17.6
+      ]
+    },
+    "slot_r": {
+      "type": "box",
+      "min": [
+        52.8,
+        -3,
+        15.5
+      ],
+      "max": [
+        57.2,
+        3,
+        17.6
+      ]
+    }
+  },
+  "cases": [
+    {
+      "name": "stand lifted by one rail at midspan with tube on it, x3 (70 N)",
+      "supports": [
+        {
+          "region": "hand",
+          "fix": "xyz"
+        }
+      ],
+      "loads": [
+        {
+          "region": "slot_l",
+          "force": [
+            0,
+            0,
+            -35
+          ]
+        },
+        {
+          "region": "slot_r",
+          "force": [
+            0,
+            0,
+            -35
+          ]
+        }
+      ],
+      "gravity": {
+        "direction": [
+          0,
+          0,
+          -1
+        ],
+        "g_factor": 1.0
+      }
+    }
+  ]
+}

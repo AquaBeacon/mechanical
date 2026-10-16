@@ -1,0 +1,27 @@
+{
+  "guarantee_status": "NOT_ESTABLISHED",
+  "manufacturing_release": false,
+  "design_target": {
+    "force_N": 20,
+    "case_relative_displacement_mm": 0.2
+  },
+  "geometry_evidence": "verification.json; no structural implication",
+  "analysis_evidence": "rigidity/iteration_*/inputs.json, execution.json, ccx/ccx_summary.json; scope must include case, connections, all PCBs and all directions before approval",
+  "physical_tests": {
+    "status": "NOT_TESTED",
+    "required_cases": 60,
+    "recorded_rows": 60,
+    "complete_rows": 0,
+    "file": "rigidity_physical_tests.csv",
+    "acceptance": "For each real test: abs(peak displacement) + calibrated displacement uncertainty <=0.2 mm at20 N; no damage or slip; unloading residual <=0.02 mm. Confirm connector allowable load before applying20 N."
+  },
+  "unresolved": [
+    "Full assembly mechanics including floor, service sleeves, threaded ties, guide lock and case flexibility",
+    "Sony MAIN/EXT/IMU internal attachment and connector solder/housing loading",
+    "PCB local bending and uplift restraints",
+    "Manufactured material properties, print settings and joint preload/creep",
+    "Actual enclosure/lid and battery dimensions",
+    "Calibrated physical force/displacement tests for all60 cases"
+  ],
+  "principle": "Do not convert geometric PASS, component-only FEA, or incomplete measurements into an assembly guarantee."
+}

@@ -1,0 +1,2578 @@
+{
+  "joints": [
+    {
+      "label": "left_splice_212.0_-18_-6",
+      "head_seat_mm": [
+        -162.5,
+        -18.0,
+        206.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 25,
+      "nut_seat_mm": [
+        -143.5,
+        -18.0,
+        206.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "left_splice_212.0_-18_6",
+      "head_seat_mm": [
+        -162.5,
+        -18.0,
+        218.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 25,
+      "nut_seat_mm": [
+        -143.5,
+        -18.0,
+        218.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "left_splice_212.0_18_-6",
+      "head_seat_mm": [
+        -162.5,
+        18.0,
+        206.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 25,
+      "nut_seat_mm": [
+        -143.5,
+        18.0,
+        206.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "left_splice_212.0_18_6",
+      "head_seat_mm": [
+        -162.5,
+        18.0,
+        218.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 25,
+      "nut_seat_mm": [
+        -143.5,
+        18.0,
+        218.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "left_splice_140_-26_-18",
+      "head_seat_mm": [
+        -162.5,
+        -26.0,
+        122.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 25,
+      "nut_seat_mm": [
+        -143.5,
+        -26.0,
+        122.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "left_splice_140_-26_18",
+      "head_seat_mm": [
+        -162.5,
+        -26.0,
+        158.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 25,
+      "nut_seat_mm": [
+        -143.5,
+        -26.0,
+        158.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "left_splice_140_26_-18",
+      "head_seat_mm": [
+        -162.5,
+        26.0,
+        122.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 25,
+      "nut_seat_mm": [
+        -143.5,
+        26.0,
+        122.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "left_splice_140_26_18",
+      "head_seat_mm": [
+        -162.5,
+        26.0,
+        158.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 25,
+      "nut_seat_mm": [
+        -143.5,
+        26.0,
+        158.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "left_shoe_-205.0_-16",
+      "head_seat_mm": [
+        -165.5,
+        -221.0,
+        20.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        -139.5,
+        -221.0,
+        20
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "left_shoe_-205.0_16",
+      "head_seat_mm": [
+        -165.5,
+        -189.0,
+        20.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        -139.5,
+        -189.0,
+        20
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "left_shoe_0_-16",
+      "head_seat_mm": [
+        -165.5,
+        -16.0,
+        20.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        -139.5,
+        -16,
+        20
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "left_shoe_0_16",
+      "head_seat_mm": [
+        -165.5,
+        16.0,
+        20.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        -139.5,
+        16,
+        20
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "left_shoe_205.0_-16",
+      "head_seat_mm": [
+        -165.5,
+        189.0,
+        20.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        -139.5,
+        189.0,
+        20
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "left_shoe_205.0_16",
+      "head_seat_mm": [
+        -165.5,
+        221.0,
+        20.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        -139.5,
+        221.0,
+        20
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "left_clamp_0_-8_-18.0",
+      "head_seat_mm": [
+        -94.95,
+        -68,
+        122.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        -68.95,
+        -68,
+        122.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_9x1"
+    },
+    {
+      "label": "left_clamp_0_-8_18.0",
+      "head_seat_mm": [
+        -94.95,
+        -68,
+        158.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        -68.95,
+        -68,
+        158.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_9x1"
+    },
+    {
+      "label": "left_clamp_0_8_-18.0",
+      "head_seat_mm": [
+        -94.95,
+        -52,
+        122.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        -68.95,
+        -52,
+        122.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_9x1"
+    },
+    {
+      "label": "left_clamp_0_8_18.0",
+      "head_seat_mm": [
+        -94.95,
+        -52,
+        158.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        -68.95,
+        -52,
+        158.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_9x1"
+    },
+    {
+      "label": "left_link_frame_0_-10",
+      "head_seat_mm": [
+        -156.5,
+        -70.0,
+        140.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        -140.0,
+        -70,
+        140
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "left_link_frame_0_10",
+      "head_seat_mm": [
+        -156.5,
+        -50.0,
+        140.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        -140.0,
+        -50,
+        140
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "left_clamp_1_-8_-18.0",
+      "head_seat_mm": [
+        -94.95,
+        -8,
+        122.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        -68.95,
+        -8,
+        122.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_9x1"
+    },
+    {
+      "label": "left_clamp_1_-8_18.0",
+      "head_seat_mm": [
+        -94.95,
+        -8,
+        158.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        -68.95,
+        -8,
+        158.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_9x1"
+    },
+    {
+      "label": "left_clamp_1_8_-18.0",
+      "head_seat_mm": [
+        -94.95,
+        8,
+        122.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        -68.95,
+        8,
+        122.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_9x1"
+    },
+    {
+      "label": "left_clamp_1_8_18.0",
+      "head_seat_mm": [
+        -94.95,
+        8,
+        158.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        -68.95,
+        8,
+        158.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_9x1"
+    },
+    {
+      "label": "left_link_frame_1_-10",
+      "head_seat_mm": [
+        -162.5,
+        -10.0,
+        140.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 25,
+      "nut_seat_mm": [
+        -140.0,
+        -10,
+        140
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "left_link_frame_1_10",
+      "head_seat_mm": [
+        -162.5,
+        10.0,
+        140.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 25,
+      "nut_seat_mm": [
+        -140.0,
+        10,
+        140
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "left_clamp_2_-8_-18.0",
+      "head_seat_mm": [
+        -94.95,
+        52,
+        122.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        -68.95,
+        52,
+        122.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_9x1"
+    },
+    {
+      "label": "left_clamp_2_-8_18.0",
+      "head_seat_mm": [
+        -94.95,
+        52,
+        158.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        -68.95,
+        52,
+        158.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_9x1"
+    },
+    {
+      "label": "left_clamp_2_8_-18.0",
+      "head_seat_mm": [
+        -94.95,
+        68,
+        122.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        -68.95,
+        68,
+        122.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_9x1"
+    },
+    {
+      "label": "left_clamp_2_8_18.0",
+      "head_seat_mm": [
+        -94.95,
+        68,
+        158.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        -68.95,
+        68,
+        158.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_9x1"
+    },
+    {
+      "label": "left_link_frame_2_-10",
+      "head_seat_mm": [
+        -156.5,
+        50.0,
+        140.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        -140.0,
+        50,
+        140
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "left_link_frame_2_10",
+      "head_seat_mm": [
+        -156.5,
+        70.0,
+        140.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        -140.0,
+        70,
+        140
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_splice_212.0_-18_-6",
+      "head_seat_mm": [
+        162.5,
+        -18.0,
+        206.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 25,
+      "nut_seat_mm": [
+        143.5,
+        -18.0,
+        206.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_splice_212.0_-18_6",
+      "head_seat_mm": [
+        162.5,
+        -18.0,
+        218.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 25,
+      "nut_seat_mm": [
+        143.5,
+        -18.0,
+        218.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_splice_212.0_18_-6",
+      "head_seat_mm": [
+        162.5,
+        18.0,
+        206.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 25,
+      "nut_seat_mm": [
+        143.5,
+        18.0,
+        206.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_splice_212.0_18_6",
+      "head_seat_mm": [
+        162.5,
+        18.0,
+        218.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 25,
+      "nut_seat_mm": [
+        143.5,
+        18.0,
+        218.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_splice_140_-26_-18",
+      "head_seat_mm": [
+        162.5,
+        -26.0,
+        122.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 25,
+      "nut_seat_mm": [
+        143.5,
+        -26.0,
+        122.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_splice_140_-26_18",
+      "head_seat_mm": [
+        162.5,
+        -26.0,
+        158.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 25,
+      "nut_seat_mm": [
+        143.5,
+        -26.0,
+        158.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_splice_140_26_-18",
+      "head_seat_mm": [
+        162.5,
+        26.0,
+        122.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 25,
+      "nut_seat_mm": [
+        143.5,
+        26.0,
+        122.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_splice_140_26_18",
+      "head_seat_mm": [
+        162.5,
+        26.0,
+        158.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 25,
+      "nut_seat_mm": [
+        143.5,
+        26.0,
+        158.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_shoe_-205.0_-16",
+      "head_seat_mm": [
+        165.5,
+        -221.0,
+        20.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        139.5,
+        -221.0,
+        20
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_shoe_-205.0_16",
+      "head_seat_mm": [
+        165.5,
+        -189.0,
+        20.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        139.5,
+        -189.0,
+        20
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_shoe_0_-16",
+      "head_seat_mm": [
+        165.5,
+        -16.0,
+        20.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        139.5,
+        -16,
+        20
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_shoe_0_16",
+      "head_seat_mm": [
+        165.5,
+        16.0,
+        20.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        139.5,
+        16,
+        20
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_shoe_205.0_-16",
+      "head_seat_mm": [
+        165.5,
+        189.0,
+        20.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        139.5,
+        189.0,
+        20
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_shoe_205.0_16",
+      "head_seat_mm": [
+        165.5,
+        221.0,
+        20.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        139.5,
+        221.0,
+        20
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_clamp_0_-8_-18.0",
+      "head_seat_mm": [
+        94.95,
+        -68,
+        122.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        68.95,
+        -68,
+        122.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_9x1"
+    },
+    {
+      "label": "right_clamp_0_-8_18.0",
+      "head_seat_mm": [
+        94.95,
+        -68,
+        158.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        68.95,
+        -68,
+        158.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_9x1"
+    },
+    {
+      "label": "right_clamp_0_8_-18.0",
+      "head_seat_mm": [
+        94.95,
+        -52,
+        122.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        68.95,
+        -52,
+        122.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_9x1"
+    },
+    {
+      "label": "right_clamp_0_8_18.0",
+      "head_seat_mm": [
+        94.95,
+        -52,
+        158.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        68.95,
+        -52,
+        158.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_9x1"
+    },
+    {
+      "label": "right_link_frame_0_-10",
+      "head_seat_mm": [
+        156.5,
+        -70.0,
+        140.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        140.0,
+        -70,
+        140
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_link_frame_0_10",
+      "head_seat_mm": [
+        156.5,
+        -50.0,
+        140.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        140.0,
+        -50,
+        140
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_clamp_1_-8_-18.0",
+      "head_seat_mm": [
+        94.95,
+        -8,
+        122.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        68.95,
+        -8,
+        122.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_9x1"
+    },
+    {
+      "label": "right_clamp_1_-8_18.0",
+      "head_seat_mm": [
+        94.95,
+        -8,
+        158.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        68.95,
+        -8,
+        158.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_9x1"
+    },
+    {
+      "label": "right_clamp_1_8_-18.0",
+      "head_seat_mm": [
+        94.95,
+        8,
+        122.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        68.95,
+        8,
+        122.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_9x1"
+    },
+    {
+      "label": "right_clamp_1_8_18.0",
+      "head_seat_mm": [
+        94.95,
+        8,
+        158.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        68.95,
+        8,
+        158.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_9x1"
+    },
+    {
+      "label": "right_link_frame_1_-10",
+      "head_seat_mm": [
+        162.5,
+        -10.0,
+        140.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 25,
+      "nut_seat_mm": [
+        140.0,
+        -10,
+        140
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_link_frame_1_10",
+      "head_seat_mm": [
+        162.5,
+        10.0,
+        140.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 25,
+      "nut_seat_mm": [
+        140.0,
+        10,
+        140
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_clamp_2_-8_-18.0",
+      "head_seat_mm": [
+        94.95,
+        52,
+        122.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        68.95,
+        52,
+        122.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_9x1"
+    },
+    {
+      "label": "right_clamp_2_-8_18.0",
+      "head_seat_mm": [
+        94.95,
+        52,
+        158.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        68.95,
+        52,
+        158.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_9x1"
+    },
+    {
+      "label": "right_clamp_2_8_-18.0",
+      "head_seat_mm": [
+        94.95,
+        68,
+        122.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        68.95,
+        68,
+        122.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_9x1"
+    },
+    {
+      "label": "right_clamp_2_8_18.0",
+      "head_seat_mm": [
+        94.95,
+        68,
+        158.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        68.95,
+        68,
+        158.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_9x1"
+    },
+    {
+      "label": "right_link_frame_2_-10",
+      "head_seat_mm": [
+        156.5,
+        50.0,
+        140.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        140.0,
+        50,
+        140
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_link_frame_2_10",
+      "head_seat_mm": [
+        156.5,
+        70.0,
+        140.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        140.0,
+        70,
+        140
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "rear_lower_left_end_-9",
+      "head_seat_mm": [
+        -156.5,
+        -216.0,
+        52.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        -140.0,
+        -216.0,
+        52.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "rear_lower_left_end_9",
+      "head_seat_mm": [
+        -156.5,
+        -198.0,
+        52.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        -140.0,
+        -198.0,
+        52.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "rear_lower_right_end_-9",
+      "head_seat_mm": [
+        156.5,
+        -216.0,
+        52.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        140.0,
+        -216.0,
+        52.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "rear_lower_right_end_9",
+      "head_seat_mm": [
+        156.5,
+        -198.0,
+        52.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        140.0,
+        -198.0,
+        52.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "rear_lower_splice_-18_6",
+      "head_seat_mm": [
+        -18.0,
+        -181.5,
+        46.0
+      ],
+      "axis_outward": [
+        0,
+        1,
+        0
+      ],
+      "length_mm": 50,
+      "nut_seat_mm": [
+        -18.0,
+        -226.5,
+        46.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "rear_lower_splice_-18_18",
+      "head_seat_mm": [
+        -18.0,
+        -181.5,
+        58.0
+      ],
+      "axis_outward": [
+        0,
+        1,
+        0
+      ],
+      "length_mm": 50,
+      "nut_seat_mm": [
+        -18.0,
+        -226.5,
+        58.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "rear_lower_splice_18_6",
+      "head_seat_mm": [
+        18.0,
+        -181.5,
+        46.0
+      ],
+      "axis_outward": [
+        0,
+        1,
+        0
+      ],
+      "length_mm": 50,
+      "nut_seat_mm": [
+        18.0,
+        -226.5,
+        46.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "rear_lower_splice_18_18",
+      "head_seat_mm": [
+        18.0,
+        -181.5,
+        58.0
+      ],
+      "axis_outward": [
+        0,
+        1,
+        0
+      ],
+      "length_mm": 50,
+      "nut_seat_mm": [
+        18.0,
+        -226.5,
+        58.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "front_lower_left_end_-9",
+      "head_seat_mm": [
+        -156.5,
+        141.0,
+        24.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        -140.0,
+        141.0,
+        24
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "front_lower_left_end_9",
+      "head_seat_mm": [
+        -156.5,
+        159.0,
+        24.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        -140.0,
+        159.0,
+        24
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "front_lower_right_end_-9",
+      "head_seat_mm": [
+        156.5,
+        141.0,
+        24.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        140.0,
+        141.0,
+        24
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "front_lower_right_end_9",
+      "head_seat_mm": [
+        156.5,
+        159.0,
+        24.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        140.0,
+        159.0,
+        24
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "front_lower_splice_-18_6",
+      "head_seat_mm": [
+        -18.0,
+        175.5,
+        18.0
+      ],
+      "axis_outward": [
+        0,
+        1,
+        0
+      ],
+      "length_mm": 50,
+      "nut_seat_mm": [
+        -18.0,
+        130.5,
+        18.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "front_lower_splice_-18_18",
+      "head_seat_mm": [
+        -18.0,
+        175.5,
+        30.0
+      ],
+      "axis_outward": [
+        0,
+        1,
+        0
+      ],
+      "length_mm": 50,
+      "nut_seat_mm": [
+        -18.0,
+        130.5,
+        30.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "front_lower_splice_18_6",
+      "head_seat_mm": [
+        18.0,
+        175.5,
+        18.0
+      ],
+      "axis_outward": [
+        0,
+        1,
+        0
+      ],
+      "length_mm": 50,
+      "nut_seat_mm": [
+        18.0,
+        130.5,
+        18.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "front_lower_splice_18_18",
+      "head_seat_mm": [
+        18.0,
+        175.5,
+        30.0
+      ],
+      "axis_outward": [
+        0,
+        1,
+        0
+      ],
+      "length_mm": 50,
+      "nut_seat_mm": [
+        18.0,
+        130.5,
+        30.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "camera_left_end_-9",
+      "head_seat_mm": [
+        -156.5,
+        191.0,
+        78.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        -140.0,
+        191,
+        78
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "camera_left_end_9",
+      "head_seat_mm": [
+        -156.5,
+        209.0,
+        78.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        -140.0,
+        209,
+        78
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "camera_right_end_-9",
+      "head_seat_mm": [
+        156.5,
+        191.0,
+        78.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        140.0,
+        191,
+        78
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "camera_right_end_9",
+      "head_seat_mm": [
+        156.5,
+        209.0,
+        78.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        140.0,
+        209,
+        78
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "camera_splice_-18_6",
+      "head_seat_mm": [
+        -18.0,
+        225.5,
+        72.0
+      ],
+      "axis_outward": [
+        0,
+        1,
+        0
+      ],
+      "length_mm": 50,
+      "nut_seat_mm": [
+        -18.0,
+        180.5,
+        72.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "camera_splice_-18_18",
+      "head_seat_mm": [
+        -18.0,
+        225.5,
+        84.0
+      ],
+      "axis_outward": [
+        0,
+        1,
+        0
+      ],
+      "length_mm": 50,
+      "nut_seat_mm": [
+        -18.0,
+        180.5,
+        84.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "camera_splice_18_6",
+      "head_seat_mm": [
+        18.0,
+        225.5,
+        72.0
+      ],
+      "axis_outward": [
+        0,
+        1,
+        0
+      ],
+      "length_mm": 50,
+      "nut_seat_mm": [
+        18.0,
+        180.5,
+        72.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "camera_splice_18_18",
+      "head_seat_mm": [
+        18.0,
+        225.5,
+        84.0
+      ],
+      "axis_outward": [
+        0,
+        1,
+        0
+      ],
+      "length_mm": 50,
+      "nut_seat_mm": [
+        18.0,
+        180.5,
+        84.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "left_tray_end_-126",
+      "head_seat_mm": [
+        -156.5,
+        -126.0,
+        29.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        -140.0,
+        -126,
+        29
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "left_tray_end_-54",
+      "head_seat_mm": [
+        -156.5,
+        -54.0,
+        29.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        -140.0,
+        -54,
+        29
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "left_weight_stop_32_-18",
+      "head_seat_mm": [
+        -32.0,
+        -108.0,
+        46.5
+      ],
+      "axis_outward": [
+        0,
+        0,
+        1
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        -32.0,
+        -108.0,
+        23.5
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "left_weight_stop_32_18",
+      "head_seat_mm": [
+        -32.0,
+        -72.0,
+        46.5
+      ],
+      "axis_outward": [
+        0,
+        0,
+        1
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        -32.0,
+        -72.0,
+        23.5
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "left_weight_stop_120_-18",
+      "head_seat_mm": [
+        -120.0,
+        -108.0,
+        46.5
+      ],
+      "axis_outward": [
+        0,
+        0,
+        1
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        -120.0,
+        -108.0,
+        23.5
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "left_weight_stop_120_18",
+      "head_seat_mm": [
+        -120.0,
+        -72.0,
+        46.5
+      ],
+      "axis_outward": [
+        0,
+        0,
+        1
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        -120.0,
+        -72.0,
+        23.5
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_tray_end_-126",
+      "head_seat_mm": [
+        156.5,
+        -126.0,
+        29.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        140.0,
+        -126,
+        29
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_tray_end_-54",
+      "head_seat_mm": [
+        156.5,
+        -54.0,
+        29.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        140.0,
+        -54,
+        29
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_weight_stop_32_-18",
+      "head_seat_mm": [
+        32.0,
+        -108.0,
+        46.5
+      ],
+      "axis_outward": [
+        0,
+        0,
+        1
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        32.0,
+        -108.0,
+        23.5
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_weight_stop_32_18",
+      "head_seat_mm": [
+        32.0,
+        -72.0,
+        46.5
+      ],
+      "axis_outward": [
+        0,
+        0,
+        1
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        32.0,
+        -72.0,
+        23.5
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_weight_stop_120_-18",
+      "head_seat_mm": [
+        120.0,
+        -108.0,
+        46.5
+      ],
+      "axis_outward": [
+        0,
+        0,
+        1
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        120.0,
+        -108.0,
+        23.5
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_weight_stop_120_18",
+      "head_seat_mm": [
+        120.0,
+        -72.0,
+        46.5
+      ],
+      "axis_outward": [
+        0,
+        0,
+        1
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        120.0,
+        -72.0,
+        23.5
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "tray_splice_-18_-30",
+      "head_seat_mm": [
+        -18.0,
+        -120.0,
+        34.5
+      ],
+      "axis_outward": [
+        0,
+        0,
+        1
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        -18.0,
+        -120.0,
+        17.5
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "tray_splice_-18_30",
+      "head_seat_mm": [
+        -18.0,
+        -60.0,
+        34.5
+      ],
+      "axis_outward": [
+        0,
+        0,
+        1
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        -18.0,
+        -60.0,
+        17.5
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "tray_splice_18_-30",
+      "head_seat_mm": [
+        18.0,
+        -120.0,
+        34.5
+      ],
+      "axis_outward": [
+        0,
+        0,
+        1
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        18.0,
+        -120.0,
+        17.5
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "tray_splice_18_30",
+      "head_seat_mm": [
+        18.0,
+        -60.0,
+        34.5
+      ],
+      "axis_outward": [
+        0,
+        0,
+        1
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        18.0,
+        -60.0,
+        17.5
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "camera_deck_-24_198",
+      "head_seat_mm": [
+        -24.0,
+        198.0,
+        102.5
+      ],
+      "axis_outward": [
+        0,
+        0,
+        1
+      ],
+      "length_mm": 45,
+      "nut_seat_mm": [
+        -24.0,
+        198.0,
+        65.5
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "camera_deck_-24_208",
+      "head_seat_mm": [
+        -24.0,
+        208.0,
+        102.5
+      ],
+      "axis_outward": [
+        0,
+        0,
+        1
+      ],
+      "length_mm": 45,
+      "nut_seat_mm": [
+        -24.0,
+        208.0,
+        65.5
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "camera_deck_24_198",
+      "head_seat_mm": [
+        24.0,
+        198.0,
+        102.5
+      ],
+      "axis_outward": [
+        0,
+        0,
+        1
+      ],
+      "length_mm": 45,
+      "nut_seat_mm": [
+        24.0,
+        198.0,
+        65.5
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "camera_deck_24_208",
+      "head_seat_mm": [
+        24.0,
+        208.0,
+        102.5
+      ],
+      "axis_outward": [
+        0,
+        0,
+        1
+      ],
+      "length_mm": 45,
+      "nut_seat_mm": [
+        24.0,
+        208.0,
+        65.5
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "light_seat_-10",
+      "head_seat_mm": [
+        -156.5,
+        -120.0,
+        152.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        -132.0,
+        -120,
+        152
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "light_seat_10",
+      "head_seat_mm": [
+        -156.5,
+        -100.0,
+        152.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        -132.0,
+        -100,
+        152
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "transducer_seat_-10",
+      "head_seat_mm": [
+        156.5,
+        -120.0,
+        152.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        132.0,
+        -120,
+        152
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "transducer_seat_10",
+      "head_seat_mm": [
+        156.5,
+        -100.0,
+        152.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 30,
+      "nut_seat_mm": [
+        132.0,
+        -100,
+        152
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "transducer_bridge_-120",
+      "head_seat_mm": [
+        99.0,
+        -120.0,
+        212.5
+      ],
+      "axis_outward": [
+        0,
+        0,
+        1
+      ],
+      "length_mm": 25,
+      "nut_seat_mm": [
+        99.0,
+        -120.0,
+        193.5
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "transducer_bridge_-100",
+      "head_seat_mm": [
+        99.0,
+        -100.0,
+        212.5
+      ],
+      "axis_outward": [
+        0,
+        0,
+        1
+      ],
+      "length_mm": 25,
+      "nut_seat_mm": [
+        99.0,
+        -100.0,
+        193.5
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "left_bumper_122",
+      "head_seat_mm": [
+        -156.5,
+        -214.0,
+        122.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        -140.0,
+        -214,
+        122
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "left_bumper_158",
+      "head_seat_mm": [
+        -156.5,
+        -214.0,
+        158.0
+      ],
+      "axis_outward": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        -140.0,
+        -214,
+        158
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_bumper_122",
+      "head_seat_mm": [
+        156.5,
+        -214.0,
+        122.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        140.0,
+        -214,
+        122
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "right_bumper_158",
+      "head_seat_mm": [
+        156.5,
+        -214.0,
+        158.0
+      ],
+      "axis_outward": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 20,
+      "nut_seat_mm": [
+        140.0,
+        -214,
+        158
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "bumper_splice_-18_108",
+      "head_seat_mm": [
+        -18.0,
+        -226.5,
+        108.0
+      ],
+      "axis_outward": [
+        0,
+        -1,
+        0
+      ],
+      "length_mm": 25,
+      "nut_seat_mm": [
+        -18.0,
+        -207.5,
+        108.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "bumper_splice_18_108",
+      "head_seat_mm": [
+        18.0,
+        -226.5,
+        108.0
+      ],
+      "axis_outward": [
+        0,
+        -1,
+        0
+      ],
+      "length_mm": 25,
+      "nut_seat_mm": [
+        18.0,
+        -207.5,
+        108.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "bumper_splice_-18_172",
+      "head_seat_mm": [
+        -18.0,
+        -226.5,
+        172.0
+      ],
+      "axis_outward": [
+        0,
+        -1,
+        0
+      ],
+      "length_mm": 25,
+      "nut_seat_mm": [
+        -18.0,
+        -207.5,
+        172.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    },
+    {
+      "label": "bumper_splice_18_172",
+      "head_seat_mm": [
+        18.0,
+        -226.5,
+        172.0
+      ],
+      "axis_outward": [
+        0,
+        -1,
+        0
+      ],
+      "length_mm": 25,
+      "nut_seat_mm": [
+        18.0,
+        -207.5,
+        172.0
+      ],
+      "nut_thickness_mm": 2.4,
+      "head_washer": "washer_m3_05"
+    }
+  ],
+  "purchased_counts": {
+    "screw_m3x60": 12,
+    "screw_washer_m3_12x1": 24,
+    "screw_nut_m3": 134,
+    "screw_washer_m3_05": 148,
+    "screw_m3x25": 26,
+    "screw_m3x30": 48,
+    "screw_washer_m3_9x1": 72,
+    "screw_m3x20": 32,
+    "screw_m3x50": 12,
+    "screw_m3x45": 4
+  }
+}

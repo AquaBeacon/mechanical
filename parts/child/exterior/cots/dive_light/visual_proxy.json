@@ -1,0 +1,9 @@
+{
+  "status": "exploration_only",
+  "kind": "light",
+  "source": "dive_light.md; product not selected",
+  "dimensions_status": "Generic appearance proxy. Body diameter from existing provisional 40 mm record; other proportions provisional.",
+  "body_diameter_mm": 40,
+  "body_length_provisional_mm": 94,
+  "light_axis_local": [0,0,1]
+}

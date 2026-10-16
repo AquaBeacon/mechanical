@@ -1,0 +1,36 @@
+{
+  "status": "legacy_prototype",
+  "note": "旧配置検討案。支柱・浮体・錘は購入品または予約包絡。印刷形状は未認証の試作。",
+  "extra_parts": [
+    {
+      "part": "assemblies/parent_spar_concept",
+      "file": "disk",
+      "quantity": 1
+    },
+    {
+      "part": "assemblies/parent_spar_concept",
+      "file": "fin",
+      "quantity": 4
+    },
+    {
+      "part": "assemblies/parent_spar_concept",
+      "file": "hub",
+      "quantity": 2
+    },
+    {
+      "part": "assemblies/parent_spar_concept",
+      "file": "coupler",
+      "quantity": 1
+    },
+    {
+      "part": "assemblies/parent_spar_concept",
+      "file": "adapter",
+      "quantity": 1
+    },
+    {
+      "part": "parts/parent/exterior/printed/parent_deck",
+      "file": "parent_deck",
+      "quantity": 1
+    }
+  ]
+}

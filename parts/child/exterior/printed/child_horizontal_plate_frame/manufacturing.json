@@ -1,0 +1,106 @@
+{
+  "status": "fit_prototype",
+  "material": "Bambu Lab PETG Basic",
+  "printer": "Bambu Lab X1 Carbon, 0.4 mm nozzle",
+  "print_rotations_deg": {
+    "child_horizontal_plate_frame_side": [
+      0,
+      0,
+      0
+    ],
+    "child_horizontal_plate_frame_bottom": [
+      0,
+      0,
+      0
+    ],
+    "child_horizontal_plate_frame_top": [
+      0,
+      0,
+      0
+    ],
+    "child_horizontal_plate_frame_ballast_cap": [
+      0,
+      0,
+      0
+    ],
+    "child_horizontal_plate_frame_guard_front": [
+      0,
+      0,
+      0
+    ],
+    "child_horizontal_plate_frame_guard_rear": [
+      0,
+      0,
+      0
+    ],
+    "child_horizontal_plate_frame_rotation_key": [
+      90,
+      0,
+      0
+    ],
+    "child_horizontal_plate_frame_clamp_support": [
+      0,
+      0,
+      0
+    ],
+    "child_horizontal_plate_frame_guard_front_inner": [
+      0,
+      0,
+      0
+    ],
+    "child_horizontal_plate_frame_guard_rear_inner": [
+      0,
+      0,
+      0
+    ]
+  },
+  "process": {
+    "layer_height_mm": 0.2,
+    "wall_loops": 8,
+    "infill_percent": 100,
+    "brim_mm": 5,
+    "supports": "none"
+  },
+  "source_dependencies": [
+    "../../../../../tools/prepare_child_horizontal_plate_frame.py",
+    "../../../../../tools/weld_small_stl_faces.py",
+    "../../../../../tools/clean_stl_degenerates.py",
+    "../../../../../tools/measure_child_horizontal_guard_interfaces.py",
+    "../../cots/wte4_end_cap_5xm10/WTE4-M-END-CAP-5XM10-R2.step",
+    "../../../../../tools/measure_ballast_plate_b_interface.py",
+    "../../../../common/exterior/cots/ballast_plate/ballast_plate_b.step",
+    "../../../../../tools/check_child_horizontal_open_nuts.py"
+  ],
+  "stl_export_format": "binstl",
+  "degenerate_edge_flip_files": [
+    "child_horizontal_plate_frame_side",
+    "child_horizontal_plate_frame_bottom",
+    "child_horizontal_plate_frame_top",
+    "child_horizontal_plate_frame_ballast_cap",
+    "child_horizontal_plate_frame_guard_front",
+    "child_horizontal_plate_frame_guard_rear",
+    "child_horizontal_plate_frame_rotation_key",
+    "child_horizontal_plate_frame_clamp_support",
+    "child_horizontal_plate_frame_guard_front_inner",
+    "child_horizontal_plate_frame_guard_rear_inner"
+  ],
+  "degenerate_local_sliver_weld_files": [
+    "child_horizontal_plate_frame_side",
+    "child_horizontal_plate_frame_bottom",
+    "child_horizontal_plate_frame_top",
+    "child_horizontal_plate_frame_ballast_cap",
+    "child_horizontal_plate_frame_guard_front",
+    "child_horizontal_plate_frame_guard_rear",
+    "child_horizontal_plate_frame_rotation_key",
+    "child_horizontal_plate_frame_clamp_support",
+    "child_horizontal_plate_frame_guard_front_inner",
+    "child_horizontal_plate_frame_guard_rear_inner"
+  ],
+  "non_print_files": [
+    "child_horizontal_plate_frame_side_reference",
+    "child_horizontal_plate_frame_bottom_reference",
+    "child_horizontal_plate_frame_top_reference"
+  ],
+  "note": "2026-10-11：側板・底板は印刷済みSTLを保持。未印刷のM3穴は内接円径3.5 mmの八角形。上部・支持治具・回転止めは開放ナットと両側ワッシャ。支持治具/回転止めM3×25、上部板接合M3×30。残り15個、全体20個。 サポートなし。回転止めは設計元STLをX軸回りに90°回転して広い底面をベッドへ、支持治具の開放部は奥行8 mmの短いブリッジ。 Rev.3：前後延長4枚は側板内側。innerバリアントは上部と回転止めに逃げ、M3×25＋両側ワッシャ＋普通ナット。 2026-10-12：トップにクランプ締付用の工具穴6か所、内接円径10・正12角形・入口0.4面取り。工具軸φ8×70は既存仮包絡、左の内寄り2穴は周囲を局所拡幅。印刷向きは従来の底面下、0.2 mm層、サポート無効。",
+  "portable_stl_export_format": "stl_ascii"
+}

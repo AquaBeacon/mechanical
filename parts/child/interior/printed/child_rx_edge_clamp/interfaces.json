@@ -1,0 +1,25 @@
+{
+  "consumer": "child_rx_edge_clamp",
+  "references": [
+    {
+      "part": "rx_improved_mini",
+      "path": "parts/child/interior/pcb/rx_improved_mini",
+      "md_sha256": "641bdfeedf225b5c4f57f2ceb8d37bfb21e93987aace0a31797115a41d996d08",
+      "stl_sha256": "ab33ea11bfbd3ca422a57fae44fafa91a31faa13700b6ca3cbc5f5c8d98a5e90",
+      "bbox_mm": [
+        68.0,
+        46.0,
+        17.3
+      ],
+      "status_at_lock": [
+        "needs_measure",
+        "ordered",
+        "provisional"
+      ],
+      "values": {},
+      "confirmed_by_human": true,
+      "confirmed_at": "2026-09-27T15:43:01",
+      "note": "User approved printed M3 edge clamps without PCB drilling, 2026-09-27; actual 68x46 PCB outline and existing 2.2 holes checked"
+    }
+  ]
+}

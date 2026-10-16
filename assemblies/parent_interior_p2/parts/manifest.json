@@ -1,0 +1,239 @@
+{
+  "schema_version": 1,
+  "assembly": "parent_interior_p2",
+  "release_status": "existing_prototype",
+  "note": "既存構成の印刷データを整理。強度・造形性の新規認証ではない。",
+  "source_hashes": {
+    "assemblies/parent_interior_p2/placement.json": "2000a95cf67ead80ba6349e4570f69091097129fc5f46c48fb947d0a2ba48788",
+    "assemblies/parent_interior_p2/README.md": "c149eff81092eedc3c6a05cc92b4e9ec9f3495a55d12460cd1856b5515a296d1",
+    "parts/parent/interior/printed/parent_cam_mount/parent_cam_mount.md": "df928a8067bd9438994b316a8efc881d1055cdf77734cb7a281608ef81e952a5",
+    "parts/parent/interior/printed/parent_cam_mount/parent_cam_mount.scad": "e7fe33dbbbc52ae1bc10c48bb4524a3769f1c1854d5d292b11e4b4a6b4f18f1b",
+    "parts/parent/interior/printed/parent_lipo_tray/parent_lipo_tray.md": "ed17599abd58ad15bbb3ad1ff838e24709cb614082ed847b17d2483ee1c22607",
+    "parts/parent/interior/printed/parent_lipo_tray/parent_lipo_tray.scad": "6142afab41fb20fe154828aae636994a315a9e487a53885bec8e3a241c4bb2bc",
+    "parts/parent/interior/printed/parent_plate/parent_plate.md": "8f7915cbda8fbaa2eeede07539587b12dbc748f7e33b0c30e72e3ba62ebc3660",
+    "parts/parent/interior/printed/parent_plate/parent_plate.scad": "297143f9878cc8ac2eb23a94fd239c141fe628b39c5d4ab5ab709ce0f246ded8",
+    "parts/parent/interior/printed/parent_plate/variants.txt": "0082df303675be8d98f89964eebea778d29342a033e60635a1cba43f38d23533",
+    "spec/parent_interior_layout.py": "94fcfd389470591cb68c24a3edce6ac5582092b5d994d7a6c6dde59de6ff92d5"
+  },
+  "parts": [
+    {
+      "part": "parts/parent/interior/printed/parent_plate",
+      "stem": "parent_plate_p2",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "plate"
+      ],
+      "file": "parent_plate_p2.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/interior/printed/parent_plate/parent_plate_p2.stl",
+      "source_sha256": "e8914f98be6c8bc19ba6fbc4ad073aa47ef1fe6065ed08c22c8536ddd53d360f",
+      "sha256": "af209d780743a01b1a431e8a54ac8356176659889649a8a299c27838d2c4606b",
+      "extents_mm": [
+        183.0,
+        203.0,
+        17.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/interior/printed/parent_cam_mount",
+      "stem": "parent_cam_mount",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "cam_mount"
+      ],
+      "file": "parent_cam_mount.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/interior/printed/parent_cam_mount/parent_cam_mount.stl",
+      "source_sha256": "850c54d64936e4098ec7b7b73ec72714de8390080af41a6b76bb07b8388b4632",
+      "sha256": "222fb5a3b39a9852045059fbd551d9f068a131c4addf81e6447f5327af4a1f38",
+      "extents_mm": [
+        62.0,
+        62.0,
+        19.5
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          31.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          31.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/interior/printed/parent_lipo_tray",
+      "stem": "parent_lipo_tray",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "lipo_tray"
+      ],
+      "file": "parent_lipo_tray.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/interior/printed/parent_lipo_tray/parent_lipo_tray.stl",
+      "source_sha256": "79293d4649b38714d3e8eed0c968741b62b0812ec3dae944b7067beab1de36dd",
+      "sha256": "bedbc9947401a32b0206a4962e99b37e26f8dab822b9e4f222b9aa204272485b",
+      "extents_mm": [
+        112.0,
+        84.5,
+        17.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          4.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    }
+  ],
+  "modifiers": [],
+  "generated_files": [
+    "parent_plate_p2.stl",
+    "parent_cam_mount.stl",
+    "parent_lipo_tray.stl",
+    "DESIGN_NOTES.md",
+    "PRINT.md"
+  ],
+  "document_hashes": {
+    "DESIGN_NOTES.md": "cb7a8585dbf7f80bda2ef508988efa60497a69b8123adb1843640126b63ffcbe",
+    "PRINT.md": "334bcd3e1e35c850ac69b03a90cf8c74e9188fbf58769d04d5058d28d09c40bc"
+  }
+}

@@ -1,0 +1,913 @@
+{
+  "part": "C:\\Users\\ryupc\\WorkSpace\\Mitou26\\Body_Models\\parts\\child\\exterior\\printed\\child_core_frame\\topo_v5\\rebuild_i.stl",
+  "material": "PETG",
+  "pass": false,
+  "cases": [
+    {
+      "elements": 261052,
+      "voxel_mm": 1.25,
+      "volume_mm3": 509867.1875,
+      "converged": true,
+      "cg_iterations": 18245,
+      "compliance_Nmm": 22.331859570317658,
+      "max_displacement_mm": 0.6462707261075434,
+      "max_displacement_at": [
+        27.5,
+        -101.25,
+        -17.0
+      ],
+      "von_mises_max_MPa": 6.820830867782729,
+      "von_mises_p99_5_MPa": 1.500208107824284,
+      "stress_concentration_ratio": 4.546589791248907,
+      "failure_index_max": 0.20700232945425598,
+      "failure_index_p99_5": 0.04406300321730281,
+      "failure_criterion": "max_stress_material_axes",
+      "material_axes": {
+        "build_axis": "Z",
+        "raster_axis": "X",
+        "stiffness": "orthotropic",
+        "card_id": "petg_generic_fff_orthotropic_v1"
+      },
+      "min_safety_factor": 4.830863510746062,
+      "safety_factor_p99_5": 22.694776274516773,
+      "mesh": {
+        "thin_section_mm": 3.5355339059327378,
+        "typical_section_mm": 5.0,
+        "elements_across_thin": 2.8284271247461903,
+        "elements_across_typical": 4.0
+      },
+      "warnings": [],
+      "checks": [
+        {
+          "name": "strength",
+          "required": "safety factor >= 3.00",
+          "got": "4.83 (worst element) / 22.69 (p99.5)",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "stiffness",
+          "required": "max deflection <= 1.000 mm",
+          "got": "0.646 mm",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "mesh resolution",
+          "required": ">= 3 elements across the thinnest section",
+          "got": "2.8 (thin 3.54 mm) / 4.0 (typical 5.00 mm)",
+          "pass": false,
+          "inspect": false,
+          "fix": "re-run with --voxel 1.18"
+        }
+      ],
+      "pass": false,
+      "hotspots": [
+        {
+          "pos": [
+            54.38,
+            -21.88,
+            203.62
+          ],
+          "failure_index": 0.207,
+          "safety_factor": 4.83
+        },
+        {
+          "pos": [
+            -54.38,
+            -21.88,
+            203.62
+          ],
+          "failure_index": 0.2,
+          "safety_factor": 4.99
+        },
+        {
+          "pos": [
+            59.38,
+            -23.12,
+            217.38
+          ],
+          "failure_index": 0.182,
+          "safety_factor": 5.48
+        },
+        {
+          "pos": [
+            -59.38,
+            -23.12,
+            217.38
+          ],
+          "failure_index": 0.179,
+          "safety_factor": 5.59
+        },
+        {
+          "pos": [
+            53.12,
+            -26.88,
+            217.38
+          ],
+          "failure_index": 0.137,
+          "safety_factor": 7.32
+        }
+      ],
+      "case": "L1 hoist 3g: lugs fixed, container + guard + gate weights down",
+      "total_applied_load_N": [
+        0.0,
+        0.0,
+        -201.293
+      ],
+      "resultant_load_N": 201.293,
+      "material": "PETG",
+      "material_model": {
+        "material_model": "orthotropic_equivalent_solid",
+        "card_id": "petg_generic_fff_orthotropic_v1",
+        "classification": "conservative_literature_based_default",
+        "measured_for_specific_printer": false,
+        "solid_fraction_applied": 1.0,
+        "Ex_Ey_Ez_MPa": [
+          2100,
+          1750,
+          1150
+        ],
+        "Gxy_Gyz_Gzx_MPa": [
+          700,
+          420,
+          420
+        ],
+        "strengths_MPa": {
+          "Xt": 42,
+          "Xc": 50,
+          "Yt": 33,
+          "Yc": 42,
+          "Zt": 25,
+          "Zc": 35,
+          "Sxy": 20,
+          "Syz": 14,
+          "Szx": 14
+        },
+        "source": "docs/FFF_PLA_PETG_orthotropic_material_reference.md section 6"
+      },
+      "solve_seconds": 379.425,
+      "solver": {
+        "backend": "cuda",
+        "device": "NVIDIA GeForce RTX 4060 Ti",
+        "torch": "2.12.0+cu130",
+        "preconditioner": "jacobi"
+      }
+    },
+    {
+      "elements": 261052,
+      "voxel_mm": 1.25,
+      "volume_mm3": 509867.1875,
+      "converged": true,
+      "cg_iterations": 9315,
+      "compliance_Nmm": 19.69428713454277,
+      "max_displacement_mm": 0.12593562792875146,
+      "max_displacement_at": [
+        -32.5,
+        -102.5,
+        83.0
+      ],
+      "von_mises_max_MPa": 4.053461908119772,
+      "von_mises_p99_5_MPa": 1.0743046829145002,
+      "stress_concentration_ratio": 3.7731027078119617,
+      "failure_index_max": 0.19738975346970342,
+      "failure_index_p99_5": 0.03493195138005016,
+      "failure_criterion": "max_stress_material_axes",
+      "material_axes": {
+        "build_axis": "Z",
+        "raster_axis": "X",
+        "stiffness": "orthotropic",
+        "card_id": "petg_generic_fff_orthotropic_v1"
+      },
+      "min_safety_factor": 5.0661190990011855,
+      "safety_factor_p99_5": 28.627086678332713,
+      "mesh": {
+        "thin_section_mm": 3.5355339059327378,
+        "typical_section_mm": 5.0,
+        "elements_across_thin": 2.8284271247461903,
+        "elements_across_typical": 4.0
+      },
+      "warnings": [],
+      "checks": [
+        {
+          "name": "strength",
+          "required": "safety factor >= 3.00",
+          "got": "5.07 (worst element) / 28.63 (p99.5)",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "stiffness",
+          "required": "max deflection <= 1.000 mm",
+          "got": "0.126 mm",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "mesh resolution",
+          "required": ">= 3 elements across the thinnest section",
+          "got": "2.8 (thin 3.54 mm) / 4.0 (typical 5.00 mm)",
+          "pass": false,
+          "inspect": false,
+          "fix": "re-run with --voxel 1.18"
+        }
+      ],
+      "pass": false,
+      "hotspots": [
+        {
+          "pos": [
+            1.88,
+            -91.88,
+            197.38
+          ],
+          "failure_index": 0.197,
+          "safety_factor": 5.07
+        },
+        {
+          "pos": [
+            29.38,
+            -88.12,
+            182.38
+          ],
+          "failure_index": 0.156,
+          "safety_factor": 6.39
+        },
+        {
+          "pos": [
+            -1.88,
+            -91.88,
+            181.12
+          ],
+          "failure_index": 0.154,
+          "safety_factor": 6.5
+        },
+        {
+          "pos": [
+            -29.38,
+            -88.12,
+            182.38
+          ],
+          "failure_index": 0.118,
+          "safety_factor": 8.49
+        },
+        {
+          "pos": [
+            -30.62,
+            -86.88,
+            6.12
+          ],
+          "failure_index": 0.118,
+          "safety_factor": 8.49
+        }
+      ],
+      "case": "L2s transport side hit 300 N (+X on back wall and lugs), container reacts",
+      "total_applied_load_N": [
+        300.0,
+        0.0,
+        0.0
+      ],
+      "resultant_load_N": 300.0,
+      "material": "PETG",
+      "material_model": {
+        "material_model": "orthotropic_equivalent_solid",
+        "card_id": "petg_generic_fff_orthotropic_v1",
+        "classification": "conservative_literature_based_default",
+        "measured_for_specific_printer": false,
+        "solid_fraction_applied": 1.0,
+        "Ex_Ey_Ez_MPa": [
+          2100,
+          1750,
+          1150
+        ],
+        "Gxy_Gyz_Gzx_MPa": [
+          700,
+          420,
+          420
+        ],
+        "strengths_MPa": {
+          "Xt": 42,
+          "Xc": 50,
+          "Yt": 33,
+          "Yc": 42,
+          "Zt": 25,
+          "Zc": 35,
+          "Sxy": 20,
+          "Syz": 14,
+          "Szx": 14
+        },
+        "source": "docs/FFF_PLA_PETG_orthotropic_material_reference.md section 6"
+      },
+      "solve_seconds": 128.074,
+      "solver": {
+        "backend": "cuda",
+        "device": "NVIDIA GeForce RTX 4060 Ti",
+        "torch": "2.12.0+cu130",
+        "preconditioner": "jacobi"
+      }
+    },
+    {
+      "elements": 261052,
+      "voxel_mm": 1.25,
+      "volume_mm3": 509867.1875,
+      "converged": true,
+      "cg_iterations": 9646,
+      "compliance_Nmm": 123.81208763769745,
+      "max_displacement_mm": 0.8307557871850184,
+      "max_displacement_at": [
+        -76.25,
+        17.5,
+        85.5
+      ],
+      "von_mises_max_MPa": 12.955119331788087,
+      "von_mises_p99_5_MPa": 3.3395724538016083,
+      "stress_concentration_ratio": 3.879274820655741,
+      "failure_index_max": 0.3775268958367243,
+      "failure_index_p99_5": 0.10720231891024236,
+      "failure_criterion": "max_stress_material_axes",
+      "material_axes": {
+        "build_axis": "Z",
+        "raster_axis": "X",
+        "stiffness": "orthotropic",
+        "card_id": "petg_generic_fff_orthotropic_v1"
+      },
+      "min_safety_factor": 2.6488179015263795,
+      "safety_factor_p99_5": 9.328156425769794,
+      "mesh": {
+        "thin_section_mm": 3.5355339059327378,
+        "typical_section_mm": 5.0,
+        "elements_across_thin": 2.8284271247461903,
+        "elements_across_typical": 4.0
+      },
+      "warnings": [],
+      "checks": [
+        {
+          "name": "strength",
+          "required": "safety factor >= 3.00",
+          "got": "2.65 (worst element) / 9.33 (p99.5)",
+          "pass": true,
+          "inspect": true
+        },
+        {
+          "name": "stiffness",
+          "required": "max deflection <= 1.000 mm",
+          "got": "0.831 mm",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "mesh resolution",
+          "required": ">= 3 elements across the thinnest section",
+          "got": "2.8 (thin 3.54 mm) / 4.0 (typical 5.00 mm)",
+          "pass": false,
+          "inspect": false,
+          "fix": "re-run with --voxel 1.18"
+        }
+      ],
+      "pass": false,
+      "hotspots": [
+        {
+          "pos": [
+            -66.88,
+            -11.88,
+            -1.38
+          ],
+          "failure_index": 0.378,
+          "safety_factor": 2.65
+        },
+        {
+          "pos": [
+            -59.38,
+            -0.62,
+            -1.38
+          ],
+          "failure_index": 0.363,
+          "safety_factor": 2.75
+        },
+        {
+          "pos": [
+            -59.38,
+            -0.62,
+            199.88
+          ],
+          "failure_index": 0.362,
+          "safety_factor": 2.76
+        },
+        {
+          "pos": [
+            -66.88,
+            -11.88,
+            199.88
+          ],
+          "failure_index": 0.329,
+          "safety_factor": 3.04
+        },
+        {
+          "pos": [
+            -66.88,
+            -0.62,
+            -1.38
+          ],
+          "failure_index": 0.307,
+          "safety_factor": 3.25
+        }
+      ],
+      "case": "L2h transport landing on the hinge side (300 N +X through the knuckles), container reacts",
+      "total_applied_load_N": [
+        300.0,
+        0.0,
+        0.0
+      ],
+      "resultant_load_N": 300.0,
+      "material": "PETG",
+      "material_model": {
+        "material_model": "orthotropic_equivalent_solid",
+        "card_id": "petg_generic_fff_orthotropic_v1",
+        "classification": "conservative_literature_based_default",
+        "measured_for_specific_printer": false,
+        "solid_fraction_applied": 1.0,
+        "Ex_Ey_Ez_MPa": [
+          2100,
+          1750,
+          1150
+        ],
+        "Gxy_Gyz_Gzx_MPa": [
+          700,
+          420,
+          420
+        ],
+        "strengths_MPa": {
+          "Xt": 42,
+          "Xc": 50,
+          "Yt": 33,
+          "Yc": 42,
+          "Zt": 25,
+          "Zc": 35,
+          "Sxy": 20,
+          "Syz": 14,
+          "Szx": 14
+        },
+        "source": "docs/FFF_PLA_PETG_orthotropic_material_reference.md section 6"
+      },
+      "solve_seconds": 128.074,
+      "solver": {
+        "backend": "cuda",
+        "device": "NVIDIA GeForce RTX 4060 Ti",
+        "torch": "2.12.0+cu130",
+        "preconditioner": "jacobi"
+      }
+    },
+    {
+      "elements": 261052,
+      "voxel_mm": 1.25,
+      "volume_mm3": 509867.1875,
+      "converged": true,
+      "cg_iterations": 9635,
+      "compliance_Nmm": 59.19507163927458,
+      "max_displacement_mm": 0.3061632002012139,
+      "max_displacement_at": [
+        1.25,
+        -90.0,
+        115.5
+      ],
+      "von_mises_max_MPa": 12.241816737513872,
+      "von_mises_p99_5_MPa": 2.0713379633849525,
+      "stress_concentration_ratio": 5.910101081480909,
+      "failure_index_max": 0.30390361601171184,
+      "failure_index_p99_5": 0.05187782588011086,
+      "failure_criterion": "max_stress_material_axes",
+      "material_axes": {
+        "build_axis": "Z",
+        "raster_axis": "X",
+        "stiffness": "orthotropic",
+        "card_id": "petg_generic_fff_orthotropic_v1"
+      },
+      "min_safety_factor": 3.2905169511423713,
+      "safety_factor_p99_5": 19.27605837436191,
+      "mesh": {
+        "thin_section_mm": 3.5355339059327378,
+        "typical_section_mm": 5.0,
+        "elements_across_thin": 2.8284271247461903,
+        "elements_across_typical": 4.0
+      },
+      "warnings": [],
+      "checks": [
+        {
+          "name": "strength",
+          "required": "safety factor >= 3.00",
+          "got": "3.29 (worst element) / 19.28 (p99.5)",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "stiffness",
+          "required": "max deflection <= 1.000 mm",
+          "got": "0.306 mm",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "mesh resolution",
+          "required": ">= 3 elements across the thinnest section",
+          "got": "2.8 (thin 3.54 mm) / 4.0 (typical 5.00 mm)",
+          "pass": false,
+          "inspect": false,
+          "fix": "re-run with --voxel 1.18"
+        }
+      ],
+      "pass": false,
+      "hotspots": [
+        {
+          "pos": [
+            29.38,
+            -86.88,
+            183.62
+          ],
+          "failure_index": 0.304,
+          "safety_factor": 3.29
+        },
+        {
+          "pos": [
+            -29.38,
+            -86.88,
+            183.62
+          ],
+          "failure_index": 0.293,
+          "safety_factor": 3.41
+        },
+        {
+          "pos": [
+            -33.12,
+            -86.88,
+            69.88
+          ],
+          "failure_index": 0.199,
+          "safety_factor": 5.02
+        },
+        {
+          "pos": [
+            -33.12,
+            -86.88,
+            78.62
+          ],
+          "failure_index": 0.187,
+          "safety_factor": 5.34
+        },
+        {
+          "pos": [
+            33.12,
+            -86.88,
+            69.88
+          ],
+          "failure_index": 0.18,
+          "safety_factor": 5.55
+        }
+      ],
+      "case": "L2r transport rear hit 300 N on the back wall (+Y), container reacts",
+      "total_applied_load_N": [
+        0.0,
+        300.0,
+        0.0
+      ],
+      "resultant_load_N": 300.0,
+      "material": "PETG",
+      "material_model": {
+        "material_model": "orthotropic_equivalent_solid",
+        "card_id": "petg_generic_fff_orthotropic_v1",
+        "classification": "conservative_literature_based_default",
+        "measured_for_specific_printer": false,
+        "solid_fraction_applied": 1.0,
+        "Ex_Ey_Ez_MPa": [
+          2100,
+          1750,
+          1150
+        ],
+        "Gxy_Gyz_Gzx_MPa": [
+          700,
+          420,
+          420
+        ],
+        "strengths_MPa": {
+          "Xt": 42,
+          "Xc": 50,
+          "Yt": 33,
+          "Yc": 42,
+          "Zt": 25,
+          "Zc": 35,
+          "Sxy": 20,
+          "Syz": 14,
+          "Szx": 14
+        },
+        "source": "docs/FFF_PLA_PETG_orthotropic_material_reference.md section 6"
+      },
+      "solve_seconds": 128.074,
+      "solver": {
+        "backend": "cuda",
+        "device": "NVIDIA GeForce RTX 4060 Ti",
+        "torch": "2.12.0+cu130",
+        "preconditioner": "jacobi"
+      }
+    },
+    {
+      "elements": 261052,
+      "voxel_mm": 1.25,
+      "volume_mm3": 509867.1875,
+      "converged": true,
+      "cg_iterations": 4867,
+      "compliance_Nmm": 133.13765275820919,
+      "max_displacement_mm": 0.4617335080148909,
+      "max_displacement_at": [
+        72.5,
+        0.0,
+        49.25
+      ],
+      "von_mises_max_MPa": 14.910141440282914,
+      "von_mises_p99_5_MPa": 3.855301459665788,
+      "stress_concentration_ratio": 3.867438537886855,
+      "failure_index_max": 0.7078373389284457,
+      "failure_index_p99_5": 0.12876162768027022,
+      "failure_criterion": "max_stress_material_axes",
+      "material_axes": {
+        "build_axis": "Z",
+        "raster_axis": "X",
+        "stiffness": "orthotropic",
+        "card_id": "petg_generic_fff_orthotropic_v1"
+      },
+      "min_safety_factor": 1.4127539549041628,
+      "safety_factor_p99_5": 7.766288901559352,
+      "mesh": {
+        "thin_section_mm": 3.5355339059327378,
+        "typical_section_mm": 5.0,
+        "elements_across_thin": 2.8284271247461903,
+        "elements_across_typical": 4.0
+      },
+      "warnings": [],
+      "checks": [
+        {
+          "name": "strength",
+          "required": "safety factor >= 3.00",
+          "got": "1.41 (worst element) / 7.77 (p99.5)",
+          "pass": true,
+          "inspect": true
+        },
+        {
+          "name": "stiffness",
+          "required": "max deflection <= 1.000 mm",
+          "got": "0.462 mm",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "mesh resolution",
+          "required": ">= 3 elements across the thinnest section",
+          "got": "2.8 (thin 3.54 mm) / 4.0 (typical 5.00 mm)",
+          "pass": false,
+          "inspect": false,
+          "fix": "re-run with --voxel 1.18"
+        }
+      ],
+      "pass": false,
+      "hotspots": [
+        {
+          "pos": [
+            56.88,
+            -29.38,
+            16.12
+          ],
+          "failure_index": 0.708,
+          "safety_factor": 1.41
+        },
+        {
+          "pos": [
+            56.88,
+            -29.38,
+            194.88
+          ],
+          "failure_index": 0.625,
+          "safety_factor": 1.6
+        },
+        {
+          "pos": [
+            58.12,
+            -5.62,
+            38.62
+          ],
+          "failure_index": 0.524,
+          "safety_factor": 1.91
+        },
+        {
+          "pos": [
+            66.88,
+            -9.38,
+            199.88
+          ],
+          "failure_index": 0.467,
+          "safety_factor": 2.14
+        },
+        {
+          "pos": [
+            56.88,
+            -29.38,
+            87.38
+          ],
+          "failure_index": 0.452,
+          "safety_factor": 2.21
+        }
+      ],
+      "case": "L3 clamp preload: knob bolts pull the latch bosses and the gate pulls the knuckles (+Y), tube reacts on the bands",
+      "total_applied_load_N": [
+        0.0,
+        900.0,
+        0.0
+      ],
+      "resultant_load_N": 900.0,
+      "material": "PETG",
+      "material_model": {
+        "material_model": "orthotropic_equivalent_solid",
+        "card_id": "petg_generic_fff_orthotropic_v1",
+        "classification": "conservative_literature_based_default",
+        "measured_for_specific_printer": false,
+        "solid_fraction_applied": 1.0,
+        "Ex_Ey_Ez_MPa": [
+          2100,
+          1750,
+          1150
+        ],
+        "Gxy_Gyz_Gzx_MPa": [
+          700,
+          420,
+          420
+        ],
+        "strengths_MPa": {
+          "Xt": 42,
+          "Xc": 50,
+          "Yt": 33,
+          "Yc": 42,
+          "Zt": 25,
+          "Zc": 35,
+          "Sxy": 20,
+          "Syz": 14,
+          "Szx": 14
+        },
+        "source": "docs/FFF_PLA_PETG_orthotropic_material_reference.md section 6"
+      },
+      "solve_seconds": 65.906,
+      "solver": {
+        "backend": "cuda",
+        "device": "NVIDIA GeForce RTX 4060 Ti",
+        "torch": "2.12.0+cu130",
+        "preconditioner": "jacobi"
+      }
+    },
+    {
+      "elements": 261052,
+      "voxel_mm": 1.25,
+      "volume_mm3": 509867.1875,
+      "converged": true,
+      "cg_iterations": 7509,
+      "compliance_Nmm": 0.5805198352210611,
+      "max_displacement_mm": 0.006799723968259051,
+      "max_displacement_at": [
+        61.25,
+        -35.0,
+        10.5
+      ],
+      "von_mises_max_MPa": 1.1430587800545586,
+      "von_mises_p99_5_MPa": 0.3208200547450991,
+      "stress_concentration_ratio": 3.5629280749383083,
+      "failure_index_max": 0.05248098589086343,
+      "failure_index_p99_5": 0.014407516683483137,
+      "failure_criterion": "max_stress_material_axes",
+      "material_axes": {
+        "build_axis": "Z",
+        "raster_axis": "X",
+        "stiffness": "orthotropic",
+        "card_id": "petg_generic_fff_orthotropic_v1"
+      },
+      "min_safety_factor": 19.05452008999116,
+      "safety_factor_p99_5": 69.40821391839205,
+      "mesh": {
+        "thin_section_mm": 3.5355339059327378,
+        "typical_section_mm": 5.0,
+        "elements_across_thin": 2.8284271247461903,
+        "elements_across_typical": 4.0
+      },
+      "warnings": [],
+      "checks": [
+        {
+          "name": "strength",
+          "required": "safety factor >= 3.00",
+          "got": "19.05 (worst element) / 69.41 (p99.5)",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "stiffness",
+          "required": "max deflection <= 1.000 mm",
+          "got": "0.007 mm",
+          "pass": true,
+          "inspect": false
+        },
+        {
+          "name": "mesh resolution",
+          "required": ">= 3 elements across the thinnest section",
+          "got": "2.8 (thin 3.54 mm) / 4.0 (typical 5.00 mm)",
+          "pass": false,
+          "inspect": false,
+          "fix": "re-run with --voxel 1.18"
+        }
+      ],
+      "pass": false,
+      "hotspots": [
+        {
+          "pos": [
+            61.88,
+            -31.88,
+            2.38
+          ],
+          "failure_index": 0.052,
+          "safety_factor": 19.05
+        },
+        {
+          "pos": [
+            -61.88,
+            -31.88,
+            2.38
+          ],
+          "failure_index": 0.052,
+          "safety_factor": 19.32
+        },
+        {
+          "pos": [
+            56.88,
+            -36.88,
+            4.88
+          ],
+          "failure_index": 0.045,
+          "safety_factor": 22.18
+        },
+        {
+          "pos": [
+            -56.88,
+            -36.88,
+            4.88
+          ],
+          "failure_index": 0.045,
+          "safety_factor": 22.34
+        },
+        {
+          "pos": [
+            56.88,
+            -40.62,
+            -1.38
+          ],
+          "failure_index": 0.043,
+          "safety_factor": 23.0
+        }
+      ],
+      "case": "L5 landing 600 N up through the guard bosses, container reacts",
+      "total_applied_load_N": [
+        0.0,
+        0.0,
+        600.0
+      ],
+      "resultant_load_N": 600.0,
+      "material": "PETG",
+      "material_model": {
+        "material_model": "orthotropic_equivalent_solid",
+        "card_id": "petg_generic_fff_orthotropic_v1",
+        "classification": "conservative_literature_based_default",
+        "measured_for_specific_printer": false,
+        "solid_fraction_applied": 1.0,
+        "Ex_Ey_Ez_MPa": [
+          2100,
+          1750,
+          1150
+        ],
+        "Gxy_Gyz_Gzx_MPa": [
+          700,
+          420,
+          420
+        ],
+        "strengths_MPa": {
+          "Xt": 42,
+          "Xc": 50,
+          "Yt": 33,
+          "Yc": 42,
+          "Zt": 25,
+          "Zc": 35,
+          "Sxy": 20,
+          "Syz": 14,
+          "Szx": 14
+        },
+        "source": "docs/FFF_PLA_PETG_orthotropic_material_reference.md section 6"
+      },
+      "solve_seconds": 128.074,
+      "solver": {
+        "backend": "cuda",
+        "device": "NVIDIA GeForce RTX 4060 Ti",
+        "torch": "2.12.0+cu130",
+        "preconditioner": "jacobi"
+      }
+    }
+  ]
+}

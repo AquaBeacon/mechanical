@@ -1,0 +1,172 @@
+{
+  "status": "PASS",
+  "vendor_holes_xy_d_mm": [
+    [
+      2.54,
+      15.24,
+      2.5
+    ],
+    [
+      22.86,
+      15.24,
+      2.5
+    ],
+    [
+      2.54,
+      2.54,
+      2.5
+    ],
+    [
+      22.86,
+      2.54,
+      2.5
+    ]
+  ],
+  "installed_holes_xy_mm": [
+    [
+      47.54,
+      197.54
+    ],
+    [
+      47.54,
+      217.86
+    ],
+    [
+      60.24,
+      197.54
+    ],
+    [
+      60.24,
+      217.86
+    ]
+  ],
+  "model_source": "Adafruit official 4479 LIS3MDL STEP, preserved geometry",
+  "model_sha256": "c4f99b42dffbf9073f59ed23670fb9752e3769bc5bfe8cf60dde1a10fad72330",
+  "checks": [
+    {
+      "name": "official PCB hole 0",
+      "collisions": []
+    },
+    {
+      "name": "printed clearance hole 0",
+      "collisions": []
+    },
+    {
+      "name": "mag_bolt_0 occupied envelope",
+      "collisions": []
+    },
+    {
+      "name": "mag_nut_0 occupied envelope",
+      "collisions": []
+    },
+    {
+      "name": "top driver 0",
+      "collisions": []
+    },
+    {
+      "name": "lower nut tool 0",
+      "collisions": []
+    },
+    {
+      "name": "official PCB hole 1",
+      "collisions": []
+    },
+    {
+      "name": "printed clearance hole 1",
+      "collisions": []
+    },
+    {
+      "name": "mag_bolt_1 occupied envelope",
+      "collisions": []
+    },
+    {
+      "name": "mag_nut_1 occupied envelope",
+      "collisions": []
+    },
+    {
+      "name": "top driver 1",
+      "collisions": []
+    },
+    {
+      "name": "lower nut tool 1",
+      "collisions": []
+    },
+    {
+      "name": "official PCB hole 2",
+      "collisions": []
+    },
+    {
+      "name": "printed clearance hole 2",
+      "collisions": []
+    },
+    {
+      "name": "mag_bolt_2 occupied envelope",
+      "collisions": []
+    },
+    {
+      "name": "mag_nut_2 occupied envelope",
+      "collisions": []
+    },
+    {
+      "name": "top driver 2",
+      "collisions": []
+    },
+    {
+      "name": "lower nut tool 2",
+      "collisions": []
+    },
+    {
+      "name": "official PCB hole 3",
+      "collisions": []
+    },
+    {
+      "name": "printed clearance hole 3",
+      "collisions": []
+    },
+    {
+      "name": "mag_bolt_3 occupied envelope",
+      "collisions": []
+    },
+    {
+      "name": "mag_nut_3 occupied envelope",
+      "collisions": []
+    },
+    {
+      "name": "top driver 3",
+      "collisions": []
+    },
+    {
+      "name": "lower nut tool 3",
+      "collisions": []
+    },
+    {
+      "name": "south QT plug/straight approach",
+      "collisions": []
+    },
+    {
+      "name": "south QT grip after disconnecting/parking SMA",
+      "collisions": []
+    },
+    {
+      "name": "continuous vertical board removal",
+      "collisions": []
+    },
+    {
+      "name": "coax OD5 clearance envelope vs modified frame",
+      "collisions": []
+    }
+  ],
+  "lid_clearance_mm": 19.769999999999975,
+  "nearest_steel_plate_distance_mm": 105.10984314040238,
+  "nearest_antenna_envelope_distance_mm": 105.14380212356785,
+  "conditions": "Lid open. Disconnect SMA and park coax before gripping the south QT plug. Four nylon M2x8 bolts/nuts. Unplug QT and remove four fasteners before lifting sensor; other boards stay installed. GNSS extraction separately verified with this mount installed.",
+  "south_QT_grip_with_SMA_connected": [
+    {
+      "part": "gnss_sma_plug",
+      "mm3": 76.1905
+    }
+  ],
+  "provisional": "Nylon fastener head/nut and south QT mating plug/grip envelopes require actual part measurement. North QT socket unused in case; no header strip fitted in this CAD. Nut driver OD6/ID2.4 hollow approach.",
+  "magnetic_performance": "ANN-MB1 includes magnetic base. Mechanical clearance only. Check sensor range/saturation and measure/calibrate with power/transmission active; calibration does not guarantee removal of magnetic interference. No heading accuracy guarantee.",
+  "manufacturing_release": false
+}

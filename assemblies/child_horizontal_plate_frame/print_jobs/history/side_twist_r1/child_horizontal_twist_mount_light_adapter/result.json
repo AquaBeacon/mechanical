@@ -1,0 +1,63 @@
+{
+    "error_string": "Success.",
+    "export_time": 287,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 22,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Bottom surface": 94.49579620361328,
+                "Brim": 53.88105010986328,
+                "Custom": 35.21200180053711,
+                "Gap infill": 59.37547302246094,
+                "Inner wall": 1719.7584228515625,
+                "Internal solid infill": 278.6338195800781,
+                "Outer wall": 299.7288513183594,
+                "Sparse infill": 1438.071044921875,
+                "Top surface": 91.48086547851563,
+                "Travel": 628.1036376953125,
+                "Undefined": 612.7066040039063
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFG00",
+                    "id": 1,
+                    "main_used_g": 47.032535552978516,
+                    "total_used_g": 47.032535552978516
+                }
+            ],
+            "generate_support_material_time": 14,
+            "id": 1,
+            "infill_time": 32,
+            "layer_filament_change": 0,
+            "main_predication": 4663.49267578125,
+            "make_perimeters_time": 62,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 64.0,
+                        "height": 18.0,
+                        "width": 64.0,
+                        "x": 96.0,
+                        "y": 96.00000762939453,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "child_horizontal_twist_mount_light_adapter.stl",
+                    "triangle_count": 5592
+                }
+            ],
+            "sliced_time": 344,
+            "sliced_time_with_cache": 219,
+            "total_predication": 4683.27685546875,
+            "triangle_count": 5592,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 100.0,
+    "wall_loops": 8
+}

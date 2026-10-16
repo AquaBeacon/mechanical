@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "assembly": "child_single_camera_topopt",
+  "release_status": "exploration_only",
+  "note": "最適化の探索記録。製造用部品は確定していないため、生の探索メッシュを印刷セットに含めない。",
+  "source_hashes": {
+    "assemblies/child_single_camera_topopt/print_config.json": "21e63b4053e556077212896d304171c29076a0464e9b1f5b1267226862da9ef2",
+    "assemblies/child_single_camera_topopt/README.md": "9083c879d50a8c201dbbc4ace1c8dd64e3ffa03487e7636430fcf8cf0ee4fd69"
+  },
+  "parts": [],
+  "modifiers": [],
+  "generated_files": [
+    "DESIGN_NOTES.md",
+    "PRINT.md"
+  ],
+  "document_hashes": {
+    "DESIGN_NOTES.md": "fed3bdd3058fe63b7fc7762eddaf025c2648196d4e2a059b4c7405b8ed79a816",
+    "PRINT.md": "69e1837b7b20d71ec979df4d01e37c67a3e9654a543213cc981559ab0a8a599b"
+  }
+}

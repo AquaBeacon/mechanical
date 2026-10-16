@@ -1,0 +1,4 @@
+{
+  "status": "prototype_repeatable_locating",
+  "note": "位置決め追加の試作。PETG・0.20 mm・壁6周・上下6層・40%・ブリム5 mm・通常サポートON。camera_mount.stlは既存品を再利用できる。初回の実物合わせと反復着脱試験は未実施。現行3MFはprint_jobs/repeatable_mount/。"
+}

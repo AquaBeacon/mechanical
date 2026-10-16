@@ -1,0 +1,80 @@
+{
+  "voxel_mm": 3.0,
+  "optimum_voxels": 6617,
+  "rebuild_voxels": 7790,
+  "overlap": 5214,
+  "missing": 1403,
+  "extra": 2576,
+  "fea": [
+    {
+      "shape": "optimum shape",
+      "case": "L1 hoist 3g: the gate hangs on the hinge pin and the two knob bolts; bridge + cameras (1.2 kg x 3 g = 35 N) pull down on HP4/HP5",
+      "deflection_mm": 0.14643123760843504,
+      "compliance_Nmm": 3.71924627399429,
+      "safety_factor": 29.20881537286021
+    },
+    {
+      "shape": "optimum shape",
+      "case": "L2f transport frontal 300 N (-Y) through the cam bridge into HP4/HP5, the container reacts on the three bands",
+      "deflection_mm": 0.060258404570779585,
+      "compliance_Nmm": 5.336482980602757,
+      "safety_factor": 26.844613173184396
+    },
+    {
+      "shape": "optimum shape",
+      "case": "L2s transport side 300 N (-X on the latch edge), the container reacts on the three bands",
+      "deflection_mm": 0.3517022594389057,
+      "compliance_Nmm": 65.41776856656736,
+      "safety_factor": 6.972232736605566
+    },
+    {
+      "shape": "optimum shape",
+      "case": "L3 clamp preload: the two M5 knob bolts pull the latch bosses -Y (300 N each) and the hinge pin pulls the knuckles -Y, the tube + EVA react on the three bands",
+      "deflection_mm": 0.3470760947333248,
+      "compliance_Nmm": 134.55040428722344,
+      "safety_factor": 5.354828829205375
+    },
+    {
+      "shape": "optimum shape",
+      "case": "L4 frontal collision 300 N on the top of the bridge column (z 195): statics on the HP4/HP5 bolt pair (z 170 / 100) gives -400 N on HP4 and +100 N pull-out on HP5, the container reacts on the three bands",
+      "deflection_mm": 0.15002678620729068,
+      "compliance_Nmm": 28.86341969254441,
+      "safety_factor": 11.820500721641091
+    },
+    {
+      "shape": "rebuild",
+      "case": "L1 hoist 3g: the gate hangs on the hinge pin and the two knob bolts; bridge + cameras (1.2 kg x 3 g = 35 N) pull down on HP4/HP5",
+      "deflection_mm": 0.08319814334060863,
+      "compliance_Nmm": 2.8798410087220647,
+      "safety_factor": 38.38767030278792
+    },
+    {
+      "shape": "rebuild",
+      "case": "L2f transport frontal 300 N (-Y) through the cam bridge into HP4/HP5, the container reacts on the three bands",
+      "deflection_mm": 0.08412677041404112,
+      "compliance_Nmm": 8.566131251294202,
+      "safety_factor": 19.92421717559756
+    },
+    {
+      "shape": "rebuild",
+      "case": "L2s transport side 300 N (-X on the latch edge), the container reacts on the three bands",
+      "deflection_mm": 0.2011676241478446,
+      "compliance_Nmm": 46.15057702276605,
+      "safety_factor": 9.746700011768082
+    },
+    {
+      "shape": "rebuild",
+      "case": "L3 clamp preload: the two M5 knob bolts pull the latch bosses -Y (300 N each) and the hinge pin pulls the knuckles -Y, the tube + EVA react on the three bands",
+      "deflection_mm": 0.4114631399311412,
+      "compliance_Nmm": 178.40729941480788,
+      "safety_factor": 3.645787672117491
+    },
+    {
+      "shape": "rebuild",
+      "case": "L4 frontal collision 300 N on the top of the bridge column (z 195): statics on the HP4/HP5 bolt pair (z 170 / 100) gives -400 N on HP4 and +100 N pull-out on HP5, the container reacts on the three bands",
+      "deflection_mm": 0.2010829273318685,
+      "compliance_Nmm": 48.631535910136705,
+      "safety_factor": 8.149872421841291
+    }
+  ]
+}

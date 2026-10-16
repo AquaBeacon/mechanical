@@ -1,0 +1,12 @@
+mesh convergence: 3.200 mm (coarse) / 1.600 mm (medium) / 0.800 mm (fine)
+wrote spec/child_interior_reinforcement/pla_matte_lever/before_fea\deck_before_fea_convergence.json
+
+case                         d@3.20     d@1.60     d@0.80    SF@3.20  SF@1.60  SF@0.80   verdict
+200g_5g_X_-1                 0.1158     0.0873     0.1635      31.02    39.60    53.63   FAIL
+200g_5g_X_+1                 0.1158     0.0873     0.1635      29.35    38.55    53.07   FAIL
+200g_5g_Y_-1                34.2308    11.7371    11.3814       1.49     4.23     4.18   FAIL
+200g_5g_Y_+1                34.2308    11.7371    11.3814       1.52     4.07     4.61   FAIL
+governing case: 200g_5g_Y_-1 (SF p99.5 4.18 at 0.800 mm)
+mesh convergence: FAIL -- still moving with the mesh in: 200g_5g_X_-1 (the answer is still moving with the mesh; it is a property of the discretisation, not of the part), 200g_5g_X_+1 (the answer is still moving with the mesh; it is a property of the discretisation, not of the part), 200g_5g_Y_-1 (the numbers settled but the hotspot moved 83.30 mm (allowed 1.60); the two meshes are not describing the same failure, so it is a property of the discretisation, not of the part), 200g_5g_Y_+1 (the numbers settled but the hotspot moved 85.82 mm (allowed 1.60); the two meshes are not describing the same failure, so it is a property of the discretisation, not of the part)
+
+=== FAIL ===

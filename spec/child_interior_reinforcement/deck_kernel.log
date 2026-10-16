@@ -1,0 +1,7 @@
+{"valid": false, "solids": 1, "volume_mm3": 69334.78456158291, "stl_volume_mm3": 69803.0625, "relative_volume_difference": 0.006708558645504791, "bbox_difference_mm": 7.629394502828291e-07}
+{"valid": false, "solids": 1, "volume_mm3": 69334.78456158291, "stl_volume_mm3": 69803.0625, "relative_volume_difference": 0.006708558645504791, "bbox_difference_mm": 7.629394502828291e-07}
+Exception while processing file: spec/child_interior_reinforcement/export_deck_kernel.py [Refusing an unverified STEP]
+FreeCAD 1.0.0, Libs: 1.0.0R39109 (Git)
+(C) 2001-2024 FreeCAD contributors
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+

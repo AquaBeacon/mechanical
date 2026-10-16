@@ -1,0 +1,50 @@
+{
+  "source_dependencies": [
+    "../../../../spec/over_center_latch/geometry.py",
+    "../../../../spec/over_center_latch/dji_geometry.py",
+    "../../../../spec/over_center_latch/latch_body.scad",
+    "../../../../spec/over_center_latch/generate.py",
+    "../../../../spec/over_center_latch/dji_generate.py",
+    "../../../../spec/over_center_latch/dji_verify.py",
+    "../../../../spec/over_center_latch/build_verify.py",
+    "../../../../spec/over_center_latch/rubber_estimate.py",
+    "../../../../spec/over_center_latch/clamp_loads.py",
+    "../../../../spec/over_center_latch/clamp_studies.py",
+    "../../../../spec/over_center_latch/dji_studies.py",
+    "../../../../spec/over_center_latch/petg_basic_fea.py",
+    "parameters.json"
+  ],
+  "non_print_files": [
+    "over_center_latch_epdm",
+    "over_center_latch_axis_a",
+    "over_center_latch_axis_b"
+  ],
+  "print_rotations_deg": {
+    "over_center_latch_base": [
+      90,
+      0,
+      0
+    ],
+    "over_center_latch_bail": [
+      90,
+      0,
+      0
+    ],
+    "over_center_latch_lever": [
+      90,
+      0,
+      0
+    ],
+    "over_center_latch_keeper": [
+      90,
+      0,
+      0
+    ]
+  },
+  "stl_export_format": "asciistl",
+  "portable_stl_export_format": "stl_ascii",
+  "step_coplanar_merge": true,
+  "degenerate_edge_flip_files": [
+    "over_center_latch_lever"
+  ]
+}

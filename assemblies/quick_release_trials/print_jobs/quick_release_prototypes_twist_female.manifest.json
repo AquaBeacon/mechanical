@@ -1,0 +1,39 @@
+{
+  "file": "quick_release_prototypes_twist_female.3mf",
+  "sha256": "025c6431d2175b0321446f365601a1072c32c6a3fa426689b98ae0beebea118f",
+  "moved_from": "parts/quick_release_prototypes_twist_female.3mf",
+  "moved_at": "2026-09-28T02:55:11.184745+09:00",
+  "geometry_status": "User-created project; correspondence to current cam geometry unverified. Reimport current STL before printing.",
+  "related_stl_at_archive": {
+    "quick_release_prototypes_knob.stl": "057e2214402932e14ac7ed9c4a5b69fa961079a236e4b47ba5f514be08383058",
+    "quick_release_prototypes_slide_female.stl": "89ee0142d4a8987b5c905e4415bc3c8d8af5de6d90521c74e189c56fa762a0e5",
+    "quick_release_prototypes_slide_gib.stl": "54098610793b0805547202378162a12d31f912526b325c9b57103e9ade4e3be8",
+    "quick_release_prototypes_slide_male.stl": "8a1fcf6ae11644a2125b7d47f405817a45eaf608f0c95a411ada61b16f208382",
+    "quick_release_prototypes_snap_female.stl": "43b9ca5a40dac005c124d5878af67d807ecde671d9d0312f35de28291c506d99",
+    "quick_release_prototypes_snap_male.stl": "76b0cced5c425967830e938ccd804adbddb570c39c24eb90e7c31e3156d1a9f1",
+    "quick_release_prototypes_twist_female.stl": "ff643ae4cd816870599a0ad7df8dde321c7a679011c61a14923953eb4479931d",
+    "quick_release_prototypes_twist_knob.stl": "703261c5fdecf5a4f9630e3f8f4596ef425285c41b408840e40ba253996ce715",
+    "quick_release_prototypes_twist_male.stl": "7d90c6293504a21e116797cc9102bdb57a0a146f6ea37e33018dcc8a93445073"
+  },
+  "settings": {
+    "filament_type": [
+      "PETG",
+      "PLA-CF",
+      "PLA",
+      "PLA"
+    ],
+    "filament_settings_id": [
+      "eSUN PETG ベーシック @Bambu Lab X1 Carbon 0.4 nozzle",
+      "Bambu PLA-CF @BBL X1C",
+      "Bambu PLA Matte @BBL X1C",
+      "Bambu PLA Matte @BBL X1C"
+    ],
+    "print_settings_id": "0.20mm Standard @BBL X1C For esun-PETG-Basic",
+    "printer_settings_id": "Bambu Lab X1 Carbon 0.4 nozzle",
+    "layer_height": "0.2",
+    "wall_loops": "2",
+    "sparse_infill_density": "15%",
+    "support_type": "tree(auto)",
+    "enable_support": "0"
+  }
+}

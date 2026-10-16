@@ -1,0 +1,27 @@
+Mesher configuration: Gmsh Algorithm3D=1 (Delaunay); surface refinement remains enabled.
+
+mesh target 8.00 mm
+  shell refined to 8.00 mm edges: 4786 -> 29556 triangles
+Traceback (most recent call last):
+  File "C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\spec\run_ccx_delaunay.py", line 13, in <module>
+    raise SystemExit(main(sys.argv[1:]))
+                     ~~~~^^^^^^^^^^^^^^
+  File "C:\Users\ryupc\WorkSpace\Mitou26\TO_printing\topopt\src\topopt\cli\ccx.py", line 1140, in main
+    runs.append(analyse(stl, study, a.out, h, a.isotropic,
+                ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        buckle=a.buckle, frequency=a.frequency,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+                        shell_info=shell_info, refine=not a.no_refine,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        load_split=a.load_split))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ryupc\WorkSpace\Mitou26\TO_printing\topopt\src\topopt\cli\ccx.py", line 654, in analyse
+    ccxlib.run_gmsh(geo, mesh_path)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\ryupc\WorkSpace\Mitou26\TO_printing\topopt\src\topopt\ccx.py", line 92, in run_gmsh
+    raise RuntimeError("gmsh failed (%d):\n%s"
+                       % (r.returncode, (r.stderr or r.stdout)[-4000:]))
+RuntimeError: gmsh failed (3221225477):
+Warning : 4687 ill-shaped tets are still in the mesh
+

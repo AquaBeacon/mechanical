@@ -1,0 +1,30 @@
+{
+  "consumer": "child_cable_cover",
+  "references": [
+    {
+      "part": "child_guard_ring",
+      "path": "parts/child/exterior/printed/child_guard_ring",
+      "md_sha256": "316e4eae5c6f17cbc3a2e7fdfd20338e06c44ab6285c7960b9bba8d290b619c8",
+      "stl_sha256": "6a198c060fc9aebe865b13188f1ebb7aafcc94bf85828a3919c34c10c13c3da8",
+      "bbox_mm": [
+        170.0,
+        170.0,
+        72.0
+      ],
+      "status_at_lock": [
+        "needs_measure",
+        "not_chosen",
+        "not_designed",
+        "provisional"
+      ],
+      "values": {
+        "cover_bolt_z": -26.0,
+        "cover_bolt_r": 64.0,
+        "pad_deg": 11.0
+      },
+      "confirmed_by_human": true,
+      "confirmed_at": "2026-09-05T00:21:06",
+      "note": "改善要件 2026-09-04 (ユーザ承認): cover_bolt_* 二重定義 (方位角 230/310) [2026-09-05 再ロック: 改善実装後の md 更新に追従]"
+    }
+  ]
+}

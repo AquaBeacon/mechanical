@@ -1,0 +1,162 @@
+{
+  "name": "quick_release_trials",
+  "note": "A/C M3x40 thumb bolts and recessed nuts; C cam draws 0.60 mm over 60 degrees, upper plane Z24.5; two 5x8x1.0 mm rubber pads retained in 0.4 mm deep male-lid pockets (5.4x8.4), nominal compression 0.10 mm. Rubber/metal not printed. No load rating.",
+  "coordinate_system": "mm, Z up; A at X=-55, B at X=0, C at X=55",
+  "items": [
+    {
+      "part": "parts/common/jigs/quick_release_prototypes",
+      "file": "quick_release_prototypes_slide_female",
+      "label": "A slide female",
+      "color": "SlateGray",
+      "ops": [
+        {
+          "translate": [
+            -55,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "parts/common/jigs/quick_release_prototypes",
+      "file": "quick_release_prototypes_slide_male",
+      "label": "A slide male",
+      "color": "Orange",
+      "ops": [
+        {
+          "translate": [
+            -55.5,
+            0,
+            25
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "parts/common/jigs/quick_release_prototypes",
+      "file": "quick_release_prototypes_slide_gib",
+      "label": "A pressure gib",
+      "color": "SteelBlue",
+      "ops": [
+        {
+          "translate": [
+            -55,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "parts/common/jigs/quick_release_prototypes",
+      "file": "quick_release_prototypes_knob",
+      "label": "A knob",
+      "color": "SeaGreen",
+      "ops": [
+        {
+          "translate": [
+            -36.5,
+            0,
+            12
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "parts/common/jigs/quick_release_prototypes",
+      "file": "quick_release_prototypes_snap_female",
+      "label": "B snap female",
+      "color": "SlateGray",
+      "ops": []
+    },
+    {
+      "part": "parts/common/jigs/quick_release_prototypes",
+      "file": "quick_release_prototypes_snap_male",
+      "label": "B snap male",
+      "color": "Orange",
+      "ops": [
+        {
+          "translate": [
+            0,
+            -0.15,
+            3.3
+          ]
+        }
+      ]
+    },
+    {
+      "part": "parts/common/jigs/quick_release_prototypes",
+      "file": "quick_release_prototypes_twist_female",
+      "label": "C twist female",
+      "color": "SlateGray",
+      "ops": [
+        {
+          "translate": [
+            55,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "parts/common/jigs/quick_release_prototypes",
+      "file": "quick_release_prototypes_twist_male",
+      "label": "C twist male",
+      "color": "Orange",
+      "ops": [
+        {
+          "translate": [
+            55,
+            0,
+            24.5
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "parts/common/jigs/quick_release_prototypes",
+      "file": "quick_release_prototypes_twist_knob",
+      "label": "C knob",
+      "color": "SeaGreen",
+      "ops": [
+        {
+          "translate": [
+            75.5,
+            0,
+            14
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ]
+    }
+  ]
+}

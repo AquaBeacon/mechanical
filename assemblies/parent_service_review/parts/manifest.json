@@ -1,0 +1,239 @@
+{
+  "schema_version": 1,
+  "assembly": "parent_service_review",
+  "release_status": "existing_prototype",
+  "note": "既存構成の印刷データを整理。強度・造形性の新規認証ではない。",
+  "source_hashes": {
+    "assemblies/parent_service_review/placement.json": "918fb2acfc5544f509c3b1ec706c907d8eb982c107bdc7172cede83e3de4e36d",
+    "assemblies/parent_service_review/README.md": "3c2b8de746321822b6f23170306054630e41cfbd03f29f7ccf9de0bf924eb0c4",
+    "parts/parent/interior/printed/parent_lipo_retainer/manufacturing.json": "b97e63089edb4b867374fd4a5424a3c4bdf4e4d1f32f205e5b33439bcd26b1cc",
+    "parts/parent/interior/printed/parent_lipo_retainer/parent_lipo_retainer.md": "c8d499e70dfe40ee844f7c110b4fe404cb43c5f8f8d5bda04af8af6b2c5aea3f",
+    "parts/parent/interior/printed/parent_lipo_retainer/parent_lipo_retainer.scad": "77ebb2a70163bfbc4574022debee8f2901c0bab3d5b6bda8c1305da9ee854757",
+    "parts/parent/interior/printed/parent_plate_service/parent_plate_service.md": "4c3a6a21f4d808bdbdad2562554513ff3c1f24bd1c07686fea86d99b25127ccf",
+    "parts/parent/interior/printed/parent_plate_service/parent_plate_service.scad": "ff68dcabc2ae597f31dc2eeebcfefd7db7bb87b848b8dfd5dc9856e2f8ba450c",
+    "spec/export_parent_lipo_retainer.py": "cdd2f1222b36b0b3561b3219fc6809f2225599c3b5b540da343554c0b778ca58",
+    "spec/prepare_parent_lipo_retainer.py": "f0a58672aaa56167a88873e989d13ec4ed5b6c5e6491ea5b5d42f565bd1bcb2c",
+    "spec/remesh_parent_gnss_outputs.py": "82d21c852326ea22350afee24d65352821ff66f437c0af1304ee32612753801d"
+  },
+  "parts": [
+    {
+      "part": "parts/parent/interior/printed/parent_plate_service",
+      "stem": "parent_plate_service",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "plate"
+      ],
+      "file": "parent_plate_service.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/interior/printed/parent_plate_service/parent_plate_service.stl",
+      "source_sha256": "2a1120701e699294342e050fee3361020fa6057420e62e9e86b5ee4c7370d0be",
+      "sha256": "43c09914676357143b11b968bc30fb5af91b171c4e0298318e0f52a14d33ad3e",
+      "extents_mm": [
+        183.0,
+        203.0,
+        20.5
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/interior/printed/parent_lipo_retainer",
+      "stem": "parent_lipo_retainer_base",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "lipo_tray"
+      ],
+      "file": "parent_lipo_retainer_base.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/interior/printed/parent_lipo_retainer/parent_lipo_retainer_base.stl",
+      "source_sha256": "9970732191891d038539dce1eee8d9ef6fe2dfe248bd73aca2d5b087c78007e4",
+      "sha256": "52c379e913e71caad969f418257ae6f889764008aab24d9ab2de9289f1f8658d",
+      "extents_mm": [
+        111.0,
+        84.5,
+        29.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          4.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/parent/interior/printed/parent_lipo_retainer",
+      "stem": "parent_lipo_retainer_lid",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "lipo_ret_lid"
+      ],
+      "file": "parent_lipo_retainer_lid.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/parent/interior/printed/parent_lipo_retainer/parent_lipo_retainer_lid.stl",
+      "source_sha256": "159a4bb55ad794a297a4385f79d709255ceed1e00ba37e1fa72c0986ce3d99d0",
+      "sha256": "a9ff8a6d1998e1dc602a66802fd4018ece91438419b096effcc9ecd6f3ed6beb",
+      "extents_mm": [
+        111.0,
+        53.0,
+        3.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    }
+  ],
+  "modifiers": [],
+  "generated_files": [
+    "parent_plate_service.stl",
+    "parent_lipo_retainer_base.stl",
+    "parent_lipo_retainer_lid.stl",
+    "DESIGN_NOTES.md",
+    "PRINT.md"
+  ],
+  "document_hashes": {
+    "DESIGN_NOTES.md": "5b2ba2608fc1a29c685f31a3a4d5543594232cc43d572a7349b1c9b99deae2e5",
+    "PRINT.md": "ea2624454c3c40a976db075bd339f605914ac9db41c77850045d5c00dad3a091"
+  }
+}

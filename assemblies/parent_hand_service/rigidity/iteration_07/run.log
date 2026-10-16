@@ -1,0 +1,20 @@
+Native STEP meshing: C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\parent_hand_service\rigidity\iteration_07\carrier.step; independent surface/volume mesh at each target.
+
+mesh target 8.00 mm
+  shell refined to 8.00 mm edges: 4906 -> 29586 triangles
+  mesh carrier_h8.00_mesh.inp: 30702 nodes, 16006 elements at 8.00 mm
+  MAIN_USB_X+                            normal   req 3.00  p99.5  29.419  worst   6.289  max   0.0726 mm  PASS
+  MAIN_USB_Y+                            normal   req 3.00  p99.5  22.571  worst   7.065  max   0.0832 mm  PASS
+  MAIN_USB_Z+                            normal   req 3.00  p99.5  29.195  worst   3.574  max   0.1237 mm  PASS
+  MAIN_SD_X+                             normal   req 3.00  p99.5 145.319  worst  18.622  max   0.0107 mm  PASS
+  MAIN_SD_Y+                             normal   req 3.00  p99.5 146.450  worst  16.756  max   0.0201 mm  PASS
+  MAIN_SD_Z+                             normal   req 3.00  p99.5  28.999  worst   3.050  max   0.1289 mm  PASS
+  SONY_FRONT_X+                          normal   req 3.00  p99.5  16.602  worst   4.836  max   0.0404 mm  PASS
+  SONY_FRONT_Y+                          normal   req 3.00  p99.5  15.969  worst   4.413  max   0.0437 mm  PASS
+  SONY_FRONT_Z+                          normal   req 3.00  p99.5  30.113  worst  10.467  max   0.0633 mm  PASS
+  SONY_REAR_X+                           normal   req 3.00  p99.5  16.142  worst   4.256  max   0.0562 mm  PASS
+  SONY_REAR_Y+                           normal   req 3.00  p99.5  16.552  worst   4.472  max   0.0462 mm  PASS
+  SONY_REAR_Z+                           normal   req 3.00  p99.5  22.458  worst   2.140  max   0.1418 mm  PASS
+
+wrote C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\parent_hand_service\rigidity\iteration_07\ccx\ccx_summary.json
+  8.00 mm: PASS  SF 15.969  max 0.14176 mm  mass 251.570966 g

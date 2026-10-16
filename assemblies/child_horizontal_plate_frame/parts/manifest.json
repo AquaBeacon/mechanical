@@ -1,0 +1,1258 @@
+{
+  "schema_version": 1,
+  "assembly": "child_horizontal_plate_frame",
+  "release_status": "fit_prototype",
+  "note": "Rev.4 現構成17種類・24個、未印刷13種類・19個。側板2・底板1・クランプ上下各1は印刷済み、元STLのSHAと配置を保持。追加フレーム4枚は側板内側。段差なしの一体メスは厚4、M3×18各2本。既存33×81ホルダーを流用、60°回して停止すると上向き、横のノブは水平+Y、突出59.5 mm、中央Y±45は手の通路。X1C / PETG Basic、0.4 mmノズル、8壁、100%充填、5 mmブリム、Textured PEI。一体メス・オスは0.1 mm層、他は0.2 mm層。ライトオスだけベッドからの外部サポート（上下離隔0.2）、他はサポート無効。STLは印刷姿勢へ変換済み。筒内・機構内部にサポートを入れず、除去後に爪・カム・ロック・実ライトの嵌合を確認する。旧版STLと3MFを混ぜない。嵌合・荷重試験用。詳細は同梱DESIGN_NOTES.mdのCHILD-HORIZONTAL-TWIST-C-R4。 トップフレーム改良（2026-10-12）：クランプ締付ねじ6本の真上に工具穴φ10、正12角形、入口0.4 mm面取り。工具軸φ8×70 mmは仮包絡。縁に近い2穴を局所拡幅、入口直近の検査断面の最小残存肉厚は約3.3 mm。トップは従来向きで1個。",
+  "source_hashes": {
+    "assemblies/child_horizontal_plate_frame/placement.json": "e7faa3fea509da2513bf60693e01df93f64315d0172d815a1cc3a3ea504c704f",
+    "assemblies/child_horizontal_plate_frame/print_config.json": "c2e9d70fc079b0030409d1a1d9a868cdeefe3ff2de199033983fba0e90f6ca69",
+    "assemblies/child_horizontal_plate_frame/README.md": "7dc2cc03bd3edb3035291de0fd915295336a87f09945920799716edc095fdb3d",
+    "docs/child_horizontal_twist_interface.md": "1c1478f2f1eda53ba68a51f785d6f475ff7fd23eb8ad371b5895ad41f9863937",
+    "parts/child/exterior/cots/wte4_end_cap_5xm10/WTE4-M-END-CAP-5XM10-R2.step": "7e6221af5192b001bca27982a5c7a9e986a04c2c9747d7834e49af8be4586cdc",
+    "parts/child/exterior/printed/child_horizontal_plate_frame/child_horizontal_plate_frame.scad": "68b7261709ff36978945cb2835b0f60ab284038e09272e72ef0e285b9daeec6c",
+    "parts/child/exterior/printed/child_horizontal_plate_frame/manufacturing.json": "882c32d3a6e065ec8ab3667f71722239434b38a30425493d729c47b6d58bcae0",
+    "parts/child/exterior/printed/child_horizontal_plate_frame/README.md": "44d6e5c34672f458289cb7849d32513483671f30f66371363b8234a70d1ab776",
+    "parts/child/exterior/printed/child_horizontal_plate_frame/variants.txt": "f844b6af0fbe886c71073436572de3d16b1bc39a94d9f8a04b94a20b7e4567dc",
+    "parts/child/exterior/printed/child_horizontal_twist_mount/child_horizontal_twist_mount.scad": "9ee6691bbf001381d62d0b20e8eca80320a74a9451d20e842b7c72b293770ccc",
+    "parts/child/exterior/printed/child_horizontal_twist_mount/manufacturing.json": "3f796ec390310fe66dd550e3f235ec2a1d4fcfb231a8318104f806b792101b10",
+    "parts/child/exterior/printed/child_horizontal_twist_mount/README.md": "93b9670fda0aa061c97851c098d13cf41fae17262770bc4559b96fb521b88343",
+    "parts/child/exterior/printed/child_horizontal_twist_mount/variants.txt": "ec60ed566b56c36ee681e25382c211bd566997bff3f72d0bbb8636f1a380f05c",
+    "parts/child/exterior/printed/child_simple_light_mount/child_simple_light_mount.md": "fdf06879ae2c30287d5cf674c8e75978e9ecdbb5a611271c7184c88812d0d34a",
+    "parts/child/exterior/printed/child_simple_light_mount/child_simple_light_mount.scad": "20bce57a16ef08d16cbeceee835bc6d6f4e93b6672065e3842fe67d1c63358dc",
+    "parts/child/exterior/printed/child_simple_light_mount/manufacturing.json": "cc4c48130fb9e44edef332c072c17a1f3ece5c636973f52392adb72603d0a78c",
+    "parts/child/exterior/printed/child_simple_light_mount/variants.txt": "7de12a48b02f50b54ce5c0451c9abd39fdf264ac26b8a427acb10c08c6b315e0",
+    "parts/child/exterior/printed/child_simple_light_mount/verify_cad.py": "2a8ccaa51272288c36e309011fa646f7a5d8397bbe2c6cef52cd74be18e26e56",
+    "parts/child/exterior/printed/child_wte4_petg_clamp/child_wte4_petg_clamp.scad": "43898d7d88e5ce342cc5cd40ca8d70d32739d160a4aa5978871418ccbc4a257e",
+    "parts/child/exterior/printed/child_wte4_petg_clamp/manufacturing.json": "a3610cc4107bbbb20903ea62287ac0fb76e4df5bcb80651aa476f0d9c2c6744d",
+    "parts/child/exterior/printed/child_wte4_petg_clamp/README.md": "6fd91e0aa2d014a3e5251d4ad2bcb9aedeccbfc70bad46fd92834c3fa18b4437",
+    "parts/child/exterior/printed/child_wte4_petg_clamp/variants.txt": "4614457220c309dd0fb7b70832ae5f0eec3983b4efcfb9cceb55c557569046ea",
+    "parts/common/exterior/cots/ballast_plate/ballast_plate_b.step": "2163701d794aa0608a204ab4a386d971fd79784d7c96a0488a1173295d2ae1d0",
+    "parts/common/jigs/quick_release_prototypes/manufacturing.json": "41214e9f82ab1550ccfbbc37407b0191a6329e284960976115100f96f3de2632",
+    "parts/common/jigs/quick_release_prototypes/quick_release_prototypes.md": "232d4479e19c7747eac42b91b00de34f09291e2bab632f6f633c14f26fe19891",
+    "parts/common/jigs/quick_release_prototypes/quick_release_prototypes.scad": "2276676313cbcf4d8e183911cc3431dde9574570a4106cafefb3d1f72c4cf054",
+    "parts/common/jigs/quick_release_prototypes/variants.txt": "cbe71de12e7d2632ef5c4cff0421b4dee3a448f5ef906b8fee77a0d4cf546128",
+    "scad/lib/ballast_plate_b_interface.scad": "4e8e5e0e5d35d2c94e5f896e323df672839312cd456e7e8d7e054e698b3255c1",
+    "scad/lib/child_horizontal_plate_interfaces.scad": "db49ea81e45f8d88b9aae1778b22de1feb9f97576a4456a5c33a6b21dcc467c8",
+    "scad/lib/child_horizontal_twist_interface.scad": "cdda581a32bd167608ae85ee4023e6fcd7e246cd4f412016f413510fef408091",
+    "scad/lib/child_simple_frame.scad": "a0f6813cfac7191da48482ffe0ae434fb6d7521b607b2c4b4bdab7c7828553e1",
+    "scad/lib/edge_finished_profiles.scad": "595961f57ef1f293e1d1f9e6e531934b20fc02cf555b7ba86ed8c6f1a183f7f6",
+    "scad/lib/util.scad": "13fed014ff5835aef1559d05600e2b4b0e284c93a4325485f4ef1be3ede6ddb3",
+    "scad/lib/wte4_endcap_key_profile.scad": "f24066a0fb5ffb8a9de2226e81a65d6915cdb433e8fa169d1b53d8a9fb83b3aa",
+    "scad/lib/wte4_interface.scad": "9308b1dd1f5546cd407258a65c0f2a4875dcb0b8c95e0d6f21e66ae4ca9d5881",
+    "tools/build_child_horizontal_accessories.py": "42dcccc9e51b691364a10805dbbe2a23c4fe9594346b6a98373a8ea6bc94ef3d",
+    "tools/check_child_horizontal_open_nuts.py": "d29b78ec6627edb227cbd85c1f6796b7a988118adc302da214a1dbd20f0ad6fc",
+    "tools/clean_stl_degenerates.py": "e6950585264c9e2d33495d10b43cad2a5f74c2747c1fcbfe6906fa72948f62af",
+    "tools/measure_ballast_plate_b_interface.py": "98e559079ba07e849964b734747dbc26b1a8a529bd9147319275a0cd7148806c",
+    "tools/measure_child_horizontal_guard_interfaces.py": "09184d85b5c0df7289ace8244cb308d3c6e156b70cc2e0a5bed536f6e5635a34",
+    "tools/prepare_child_horizontal_plate_frame.py": "728844da82dc0551e70382e60952ef9bb3aaf859f51a83342e06004d44f5eebe",
+    "tools/weld_small_stl_faces.py": "75b4f9ae3c8a8998dc646443bae55d7da50183b32cf4597164fb113390412d77"
+  },
+  "parts": [
+    {
+      "part": "parts/child/exterior/printed/child_horizontal_plate_frame",
+      "stem": "child_horizontal_plate_frame_side",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 2,
+      "labels": [
+        "left_side_frame",
+        "right_side_frame"
+      ],
+      "file": "child_horizontal_plate_frame_side.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/exterior/printed/child_horizontal_plate_frame/child_horizontal_plate_frame_side.stl",
+      "source_sha256": "b158aa52ce342239b767209bd82b61fb62f2b35f9dfe2ec0e6f3b7122df3b684",
+      "sha256": "61f91340edaca4b800dca48e18d180aaa3ad79545257d29f0c55bef4aacd4c56",
+      "extents_mm": [
+        230.0,
+        230.0,
+        12.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          114.99999237060547
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          114.99999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/exterior/printed/child_horizontal_plate_frame",
+      "stem": "child_horizontal_plate_frame_guard_front_inner",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "left_front_guard"
+      ],
+      "file": "child_horizontal_plate_frame_guard_front_inner.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/exterior/printed/child_horizontal_plate_frame/child_horizontal_plate_frame_guard_front_inner.stl",
+      "source_sha256": "1b5c223bd7460e4ce7c761683db49413d895fb7a4ed417ac99745706f8d545ca",
+      "sha256": "2ee5bf8fa2305a5f665844effdc90bd2fdf5737c7475450883928cb795c3e380",
+      "extents_mm": [
+        94.0,
+        148.0,
+        8.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -80.00000762939453
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          73.99999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/exterior/printed/child_horizontal_plate_frame",
+      "stem": "child_horizontal_plate_frame_guard_front_inner",
+      "shape": [
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "right_front_guard"
+      ],
+      "file": "child_horizontal_plate_frame_guard_front_inner_mirrored.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/exterior/printed/child_horizontal_plate_frame/child_horizontal_plate_frame_guard_front_inner.stl",
+      "source_sha256": "1b5c223bd7460e4ce7c761683db49413d895fb7a4ed417ac99745706f8d545ca",
+      "sha256": "0b6ebe96f0fd47ed54f4248eccdfbdf4e6b144b31d4308f94f324355d0b26dac",
+      "extents_mm": [
+        94.0,
+        148.0,
+        8.0
+      ],
+      "model_to_print": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          174.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          73.99999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/exterior/printed/child_horizontal_plate_frame",
+      "stem": "child_horizontal_plate_frame_guard_rear_inner",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "left_rear_guard"
+      ],
+      "file": "child_horizontal_plate_frame_guard_rear_inner.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/exterior/printed/child_horizontal_plate_frame/child_horizontal_plate_frame_guard_rear_inner.stl",
+      "source_sha256": "c302bbb0720486d9cae6a2e037a9e1ee6c3892ee03cbff6865cd80657d9ed934",
+      "sha256": "ba44751bbe2794ced9e4bec2edb16fbfe90b4f4bc9ab4fbb03d1463a72c839bc",
+      "extents_mm": [
+        96.0,
+        148.0,
+        8.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          176.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          73.99999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/exterior/printed/child_horizontal_plate_frame",
+      "stem": "child_horizontal_plate_frame_guard_rear_inner",
+      "shape": [
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "right_rear_guard"
+      ],
+      "file": "child_horizontal_plate_frame_guard_rear_inner_mirrored.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/exterior/printed/child_horizontal_plate_frame/child_horizontal_plate_frame_guard_rear_inner.stl",
+      "source_sha256": "c302bbb0720486d9cae6a2e037a9e1ee6c3892ee03cbff6865cd80657d9ed934",
+      "sha256": "e8ef769f3cbfc19acd75da5de1de99678fa12f805cea32a3f060fd605a37ab7b",
+      "extents_mm": [
+        96.0,
+        148.0,
+        8.0
+      ],
+      "model_to_print": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          -80.00000762939453
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          73.99999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/exterior/printed/child_horizontal_plate_frame",
+      "stem": "child_horizontal_plate_frame_rotation_key",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "left_rotation_key"
+      ],
+      "file": "child_horizontal_plate_frame_rotation_key.stl",
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/exterior/printed/child_horizontal_plate_frame/child_horizontal_plate_frame_rotation_key.stl",
+      "source_sha256": "78e765a2df64377d5ed20d8438dc714cd14d4c685ed78b6463c290b107d18214",
+      "sha256": "608135305572c7e8e5a1473622afa824940e0f40f4e9775470002ad7e9365b4f",
+      "extents_mm": [
+        35.5,
+        57.5429,
+        35.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          121.5
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          -1.0,
+          57.542869567871094
+        ],
+        [
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          24.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/exterior/printed/child_horizontal_plate_frame",
+      "stem": "child_horizontal_plate_frame_rotation_key",
+      "shape": [
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "right_rotation_key"
+      ],
+      "file": "child_horizontal_plate_frame_rotation_key_mirrored.stl",
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/exterior/printed/child_horizontal_plate_frame/child_horizontal_plate_frame_rotation_key.stl",
+      "source_sha256": "78e765a2df64377d5ed20d8438dc714cd14d4c685ed78b6463c290b107d18214",
+      "sha256": "06474422fc8afc401c1169eb03fd4f7e2d418a5fa6d5ee00558d129a59a64ac0",
+      "extents_mm": [
+        35.5,
+        57.5429,
+        35.0
+      ],
+      "model_to_print": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          -86.0
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          -1.0,
+          57.542869567871094
+        ],
+        [
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          24.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/exterior/printed/child_horizontal_plate_frame",
+      "stem": "child_horizontal_plate_frame_bottom",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "lowest_ballast_frame"
+      ],
+      "file": "child_horizontal_plate_frame_bottom.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/exterior/printed/child_horizontal_plate_frame/child_horizontal_plate_frame_bottom.stl",
+      "source_sha256": "83ea243991bf44591dd02862ec38ab9aeb977742925f2d9aeaec5271daf1895a",
+      "sha256": "fe0410e1ccc38e0ba94e78f4648e4eff352c91df99de60b3e68e229ea5ffda1d",
+      "extents_mm": [
+        220.0,
+        230.0,
+        33.25
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          110.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          115.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/exterior/printed/child_horizontal_plate_frame",
+      "stem": "child_horizontal_plate_frame_top",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "removable_upper_frame"
+      ],
+      "file": "child_horizontal_plate_frame_top.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/exterior/printed/child_horizontal_plate_frame/child_horizontal_plate_frame_top.stl",
+      "source_sha256": "b088e2aecc5372dff748a9b7caaaf0298e510da99e59290fdfeae4500dceb0da",
+      "sha256": "f565171995b0faf8eaf2ced5cc391092de6916d384714c7a9c0fce6a8e276268",
+      "extents_mm": [
+        220.0,
+        220.0,
+        12.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          110.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          109.99999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/exterior/printed/child_horizontal_plate_frame",
+      "stem": "child_horizontal_plate_frame_clamp_support",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 4,
+      "labels": [
+        "left_clamp_support_-60",
+        "left_clamp_support_60",
+        "right_clamp_support_-60",
+        "right_clamp_support_60"
+      ],
+      "file": "child_horizontal_plate_frame_clamp_support.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/exterior/printed/child_horizontal_plate_frame/child_horizontal_plate_frame_clamp_support.stl",
+      "source_sha256": "236db69d49a4a7c5101c68138b8d3212f8c490807432de3b0f3985176d5c2907",
+      "sha256": "c2d0ddd334dc67d70aebfaa492d15f47dbf24fce2c88d74a4c90babf0f8522ad",
+      "extents_mm": [
+        98.0,
+        43.2,
+        34.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -6.67572021484375e-06
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -9.72747784544481e-06
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -9.5367431640625e-07
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/exterior/printed/child_wte4_petg_clamp",
+      "stem": "child_wte4_petg_clamp_upper_linked",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "clamp_linked_upper"
+      ],
+      "file": "child_wte4_petg_clamp_upper_linked.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/exterior/printed/child_wte4_petg_clamp/child_wte4_petg_clamp_upper_linked.stl",
+      "source_sha256": "e9384ff4c401a43893b41b640ed04a93553399127ca8c802f73abc1da4e6c4c5",
+      "sha256": "b6b2b035d7310b9c5307bdec5da564c37d5c2354a5f160fc62af4a5dbd247871",
+      "extents_mm": [
+        163.6962,
+        62.0,
+        160.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          81.84810638427734
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.7999944686889648
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/exterior/printed/child_wte4_petg_clamp",
+      "stem": "child_wte4_petg_clamp_lower_linked",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "clamp_linked_lower"
+      ],
+      "file": "child_wte4_petg_clamp_lower_linked.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/exterior/printed/child_wte4_petg_clamp/child_wte4_petg_clamp_lower_linked.stl",
+      "source_sha256": "19fa74c22a593a21568d3bd432e5b8be7c668b7e19b9eb223885b487063ebfcb",
+      "sha256": "f8e1d1221bc3c03f036ef5138298896c54620c5c4ced449a6db07e5d3cbce79e",
+      "extents_mm": [
+        163.6962,
+        62.0,
+        160.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          81.84810638427734
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.7999944686889648
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/exterior/printed/child_horizontal_plate_frame",
+      "stem": "child_horizontal_plate_frame_ballast_cap",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 4,
+      "labels": [
+        "ballast_cap_-54_-24",
+        "ballast_cap_-54_5",
+        "ballast_cap_54_-24",
+        "ballast_cap_54_5"
+      ],
+      "file": "child_horizontal_plate_frame_ballast_cap.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/exterior/printed/child_horizontal_plate_frame/child_horizontal_plate_frame_ballast_cap.stl",
+      "source_sha256": "03436da86b7a6859c83b544d06e6352385993c763cc8790ef05ebec38458bbac",
+      "sha256": "5818245bbe9f810ee9fbb0cc3bb9bc98d1a749fb88a4b7bc20adcbd7a9b2ca80",
+      "extents_mm": [
+        82.0,
+        30.2452,
+        12.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          40.99999237060547
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.7999944686889648
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/exterior/printed/child_horizontal_twist_mount",
+      "stem": "child_horizontal_twist_mount_frame_receiver",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "side_light_frame_receiver"
+      ],
+      "file": "child_horizontal_twist_mount_frame_receiver.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/exterior/printed/child_horizontal_twist_mount/child_horizontal_twist_mount_frame_receiver.stl",
+      "source_sha256": "6f6d65b5c3f6b0529cb0707bd3a58e7fb6277f65a28fef002ec0f2329c069c22",
+      "sha256": "005b29f0fb5d38a03151006a93acf8eca324a77506df988e0984808a3025daa6",
+      "extents_mm": [
+        52.0,
+        84.0,
+        18.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          12.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          42.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/exterior/printed/child_horizontal_twist_mount",
+      "stem": "child_horizontal_twist_mount_light_twist",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "side_light_light_twist"
+      ],
+      "file": "child_horizontal_twist_mount_light_twist.stl",
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/exterior/printed/child_horizontal_twist_mount/child_horizontal_twist_mount_light_twist.stl",
+      "source_sha256": "91785c815fefd940bf95ffeaf324a9566c8adeaf7821d5f8d863f208451204e0",
+      "sha256": "2427137c92e8c5f34d490934c86f76acc87f7145161932cd65c2b8ab6361d5db",
+      "extents_mm": [
+        65.0,
+        27.75,
+        81.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          32.5
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          -1.0,
+          38.25
+        ],
+        [
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          40.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/common/jigs/quick_release_prototypes",
+      "stem": "quick_release_prototypes_twist_knob",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "side_light_twist_knob"
+      ],
+      "file": "quick_release_prototypes_twist_knob.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/common/jigs/quick_release_prototypes/quick_release_prototypes_twist_knob.stl",
+      "source_sha256": "a5699e9f0e6c08601bd55f3c452c65ab03d0987ff08ead47f1002e639ed41d16",
+      "sha256": "4937289e0a7dc0aa10f12c761e14c217befe0a074c2df8252e1f93170d629747",
+      "extents_mm": [
+        16.0,
+        14.5236,
+        10.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          8.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          7.2618
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/exterior/printed/child_simple_light_mount",
+      "stem": "child_simple_light_mount_cap",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "side_light_holder_cap"
+      ],
+      "file": "child_simple_light_mount_cap.stl",
+      "rotation_deg": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/exterior/printed/child_simple_light_mount/child_simple_light_mount_cap.stl",
+      "source_sha256": "113d0687a8bd3a71fe6527f55da311f061f967e4f9d52cda29c1494f8cc9befa",
+      "sha256": "2b941fdebda953c283ef6a36d77fa8093c3b99ad0cc139ecf943594b9b386928",
+      "extents_mm": [
+        65.0,
+        19.75,
+        81.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          32.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -41.25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          40.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    }
+  ],
+  "modifiers": [],
+  "generated_files": [
+    "child_horizontal_plate_frame_side.stl",
+    "child_horizontal_plate_frame_guard_front_inner.stl",
+    "child_horizontal_plate_frame_guard_front_inner_mirrored.stl",
+    "child_horizontal_plate_frame_guard_rear_inner.stl",
+    "child_horizontal_plate_frame_guard_rear_inner_mirrored.stl",
+    "child_horizontal_plate_frame_rotation_key.stl",
+    "child_horizontal_plate_frame_rotation_key_mirrored.stl",
+    "child_horizontal_plate_frame_bottom.stl",
+    "child_horizontal_plate_frame_top.stl",
+    "child_horizontal_plate_frame_clamp_support.stl",
+    "child_wte4_petg_clamp_upper_linked.stl",
+    "child_wte4_petg_clamp_lower_linked.stl",
+    "child_horizontal_plate_frame_ballast_cap.stl",
+    "child_horizontal_twist_mount_frame_receiver.stl",
+    "child_horizontal_twist_mount_light_twist.stl",
+    "quick_release_prototypes_twist_knob.stl",
+    "child_simple_light_mount_cap.stl",
+    "DESIGN_NOTES.md",
+    "PRINT.md"
+  ],
+  "document_hashes": {
+    "DESIGN_NOTES.md": "332364524a8d3410677b53987d19d3b4cf99cda1485cbd82322266c908c8aaba",
+    "PRINT.md": "4a6358c26e18fa936b4aac2a519d2b7167a6d184af956bd4ee2681a20013f98a"
+  }
+}

@@ -1,0 +1,57 @@
+Native STEP meshing: C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\parent_hand_service\rigidity\iteration_06\carrier.step; independent surface/volume mesh at each target.
+
+mesh target 8.00 mm
+  shell refined to 8.00 mm edges: 4786 -> 29556 triangles
+  mesh carrier_h8.00_mesh.inp: 28048 nodes, 14683 elements at 8.00 mm
+  MAIN_USB_X+                            normal   req 3.00  p99.5  26.336  worst   5.945  max   0.0731 mm  PASS
+  MAIN_USB_Y+                            normal   req 3.00  p99.5  21.236  worst   7.254  max   0.0833 mm  PASS
+  MAIN_USB_Z+                            normal   req 3.00  p99.5  28.608  worst   3.549  max   0.1248 mm  PASS
+  MAIN_SD_X+                             normal   req 3.00  p99.5 138.597  worst  17.383  max   0.0108 mm  PASS
+  MAIN_SD_Y+                             normal   req 3.00  p99.5 143.499  worst  16.756  max   0.0201 mm  PASS
+  MAIN_SD_Z+                             normal   req 3.00  p99.5  28.653  worst   2.964  max   0.1310 mm  PASS
+  SONY_FRONT_X+                          normal   req 3.00  p99.5  15.437  worst   3.970  max   0.0483 mm  PASS
+  SONY_FRONT_Y+                          normal   req 3.00  p99.5  15.547  worst   4.414  max   0.0439 mm  PASS
+  SONY_FRONT_Z+                          normal   req 3.00  p99.5  26.512  worst   2.444  max   0.1269 mm  PASS
+  SONY_REAR_X+                           normal   req 3.00  p99.5  15.273  worst   4.258  max   0.0766 mm  PASS
+  SONY_REAR_Y+                           normal   req 3.00  p99.5  15.441  worst   3.523  max   0.0583 mm  PASS
+  SONY_REAR_Z+                           normal   req 3.00  p99.5  13.779  worst   0.516  max   0.4364 mm  FAIL
+      - the worst element is at 0.516, below the absolute minimum 1.5 -- the p99.5 value does not carry a case whose worst element fails
+
+mesh target 4.00 mm
+  shell refined to 4.00 mm edges: 4786 -> 98180 triangles
+  mesh carrier_h4.00_mesh.inp: 63343 nodes, 34824 elements at 4.00 mm
+  MAIN_USB_X+                            normal   req 3.00  p99.5  41.498  worst   4.930  max   0.0759 mm  PASS
+  MAIN_USB_Y+                            normal   req 3.00  p99.5  29.305  worst   6.704  max   0.0872 mm  PASS
+  MAIN_USB_Z+                            normal   req 3.00  p99.5  28.610  worst   2.679  max   0.1323 mm  PASS
+  MAIN_SD_X+                             normal   req 3.00  p99.5 154.228  worst  13.875  max   0.0116 mm  PASS
+  MAIN_SD_Y+                             normal   req 3.00  p99.5 150.892  worst  17.814  max   0.0210 mm  PASS
+  MAIN_SD_Z+                             normal   req 3.00  p99.5  29.463  worst   2.140  max   0.1386 mm  PASS
+  SONY_FRONT_X+                          normal   req 3.00  p99.5  26.688  worst   4.127  max   0.0508 mm  PASS
+  SONY_FRONT_Y+                          normal   req 3.00  p99.5  25.830  worst   4.446  max   0.0459 mm  PASS
+  SONY_FRONT_Z+                          normal   req 3.00  p99.5  31.856  worst   2.675  max   0.1302 mm  PASS
+  SONY_REAR_X+                           normal   req 3.00  p99.5  27.480  worst   4.118  max   0.0797 mm  PASS
+  SONY_REAR_Y+                           normal   req 3.00  p99.5  25.916  worst   4.002  max   0.0609 mm  PASS
+  SONY_REAR_Z+                           normal   req 3.00  p99.5  13.576  worst   0.613  max   0.4577 mm  FAIL
+      - the worst element is at 0.613, below the absolute minimum 1.5 -- the p99.5 value does not carry a case whose worst element fails
+
+mesh target 2.00 mm
+  shell refined to 2.00 mm edges: 4786 -> 346076 triangles
+  mesh carrier_h2.00_mesh.inp: 259816 nodes, 159824 elements at 2.00 mm
+  MAIN_USB_X+                            normal   req 3.00  p99.5  59.567  worst   4.070  max   0.0811 mm  PASS
+  MAIN_USB_Y+                            normal   req 3.00  p99.5  40.312  worst   5.174  max   0.0947 mm  PASS
+  MAIN_USB_Z+                            normal   req 3.00  p99.5  32.160  worst   2.968  max   0.1384 mm  PASS
+  MAIN_SD_X+                             normal   req 3.00  p99.5 176.747  worst  13.459  max   0.0121 mm  PASS
+  MAIN_SD_Y+                             normal   req 3.00  p99.5 173.068  worst  11.993  max   0.0221 mm  PASS
+  MAIN_SD_Z+                             normal   req 3.00  p99.5  35.423  worst   2.476  max   0.1446 mm  PASS
+  SONY_FRONT_X+                          normal   req 3.00  p99.5  74.208  worst   3.152  max   0.0493 mm  PASS
+  SONY_FRONT_Y+                          normal   req 3.00  p99.5  83.517  worst   4.694  max   0.0457 mm  PASS
+  SONY_FRONT_Z+                          normal   req 3.00  p99.5  43.071  worst   1.706  max   0.1314 mm  PASS
+  SONY_REAR_X+                           normal   req 3.00  p99.5  80.156  worst   3.333  max   0.0790 mm  PASS
+  SONY_REAR_Y+                           normal   req 3.00  p99.5  74.495  worst   3.452  max   0.0596 mm  PASS
+  SONY_REAR_Z+                           normal   req 3.00  p99.5  16.512  worst   0.372  max   0.4642 mm  FAIL
+      - the worst element is at 0.372, below the absolute minimum 1.5 -- the p99.5 value does not carry a case whose worst element fails
+
+wrote C:\Users\ryupc\WorkSpace\Mitou26\Body_Models\assemblies\parent_hand_service\rigidity\iteration_06\ccx\ccx_summary.json
+  8.00 mm: FAIL  SF 13.779  max 0.43642 mm  mass 255.222474 g
+  4.00 mm: FAIL  SF 13.576  max 0.45766 mm  mass 255.237936 g
+  2.00 mm: FAIL  SF 16.512  max 0.46423 mm  mass 255.267612 g

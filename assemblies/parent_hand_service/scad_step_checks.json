@@ -1,0 +1,142 @@
+[
+  {
+    "part": "parent_stack_spacer_set",
+    "valid_step": true,
+    "closed_stl": true,
+    "scad_bbox_difference_mm": 7.105427357601002e-15,
+    "scad_relative_volume_difference": 0.00012605035309698798,
+    "solid_count": 1
+  },
+  {
+    "part": "sony_column_left",
+    "valid_step": true,
+    "closed_stl": true,
+    "scad_bbox_difference_mm": 0.0010900497436523438,
+    "scad_relative_volume_difference": 0.0004135895057824322,
+    "solid_count": 1
+  },
+  {
+    "part": "sony_column_right",
+    "valid_step": true,
+    "closed_stl": true,
+    "scad_bbox_difference_mm": 0.000839900970459162,
+    "scad_relative_volume_difference": 0.00041122693203424004,
+    "solid_count": 1
+  },
+  {
+    "part": "ann_mb1_internal_rack",
+    "valid_step": true,
+    "closed_stl": true,
+    "scad_bbox_difference_mm": 0.000499725341796875,
+    "scad_relative_volume_difference": 1.3077060354731596e-06,
+    "solid_count": 1
+  },
+  {
+    "part": "gnss_column_front",
+    "valid_step": true,
+    "closed_stl": true,
+    "scad_bbox_difference_mm": 0.0,
+    "scad_relative_volume_difference": 5.474916616518397e-05,
+    "solid_count": 1
+  },
+  {
+    "part": "gnss_column_rear",
+    "valid_step": true,
+    "closed_stl": true,
+    "scad_bbox_difference_mm": 4.440892098500626e-16,
+    "scad_relative_volume_difference": 0.00010196943818372232,
+    "solid_count": 1
+  },
+  {
+    "part": "gnss_edge_cap",
+    "valid_step": true,
+    "closed_stl": true,
+    "scad_bbox_difference_mm": 4.884981308350689e-15,
+    "scad_relative_volume_difference": 1.520640345303337e-05,
+    "solid_count": 1
+  },
+  {
+    "part": "gnss_edge_cap_front",
+    "valid_step": true,
+    "closed_stl": true,
+    "scad_bbox_difference_mm": 4.884981308350689e-15,
+    "scad_relative_volume_difference": 1.530962695050688e-05,
+    "solid_count": 1
+  },
+  {
+    "part": "gnss_universal_carrier",
+    "valid_step": true,
+    "closed_stl": true,
+    "scad_bbox_difference_mm": 4.472866521609831e-12,
+    "scad_relative_volume_difference": 1.3642363700402102e-05,
+    "solid_count": 1
+  },
+  {
+    "part": "floor_plate",
+    "valid_step": true,
+    "closed_stl": true,
+    "scad_bbox_difference_mm": 2.5258789371207513e-07,
+    "scad_relative_volume_difference": 2.0073218653867767e-06,
+    "solid_count": 1
+  },
+  {
+    "part": "main_corner_column",
+    "valid_step": true,
+    "closed_stl": true,
+    "scad_bbox_difference_mm": 0.0010900497436523438,
+    "scad_relative_volume_difference": 0.00041461914586174306,
+    "solid_count": 1
+  },
+  {
+    "part": "sony_mount_plate",
+    "valid_step": true,
+    "closed_stl": true,
+    "scad_bbox_difference_mm": 3.0517578011313162e-06,
+    "scad_relative_volume_difference": 4.505003332170825e-05,
+    "solid_count": 1
+  },
+  {
+    "part": "parent_lipo_retainer_lid_narrow",
+    "valid_step": true,
+    "closed_stl": true,
+    "solid_count": 1,
+    "scad_bbox_difference_mm": 9.536743172944284e-08,
+    "scad_relative_volume_difference": 6.105445618222083e-08,
+    "defines": {
+      "part": "lid",
+      "west_trim": 0.6
+    }
+  },
+  {
+    "part": "main_mount_plate",
+    "valid_step": true,
+    "closed_stl": true,
+    "scad_bbox_difference_mm": 0.0006999969482421875,
+    "scad_relative_volume_difference": 2.235030266763899e-05,
+    "solid_count": 1
+  },
+  {
+    "part": "ann_mb1_coax_ring",
+    "valid_step": true,
+    "closed_stl": true,
+    "scad_bbox_difference_mm": 0.004100899560548044,
+    "scad_relative_volume_difference": 4.724033924112106e-05,
+    "solid_count": 1
+  },
+  {
+    "part": "battery_base",
+    "valid_step": true,
+    "closed_stl": true,
+    "scad_bbox_difference_mm": 1.0000000116860974e-07,
+    "scad_relative_volume_difference": 1.4557975256319656e-05,
+    "solid_count": 1
+  },
+  {
+    "part": "parent_lipo_retainer_lid_slide",
+    "valid_step": true,
+    "closed_stl": true,
+    "scad_bbox_difference_mm": 1.5258789005656581e-06,
+    "scad_relative_volume_difference": 6.868931117086219e-08,
+    "solid_count": 1
+  }
+]

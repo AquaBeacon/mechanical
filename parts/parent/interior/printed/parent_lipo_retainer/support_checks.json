@@ -1,0 +1,70 @@
+[
+  {
+    "support": "nut_roof",
+    "xy": [
+      12,
+      5
+    ],
+    "intersection_mm3": 0.0,
+    "distance_mm": 0.0
+  },
+  {
+    "support": "nut_roof",
+    "xy": [
+      91,
+      5
+    ],
+    "intersection_mm3": 0.0,
+    "distance_mm": 0.0
+  },
+  {
+    "support": "nut_roof",
+    "xy": [
+      12,
+      50
+    ],
+    "intersection_mm3": 0.0,
+    "distance_mm": 0.0
+  },
+  {
+    "support": "nut_roof",
+    "xy": [
+      91,
+      50
+    ],
+    "intersection_mm3": 0.0,
+    "distance_mm": 0.0
+  },
+  {
+    "support": "MAIN_spacer",
+    "xy": [
+      0,
+      0
+    ],
+    "distance_mm": 0.0
+  },
+  {
+    "support": "MAIN_spacer",
+    "xy": [
+      103,
+      0
+    ],
+    "distance_mm": 0.0
+  },
+  {
+    "support": "MAIN_spacer",
+    "xy": [
+      0,
+      75.5
+    ],
+    "distance_mm": 0.0
+  },
+  {
+    "support": "MAIN_spacer",
+    "xy": [
+      103,
+      75.5
+    ],
+    "distance_mm": 0.0
+  }
+]

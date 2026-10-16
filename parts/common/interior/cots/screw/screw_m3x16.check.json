@@ -1,0 +1,9 @@
+{
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 158.78562646435236,
+  "stl_volume_mm3": 158.78558349609375,
+  "relative_volume_difference": 2.7060554028612893e-07,
+  "bbox_difference_mm": 0.0,
+  "representation": "faceted STEP from verified SCAD mesh"
+}

@@ -1,0 +1,309 @@
+{
+  "schema_version": 1,
+  "assembly": "dji_style_toggle_latch",
+  "release_status": "exploration_only",
+  "note": "形状不一致の旧試作。写真の防水カメラハウジング用ラッチとは異なるため機体用に採用しない。元の試作条件は厚1mm EPDMシート、Bambu Lab PETG Basic、0.4mmノズル、0.2mm層、6周壁、100%インフィル。STLは履歴として保持。公開CAD調査はspec/dji_style_toggle_latch/PUBLIC_CAD_REVIEW.md。",
+  "source_hashes": {
+    "assemblies/dji_style_toggle_latch/placement.json": "506fe5cd1f29c1be3fba24733e4bf64a4a6408db03ef8b8f6429f3a7d21a5506",
+    "assemblies/dji_style_toggle_latch/print_config.json": "aa1c856a1c12b809eb82ada9adc7c816010c463aaf3a44ce2c07ab130552ad0c",
+    "assemblies/dji_style_toggle_latch/README.md": "b04ee41114f224c30f37491de05c93ae31fa551084e8b4cc1c8ddd5df706e78e",
+    "parts/common/jigs/dji_style_toggle_latch/dji_style_toggle_latch.md": "e890079f20f5cd8ed022d1cb2cb22e85f8b6c1025c3809b525a9adf387ec1b2e",
+    "parts/common/jigs/dji_style_toggle_latch/dji_style_toggle_latch.scad": "2bbb5cc2d1fc08de20236b703cd2976f9392946719b2c5406b2b77e2a5ab0d21",
+    "parts/common/jigs/dji_style_toggle_latch/manufacturing.json": "a75458e50e678bb0b9db53e64b102b4b5b93685031466c85d7f7c20440555ac2",
+    "parts/common/jigs/dji_style_toggle_latch/variants.txt": "8220181dbc1501bf4df3ada8b252c2aaefd5a407505f54dd02e47654f9b802be",
+    "scad/lib/util.scad": "13fed014ff5835aef1559d05600e2b4b0e284c93a4325485f4ef1be3ede6ddb3",
+    "spec/dji_style_toggle_latch/verify.py": "f9973ed7000d5079597f9f09f499c5e3df6ceb45c91d7b027a95d511c7241d7c"
+  },
+  "parts": [
+    {
+      "part": "parts/common/jigs/dji_style_toggle_latch",
+      "stem": "dji_style_toggle_latch_base",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "Base"
+      ],
+      "file": "dji_style_toggle_latch_base.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/common/jigs/dji_style_toggle_latch/dji_style_toggle_latch_base.stl",
+      "source_sha256": "6db2f0946d520577ef328b3b47180df96b1c8e3b4834bee088ef78fa88b0a80b",
+      "sha256": "d9ecccd4f72b48fff5424db4e44c2ca982cc2bc8218ee67b25826121a247f3c0",
+      "extents_mm": [
+        26.0,
+        46.0,
+        16.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          17.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/common/jigs/dji_style_toggle_latch",
+      "stem": "dji_style_toggle_latch_keeper",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "Keeper"
+      ],
+      "file": "dji_style_toggle_latch_keeper.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/common/jigs/dji_style_toggle_latch/dji_style_toggle_latch_keeper.stl",
+      "source_sha256": "600a0ba3c7b786a2d76f4af5d5d816632b896a45d6fba6fdb2aea1a175471a18",
+      "sha256": "f1082f204842c351a0563005bd5e8a6251f0a326b58ec50bed36500923b65396",
+      "extents_mm": [
+        23.0,
+        48.0,
+        16.5
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          16.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/common/jigs/dji_style_toggle_latch",
+      "stem": "dji_style_toggle_latch_link",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 2,
+      "labels": [
+        "Link left",
+        "Link right"
+      ],
+      "file": "dji_style_toggle_latch_link.stl",
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/common/jigs/dji_style_toggle_latch/dji_style_toggle_latch_link.stl",
+      "source_sha256": "6f10bed3b3b8dd0704ac2ab31bbcf281b71103a86023f42b2e99a9ba746ca463",
+      "sha256": "eb23155e92dc25163af4ec59993a44b5ad1750251e7544ee98157eda1e150c15",
+      "extents_mm": [
+        23.0,
+        11.0,
+        4.8
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          5.5
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          -1.0,
+          5.5
+        ],
+        [
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          3.3677786976552215e-16
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/common/jigs/dji_style_toggle_latch",
+      "stem": "dji_style_toggle_latch_lever",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "Lever"
+      ],
+      "file": "dji_style_toggle_latch_lever.stl",
+      "rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/common/jigs/dji_style_toggle_latch/dji_style_toggle_latch_lever.stl",
+      "source_sha256": "e203da3ae4d54d70035930dfcf45a484753f8680b5994bc51897a9d73128d860",
+      "sha256": "ebe8cb9838ae8f55c37b187c1dfb9d782d96a722d38e82ab4e4a38dc3a1169e4",
+      "extents_mm": [
+        55.7951,
+        28.8,
+        20.8
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          5.5
+        ],
+        [
+          0.0,
+          -1.0,
+          -1.2246467991473532e-16,
+          14.400000000000002
+        ],
+        [
+          0.0,
+          1.2246467991473532e-16,
+          -1.0,
+          15.300000000000002
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    }
+  ],
+  "modifiers": [],
+  "generated_files": [
+    "dji_style_toggle_latch_base.stl",
+    "dji_style_toggle_latch_keeper.stl",
+    "dji_style_toggle_latch_link.stl",
+    "dji_style_toggle_latch_lever.stl",
+    "DESIGN_NOTES.md",
+    "PRINT.md"
+  ],
+  "document_hashes": {
+    "DESIGN_NOTES.md": "805851650a7ce69a2befdeb4c30a23f6f7f53b33a27025e3d72ee4fff2f4d764",
+    "PRINT.md": "cf85f623a60da2782762e39c3d649cffd9d7a771b97a93d03f9612f4c6f2722d"
+  }
+}

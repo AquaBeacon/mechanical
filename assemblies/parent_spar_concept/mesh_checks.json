@@ -1,0 +1,52 @@
+{
+  "disk": {
+    "watertight": true,
+    "bodies": 1,
+    "dimensions_mm": [
+      225.0,
+      225.0,
+      5.0
+    ],
+    "volume_mm3": 194934.10868719997
+  },
+  "fin": {
+    "watertight": true,
+    "bodies": 1,
+    "dimensions_mm": [
+      65.0,
+      125.0,
+      4.0
+    ],
+    "volume_mm3": 32309.3226880088
+  },
+  "hub": {
+    "watertight": true,
+    "bodies": 1,
+    "dimensions_mm": [
+      60.0,
+      60.0,
+      24.0
+    ],
+    "volume_mm3": 58673.400605858005
+  },
+  "coupler": {
+    "watertight": true,
+    "bodies": 1,
+    "dimensions_mm": [
+      40.0,
+      40.0,
+      80.0
+    ],
+    "volume_mm3": 75014.5888592212
+  },
+  "adapter": {
+    "watertight": true,
+    "bodies": 1,
+    "dimensions_mm": [
+      50.0,
+      50.0,
+      60.0
+    ],
+    "volume_mm3": 70995.03997109059
+  }
+}

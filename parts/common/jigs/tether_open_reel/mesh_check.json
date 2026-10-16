@@ -1,0 +1,82 @@
+{
+  "base": {
+    "count": 1,
+    "size_mm": [
+      229.761,
+      230.0,
+      175.0
+    ],
+    "watertight": true,
+    "consistent": true,
+    "components": 1
+  },
+  "lid": {
+    "count": 1,
+    "size_mm": [
+      229.761,
+      230.0,
+      35.0
+    ],
+    "watertight": true,
+    "consistent": true,
+    "components": 1
+  },
+  "stand": {
+    "count": 1,
+    "size_mm": [
+      220.0,
+      190.0,
+      50.0
+    ],
+    "watertight": true,
+    "consistent": true,
+    "components": 1
+  },
+  "cover_half": {
+    "count": 2,
+    "size_mm": [
+      236.0,
+      118.0,
+      186.8
+    ],
+    "watertight": true,
+    "consistent": true,
+    "components": 1
+  },
+  "clip": {
+    "count": 4,
+    "size_mm": [
+      12.0,
+      18.8,
+      16.0
+    ],
+    "watertight": true,
+    "consistent": true,
+    "components": 1
+  },
+  "coupon_socket": {
+    "count": 1,
+    "size_mm": [
+      16.0,
+      18.0,
+      36.0
+    ],
+    "watertight": true,
+    "consistent": true,
+    "components": 1
+  },
+  "coupon_spring": {
+    "count": 1,
+    "size_mm": [
+      23.0,
+      18.0,
+      35.0
+    ],
+    "watertight": true,
+    "consistent": true,
+    "components": 1
+  },
+  "capacity_estimate_m": 37.00678670360111,
+  "snap_beam_strain_estimate": 0.004000000000000001,
+  "clip_strain_estimate": 0.0061728395061728435
+}
