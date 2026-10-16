@@ -6,7 +6,7 @@ OpenSCADとFreeCAD CLIを使用します。assemblies/README.md で構成を選�
 
 ## 入口
 
-CAD・STL・3MFはGit LFSで管理します。Git LFSを導入して `git lfs install --local`、clone後は `git lfs pull` を実行してください。ローカル移行時点では実ファイルを保持しており、初回のadd時にLFSへ格納されます。大きなファイルのアップロードはまだ行っていません。
+CAD・STL・3MFはGit LFSで公開しています。Git LFSを導入して `git lfs install`、clone後に必要なら `git lfs pull` を実行してください。LFSデータは約3 GiBです。Windowsでは一部の印刷ジョブのパスが長いため、下記のcloneオプションで長いパスを有効にし、できるだけ短い親フォルダへ取得してください。
 
 - [assemblies/README.md](assemblies/README.md)
 - [parts/README.md](parts/README.md)
@@ -32,7 +32,7 @@ python -m unittest discover -s tools/tests
 GitHub: https://github.com/AquaBeacon/mechanical
 
 ```sh
-git clone https://github.com/AquaBeacon/mechanical.git
+git clone -c core.longpaths=true https://github.com/AquaBeacon/mechanical.git
 ```
 
 公開ブランチはmainです。新設リポジトリは公開対象だけを初期履歴にし、過去の開発履歴と実験ログはローカルに保管します。

@@ -147,4 +147,6 @@ PWR裏面リードの干渉を修正。SPRESENSE簡易モデルと支持部、�
 
 ## 開発とライセンス
 
+CAD・印刷データの取得にはGit LFSを使用します。Windowsでは `git clone -c core.longpaths=true https://github.com/AquaBeacon/mechanical.git` で長いパスを有効にしてください。詳しい取得手順は開発ガイドに記載しています。
+
 [開発ガイド](DEVELOPMENT.md)にセットアップ・入口・確認方法をまとめています。自作部分は [Apache License 2.0](LICENSE)。[第三者素材・依存の扱い](THIRD_PARTY.md)も参照してください。
