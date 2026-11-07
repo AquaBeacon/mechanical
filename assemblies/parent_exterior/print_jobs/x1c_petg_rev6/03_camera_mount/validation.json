@@ -1,0 +1,54 @@
+{
+  "name": "03_camera_mount",
+  "title": "カメラマウント",
+  "file": "03_camera_mount/03_camera_mount.3mf",
+  "sha256": "ac1a431992d2ad7951e420ecdb3a3b9612280ac9262bc24306dd9090d7b56ce3",
+  "parts": [
+    {
+      "stem": "camera_mount",
+      "file": "camera_mount.stl",
+      "source_sha256": "e64eba1116d99bd71a40a08638a73b173deb314f8e6b1c07cbdf7ce402180cd4",
+      "label": "カメラマウント",
+      "saved_bounds_mm": [
+        [
+          77.99999,
+          84.27500999999998,
+          0.0
+        ],
+        [
+          177.99999,
+          171.72500699999998,
+          84.5
+        ]
+      ]
+    }
+  ],
+  "part_count": 1,
+  "grams": 107.4,
+  "seconds": 11556.0,
+  "layer_mm": 0.2,
+  "wall_loops": "6",
+  "infill": "15%",
+  "brim_mm": 3.0,
+  "support_enable": "0",
+  "material_profile": [
+    "Generic PETG"
+  ],
+  "machine": "Bambu Lab X1 Carbon",
+  "gcode_sha256": "65c9f33cadac293c026a20c6f96d8d303a24d30e2d0fa4b234d96f91811f737c",
+  "support_filament_mm": 0,
+  "actual_support_extrusion_moves": 0,
+  "extrusion_bounds_xy_mm": [
+    [
+      75.386,
+      79.661
+    ],
+    [
+      180.614,
+      172.339
+    ]
+  ],
+  "exclusion_hits": 0,
+  "saved_3mf_components": 1,
+  "passed": true
+}

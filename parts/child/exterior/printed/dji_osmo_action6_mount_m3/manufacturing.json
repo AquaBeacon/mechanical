@@ -1,0 +1,69 @@
+{
+  "print_rotations_deg": {
+    "camera_mount": [
+      0,
+      0,
+      0
+    ],
+    "camera_mount_twist": [
+      0,
+      0,
+      0
+    ],
+    "camera_front_clamp": [
+      0,
+      0,
+      0
+    ],
+    "camera_rotary_spacer": [
+      0,
+      0,
+      0
+    ],
+    "camera_hand_knob": [
+      0,
+      0,
+      0
+    ],
+    "camera_hand_spacer": [
+      0,
+      0,
+      0
+    ],
+    "camera_hand_knob_cap": [
+      0,
+      0,
+      0
+    ]
+  },
+  "non_print_files": [
+    "assembly",
+    "frame_view",
+    "camera_case_41mm",
+    "camera_m3x30_hex"
+  ],
+  "layer_heights_mm": {
+    "camera_mount_twist": 0.1,
+    "camera_front_clamp": 0.1,
+    "camera_rotary_spacer": 0.1,
+    "camera_hand_knob": 0.1,
+    "camera_hand_spacer": 0.1,
+    "camera_hand_knob_cap": 0.1
+  },
+  "support_modes": {
+    "camera_mount_twist": "auto",
+    "camera_front_clamp": "auto",
+    "camera_rotary_spacer": "none",
+    "camera_hand_knob": "auto",
+    "camera_hand_spacer": "auto",
+    "camera_hand_knob_cap": "none"
+  },
+  "support_process_overrides": {
+    "support_on_build_plate_only": "1",
+    "support_top_z_distance": "0.2",
+    "support_bottom_z_distance": "0.2"
+  },
+  "source_dependencies": [
+    "../../../../../scad/lib/camera_rotary_joint.scad"
+  ]
+}

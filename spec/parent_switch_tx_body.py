@@ -44,10 +44,8 @@ for name,pts in [('gnss',GNSS.UNIVERSAL_FRAME_FOOT_XY),('rack',GNSS.RACK_FOOT_XY
   x1=min(203.75,x+5.5);y0=max(7.8,y-5.5);y1=min(223.75,y+5.5)
   floor=floor.fuse(finished(box(x0,y0,gz,x1-x0,y1-y0,gh),f'{name}_floor_tab_{i}',.15))
   floor=floor.cut(bore(x,y,gz-.1,3.45,gh+.2))
-  radius=5.8/math.sqrt(3)
-  ps=[v(x+radius*math.cos(math.pi/6+i*math.pi/3),y+radius*math.sin(math.pi/6+i*math.pi/3),16.2) for i in range(6)]
-  pocket=CSG(Part.Face(Part.makePolygon(ps+[ps[0]])).extrude(v(0,0,2.8)),f'translate([{x},{y},16.2]) rotate([0,0,30]) cylinder(r={radius},h=2.8,$fn=6);')
-  floor=floor.cut(pocket)
+  # Closed-top side-entry sockets are cut after all tabs/boss reliefs exist.
+  # Never restore the former top-open hex recess: it cannot take +Z nut pull.
 # Keep the new full-depth mount links clear of the case's four corner posts.
 # In particular the rear-west GNSS foot links past the post at(9,221).
 # Filled nut tabs may cross the edge of a real case boss; trim only that boss
@@ -55,16 +53,24 @@ for name,pts in [('gnss',GNSS.UNIVERSAL_FRAME_FOOT_XY),('rack',GNSS.RACK_FOOT_XY
 for x,y in case_bosses:floor=floor.cut(cyl(x,y,gz-.1,5.3 if [x,y] in GNSS.CASE_ANCHOR_XY else 4.8,boss_top-gz+.1))
 for x,y in [(9,9),(201,9),(9,221),(201,221)]:floor=floor.cut(cyl(x,y,8.7,5.45,10.3))
 inside=Part.read(str(case_dir/'interior_corner_clearance.step'))
+print('FLOOR_STAGE=case clipping',flush=True)
 bottom_face=next(f for f in inside.Faces if abs(f.BoundBox.ZMin)<1e-6 and abs(f.BoundBox.ZMax)<1e-6)
 mask=bottom_face.extrude(v(0,0,gh));mask.translate(v(0,0,gz))
 rim=[e for e in mask.Edges if abs(e.BoundBox.ZLength)<1e-6]
 mask=mask.makeChamfer(.15,rim)  # bevel the allowed-volume rim before clipping
 upper_mask=bottom_face.extrude(v(0,0,100-18.8));upper_mask.translate(v(0,0,18.8))
 floor=CSG(floor.s.common(mask.fuse(upper_mask)),'')  # 0.5 mm corner clearance
+print('FLOOR_STAGE=case clipped',flush=True)
 for x,y in GNSS.CASE_ANCHOR_XY:
  # Continuous local bearing from the real Z10 boss to the existing grid/seat.
  floor=floor.fuse(cyl(x,y,boss_top,4.5,18.8-boss_top))
  floor=floor.cut(bore(x,y,boss_top-.1,4.5,18.9-boss_top)).cut(cyl(x,y,GNSS.CASE_ANCHOR_SEAT_Z,4.1,2.2))
+from parent_floor_access import add_floor_access
+protected_axes=[(x,y,9.1) for x,y in GNSS.CASE_ANCHOR_XY]
+protected_axes += [(x,y,4.3) for x,y in ph+th+[GNSS.battery_xy(x,y) for x,y in [[0,0],[103,0],[0,55.5],[103,55.5]]]]
+protected_axes += [(x,y,4.2) for x,y in GNSS.UNIVERSAL_FRAME_FOOT_XY+GNSS.RACK_FOOT_XY+GNSS.SONY_CARRIER_FOOT_XY]
+floor_shape,floor_access_report=add_floor_access(floor.s,GNSS,protected_axes)
+floor=CSG(floor_shape,'')
 save('floor_plate',finished(floor,'floor_plate',.15))
 
 # Battery source is inserted by the entry point; it is unchanged from the
@@ -85,7 +91,7 @@ def underside_mounts(c,pts,top):
    c=c.fuse(box(x0,y-5,18.8,w,10,3))
  return c
 # MAIN rotated: flat fixing plate with raised screw seats.
-from parent_corner_mounts import main_shapes,sony_shapes
+from parent_corner_mounts import main_shapes,sony_shapes,SONY_BOARD_LIFT
 def corner_csg(shape):
  mesh=MeshPart.meshFromShape(Shape=shape,LinearDeflection=.025,AngularDeflection=.1,Relative=False)
  points,faces=mesh.Topology
@@ -103,6 +109,7 @@ a=copy.deepcopy(old);a['name']='parent_hand_service';a['items']=[it for it in a[
 def setops(label,xyz,rot=None):
  it=next(it for it in a['items'] if it['label']==label);it['ops']=[{'translate':xyz}]+([{'rotate':rot}] if rot else []);it.pop('note',None)
 setops('p_main',GNSS.MAIN_ORIGIN,GNSS.MAIN_ROTATION);setops('p_pwr',GNSS.PWR_ORIGIN,[0,0,90]);setops('tx_improved',GNSS.TX_ORIGIN,[0,0,90]);setops('spresense',GNSS.SONY_ORIGIN,GNSS.SONY_ROTATION)
+setops('spresense',GNSS.SONY_ORIGIN[:2]+[GNSS.SONY_ORIGIN[2]+SONY_BOARD_LIFT],GNSS.SONY_ROTATION)
 setops('lipo',GNSS.battery_xy(102.5,44.5)+[23],[0,0,270]);setops('lipo_tray',GNSS.BATTERY_ORIGIN,GNSS.BATTERY_ROTATION);setops('lipo_ret_lid',GNSS.BATTERY_ORIGIN[:2]+[49],GNSS.BATTERY_ROTATION);setops('lipo_ret_pads',GNSS.BATTERY_ORIGIN,GNSS.BATTERY_ROTATION)
 next(it for it in a['items'] if it['label']=='lipo_ret_lid')['file']='parent_lipo_retainer_lid_slide'
 setops('pen_tether',[28,0,65],[-90,0,0]);setops('pen_td04a',[120,0,65],[-90,0,0])
@@ -130,6 +137,7 @@ add('lid_keepout','parts/parent/exterior/cots/bcas212310g','bcas212310g_cover',c
 next(it for it in a['items'] if it['label']=='box_bcas212310g')['note']='2026-10-10 drawing-derived body: floor3, boss top10, 4 inserts/12 tapping bosses, drafted walls and corner bays; vendor STEP and physical fit pending.'
 next(it for it in a['items'] if it['label']=='plate')['note']='Grid top18.8 retained. Drawing corner contour minus0.5 clearance; actual Z10 boss bearing. M4x12 button anchors.'
 for stem,pts,seat in [('main',mh,43.6),('sony',sh,67.2),('pwr',ph,29.9),('tx',th,26.4)]:
+ if stem=='sony':seat+=SONY_BOARD_LIFT
  for i,(x,y) in enumerate(pts):screw(f'{stem}_mount_{i}','screw_m2_5x6' if stem=='sony' else ('screw_m3x30' if stem=='main' and [x,y] in GNSS.MAIN_CARRIER_FOOT_XY else 'screw_m3x8'),x,y,seat)
 for stem,pts in [('main_carrier',GNSS.MAIN_CARRIER_FOOT_XY),('sony_carrier',GNSS.SONY_CARRIER_FOOT_XY),('gnss_frame',GNSS.UNIVERSAL_FRAME_FOOT_XY),('antenna_rack',GNSS.RACK_FOOT_XY)]:
  for i,(x,y) in enumerate(pts):

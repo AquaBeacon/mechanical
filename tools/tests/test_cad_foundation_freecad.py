@@ -12,7 +12,7 @@ FREECAD = Path(os.environ.get("FREECADCMD", str(Path(os.environ.get("LOCALAPPDAT
 PROBE = r'''
 import os, sys, json
 from pathlib import Path
-import FreeCAD as App, Part, Mesh
+import FreeCAD as App, Part, Mesh, MeshPart
 root = Path(os.environ['PROBE_ROOT'])
 scratch = Path(os.environ['PROBE_SCRATCH'])
 sys.path.insert(0, str(root / 'tools/cad_foundation'))
@@ -64,6 +64,18 @@ try: run(job)
 except ValueError as error: assert 'STEP/STL mismatch' in str(error)
 else: raise AssertionError('mismatched STEP was accepted')
 assert not (badout/'model.FCStd').exists()
+# Export bounds must not depend on a curved B-Rep's cached triangulation.
+from document_ops import export_solids
+curved_doc=App.newDocument('CurvedBoundsRegression')
+curved=curved_doc.addObject('Part::Feature','Curved')
+shape=Part.makeCylinder(4.5,7,App.Vector(30.8,109,28.25))
+shape=shape.makeChamfer(.2,shape.Edges)
+curved.Shape=shape
+MeshPart.meshFromShape(Shape=curved.Shape,LinearDeflection=.05,AngularDeflection=.2,Relative=False)
+curved_out=scratch/'curved';curved_out.mkdir()
+curved_result=export_solids([curved],curved_out)
+assert curved_result['Curved']['stl_closed']
+App.closeDocument(curved_doc.Name)
 (scratch/'passed.json').write_text(json.dumps({'passed': True,'cases': ['transform_order','reflection','rigid_placement','mesh_reference','readback','no_overwrite','step_stl_mismatch']}))
 '''
 

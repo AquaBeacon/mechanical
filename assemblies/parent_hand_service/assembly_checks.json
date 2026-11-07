@@ -1,16 +1,22 @@
 [
   {
     "pose": "closed",
-    "items": 123,
+    "items": 127,
     "status": "PASS",
+    "scope": "STEP item placement and bounding-box correspondence",
     "bbox_tolerance_mm": 0.5,
-    "step_sha256": "2dfc32350388f0d01cd8dea3c06d492c4dd04800467b9694280665f9e23e1f74"
+    "max_bbox_difference_mm": 0.01,
+    "step_sha256": "5cc9b3ad0ca3da2adaee0c87d0a40131de80327e81b6e9e5b57dd19e76242370",
+    "log": "assemblies/parent_hand_service/_work/analysis/plate_access_20261027/parent_hand_service_verify_asm_step.py.log"
   },
   {
     "pose": "service",
-    "items": 121,
+    "items": 126,
     "status": "PASS",
+    "scope": "STEP item placement and bounding-box correspondence",
     "bbox_tolerance_mm": 0.5,
-    "step_sha256": "381f94e7f8442ba501e0aba3b35f4e316a076cbd87206aacab13e52307786a6b"
+    "max_bbox_difference_mm": 0.01,
+    "step_sha256": "e84aa0c8999a8c10f2da371c35d2a76f36f55e457e10cf510c0032c3fa3ca815",
+    "log": "assemblies/parent_hand_service/_work/analysis/plate_access_20261027/service_verify_asm_step.py.log"
   }
 ]

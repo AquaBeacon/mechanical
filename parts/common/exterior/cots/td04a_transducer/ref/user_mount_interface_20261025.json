@@ -1,0 +1,19 @@
+{
+  "source": "Direct user instruction 2026-10-25",
+  "supersedes": "20261021 hole pitch and design requirements",
+  "confirmed": {
+    "fastener": "M4 through holes + nuts",
+    "hole_center_pitch_approx_mm": 12,
+    "cable_clearance_mm": 60,
+    "clearance_reference": "M4 hole baseline towards exterior on cable side",
+    "parent_acoustic_face": "down",
+    "child_acoustic_face": "up",
+    "ignore_existing_TD04A_model": true
+  },
+  "unmeasured": [
+    "Exact pitch",
+    "Ear thickness",
+    "Body/cable root geometry",
+    "Cable bend radius"
+  ]
+}

@@ -10,7 +10,7 @@ from matplotlib import font_manager
 
 def main():
     root = Path(__file__).resolve().parents[1]
-    out = root / "assemblies/parent_oneplate/_work/images/repeatable_mount_concept.png"
+    out = root / "assemblies/parent_exterior/_work/images/repeatable_mount_concept.png"
     out.parent.mkdir(parents=True, exist_ok=True)
     for name in ("Yu Gothic", "Meiryo", "Noto Sans CJK JP"):
         if any(f.name == name for f in font_manager.fontManager.ttflist):

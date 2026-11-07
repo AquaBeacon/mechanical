@@ -1,0 +1,82 @@
+{
+  "name": "02_camera_qr_pair",
+  "title": "カメラQR オス・メス",
+  "file": "02_camera_qr_pair/02_camera_qr_pair.3mf",
+  "sha256": "770d8d9231fa54a4de5da77d5c4e8ec09f72c94e4dff38f624a36d5fa827765c",
+  "parts": [
+    {
+      "stem": "parent_oneplate_camera_qr_female",
+      "file": "parent_oneplate_camera_qr_female.stl",
+      "source_sha256": "53275fe775a7d3cf9804f731eb0e7efb4f75b93e1c0f5fa7ec3c80e318fe1de5",
+      "translation_mm": [
+        55.0,
+        90.0,
+        0.0
+      ],
+      "label": "QR F",
+      "saved_bounds_mm": [
+        [
+          59.0,
+          98.00001,
+          0.0
+        ],
+        [
+          119.0,
+          158.00001,
+          28.0
+        ]
+      ]
+    },
+    {
+      "stem": "parent_oneplate_camera_qr_male",
+      "file": "parent_oneplate_camera_qr_male.stl",
+      "source_sha256": "6a699d6ab37a13899d72dae572a7bdb267f14eefc8b1d3fc38a7bff8850cc6a7",
+      "translation_mm": [
+        133.0,
+        90.0,
+        0.0
+      ],
+      "label": "QR M",
+      "saved_bounds_mm": [
+        [
+          137.0,
+          98.00001,
+          0.0
+        ],
+        [
+          197.0,
+          158.00001,
+          20.0
+        ]
+      ]
+    }
+  ],
+  "part_count": 2,
+  "grams": 94.89,
+  "seconds": 13266.0,
+  "layer_mm": 0.1,
+  "wall_loops": "8",
+  "infill": "100%",
+  "brim_mm": 3.0,
+  "support_enable": "0",
+  "material_profile": [
+    "Bambu PETG Basic @BBL X1C"
+  ],
+  "machine": "Bambu Lab X1 Carbon",
+  "gcode_sha256": "fff6adefcebd32f208c3bf9a623aadcdbf845920a88f631eb40ce075ce3cdf0a",
+  "support_filament_mm": 0,
+  "actual_support_extrusion_moves": 0,
+  "extrusion_bounds_xy_mm": [
+    [
+      56.786,
+      93.786
+    ],
+    [
+      199.214,
+      158.214
+    ]
+  ],
+  "exclusion_hits": 0,
+  "saved_3mf_components": 2,
+  "passed": true
+}

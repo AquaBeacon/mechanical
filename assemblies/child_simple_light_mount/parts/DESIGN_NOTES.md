@@ -26,7 +26,7 @@ CAD検査はマウント本体・押さえ・rearの干渉と工具空間に限�
 
 ## 主要寸法・インタフェース
 
-- マウント共通規格：[CHILD-SIMPLE-M3-40x40 / Rev.1](https://github.com/AquaBeacon/docs/blob/main/child_simple_mount_interface.md)。後付けカメラマウント設計時に参照する。
+- マウント共通規格：[CHILD-SIMPLE-M3-40x40 / Rev.1](../../../../../docs/child_simple_mount_interface.md)。後付けカメラマウント設計時に参照する。
 
 - 外形：220 × 82 × 238 mm。樹脂実体の体積：469.6 cm³。
 - 設計の正本：[共有パラメータ](../../../../../scad/lib/child_simple_frame.scad)。
@@ -86,7 +86,7 @@ STL閉メッシュ、単一連結体。STEPソリッド検査と容器・ねじ�
 
 # 子機シンプル筐体用 水中ライトマウント（試作）
 
-2026-10-11：ユーザー確認により、この本体・押さえを [横置きフレームのtwist取付](https://github.com/AquaBeacon/docs/blob/main/child_horizontal_twist_interface.md)へ形状変更なしで流用する。上向き、内径33・保持長81。配置と数量は新assemblyのplacement.json、印刷入口は `assemblies/child_horizontal_plate_frame/parts/PRINT.md`。これはライト実物の実測寸法を新たに確定したという意味ではない。過去のシンプル筐体構成も保持する。
+2026-10-11：ユーザー確認により、この本体・押さえを [横置きフレームのtwist取付](../../../../../docs/child_horizontal_twist_interface.md)へ形状変更なしで流用する。上向き、内径33・保持長81。配置と数量は新assemblyのplacement.json、印刷入口は `assemblies/child_horizontal_plate_frame/parts/PRINT.md`。これはライト実物の実測寸法を新たに確定したという意味ではない。過去のシンプル筐体構成も保持する。
 
 2026-09-17 r2：サポート削減・控えめな肉抜き。ユーザー確認済み：背面中央のM3・40×40 mm接続、参考STLの短い筒がライト用。
 元STLは `ref/Light_Gassyli_Holder.stl` に保存。短い筒の内径33・外径39・高さ81 mmを測定。
@@ -186,7 +186,7 @@ X1C / Generic PETG / 0.20 mm / 6壁 / 100%充填 / 5 mmブリム、2部品同時
 
 ## 横置きRev.2の一体型への流用
 
-2026-10-11ユーザー指定：固定治具とtwistを一体化し、上向き照射。half_holder(front=false,mount_plate=false)で既存台座・背骨を省き、筒・耳・窓・穴を同じ形状で再利用する。押さえは既存STLを共用。元のbase/capは別レンダリングで頂点・体積一致を確認しSTLハッシュを保持した。一体型の位置・造形向き・外部サポートは[Rev.2規格](https://github.com/AquaBeacon/docs/blob/main/child_horizontal_twist_interface.md)を参照。
+2026-10-11ユーザー指定：固定治具とtwistを一体化し、上向き照射。half_holder(front=false,mount_plate=false)で既存台座・背骨を省き、筒・耳・窓・穴を同じ形状で再利用する。押さえは既存STLを共用。元のbase/capは別レンダリングで頂点・体積一致を確認しSTLハッシュを保持した。一体型の位置・造形向き・外部サポートは[Rev.2規格](../../../../../docs/child_horizontal_twist_interface.md)を参照。
 
 
 ## parts/child/exterior/printed/child_simple_rear/child_simple_rear.md
@@ -197,7 +197,7 @@ X1C / Generic PETG / 0.20 mm / 6壁 / 100%充填 / 5 mmブリム、2部品同時
 
 ## 主要寸法・インタフェース
 
-- マウント共通規格：[CHILD-SIMPLE-M3-40x40 / Rev.1](https://github.com/AquaBeacon/docs/blob/main/child_simple_mount_interface.md)。TD04A用・ライト用の取り違え防止に参照する。
+- マウント共通規格：[CHILD-SIMPLE-M3-40x40 / Rev.1](../../../../../docs/child_simple_mount_interface.md)。TD04A用・ライト用の取り違え防止に参照する。
 
 - 外形：220 × 82 × 239 mm。樹脂実体の体積：520.2 cm³。
 - 設計の正本：[共有パラメータ](../../../../../scad/lib/child_simple_frame.scad)。

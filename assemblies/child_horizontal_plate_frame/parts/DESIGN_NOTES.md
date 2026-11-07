@@ -4,119 +4,123 @@
 
 ## child_horizontal_plate_frame/README.md
 
-# 子機・横向き耐圧容器の4枚フレーム
+## 2026-10-29 素手で着脱するカメラ接続（試作・現行）
 
-2026-10-12更新、Rev.4。左右側板2枚＋底板1枚＋上部1枚。前後の追加フレーム4枚は側板内側、ライトの一体型twist台座は段差なし。ライトを60°回して停止した位置で上向き、その横の水平ノブを締めて固定する。X1 Carbon / Bambu PETG Basicの嵌合・荷重試験用（fit_prototype）。
+子機の接続中心は (-122, 113, 130) mm。既存の4穴を使い、側板側2本はM3×18、ガード共締め2本は従来のM3×25からM3×30へ交換する。フレームとガードの形状は変更しない。
 
-- [印刷入口・STLと数量](parts/PRINT.md)
-- [配置・購入品の正本](placement.json)
-- [組立表示用STL](child_horizontal_plate_frame.stl) / [全体SCAD](child_horizontal_plate_frame_view.scad) / [ライトSCAD](child_horizontal_plate_frame_light_view.scad)
-- [基本フレーム設計元](../../parts/child/exterior/printed/child_horizontal_plate_frame/README.md)
-- [取付規格 CHILD-HORIZONTAL-TWIST-C-R4](../../docs/child_horizontal_twist_interface.md)
+カメラ1台分の新しい印刷品は、共通カメラ本体1個、その機体用の受け1個、指掛け付きUスペーサ2個、手回しノブ2個、ノブ蓋2個。前側押さえは後続の右5 mm追加移動で更新。フレーム・ガード・ライトは維持。変更した本体と押さえは `print_jobs/camera_clamp_right5_20261029/`、受けと手回し部品は `print_jobs/camera_hand_release_20261029/` を参照する。購入金具は各機に六角頭M3×30 2本（頭部二面幅5.5 mm・厚さ2 mmを仮定）とM3普通ナット2個。従来のソケットねじ・ワッシャはこの接続に使わない。部品の入手状態と現物寸法は未確認。
 
-SCADはOpenSCADで開きF5で確認する。全体ビューは `show_accessories=true` を生成時に定義。ライトビューは `pose="locked"` で固定位置、`pose="entry"` で横ボルトを抜いた差し込み位置、`show_frame=false` で治具だけを表示する。どちらも配置JSONから生成される。
+初回のみ受けを既存フレームに固定し、各ねじをノブ上側から通して蓋を押し込み、六角頭を囲む。蓋の突起は保持用で、締付力はねじ頭→ノブの厚1 mmの印刷床→カメラ耳→Uスペーサ→受け→ナット屋根で受ける。初回の受け固定には工具が必要。ノブ床の強度、クリープ、蓋の弾性と繰り返し保持は未検証。蓋は中央円盤に4本の弧状アームを持つ。アームを長さ約6.8 mm・幅1.75 mmの直線片とみなし、先端を0.15 mm曲げた簡易見積りは表面ひずみ約0.9%であり、曲がった実形状や積層を含む強度解析ではない。
 
-![差し込み位置から上向きに回して固定](_work/images/side_twist_locked_entry.png)
+通常の取外しはカメラを支え、各ノブをねじ山が外れるまで緩める。必要に応じてノブを約0.5 mm持ち上げ、頭の座面が約3.8 mm上がった状態にする。先にUスペーサの指掛けをつまんで接続座標の−Xへ抜き、次に各ねじ・ノブを受けの外側へ横に滑らせて外す。その後カメラを60°回して軸方向に引き抜く。取付は逆順で、カメラを回してからねじを横から入れ、スペーサを入れてノブを手で締める。落下防止コードを別に取り付ける。
 
-固定時の照射軸は機体+Z、ノブ軸は水平+Y。ノブ中心(136,105.5,130)はライト軸(161,80)の横に来る。右外側から側板を見る向きで、差し込み位置から反時計回り60°で停止してからノブを締める。解除はノブ付き横ボルトを+Yへ45 mm抜き、時計回り60°で差し込み位置へ戻して外側へ抜く。
+親子の実メッシュで、接触・ナット反力・ノブの六角回り止め・蓋の引抜き障害と、上記の離散位置を検査した。指先φ9 mmからφ16 mmへ広がる長さ25 mmの指2本を同時に仮定した進入・引抜きも検査した。手全体、連続掃引、実物寸法、濡れた手での操作、締付力、振動・強度・爪の耐久は未認定。ケース幅95 mmは仮値、厚さ41 mmは既存実測値。特に解除途中のノブと仮ケースのZ方向すきまは約0.4 mmのため、現物の形状と寸法で確認する。詳しい結果は `_work/analysis/clamp_right5_20261029/geometry_hand_checks.json`。既存節の数値・94項目等は旧版の履歴であり今回に流用しない。
 
-## 内側の追加フレームと段差のない台座
+## 履歴：2026-10-29 工具締付け版（上記の素手着脱版に置換）
 
-![内側の追加フレームと上向きライト](_work/images/side_twist_complete.png)
+**履歴：この節は前側押さえの追加移動前の工具締付け版。** 各機で共通カメラ本体1個、専用受け1個、Uスペーサ2個を交換する。旧カメラの3MFを使わない。全機体のSTL一覧と今回の交換分を混同しない。
 
-側板は左X−122〜−110、右X110〜122。厚8の前後延長は左X−110〜−102、右X102〜110へ置く。主フレーム244×230×230、保護延長込み244×350×230。上部フレームの接合座と後部回転止めの取付足には1 mmの設計逃げを設けた。guard_front_inner / guard_rear_innerを使い、旧外側延長は履歴用バリアントへ残す。
+子機受けは既存穴Y60/Z100・160と、前側ガードのY98/Z100・176を使う2列4点支持。取付列の間隔38 mm。既存側板・ガードの穴・形状・配置を維持し、ガード固定のM3×25をM3×30へ2本交換して厚4 mmの治具を共締めする。最初の2点は既存M3×18を使用。カメラの向きは維持し、治具の接続中心だけを前方へ10 mm移して(-122,105,130)とする。Y60/Z120・140には直径8 mmの工具通路を残す。
 
-延長固定は既存Y±98・Z100/176穴、外側からM3×25、内側から普通ナットを工具で保持し、両側に0.5 mmワッシャ。側板の旧ナット受けは延長で覆われる。ねじ先端、ナット挿入、薄口スパナ、上部と回転止めの工具通路を実メッシュで検査する。
+回転後、Uスペーサ2個を差し込み、M3×30ソケット2本・外径7×厚0.5 mmワッシャ2枚・M3普通ナット2個で接合面を締め付ける。旧横ロックねじ・ノブ・ゴム2枚は廃止。解除はカメラを支え、両ねじとワッシャを外し、スペーサを接続座標−Xへ14 mm以上抜いてから60°回して引き抜く。独立落下防止コードを使用する。
 
-![内側取付の断面](_work/images/inner_side_extensions.png)
+[設計寸法・締結経路・組立手順](../../parts/child/exterior/printed/dji_osmo_action6_mount_m3/README.md)。ケース厚さ41 mmのみ実測、幅95 mm・高さ75 mmなどは既存仮値。仮ケースと直径8 mm工具の横方向余裕は0.5 mm。実物で工具が通ることと接触位置を確認する。
 
-フレーム台座＋Cメス、ライト保持半割＋Cオスは各1個の一体部品。平坦な台座足24×84×4は側板外面X122に直接接し、twist中心はX122/Y80/Z130。固定は既存Y60/Z100・160の2穴にM3×18。ライト軸はX161/Y80、保持区間Z89.5〜170.5、既存内径33・保持長81のホルダーと押さえを流用し上向き照射。ホルダー突出は **68.5→59.5 mm**、最初のRev.1の123.5 mmから64 mm減る。
+### 検証状況
 
-![中央の手の通路と突出の比較](_work/images/side_twist_comparison.png)
+最終R1の正式STLで、閉メッシュ・単一連結、両機の静止干渉、接触座面、ナットの回り止めと引抜き反力、横挿入の掃引包絡、ねじのかかりと底付き、子機4点の締結経路、工具通路、スペーサ抜去と回転解除を検査し94項目PASS。非カメラSTL90件は作業前SHA-256と一致。回転は5°刻み、スペーサ抜去は0.5 mm刻みのサンプル検査であり、連続すきまの保証ではない。実物の締結力・濡れた状態の保持・クリープ・疲労・強度は未認定。
 
-側面中央Y−45〜45、Z40〜210の外側の通路を空け、既存90×34の指通し穴と内側の手の予約領域を保つ。実ライトの頭部・操作部・ケーブル、手袋サイズは未モデル化。カメラとTD04AはCオスを機器治具へ直接組み込む規格を定め、機器側の寸法確定後に設計する。
+[機械可読検査結果](../child_horizontal_plate_frame/_work/analysis/camera_fixture_20261029/fixture_checks.json) / [設計条件](../child_horizontal_plate_frame/_work/analysis/camera_fixture_20261029/design_contract.json)。STEP・スライス・印刷セットの最終検査状況はこの節末の納品記録を参照。
 
-## 印刷済みとこれから印刷するもの
+### 再生成
 
-トップフレームは2026-10-12に改良し、下にあるクランプの締付ねじ6本の真上へ工具穴を追加した。内接円径φ10、正12角形、両入口0.4 mm面取り。φ8×軸長70 mmの工具を想定し、トップフレームを取り外さず上から締められる。縁に近い2穴の周囲は少し広げ、既存の取付穴と接合座を保持する。工具の実寸は確認する。
+共通治具：`python spec/build_camera_mount_m3.py --twist-only`。子機受けは既存SCADの`part="camera_receiver"`をレンダー、親機受けは既存`qr_source()`から生成してfemaleをレンダーする。旧`spec/configure_camera_twist.py`は廃止。配置は`python spec/configure_camera_fixture_clamp.py`、検査は`python spec/verify_camera_fixture_clamp.py`、STEPと組立は`python spec/export_camera_fixture_clamp.py`。変更しない既存バリアントは同値再レンダーで元のSTLバイト列を維持する。最後に対象assemblyの`tools/assembly_parts.py sync`と`check`を行う。
 
-![クランプ締付ねじ用の上側工具穴6か所](_work/images/top_clamp_access.png)
+印刷入口：[parts/PRINT.md](parts/PRINT.md)。カメラ本体は底板下、受けは取付面下、スペーサは平面下。Generic PETG・0.1 mm・6壁・15% Gyroidを検証条件とする。カメラ裏側・C爪の支持材、受けナット溝屋根のブリッジを確認し、機能面を傷つけず支持材を除去する。
 
-[工具穴・全長の進入・座面と肉厚の検査](_work/analysis/top_clamp_access/validation.json)。変更前の上部、組立と印刷データは[before_top_clamp_access履歴](_work/intermediate/history/before_top_clamp_access/)に保存した。トップフレームは従来と同じ向きで1個印刷する。
+### 納品検査（2026-10-29）
 
-6本のφ8×70工具通路は全装着状態で合格。穴入口直近と中央の断面では最小肉厚約3.3 mm、既存8か所のクランプ取付ねじの座面材料は一致。トップは閉メッシュ・単一連結、実スライスのサポート押出0、PETG Basicで約291.77 g・6時間の見積り。変更していない9バリアントの頂点・外形・体積は[変更前との照合](_work/analysis/top_clamp_access/unchanged_parts.json)で一致し、全品の位置とねじ配置は保持した。
+変更4形状のSTEPは保存後に再読込し、全て有効な1ソリッド、STLとの外形差0.01 mm未満・体積差0.0025未満を確認。[STEP照合](../child_horizontal_plate_frame/_work/analysis/camera_fixture_20261029/step_checks.json)。親機全体STEPは107配置・0 NG、両機の組立STLと確認SCADを更新済み。
 
-側板2枚・底板1枚・クランプ上下各1個、4種類5個は印刷済み。形状・配置・設計元STLのSHAを保持する。共通SCAD更新後は別出力の全頂点・外形・体積を照合して元のバイト列を保つ。
+X1C／0.4 mm／Generic PETG／0.1 mm／6壁／15% Gyroid／自動支持（ベッドのみ）で4形状をスライスし、警告なし・造形域内。壁・支持・ナット溝屋根前後の層を確認した。スペーサは支持検出を有効にして支持0。これは実印刷の成功保証ではない。親受けの張り出し下面とカメラ裏側の支持材を除去し、ナット挿入溝と締結面を確認する。
 
-現構成17種類24個、未印刷13種類19個。基本フレームの未印刷15個は上部1、前後延長左右各1（計4）、回転止め左右各1（計2）、支持治具4、C押さえ4。追加ライトは一体メス・一体オス・既存押さえ・ノブの4種類各1個。鏡像STLは左右を区別する。
+[今回のスライス記録](print_jobs/camera_fixture_clamp_20261029/README.md)。3MFは1形状1個ずつ。スペーサは各機2個、両機で計4個必要。共通カメラ本体は両機で計2個必要。旧3MFは履歴として保持する。
 
-0.4 mmノズル、8壁、100%充填、5 mmブリム、Textured PEI。一体メス・オスは0.1 mm層、他は0.2 mm層。一体ライトオスだけベッドからの外部サポートを使用し、上下離隔0.2 mm、筒内に入れない。平坦なメスと基本フレーム・押さえ・ノブはサポート無効。製造姿勢は配布STLへ反映済みで、スライサ上で寝かせ直さない。
+対象2構成の印刷一式の出所・個数・更新状態はPASS。workspace整理検査もPASS。全体チェックには今回触れていない親機内装系6構成の既存未同期が残る。tools/testsは42件中41件PASS、既存材料カード`child_wte4_suspension_clamp/spec/bambu_petg_basic_material.json`欠落による1件ERROR。今回の治具検査とは分けて扱う。
 
-[現行スライス](print_jobs/x1c_petg_basic/validation.json)、[ライト部品の支持位置と積層](_work/analysis/side_twist_mount/slicing.json)、[全印刷条件検査](_work/analysis/print_verification/validation.json)。実スライスの設定・G-code・STLハッシュを照合する。初回印刷でブリッジ、サポート除去後の爪・カム・嵌合、ライト保持を確認する。
+![治具の取付状態](_work/images/camera_fixture_20261029_installed.png)
 
-## 金具と組立
+---
 
-| 用途 | ねじ | 本数 | ナット |
-|---|---|---:|---|
-| 上クランプ→上部 | M3×18 | 8 | 印刷済み受け |
-| 下クランプ→支持治具 | M3×25 | 8 | 印刷済み受け |
-| クランプ上下締結 | M3×30 | 6 | 印刷済み受け |
-| 底板→側板 | M3×25 | 4 | 印刷済み受け |
-| 上部→側板 | M3×30 | 4 | 開放座、上から工具 |
-| 支持治具→側板 | M3×25 | 16 | 開放座、側端から工具 |
-| 回転止め→側板 | M3×25 | 4 | 開放座、+Yから工具 |
-| 保護延長→側板 | M3×25 | 8 | 内向き面、前後端から工具 |
-| C押さえ | M3×30 | 8 | 印刷済み底板の受け |
-| Bプレート→底板 | M5×12 | 16 | 既存M5受け |
-| 一体メス→側板 | M3×18 | 2 | 既存側板の受け |
-| ライト半割 | M3×20 | 4 | 普通ナット、両側ワッシャ |
-| twistロック | 六角頭M3×40 | 1 | 既存ノブとCの手順 |
+## 2026-10-29 カメラ前側押さえの追加移動
 
-現構成のねじ購入数量は下記の6種類・計89本（予備を含まない）。長さは首下寸法。通常固定はモデル上のなべ頭、twistロックだけ六角頭を指定する。カメラとTD04Aの未設計治具は含まない。
+前側L字押さえと本体取付床・M4穴を正面から右へさらに5 mm移動。局所座標の接触帯 X=5.5..30.5、M4軸 X=11.5, 24.5。M5爪への干渉を避けるため足に局所逃げを設ける。カメラ姿勢と素手で着脱する回転接続は維持。変更した本体・押さえの3MFは print_jobs/camera_clamp_right5_20261029/、それ以外は従来の手操作版を使う。実物での締付け・保持・干渉は未確認。
 
-| ねじ | 合計本数 |
-|---|---:|
-| M3×18 | 10 |
-| M3×20 | 4 |
-| M3×25 | 40 |
-| M3×30 | 18 |
-| 六角頭M3×40 | 1 |
-| M5×12 | 16 |
-| 合計 | 89 |
+## 2026-10-26 カメラ押さえ（履歴：下記の右5 mm追加移動で置換）
 
-2026-10-12集計：配置正本の88締結組と別モデルのtwistロック1本を照合した。C押さえのM3×25という旧説明は誤記で、配置と共通寸法の正しい値M3×30へ修正した。
+現行の印刷一式は21種類29個。
 
-基本フレームのM3ナット66個・φ7×0.5ワッシャ98枚、M5ナット16個・φ10×1ワッシャ16枚。追加ライト分はM3ナット7個・φ7×0.5ワッシャ11枚、5×8×1ゴム2枚。保護材はクランプEPDM厚1とC受け厚0.8が仮条件。
+背板に追加していた四角い突出パッドを撤去。元の背板を後側の当たり面とし、前側押さえも位置を合わせて41 mmの間隔を維持する。実物のM5軸からケース背面までの距離は未測定。実測厚さ41 mmに合わせ、幅25 mmの前側押さえと取付穴・ねじを正面から見て右へ12 mm移動。左端から12〜37 mmの範囲を前後で挟む。中央M5固定爪と横方向に2.85 mm離し、20 mm移動版の足の切欠きは廃止。camera_mount_twist本体1個とcamera_front_clamp前側押さえ1個へ更新。追加はM4×16ソケット2本、M4ナット2個、外径9×厚0.8 mmワッシャ2枚。前側のL字足をカメラ下側へ反転し、元の左右底面受けを撤去。前方への張り出しは16 mm短縮。前側は0..3 mm開けて位置合わせし、下面からM4ねじを締める。ねじ頭とワッシャは底面に埋め込み、ナットは足の上側へ入れる。R1外縁・R3根元フィレット付き。背面下側20 mmの逃げを維持する。
 
-支持治具は厚8足、既存20×24穴配置・支持面Z75.2を保持。回転止めは厚8足・Y−98/Z122・142、公式蓋輪郭の隙間0.55と受け奥行7.1を保持する。上部接合座は厚12。未印刷部品のM3穴は内接円径3.5の八角形・入口0.3面取り、外形R2・縁0.6面取り。印刷済み部品の丸穴と既存ナット受けは保持する。
+[寸法・締結経路・印刷・検証](../../parts/child/exterior/printed/dji_osmo_action6_mount_m3/README.md)。ケースの幅・高さ・M5軸からの位置は既存仮値で、実物の新方式の保持力は未認定。親子共通2部品の印刷ジョブはparent_exterior/print_jobs/camera_clamp_clearance_20261026/。印刷入口はparts/PRINT.md。旧カメラ用3MFは使わない。
 
-1. 底板のC2個とB4個を固定する。申告質量2.24 kgは在庫正本による。
-2. 支持治具と回転止めを側板内面へ固定し、普通ナットを開放部から工具で押さえる。下クランプと底板を接合する。
-3. 前後延長を側板内側へ固定する。上部と後部回転止めは延長の逃げへ収まる。
-4. 蓋のM10穴の1つを真下へ向け、容器を上から載せ、上クランプと上部を固定する。既存蓋突起は180°対称で逆向きも入るため穴配列を合わせる。
-5. 一体メスを固定してから、ライトを60°傾いた差し込み位置へ入れる。右外側から見て反時計回り60°で上向きに整列し、横の水平ノブを締める。解除は横ボルト全体を+Yへ45 mm抜き、時計回り60°で解除し外側へ抜く。独立した落下防止コードを機体へ掛ける。
+## 2026-10-25 カメラ旧版の実物評価（履歴）
 
-下クランプの締め直しはBを外し底板φ9穴からφ8以下の工具を通す。C押さえは容器を外す。代替長M3×30（支持・回転止め・延長）、M3×40（上部）は検査対象とし、無制限の長ねじ使用は許容しない。
+2026-10-24版は実物で十分に回転を止められなかった。旧版の再印刷指示は取り消し、上記の前後押さえ方式へ更新した。
 
-## 検証・再生成・履歴
+## 2026-10-25 TD04A固定治具 Rev.6（現行）
 
-[組立干渉・工具・ナット・手・配線](_work/analysis/layout/validation.json)、[開放ナット・八角穴・印刷済み形状](_work/analysis/open_nut_fastening/validation.json)、[容器挿入・回転止め・内側延長](_work/analysis/guards/functional_validation.json)、[ライトの金具・参考ゲージ・着脱](_work/analysis/side_twist_mount/validation.json)。開放ナットは基本フレーム32組、薄口スパナ包絡は頭幅10・厚2.6・到達35を仮定する。CAD検査は実荷重・層間強度・クリープ・実配線や工具の認証ではない。前端Y174は仮ドームから12.775 mm、後端Y−176は蓋外面Y−114から配線予約50＋余裕12。実ドーム、ケーブル曲げ半径、内装保持・浮力・重心は未確定。
+TD04A改訂時点の印刷一式は20種類28個。共通治具をM4・12 mmピッチ（実測前）、穴列基準でケーブル逃げ60 mmへ更新。親機は送受信面下向き、子機は上向き。旧TD04Aモデルは使用しない。[設計・ねじ・未確認事項](../../parts/common/exterior/printed/td04a_bracket_mount/README.md)。現行データはparts/PRINT.md。下記の旧TD04A支持・押さえ金具の記述と古い全体個数は今回の配置に適用しない。実物の耳厚・正確なピッチ・本体・配線根元・締結・強度は未検証。
 
-`python tools/build_child_horizontal_accessories.py --rebuild-frame` で既存生成系から再ビルドする。メーカーCAD入力が同じ場合だけ `--reuse-interfaces` で計測結果を再使用できる（CADレンダリングは実行する）。ソース変更後の基本ビルダの `--reuse` は使用しない。`check_child_horizontal_open_nuts.py`、`check_child_horizontal_clamp_supports.py`、`check_child_horizontal_side_attachments.py`、`check_child_horizontal_ballast_mounts.py`、`check_child_horizontal_clamp_links.py`、`check_child_horizontal_guards.py`、`check_child_horizontal_accessories.py` を実行する。
+# 子機・横置き4枚フレーム＋ライト・C式カメラ
 
-続けて `python tools/check_child_horizontal_top_access.py` → `python tools/review_child_horizontal_accessories.py` → `python tools/assembly_parts.py sync child_horizontal_plate_frame` → `python tools/check_child_horizontal_clamp_links.py --portable-only` → `python tools/assembly_parts.py check child_horizontal_plate_frame`。スライスは `python tools/slice_child_horizontal_plate_frame.py`、その後 `check_child_horizontal_accessory_slices.py` と `check_child_horizontal_support_free.py`。STLは印刷用を納品し、全種類のSTEP読戻しは未完了。旧/未完了STEPは `_work/intermediate/step_export_incomplete/` に保持する。
+## 2026-10-24 カメラ底面受けの更新（旧版）
 
-Rev.2の生成元・配置・STL・文書・検査を[_work/intermediate/history/side_twist_r2/](_work/intermediate/history/side_twist_r2/)、3MFを[print_jobs/history/side_twist_r2/](print_jobs/history/side_twist_r2/)へ保存した。Rev.1と開放ナット・サポート変更前の履歴も保持する。
+カメラ背面下側の突起に対し、左右受けを背面から20.5 mm前方へ退避した共通camera_mount_twistへ更新。背板・C接続・M5軸・配置は維持。カメラ治具1個を再印刷する。左右受けの範囲で床上Z=8..36.5の背面20 mm空間を確保し、中央M5爪と床は残す。実ケースの突起高さ・幅、接触と締結・回転保持力・強度は未検証。
 
-Rev.3の生成元・配置・STL・文書・検査は[_work/intermediate/history/side_twist_r3/](_work/intermediate/history/side_twist_r3/)、3MFは[print_jobs/history/side_twist_r3/](print_jobs/history/side_twist_r3/)へ保持する。Rev.4では全体SCADの未定義表示スイッチを生成元で修正し、固定・差込の2姿勢ビューを追加した。Cの面内角を30°から0°へ変更し、足とC底板の入り隅をR2に仕上げた。固定穴、嵌合機構、ライト保持形状を検査する。
+[寸法と検証の詳細](../../parts/child/exterior/printed/dji_osmo_action6_mount_m3/README.md)。2026-10-21のカメラ3MFは旧形状の履歴。現行STLはparts/内を使い、新しい共通カメラ3MFは親機のprint_jobs/camera_bottom_clearance_20261024/に保存する。下記の旧カメラの支持位置・スライス時間・質量は今回の結果に適用しない。
 
-今回の構成は印刷一式の出所検査に合格。全体検査には別構成child_interiorの未管理3MF、parent_oneplateとparent_service_reviewの出所変更が残る。[全体検査ログ](_work/logs/side_twist_r4_global_check.log)。共通テスト42件中1件はchild_wte4_suspension_clampの材料JSON欠落による既存エラー。今回の構成の検査記録は上記リンクを参照する。
 
-Rev.3までの検証値は履歴へ保持する。既存ライト押さえの印刷コピーはASCII STLで精度を保持し、設計元STLは変更していない。Rev.4の現行STL・配置・スライスについては上記検査記録を参照する。
+2026-10-21。改良済みcamera_mountにCオスを一体化し、ライトと同じ60°回転・横ノブで固定する。ライトは右前の上向きを維持し、カメラは左前に追加。外側から見て右へ90°回し、カメラ上方向が機体+Zを向く通常の横向きへ修正。外側の「○△○」回転止めと不要な底板延長を取り除き、マウントを88×61.45×84.5 mmへ小型化した。配置の正本は[placement.json](placement.json)、現行の印刷入口は[parts/PRINT.md](parts/PRINT.md)。19種類27個、未印刷15種類22個。印刷済みの側板2・底板1・クランプ上下各1の設計元STLはSHAを保持する。
 
-Rev.4検証結果：固定後の照射軸+Z・ノブ軸+Y、ノブ全周と半径3 mmの局所余裕、参考ゲージ、着脱回転・抜去、中央の手の通路は合格。C嵌合域の元メッシュとの体積差分はメス0.0307 mm³、オス0.00082 mm³以下。基本フレームの工具・ナット・延長・容器挿入も合格。全17種類24個の印刷コピーは閉メッシュ・単一連結、設計元との全頂点誤差最大1.33e−14 mm。未印刷13種類19個の現行スライスを照合し、一体メスのサポート押出0・橋の局所幅最大3.99 mm、一体ライトオスだけ外部サポートを使用する。追加ライト4個の見積りは82.80 g・約6時間13分（各1個の合計）。全体SCAD・ライトSCADの両姿勢を警告なしで表示した。
+![左前カメラと右前ライト](_work/images/camera_twist_complete.png)
 
-parts直下へ保存されていた `child_horizontal_plate_frame_guard_front.3mf` は [print_jobs/history/imported_20261012/](print_jobs/history/imported_20261012/) へ元のバイト列を保持して移動し、出所・設定・ハッシュを記録した。内容は支持治具4個と回転止め左右で、現行CADとの一致は未認定。この履歴を現行STLの代わりに使用しない。
+## カメラの取付とネジ
+
+- 左側板外面X=-122、既存Y=60・Z=100/160の2穴を利用。専用バリアントchild_horizontal_twist_mount_camera_receiverは厚4 mmの平坦な取付足とCメスを一体化し、M3×18ソケット2本、頭側φ7×0.5ワッシャ2枚、内側M3ナット2個で固定する。穴あけと印刷済み側板の再印刷は不要。
+- C中心は(-122,95,130)。左側U=-Y方向へ35 mmオフセットし、Cの面内角は90°。ノブ軸を機体+Zへ向け、中央Y±45の手の進入域を空ける。カメラケースの既存仮包絡はY=47.5..142.5・Z=126.5..201.5、マウントはY=51..139・Z=90..174.5にある。
+- camera_mount_twistは親機と同じSTL。底面受けを上記の前方位置へ更新し、M5軸を維持して、Cオスと接続板を一体化する。背面M3穴に取付ねじは使わない。
+- ロックは六角頭M3×40、既存φ16ノブ、M3ナット、φ7×厚0.5ワッシャ、5×8×厚1 mmゴム2枚。メス固定2本を先に締め、カメラを差込位置から60°回して停止してから横ノブで固定する。
+- 解除はカメラを支え、ノブ・ロックボルト・ワッシャを+Zへ45 mm以上抜き、左外側から見て時計回り60°、機体外側の-Xへ抜く。CADは80 mm抜去まで確認する。落下防止コードは別に掛ける。
+
+2本の固定ねじはメス足4＋ワッシャ0.5＋側板12を通り、内側ナット先端へ1.9 mm突出する。実ネジ・ナット・ワッシャを含む静止干渉、カメラ装着前のφ3×70 mm直線六角キー、上向きロックボルト45 mm抜去、5°刻み60°回転・80 mm抜去、ノブ全周＋半径3 mmの局所操作余裕、中央の手の予約領域と既存ケーブル予約領域を検査した。[今回の幾何検査](_work/analysis/camera_twist_20261021/geometry_checks.json)。φ3は直線工具包絡でありL字キーの曲がり・手全体の実物適合ではない。
+
+## 既存フレームとライト
+
+基本フレームは左右側板2・底板1・上部1。244×230×230 mm、前後の保護延長込み244×350×230 mm。厚8の4枚の延長は側板内側に固定。後端配線保護はエンドキャップ外面から50 mmで、既存φ75×50 mmの予約空間を維持する。上部フレームのφ10工具穴6本はクランプ締付ねじの真上を維持する。
+
+右前ライトのC中心(122,80,130)、ライト軸X161/Y80、上向き+Z、保持区間Z89.5..170.5、側板からの突出59.5 mm、横ノブ+Yを維持する。33×81 mmの既存保持半割と押さえを流用。[側面twist規格](../../docs/child_horizontal_twist_interface.md)と[一体治具説明](../../parts/child/exterior/printed/child_horizontal_twist_mount/README.md)を参照。ライトの再生成でもカメラの配置・取付位置の状態・行順を保持する。
+
+## 印刷・再生成
+
+印刷データはparts内に実ファイルとして揃える。一体カメラは底板下、専用メスは取付足下。追加2部品はX1C・0.4 mm・Generic PETG、0.1 mm層・6壁・15% Gyroid・5 mmブリム、45°のベッドからの自動サポートを有効にしてスライス。カメラ背面の接続板・軸・爪の外部支持を除去してからCに入れる。メスの支持経路は最初の0.2 mm層のみで、側面・嵌合域へ支持は生成されていない。[専用メス3MF](print_jobs/camera_twist_20261021/child_horizontal_twist_mount_camera_receiver/child_horizontal_twist_mount_camera_receiver.3mf)は1個入り、約1時間16分・20.5 g。カメラ3MFは[親機側](../parent_exterior/print_jobs/camera_twist_20261021/camera_mount_twist/camera_mount_twist.3mf)の同一STL用を使えるが、STL一式はこのparts内だけで揃う。追加ノブは既存品をもう1個印刷する。
+
+既存フレームとライトは従来のX1C・Bambu PETG Basic、8壁・100%、製造メタデータの姿勢を継続する。既存のprint_jobsはライトまでの旧構成であり、全19種類27個入りのジョブではない。今回のメス・カメラとノブを旧ジョブだけで揃えた扱いにしない。
+
+parts直下にあった既存ライト用メスの3MFは、元のバイト列を保持して[print_jobsの履歴](print_jobs/history/imported_20261021/README.md)へ移動する。出所とSHAを同所に記録し、今回のカメラ用メス3MFと混ぜない。
+
+python spec/build_camera_mount_m3.py --twist-only → python spec/configure_camera_twist.py → python spec/verify_camera_twist.py。ライトの回帰検査はpython tools/check_child_horizontal_accessories.py。全体SCADとSTLを更新し、python tools/assembly_parts.py sync child_horizontal_plate_frame → checkを実行する。交換用STEPは追加2部品で有効ソリッド・外形・体積を確認し、子機全体のSTEPは従来どおり未納品。全体SCAD/STLを確認用に使う。既存フレームの生成・検査は[基本部品説明](../../parts/child/exterior/printed/child_horizontal_plate_frame/README.md)。
+
+今回の実メッシュ・警告なしスライスは合格。実印刷・C嵌合・実ケース・M5つまみ・画角・水流荷重・層間強度・クリープは未認定。95×45.9×75 mmのケースと底面高さは既存仮値。ライト実物の頭部・ボタン・配線と手袋は未モデル化。共通42テストは41件合格・既存の材料JSON欠落1件でエラー。[変更前の説明・配置・印刷一式](_work/analysis/camera_twist_20261021/history/snapshot.json)も保持する。
+
+90°回転前の配置・説明・メス形状は[_workの履歴](_work/analysis/camera_upright_20261021/history/snapshot.json)、旧メス3MFは[portrait履歴](print_jobs/history/camera_portrait_20261021/)へ保持する。Cの取付位置と面内90°の向きを維持する。今回カメラ本体STLは前壁なしの小型版へ更新する。
+
+前壁付きカメラの旧配置・説明は[_workの履歴](_work/analysis/compact_camera_20261021/history/)。現行の前壁なしカメラを1個印刷し、旧「○△○」前壁付きSTL/3MFへ戻さない。メス・ノブ・側板の再印刷は不要。
+
+
+[TD04A改訂後の全体確認画像](_work/images/td04a_cable_r6.png)。幾何・STL/STEP・外装側ナット保持・スライス結果は[共通治具の検証](../td04a_fixture/_work/analysis/validation_summary.json)。センサー側の実締結成立・実物適合・強度は未検証。
+
+parts直下の既存ノブ3MFをバイト列を保持してprint_jobs/history/imported_during_td04a_r6/へ移動。移動元・先とSHA-256は同所のmove_record.jsonに記録した。STLへの適合やスライス設定は未確認の履歴。
 
 
 ## parts/child/exterior/printed/child_horizontal_plate_frame/README.md
@@ -125,7 +129,7 @@ parts直下へ保存されていた `child_horizontal_plate_frame_guard_front.3m
 
 2026-10-12更新。トップフレームにクランプ締付ねじ用の工具穴6か所を追加。X1 Carbon / Bambu PETG Basicの嵌合・荷重試験用（fit_prototype）。[組立説明](../../../../../assemblies/child_horizontal_plate_frame/README.md)、[配置正本](../../../../../assemblies/child_horizontal_plate_frame/placement.json)、[印刷入口](../../../../../assemblies/child_horizontal_plate_frame/parts/PRINT.md)を参照する。
 
-寸法・取合いは共通 [child_horizontal_plate_interfaces.scad](../../../../../scad/lib/child_horizontal_plate_interfaces.scad)、形状は [SCAD](child_horizontal_plate_frame.scad)。元の生成ツール [prepare_child_horizontal_plate_frame.py](https://github.com/AquaBeacon/workspace-tools/blob/main/prepare_child_horizontal_plate_frame.py)を使う。
+寸法・取合いは共通 [child_horizontal_plate_interfaces.scad](../../../../../scad/lib/child_horizontal_plate_interfaces.scad)、形状は [SCAD](child_horizontal_plate_frame.scad)。元の生成ツール [prepare_child_horizontal_plate_frame.py](../../../../../tools/prepare_child_horizontal_plate_frame.py)を使う。
 
 ## 印刷済みと未印刷
 
@@ -182,28 +186,51 @@ manufacturing.jsonの印刷姿勢を使用し、0.2 mm・8周・100%・5 mmブ�
 
 ## parts/child/exterior/printed/child_horizontal_twist_mount/README.md
 
+## 2026-10-29 素手着脱への改訂（現行）
+
+カメラ専用の受けは外向きのねじ横抜き溝付き。初回固定は工具を使用し、以後のカメラ着脱はノブと指掛けスペーサで行う。現行条件・締結経路・制約は各assembly READMEの最上段を参照。旧横ボルト・旧ゴム方式は使用しない。
+
+# 2026-10-29 カメラ専用4点支持受け
+
+カメラ専用 `camera_receiver` 分岐を追加。既存 `frame_receiver` と `light_twist` はライト用として形状・配置を維持する。カメラ用STLは `child_horizontal_twist_mount_camera_receiver.stl`。
+
+子機外面X=-122上の既存穴だけを使う。Y60/Z100・160のM3×18を維持し、Y98/Z100・176の前側ガード固定を共締めする。後者はM3×25をM3×30へ2本交換し、頭側ワッシャを受けの外へ4 mm移す。内側ガード・ワッシャ・ナット位置はそのまま。38 mm離れた2列4点で受けを支える。側板・ガードに加工や再印刷は不要。
+
+取付足厚4 mm。Y60/Z120・140には直径8 mmの工具通路を残す。C中心は(-122,105,130)へ前方10 mm移動し、カメラの向きを維持。カメラ側の全構成部品を一緒に移し、ライトは移さない。中央の手の予約域Y=-45..45を避ける。
+
+各締結経路はねじ頭→頭側ワッシャ→受け足→側板→（ガード側の2点はガード・内側ワッシャ）→ナット。側板側2点のナットは内面の既存六角座へ入り、締付方向の底面を使う。ガード側は既存内側ワッシャとナットで受け・側板・ガードを共締めする。
+
+共通接続形状は `scad/lib/camera_rotary_joint.scad`。組立・解除は[カメラ共通説明](../dji_osmo_action6_mount_m3/README.md)、検証結果と印刷入口は[子機assembly](../../../../../assemblies/child_horizontal_plate_frame/README.md)。実物の保持力・材料強度は未認定。後続の旧日付の記録は履歴。
+
+---
+
 # 子機側面・一体型twist治具 Rev.4
 
 正本は child_horizontal_twist_mount.scad。frame_receiver（フレーム台座＋Cメス）、light_twist（既存ライト保持半割＋Cオス）の2バリアント。各1個、単一連結の印刷部品。既存33×81筒と押さえを流用。差し込み姿勢から60°回して停止すると上向き、その横の水平ノブで締めて固定する。QR面内角0°、ノブ軸は機体+Y。
 
 [組立SCAD](../../../../../assemblies/child_horizontal_plate_frame/child_horizontal_plate_frame_light_view.scad) をOpenSCADで開きF5。`pose="locked"` は固定位置、`pose="entry"` は差込位置、`show_frame=false` は治具単体。こちらは配置正本から生成される確認ビュー。
 
-寸法・取合い・中央の手の予約空間・印刷・金具・検証は [共通規格](https://github.com/AquaBeacon/docs/blob/main/child_horizontal_twist_interface.md)。位置・数量の正本は [assembly](../../../../../assemblies/child_horizontal_plate_frame/placement.json)。C形状は既存公開モジュールを再利用し、ライトは元のhalf_holder(front,mount_plate)を呼ぶ。寸法は共通SCADへ生成される。
+寸法・取合い・中央の手の予約空間・印刷・金具・検証は [共通規格](../../../../../docs/child_horizontal_twist_interface.md)。位置・数量の正本は [assembly](../../../../../assemblies/child_horizontal_plate_frame/placement.json)。C形状は既存公開モジュールを再利用し、ライトは元のhalf_holder(front,mount_plate)を呼ぶ。寸法は共通SCADへ生成される。
 
 製造メタデータの姿勢：frame_receiverは0°、light_twistはX90°で筒軸垂直・下端をベッドへ。一体2部品は0.1 mm層。メスは厚4の平坦な一体足、N=0で段差なし・サポート無効。ライトオスだけベッドからの外部サポートを使う。新しい接続部はR2・面取り0.6、M3穴入口0.3。C爪・カム・ゴム座と既存ホルダーの嵌合形状を保持する。
 
-旧frame_adapter/light_adapterの設計と印刷一式はassembly内のRev.1履歴へ保持。現行variantsとplacementには含めない。カメラ・TD04Aは機器側寸法未確定で、今後Cオスを直接治具へ統合する。
+旧frame_adapter/light_adapterの設計と印刷一式はassembly内のRev.1履歴へ保持。現行variantsとplacementには含めない。カメラは2026-10-21に一体Cオス付き部品を追加した。下のカメラ用メス節を参照。TD04Aは今後の設計。
 
 一体部品のCGAL出力に生じる数値的なT頂点の退化三角形は、既存clean_stl_degenerates.pyのEdge Flipだけで処理する。頂点・面数を保持し、外形・体積・双方向表面誤差0.001 mm以内、閉メッシュ、単一連結を検査する。Rev.4ではメス10面・オス1面を処理し、表面誤差最大4.00e−8 mm、体積・外形差0。底板同士は中央部だけ0.05 mm重ね、旧底板の角を重複させない。再生成ツールと製造メタデータへ同じ処理を組み込んだ。
 
 Rev.4：追加フレーム4枚は引き続き側板内側、台座M3×18各2本、ライト軸X161/Y80、突出59.5 mm。ノブ中心(136,105.5,130)、水平+Y軸。平坦な厚4足の入り隅をR2に仕上げ、既存32×32のC底板4穴を復元する。CのN=4以上の嵌合形状は保持する。Rev.3までの生成元・配置・印刷一式をassemblyのside_twist_r3履歴へ保存。
 
 
+## カメラ用メス（2026-10-21）
+
+camera_receiverバリアントは同じframe_receiver()にreceiver_u=-35、dock_rotation=90を与える。左前の既存Y60/Z100・160穴、厚4の足、M3×18・内側ナットを流用。C中心(-122,95,130)、ノブ軸+Z。カメラを外側から見て右へ90°回し、通常の横向きにする。ライト用の2バリアントのメッシュは別途再レンダリング・全頂点比較し、元のバイト列を保持した。カメラ側は同じcamera_mount_twistを親子で共用。専用メスは取付足下、0.1 mm・Generic PETG・6壁・15% Gyroid・5 mmブリム、自動支持有効・ベッドからのみ。実支持経路は0.2 mmの初層だけ。部品STEPは単一有効ソリッドで外形・体積がSTLと一致。配置・数量・組付けは[assembly説明](../../../../../assemblies/child_horizontal_plate_frame/README.md)。
+
+
 ## parts/child/exterior/printed/child_simple_light_mount/child_simple_light_mount.md
 
 # 子機シンプル筐体用 水中ライトマウント（試作）
 
-2026-10-11：ユーザー確認により、この本体・押さえを [横置きフレームのtwist取付](https://github.com/AquaBeacon/docs/blob/main/child_horizontal_twist_interface.md)へ形状変更なしで流用する。上向き、内径33・保持長81。配置と数量は新assemblyのplacement.json、印刷入口は `assemblies/child_horizontal_plate_frame/parts/PRINT.md`。これはライト実物の実測寸法を新たに確定したという意味ではない。過去のシンプル筐体構成も保持する。
+2026-10-11：ユーザー確認により、この本体・押さえを [横置きフレームのtwist取付](../../../../../docs/child_horizontal_twist_interface.md)へ形状変更なしで流用する。上向き、内径33・保持長81。配置と数量は新assemblyのplacement.json、印刷入口は `assemblies/child_horizontal_plate_frame/parts/PRINT.md`。これはライト実物の実測寸法を新たに確定したという意味ではない。過去のシンプル筐体構成も保持する。
 
 2026-09-17 r2：サポート削減・控えめな肉抜き。ユーザー確認済み：背面中央のM3・40×40 mm接続、参考STLの短い筒がライト用。
 元STLは `ref/Light_Gassyli_Holder.stl` に保存。短い筒の内径33・外径39・高さ81 mmを測定。
@@ -303,7 +330,7 @@ X1C / Generic PETG / 0.20 mm / 6壁 / 100%充填 / 5 mmブリム、2部品同時
 
 ## 横置きRev.2の一体型への流用
 
-2026-10-11ユーザー指定：固定治具とtwistを一体化し、上向き照射。half_holder(front=false,mount_plate=false)で既存台座・背骨を省き、筒・耳・窓・穴を同じ形状で再利用する。押さえは既存STLを共用。元のbase/capは別レンダリングで頂点・体積一致を確認しSTLハッシュを保持した。一体型の位置・造形向き・外部サポートは[Rev.2規格](https://github.com/AquaBeacon/docs/blob/main/child_horizontal_twist_interface.md)を参照。
+2026-10-11ユーザー指定：固定治具とtwistを一体化し、上向き照射。half_holder(front=false,mount_plate=false)で既存台座・背骨を省き、筒・耳・窓・穴を同じ形状で再利用する。押さえは既存STLを共用。元のbase/capは別レンダリングで頂点・体積一致を確認しSTLハッシュを保持した。一体型の位置・造形向き・外部サポートは[Rev.2規格](../../../../../docs/child_horizontal_twist_interface.md)を参照。
 
 
 ## parts/child/exterior/printed/child_wte4_petg_clamp/README.md
@@ -362,11 +389,124 @@ STEPの全体変換は未完了。今回の現行モデルはSCADとSTLを参照
 **トポロジー最適化による採用形状は得られていない。** 現行の連結版SCAD/STL・印刷姿勢・製造設定を保持し、探索メッシュを印刷一式へ配布しない。現行品も耐荷重認証済みではない。再開する場合は、必要な組立荷重条件、自由領域の体積配分・最小部材厚、ボクセル解像度と反復収束を見直し、完成形状の再解析と同条件のスライス比較をやり直す。状態の記録は `_work/analysis/topology_print/execution.json`。
 
 
+## parts/child/exterior/printed/dji_osmo_action6_mount_m3/README.md
+
+## 2026-10-29 素手で着脱するカメラ接続（試作・現行）
+
+カメラ1台分の新しい印刷品は、共通カメラ本体1個、その機体用の受け1個、指掛け付きUスペーサ2個、手回しノブ2個、ノブ蓋2個。前側押さえ、フレーム、ガード、ライトは変更していない。旧カメラ接続用3MFは使わず、今回の `print_jobs/camera_hand_release_20261029/` を参照する。購入金具は各機に六角頭M3×30 2本（頭部二面幅5.5 mm・厚さ2 mmを仮定）とM3普通ナット2個。従来のソケットねじ・ワッシャはこの接続に使わない。部品の入手状態と現物寸法は未確認。
+
+初回のみ受けを既存フレームに固定し、各ねじをノブ上側から通して蓋を押し込み、六角頭を囲む。蓋の突起は保持用で、締付力はねじ頭→ノブの厚1 mmの印刷床→カメラ耳→Uスペーサ→受け→ナット屋根で受ける。初回の受け固定には工具が必要。ノブ床の強度、クリープ、蓋の弾性と繰り返し保持は未検証。蓋は中央円盤に4本の弧状アームを持つ。アームを長さ約6.8 mm・幅1.75 mmの直線片とみなし、先端を0.15 mm曲げた簡易見積りは表面ひずみ約0.9%であり、曲がった実形状や積層を含む強度解析ではない。
+
+通常の取外しはカメラを支え、各ノブをねじ山が外れるまで緩める。必要に応じてノブを約0.5 mm持ち上げ、頭の座面が約3.8 mm上がった状態にする。先にUスペーサの指掛けをつまんで接続座標の−Xへ抜き、次に各ねじ・ノブを受けの外側へ横に滑らせて外す。その後カメラを60°回して軸方向に引き抜く。取付は逆順で、カメラを回してからねじを横から入れ、スペーサを入れてノブを手で締める。落下防止コードを別に取り付ける。
+
+親子の実メッシュで、接触・ナット反力・ノブの六角回り止め・蓋の引抜き障害と、上記の離散位置を検査した。指先φ9 mmからφ16 mmへ広がる長さ25 mmの指2本を同時に仮定した進入・引抜きも検査した。手全体、連続掃引、実物寸法、濡れた手での操作、締付力、振動・強度・爪の耐久は未認定。ケース幅95 mmは仮値、厚さ41 mmは既存実測値。特に解除途中のノブと仮ケースのZ方向すきまは約0.4 mmのため、現物の形状と寸法で確認する。詳しい結果は 各assemblyの `_work/analysis/camera_hand_release_20261029/geometry_checks.json`。既存節の数値・94項目等は旧版の履歴であり今回に流用しない。
+
+# 履歴：2026-10-29 工具締付け版（上記の素手着脱版に置換）
+
+対象はカメラ固定治具だけ。既存の親機外装・子機フレーム・ガード・ライトは形状と配置を維持する。以下は工具締付け版の履歴であり、現在は上記の素手着脱版を使う。**この改訂の検証状況は両assembly READMEを参照。実物の保持力・強度は未認定。**
+
+## 交換部品と締結
+
+各機で共通カメラ本体 `camera_mount_twist` 1個、専用受け1個、共通 `camera_rotary_spacer` 2個を印刷する。ケースを挟む既存 `camera_front_clamp` はそのまま使用。ケースの実測厚さ41 mm、M5軸、前後押さえは変更しない。ケース幅95 mm・高さ75 mm等は既存仮値であり、実物での工具余裕を確認する。
+
+回転接続は60°の着脱を残し、固定後にM3×30ソケットねじ2本、外径7×厚0.5 mmワッシャ2枚、M3普通ナット（AF5.5・厚2.4 mm）2個で締め付ける。旧横ロックねじ・ノブ・ゴム2枚は使用しない。
+
+受け座標の締付軸はX=0,Y=±52 mm。締結経路は、ねじ頭座面Z31→ワッシャZ30.5..31→カメラ側耳Z18.5..30.5→着脱UスペーサZ8..18.5→受け側耳Z0..8→ナット上面の屋根Z4.8。ナットは横から挿入し、締結時に+Zへ引かれて屋根で止まる。締結位置のナットはZ2.4..4.8。ねじ先端Z1、穴底Z0.5、ナットから1.4 mm突出。ねじ山はナット全厚2.4 mmにかかる。
+
+ナットの回り止めと上向き抜け止めを別々に検査する。ナットの外向き挿入溝は組立用なので、ねじを外したときにナットが横へ落ちないよう扱う。接着剤を締結反力の代用にしない。スペーサの公称厚さ10.5 mmは面間寸法と一致する。印刷後、支持材や初層の張り出しを除去し、手で挿入できることを確認する。入らないものをねじで無理に押し込まない。
+
+## 組立と解除
+
+1. 受けを外装へ取り付ける。子機はカメラを取り付ける前に4点を締結する。
+2. 受けのナット2個を横から入れる。カメラを差し込み、60°回して固定位置へ合わせる。
+3. Uスペーサ2個を接続座標の+X方向へ差し込み、M3×30とワッシャを装着する。左右を交互に締め、各接触面が着座していることを確認する。規定トルク・保持荷重は実測未認定。
+4. 解除時はカメラを支え、両ねじとワッシャを完全に取り外す。Uスペーサを接続座標の−Xへ14 mm以上抜く。その後に60°回して外へ引き抜く。スペーサを残したまま回さない。独立落下防止コードを使う。
+
+## 正本・印刷・検証
+
+共通接続形状の正本は `scad/lib/camera_rotary_joint.scad`、カメラ本体とスペーサの生成は `spec/build_camera_mount_m3.py`。子機受けは既存 `child_horizontal_twist_mount.scad` の `camera_receiver` 専用分岐、親機受けは `spec/parent_exterior_revision_sources.py` の `qr_source()`。ライトの旧Cモジュールは変更しない。
+
+配置は各assemblyの `placement.json`、配置更新は `spec/configure_camera_fixture_clamp.py`。旧 `configure_camera_twist.py` は旧形状へ戻すため実行禁止。検証は `spec/verify_camera_fixture_clamp.py`。交換部品STEPと組立の更新は `spec/export_camera_fixture_clamp.py`。印刷一式の入口は各assemblyの `parts/PRINT.md`。
+
+カメラ本体は既存と同じ底板下、受けは外装取付面を下、Uスペーサは厚さ10.5 mm方向を積層方向にする。新規耳は面取り0.4 mm、外周R2、スペーサ外周R1.2・面取り0.4 mm、穴入口0.25 mm。Cの機能面は接触・挿入条件を優先する。カメラ背面とC爪、受けのナット溝屋根は支持／ブリッジの確認対象。スライスの有無と結果はassemblyの検証欄に記録する。
+
+CADの閉メッシュ・干渉・締結経路・スライスと、実印刷・濡れた状態の保持力・クリープ・疲労は区別する。荷重、材料物性、積層方向を使う強度解析は今回未実施。
+
+---
+
+# 2026-10-29 前側押さえをさらに右へ5 mm移動
+
+前側L字押さえと本体取付床・M4穴をローカル −X へ5 mm移動。接触帯 X=5.5..30.5、M4軸 X=11.5, 24.5。M5爪を避ける局所逃げを追加し、カメラ姿勢と素手着脱式回転接続を維持する。実物の締結・保持は未確認。
+
+# 履歴：幅25 mm・右へ12 mm移動した前後押さえ（2026-10-29で置換）
+
+2026-10-26位置改訂。前側押さえ・床延長・取付穴を正面から見て右へ12 mm（ローカルX=-12 mm）移動。背板から前へ張り出していた四角い追加パッドを撤去し、元の背板を直接後側の当たり面として使う。前側押さえの足をカメラ側へ反転し、元の左右底面受けは撤去。前方端をY=45.49から29.49へ16 mm短縮。ユーザー実測のケース厚さ41 mmを採用。2026-10-24の底面受けだけでは回転保持が不十分だったため、正面から見て左端から12〜37 mmの幅25 mmを後側受けと別体の前側押さえで挟む。実物での新方式の回転保持・強度はまだ未検証。
+
+## 現行の部品と位置
+
+親機・子機は共通でcamera_mount_twist（Cオス一体の本体）1個とcamera_front_clamp（前側押さえ）1個を使う。追加購入品は各機M4×16ソケットねじ2本、M4普通ナット2個（二面幅7・厚3.2）、外径9・内径4.3・厚0.8 mmワッシャ2枚。元のカメラM5固定とCロックは継続する。
+
+座標は+Yがカメラ正面、+Zがカメラ上。正面側から見る左は+X。ケース幅95 mmは既存仮値なので、押さえの対象域はX=10.5..35.5（旧X=22.5..47.5）。ねじ中心はX=16.5,29.5。背板の既存面Y=-23.45を後側基準とし、前側の当たり面をY=17.55に合わせ、公称41 mmの間隔を維持する。ケース参照モデルも同じ背面基準へ移した。実物のM5軸とケース背面の距離は未測定なので、実物の取付角・当たりの確認が必要。旧45.9 mmはC接続／背板位置の互換用寸法だけに残し、ケース厚さとして使わない。
+
+前後受けの公称間隔41 mm。前側押さえは長穴で外向きに0..3 mm開け、ケースに当ててから固定する。後側は追加パッドではなく元の背板。前側25 mmの接触帯に対し、背板との重なり幅は25 mm（X=10.5..35.5、中央開口と既存取付穴があるため全面接触ではなく、右寄りの帯と上側で受ける）。前側接触高さはケース底から約1..30.5 mm。ケース幅95・高さ75、M5軸から底まで12.5 mm、実物のM5軸からケース背面までの距離は引き続き未測定。今回確認できた実測値は厚さ41 mmだけ。左右／上下の正確な接触位置とボタン・ケース継ぎ目・画角は実物確認が必要。
+
+左右の底面受けを撤去し、背面下側の突起に対する背面20 mmの空間も維持する。前側押さえの内向き足はY=0.55..25.55、床延長はY=3..29.5。中央M5爪と床は残す。中央固定爪と押さえを横方向に分離し、公称2.85 mmの隙間を確保。20 mm移動版で追加した切欠きを廃止し、通常のL字足へ戻した。元の背板がケース背面を受け、底面の突起を挟まない。
+
+## フィレットと印刷
+
+新しい前側押さえ・前側床延長の外縁はR1の3Dフィレット。前側押さえの立ち上がり根元はR3の凹フィレット。既存背板の外縁もR1、後側補強リブの輪郭もR1に変更。ねじ座面・ナットの回り止め・M5嵌合・C摺動面は機能面を保持し、穴／長穴入口は0.25〜0.3 mm面取り。メッシュ近似による外形誤差は約0.01 mm。
+
+本体は底板、前側押さえは足の下面をベッドへ向ける。X1C・0.4 mm・Generic PETG・0.1 mm層・6壁・15% Gyroid・ブリム5 mm、ベッドからの自動支持。本体下面のねじ頭用座ぐりとC部の支持材を除去してから組む。前側押さえも自動支持を有効にしてスライスする。足・ナット座付近の支持材を除去し、ナットが座面まで挿入できることを確認する。印刷入口は各assemblyのparts/PRINT.md。旧camera_clamp_right20_20261026、camera_left_clamp_flush_20261025、camera_left_clamp_inward_20261025、camera_left_clamp_20261025、camera_bottom_clearance_20261024、camera_twist_20261021のカメラ3MFは旧形状であり今回使わない。
+
+## 締結と組立（内向きL字・下面から締付け）
+
+1. 前側押さえの足の上側からM4ナット2個を入れる。ナットはZ=10.6..13.8、長穴状の六角座はX方向で回り止めし、下側の座面Z=10.6が締付け時の下向き反力を受ける。座の下の肉厚は2.6 mm。ケース装着前にナットを入れる。
+2. 本体下面からワッシャとM4×16ソケットねじを入れ、前側押さえへ仮止めする。ケースをM5取付部へ装着して背側受けへ当て、前側押さえを寄せてから下面から2本を交互に締める。0..3 mmの位置調整は手で行う。
+3. 締結経路はねじ頭座面Z=4→ワッシャ0.8→本体床の反力面Z=4.8→本体床上面Z=8→前側足の下面→ナット下面Z=10.6。ナットは-Zへ引かれて足の座面で止まり、ねじ頭・ワッシャは+Zへ引かれて本体の段付き穴の天井で止まる。D9.6の座ぐりに頭とワッシャを収納し、ねじ頭下面はZ=0で突出しない。段付き穴上の肉厚3.2 mm。M4×16を流用し、先端Z=20、ナット上端から6.2 mm突出するがケース底Z=36.5まで16.5 mm残す。かかりはナット全厚3.2 mm。工具はY=11.5の穴に本体下面側から入れる。
+4. 前後の押さえがケースの回転に反力を与える。長穴部の位置保持はねじの締付けによる摩擦に依存するため、濡れた状態での滑り・締付トルク・長期クリープは実物試験が必要。防水ケースを変形させる過大な締付けは避ける。独立落下防止コードを使う。
+
+## 正本と検証
+
+正本：spec/build_camera_mount_m3.py。camera_mount.scad、camera_left_clamp.scad、camera_front_clamp.scad、camera_case_41mm.scadは生成物。再生成はpython spec/build_camera_mount_m3.py --parts-only。配置はspec/configure_camera_left_clamp.py、検証はspec/verify_camera_left_clamp.py、STEP・組立はspec/export_camera_left_clamp.py。支持形状を変更したため旧底面受け検査のPASSを流用しない。
+
+結果は_work/analysis/clamp_clearance_20261026/。閉メッシュ、前後接触、±0.5°の剛体回転阻止、背面退避、ねじ・工具、ナットの挿入／回り止め／-Z保持、親子組立干渉、C離脱経路を分けて検査する。離脱経路は離散検査で連続掃引保証ではない。CAD接触・回転阻止は実物の締結成立や保持力の保証ではない。旧版と文書の原本は同解析フォルダのhistory/に保存。
+
+
+## parts/common/exterior/printed/td04a_bracket_mount/README.md
+
+# TD04A固定治具 Rev.6：12 mmピッチ・ケーブル逃げ60 mm
+
+2026-10-25ユーザー指定。正本はtd04a_bracket_mount.scad。旧TD04A本体モデルは使用しない。過去の10 mmピッチと親機形状保持の条件を今回の指定で更新した。旧データはassemblies/td04a_fixture/_work/analysis/cable_clearance_r6/history/に保持。
+
+- TD04A取付はM4貫通ねじ＋普通ナット2組、CADの穴中心間隔12 mm、内接クリアランス径4.5 mm。「約12 mm」の指定であり実測一致の認定ではない。
+- 送受信面は親機-Z、子機+Z。取付面はその面に直角という既存の取合いを引き継ぐ。本体の仮形状は表示しない。
+- 穴列から外装側へ60 mmを確保。板厚5 mm、穴列オフセット65 mm、治具長75 mm。親機はフランジ下面から穴列まで60 mm。子機は穴列より下へ60 mmの予約域。図の幅12×奥行15 mmは検査用の仮幅で、実ケーブルの根元・曲げ半径まで確認した意味ではない。
+
+## 実配置と締結経路
+
+親機：parent_exteriorの既存XY=(65,-55),(85,-55)のM5穴を使用。治具原点(53,-55,-20)、Z回転-90度。接触面Z=-20、治具下面Z=-25、M4穴列Z=-85。M5×40皿頭→主プレート→治具5 mm→M5ワッシャ1 mm→M5ナット4 mm。ワッシャZ=-26..-25、ナットZ=-30..-26。皿ねじの先端Z=-40.8、ナット下面からの突出10.8 mm。防水容器を外して上から皿頭へ工具を入れ、下からナットを保持して組み立てる。既存ねじ先端の突出は長めなので、TD04A実物との干渉を初回確認する。ナットは下から工具で保持し、締付時の+Z移動はワッシャと治具下面で受け、主プレートを挟む。旧押さえ金具・クランプねじ・TD04A参照モデルは今回の配置から外す。親機内外装統合等の旧構成へは自動反映しない。
+
+子機：child_horizontal_plate_frameの既存右後側M3縦2穴を使用。治具原点(122,-74,108)、穴列X=148/160・Y=-74・Z=173。M3×20頭→φ7×0.5ワッシャ→治具5 mm→側板12 mm（内側2.8 mmナット座）→M3ナット。既存のナット座肩が締付時の+Xを受ける。内側からナットを入れ、外側から締める。側板加工なし。ねじ先端はナットから2.9 mm突出。穴位置・工具通路・ナット挿入・ケースとの干渉を検査し、軸方向保持は連続掃引形状でも検査する。
+
+センサー側は後方からM4ねじ頭→φ9×0.8ワッシャ→治具5 mm→実物の取付耳→φ9×0.8ワッシャ→ナット3.2 mm。耳厚3 mmの仮定ではM4×14、先端突出1.2 mm。ナットはスパナで回り止めし、締付時に取付耳をワッシャ越しに受ける。耳厚・座面・穴縁肉厚は未採寸のため、センサー側の締結成立は未達。実物に合わせてねじ長さを決める。接着剤を保持に使わない。
+
+## 印刷と検証の範囲
+
+親機外形26×42×75、子機45×26×75 mm。親機[0,-90,0]でL字側面下、子機[0,0,0]でL字下端下。外周R1.5、内角R3、端面取り0.6、穴入口0.3、穴先端R0.15 mm。横穴は印刷+Zへ屋根を向ける。PETG Basic/X1C/0.4ノズル/0.2層/8壁/100%/ブリム5 mmを試作条件とする。実造形・荷重・クリープは未検証。
+
+印刷入口は各assemblyのparts/PRINT.md。各外装に1個ずつを同梱し、td04a_fixtureのpartsは同じ2部品の比較用一式。両方を重複印刷しない。旧Rev.5の3MFは現行形状に使わない。
+
+再生成：python spec/rebuild_td04a_fixture.py → python spec/install_td04a_fixture.py → python spec/check_td04a_fixture.py → python spec/check_td04a_exteriors.py。外装組立はbuild.ps1 -Assembliesで再生成、印刷一式を同期する。SCADが正本、STEPは交換形状。閉メッシュ・外形・干渉・ナット保持・スライスと実物締結・強度は別の検査。
+
+
+Rev.6検証：部品67項目・外装8項目・STEP読戻しは合格。スライスと実G-codeの監査も合格。自動支持は少量を提案しており、支持無効試作の実印刷は未確認。共通42テストは41合格、既存材料JSON欠落1エラー。
+
+
 ## parts/common/jigs/quick_release_prototypes/quick_release_prototypes.md
 
 # 小型オス／メス脱着インターフェース3案
 
-2026-10-11：側面機器接続用 `twist_male_mount` を同じSCADのバリアントとして追加。[取付規格](https://github.com/AquaBeacon/docs/blob/main/child_horizontal_twist_interface.md)。既存9種類の比較試作は保持する。追加オスの裏側32×32の4穴へ90°皿座（深1.45）を設け、M3×18皿ねじの頭を回転面の0.425 mm内側へ置く。裏へナットや普通ねじ頭を出すとメス側壁へ当たる。これはRev.1の別体接続用バリアントとして保持する。現行Rev.2は公開twist_male/femaleモジュールを治具へ直接unionして一体化し、別体オスと皿ねじを使わない。軸・爪・カム・ゴム・横穴は元と同じ。[既存9分岐の形状照合](_work/analysis/mount_variant_equivalence/validation.json)。追加オスにSTEPはなく、標準オスのSTEPを使わない。
+2026-10-11：側面機器接続用 `twist_male_mount` を同じSCADのバリアントとして追加。[取付規格](../../../../docs/child_horizontal_twist_interface.md)。既存9種類の比較試作は保持する。追加オスの裏側32×32の4穴へ90°皿座（深1.45）を設け、M3×18皿ねじの頭を回転面の0.425 mm内側へ置く。裏へナットや普通ねじ頭を出すとメス側壁へ当たる。これはRev.1の別体接続用バリアントとして保持する。現行Rev.2は公開twist_male/femaleモジュールを治具へ直接unionして一体化し、別体オスと皿ねじを使わない。軸・爪・カム・ゴム・横穴は元と同じ。[既存9分岐の形状照合](_work/analysis/mount_variant_equivalence/validation.json)。追加オスにSTEPはなく、標準オスのSTEPを使わない。
 
 使用構成: [quick_release_trials](../../../../assemblies/quick_release_trials/README.md)。印刷入口: [PRINT.md](../../../../assemblies/quick_release_trials/parts/PRINT.md)。原本は同階層のquick_release_prototypes.scad、単位mm。公開モジュールをuseして組み込む。荷重集中の少ない機体・テザー固定用の比較試作で、取付先・金具寸法は仮定。耐荷重・疲労・実物の脱着は未検証。
 
@@ -447,7 +587,7 @@ OpenSCADレンダリング、閉メッシュ・単一連結体・外形・体積
 
 2026-10-12更新。トップフレームにクランプ締付ねじ用の工具穴6か所を追加。X1 Carbon / Bambu PETG Basicの嵌合・荷重試験用（fit_prototype）。[組立説明](../../../../../assemblies/child_horizontal_plate_frame/README.md)、[配置正本](../../../../../assemblies/child_horizontal_plate_frame/placement.json)、[印刷入口](../../../../../assemblies/child_horizontal_plate_frame/parts/PRINT.md)を参照する。
 
-寸法・取合いは共通 [child_horizontal_plate_interfaces.scad](../../../../../scad/lib/child_horizontal_plate_interfaces.scad)、形状は [SCAD](child_horizontal_plate_frame.scad)。元の生成ツール [prepare_child_horizontal_plate_frame.py](https://github.com/AquaBeacon/workspace-tools/blob/main/prepare_child_horizontal_plate_frame.py)を使う。
+寸法・取合いは共通 [child_horizontal_plate_interfaces.scad](../../../../../scad/lib/child_horizontal_plate_interfaces.scad)、形状は [SCAD](child_horizontal_plate_frame.scad)。元の生成ツール [prepare_child_horizontal_plate_frame.py](../../../../../tools/prepare_child_horizontal_plate_frame.py)を使う。
 
 ## 印刷済みと未印刷
 
@@ -560,26 +700,56 @@ STEPの全体変換は未完了。今回の現行モデルはSCADとSTLを参照
 
 ## parts/child/exterior/printed/child_horizontal_twist_mount/README.md
 
+## 2026-10-29 素手着脱への改訂（現行）
+
+カメラ専用の受けは外向きのねじ横抜き溝付き。初回固定は工具を使用し、以後のカメラ着脱はノブと指掛けスペーサで行う。現行条件・締結経路・制約は各assembly READMEの最上段を参照。旧横ボルト・旧ゴム方式は使用しない。
+
+# 2026-10-29 カメラ専用4点支持受け
+
+カメラ専用 `camera_receiver` 分岐を追加。既存 `frame_receiver` と `light_twist` はライト用として形状・配置を維持する。カメラ用STLは `child_horizontal_twist_mount_camera_receiver.stl`。
+
+子機外面X=-122上の既存穴だけを使う。Y60/Z100・160のM3×18を維持し、Y98/Z100・176の前側ガード固定を共締めする。後者はM3×25をM3×30へ2本交換し、頭側ワッシャを受けの外へ4 mm移す。内側ガード・ワッシャ・ナット位置はそのまま。38 mm離れた2列4点で受けを支える。側板・ガードに加工や再印刷は不要。
+
+取付足厚4 mm。Y60/Z120・140には直径8 mmの工具通路を残す。C中心は(-122,105,130)へ前方10 mm移動し、カメラの向きを維持。カメラ側の全構成部品を一緒に移し、ライトは移さない。中央の手の予約域Y=-45..45を避ける。
+
+各締結経路はねじ頭→頭側ワッシャ→受け足→側板→（ガード側の2点はガード・内側ワッシャ）→ナット。側板側2点のナットは内面の既存六角座へ入り、締付方向の底面を使う。ガード側は既存内側ワッシャとナットで受け・側板・ガードを共締めする。
+
+共通接続形状は `scad/lib/camera_rotary_joint.scad`。組立・解除は[カメラ共通説明](../dji_osmo_action6_mount_m3/README.md)、検証結果と印刷入口は[子機assembly](../../../../../assemblies/child_horizontal_plate_frame/README.md)。実物の保持力・材料強度は未認定。後続の旧日付の記録は履歴。
+
+---
+
 # 子機側面・一体型twist治具 Rev.4
 
 正本は child_horizontal_twist_mount.scad。frame_receiver（フレーム台座＋Cメス）、light_twist（既存ライト保持半割＋Cオス）の2バリアント。各1個、単一連結の印刷部品。既存33×81筒と押さえを流用。差し込み姿勢から60°回して停止すると上向き、その横の水平ノブで締めて固定する。QR面内角0°、ノブ軸は機体+Y。
 
 [組立SCAD](../../../../../assemblies/child_horizontal_plate_frame/child_horizontal_plate_frame_light_view.scad) をOpenSCADで開きF5。`pose="locked"` は固定位置、`pose="entry"` は差込位置、`show_frame=false` は治具単体。こちらは配置正本から生成される確認ビュー。
 
-寸法・取合い・中央の手の予約空間・印刷・金具・検証は [共通規格](https://github.com/AquaBeacon/docs/blob/main/child_horizontal_twist_interface.md)。位置・数量の正本は [assembly](../../../../../assemblies/child_horizontal_plate_frame/placement.json)。C形状は既存公開モジュールを再利用し、ライトは元のhalf_holder(front,mount_plate)を呼ぶ。寸法は共通SCADへ生成される。
+寸法・取合い・中央の手の予約空間・印刷・金具・検証は [共通規格](../../../../../docs/child_horizontal_twist_interface.md)。位置・数量の正本は [assembly](../../../../../assemblies/child_horizontal_plate_frame/placement.json)。C形状は既存公開モジュールを再利用し、ライトは元のhalf_holder(front,mount_plate)を呼ぶ。寸法は共通SCADへ生成される。
 
 製造メタデータの姿勢：frame_receiverは0°、light_twistはX90°で筒軸垂直・下端をベッドへ。一体2部品は0.1 mm層。メスは厚4の平坦な一体足、N=0で段差なし・サポート無効。ライトオスだけベッドからの外部サポートを使う。新しい接続部はR2・面取り0.6、M3穴入口0.3。C爪・カム・ゴム座と既存ホルダーの嵌合形状を保持する。
 
-旧frame_adapter/light_adapterの設計と印刷一式はassembly内のRev.1履歴へ保持。現行variantsとplacementには含めない。カメラ・TD04Aは機器側寸法未確定で、今後Cオスを直接治具へ統合する。
+旧frame_adapter/light_adapterの設計と印刷一式はassembly内のRev.1履歴へ保持。現行variantsとplacementには含めない。カメラは2026-10-21に一体Cオス付き部品を追加した。下のカメラ用メス節を参照。TD04Aは今後の設計。
 
 一体部品のCGAL出力に生じる数値的なT頂点の退化三角形は、既存clean_stl_degenerates.pyのEdge Flipだけで処理する。頂点・面数を保持し、外形・体積・双方向表面誤差0.001 mm以内、閉メッシュ、単一連結を検査する。Rev.4ではメス10面・オス1面を処理し、表面誤差最大4.00e−8 mm、体積・外形差0。底板同士は中央部だけ0.05 mm重ね、旧底板の角を重複させない。再生成ツールと製造メタデータへ同じ処理を組み込んだ。
 
 Rev.4：追加フレーム4枚は引き続き側板内側、台座M3×18各2本、ライト軸X161/Y80、突出59.5 mm。ノブ中心(136,105.5,130)、水平+Y軸。平坦な厚4足の入り隅をR2に仕上げ、既存32×32のC底板4穴を復元する。CのN=4以上の嵌合形状は保持する。Rev.3までの生成元・配置・印刷一式をassemblyのside_twist_r3履歴へ保存。
 
 
+## カメラ用メス（2026-10-21）
+
+camera_receiverバリアントは同じframe_receiver()にreceiver_u=-35、dock_rotation=90を与える。左前の既存Y60/Z100・160穴、厚4の足、M3×18・内側ナットを流用。C中心(-122,95,130)、ノブ軸+Z。カメラを外側から見て右へ90°回し、通常の横向きにする。ライト用の2バリアントのメッシュは別途再レンダリング・全頂点比較し、元のバイト列を保持した。カメラ側は同じcamera_mount_twistを親子で共用。専用メスは取付足下、0.1 mm・Generic PETG・6壁・15% Gyroid・5 mmブリム、自動支持有効・ベッドからのみ。実支持経路は0.2 mmの初層だけ。部品STEPは単一有効ソリッドで外形・体積がSTLと一致。配置・数量・組付けは[assembly説明](../../../../../assemblies/child_horizontal_plate_frame/README.md)。
+
+
 ## docs/child_horizontal_twist_interface.md
 
 # 子機横置きフレーム・側面twist取付規格 Rev.4
+
+## カメラの追加（2026-10-21）
+
+改良camera_mountを再利用した一体Cオスを親機と子機で共用。子機はleft_front、取付足の2穴をそのまま使い、U=-35、C面内90°、中心(-122,95,130)、ノブ軸+Z。メスは同一SCADのcamera_receiverバリアント。C機能面・カム移動・横ボルトは上記Rev.4と同じ。機器の実寸は既存の仮ケース包絡を引き継ぎ、実測済みへ昇格しない。ライト用right_frontの位置とメッシュバイト列は保持。
+
+カメラの静止干渉、持ち手、ケーブル予約、+Zへ45 mmロックボルト抜去、5°刻み60°回転と80 mm外向き抜去、ノブ周囲3 mmを検査。カメラ側の接続板にのみ1.2 mmの局所逃げを加え、元C形状を保持する。詳細・現行数量・印刷条件は[子機外装](../assemblies/child_horizontal_plate_frame/README.md)、[共有カメラ部品](../parts/child/exterior/printed/dji_osmo_action6_mount_m3/README.md)を優先。以下の「カメラ未設計」と数量は2026-10-12時点のライト単独記録。
+
 
 2026-10-12。**CHILD-HORIZONTAL-TWIST-C-R4**。対象は [child_horizontal_plate_frame](../assemblies/child_horizontal_plate_frame/README.md)。フレーム台座とtwistメス、ライト保持半割とtwistオスをそれぞれ一体化。差し込み位置から60°回して停止した位置でライトが上を向き、その横の水平ノブを締める。カメラ・TD04Aも機器治具にCオスを直接組み込む。
 

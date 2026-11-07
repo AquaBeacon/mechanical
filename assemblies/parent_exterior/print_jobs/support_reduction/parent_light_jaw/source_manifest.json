@@ -1,0 +1,16 @@
+{
+  "file": "parent_light_jaw.stl",
+  "quantity": 1,
+  "source_sha256": "e98b1b9472087481bd3db7ee84fa24593ca91cbdda31b3146e0822f0e9c279c4",
+  "layer_mm": 0.2,
+  "supports": "auto",
+  "exit_code": 0,
+  "bed_fits": true,
+  "passed": true,
+  "warnings": [],
+  "error": null,
+  "grams": 6.46,
+  "seconds": 854.0,
+  "support_filament_mm": 0,
+  "limits": "Slicer result only; inspect supports and physically verify printing/fit/strength."
+}

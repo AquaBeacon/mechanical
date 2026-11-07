@@ -1,0 +1,16 @@
+{
+  "file": "parent_oneplate_box_locator_pressure_pad.stl",
+  "quantity": 3,
+  "source_sha256": "3aa0ad77980b8d10a526ac78a3114fd73ba476cd8c0cdf2218e21b64b7c0d975",
+  "layer_mm": 0.2,
+  "supports": "auto",
+  "exit_code": 0,
+  "bed_fits": true,
+  "passed": true,
+  "warnings": [],
+  "error": null,
+  "grams": 0.97,
+  "seconds": 415.0,
+  "support_filament_mm": 0,
+  "limits": "Slicer result only; inspect supports and physically verify printing/fit/strength."
+}

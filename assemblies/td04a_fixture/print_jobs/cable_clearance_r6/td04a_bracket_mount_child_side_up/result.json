@@ -1,0 +1,60 @@
+{
+    "error_string": "Success.",
+    "export_time": 183,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 36,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Brim": 31.870655059814453,
+                "Custom": 35.12285614013672,
+                "Gap infill": 327.6809387207031,
+                "Inner wall": 3383.26708984375,
+                "Outer wall": 757.9690551757813,
+                "Top surface": 19.314699172973633,
+                "Travel": 240.34228515625,
+                "Undefined": 224.9978485107422
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFG00",
+                    "id": 1,
+                    "main_used_g": 28.744182586669922,
+                    "total_used_g": 28.744182586669922
+                }
+            ],
+            "generate_support_material_time": 31,
+            "id": 1,
+            "infill_time": 11,
+            "layer_filament_change": 0,
+            "main_predication": 4760.47509765625,
+            "make_perimeters_time": 48,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 25.999996185302734,
+                        "height": 75.0,
+                        "width": 44.99999237060547,
+                        "x": 105.5,
+                        "y": 115.00000762939453,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "td04a_bracket_mount_child_side_up.stl",
+                    "triangle_count": 2588
+                }
+            ],
+            "sliced_time": 312,
+            "sliced_time_with_cache": 211,
+            "total_predication": 4780.22314453125,
+            "triangle_count": 2588,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 100.0,
+    "wall_loops": 8
+}

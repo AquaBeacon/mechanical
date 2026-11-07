@@ -1,0 +1,30 @@
+[
+  {
+    "file": "td04a_bracket_mount_parent_down.stl",
+    "source_sha256": "7e3615ae33610a1c0f8b624127c62481dd551f0632f75fcd7ca334f7d78348c7",
+    "layer_mm": 0.2,
+    "supports": "none",
+    "exit_code": 0,
+    "bed_fits": true,
+    "passed": true,
+    "warnings": [],
+    "error": null,
+    "grams": 16.78,
+    "seconds": 1840.0,
+    "support_filament_mm": 0
+  },
+  {
+    "file": "td04a_bracket_mount_child_side_up.stl",
+    "source_sha256": "5f52f03cabe8c37bf76cab76d8eeeac4a30e57670e71807d308c8d0ca3edb111",
+    "layer_mm": 0.2,
+    "supports": "none",
+    "exit_code": 0,
+    "bed_fits": true,
+    "passed": true,
+    "warnings": [],
+    "error": null,
+    "grams": 28.74,
+    "seconds": 4780.0,
+    "support_filament_mm": 0
+  }
+]

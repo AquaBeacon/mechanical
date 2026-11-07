@@ -1,3 +1,39 @@
+## 2026-10-29 電池蓋を上方取り外しへ変更
+
+電池蓋はM3×12ねじ1本を外し、真上に持ち上げる方式へ変更。本体の固定ねじ4本は外さない。本体と蓋を各1個再印刷する。旧スライド手順は履歴。詳しくは [電池蓋の改訂報告](../../../../../assemblies/parent_hand_service/battery_top_lid_report.md)。
+
+# 2026-10-29 床下面ナットへの貫通固定
+
+現行は [改訂報告](../../../../../assemblies/parent_hand_service/unified_support_report.md)。床の下面開放六角くぼみへM3ナットを入れ、上からの貫通ねじで床板まで挟む。MAIN枠とSony/GNSS支持枠の対象穴は通し穴。足の一体化・50 mmは維持。以下は変更前の履歴。
+
+# 2026-10-28 一体支持枠・埋め込みナット廃止
+
+現行の説明は [改訂報告](../../../../../assemblies/parent_hand_service/unified_support_report.md)。Sonyの4本の足をsony_support_frameの1部品へ統合し、肩まで50.0 mm、キー0.8 mmを別に確保。床の内部ナット穴と電池蓋用ナット穴を廃止。床は通し穴、支持部品と電池蓋は内接径2.8 mmの樹脂下穴へ締結する。
+
+設計正本は既存Python生成元。製造姿勢はmanufacturing.json、使用バリアントと数量はassemblyのplacement.json。印刷入口はassemblyのparts/PRINT.md。以下は旧版履歴。
+
+# 2026-10-27 北側ペネトレータ対応
+
+現行の説明・寸法・締結手順は [床板改訂報告](../../../../../assemblies/parent_hand_service/plate_access_report.md)。印刷入口は [PRINT.md](../../../../../assemblies/parent_hand_service/parts/PRINT.md)。この改訂ではfloor_plate、sony_mount_plate、sony_fixed_column_0、battery_baseを交換する。共有柱と同軸リングは各共通部品フォルダの同じ正本を更新する。
+
+床の生成元はspec/build_parent_hand_service.py／spec/parent_switch_tx_body.py、局所形状はscad/lib/parent_floor_access.py。既存の同じ生成元から作り、出力SCADを手編集しない。床M3ナット11か所は対辺5.8 mmの横挿入穴、上の屋根で+Zの抜けを受ける。M4頭口10.8 mm、電池台は配線端へ開放した頭通路。床・固定板・柱は原姿勢の下面をベッドへ向ける。
+
+以下の床板無加工再使用・床裏座金・旧取付軸は改訂履歴。実ねじ・工具・嵌合・印刷・強度は試作確認。
+
+2026-10-24 MAIN下面・独立スペーサ改訂：格子下面の3.7 mmの浮きを解消。独立スペーサ12軸は対辺3.5 mmの通し穴と多角形外形。一体の基板ねじ座は2.8 mm下穴を維持。現行の金具・手順は assemblies/parent_hand_service/frame_spacer_printability_report.md を参照。床裏のナットを保持して締める構成に変更。以下の全スペーサ直接締結・整備用M3×8・最長30 mmの記述は変更前の履歴。
+
+2026-10-24 SPRESENSE固定板増厚：ねじ止め時の割れに対応し、板厚1.6→3.2 mm。固定板1個を再印刷。基板とねじ座を1.6 mm上げ、支柱接合面は維持。現行手順は assemblies/parent_hand_service/sony_plate_thickening_report.md（リポジトリ基準）。下記の厚1.6 mm・Sony板再印刷不要の記述は変更前の履歴。
+
+2026-10-24 現行：スペーサ・床側受け・棚接合柱の内部ナット穴27か所を廃止。内接径2.8 mmの縦下穴へ直接締結する。抜け止め4個は不要。印刷一式は16種類16個。以下のナット式の記述は変更履歴であり、現行の手順と数量は改良報告・parts/PRINT.mdを参照。
+
+2026-10-24 基板直接固定：MAINはM3×8を4本、電源基板はM3×6を4本で樹脂下穴（内接径2.8 mm）へ直接固定。基板用ナット8個を廃止。MAIN枠と電源アダプタだけ変更し、床板・LiPo・整備ねじ4本の構造は維持。現行の数量と手順はretrofit_report.mdおよびparts/PRINT.mdを参照。
+
+## 2026-10-24 内装改良バリアント
+
+設計元は `scad/lib/parent_service_retrofit.py`、生成入口は `spec/build_parent_hand_service.py --service-retrofit`。旧部品は保持し、現行内装の選択は `assemblies/parent_hand_service/placement.json` に従う。新規バリアントの手順・再使用範囲・金具は [改良報告](../../../../../assemblies/parent_hand_service/retrofit_report.md)。STLの姿勢は manufacturing.json を使い、支持材禁止モディファイアは部品として印刷しない。実物検証前の試作。
+
+電源基板は元の向きで南11 mm・上5.5 mm。MAIN枠の後端中央に逃げを追加し、電源アダプタの床固定はM3×8を4本、頭を1 mm沈める。Pico 2 Wの基板上17 mm包絡からアンテナ棚まで3.8 mmを確認。床板とLiPo固定具は変更しない。
+
 # 親機：固定板とねじ座
 
 2026-10-13 全長側溝改訂：蓋を端から全長107.4 mmの両側溝へ差し込み、M3×12ねじ1本で固定。開く際は台の固定ねじ4本を外して閉じた電池ボックスを上へ約90 mm持ち上げ、蓋を南108 mm引き抜く。基板・最下段・同軸巻き部は変更なし。電池台と蓋を各1個再印刷。現行手順はbattery_side_grooves_report.md。
@@ -77,3 +113,10 @@ PETG 0.2 mm・4周壁の取合い試作。床下面とキャリア棚／段差�
 収納は公称102×34×23 mm、商品公差上限104×36×25 mmの剛体包絡を確認する。最大個体では端/側/上フォームを公称の2/3/3 mmのまま使えないので現物に合わせて薄くする。線径・端子外形・外部への曲げ経路は未実測。組立や強度の実物検証を済ませた扱いにはしない。
 
 設計元は `spec/build_parent_hand_service.py --battery-only`。既存の全体ビルドもこの同じボックスとフォームを生成する。検証と印刷入口は assemblies/parent_hand_service/battery_box_report.md と同assemblyのparts/PRINT.md。
+# MAINスペーサ4本の多角形STL（2026-10-22追加依頼）
+
+`main_corner_column_polygon_4.stl` はMAIN用4本だけを並べた印刷バリアント。外側は六角形（元のØ7 mm包絡内、頂点と上下縁は0.1 mm面取り）、高さ14.3 mm、穴は内接径／対辺3.45 mmの補正八角形、穴口0.15 mm面取り。穴の縦8稜は指定の機能形状として保持する。元のM3通しねじとMAIN固定板を使い、柱にタップしない。
+
+生成元は `spec/build_parent_main_polygon.py`。既存 `main_corner_column.step` から高さ・外形・穴径を取得する。単体の `main_corner_column_polygon` と4本入りの同名 `_4` は同じ生成元の出力で、4本のピッチ12 mm、2×2配置、つなぎなし、平らな下面Z0・穴は上向き。配布STLは `assemblies/parent_hand_service/print_jobs/main_polygon_4/MAIN_spacers_polygon_4.stl`。SHAと検証結果は隣のmanifest.json。PETG・0.4 mmノズル・0.2 mm積層・壁4周・100%充填を想定し、小さい接地面には3 mmブリムを推奨。実物の嵌合・締付けは未検証。
+
+今回の依頼用の4本だけを印刷する場合に、このSTLを1個読み込む。従来の単体丸柱4本や12本入り3MFと重複印刷しない。既存の全体組立・13種類20個の一式は丸柱の参照構成を保持する。4か所すべてで床への着座・上側の接触・干渉を検証した多角形の印刷バリアントであり、全体の再配置は行っていない。

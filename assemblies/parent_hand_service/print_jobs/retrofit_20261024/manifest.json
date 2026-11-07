@@ -1,0 +1,563 @@
+{
+  "passed": true,
+  "plates": [
+    {
+      "plate": 1,
+      "passed": true,
+      "members": [
+        {
+          "stem": "main_service_frame",
+          "file": "main_service_frame.stl",
+          "sha256": "cf76111f51aa26005e1e74e5bb842f99a95bb930ddfc8602503a5f967227205a",
+          "bounds": [
+            [
+              25.0,
+              32.0,
+              0.0
+            ],
+            [
+              158.5,
+              124.49972534179688,
+              17.39999771118164
+            ]
+          ],
+          "outer_wall_z": [
+            0.2,
+            17.4
+          ],
+          "present": true
+        },
+        {
+          "stem": "antenna_service_shelf",
+          "file": "antenna_service_shelf.stl",
+          "sha256": "8c717374938490628aab99929420f1a3eeca9e46b5ab6cdeaa5ae97f12f5f48c",
+          "bounds": [
+            [
+              25.0,
+              142.0,
+              0.0
+            ],
+            [
+              157.39999389648438,
+              214.0,
+              22.400001525878906
+            ]
+          ],
+          "outer_wall_z": [
+            0.2,
+            22.4
+          ],
+          "present": true
+        },
+        {
+          "stem": "power_adapter",
+          "file": "power_adapter.stl",
+          "sha256": "cb859d498fb00abb908bdf269c324bbeca24097e96c93a25534379b23e2ebc98",
+          "bounds": [
+            [
+              165.0,
+              32.0,
+              0.0
+            ],
+            [
+              247.99504852294922,
+              141.6983642578125,
+              5.5
+            ]
+          ],
+          "outer_wall_z": [
+            0.2,
+            5.6
+          ],
+          "present": true
+        }
+      ],
+      "support_segments": 4426,
+      "support_segments_inside_blockers": 0,
+      "extrusion_bounds": [
+        22.392,
+        27.391,
+        0.2,
+        250.505,
+        214.514,
+        22.4
+      ],
+      "result": {
+        "error_string": "Success.",
+        "export_time": 363,
+        "layer_height": 0.20000000298023224,
+        "plate_index": 0,
+        "prepare_time": 146,
+        "return_code": 0,
+        "sliced_plates": [
+          {
+            "feature_type_times": {
+              "Bottom surface": 219.7674560546875,
+              "Bridge": 78.97372436523438,
+              "Brim": 171.0838165283203,
+              "Custom": 428.4906921386719,
+              "Flush": 29.0,
+              "Gap infill": 223.0037384033203,
+              "Inner wall": 2586.538330078125,
+              "Internal solid infill": 1332.8516845703125,
+              "Outer wall": 1098.83544921875,
+              "Overhang wall": 419.91192626953125,
+              "Sparse infill": 3098.53173828125,
+              "Support": 472.2660217285156,
+              "Support interface": 145.6726531982422,
+              "Support transition": 116.03071594238281,
+              "Top surface": 394.25048828125,
+              "Travel": 1330.386474609375,
+              "Undefined": 1315.4111328125
+            },
+            "filament_change_times": 0,
+            "filaments": [
+              {
+                "filament_id": "GFG99",
+                "id": 1,
+                "main_used_g": 94.4031753540039,
+                "total_used_g": 94.40318298339844
+              }
+            ],
+            "generate_support_material_time": 84,
+            "id": 1,
+            "infill_time": 118,
+            "layer_filament_change": 0,
+            "main_predication": 11665.0302734375,
+            "make_perimeters_time": 164,
+            "obj_cached_cnt": 0,
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 182.0,
+                  "height": 22.400001525878906,
+                  "width": 222.99505615234375,
+                  "x": 25.0,
+                  "y": 32.0,
+                  "z": 3.7060544855194166e-08
+                },
+                "id": 5,
+                "name": "placed.stl",
+                "triangle_count": 20046
+              }
+            ],
+            "sliced_time": 1149,
+            "sliced_time_with_cache": 681,
+            "total_predication": 12136.515625,
+            "triangle_count": 20046,
+            "warning_message": ""
+          }
+        ],
+        "sparse_infill_density": 100.0,
+        "upward_compatible_machine": [
+          "Bambu Lab P1S 0.4 nozzle",
+          "Bambu Lab P1P 0.4 nozzle",
+          "Bambu Lab X1 0.4 nozzle",
+          "Bambu Lab X1E 0.4 nozzle",
+          "Bambu Lab A1 0.4 nozzle",
+          "Bambu Lab H2D 0.4 nozzle",
+          "Bambu Lab H2D Pro 0.4 nozzle",
+          "Bambu Lab H2S 0.4 nozzle",
+          "Bambu Lab P2S 0.4 nozzle",
+          "Bambu Lab H2C 0.4 nozzle",
+          "Bambu Lab X2D 0.4 nozzle",
+          "Bambu Lab A2L 0.4 nozzle"
+        ],
+        "wall_loops": 4
+      },
+      "source_stl_sha256": "18e70364c4fdad6148f0488d7b15b26906ded2d92397198702f98ae44c326995",
+      "three_mf_sha256": "d4c2ab675636054e95d187a40ba439130a3c4caeb68384ff8f12658b1e84e70b",
+      "profile": "X1C 0.4 / Generic PETG / 0.2mm / 4 walls / 100% / auto supports45deg / bridge exemption OFF / local blockers"
+    },
+    {
+      "plate": 2,
+      "passed": true,
+      "members": [
+        {
+          "stem": "ann_mb1_coax_ring_service",
+          "file": "ann_mb1_coax_ring_service.stl",
+          "sha256": "56b480c603322dbb065b6c9595527a700eb535a8f5ca5e5c7ccef26e9cebda58",
+          "bounds": [
+            [
+              25.0,
+              32.0,
+              0.0
+            ],
+            [
+              155.98428344726562,
+              137.98226928710938,
+              14.0
+            ]
+          ],
+          "outer_wall_z": [
+            0.2,
+            14.0
+          ],
+          "present": true
+        },
+        {
+          "stem": "gnss_fixed_column_0",
+          "file": "gnss_fixed_column_0.stl",
+          "sha256": "faa768301b7f2534d157d73513a0c808b332dfa1b0ef141060d8f0153ea00cf1",
+          "bounds": [
+            [
+              180.0,
+              32.0,
+              0.0
+            ],
+            [
+              189.0,
+              41.0,
+              48.000003814697266
+            ]
+          ],
+          "outer_wall_z": [
+            0.2,
+            48.0
+          ],
+          "present": true
+        },
+        {
+          "stem": "gnss_fixed_column_1",
+          "file": "gnss_fixed_column_1.stl",
+          "sha256": "8837013105ae959c1f8e82a9dcd0a2e233fd3c871a681926154b2301a1aad9cf",
+          "bounds": [
+            [
+              200.0,
+              32.0,
+              0.0
+            ],
+            [
+              209.0,
+              41.0,
+              48.000003814697266
+            ]
+          ],
+          "outer_wall_z": [
+            0.2,
+            48.0
+          ],
+          "present": true
+        },
+        {
+          "stem": "gnss_fixed_column_2",
+          "file": "gnss_fixed_column_2.stl",
+          "sha256": "b32e773bb436227cdfff0161f69bd39cc74bb4219a4057ce17b49de6c5d42186",
+          "bounds": [
+            [
+              220.0,
+              32.0,
+              0.0
+            ],
+            [
+              228.0,
+              38.0,
+              48.000003814697266
+            ]
+          ],
+          "outer_wall_z": [
+            0.2,
+            48.0
+          ],
+          "present": true
+        },
+        {
+          "stem": "gnss_sony_shared_column",
+          "file": "gnss_sony_shared_column.stl",
+          "sha256": "6b783304d4ff36ec8ce842ca521afcbba4bdfa4094ce88f39df0647971047d0d",
+          "bounds": [
+            [
+              232.0,
+              32.0,
+              0.0
+            ],
+            [
+              248.5,
+              47.0,
+              48.000003814697266
+            ]
+          ],
+          "outer_wall_z": [
+            0.2,
+            48.0
+          ],
+          "present": true
+        },
+        {
+          "stem": "sony_fixed_column_0",
+          "file": "sony_fixed_column_0.stl",
+          "sha256": "97db0352d4de5c19ecbd09c03db31f9d13a5368d29b207e433831ce45a9a77a7",
+          "bounds": [
+            [
+              180.0,
+              60.0,
+              0.0
+            ],
+            [
+              187.0,
+              69.0,
+              42.5
+            ]
+          ],
+          "outer_wall_z": [
+            0.2,
+            42.6
+          ],
+          "present": true
+        },
+        {
+          "stem": "sony_fixed_column_1",
+          "file": "sony_fixed_column_1.stl",
+          "sha256": "8806800f04f3d92c205535aed2d31a1ec9350158822872480ef5ff57385dfc98",
+          "bounds": [
+            [
+              200.0,
+              60.0,
+              0.0
+            ],
+            [
+              205.39999389648438,
+              69.0,
+              42.5
+            ]
+          ],
+          "outer_wall_z": [
+            0.2,
+            42.6
+          ],
+          "present": true
+        },
+        {
+          "stem": "sony_fixed_column_3",
+          "file": "sony_fixed_column_3.stl",
+          "sha256": "e428bd9c1c75c15e0bf84dd8a81e5877ba362a5b60cae92b7469b0494d15f7b0",
+          "bounds": [
+            [
+              220.0,
+              60.0,
+              0.0
+            ],
+            [
+              225.39999389648438,
+              69.0,
+              42.5
+            ]
+          ],
+          "outer_wall_z": [
+            0.2,
+            42.6
+          ],
+          "present": true
+        },
+        {
+          "stem": "cradle_floor_foot_0",
+          "file": "cradle_floor_foot_0.stl",
+          "sha256": "3a76a8d966503703312e797b868a2b488ede6b7832d417b62b7b8b7ff1696e21",
+          "bounds": [
+            [
+              180.0,
+              90.0,
+              0.0
+            ],
+            [
+              189.99395370483398,
+              99.99689102172852,
+              11.60000228881836
+            ]
+          ],
+          "outer_wall_z": [
+            0.2,
+            11.6
+          ],
+          "present": true
+        },
+        {
+          "stem": "cradle_floor_foot_1",
+          "file": "cradle_floor_foot_1.stl",
+          "sha256": "c8789aa8412b5357e175b3a3a84f3bab812e2e6efa7258790e0dcd4a86a7d220",
+          "bounds": [
+            [
+              200.0,
+              90.0,
+              0.0
+            ],
+            [
+              209.9993896484375,
+              99.99563789367676,
+              11.60000228881836
+            ]
+          ],
+          "outer_wall_z": [
+            0.2,
+            11.6
+          ],
+          "present": true
+        },
+        {
+          "stem": "cradle_floor_foot_2",
+          "file": "cradle_floor_foot_2.stl",
+          "sha256": "793cf1f46b7afc34deb46bd0c983541aac6848b44efc3aff9c935f6f62cfeb74",
+          "bounds": [
+            [
+              220.0,
+              90.0,
+              0.0
+            ],
+            [
+              229.99395370483398,
+              99.99688720703125,
+              11.60000228881836
+            ]
+          ],
+          "outer_wall_z": [
+            0.2,
+            11.6
+          ],
+          "present": true
+        },
+        {
+          "stem": "cradle_floor_foot_3",
+          "file": "cradle_floor_foot_3.stl",
+          "sha256": "7ae969a087ef24f1549d36429d3d51f5c46c5f81f358ab47c1d354160ea5a0a1",
+          "bounds": [
+            [
+              240.0,
+              90.0,
+              0.0
+            ],
+            [
+              249.9993896484375,
+              99.99564361572266,
+              11.60000228881836
+            ]
+          ],
+          "outer_wall_z": [
+            0.2,
+            11.6
+          ],
+          "present": true
+        },
+        {
+          "stem": "sony_mount_plate",
+          "file": "sony_mount_plate.stl",
+          "sha256": "4ead93a16d79aef4201b88b20d4baa0215aebaca84dae389bac8adf0c7efd7bc",
+          "bounds": [
+            [
+              180.0,
+              150.0,
+              0.0
+            ],
+            [
+              244.0,
+              234.0,
+              6.650001525878906
+            ]
+          ],
+          "outer_wall_z": [
+            0.2,
+            6.6
+          ],
+          "present": true
+        }
+      ],
+      "support_segments": 1351,
+      "support_segments_inside_blockers": 0,
+      "extrusion_bounds": [
+        22.493,
+        27.436,
+        0.2,
+        252.51,
+        234.561,
+        48.0
+      ],
+      "result": {
+        "error_string": "Success.",
+        "export_time": 428,
+        "layer_height": 0.20000000298023224,
+        "plate_index": 0,
+        "prepare_time": 169,
+        "return_code": 0,
+        "sliced_plates": [
+          {
+            "feature_type_times": {
+              "Bottom surface": 230.03778076171875,
+              "Brim": 168.5153350830078,
+              "Custom": 429.5025329589844,
+              "Flush": 29.0,
+              "Gap infill": 453.20654296875,
+              "Inner wall": 3539.76513671875,
+              "Internal solid infill": 1052.859130859375,
+              "Outer wall": 1867.5762939453125,
+              "Overhang wall": 28.93392562866211,
+              "Sparse infill": 593.1780395507812,
+              "Support": 44.924888610839844,
+              "Support interface": 12.809469223022461,
+              "Support transition": 6.77778959274292,
+              "Top surface": 274.3016662597656,
+              "Travel": 1917.692138671875,
+              "Undefined": 1901.7060546875
+            },
+            "filament_change_times": 0,
+            "filaments": [
+              {
+                "filament_id": "GFG99",
+                "id": 1,
+                "main_used_g": 66.2828369140625,
+                "total_used_g": 66.2828369140625
+              }
+            ],
+            "generate_support_material_time": 252,
+            "id": 1,
+            "infill_time": 174,
+            "layer_filament_change": 0,
+            "main_predication": 10167.4814453125,
+            "make_perimeters_time": 494,
+            "obj_cached_cnt": 0,
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 202.0,
+                  "height": 48.000003814697266,
+                  "width": 224.9993896484375,
+                  "x": 25.0,
+                  "y": 32.0,
+                  "z": -7.348631925196969e-09
+                },
+                "id": 5,
+                "name": "placed.stl",
+                "triangle_count": 22344
+              }
+            ],
+            "sliced_time": 2235,
+            "sliced_time_with_cache": 1139,
+            "total_predication": 10638.9677734375,
+            "triangle_count": 22344,
+            "warning_message": ""
+          }
+        ],
+        "sparse_infill_density": 100.0,
+        "upward_compatible_machine": [
+          "Bambu Lab P1S 0.4 nozzle",
+          "Bambu Lab P1P 0.4 nozzle",
+          "Bambu Lab X1 0.4 nozzle",
+          "Bambu Lab X1E 0.4 nozzle",
+          "Bambu Lab A1 0.4 nozzle",
+          "Bambu Lab H2D 0.4 nozzle",
+          "Bambu Lab H2D Pro 0.4 nozzle",
+          "Bambu Lab H2S 0.4 nozzle",
+          "Bambu Lab P2S 0.4 nozzle",
+          "Bambu Lab H2C 0.4 nozzle",
+          "Bambu Lab X2D 0.4 nozzle",
+          "Bambu Lab A2L 0.4 nozzle"
+        ],
+        "wall_loops": 4
+      },
+      "source_stl_sha256": "cbe321cd28fadade6fdfe526ea6235a1121d86c0cd0b59999c38720db0a1e5e5",
+      "three_mf_sha256": "e4b61692379dfa8889256ea349bbdfb268715efe75157d8a49955a8a85287bc4",
+      "profile": "X1C 0.4 / Generic PETG / 0.2mm / 4 walls / 100% / auto supports45deg / bridge exemption OFF / local blockers"
+    }
+  ],
+  "limitations": [
+    "Physical printing and bridge quality remain unverified; inspect nut pockets and remove accessible support before assembly."
+  ]
+}

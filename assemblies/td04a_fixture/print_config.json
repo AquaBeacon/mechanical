@@ -1,0 +1,7 @@
+{
+  "status": "cable_clearance_r6_fit_prototype",
+  "note": "Rev.6：M4貫通＋ナット・設計ピッチ12 mm（実測前）、穴列基準のケーブル逃げ60 mm。親機下向き・子機上向き。親機外装側M5/20、子機側面M3/20。旧TD04Aモデルは適合判断に使用しない。実物適合・締結・強度は未検証。旧3MFを使用しない。",
+  "notes": [
+    "parts/common/exterior/printed/td04a_bracket_mount/README.md"
+  ]
+}

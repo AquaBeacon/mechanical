@@ -1,0 +1,442 @@
+{
+  "status": "PASS",
+  "separate_spacer_types": 5,
+  "separate_spacer_quantity": 12,
+  "geometry_changed": [
+    "sony_column_right: Y-elongated bearing foot; shaft/key/joint height retained"
+  ],
+  "checks": [
+    {
+      "part": "main_corner_column",
+      "quantity": 4,
+      "extents_mm": [
+        7.0,
+        7.0,
+        14.3
+      ],
+      "valid_step": true,
+      "closed_source_stl": true,
+      "closed_openscad_stl": true,
+      "bbox_difference_mm": 0.0010900497436523438,
+      "volume_relative_differences": [
+        0.00041439010494766687,
+        0.00041461914586174306
+      ],
+      "blocked_bore_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "part": "sony_column_left",
+      "quantity": 2,
+      "extents_mm": [
+        7.0,
+        7.0,
+        42.5
+      ],
+      "valid_step": true,
+      "closed_source_stl": true,
+      "closed_openscad_stl": true,
+      "bbox_difference_mm": 0.0010900497436523438,
+      "volume_relative_differences": [
+        0.00041335884038333726,
+        0.0004135895057824322
+      ],
+      "blocked_bore_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "part": "sony_column_right",
+      "quantity": 2,
+      "extents_mm": [
+        5.4000002,
+        9.0,
+        42.5000001
+      ],
+      "valid_step": true,
+      "closed_source_stl": true,
+      "closed_openscad_stl": true,
+      "bbox_difference_mm": 9.999999999999534e-08,
+      "volume_relative_differences": [
+        0.00024038888874592098,
+        0.00024046632321225627
+      ],
+      "blocked_bore_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "part": "gnss_column_front",
+      "quantity": 2,
+      "extents_mm": [
+        9.0,
+        9.0,
+        32.0
+      ],
+      "valid_step": true,
+      "closed_source_stl": true,
+      "closed_openscad_stl": true,
+      "bbox_difference_mm": 0.0,
+      "volume_relative_differences": [
+        5.4709548422739216e-05,
+        5.474916616518397e-05
+      ],
+      "blocked_bore_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "part": "gnss_column_rear",
+      "quantity": 2,
+      "extents_mm": [
+        8.0,
+        6.000000000000001,
+        32.0
+      ],
+      "valid_step": true,
+      "closed_source_stl": true,
+      "closed_openscad_stl": true,
+      "bbox_difference_mm": 4.440892098500626e-16,
+      "volume_relative_differences": [
+        0.00010189564726848788,
+        0.00010196943818372232
+      ],
+      "blocked_bore_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "label": "main_column_0",
+      "lower_seat_gap_mm": 0.0,
+      "upper_seat_gap_mm": 0.0,
+      "floor_bearing_area_mm2": 6.123428971598585,
+      "collisions": [],
+      "passed": true
+    },
+    {
+      "label": "main_column_1",
+      "lower_seat_gap_mm": 0.0,
+      "upper_seat_gap_mm": 0.0,
+      "floor_bearing_area_mm2": 6.123428971591126,
+      "collisions": [],
+      "passed": true
+    },
+    {
+      "label": "main_column_2",
+      "lower_seat_gap_mm": 0.0,
+      "upper_seat_gap_mm": 0.0,
+      "floor_bearing_area_mm2": 6.1234289715995445,
+      "collisions": [],
+      "passed": true
+    },
+    {
+      "label": "main_column_3",
+      "lower_seat_gap_mm": 0.0,
+      "upper_seat_gap_mm": 0.0,
+      "floor_bearing_area_mm2": 6.12342897159949,
+      "collisions": [],
+      "passed": true
+    },
+    {
+      "label": "sony_column_0",
+      "lower_seat_gap_mm": 0.0,
+      "upper_seat_gap_mm": 0.0,
+      "floor_bearing_area_mm2": 6.123428971599398,
+      "collisions": [],
+      "passed": true
+    },
+    {
+      "label": "sony_column_1",
+      "lower_seat_gap_mm": 0.0,
+      "upper_seat_gap_mm": 0.0,
+      "floor_bearing_area_mm2": 16.74421211257806,
+      "collisions": [],
+      "passed": true
+    },
+    {
+      "label": "sony_column_2",
+      "lower_seat_gap_mm": 0.0,
+      "upper_seat_gap_mm": 0.0,
+      "floor_bearing_area_mm2": 6.123428971592845,
+      "collisions": [],
+      "passed": true
+    },
+    {
+      "label": "sony_column_3",
+      "lower_seat_gap_mm": 0.0,
+      "upper_seat_gap_mm": 0.0,
+      "floor_bearing_area_mm2": 16.74421211257806,
+      "collisions": [],
+      "passed": true
+    },
+    {
+      "label": "gnss_column_0",
+      "lower_seat_gap_mm": 0.0,
+      "upper_seat_gap_mm": 0.0,
+      "floor_bearing_area_mm2": 48.30690541668718,
+      "collisions": [],
+      "passed": true
+    },
+    {
+      "label": "gnss_column_1",
+      "lower_seat_gap_mm": 0.0,
+      "upper_seat_gap_mm": 0.0,
+      "floor_bearing_area_mm2": 48.30690541668772,
+      "collisions": [],
+      "passed": true
+    },
+    {
+      "label": "gnss_column_2",
+      "lower_seat_gap_mm": 0.0,
+      "upper_seat_gap_mm": 0.0,
+      "floor_bearing_area_mm2": 16.804126111075462,
+      "collisions": [],
+      "passed": true
+    },
+    {
+      "label": "gnss_column_3",
+      "lower_seat_gap_mm": 0.0,
+      "upper_seat_gap_mm": 0.0,
+      "floor_bearing_area_mm2": 16.80412611104287,
+      "collisions": [],
+      "passed": true
+    },
+    {
+      "label": "pwr_mount_0_integral_support",
+      "host": "plate",
+      "support_top_z_mm": 28.25,
+      "missing_material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "label": "pwr_mount_1_integral_support",
+      "host": "plate",
+      "support_top_z_mm": 28.25,
+      "missing_material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "label": "pwr_mount_2_integral_support",
+      "host": "plate",
+      "support_top_z_mm": 28.25,
+      "missing_material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "label": "pwr_mount_3_integral_support",
+      "host": "plate",
+      "support_top_z_mm": 28.25,
+      "missing_material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "label": "tx_mount_0_integral_support",
+      "host": "plate",
+      "support_top_z_mm": 24.75,
+      "missing_material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "label": "tx_mount_1_integral_support",
+      "host": "plate",
+      "support_top_z_mm": 24.75,
+      "missing_material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "label": "tx_mount_2_integral_support",
+      "host": "plate",
+      "support_top_z_mm": 24.75,
+      "missing_material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "label": "tx_mount_3_integral_support",
+      "host": "plate",
+      "support_top_z_mm": 24.75,
+      "missing_material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "label": "lipo_ret_mount_0_integral_support",
+      "host": "plate",
+      "support_top_z_mm": 20.0,
+      "missing_material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "label": "lipo_ret_mount_1_integral_support",
+      "host": "plate",
+      "support_top_z_mm": 20.0,
+      "missing_material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "label": "lipo_ret_mount_2_integral_support",
+      "host": "plate",
+      "support_top_z_mm": 20.0,
+      "missing_material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "label": "lipo_ret_mount_3_integral_support",
+      "host": "plate",
+      "support_top_z_mm": 20.0,
+      "missing_material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "label": "main_mount_0_integral_support",
+      "host": "main_mount_plate",
+      "support_top_z_mm": 41.95,
+      "missing_material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "label": "main_mount_1_integral_support",
+      "host": "main_mount_plate",
+      "support_top_z_mm": 41.95,
+      "missing_material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "label": "main_mount_2_integral_support",
+      "host": "main_mount_plate",
+      "support_top_z_mm": 41.95,
+      "missing_material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "label": "main_mount_3_integral_support",
+      "host": "main_mount_plate",
+      "support_top_z_mm": 41.95,
+      "missing_material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "label": "sony_mount_0_integral_support",
+      "host": "sony_mount_plate",
+      "support_top_z_mm": 65.55,
+      "missing_material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "label": "sony_mount_1_integral_support",
+      "host": "sony_mount_plate",
+      "support_top_z_mm": 65.55,
+      "missing_material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "label": "sony_mount_2_integral_support",
+      "host": "sony_mount_plate",
+      "support_top_z_mm": 65.55,
+      "missing_material_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "label": "sony_mount_3_integral_support",
+      "host": "sony_mount_plate",
+      "support_top_z_mm": 65.55,
+      "missing_material_mm3": 0.0,
+      "passed": true
+    }
+  ],
+  "all_print_meshes": [
+    {
+      "part": "floor_plate",
+      "closed_scad_stl": true,
+      "bbox_difference_mm": 2.5258789371207513e-07,
+      "volume_relative_difference": 2.0073218653867767e-06
+    },
+    {
+      "part": "battery_base",
+      "closed_scad_stl": true,
+      "bbox_difference_mm": 1.0000000116860974e-07,
+      "volume_relative_difference": 1.4557975256319656e-05
+    },
+    {
+      "part": "parent_lipo_retainer_lid_slide",
+      "closed_scad_stl": true,
+      "bbox_difference_mm": 1.5258789005656581e-06,
+      "volume_relative_difference": 6.868931117086219e-08
+    },
+    {
+      "part": "main_corner_column",
+      "closed_scad_stl": true,
+      "bbox_difference_mm": 0.0010900497436523438,
+      "volume_relative_difference": 0.00041461914586174306
+    },
+    {
+      "part": "main_mount_plate",
+      "closed_scad_stl": true,
+      "bbox_difference_mm": 0.0006999969482421875,
+      "volume_relative_difference": 2.235030266763899e-05
+    },
+    {
+      "part": "sony_mount_plate",
+      "closed_scad_stl": true,
+      "bbox_difference_mm": 3.0517578011313162e-06,
+      "volume_relative_difference": 4.505003332170825e-05
+    },
+    {
+      "part": "sony_column_left",
+      "closed_scad_stl": true,
+      "bbox_difference_mm": 0.0010900497436523438,
+      "volume_relative_difference": 0.0004135895057824322
+    },
+    {
+      "part": "sony_column_right",
+      "closed_scad_stl": true,
+      "bbox_difference_mm": 9.999999999999534e-08,
+      "volume_relative_difference": 0.00024046632321225627
+    },
+    {
+      "part": "gnss_universal_carrier",
+      "closed_scad_stl": true,
+      "bbox_difference_mm": 7.629394573882564e-07,
+      "volume_relative_difference": 1.4211853068470838e-05
+    },
+    {
+      "part": "gnss_column_front",
+      "closed_scad_stl": true,
+      "bbox_difference_mm": 0.0,
+      "volume_relative_difference": 5.474916616518397e-05
+    },
+    {
+      "part": "gnss_column_rear",
+      "closed_scad_stl": true,
+      "bbox_difference_mm": 4.440892098500626e-16,
+      "volume_relative_difference": 0.00010196943818372232
+    },
+    {
+      "part": "ann_mb1_internal_rack",
+      "closed_scad_stl": true,
+      "bbox_difference_mm": 0.000499725341796875,
+      "volume_relative_difference": 1.3077060349978985e-06
+    },
+    {
+      "part": "ann_mb1_coax_ring",
+      "closed_scad_stl": true,
+      "bbox_difference_mm": 0.004100899560548044,
+      "volume_relative_difference": 4.724033924112106e-05
+    }
+  ],
+  "source_hashes": {
+    "parts/parent/interior/printed/parent_hand_service/main_corner_column.step": "dcd77102bed06da88fdf88cc8ded374f27514b06947aba9b7450153a116c56bf",
+    "parts/parent/interior/printed/parent_hand_service/main_corner_column.stl": "bab88a92e5fd5463a3553ecc27fdb768460b6caa3b0541a3a0bdd9a901889da6",
+    "parts/parent/interior/printed/parent_hand_service/main_corner_column.scad": "ee28774309b78acbacb82066624f879ffd2105371583c4943023e599e42d9e05",
+    "parts/common/interior/printed/stack_spacers/sony_column_left.step": "b227a017cbc766faf46bcbf10c9ee0d621a0106ebe5ab8710f443edf174446ec",
+    "parts/common/interior/printed/stack_spacers/sony_column_left.stl": "59a9d760f00cf5526687c3eb7d6f2d97921d726efaffad8bfe43f1cc30bc0470",
+    "parts/common/interior/printed/stack_spacers/sony_column_left.scad": "ad61ce27406029bd0fc0922e254b669986574ebf4604f9827ba467a811b792f5",
+    "parts/common/interior/printed/stack_spacers/sony_column_right.step": "e230ecf4c901752155c1b62986260f38269997f1d9ed76ed5946852943ca19f5",
+    "parts/common/interior/printed/stack_spacers/sony_column_right.stl": "9864ff38c39a9b6ccd1971b60f0a5f6c00991598f5d8708a42ab74db1c24c133",
+    "parts/common/interior/printed/stack_spacers/sony_column_right.scad": "7c5fda91d9870fc81f8611a3c270480f612ca266d1818421cd63dcd9b44874eb",
+    "parts/parent/interior/printed/gnss_universal_carrier/gnss_column_front.step": "62889132d19ae678a4648693e94eb7afaa61ce84c89646b3361151682ea12477",
+    "parts/parent/interior/printed/gnss_universal_carrier/gnss_column_front.stl": "15abf299528403fd8007517b81d2e16cbdab41d3d41dbcfdcc08a8f984d1d8ad",
+    "parts/parent/interior/printed/gnss_universal_carrier/gnss_column_front.scad": "dd2a7154847c00e3c2c74d311b4022235a9a8ca35b22258d019631817df19ec9",
+    "parts/parent/interior/printed/gnss_universal_carrier/gnss_column_rear.step": "1aa233e310a312d16e505d4976cb1fa4b84a8998d68fcc062c9454caeebbb966",
+    "parts/parent/interior/printed/gnss_universal_carrier/gnss_column_rear.stl": "43774659e7c774822ee86763a56d2576e78154baaf1702da33c70f352939153e",
+    "parts/parent/interior/printed/gnss_universal_carrier/gnss_column_rear.scad": "f7fde78884d7c5446bb6ae95cc49a146c09d98b765e714e818c57b3c0a4b7f94"
+  },
+  "limitations": [
+    "Physical fit, torque, creep and wave strength remain unverified.",
+    "Legacy circular 3.45 mm spacer bores retained with existing fits; no printed threads."
+  ]
+}

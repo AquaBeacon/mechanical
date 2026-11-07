@@ -18,7 +18,7 @@ Mitou26 AquaBeacon の機体 (筐体・機構パーツ) の 3D 設計リポジ�
 - 機体設計の全体像 → [docs/AquaBeacon_機体設計.md](docs/AquaBeacon_機体設計.md)
 - 購入テザー30 mの輸送・保管リール → [設計・印刷・組立](parts/common/jigs/tether_storage_reel/tether_storage_reel.md)
 - テザー30 m・一つの収納部／両側開口／印刷爪で着脱するカバー → [最新試作・印刷・組立](parts/common/jigs/tether_open_reel/tether_open_reel.md)
-- 親機外装・小型1プレート版（X1 Carbon、5個を配置済み） → [印刷・組立](assemblies/parent_oneplate/README.md)
+- 親機外装・位置決めフレーム（X1 Carbon、2プレート） → [印刷・組立](assemblies/parent_exterior/README.md)
 - 親機外装・従来M3直接固定版 → [設計](assemblies/parent_direct/README.md)
 - 親機外装・従来一体化版 → [設計](assemblies/parent_light/README.md)
 - 親機外装・従来の開放フレーム版 → [設計](assemblies/parent_open/README.md)
@@ -50,7 +50,7 @@ mechanical/
 └── outputs/                      従来の補助出力・履歴
 ```
 
-設計元は1か所だけ管理し、assembly側には生成したSTLを配置します。基板・購入品は印刷一式に含めません。確認画像は各フォルダの `_work/images/` に集約しています。
+設計元は1か所だけ管理し、assembly側には生成したSTLを配置します。基板・購入品は印刷一式に含めません。確認画像は各フォルダの `_work/images/` に集約しています。メーカーが公開した原本画像は `ref/` に保持し、整理ツールの移動対象から除外します。
 
 設計元が取り込む最適化メッシュ等は、部品内の `spec/` に保持し、`manufacturing.json` の `source_dependencies` へ列挙します。これらの更新後も、印刷STLの再生成とassemblyの同期が必要です。
 
@@ -150,3 +150,6 @@ PWR裏面リードの干渉を修正。SPRESENSE簡易モデルと支持部、�
 CAD・印刷データの取得にはGit LFSを使用します。Windowsでは `git clone -c core.longpaths=true https://github.com/AquaBeacon/mechanical.git` で長いパスを有効にしてください。詳しい取得手順は開発ガイドに記載しています。
 
 [開発ガイド](DEVELOPMENT.md)にセットアップ・入口・確認方法をまとめています。自作部分は [Apache License 2.0](LICENSE)。[第三者素材・依存の扱い](THIRD_PARTY.md)も参照してください。
+
+
+2026-10-24：`assembly_parts.py sync` のPRINT.mdでは、`*_support_blocker.stl` を支持材禁止として案内する。他のモディファイアは従来の局所100%指定。どちらも単体印刷せず、ホスト部品と同じ変換・相対座標を保つ。

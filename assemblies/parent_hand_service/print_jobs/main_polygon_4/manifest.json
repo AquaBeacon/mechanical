@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "height_mm": 14.3,
+  "outer_sides": 6,
+  "outer_envelope_diameter_mm": 7.0,
+  "bore_sides": 8,
+  "bore_inscribed_diameter_mm": 3.45,
+  "outer_chamfer_mm": 0.1,
+  "mouth_chamfer_mm": 0.15,
+  "quantity": 4,
+  "spacing_mm": 12.0,
+  "source": "spec/build_parent_main_polygon.py",
+  "reference": "parts/parent/interior/printed/parent_hand_service/main_corner_column.step",
+  "reference_sha256": "dcd77102bed06da88fdf88cc8ded374f27514b06947aba9b7450153a116c56bf",
+  "stl": "assemblies/parent_hand_service/print_jobs/main_polygon_4/MAIN_spacers_polygon_4.stl",
+  "sha256": "d2337ecd29a6f39cb154ff4f5d6e9636b978634bb647f77211139211d6c3e2f0",
+  "outputs": {
+    "main_corner_column_polygon": {
+      "valid_step": true,
+      "solids": 1,
+      "closed_stl": true,
+      "independent_scad_bbox_difference_mm": 1.1078878876524811e-06,
+      "size_mm": [
+        6.900000000000005,
+        6.062177826491071,
+        14.3000002
+      ]
+    },
+    "main_corner_column_polygon_4": {
+      "valid_step": true,
+      "solids": 4,
+      "closed_stl": true,
+      "independent_scad_bbox_difference_mm": 2.2719773575374802e-05,
+      "size_mm": [
+        18.900000000000006,
+        18.062177826491073,
+        14.3000002
+      ]
+    }
+  },
+  "mounting_checks": [
+    {
+      "label": "main_column_0",
+      "floor_contact_area_mm2": 2.435152792803081,
+      "overlap_mm3": 0.0,
+      "upper_gap_mm": 0.0
+    },
+    {
+      "label": "main_column_1",
+      "floor_contact_area_mm2": 2.4351527927881547,
+      "overlap_mm3": 0.0,
+      "upper_gap_mm": 0.0
+    },
+    {
+      "label": "main_column_2",
+      "floor_contact_area_mm2": 2.4351527928051206,
+      "overlap_mm3": 0.0,
+      "upper_gap_mm": 0.0
+    },
+    {
+      "label": "main_column_3",
+      "floor_contact_area_mm2": 2.4351527928051016,
+      "overlap_mm3": 0.0,
+      "upper_gap_mm": 0.0
+    }
+  ],
+  "print_pose": "All flat bottom faces on Z0, bore axes vertical; four separate pieces, no runner.",
+  "permitted_sharp_edges": "The eight longitudinal bore corners retain the requested functional octagonal profile.",
+  "limitations": [
+    "Physical fit/torque/creep not verified.",
+    "Existing full twelve-spacer 3MF is the previous circular MAIN variant."
+  ],
+  "slice_check": {
+    "status": "PASS",
+    "printer": "X1C 0.4 nozzle",
+    "material": "Generic PETG",
+    "layer_mm": 0.2,
+    "walls": 4,
+    "infill_percent": 100,
+    "auto_support": "45 deg, all surfaces, bridges included",
+    "support_extrusion": false,
+    "filament_g": 1.8672661781311035,
+    "seconds": 1653.337890625,
+    "source_sha256": "d2337ecd29a6f39cb154ff4f5d6e9636b978634bb647f77211139211d6c3e2f0",
+    "warnings": ""
+  },
+  "repository_pack_note": "Full existing assembly pack has unmanaged parts/main_corner_column.3mf; user file left in place. Requested four-piece STL passed independent geometry, mounting, mesh and slicing checks."
+}

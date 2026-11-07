@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "source_stl_sha256": "70050f1e7203d89f40881fb87e224ae72948da575edf1fa21fdeff2d9990f214",
+  "three_mf_sha256": "2495281fb9dfb422212993883e98e12448a38e50789d6260af9e9aa77133ebb8",
+  "material": "Generic PETG",
+  "printer": "X1 Carbon 0.4mm",
+  "layer_mm": 0.2,
+  "walls": 4,
+  "infill_percent": 100,
+  "support_detection": "normal(auto),45deg,all surfaces,bridge exemption disabled",
+  "support_extrusion_moves": 104,
+  "filament_g": 9.34128475189209,
+  "prediction_seconds": 1828.59765625,
+  "model_top_layer_mm": 6.6,
+  "warnings": ""
+}

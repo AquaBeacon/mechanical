@@ -88,35 +88,60 @@ def rail(side,travel=0):
     if side:yz=[(55-y,z) for y,z in reversed(yz)]
     ps=[v(RAIL_FRONT-travel,y,z) for y,z in yz]
     return Part.Face(Part.makePolygon(ps+[ps[0]])).extrude(v(RAIL_END-RAIL_FRONT+travel,0,0))
+# Four small vertical locating pins sit on the side walls, clear of the foam.
+# Clearance is 0.30 mm per side. No rail, snap, or sliding motion is needed.
+SCREW_XY=(50.0,5.0)
+PIN_X=(12.0,91.0)
+PIN_Y=(5.0,50.0)
+PIN_SIZE=1.4
+PIN_HEIGHT=2.0
+PIN_CLEAR=0.30
+
+def top_pins(base):
+    for x in PIN_X:
+        for y in PIN_Y:
+            pin=box(x-PIN_SIZE/2,y-PIN_SIZE/2,CAP_Z-.2,PIN_SIZE,PIN_SIZE,PIN_HEIGHT+.2)
+            # Finish pin corners before fusion, with the lower bevel embedded
+            # in the boss; the straight fit faces remain at full size.
+            pin=pin.makeChamfer(.1,sharp_edges(pin))
+            base=base.fuse(pin)
+    return base.removeSplitter()
+
 def lid_blank():
     body=box(RAIL_FRONT,5.1,0,RAIL_END-RAIL_FRONT,44.8,LID_T)
-    ear=box(8,1,0,8,7.3,LID_T)
+    ear=box(46,1,0,8,7.3,LID_T)
+    for x in PIN_X:
+        for y in PIN_Y:
+            ear=ear.fuse(box(x-4,y-4,0,8,8,LID_T))
+    # Ribs rise above the lid; its bottom remains flat for bed contact.
+    for y in (12,42):
+        body=body.fuse(box(8,y,2.95,88,1.5,3.05))
     return body.fuse(ear).removeSplitter()
+
 def lid(bolts):
     s=lid_blank()
-    for side in [0,1]:s=s.fuse(rail(side))
-    s=s.removeSplitter();edges=sharp_edges(s)
     for amount in [EDGE,.1,.05]:
         try:
-            candidate=s.makeChamfer(amount,edges).removeSplitter()
+            candidate=s.makeChamfer(amount,sharp_edges(s)).removeSplitter()
             if candidate.isValid() and len(candidate.Solids)==1:
-                s=candidate;print('FULL SLIDE LID CHAMFER',amount,flush=True);break
+                s=candidate;break
         except Part.OCCError:pass
-    else:raise RuntimeError('Cannot finish child-derived lid')
-    x,y=bolts[SCREW_INDEX];r=3.45/2/math.cos(math.pi/8)
+    else:raise RuntimeError('Cannot finish top lift lid')
+    x,y=SCREW_XY;r=3.45/2/math.cos(math.pi/8)
     ps=[v(x+r*math.cos(math.pi/8+i*math.pi/4),y+r*math.sin(math.pi/8+i*math.pi/4),-.1) for i in range(8)]
     cutter=Part.Face(Part.makePolygon(ps+[ps[0]])).extrude(v(0,0,LID_T+.2))
+    for px in PIN_X:
+        for py in PIN_Y:
+            d=PIN_SIZE+2*PIN_CLEAR
+            cutter=cutter.fuse(box(px-d/2,py-d/2,-.1,d,d,LID_T+.2))
     s=s.cut(cutter).removeSplitter()
     edges=[e for e in sharp_edges(s) if Part.Vertex(e.valueAt((e.FirstParameter+e.LastParameter)/2)).distToShape(cutter)[0]<1e-5]
-    s=s.makeChamfer(EDGE,edges).removeSplitter()
-    assert s.isValid() and len(s.Solids)==1
-    return s
+    for amount in [EDGE,.1,.05]:
+        try:
+            out=s.makeChamfer(amount,edges).removeSplitter()
+            if out.isValid() and len(out.Solids)==1:return out
+        except Part.OCCError:pass
+    raise RuntimeError('Cannot finish lid openings')
+
 def lid_boxes(bolts):
-    parts=[lid_blank(),rail(0),rail(1)]
-    for side in [0,1]:
-        y=7.8 if side==0 else 46.1
-        parts.append(box(RAIL_FRONT,y-EDGE,-EDGE,RAIL_END-RAIL_FRONT,1.1+2*EDGE,2*EDGE+.1))
-        y=7.8 if side==0 else 47.2
-        parts.append(box(RAIL_FRONT,y-EDGE,-.9-EDGE,RAIL_END-RAIL_FRONT,2*EDGE,2*EDGE))
-    for x in [8,16]:parts.append(box(x-EDGE,5.1-EDGE,0,2*EDGE,2*EDGE,LID_T))
-    return parts
+    return [lid_blank()]

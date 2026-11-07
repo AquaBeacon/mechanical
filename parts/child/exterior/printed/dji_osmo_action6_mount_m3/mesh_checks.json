@@ -20,20 +20,20 @@
   "camera_mount": {
     "bounds": [
       [
-        -50.0,
+        -44.0,
         -52.45,
         0.0
       ],
       [
-        50.0,
-        35.0,
-        84.5
+        44.0,
+        29.4914,
+        84.4914
       ]
     ],
-    "volume_cm3": 124.78070190780385,
+    "volume_cm3": 90.30877116352409,
     "watertight": true,
     "components": 1,
-    "sha256": "d583ef452f596bcad143fe4bffdd2cb6411b786025105ef01480581538405f38"
+    "sha256": "57dbeffda4eb90ef0b57385a47d9718eeebd82d49aed7a054cc9e7a57f51052a"
   },
-  "mount_volume_reduction_percent": 13.466896228086057
+  "mount_volume_reduction_percent": 37.372541209286744
 }

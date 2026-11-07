@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "assembly": "td04a_fixture",
+  "release_status": "cable_clearance_r6_fit_prototype",
+  "note": "Rev.6：M4貫通＋ナット・設計ピッチ12 mm（実測前）、穴列基準のケーブル逃げ60 mm。親機下向き・子機上向き。親機外装側M5/20、子機側面M3/20。旧TD04Aモデルは適合判断に使用しない。実物適合・締結・強度は未検証。旧3MFを使用しない。",
+  "source_hashes": {
+    "assemblies/td04a_fixture/placement.json": "f09ae38d89ba608c11e693feaec0b828c388b83ff5e06e028c6f6ad1a2a1a530",
+    "assemblies/td04a_fixture/print_config.json": "52ac3e1189f49e5283cf33c15a9da688ace4e3806d163362000375ab0d9d1e9a",
+    "assemblies/td04a_fixture/README.md": "83122d4a2e87f2026a699bbc00c5a1ec0d46d7aae9095f60c2cdc7a6f5bf3bdd",
+    "parts/common/exterior/printed/td04a_bracket_mount/manufacturing.json": "4bbf14a8ed05a52f488ec73c1377db06197f489a7107055fe0da7b9957dc4d6a",
+    "parts/common/exterior/printed/td04a_bracket_mount/README.md": "c1a5dde5ed4fd478e57f502808cc933fe3cad82f8ab1ab3c2cd36f555eb014f8",
+    "parts/common/exterior/printed/td04a_bracket_mount/td04a_bracket_mount.scad": "d0d4d6f9f8198f9aedd328f6636addfef1025592e424ea4ed8786d37d0077687",
+    "parts/common/exterior/printed/td04a_bracket_mount/variants.txt": "2d6cde72ba2ef3076a6bb10dcbe6faf0697e04ca88afbff2269165761dfc8b91",
+    "scad/lib/ballast_plate_b_interface.scad": "4e8e5e0e5d35d2c94e5f896e323df672839312cd456e7e8d7e054e698b3255c1",
+    "scad/lib/child_horizontal_plate_interfaces.scad": "db49ea81e45f8d88b9aae1778b22de1feb9f97576a4456a5c33a6b21dcc467c8",
+    "scad/lib/edge_finished_profiles.scad": "595961f57ef1f293e1d1f9e6e531934b20fc02cf555b7ba86ed8c6f1a183f7f6",
+    "scad/lib/td04a_interface.scad": "7a9064eea924014b220114faf73ea4276332e93ffbc3bdf89e71816d432443b5",
+    "scad/lib/util.scad": "13fed014ff5835aef1559d05600e2b4b0e284c93a4325485f4ef1be3ede6ddb3",
+    "scad/lib/wte4_endcap_key_profile.scad": "f24066a0fb5ffb8a9de2226e81a65d6915cdb433e8fa169d1b53d8a9fb83b3aa",
+    "scad/lib/wte4_interface.scad": "9308b1dd1f5546cd407258a65c0f2a4875dcb0b8c95e0d6f21e66ae4ca9d5881",
+    "spec/check_td04a_exteriors.py": "25ed2f491c35b575c4aa149c53693357d06a29b53c81176be64e4864770469a4",
+    "spec/check_td04a_fixture.py": "a88d317d0c5d84a3c65248f5c58df6eeb6473d4c2b063510bfa7abfdb9ed5d89",
+    "spec/install_td04a_fixture.py": "e79777fe8999e6c379c99d4039a14bd97ce2d2976ac4853b95f9783b7737426a",
+    "spec/rebuild_td04a_fixture.py": "e7744d9e06a0ad0d6567711da8400528fdeafba889725312f4af5e806aaace63"
+  },
+  "parts": [
+    {
+      "part": "parts/common/exterior/printed/td04a_bracket_mount",
+      "stem": "td04a_bracket_mount_parent_down",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "parent_strap"
+      ],
+      "file": "td04a_bracket_mount_parent_down.stl",
+      "rotation_deg": [
+        0,
+        -90,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/common/exterior/printed/td04a_bracket_mount/td04a_bracket_mount_parent_down.stl",
+      "source_sha256": "607e065bba5681e958a18b9b2bce9d67ec61854c65940044e1089013fb1250db",
+      "sha256": "7e3615ae33610a1c0f8b624127c62481dd551f0632f75fcd7ca334f7d78348c7",
+      "extents_mm": [
+        75.0,
+        42.0,
+        26.0
+      ],
+      "model_to_print": [
+        [
+          6.123233995736766e-17,
+          0.0,
+          -1.0,
+          -6.675719999240719e-06
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -6.67572e-06
+        ],
+        [
+          1.0,
+          0.0,
+          6.123233995736766e-17,
+          13.000000000000005
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    },
+    {
+      "part": "parts/common/exterior/printed/td04a_bracket_mount",
+      "stem": "td04a_bracket_mount_child_side_up",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "child_strap"
+      ],
+      "file": "td04a_bracket_mount_child_side_up.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/common/exterior/printed/td04a_bracket_mount/td04a_bracket_mount_child_side_up.stl",
+      "source_sha256": "1aae2cb308fcd98bb350aa90450496a2f391f3a1073cdff0ea15c33a5585d8d1",
+      "sha256": "5f52f03cabe8c37bf76cab76d8eeeac4a30e57670e71807d308c8d0ca3edb111",
+      "extents_mm": [
+        45.0,
+        26.0,
+        75.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -6.67572e-06
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -6.67572e-06
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl_ascii",
+      "fits_x1c_250": true
+    }
+  ],
+  "modifiers": [],
+  "generated_files": [
+    "td04a_bracket_mount_parent_down.stl",
+    "td04a_bracket_mount_child_side_up.stl",
+    "DESIGN_NOTES.md",
+    "PRINT.md"
+  ],
+  "document_hashes": {
+    "DESIGN_NOTES.md": "f933bf1f17ed698a8870f46e495f8d4e96d924e92be1696da60580c3445e7d13",
+    "PRINT.md": "2cf71ff2e1c82f6e37c70aa6f7ebaf466e73b55e31ad1b19cf578c8825411d56"
+  }
+}

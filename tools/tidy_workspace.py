@@ -43,7 +43,8 @@ def plan():
             if not path.is_file() or path in seen:
                 continue
             rel = path.relative_to(owner)
-            if "_work" in rel.parts:
+            # Manufacturer originals belong in ref/, not generated review images.
+            if "_work" in rel.parts or "ref" in rel.parts:
                 seen.add(path)
                 continue
             # Images at any depth; loose logs/intermediates only at component root.

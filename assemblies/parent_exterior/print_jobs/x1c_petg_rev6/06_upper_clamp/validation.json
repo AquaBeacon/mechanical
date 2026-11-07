@@ -1,0 +1,54 @@
+{
+  "name": "06_upper_clamp",
+  "title": "上側押さえ",
+  "file": "06_upper_clamp/06_upper_clamp.3mf",
+  "sha256": "a88afe8e3e5ce9089bf2596936e6fb902107d34a703a59c54b9a0b56ce54f0e5",
+  "parts": [
+    {
+      "stem": "parent_oneplate_bar",
+      "file": "parent_oneplate_bar.stl",
+      "source_sha256": "8a318e8b2afdead9bf6d6e86ecf20af8f108ffa486d886f0fe10fc2f24ddf6af",
+      "label": "上側押さえ",
+      "saved_bounds_mm": [
+        [
+          6.0,
+          55.00001,
+          0.0
+        ],
+        [
+          250.0,
+          201.00001,
+          20.0
+        ]
+      ]
+    }
+  ],
+  "part_count": 1,
+  "grams": 471.52,
+  "seconds": 32168.0,
+  "layer_mm": 0.2,
+  "wall_loops": "8",
+  "infill": "100%",
+  "brim_mm": 3.0,
+  "support_enable": "1",
+  "material_profile": [
+    "Bambu PETG Basic @BBL X1C"
+  ],
+  "machine": "Bambu Lab X1 Carbon",
+  "gcode_sha256": "4d2113fb3030843d1a0d811c3e34723a674fbd4d92d1d1d29e82d4fc513af9fa",
+  "support_filament_mm": 0,
+  "actual_support_extrusion_moves": 0,
+  "extrusion_bounds_xy_mm": [
+    [
+      3.886,
+      50.886
+    ],
+    [
+      252.114,
+      201.114
+    ]
+  ],
+  "exclusion_hits": 0,
+  "saved_3mf_components": 1,
+  "passed": true
+}

@@ -1,5 +1,12 @@
 # 子機横置きフレーム・側面twist取付規格 Rev.4
 
+## カメラの追加（2026-10-21）
+
+改良camera_mountを再利用した一体Cオスを親機と子機で共用。子機はleft_front、取付足の2穴をそのまま使い、U=-35、C面内90°、中心(-122,95,130)、ノブ軸+Z。メスは同一SCADのcamera_receiverバリアント。C機能面・カム移動・横ボルトは上記Rev.4と同じ。機器の実寸は既存の仮ケース包絡を引き継ぎ、実測済みへ昇格しない。ライト用right_frontの位置とメッシュバイト列は保持。
+
+カメラの静止干渉、持ち手、ケーブル予約、+Zへ45 mmロックボルト抜去、5°刻み60°回転と80 mm外向き抜去、ノブ周囲3 mmを検査。カメラ側の接続板にのみ1.2 mmの局所逃げを加え、元C形状を保持する。詳細・現行数量・印刷条件は[子機外装](../assemblies/child_horizontal_plate_frame/README.md)、[共有カメラ部品](../parts/child/exterior/printed/dji_osmo_action6_mount_m3/README.md)を優先。以下の「カメラ未設計」と数量は2026-10-12時点のライト単独記録。
+
+
 2026-10-12。**CHILD-HORIZONTAL-TWIST-C-R4**。対象は [child_horizontal_plate_frame](../assemblies/child_horizontal_plate_frame/README.md)。フレーム台座とtwistメス、ライト保持半割とtwistオスをそれぞれ一体化。差し込み位置から60°回して停止した位置でライトが上を向き、その横の水平ノブを締める。カメラ・TD04Aも機器治具にCオスを直接組み込む。
 
 表示は [全体SCAD](../assemblies/child_horizontal_plate_frame/child_horizontal_plate_frame_view.scad) または [ライトSCAD](../assemblies/child_horizontal_plate_frame/child_horizontal_plate_frame_light_view.scad) をOpenSCADで開きF5。ライトSCADの `pose="locked"` が固定位置、`pose="entry"` が差し込み位置。`show_frame=false` でライト治具だけ表示する。全体ビューの `show_accessories=true` は生成元の配置JSONで定義する。

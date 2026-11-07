@@ -8,11 +8,12 @@
     "../../../../../spec/export_parent_lipo_retainer.py",
     "../../../../../spec/remesh_parent_gnss_outputs.py",
     "../../../../../scad/lib/parent_battery_slide.py",
-    "../../../../../parts/child/interior/printed/child_vtray_batt_floor/child_vtray_batt_floor.scad"
+    "../../../../../parts/child/interior/printed/child_vtray_batt_floor/child_vtray_batt_floor.scad",
+    "../../../../../spec/build_parent_battery_top_lid.py"
   ],
   "print_rotations_deg": {
     "parent_lipo_retainer_lid_slide": [
-      180,
+      0,
       0,
       0
     ]

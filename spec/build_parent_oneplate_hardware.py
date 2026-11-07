@@ -4,7 +4,7 @@ import os, subprocess
 
 ROOT=Path(__file__).resolve().parents[1]
 PART=ROOT / "parts/common/interior/cots/screw"
-WORK=ROOT / "assemblies/parent_oneplate/_work/logs"
+WORK=ROOT / "assemblies/parent_exterior/_work/logs"
 
 def main():
     WORK.mkdir(parents=True,exist_ok=True)

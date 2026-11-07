@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "source": "parts/parent/exterior/printed/parent_oneplate_camera_qr/parent_oneplate_camera_qr_female.stl",
+  "source_sha256": "1f04ba5750e4c8a503b2bb064d8fc86b79f0df2187241debbba6748c7e0cddbf",
+  "three_mf_sha256": "5dabfb6c816fbb9abb2ff1378bf6e2d0c77b571235829a943d045315e1a94a6b",
+  "layer_mm": 0.1,
+  "enable_support": "1",
+  "support_on_build_plate_only": "1",
+  "support_threshold_angle": "45",
+  "support_feature_sections": 36,
+  "extrusion_bounds_xy_mm": [
+    [
+      94.167,
+      66.08
+    ],
+    [
+      161.833,
+      185.92
+    ]
+  ],
+  "warning_message": "",
+  "seconds": 7991.11474609375,
+  "grams": 40.592464447021484,
+  "material": "Generic PETG",
+  "walls": 6,
+  "infill": "15% gyroid",
+  "limits": [
+    "Physical print and C fit unverified; G2/G3 plotted as chords.",
+    "Camera: remove external rear adapter/post supports before assembly; do not force C contact surfaces."
+  ]
+}

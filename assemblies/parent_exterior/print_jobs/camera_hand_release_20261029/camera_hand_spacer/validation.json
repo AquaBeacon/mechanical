@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "source": "parts/child/exterior/printed/dji_osmo_action6_mount_m3/camera_hand_spacer.stl",
+  "source_sha256": "16446bc6e487034cb3be4eb86ca861a6639f72ab96de481926362591a706b78f",
+  "three_mf_sha256": "4b2229c043738512c0ce0a9b6f2adc0e4ef3b65be19286ab4bb122258b9147c0",
+  "layer_mm": 0.1,
+  "enable_support": "1",
+  "support_on_build_plate_only": "1",
+  "support_threshold_angle": "45",
+  "support_feature_sections": 9,
+  "extrusion_bounds_xy_mm": [
+    [
+      114.457,
+      116.858
+    ],
+    [
+      143.392,
+      135.142
+    ]
+  ],
+  "warning_message": "",
+  "seconds": 1823.05859375,
+  "grams": 2.3152809143066406,
+  "material": "Generic PETG",
+  "walls": 6,
+  "infill": "15% gyroid",
+  "limits": [
+    "Physical print and C fit unverified; G2/G3 plotted as chords.",
+    "Snap-cap nubs, finger fit and physical gripping require inspection on a real print."
+  ]
+}

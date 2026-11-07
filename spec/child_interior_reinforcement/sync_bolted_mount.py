@@ -52,3 +52,7 @@ for name in ('child_interior', 'child_vertical_assembly'):
     data['items'] = items + additions
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(name, len(data['items']), 'items')
+
+# Preserve the later printed-spacer revision after applying the older bolt rules.
+from sync_printed_spacers import main as sync_printed_spacers
+sync_printed_spacers()

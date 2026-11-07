@@ -1,0 +1,16 @@
+{
+  "camera_mount": {
+    "source": "parts\\child\\exterior\\printed\\dji_osmo_action6_mount_m3\\camera_mount.stl",
+    "source_sha256": "a67ca0e237093e1724f4a822c4e1aa427be32e6fda27ff31a343b197841de8ec",
+    "seconds": 11860.794921875,
+    "grams": 107.64639282226562,
+    "warning": "",
+    "support_feature_sections": 0,
+    "material": "Generic PETG",
+    "layer_mm": 0.2,
+    "walls": 6,
+    "infill": "15% gyroid",
+    "orientation": "base down, +Z up",
+    "physical_fit": "unverified"
+  }
+}

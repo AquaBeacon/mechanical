@@ -1,0 +1,60 @@
+{
+    "error_string": "Success.",
+    "export_time": 197,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 48,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Brim": 9.522339820861816,
+                "Custom": 35.13603591918945,
+                "Gap infill": 24.166545867919922,
+                "Inner wall": 446.86065673828125,
+                "Outer wall": 111.89164733886719,
+                "Top surface": 16.45108985900879,
+                "Travel": 155.63572692871094,
+                "Undefined": 140.29415893554688
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFG00",
+                    "id": 1,
+                    "main_used_g": 1.8113632202148438,
+                    "total_used_g": 1.8113632202148438
+                }
+            ],
+            "generate_support_material_time": 6,
+            "id": 1,
+            "infill_time": 10,
+            "layer_filament_change": 0,
+            "main_predication": 764.5650634765625,
+            "make_perimeters_time": 52,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 14.52359676361084,
+                        "height": 10.0,
+                        "width": 16.0,
+                        "x": 120.0,
+                        "y": 120.73821258544922,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "quick_release_prototypes_twist_knob.stl",
+                    "triangle_count": 3744
+                }
+            ],
+            "sliced_time": 301,
+            "sliced_time_with_cache": 218,
+            "total_predication": 784.3289794921875,
+            "triangle_count": 3744,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 100.0,
+    "wall_loops": 8
+}

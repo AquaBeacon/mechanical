@@ -1,0 +1,32 @@
+[
+  {
+    "from": "assemblies/parent_clamped/reference/lid_envelope.stl",
+    "to": "parts\\common\\exterior\\cots\\parent_clamp_hardware\\lid_envelope.stl",
+    "sha256": "e90e1c36f499b53445e38b159c248fe17ebfb97fc3a3eb32e5b57e82ae27bae9"
+  },
+  {
+    "from": "assemblies/parent_clamped/reference/nut_M5.stl",
+    "to": "parts\\common\\exterior\\cots\\parent_clamp_hardware\\nut_M5.stl",
+    "sha256": "2c146c801de3ef3464d97781d6eb52484b84fd8876ec8d1919d2952ceed39167"
+  },
+  {
+    "from": "assemblies/parent_clamped/reference/rod_M5_150.stl",
+    "to": "parts\\common\\exterior\\cots\\parent_clamp_hardware\\rod_M5_150.stl",
+    "sha256": "af7559e178917f49b575a2f0fafa20522c7d93f85a5ac4f99ebe0c665209d372"
+  },
+  {
+    "from": "assemblies/parent_clamped/reference/rubber_pad.stl",
+    "to": "parts\\common\\exterior\\cots\\parent_clamp_hardware\\rubber_pad.stl",
+    "sha256": "a074df105835fc66c5ce25b475fc20a04c8d43760a223419b2c88b263bcd0de7"
+  },
+  {
+    "from": "assemblies/parent_clamped/reference/screw_M4_30.stl",
+    "to": "parts\\common\\exterior\\cots\\parent_clamp_hardware\\screw_M4_30.stl",
+    "sha256": "119c515a17efe27524e073b4bd6880b1cd155fc402c1252c81ab97e2ba2a9b16"
+  },
+  {
+    "from": "assemblies/parent_clamped/reference/washer_M5.stl",
+    "to": "parts\\common\\exterior\\cots\\parent_clamp_hardware\\washer_M5.stl",
+    "sha256": "dd72c46fff5f1b807ca916955ccdba18df542e3f84326f41d7b56f9b74aab622"
+  }
+]

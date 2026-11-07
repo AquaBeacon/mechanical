@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "source": "parts/child/exterior/printed/dji_osmo_action6_mount_m3/camera_rotary_spacer.stl",
+  "source_sha256": "c0e10e552d9f5398f998465efec25c8cf781da6ad9ecf8212258f686f9ebbf42",
+  "three_mf_sha256": "1fc440d7e06f6c41995bc52d7861565b128298f124680a6e3e82b1e77c27e696",
+  "layer_mm": 0.1,
+  "enable_support": "1",
+  "support_on_build_plate_only": "1",
+  "support_threshold_angle": "45",
+  "support_feature_sections": 0,
+  "extrusion_bounds_xy_mm": [
+    [
+      116.858,
+      116.858
+    ],
+    [
+      139.142,
+      135.142
+    ]
+  ],
+  "warning_message": "",
+  "seconds": 1794.029296875,
+  "grams": 1.7654117345809937,
+  "material": "Generic PETG",
+  "walls": 6,
+  "infill": "15% gyroid",
+  "limits": [
+    "Physical print and C fit unverified; G2/G3 plotted as chords.",
+    "Camera: remove external rear adapter/post supports before assembly; do not force C contact surfaces."
+  ]
+}

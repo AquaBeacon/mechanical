@@ -1,0 +1,314 @@
+{
+  "passed": true,
+  "plates": [
+    {
+      "plate": 1,
+      "passed": true,
+      "members": [
+        {
+          "name": "main_service_frame",
+          "sha256": "01f2c6e89b82dd7e3dba5904af78f30c455d80fafe6e5f55b7cbb1f2e7fbdc6b",
+          "bounds": [
+            [
+              25.0,
+              32.0,
+              0.0
+            ],
+            [
+              158.5,
+              124.49972534179688,
+              17.39999771118164
+            ]
+          ],
+          "first_model_layer_mm": 0.2,
+          "last_model_layer_mm": 17.4
+        },
+        {
+          "name": "antenna_service_shelf",
+          "sha256": "8ffd62d8fd79cbfe8eb74d37ad85782497e605541c4eaef8aed95ddc51e425f0",
+          "bounds": [
+            [
+              25.0,
+              142.0,
+              0.0
+            ],
+            [
+              157.39999389648438,
+              214.0,
+              22.400001525878906
+            ]
+          ],
+          "first_model_layer_mm": 0.2,
+          "last_model_layer_mm": 22.4
+        },
+        {
+          "name": "power_adapter",
+          "sha256": "cb859d498fb00abb908bdf269c324bbeca24097e96c93a25534379b23e2ebc98",
+          "bounds": [
+            [
+              165.0,
+              32.0,
+              0.0
+            ],
+            [
+              247.99504852294922,
+              141.6983642578125,
+              5.5
+            ]
+          ],
+          "first_model_layer_mm": 0.2,
+          "last_model_layer_mm": 5.6
+        }
+      ],
+      "support_paths": 0,
+      "sha256": "fa6b82afc031d9a5698946a3816c71abc48d5aa5f5a04280308499808f3fd829",
+      "profiles": "X1C / 0.4 / Generic PETG / 0.2mm / 4 walls / 100% / supports auto45deg / bridges included / local bore and nut blockers"
+    },
+    {
+      "plate": 2,
+      "passed": true,
+      "members": [
+        {
+          "name": "ann_mb1_coax_ring_service",
+          "sha256": "56b480c603322dbb065b6c9595527a700eb535a8f5ca5e5c7ccef26e9cebda58",
+          "bounds": [
+            [
+              25.0,
+              32.0,
+              0.0
+            ],
+            [
+              155.98428344726562,
+              137.98226928710938,
+              14.0
+            ]
+          ],
+          "first_model_layer_mm": 0.2,
+          "last_model_layer_mm": 14.0
+        },
+        {
+          "name": "gnss_fixed_column_0",
+          "sha256": "64ae79cf506ce13fe6aaf4fc1ed101f8a289b934a8ad16219c851dbb596d3599",
+          "bounds": [
+            [
+              180.0,
+              32.0,
+              0.0
+            ],
+            [
+              189.0,
+              41.0,
+              48.000003814697266
+            ]
+          ],
+          "first_model_layer_mm": 0.2,
+          "last_model_layer_mm": 48.0
+        },
+        {
+          "name": "gnss_fixed_column_1",
+          "sha256": "2301f4cf6b42ce4329d369621078ba5fad79f97b5b42ef28259dd885beb893af",
+          "bounds": [
+            [
+              200.0,
+              32.0,
+              0.0
+            ],
+            [
+              209.0,
+              41.0,
+              48.000003814697266
+            ]
+          ],
+          "first_model_layer_mm": 0.2,
+          "last_model_layer_mm": 48.0
+        },
+        {
+          "name": "gnss_fixed_column_2",
+          "sha256": "dd9de04e803b0d8cd1653a9a154945ed9ddadfd967e44631bf7f05edf365d181",
+          "bounds": [
+            [
+              220.0,
+              32.0,
+              0.0
+            ],
+            [
+              228.0,
+              38.0,
+              48.000003814697266
+            ]
+          ],
+          "first_model_layer_mm": 0.2,
+          "last_model_layer_mm": 48.0
+        },
+        {
+          "name": "gnss_sony_shared_column",
+          "sha256": "3d9f550c34f565006a342ec8c013b4cb4bb756e01859d1cdd9a91fc26d89bcfd",
+          "bounds": [
+            [
+              232.0,
+              32.0,
+              0.0
+            ],
+            [
+              248.5,
+              47.0,
+              48.000003814697266
+            ]
+          ],
+          "first_model_layer_mm": 0.2,
+          "last_model_layer_mm": 48.0
+        },
+        {
+          "name": "sony_fixed_column_0",
+          "sha256": "ec12ba2b0e707e6b97e511b18f3e5861a29baa0322bd122e44d1f3d61a154573",
+          "bounds": [
+            [
+              180.0,
+              60.0,
+              0.0
+            ],
+            [
+              187.0,
+              69.0,
+              42.5
+            ]
+          ],
+          "first_model_layer_mm": 0.2,
+          "last_model_layer_mm": 42.6
+        },
+        {
+          "name": "sony_fixed_column_1",
+          "sha256": "38310cda0170e42853830f5719cb3f55fdff72a54f5151605b38e9c5921a4149",
+          "bounds": [
+            [
+              200.0,
+              60.0,
+              0.0
+            ],
+            [
+              205.39999389648438,
+              69.0,
+              42.5
+            ]
+          ],
+          "first_model_layer_mm": 0.2,
+          "last_model_layer_mm": 42.6
+        },
+        {
+          "name": "sony_fixed_column_3",
+          "sha256": "e9e5ca2c1f6ad10d27c0bd610c1e76ae26d65b8f1bcfae91a7fc933176e0ae7f",
+          "bounds": [
+            [
+              220.0,
+              60.0,
+              0.0
+            ],
+            [
+              225.39999389648438,
+              69.0,
+              42.5
+            ]
+          ],
+          "first_model_layer_mm": 0.2,
+          "last_model_layer_mm": 42.6
+        },
+        {
+          "name": "sony_mount_plate",
+          "sha256": "4ead93a16d79aef4201b88b20d4baa0215aebaca84dae389bac8adf0c7efd7bc",
+          "bounds": [
+            [
+              180.0,
+              150.0,
+              0.0
+            ],
+            [
+              244.0,
+              234.0,
+              6.650001525878906
+            ]
+          ],
+          "first_model_layer_mm": 0.2,
+          "last_model_layer_mm": 6.6
+        },
+        {
+          "name": "cradle_floor_foot_0",
+          "sha256": "463a99c503152cb4ba1ab12c44c31d5e3a233b8b5767f75c41c608d1469fd83f",
+          "bounds": [
+            [
+              180.0,
+              90.0,
+              0.0
+            ],
+            [
+              189.23879623413086,
+              99.23879623413086,
+              11.60000228881836
+            ]
+          ],
+          "first_model_layer_mm": 0.2,
+          "last_model_layer_mm": 11.6
+        },
+        {
+          "name": "cradle_floor_foot_1",
+          "sha256": "e779d15a4c22ae3fc3288de32074afd28221d0313e345a28c2f4309f2af4cf10",
+          "bounds": [
+            [
+              200.0,
+              90.0,
+              0.0
+            ],
+            [
+              209.23880004882812,
+              99.23879623413086,
+              11.60000228881836
+            ]
+          ],
+          "first_model_layer_mm": 0.2,
+          "last_model_layer_mm": 11.6
+        },
+        {
+          "name": "cradle_floor_foot_2",
+          "sha256": "a3f59f9d99ebc5855574681c889a88ebe629fd9a0de8559f58fc23fdf63a5d0e",
+          "bounds": [
+            [
+              220.0,
+              90.0,
+              0.0
+            ],
+            [
+              229.23879623413086,
+              99.23880004882812,
+              11.60000228881836
+            ]
+          ],
+          "first_model_layer_mm": 0.2,
+          "last_model_layer_mm": 11.6
+        },
+        {
+          "name": "cradle_floor_foot_3",
+          "sha256": "517615e522a3e9c899420a1e7ac2cd4cdc45027e56acf4155377d71fe9e1a764",
+          "bounds": [
+            [
+              240.0,
+              90.0,
+              0.0
+            ],
+            [
+              249.23880004882812,
+              99.23880004882812,
+              11.60000228881836
+            ]
+          ],
+          "first_model_layer_mm": 0.2,
+          "last_model_layer_mm": 11.6
+        }
+      ],
+      "support_paths": 1356,
+      "sha256": "81cabc539f723f90b559a0985c2b5934d19401419df95350173ad99abce47a77",
+      "profiles": "X1C / 0.4 / Generic PETG / 0.2mm / 4 walls / 100% / supports auto45deg / bridges included / local bore and nut blockers"
+    }
+  ],
+  "limitations": [
+    "Review actual bridge anchoring in toolpath images; physical printing remains unverified."
+  ]
+}

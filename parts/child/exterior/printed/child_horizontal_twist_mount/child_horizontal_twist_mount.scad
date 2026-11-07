@@ -4,7 +4,8 @@ include <../../../../../scad/lib/child_horizontal_plate_interfaces.scad>
 use <../../../../../scad/lib/edge_finished_profiles.scad>
 use <../../../../common/jigs/quick_release_prototypes/quick_release_prototypes.scad>
 use <../child_simple_light_mount/child_simple_light_mount.scad>
-part="frame_receiver"; // [frame_receiver,light_twist]
+use <../../../../../scad/lib/camera_rotary_joint.scad>
+part="frame_receiver"; // [frame_receiver,light_twist,camera_receiver]
 frame_width=24;
 frame_end_margin=12;
 frame_plate_t=qr_pad_t; // co-planar with the existing 4 mm twist foot
@@ -59,6 +60,46 @@ module frame_receiver() {
             mounting_holes(thickness=qr_pad_t);
     }
 }
+// Camera-only four-point foot. Local U is toward decreasing world Y on the
+// left side; V is world Z relative to 130. Existing side and front guard axes
+// are shared, so no frame or guard geometry needs to change.
+camera_dock_u=-53;
+camera_guard_u=-(hf_guard_joint_y[1]-hf_accessory_column_y[1]);
+camera_guard_v=[for(z=hf_guard_joint_z) z-130];
+camera_foot_radius=10;
+camera_access_d=8; // straight tool access to otherwise unused Z=120/140 holes
+module camera_receiver() {
+    difference() {
+        union() {
+            ef_convex_profile(frame_plate_t,edge_chamfer) hull() {
+                for(v=[-frame_pitch/2,frame_pitch/2])
+                    translate([0,v]) circle(r=camera_foot_radius,$fn=48);
+                for(v=camera_guard_v)
+                    translate([camera_guard_u,v]) circle(r=camera_foot_radius,$fn=48);
+                // Ensure a broad, continuous base under the rotary joint.
+                translate([camera_dock_u,0]) circle(r=camera_foot_radius,$fn=48);
+            }
+            translate([camera_dock_u,0,0]) rotate([0,0,90]) camera_qr_female();
+        }
+        // Nut insertion slots and screw-tip clearances must also pass through
+        // this foot wherever it overlaps the low-profile joint ears.
+        translate([camera_dock_u,0,0]) rotate([0,0,90]) {
+            camera_qr_female_cuts();
+            // Extend the inward nut-loading slot beyond the camera foot.
+            // Keep Z=0..2 below it; the nut roof remains at Z=4.8.
+            translate([0,-52,2.1]) ef_cut(2.6,.2) hull() {
+                ef_hex(5.8);
+                translate([0,-28]) square([5.8,1],center=true);
+            }
+        }
+        for(v=[-frame_pitch/2,frame_pitch/2]) translate([0,v,0])
+            ef_poly_bore(hf_m3_clearance,frame_plate_t,hole_chamfer,sides=8);
+        for(v=camera_guard_v) translate([camera_guard_u,v,0])
+            ef_poly_bore(hf_m3_clearance,frame_plate_t,hole_chamfer,sides=8);
+        for(z=[hf_accessory_column_z[1],hf_accessory_column_z[2]])
+            translate([0,z-130,0]) ef_poly_bore(camera_access_d,frame_plate_t,hole_chamfer,sides=12);
+    }
+}
 module light_twist() {
     union() {
         difference() {
@@ -75,4 +116,5 @@ module light_twist() {
 }
 if(part=="frame_receiver") frame_receiver();
 else if(part=="light_twist") light_twist();
+else if(part=="camera_receiver") camera_receiver();
 else assert(false,"Unknown part");

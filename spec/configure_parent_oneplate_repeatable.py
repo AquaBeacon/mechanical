@@ -3,7 +3,7 @@ from pathlib import Path
 import json
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "assemblies/parent_oneplate"
+OUT = ROOT / "assemblies/parent_exterior"
 
 def main():
     path = OUT / "placement.json"

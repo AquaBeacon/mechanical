@@ -9,7 +9,7 @@ import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-ASSEMBLY = ROOT / "assemblies" / "parent_oneplate"
+ASSEMBLY = ROOT / "assemblies" / "parent_exterior"
 WORK = ASSEMBLY / "_work" / "analysis" / "repeatable_mount"
 JOBS = ASSEMBLY / "print_jobs" / "repeatable_mount"
 CONFIG = ROOT / "print_jobs" / "parent_spar_bolted" / "slice_validation"
@@ -87,7 +87,7 @@ def main():
                               "warnings": plate_result.get("warning_message", ""),
                               "process_json": str(process.relative_to(ASSEMBLY)).replace("\\", "/"),
                               "slice_log": str((work / "slice.log").relative_to(ASSEMBLY)).replace("\\", "/")})
-    report = {"schema_version": 1, "assembly": "parent_oneplate", "job": "repeatable_mount",
+    report = {"schema_version": 1, "assembly": "parent_exterior", "job": "repeatable_mount",
               "source_manifest_sha256": source_hash, "plates": plate_reports}
     (JOBS / "slice_report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, ensure_ascii=False, indent=2))

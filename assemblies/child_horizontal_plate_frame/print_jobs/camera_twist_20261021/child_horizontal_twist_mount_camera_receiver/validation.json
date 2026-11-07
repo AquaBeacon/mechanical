@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "source": "parts/child/exterior/printed/child_horizontal_twist_mount/child_horizontal_twist_mount_camera_receiver.stl",
+  "source_sha256": "2b9ac1737cdb7c31bc57c6bdd5cdb8f7f725e14eec154174968222a12bf0945c",
+  "three_mf_sha256": "26274f5487dd0def50e2c2a52e494ee133498c1ad5f6c83d1f150be4b0e2a83f",
+  "layer_mm": 0.1,
+  "enable_support": "1",
+  "support_on_build_plate_only": "1",
+  "support_threshold_angle": "45",
+  "support_feature_sections": 1,
+  "extrusion_bounds_xy_mm": [
+    [
+      91.268,
+      80.573
+    ],
+    [
+      164.732,
+      171.427
+    ]
+  ],
+  "warning_message": "",
+  "seconds": 4555.82763671875,
+  "grams": 20.519906997680664,
+  "material": "Generic PETG",
+  "walls": 6,
+  "infill": "15% gyroid",
+  "limits": [
+    "Physical print and C fit unverified; G2/G3 plotted as chords.",
+    "Camera: remove external rear adapter/post supports before assembly; do not force C contact surfaces."
+  ]
+}

@@ -138,7 +138,7 @@ TD04Aは背面の縦座面にL字マウントを追加し、振動面を上へ�
 
 ## 主要寸法・インタフェース
 
-- マウント共通規格：[CHILD-SIMPLE-M3-40x40 / Rev.1](https://github.com/AquaBeacon/docs/blob/main/child_simple_mount_interface.md)。後付けカメラマウント設計時に参照する。
+- マウント共通規格：[CHILD-SIMPLE-M3-40x40 / Rev.1](../../../../../docs/child_simple_mount_interface.md)。後付けカメラマウント設計時に参照する。
 
 - 外形：220 × 82 × 238 mm。樹脂実体の体積：469.6 cm³。
 - 設計の正本：[共有パラメータ](../../../../../scad/lib/child_simple_frame.scad)。
@@ -202,7 +202,7 @@ STL閉メッシュ、単一連結体。STEPソリッド検査と容器・ねじ�
 
 ## 主要寸法・インタフェース
 
-- マウント共通規格：[CHILD-SIMPLE-M3-40x40 / Rev.1](https://github.com/AquaBeacon/docs/blob/main/child_simple_mount_interface.md)。TD04A用・ライト用の取り違え防止に参照する。
+- マウント共通規格：[CHILD-SIMPLE-M3-40x40 / Rev.1](../../../../../docs/child_simple_mount_interface.md)。TD04A用・ライト用の取り違え防止に参照する。
 
 - 外形：220 × 82 × 239 mm。樹脂実体の体積：520.2 cm³。
 - 設計の正本：[共有パラメータ](../../../../../scad/lib/child_simple_frame.scad)。

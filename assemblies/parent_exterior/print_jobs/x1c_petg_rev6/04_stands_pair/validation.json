@@ -1,0 +1,82 @@
+{
+  "name": "04_stands_pair",
+  "title": "脚2個",
+  "file": "04_stands_pair/04_stands_pair.3mf",
+  "sha256": "2bd66ba7fe97e67c1c08a3557467ebc4d4caf37a051bb5d7bb10faef6817fbc3",
+  "parts": [
+    {
+      "stem": "parent_oneplate_stand",
+      "file": "parent_oneplate_stand.stl",
+      "source_sha256": "872e2f4d66cd1ea14ac5c05b8b1b5b5c4233482dca2925c60a07325ca247075f",
+      "translation_mm": [
+        65.0,
+        35.0,
+        0.0
+      ],
+      "label": "Stand 1",
+      "saved_bounds_mm": [
+        [
+          69.0,
+          38.00001,
+          0.0
+        ],
+        [
+          121.0,
+          218.00001,
+          20.0
+        ]
+      ]
+    },
+    {
+      "stem": "parent_oneplate_stand",
+      "file": "parent_oneplate_stand.stl",
+      "source_sha256": "872e2f4d66cd1ea14ac5c05b8b1b5b5c4233482dca2925c60a07325ca247075f",
+      "translation_mm": [
+        131.0,
+        35.0,
+        0.0
+      ],
+      "label": "Stand 2",
+      "saved_bounds_mm": [
+        [
+          135.0,
+          38.00001,
+          0.0
+        ],
+        [
+          187.0,
+          218.00001,
+          20.0
+        ]
+      ]
+    }
+  ],
+  "part_count": 2,
+  "grams": 147.71,
+  "seconds": 12607.0,
+  "layer_mm": 0.2,
+  "wall_loops": "8",
+  "infill": "100%",
+  "brim_mm": 3.0,
+  "support_enable": "0",
+  "material_profile": [
+    "Bambu PETG Basic @BBL X1C"
+  ],
+  "machine": "Bambu Lab X1 Carbon",
+  "gcode_sha256": "f55275a3524061b25ae1cb29bddacd6b82a3ea9785cc894512885d6fd8032b60",
+  "support_filament_mm": 0,
+  "actual_support_extrusion_moves": 0,
+  "extrusion_bounds_xy_mm": [
+    [
+      66.886,
+      33.886
+    ],
+    [
+      189.114,
+      218.114
+    ]
+  ],
+  "exclusion_hits": 0,
+  "saved_3mf_components": 2,
+  "passed": true
+}

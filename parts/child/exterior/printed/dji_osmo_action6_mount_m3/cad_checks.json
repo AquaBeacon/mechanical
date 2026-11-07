@@ -1,8 +1,8 @@
 {
-  "revision": "direct_rear_M3_15pct",
+  "revision": "rear_support_23mm_20261020",
   "valid": true,
   "solids": 1,
-  "volume_mm3": 124781.3560504924,
+  "volume_mm3": 134822.54104858605,
   "mount_frame_intersection_mm3": 0.0,
   "M3_hole_centers": [
     [

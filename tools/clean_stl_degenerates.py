@@ -144,9 +144,12 @@ if __name__=='__main__':
             # facets. Both opt-ins request the same validated sequence used by
             # compact_coplanar_mesh, without simplifying the print mesh.
             flip=a.stl.stem in options.get('degenerate_edge_flip_files',[])
-            weld=precision_weld(a.stl,None if flip else a.report,allow_collinear=flip)
+            # Respect the part's precision-preserving export choice. Converting
+            # large ASCII solids to float32 can itself exceed the volume bound.
+            binary=options.get('stl_export_format')=='binstl'
+            weld=precision_weld(a.stl,None if flip else a.report,allow_collinear=flip,binary=binary)
             if flip:
-                result=dict(weld=weld,edge_flip=clean(a.stl,binary=True))
+                result=dict(weld=weld,edge_flip=clean(a.stl,binary=binary))
                 if a.report:
                     a.report.parent.mkdir(parents=True,exist_ok=True)
                     a.report.write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')

@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "source": "parts/child/exterior/printed/dji_osmo_action6_mount_m3/camera_front_clamp.stl",
+  "source_sha256": "d67047812b95d7bc9c71e6a57803e321506364ad6cf06099e7e1ee6cb28e4fad",
+  "three_mf_sha256": "b275aa6864c351dc611d63c56ed38928388cae8b08a553e874164aa3eaa8915e",
+  "layer_mm": 0.1,
+  "enable_support": "1",
+  "support_on_build_plate_only": "1",
+  "support_threshold_angle": "45",
+  "support_feature_sections": 22,
+  "extrusion_bounds_xy_mm": [
+    [
+      111.619,
+      109.619
+    ],
+    [
+      144.381,
+      142.381
+    ]
+  ],
+  "warning_message": "",
+  "seconds": 8070.537109375,
+  "grams": 13.657999038696289,
+  "material": "Generic PETG",
+  "walls": 6,
+  "infill": "15% gyroid",
+  "limits": [
+    "Physical print and C fit unverified; G2/G3 plotted as chords.",
+    "Snap-cap nubs, finger fit and physical gripping require inspection on a real print."
+  ]
+}

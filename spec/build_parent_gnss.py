@@ -240,11 +240,12 @@ xs=sorted(set(x for x,y in magholes));ys=sorted(set(y for x,y in magholes))
 for x in xs:frame=frame.fuse(box(x-G.MAG_ARM_WIDTH/2,ys[0]-G.MAG_ARM_WIDTH/2,sz,G.MAG_ARM_WIDTH,222-(ys[0]-G.MAG_ARM_WIDTH/2),st))
 for y in ys:frame=frame.fuse(box(xs[0]-G.MAG_ARM_WIDTH/2,y-G.MAG_ARM_WIDTH/2,sz,ux+6-(xs[0]-G.MAG_ARM_WIDTH/2),G.MAG_ARM_WIDTH,st))
 for x,y in magholes:
+    # Flat underside atZ50 for an exposed nut/washer, without a recess.
+    frame=frame.fuse(cyl(x,y,50,G.MAG_BOSS_RADIUS+.2,sz-50+.1))
     frame=frame.fuse(cyl(x,y,sz+st-.1,G.MAG_BOSS_RADIUS,G.MAG_ORIGIN[2]-(sz+st)+.1))
     frame=frame.cut(cyl(x,y,49.4,G.MAG_CLEARANCE_DIAMETER/2,G.MAG_ORIGIN[2]-49.4+.1))
     # Rear transverse beam is lower than the four sensor rails. Restore the
     # same accessible nut seating height locally, without changing the sensor.
-    frame=frame.cut(cyl(x,y,49.4,2.55,sz-49.4))
 # The shifted frame's obsolete front cap ledge must stay outside the actual
 # switch finger columns. Read PCB datums rather than copying their coordinates.
 for name,x,y in G.power_switch_centres():

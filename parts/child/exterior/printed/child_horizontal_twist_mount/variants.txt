@@ -1,2 +1,3 @@
 frame_receiver part="frame_receiver"
 light_twist part="light_twist"
+camera_receiver part="camera_receiver"

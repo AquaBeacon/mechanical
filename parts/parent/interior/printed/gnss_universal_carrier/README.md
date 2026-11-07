@@ -1,3 +1,23 @@
+# 2026-10-29 床下面ナットへの貫通固定
+
+現行は [改訂報告](../../../../../assemblies/parent_hand_service/unified_support_report.md)。床の下面開放六角くぼみへM3ナットを入れ、上からの貫通ねじで床板まで挟む。MAIN枠とSony/GNSS支持枠の対象穴は通し穴。足の一体化・50 mmは維持。以下は変更前の履歴。
+
+# 2026-10-28 GNSS一体支持枠
+
+現行はgnss_support_frameの一部品で4本の足を連結し、床上面から固定板下面まで50.0 mmを確保。旧共有柱・独立柱は現行配置では使わない。床下面のM3×16と上板のM3×10を樹脂下穴へ締める。磁気センサのナットは屋根付き穴を廃止し、下面へ露出したナットと座金へ変更。
+
+設計正本はparent_service_retrofit.pyと既存build_parent_gnss.py。寸法・組立・検証は [改訂報告](../../../../../assemblies/parent_hand_service/unified_support_report.md)、印刷入口はassemblyのparts/PRINT.md。以下は旧版履歴。
+
+2026-10-27 北側ペネトレータ対応：parent_hand_serviceのgnss_sony_shared_columnを改訂。Sony側の軸はX142.5／Y202.5。GNSS側X135／Y219から西寄りの折れた下端橋で接続し、M10とTXの通り道を避ける。Sony側ナットの屋根Z58.1と側面挿入、支柱上面は維持。床側のGNSS軸は新しい床内部のM3ナットで固定し、床裏座金は使わない。詳しくは assemblies/parent_hand_service/plate_access_report.md（リポジトリ基準）。
+
+2026-10-24 MAIN下面・独立スペーサ改訂：格子下面の3.7 mmの浮きを解消。独立スペーサ12軸は対辺3.5 mmの通し穴と多角形外形。一体の基板ねじ座は2.8 mm下穴を維持。現行の金具・手順は assemblies/parent_hand_service/frame_spacer_printability_report.md を参照。床裏のナットを保持して締める構成に変更。以下の全スペーサ直接締結・整備用M3×8・最長30 mmの記述は変更前の履歴。
+
+2026-10-24 現行parent_hand_service：固定柱・床側受けは内部ナット穴を廃止し、内接径2.8 mmの縦下穴へ直接締結する。cradle_nut_keeperは旧版部品で現行構成では使用しない。数量・ねじ長・手順は assemblies/parent_hand_service/retrofit_report.md と parts/PRINT.md を参照。
+
+## 2026-10-24 内装改良バリアント
+
+設計元は `scad/lib/parent_service_retrofit.py`、生成入口は `spec/build_parent_hand_service.py --service-retrofit`。旧部品は保持し、現行内装の選択は `assemblies/parent_hand_service/placement.json` に従う。新規バリアントの手順・再使用範囲・金具は [改良報告](../../../../../assemblies/parent_hand_service/retrofit_report.md)。STLの姿勢は manufacturing.json を使い、支持材禁止モディファイアは部品として印刷しない。実物検証前の試作。
+
 # GNSS・磁気センサの同じ高さの四隅固定台
 
 2026-10-11現行改訂。設計正本は `spec/build_parent_gnss.py`、寸法は `scad/lib/parent_gnss.py`。部分ビルドはFreeCADCmdに `spec/build_parent_gnss.py --pass --fixtures-only` を渡す。生成SCADとSTLを手編集しない。配置・数量は `assemblies/parent_hand_service/placement.json`。

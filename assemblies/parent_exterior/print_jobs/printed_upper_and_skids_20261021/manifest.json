@@ -1,0 +1,27 @@
+{
+  "original_path": "assemblies/parent_exterior/parts/parent_oneplate_bar.3mf",
+  "sha256": "e91084a12590fc22cc87cc2c9f5203e75c9777442334420b5073cc8543eb6a09",
+  "quantity": {
+    "parent_oneplate_bar": 1,
+    "parent_oneplate_stand": 2
+  },
+  "layer_height": "0.28",
+  "geometry_matches_current_parts": true,
+  "checks": [
+    {
+      "part": "parent_oneplate_bar",
+      "maximum_bidirectional_vertex_surface_distance_mm": 8.565122610640269e-06,
+      "passed": true
+    },
+    {
+      "part": "parent_oneplate_stand",
+      "maximum_bidirectional_vertex_surface_distance_mm": 8.017567315693215e-06,
+      "passed": true
+    },
+    {
+      "part": "parent_oneplate_stand",
+      "maximum_bidirectional_vertex_surface_distance_mm": 8.003814779638437e-06,
+      "passed": true
+    }
+  ]
+}

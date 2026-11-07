@@ -28,7 +28,7 @@ for n,(i,s,o) in enumerate(shapes):
         if volume>0.1:collisions.append(dict(a=i['label'],b=j['label'],volume_mm3=volume))
 Part.export([o for i,s,o in shapes],str(OUT/(NAME+'_structure.step')))
 report=dict(checked_components=len(shapes),collisions=collisions,omitted_references=omitted,hardware_checked=False)
-if NAME=='parent_oneplate':
+if NAME=='parent_exterior':
     frame=next(s for i,s,o in shapes if (i.get('file') or Path(i['part']).name)=='parent_oneplate_frame')
     bores=[]
     for x in [-60,-20]:

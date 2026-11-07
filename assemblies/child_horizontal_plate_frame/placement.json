@@ -4507,12 +4507,12 @@
     {
       "label": "guard_join_-1_98_100_screw",
       "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x25",
+      "file": "screw_m3x30",
       "group": "fasteners",
       "ops": [
         {
           "translate": [
-            -122.5,
+            -126.5,
             98,
             100
           ]
@@ -4536,7 +4536,7 @@
       "ops": [
         {
           "translate": [
-            -122.5,
+            -126.5,
             98,
             100
           ]
@@ -4624,12 +4624,12 @@
     {
       "label": "guard_join_-1_98_176_screw",
       "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x25",
+      "file": "screw_m3x30",
       "group": "fasteners",
       "ops": [
         {
           "translate": [
-            -122.5,
+            -126.5,
             98,
             176
           ]
@@ -4653,7 +4653,7 @@
       "ops": [
         {
           "translate": [
-            -122.5,
+            -126.5,
             98,
             176
           ]
@@ -10196,6 +10196,2036 @@
       "color": "Silver",
       "print": false,
       "owner": "side_twist_accessory"
+    },
+    {
+      "label": "side_camera_frame_receiver",
+      "part": "parts/child/exterior/printed/child_horizontal_twist_mount",
+      "file": "child_horizontal_twist_mount_camera_receiver",
+      "ops": [
+        {
+          "translate": [
+            -122.0,
+            60,
+            130.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            -90
+          ]
+        }
+      ],
+      "group": "accessories",
+      "color": "SteelBlue",
+      "print": true,
+      "owner": "camera_twist_accessory"
+    },
+    {
+      "label": "side_camera_frame_0_screw",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x18",
+      "group": "fasteners",
+      "ops": [
+        {
+          "translate": [
+            -122.0,
+            60,
+            130.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            0,
+            -30.0,
+            4.5
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "owner": "camera_twist_accessory"
+    },
+    {
+      "label": "side_camera_frame_0_head_washer",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m3_05",
+      "group": "fasteners",
+      "ops": [
+        {
+          "translate": [
+            -122.0,
+            60,
+            130.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            0,
+            -30.0,
+            4.5
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            -0.5
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "owner": "camera_twist_accessory"
+    },
+    {
+      "label": "side_camera_frame_0_nut",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "group": "fasteners",
+      "ops": [
+        {
+          "translate": [
+            -122.0,
+            60,
+            130.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            0,
+            -30.0,
+            -11.5
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "owner": "camera_twist_accessory"
+    },
+    {
+      "label": "side_camera_frame_1_screw",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x18",
+      "group": "fasteners",
+      "ops": [
+        {
+          "translate": [
+            -122.0,
+            60,
+            130.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            0,
+            30.0,
+            4.5
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "owner": "camera_twist_accessory"
+    },
+    {
+      "label": "side_camera_frame_1_head_washer",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m3_05",
+      "group": "fasteners",
+      "ops": [
+        {
+          "translate": [
+            -122.0,
+            60,
+            130.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            0,
+            30.0,
+            4.5
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            -0.5
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "owner": "camera_twist_accessory"
+    },
+    {
+      "label": "side_camera_frame_1_nut",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "group": "fasteners",
+      "ops": [
+        {
+          "translate": [
+            -122.0,
+            60,
+            130.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            0,
+            30.0,
+            -11.5
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "owner": "camera_twist_accessory"
+    },
+    {
+      "label": "side_camera_mount",
+      "part": "parts/child/exterior/printed/dji_osmo_action6_mount_m3",
+      "file": "camera_mount_twist",
+      "ops": [
+        {
+          "translate": [
+            -122.0,
+            60,
+            130.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            -53,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            -40.0,
+            4.586302262806838e-15,
+            61.95
+          ]
+        },
+        {
+          "rotate": [
+            90.0,
+            7.016709298534876e-15,
+            90.0
+          ]
+        }
+      ],
+      "group": "accessories",
+      "color": "Orange",
+      "print": true,
+      "owner": "camera_twist_accessory",
+      "removal_group": "child_camera",
+      "note": "25 mm clamp shifted 12 mm right from front-view left edge; rear lower 20 mm keepout; 41 mm measured case thickness. Physical fit pending."
+    },
+    {
+      "label": "side_camera_case_reference",
+      "part": "parts/child/exterior/printed/dji_osmo_action6_mount_m3",
+      "file": "camera_case_41mm",
+      "ops": [
+        {
+          "translate": [
+            -122.0,
+            60,
+            130.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            -53,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            -40.0,
+            4.586302262806838e-15,
+            61.95
+          ]
+        },
+        {
+          "rotate": [
+            90.0,
+            7.016709298534876e-15,
+            90.0
+          ]
+        }
+      ],
+      "group": "accessories",
+      "color": "DimGray",
+      "print": false,
+      "owner": "camera_twist_accessory",
+      "removal_group": "child_camera",
+      "note": "Depth 41 mm measured; case rear is aligned to original backplate -23.45. Actual M5-axis offset remains unmeasured."
+    },
+    {
+      "label": "td04a_r6_child_strap",
+      "part": "parts/common/exterior/printed/td04a_bracket_mount",
+      "file": "td04a_bracket_mount_child_side_up",
+      "ops": [
+        {
+          "translate": [
+            122,
+            -74,
+            108
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -45,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            45,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "DarkOrange",
+      "group": "exterior",
+      "note": "Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted."
+    },
+    {
+      "label": "td04a_r6_child_sensor_bolt_-5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m4x14_socket",
+      "ops": [
+        {
+          "translate": [
+            122,
+            -74,
+            108
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -45,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            71,
+            5.8,
+            65
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "hardware",
+      "note": "Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted."
+    },
+    {
+      "label": "td04a_r6_child_front_washer_-5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m4_08",
+      "ops": [
+        {
+          "translate": [
+            122,
+            -74,
+            108
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -45,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            71,
+            -3,
+            65
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "hardware",
+      "note": "Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted."
+    },
+    {
+      "label": "td04a_r6_child_rear_washer_-5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m4_08",
+      "ops": [
+        {
+          "translate": [
+            122,
+            -74,
+            108
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -45,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            71,
+            5,
+            65
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "hardware",
+      "note": "Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted."
+    },
+    {
+      "label": "td04a_r6_child_sensor_nut_-5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "ops": [
+        {
+          "translate": [
+            122,
+            -74,
+            108
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -45,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            71,
+            -3.8,
+            65
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "hardware",
+      "note": "Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted."
+    },
+    {
+      "label": "td04a_r6_child_sensor_bolt_5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m4x14_socket",
+      "ops": [
+        {
+          "translate": [
+            122,
+            -74,
+            108
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -45,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            83,
+            5.8,
+            65
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "hardware",
+      "note": "Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted."
+    },
+    {
+      "label": "td04a_r6_child_front_washer_5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m4_08",
+      "ops": [
+        {
+          "translate": [
+            122,
+            -74,
+            108
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -45,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            83,
+            -3,
+            65
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "hardware",
+      "note": "Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted."
+    },
+    {
+      "label": "td04a_r6_child_rear_washer_5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m4_08",
+      "ops": [
+        {
+          "translate": [
+            122,
+            -74,
+            108
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -45,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            83,
+            5,
+            65
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "hardware",
+      "note": "Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted."
+    },
+    {
+      "label": "td04a_r6_child_sensor_nut_5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "ops": [
+        {
+          "translate": [
+            122,
+            -74,
+            108
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -45,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            83,
+            -3.8,
+            65
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "hardware",
+      "note": "Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted."
+    },
+    {
+      "label": "td04a_r6_child_side_bolt_12",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x20",
+      "ops": [
+        {
+          "translate": [
+            122,
+            -74,
+            108
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -45,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            50.5,
+            14,
+            12
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "hardware",
+      "note": "Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted."
+    },
+    {
+      "label": "td04a_r6_child_side_washer_12",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m3_05",
+      "ops": [
+        {
+          "translate": [
+            122,
+            -74,
+            108
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -45,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            50,
+            14,
+            12
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "hardware",
+      "note": "Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted."
+    },
+    {
+      "label": "td04a_r6_child_side_nut_12",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "ops": [
+        {
+          "translate": [
+            122,
+            -74,
+            108
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -45,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            35.8,
+            14,
+            12
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            -90,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "hardware",
+      "note": "Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted."
+    },
+    {
+      "label": "td04a_r6_child_side_bolt_32",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x20",
+      "ops": [
+        {
+          "translate": [
+            122,
+            -74,
+            108
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -45,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            50.5,
+            14,
+            32
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "hardware",
+      "note": "Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted."
+    },
+    {
+      "label": "td04a_r6_child_side_washer_32",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m3_05",
+      "ops": [
+        {
+          "translate": [
+            122,
+            -74,
+            108
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -45,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            50,
+            14,
+            32
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "hardware",
+      "note": "Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted."
+    },
+    {
+      "label": "td04a_r6_child_side_nut_32",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "ops": [
+        {
+          "translate": [
+            122,
+            -74,
+            108
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -45,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            35.8,
+            14,
+            32
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            -90,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "hardware",
+      "note": "Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted."
+    },
+    {
+      "label": "side_camera_front_clamp",
+      "part": "parts/child/exterior/printed/dji_osmo_action6_mount_m3",
+      "file": "camera_front_clamp",
+      "ops": [
+        {
+          "translate": [
+            -122.0,
+            60,
+            130.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            -53,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            -40.0,
+            4.586302262806838e-15,
+            61.95
+          ]
+        },
+        {
+          "rotate": [
+            90.0,
+            7.016709298534876e-15,
+            90.0
+          ]
+        }
+      ],
+      "group": "accessories",
+      "print": true,
+      "color": "Orange",
+      "owner": "camera_twist_accessory",
+      "revision_owner": "left_clamp_20261025",
+      "removal_group": "child_camera"
+    },
+    {
+      "label": "side_camera_clamp_0_screw",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m4x16_socket",
+      "ops": [
+        {
+          "translate": [
+            -122.0,
+            60,
+            130.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            -53,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            -40.0,
+            4.586302262806838e-15,
+            61.95
+          ]
+        },
+        {
+          "rotate": [
+            90.0,
+            7.016709298534876e-15,
+            90.0
+          ]
+        },
+        {
+          "translate": [
+            11.5,
+            11.5,
+            4
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "fasteners",
+      "print": false,
+      "color": "Silver",
+      "owner": "camera_twist_accessory",
+      "revision_owner": "left_clamp_20261025",
+      "removal_group": "child_camera"
+    },
+    {
+      "label": "side_camera_clamp_0_washer",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m4_08",
+      "ops": [
+        {
+          "translate": [
+            -122.0,
+            60,
+            130.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            -53,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            -40.0,
+            4.586302262806838e-15,
+            61.95
+          ]
+        },
+        {
+          "rotate": [
+            90.0,
+            7.016709298534876e-15,
+            90.0
+          ]
+        },
+        {
+          "translate": [
+            11.5,
+            11.5,
+            4
+          ]
+        }
+      ],
+      "group": "fasteners",
+      "print": false,
+      "color": "Silver",
+      "owner": "camera_twist_accessory",
+      "revision_owner": "left_clamp_20261025",
+      "removal_group": "child_camera"
+    },
+    {
+      "label": "side_camera_clamp_0_nut",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "ops": [
+        {
+          "translate": [
+            -122.0,
+            60,
+            130.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            -53,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            -40.0,
+            4.586302262806838e-15,
+            61.95
+          ]
+        },
+        {
+          "rotate": [
+            90.0,
+            7.016709298534876e-15,
+            90.0
+          ]
+        },
+        {
+          "translate": [
+            11.5,
+            11.5,
+            10.6
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ],
+      "group": "fasteners",
+      "print": false,
+      "color": "Silver",
+      "owner": "camera_twist_accessory",
+      "revision_owner": "left_clamp_20261025",
+      "removal_group": "child_camera"
+    },
+    {
+      "label": "side_camera_clamp_1_screw",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m4x16_socket",
+      "ops": [
+        {
+          "translate": [
+            -122.0,
+            60,
+            130.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            -53,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            -40.0,
+            4.586302262806838e-15,
+            61.95
+          ]
+        },
+        {
+          "rotate": [
+            90.0,
+            7.016709298534876e-15,
+            90.0
+          ]
+        },
+        {
+          "translate": [
+            24.5,
+            11.5,
+            4
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "fasteners",
+      "print": false,
+      "color": "Silver",
+      "owner": "camera_twist_accessory",
+      "revision_owner": "left_clamp_20261025",
+      "removal_group": "child_camera"
+    },
+    {
+      "label": "side_camera_clamp_1_washer",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m4_08",
+      "ops": [
+        {
+          "translate": [
+            -122.0,
+            60,
+            130.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            -53,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            -40.0,
+            4.586302262806838e-15,
+            61.95
+          ]
+        },
+        {
+          "rotate": [
+            90.0,
+            7.016709298534876e-15,
+            90.0
+          ]
+        },
+        {
+          "translate": [
+            24.5,
+            11.5,
+            4
+          ]
+        }
+      ],
+      "group": "fasteners",
+      "print": false,
+      "color": "Silver",
+      "owner": "camera_twist_accessory",
+      "revision_owner": "left_clamp_20261025",
+      "removal_group": "child_camera"
+    },
+    {
+      "label": "side_camera_clamp_1_nut",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "ops": [
+        {
+          "translate": [
+            -122.0,
+            60,
+            130.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            -53,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            -40.0,
+            4.586302262806838e-15,
+            61.95
+          ]
+        },
+        {
+          "rotate": [
+            90.0,
+            7.016709298534876e-15,
+            90.0
+          ]
+        },
+        {
+          "translate": [
+            24.5,
+            11.5,
+            10.6
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ],
+      "group": "fasteners",
+      "print": false,
+      "color": "Silver",
+      "owner": "camera_twist_accessory",
+      "revision_owner": "left_clamp_20261025",
+      "removal_group": "child_camera"
+    },
+    {
+      "label": "side_camera_axial_0_screw",
+      "file": "camera_m3x30_hex",
+      "ops": [
+        {
+          "translate": [
+            -122.0,
+            60,
+            130.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            -53,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            0,
+            -52,
+            31.5
+          ]
+        }
+      ],
+      "part": "parts/child/exterior/printed/dji_osmo_action6_mount_m3",
+      "group": "fasteners",
+      "color": "Silver",
+      "print": false,
+      "owner": "camera_twist_accessory",
+      "removal_group": "child_camera"
+    },
+    {
+      "label": "side_camera_axial_0_nut",
+      "file": "screw_nut_m3",
+      "ops": [
+        {
+          "translate": [
+            -122.0,
+            60,
+            130.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            -53,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            0,
+            -52,
+            2.4
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ],
+      "part": "parts/common/interior/cots/screw",
+      "group": "fasteners",
+      "color": "Silver",
+      "print": false,
+      "owner": "camera_twist_accessory"
+    },
+    {
+      "label": "side_camera_axial_0_spacer",
+      "part": "parts/child/exterior/printed/dji_osmo_action6_mount_m3",
+      "file": "camera_hand_spacer",
+      "ops": [
+        {
+          "translate": [
+            -122.0,
+            60,
+            130.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            -53,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            0,
+            -52,
+            8
+          ]
+        }
+      ],
+      "group": "accessories",
+      "color": "Orange",
+      "print": true,
+      "owner": "camera_twist_accessory",
+      "removal_group": "child_camera"
+    },
+    {
+      "label": "side_camera_axial_0_knob",
+      "part": "parts/child/exterior/printed/dji_osmo_action6_mount_m3",
+      "file": "camera_hand_knob",
+      "ops": [
+        {
+          "translate": [
+            -122.0,
+            60,
+            130.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            -53,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            0,
+            -52,
+            30.5
+          ]
+        }
+      ],
+      "group": "accessories",
+      "color": "SeaGreen",
+      "print": true,
+      "owner": "camera_twist_accessory",
+      "removal_group": "child_camera"
+    },
+    {
+      "label": "side_camera_axial_0_knob_cap",
+      "part": "parts/child/exterior/printed/dji_osmo_action6_mount_m3",
+      "file": "camera_hand_knob_cap",
+      "ops": [
+        {
+          "translate": [
+            -122.0,
+            60,
+            130.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            -53,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            0,
+            -52,
+            33.5
+          ]
+        }
+      ],
+      "group": "accessories",
+      "color": "SeaGreen",
+      "print": true,
+      "owner": "camera_twist_accessory",
+      "removal_group": "child_camera"
+    },
+    {
+      "label": "side_camera_axial_1_screw",
+      "file": "camera_m3x30_hex",
+      "ops": [
+        {
+          "translate": [
+            -122.0,
+            60,
+            130.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            -53,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            0,
+            52,
+            31.5
+          ]
+        }
+      ],
+      "part": "parts/child/exterior/printed/dji_osmo_action6_mount_m3",
+      "group": "fasteners",
+      "color": "Silver",
+      "print": false,
+      "owner": "camera_twist_accessory",
+      "removal_group": "child_camera"
+    },
+    {
+      "label": "side_camera_axial_1_nut",
+      "file": "screw_nut_m3",
+      "ops": [
+        {
+          "translate": [
+            -122.0,
+            60,
+            130.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            -53,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            0,
+            52,
+            2.4
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ],
+      "part": "parts/common/interior/cots/screw",
+      "group": "fasteners",
+      "color": "Silver",
+      "print": false,
+      "owner": "camera_twist_accessory"
+    },
+    {
+      "label": "side_camera_axial_1_spacer",
+      "part": "parts/child/exterior/printed/dji_osmo_action6_mount_m3",
+      "file": "camera_hand_spacer",
+      "ops": [
+        {
+          "translate": [
+            -122.0,
+            60,
+            130.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            -53,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            0,
+            52,
+            8
+          ]
+        }
+      ],
+      "group": "accessories",
+      "color": "Orange",
+      "print": true,
+      "owner": "camera_twist_accessory",
+      "removal_group": "child_camera"
+    },
+    {
+      "label": "side_camera_axial_1_knob",
+      "part": "parts/child/exterior/printed/dji_osmo_action6_mount_m3",
+      "file": "camera_hand_knob",
+      "ops": [
+        {
+          "translate": [
+            -122.0,
+            60,
+            130.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            -53,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            0,
+            52,
+            30.5
+          ]
+        }
+      ],
+      "group": "accessories",
+      "color": "SeaGreen",
+      "print": true,
+      "owner": "camera_twist_accessory",
+      "removal_group": "child_camera"
+    },
+    {
+      "label": "side_camera_axial_1_knob_cap",
+      "part": "parts/child/exterior/printed/dji_osmo_action6_mount_m3",
+      "file": "camera_hand_knob_cap",
+      "ops": [
+        {
+          "translate": [
+            -122.0,
+            60,
+            130.0
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            -53,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            0,
+            52,
+            33.5
+          ]
+        }
+      ],
+      "group": "accessories",
+      "color": "SeaGreen",
+      "print": true,
+      "owner": "camera_twist_accessory",
+      "removal_group": "child_camera"
     }
   ],
   "fastener_joints": [
@@ -11242,7 +13272,7 @@
     {
       "label": "guard_join_-1_98_100",
       "seat_mm": [
-        -122.5,
+        -126.5,
         98,
         100
       ],
@@ -11251,7 +13281,7 @@
         -90,
         0
       ],
-      "length_mm": 25,
+      "length_mm": 30,
       "nut_start_mm": [
         -101.5,
         98,
@@ -11268,7 +13298,7 @@
     {
       "label": "guard_join_-1_98_176",
       "seat_mm": [
-        -122.5,
+        -126.5,
         98,
         176
       ],
@@ -11277,7 +13307,7 @@
         -90,
         0
       ],
-      "length_mm": 25,
+      "length_mm": 30,
       "nut_start_mm": [
         -101.5,
         98,
@@ -12492,6 +14522,114 @@
       "nominal_diameter_mm": 3,
       "exposed_nut": true,
       "owner": "side_twist_accessory"
+    },
+    {
+      "label": "side_camera_frame_0",
+      "seat_mm": [
+        -126.5,
+        60.0,
+        100.0
+      ],
+      "axis_rotation_deg": [
+        90.0,
+        8.617508373891572e-48,
+        -90.0
+      ],
+      "length_mm": 18,
+      "nut_start_mm": [
+        -110.5,
+        60.0,
+        100.0
+      ],
+      "nut_rotation_deg": [
+        90.0,
+        8.617508373891572e-48,
+        -90.0
+      ],
+      "nominal_diameter_mm": 3,
+      "exposed_nut": false,
+      "owner": "camera_twist_accessory"
+    },
+    {
+      "label": "side_camera_frame_1",
+      "seat_mm": [
+        -126.5,
+        60.0,
+        160.0
+      ],
+      "axis_rotation_deg": [
+        90.0,
+        8.617508373891572e-48,
+        -90.0
+      ],
+      "length_mm": 18,
+      "nut_start_mm": [
+        -110.5,
+        60.0,
+        160.0
+      ],
+      "nut_rotation_deg": [
+        90.0,
+        8.617508373891572e-48,
+        -90.0
+      ],
+      "nominal_diameter_mm": 3,
+      "exposed_nut": false,
+      "owner": "camera_twist_accessory"
+    },
+    {
+      "label": "side_camera_axial_0",
+      "seat_mm": [
+        -153.5,
+        61.0,
+        130.0
+      ],
+      "axis_rotation_deg": [
+        3.508354649267438e-15,
+        -90.0,
+        0.0
+      ],
+      "length_mm": 30,
+      "nut_start_mm": [
+        -124.39999999999999,
+        61.0,
+        130.0
+      ],
+      "nut_rotation_deg": [
+        3.508354649267438e-15,
+        -90.0,
+        0.0
+      ],
+      "nominal_diameter_mm": 3,
+      "exposed_nut": false,
+      "owner": "camera_twist_accessory"
+    },
+    {
+      "label": "side_camera_axial_1",
+      "seat_mm": [
+        -153.5,
+        165.0,
+        130.0
+      ],
+      "axis_rotation_deg": [
+        3.508354649267438e-15,
+        -90.0,
+        0.0
+      ],
+      "length_mm": 30,
+      "nut_start_mm": [
+        -124.4,
+        165.0,
+        130.0
+      ],
+      "nut_rotation_deg": [
+        3.508354649267438e-15,
+        -90.0,
+        0.0
+      ],
+      "nominal_diameter_mm": 3,
+      "exposed_nut": false,
+      "owner": "camera_twist_accessory"
     }
   ],
   "top_clamp_access": {
@@ -12540,14 +14678,14 @@
       "upper_linked",
       "lower_linked"
     ],
-    "remaining_instances": 19,
+    "remaining_instances": 28,
     "source_mesh_sha256": {
       "parts/child/exterior/printed/child_horizontal_plate_frame/child_horizontal_plate_frame_bottom.stl": "83ea243991bf44591dd02862ec38ab9aeb977742925f2d9aeaec5271daf1895a",
       "parts/child/exterior/printed/child_horizontal_plate_frame/child_horizontal_plate_frame_side.stl": "b158aa52ce342239b767209bd82b61fb62f2b35f9dfe2ec0e6f3b7122df3b684",
       "parts/child/exterior/printed/child_wte4_petg_clamp/child_wte4_petg_clamp_lower_linked.stl": "19fa74c22a593a21568d3bd432e5b8be7c668b7e19b9eb223885b487063ebfcb",
       "parts/child/exterior/printed/child_wte4_petg_clamp/child_wte4_petg_clamp_upper_linked.stl": "e9384ff4c401a43893b41b640ed04a93553399127ca8c802f73abc1da4e6c4c5"
     },
-    "base_remaining_instances": 15,
+    "base_remaining_instances": 24,
     "already_printed_instances": 5
   },
   "fastening_revision": {
@@ -12843,7 +14981,7 @@
           0,
           -90
         ],
-        "status": "reserved"
+        "status": "camera_installed"
       },
       "right_rear": {
         "origin_mm": [
@@ -12900,5 +15038,53 @@
       0.0
     ],
     "lock_knob_side": "front_of_light, horizontal +Y"
-  }
+  },
+  "camera_twist_mount": {
+    "revision": 3,
+    "station": "left_front",
+    "dock_offset_uvn_mm": [
+      -53,
+      0,
+      0
+    ],
+    "dock_origin_mm": [
+      -122.0,
+      113.0,
+      130.0
+    ],
+    "dock_rotation_deg": 90,
+    "camera_orientation": "upright landscape; rotated clockwise 90 deg from outside-left portrait view",
+    "interface": "camera axial clamp",
+    "mount_screws": "M3x18 socket, two; 0.5 mm head washers; existing inside nut pockets",
+    "removal": "Unscrew each knob until free, raise to about 3.8 mm, remove the U spacer, slide the screw outward, then rotate.",
+    "camera_case_dimensions": "existing provisional envelope; physical camera field of view and cable unverified",
+    "bottom_support_revision": "rear_clearance_20261024",
+    "rear_bottom_clearance_mm": 20,
+    "physical_rotation_hold_status": "new_clamp_not_yet_physically_tested",
+    "front_rotation_stop_removed": false,
+    "left_clamp_revision": "clamp_right5_20261029",
+    "measured_case_depth_mm": 41,
+    "front_view_left_width_mm": 25,
+    "front_jaw_adjustment_mm": [
+      0,
+      3
+    ],
+    "previous_revision_test": "rear_clearance_20261024: user reported insufficient rotation hold",
+    "interface_limits": "Case depth confirmed; width/height and M5-axis offset remain provisional.",
+    "former_bottom_supports_removed": true,
+    "clamp_foot_direction": "inward",
+    "clamp_screws_insert_from": "below",
+    "rear_projecting_pad_removed": true,
+    "case_rear_datum_mm": -23.45,
+    "front_view_right_shift_mm": 17,
+    "clamp_x_range_mm": [
+      5.5,
+      30.5
+    ],
+    "M5_finger_gap_mm": null,
+    "clamp_screws": "M3x30 hex, two; printed 1 mm compression floor and snap cap; M3 nuts",
+    "validation": "pending"
+  },
+  "td04a_revision": "cable_clearance_r6",
+  "td04a_limits": "Nominal 12 mm approximate hole pitch; real body/cable/ear fit and strength unverified."
 }

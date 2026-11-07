@@ -271,7 +271,8 @@ def build(assembly):
     if modifiers:
         rows.append("\n## モディファイア（印刷部品ではない）\n")
         for modifier in modifiers:
-            rows.append(f"- [{modifier['file']}]({modifier['file']}) を `{modifier['host_file']}` と同じオブジェクトに読み込み、モディファイアとして局所100%に設定。両方の相対座標を保持し、個別の自動整列をしない。")
+            setting = "支持材禁止（support blocker）に設定" if Path(modifier['source']).stem.endswith('_support_blocker') else "モディファイアとして局所100%に設定"
+            rows.append(f"- [{modifier['file']}]({modifier['file']}) を `{modifier['host_file']}` と同じオブジェクトに読み込み、{setting}。両方の相対座標を保持し、個別の自動整列をしない。")
     (dest / "PRINT.md").write_text("\n".join(rows) + "\n", encoding="utf-8")
     generated.append("PRINT.md")
     result["generated_files"] = generated
@@ -367,7 +368,7 @@ def update_index():
         "child_exterior_structure": "子機・フレームA（試作）",
         "parent_hand_service": "親機・電源操作対応内装", "parent_service_review": "親機・操作空間の内装レビュー",
         "parent_integrated": "親機・内外装統合", "parent_interior_p1": "親機・P1内装", "parent_interior_p2": "親機・P2内装",
-        "parent_oneplate": "親機外装・小型1プレート版", "parent_assembly": "親機・従来全体",
+        "parent_exterior": "親機外装・位置決めフレーム", "parent_assembly": "親機・従来全体",
         "parent_spar_concept": "親機・旧縦長外装の配置検討", "tether_open_reel": "テザーリール・開放状態",
         "tether_open_reel_closed": "テザーリール・カバー装着状態",
     }

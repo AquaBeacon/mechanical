@@ -1,0 +1,54 @@
+{
+  "name": "05_main_plate",
+  "title": "主プレート",
+  "file": "05_main_plate/05_main_plate.3mf",
+  "sha256": "f88b5ea2a392170ce7af835be87308986252b569446e047d1b56643b773cd8cb",
+  "parts": [
+    {
+      "stem": "parent_oneplate_frame",
+      "file": "parent_oneplate_frame.stl",
+      "source_sha256": "016c8373035979a02ff5847f365f482bfdfb66b2e26413b366b5d0ff14bac1c8",
+      "label": "主プレート",
+      "saved_bounds_mm": [
+        [
+          8.579319999999996,
+          4.000010000000003,
+          0.0
+        ],
+        [
+          248.57932,
+          252.00001,
+          42.0
+        ]
+      ]
+    }
+  ],
+  "part_count": 1,
+  "grams": 755.58,
+  "seconds": 56963.0,
+  "layer_mm": 0.2,
+  "wall_loops": "8",
+  "infill": "100%",
+  "brim_mm": 2.0,
+  "support_enable": "1",
+  "material_profile": [
+    "Bambu PETG Basic @BBL X1C"
+  ],
+  "machine": "Bambu Lab X1 Carbon",
+  "gcode_sha256": "093ed165c020df5323550acadf57cfee5281f56176f09968fa94fc1602ac6222",
+  "support_filament_mm": 0,
+  "actual_support_extrusion_moves": 0,
+  "extrusion_bounds_xy_mm": [
+    [
+      7.18,
+      0.603
+    ],
+    [
+      249.979,
+      251.4
+    ]
+  ],
+  "exclusion_hits": 0,
+  "saved_3mf_components": 1,
+  "passed": true
+}

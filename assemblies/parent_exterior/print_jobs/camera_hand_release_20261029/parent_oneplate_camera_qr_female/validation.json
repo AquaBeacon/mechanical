@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "source": "parts/parent/exterior/printed/parent_oneplate_camera_qr/parent_oneplate_camera_qr_female.stl",
+  "source_sha256": "cbc35dea7b2e7866640ea5fb140f9580ad5cf55e6f2d24417df7d19ca1005bd4",
+  "three_mf_sha256": "18d947274c4d88c8010f95dd1aafdd47ef9b29595f0d678067a95889156052af",
+  "layer_mm": 0.1,
+  "enable_support": "1",
+  "support_on_build_plate_only": "1",
+  "support_threshold_angle": "45",
+  "support_feature_sections": 36,
+  "extrusion_bounds_xy_mm": [
+    [
+      94.167,
+      66.08
+    ],
+    [
+      161.833,
+      185.92
+    ]
+  ],
+  "warning_message": "",
+  "seconds": 7962.98388671875,
+  "grams": 40.48726272583008,
+  "material": "Generic PETG",
+  "walls": 6,
+  "infill": "15% gyroid",
+  "limits": [
+    "Physical print and C fit unverified; G2/G3 plotted as chords.",
+    "Snap-cap nubs, finger fit and physical gripping require inspection on a real print."
+  ]
+}

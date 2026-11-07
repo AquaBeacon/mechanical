@@ -5,9 +5,10 @@ $fn=48;
 wall_center_y=27; wall_front_y=31; wall_back_y=23;
 wall_top_z=32.2; tool_hole_pitch=40; tool_hole_z=20;
 bolt_d=4.5; // M4 clearance through the existing nominal 5 mm tool holes
-mount_plate_t=4; arm_w=3.6; arm_h=4.3;
-case_stop_y=16; case_stop_z=36.5; // initial contact setting only; case is provisional
-case_stop_depth=8; case_stop_width=10; adjuster_d=4.5; adjuster_nut_af=7.2;
+mount_plate_t=4; arm_w=10; arm_h=4.3;
+case_stop_y=8.5; case_stop_z=36.5; // initial contact setting only; case is provisional
+case_stop_depth=13.5; adjuster_y=18; // retain the existing screw axes
+case_stop_width=10; adjuster_d=4.5; adjuster_nut_af=7.2;
 adjuster_nut_h=3.2; edge_c=0.45; corner_r=1.5;
 assert(wall_center_y==27 && wall_top_z>tool_hole_z);
 module efbox_at(x,y,z,w,d,h,r=corner_r) translate([x,y,z])
@@ -19,19 +20,29 @@ module roof_hole_y(d,len) {
   polygon([[-r/sqrt(2),r/sqrt(2)],[0,sqrt(2)*r],[r/sqrt(2),r/sqrt(2)]]);
  }
 }
-module adjuster_hole() cylinder(d=adjuster_d/cos(180/32),h=arm_h+0.04,$fn=32);
+// Print backing face Y=35 down (X=-90). Local -Y is the upward roof.
+module upward_roof(d){
+ r=d/2/cos(180/32);
+ union(){circle(r=r,$fn=32);polygon([[-r/sqrt(2),-r/sqrt(2)],[0,-r/sqrt(2)*(1+tan(55))],[r/sqrt(2),-r/sqrt(2)]]);}
+}
+module adjuster_hole() ef_cut(arm_h+0.04,0.2)upward_roof(adjuster_d);
+module nut_profile(){
+ r=adjuster_nut_af/2/cos(30);
+ union(){rotate(-30)ef_hex(adjuster_nut_af);
+  polygon([[-adjuster_nut_af/2,-r/2],[0,-r/2-adjuster_nut_af/2*tan(55)],[adjuster_nut_af/2,-r/2]]);}
+}
 module one_stop() {
  difference() {
   union() {
    // Backing strip sits on the existing wall's outer face (y=31..35).
    // 52 mm strip gives the x=±20 holes 6 mm of edge distance.
-   efbox_at(-26,wall_front_y,15,52,mount_plate_t,18.2,2);
-   // Paired narrow risers clear the existing ±30 mm front pads.
+   translate([-26,wall_front_y,15])rbox([52,mount_plate_t,case_stop_z-15],2,"y");
+   // Constant-width risers grow directly from the bed-facing backing strip.
    for(s=[-1,1]) {
     translate([s*tool_hole_pitch/2-arm_w/2,case_stop_y+case_stop_depth-1,
                wall_top_z])
      rbox([arm_w,wall_front_y-(case_stop_y+case_stop_depth)+2,
-           case_stop_z-wall_top_z+1.3],1.2,"y");
+           case_stop_z-wall_top_z],1.2,"y");
     // Contact feet end at z=36.5; vertical M4 screws set the case angle independently.
     efbox_at(s*tool_hole_pitch/2-case_stop_width/2,case_stop_y,case_stop_z-arm_h,
              case_stop_width,case_stop_depth,arm_h,1.2);
@@ -43,9 +54,9 @@ module one_stop() {
     roof_hole_y(bolt_d,mount_plate_t+0.04);
   // Captive M4 nuts at each contact foot; screws rise from below and adjust independently.
   for(x=[-tool_hole_pitch/2,tool_hole_pitch/2]) {
-   translate([x,case_stop_y+case_stop_depth/2,case_stop_z-arm_h-0.02])
-    linear_extrude(adjuster_nut_h+0.02) rotate(-30) ef_hex(adjuster_nut_af);
-   translate([x,case_stop_y+case_stop_depth/2,case_stop_z-arm_h-0.02]) adjuster_hole();
+   translate([x,adjuster_y,case_stop_z-arm_h-0.02])
+    linear_extrude(adjuster_nut_h+0.02)nut_profile();
+   translate([x,adjuster_y,case_stop_z-arm_h-0.02]) adjuster_hole();
   }
  }
 }

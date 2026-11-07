@@ -1,0 +1,330 @@
+{
+  "passed": true,
+  "geometry": "12 separate spacer solids, no runner",
+  "members": [
+    {
+      "label": "main_column_0",
+      "file": "main_corner_column.stl",
+      "source_sha256": "639be0797c6ba7d5aecef76b538511a39470d75ef7aca319ebec30f2d93bce39",
+      "center_xy_mm": [
+        70,
+        75
+      ],
+      "bounds_mm": [
+        [
+          66.5,
+          71.50108790397644,
+          0.0
+        ],
+        [
+          73.5,
+          78.49891209602356,
+          14.300000190734863
+        ]
+      ],
+      "first_outer_wall_z_mm": 0.2,
+      "last_outer_wall_z_mm": 14.4,
+      "passed": true
+    },
+    {
+      "label": "main_column_1",
+      "file": "main_corner_column.stl",
+      "source_sha256": "639be0797c6ba7d5aecef76b538511a39470d75ef7aca319ebec30f2d93bce39",
+      "center_xy_mm": [
+        108,
+        75
+      ],
+      "bounds_mm": [
+        [
+          104.5,
+          71.50108790397644,
+          0.0
+        ],
+        [
+          111.5,
+          78.49891209602356,
+          14.300000190734863
+        ]
+      ],
+      "first_outer_wall_z_mm": 0.2,
+      "last_outer_wall_z_mm": 14.4,
+      "passed": true
+    },
+    {
+      "label": "main_column_2",
+      "file": "main_corner_column.stl",
+      "source_sha256": "639be0797c6ba7d5aecef76b538511a39470d75ef7aca319ebec30f2d93bce39",
+      "center_xy_mm": [
+        146,
+        75
+      ],
+      "bounds_mm": [
+        [
+          142.5,
+          71.50108790397644,
+          0.0
+        ],
+        [
+          149.5,
+          78.49891209602356,
+          14.300000190734863
+        ]
+      ],
+      "first_outer_wall_z_mm": 0.2,
+      "last_outer_wall_z_mm": 14.4,
+      "passed": true
+    },
+    {
+      "label": "main_column_3",
+      "file": "main_corner_column.stl",
+      "source_sha256": "639be0797c6ba7d5aecef76b538511a39470d75ef7aca319ebec30f2d93bce39",
+      "center_xy_mm": [
+        184,
+        75
+      ],
+      "bounds_mm": [
+        [
+          180.5,
+          71.50108790397644,
+          0.0
+        ],
+        [
+          187.5,
+          78.49891209602356,
+          14.300000190734863
+        ]
+      ],
+      "first_outer_wall_z_mm": 0.2,
+      "last_outer_wall_z_mm": 14.4,
+      "passed": true
+    },
+    {
+      "label": "sony_column_0",
+      "file": "sony_column_left.stl",
+      "source_sha256": "1bc77ff4a6884f7820c4b50563c12dc0072698a634cf2b0a26aa262bceb06663",
+      "center_xy_mm": [
+        70,
+        115
+      ],
+      "bounds_mm": [
+        [
+          66.5,
+          111.50108790397644,
+          0.0
+        ],
+        [
+          73.5,
+          118.49891209602356,
+          42.5
+        ]
+      ],
+      "first_outer_wall_z_mm": 0.2,
+      "last_outer_wall_z_mm": 42.4,
+      "passed": true
+    },
+    {
+      "label": "sony_column_2",
+      "file": "sony_column_left.stl",
+      "source_sha256": "1bc77ff4a6884f7820c4b50563c12dc0072698a634cf2b0a26aa262bceb06663",
+      "center_xy_mm": [
+        108,
+        115
+      ],
+      "bounds_mm": [
+        [
+          104.5,
+          111.50108790397644,
+          0.0
+        ],
+        [
+          111.5,
+          118.49891209602356,
+          42.5
+        ]
+      ],
+      "first_outer_wall_z_mm": 0.2,
+      "last_outer_wall_z_mm": 42.4,
+      "passed": true
+    },
+    {
+      "label": "sony_column_1",
+      "file": "sony_column_right.stl",
+      "source_sha256": "5f263a2febcc489c3ddbba60188726ce375e54b4f88dfc8d81b7a712b34436f1",
+      "center_xy_mm": [
+        146,
+        115
+      ],
+      "bounds_mm": [
+        [
+          143.29999995231628,
+          110.5,
+          0.0
+        ],
+        [
+          148.70000004768372,
+          119.5,
+          42.5
+        ]
+      ],
+      "first_outer_wall_z_mm": 0.2,
+      "last_outer_wall_z_mm": 42.4,
+      "passed": true
+    },
+    {
+      "label": "sony_column_3",
+      "file": "sony_column_right.stl",
+      "source_sha256": "5f263a2febcc489c3ddbba60188726ce375e54b4f88dfc8d81b7a712b34436f1",
+      "center_xy_mm": [
+        184,
+        115
+      ],
+      "bounds_mm": [
+        [
+          181.29999995231628,
+          110.5,
+          0.0
+        ],
+        [
+          186.70000004768372,
+          119.5,
+          42.5
+        ]
+      ],
+      "first_outer_wall_z_mm": 0.2,
+      "last_outer_wall_z_mm": 42.4,
+      "passed": true
+    },
+    {
+      "label": "gnss_column_0",
+      "file": "gnss_column_front.stl",
+      "source_sha256": "f7b4c73f410776435bdf8b1bbc5913bc5b99c54167045debc7d3ed6130a23de8",
+      "center_xy_mm": [
+        70,
+        155
+      ],
+      "bounds_mm": [
+        [
+          65.5,
+          150.5,
+          0.0
+        ],
+        [
+          74.5,
+          159.5,
+          32.0
+        ]
+      ],
+      "first_outer_wall_z_mm": 0.2,
+      "last_outer_wall_z_mm": 32.0,
+      "passed": true
+    },
+    {
+      "label": "gnss_column_1",
+      "file": "gnss_column_front.stl",
+      "source_sha256": "f7b4c73f410776435bdf8b1bbc5913bc5b99c54167045debc7d3ed6130a23de8",
+      "center_xy_mm": [
+        108,
+        155
+      ],
+      "bounds_mm": [
+        [
+          103.5,
+          150.5,
+          0.0
+        ],
+        [
+          112.5,
+          159.5,
+          32.0
+        ]
+      ],
+      "first_outer_wall_z_mm": 0.2,
+      "last_outer_wall_z_mm": 32.0,
+      "passed": true
+    },
+    {
+      "label": "gnss_column_2",
+      "file": "gnss_column_rear.stl",
+      "source_sha256": "a96c75af4b4063e22754912417b6e67fe41389d69962e7d02a12879fc53da1e6",
+      "center_xy_mm": [
+        146,
+        155
+      ],
+      "bounds_mm": [
+        [
+          142.0,
+          152.0,
+          0.0
+        ],
+        [
+          150.0,
+          158.0,
+          32.0
+        ]
+      ],
+      "first_outer_wall_z_mm": 0.2,
+      "last_outer_wall_z_mm": 32.0,
+      "passed": true
+    },
+    {
+      "label": "gnss_column_3",
+      "file": "gnss_column_rear.stl",
+      "source_sha256": "a96c75af4b4063e22754912417b6e67fe41389d69962e7d02a12879fc53da1e6",
+      "center_xy_mm": [
+        184,
+        155
+      ],
+      "bounds_mm": [
+        [
+          180.0,
+          152.0,
+          0.0
+        ],
+        [
+          188.0,
+          158.0,
+          32.0
+        ]
+      ],
+      "first_outer_wall_z_mm": 0.2,
+      "last_outer_wall_z_mm": 32.0,
+      "passed": true
+    }
+  ],
+  "quantities": {
+    "main_corner_column.stl": 4,
+    "sony_column_left.stl": 2,
+    "sony_column_right.stl": 2,
+    "gnss_column_front.stl": 2,
+    "gnss_column_rear.stl": 2
+  },
+  "material": "Generic PETG",
+  "printer": "Bambu Lab X1 Carbon",
+  "nozzle_mm": 0.4,
+  "layer_mm": 0.2,
+  "walls": 4,
+  "infill_percent": 100,
+  "brim_mm": 3,
+  "support_detection": "normal(auto), 45 degrees, all surfaces, bridge exemption disabled",
+  "support_extrusion_moves": 0,
+  "extrusion_bounds_xy_mm": [
+    [
+      62.886,
+      66.941
+    ],
+    [
+      190.614,
+      160.114
+    ]
+  ],
+  "filament_g": 15.000798225402832,
+  "prediction_seconds": 4279.9111328125,
+  "warnings": "",
+  "source": "assemblies/parent_hand_service/parts/manifest.json",
+  "three_mf_sha256": "0ef2e74028c6674e1edc340ea1207a6abf441419b0e9ea62c45a3afd65afad75",
+  "staged_stl_sha256": "16f62eca4f3edc9c7dc94df9883330630a61437faf810a965c9c38fffa7de1e8",
+  "limits": [
+    "Physical print, fit and tightening remain unverified.",
+    "G2/G3 paths interpolated for layer review; actual machine accuracy is unmeasured."
+  ]
+}

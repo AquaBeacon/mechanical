@@ -1,10 +1,33 @@
 {
   "non_print_files": [
+    "battery_lid_nut_support_blocker",
+    "battery_lid_pilot_support_blocker",
+    "battery_pads_open_end",
+    "battery_slide_rail_support_blocker",
+    "floor_head_spotface_support_blocker",
+    "floor_plate_support_blocker",
+    "floor_underside_nut_support_blocker",
     "lid_keepout",
+    "main_floor_pilot_support_blocker",
+    "main_lower_carrier",
+    "main_offset_corner",
+    "main_service_frame_support_blocker",
+    "power_adapter_support_blocker",
+    "sony_corner_0",
+    "sony_corner_1",
+    "sony_corner_2",
+    "sony_corner_3",
+    "sony_fixed_column_0_support_blocker",
+    "sony_fixed_column_1_support_blocker",
+    "sony_fixed_column_3_support_blocker",
+    "sony_support_frame_support_blocker",
+    "sony_upper_carrier",
     "stop_pin_0",
     "stop_pin_1",
     "stop_pin_2",
     "stop_pin_3",
+    "storage_strap_0",
+    "storage_strap_1",
     "tie_rod_0_0",
     "tie_rod_0_1",
     "tie_rod_1_0",
@@ -15,19 +38,7 @@
     "tie_rod_3_1",
     "tie_rod_4_0",
     "tie_rod_4_1",
-    "storage_strap_0",
-    "storage_strap_1",
-    "tx_top_keepout",
-    "main_lower_carrier",
-    "sony_upper_carrier",
-    "main_offset_corner",
-    "sony_corner_0",
-    "sony_corner_1",
-    "sony_corner_2",
-    "sony_corner_3",
-    "battery_pads_open_end",
-    "battery_lid_nut_support_blocker",
-    "battery_slide_rail_support_blocker"
+    "tx_top_keepout"
   ],
   "note": "Metal fasteners, straps and lid exclusion volume are not printable. manufacturing_parts.json is the existing manufacturing list.",
   "source_dependencies": [
@@ -44,7 +55,20 @@
     "../../../exterior/cots/bcas212310g/interior_corner_clearance.step",
     "../../../../../scad/lib/parent_case_access.py",
     "../../../../../scad/lib/parent_battery_slide.py",
-    "../../../../../parts/child/interior/printed/child_vtray_batt_floor/child_vtray_batt_floor.scad"
+    "../../../../../parts/child/interior/printed/child_vtray_batt_floor/child_vtray_batt_floor.scad",
+    "../../../../../spec/build_parent_main_polygon.py",
+    "main_corner_column.step",
+    "../../../../../scad/lib/parent_service_retrofit.py",
+    "../ann_mb1_internal_rack/ann_mb1_coax_ring.step",
+    "../../../../../spec/prepare_parent_retrofit_printing.py",
+    "../../../../../assemblies/parent_hand_service/_work/analysis/retrofit_20261024/release_record.json",
+    "../../../../../spec/build_parent_sony_plate.py",
+    "../../../../../spec/build_parent_frame_spacers.py",
+    "../../../../../spec/revise_parent_printability.py",
+    "../../../../../spec/build_parent_access_related.py",
+    "../../../../../scad/lib/parent_floor_access.py",
+    "../../../../../spec/build_parent_floor_access.py",
+    "../../../../../scad/lib/parent_service_datums.py"
   ],
   "print_rotations_deg": {
     "guide_0": [
@@ -106,6 +130,46 @@
       0,
       0,
       0
+    ],
+    "main_corner_column_polygon": [
+      0,
+      0,
+      0
+    ],
+    "main_corner_column_polygon_4": [
+      0,
+      0,
+      0
+    ],
+    "main_service_frame": [
+      0,
+      0,
+      0
+    ],
+    "power_adapter": [
+      0,
+      0,
+      0
+    ],
+    "sony_fixed_column_0": [
+      0,
+      0,
+      0
+    ],
+    "sony_fixed_column_1": [
+      0,
+      0,
+      0
+    ],
+    "sony_fixed_column_3": [
+      0,
+      0,
+      0
+    ],
+    "floor_plate": [
+      0,
+      0,
+      0
     ]
   },
   "release_status": "fit_check_prototype",
@@ -116,5 +180,12 @@
     "infill_percent": 100,
     "build_axis": "Z",
     "note": "Dense equivalent-solid assumption for historical FEA; current case-corrected geometry not structurally analyzed. Supports as PRINT.md. No fatigue/creep qualification."
+  },
+  "portable_stl_export_format": "stl_ascii",
+  "modifier_generators": {
+    "floor_head_spotface_support_blocker": "spec/slice_parent_plate_access.py",
+    "main_floor_pilot_support_blocker": "spec/slice_parent_plate_access.py",
+    "battery_lid_pilot_support_blocker": "spec/review_parent_battery_top_lid.py",
+    "floor_underside_nut_support_blocker": "spec/slice_parent_plate_access.py"
   }
 }

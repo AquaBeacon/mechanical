@@ -7,7 +7,7 @@ from cad_edge_finish import sharp_edges
 TOOL_CLEAR_D = 3.5  # 2.5 mm AF key: corner diameter 2.887 plus clearance
 GUIDE_ID = 4.2
 GUIDE_OD = 11.4  # >= 0.9 mm wall at upper mouth, clears adjacent MAIN column
-BATTERY_TOOL_D = 8.0  # effective across flats, upper tray only; floor unchanged
+BATTERY_TOOL_D = 10.8  # 2026-10-27: also passes the approximately10mm M4 head
 EDGE = .2
 TILT_DEG = 10.0
 
@@ -35,8 +35,42 @@ def finish_cut(shape,index,offset=(0,0,0),rotation_z=0,diameter=None):
         x,y=G.CASE_ANCHOR_XY[index];r=diameter/2/math.cos(math.pi/12)
         points=[A.Vector(x+r*math.cos(i*math.pi/6),y+r*math.sin(i*math.pi/6),-10) for i in range(12)]
         cutter=in_local(Part.Face(Part.makePolygon(points+[points[0]])).extrude(A.Vector(0,0,150)),offset,rotation_z)
+        if diameter>=10:
+            # Open the thin sliver beside the lead end instead of leaving a
+            # fragile strip between the enlarged head passage and that end.
+            b=cutter.BoundBox;cx=(b.XMin+b.XMax)/2
+            cutter=cutter.fuse(Part.makeBox(cx-shape.BoundBox.XMin+1,b.YLength,150,
+                                           A.Vector(shape.BoundBox.XMin-1,b.YMin,-10))).removeSplitter()
+            # Construct external lip bevels as planar loft cutters. A global
+            # OCC chamfer on the inherited rail/cavity intersections is not
+            # stable here. Flat battery/rail bearing rims at Z3/12 are exact
+            # functional interfaces, retained without a post-boolean chamfer.
+            cy=(b.YMin+b.YMax)/2;front=shape.BoundBox.XMin
+            def profile(z,extra):
+                rr=r+extra
+                pp=[A.Vector(cx+rr*math.cos(i*math.pi/6),cy+rr*math.sin(i*math.pi/6),z) for i in range(12)]
+                disk=Part.Face(Part.makePolygon(pp+[pp[0]]))
+                q=[A.Vector(xx,yy,z) for xx,yy in [(front-1,cy-rr),(cx,cy-rr),(cx,cy+rr),(front-1,cy+rr)]]
+                face=disk.fuse(Part.Face(Part.makePolygon(q+[q[0]]))).removeSplitter()
+                assert len(face.Faces)==1
+                return face.Faces[0].OuterWire
+            bottom=shape.BoundBox.ZMin;top=shape.BoundBox.ZMax
+            for z0,e0,z1,e1 in [(bottom-.01,EDGE,bottom+EDGE,0),(top-EDGE,0,top+.01,EDGE)]:
+                cutter=cutter.fuse(Part.makeLoft([profile(z0,e0),profile(z1,e1)],True,True))
+            for sign in [-1,1]:
+                yy=cy+sign*r
+                q=[A.Vector(front-EDGE,yy, -10),A.Vector(front-EDGE,yy+sign*EDGE,-10),A.Vector(front+EDGE,yy,-10)]
+                cutter=cutter.fuse(Part.Face(Part.makePolygon(q+[q[0]])).extrude(A.Vector(0,0,150)))
+            result=shape.cut(cutter).removeSplitter()
+            assert result.isValid() and len(result.Solids)==1,('Battery head passage disconnected part',len(result.Solids))
+            print('BATTERY_HEAD_OPENING D10.8, open lead end; external lip bevel0.2; flat bearing rims preserved',flush=True)
+            return result
     result=shape.cut(cutter).removeSplitter()
     edges=[e for e in sharp_edges(result) if Part.Vertex(e.valueAt((e.FirstParameter+e.LastParameter)/2)).distToShape(cutter)[0]<1e-5 and not any(e.isSame(old) for old in shape.Edges)]
+    if diameter is not None and diameter>=10:
+        # Round-profile polygon seams are not physical handling corners.
+        edges=[e for e in edges if e.Length>.5 and
+               (e.BoundBox.ZLength<1e-6 or abs(e.BoundBox.XMin-shape.BoundBox.XMin)<1e-6)]
     assert edges, ('No new access edges',index)
     for amount in [EDGE,.15,.1,.05]:
         try:

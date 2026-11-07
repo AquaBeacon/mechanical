@@ -1,0 +1,16 @@
+{
+  "file": "parent_oneplate_td_support.stl",
+  "quantity": 1,
+  "source_sha256": "df3e69cfa093517d49f7f68a283501c6bce5fdb813d71ad03e2893edf7cb6e56",
+  "layer_mm": 0.2,
+  "supports": "auto",
+  "exit_code": 0,
+  "bed_fits": true,
+  "passed": true,
+  "warnings": [],
+  "error": null,
+  "grams": 80.24,
+  "seconds": 7825.0,
+  "support_filament_mm": 1122.589,
+  "limits": "Slicer result only; inspect supports and physically verify printing/fit/strength."
+}

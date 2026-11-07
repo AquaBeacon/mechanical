@@ -6,7 +6,7 @@ import numpy as np
 import trimesh
 
 ROOT = Path(__file__).resolve().parents[1]
-ASSEMBLY = ROOT / 'assemblies/parent_oneplate'
+ASSEMBLY = ROOT / 'assemblies/parent_exterior'
 JOBS = ASSEMBLY / 'print_jobs/repeatable_mount'
 WORK = ASSEMBLY / '_work/analysis/repeatable_mount'
 NS = {'c':'http://schemas.microsoft.com/3dmanufacturing/core/2015/02',

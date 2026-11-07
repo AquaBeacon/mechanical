@@ -49,7 +49,7 @@ Cのゴムくぼみ（2026-10-01）: **5×8×1 mm×2**をCオス（蓋）下面�
 
 # 小型オス／メス脱着インターフェース3案
 
-2026-10-11：側面機器接続用 `twist_male_mount` を同じSCADのバリアントとして追加。[取付規格](https://github.com/AquaBeacon/docs/blob/main/child_horizontal_twist_interface.md)。既存9種類の比較試作は保持する。追加オスの裏側32×32の4穴へ90°皿座（深1.45）を設け、M3×18皿ねじの頭を回転面の0.425 mm内側へ置く。裏へナットや普通ねじ頭を出すとメス側壁へ当たる。これはRev.1の別体接続用バリアントとして保持する。現行Rev.2は公開twist_male/femaleモジュールを治具へ直接unionして一体化し、別体オスと皿ねじを使わない。軸・爪・カム・ゴム・横穴は元と同じ。[既存9分岐の形状照合](_work/analysis/mount_variant_equivalence/validation.json)。追加オスにSTEPはなく、標準オスのSTEPを使わない。
+2026-10-11：側面機器接続用 `twist_male_mount` を同じSCADのバリアントとして追加。[取付規格](../../../../docs/child_horizontal_twist_interface.md)。既存9種類の比較試作は保持する。追加オスの裏側32×32の4穴へ90°皿座（深1.45）を設け、M3×18皿ねじの頭を回転面の0.425 mm内側へ置く。裏へナットや普通ねじ頭を出すとメス側壁へ当たる。これはRev.1の別体接続用バリアントとして保持する。現行Rev.2は公開twist_male/femaleモジュールを治具へ直接unionして一体化し、別体オスと皿ねじを使わない。軸・爪・カム・ゴム・横穴は元と同じ。[既存9分岐の形状照合](_work/analysis/mount_variant_equivalence/validation.json)。追加オスにSTEPはなく、標準オスのSTEPを使わない。
 
 使用構成: [quick_release_trials](../../../../assemblies/quick_release_trials/README.md)。印刷入口: [PRINT.md](../../../../assemblies/quick_release_trials/parts/PRINT.md)。原本は同階層のquick_release_prototypes.scad、単位mm。公開モジュールをuseして組み込む。荷重集中の少ない機体・テザー固定用の比較試作で、取付先・金具寸法は仮定。耐荷重・疲労・実物の脱着は未検証。
 

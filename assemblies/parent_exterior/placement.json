@@ -1,0 +1,2644 @@
+{
+  "name": "parent_exterior",
+  "note": "Rev.7 flat lower plate, four removable vessel locators; retain printed upper clamp/skids and current integral camera. Side M4x20 x4, end M4x25 x4, M4 nuts x8.",
+  "coordinate_system": "Box datums Z=0; main plate top -0.8, flat underside/end-arm bottoms -20; end arms -20..-8; rope axes X=+/-111.5,Y=+/-23 along Z; C interface -30; ground -72. Spare nut floors -7.3, example screw tips -2.",
+  "groups": {
+    "exterior": true,
+    "vessel": true,
+    "floats": true,
+    "hardware": true,
+    "pads": true,
+    "envelope": true
+  },
+  "items": [
+    {
+      "label": "open_frame",
+      "part": "parts/parent/exterior/printed/parent_oneplate_frame",
+      "group": "exterior",
+      "color": "Orange",
+      "ops": [],
+      "file": "parent_oneplate_frame"
+    },
+    {
+      "label": "box_bcas212310g",
+      "part": "parts/parent/exterior/cots/bcas212310g",
+      "group": "vessel",
+      "color": "LightSteelBlue",
+      "alpha": 0.65,
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            460
+          ]
+        },
+        {
+          "translate": [
+            -105,
+            -115,
+            0
+          ]
+        }
+      ],
+      "file": "bcas212310g"
+    },
+    {
+      "label": "pen_tether",
+      "part": "parts/common/exterior/cots/wetlink_penetrator_m10",
+      "file": "wetlink_penetrator_m10_ref_bcas",
+      "group": "vessel",
+      "color": "Silver",
+      "alpha": 1.0,
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            460
+          ]
+        },
+        {
+          "translate": [
+            15,
+            -115,
+            65
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pen_td04a",
+      "part": "parts/common/exterior/cots/wetlink_penetrator_m10",
+      "file": "wetlink_penetrator_m10_ref_bcas",
+      "group": "vessel",
+      "color": "Silver",
+      "alpha": 1.0,
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            -460
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            460
+          ]
+        },
+        {
+          "translate": [
+            -20,
+            -115,
+            65
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rope_float_-1",
+      "part": "parts/parent/exterior/cots/parent_fender",
+      "color": "LightSkyBlue",
+      "group": "floats",
+      "ops": [
+        {
+          "translate": [
+            -178,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rope_float_1",
+      "part": "parts/parent/exterior/cots/parent_fender",
+      "color": "LightSkyBlue",
+      "group": "floats",
+      "ops": [
+        {
+          "translate": [
+            178,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lid_schematic",
+      "part": "parts/common/exterior/cots/parent_clamp_hardware",
+      "file": "lid_envelope",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            97.3
+          ]
+        }
+      ],
+      "group": "vessel",
+      "color": "LightSteelBlue"
+    },
+    {
+      "label": "pad_-98_-55",
+      "part": "parts/common/exterior/cots/parent_clamp_hardware",
+      "file": "rubber_pad",
+      "ops": [
+        {
+          "translate": [
+            -98,
+            -55,
+            100.3
+          ]
+        }
+      ],
+      "group": "pads",
+      "color": "DimGray"
+    },
+    {
+      "label": "pad_98_-55",
+      "part": "parts/common/exterior/cots/parent_clamp_hardware",
+      "file": "rubber_pad",
+      "ops": [
+        {
+          "translate": [
+            98,
+            -55,
+            100.3
+          ]
+        }
+      ],
+      "group": "pads",
+      "color": "DimGray"
+    },
+    {
+      "label": "rod_-112_-55",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_rod_m5x180",
+      "ops": [
+        {
+          "translate": [
+            -110,
+            -55,
+            142
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "washer_-112_-55_-13",
+      "part": "parts/common/exterior/cots/parent_clamp_hardware",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            -110,
+            -55,
+            -31
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "washer_-112_-55_114.3",
+      "part": "parts/common/exterior/cots/parent_clamp_hardware",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            -110,
+            -55,
+            122.3
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "nut_-112_-55_-18",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m5_4",
+      "ops": [
+        {
+          "translate": [
+            -110,
+            -55,
+            -35
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "nut_-112_-55_115.3",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m5_4",
+      "ops": [
+        {
+          "translate": [
+            -110,
+            -55,
+            123.3
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "rod_112_-55",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_rod_m5x180",
+      "ops": [
+        {
+          "translate": [
+            110,
+            -55,
+            142
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "washer_112_-55_-13",
+      "part": "parts/common/exterior/cots/parent_clamp_hardware",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            110,
+            -55,
+            -31
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "washer_112_-55_114.3",
+      "part": "parts/common/exterior/cots/parent_clamp_hardware",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            110,
+            -55,
+            122.3
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "nut_112_-55_-18",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m5_4",
+      "ops": [
+        {
+          "translate": [
+            110,
+            -55,
+            -35
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "nut_112_-55_115.3",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m5_4",
+      "ops": [
+        {
+          "translate": [
+            110,
+            -55,
+            123.3
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "pad_-98_55",
+      "part": "parts/common/exterior/cots/parent_clamp_hardware",
+      "file": "rubber_pad",
+      "ops": [
+        {
+          "translate": [
+            -98,
+            55,
+            100.3
+          ]
+        }
+      ],
+      "group": "pads",
+      "color": "DimGray"
+    },
+    {
+      "label": "pad_98_55",
+      "part": "parts/common/exterior/cots/parent_clamp_hardware",
+      "file": "rubber_pad",
+      "ops": [
+        {
+          "translate": [
+            98,
+            55,
+            100.3
+          ]
+        }
+      ],
+      "group": "pads",
+      "color": "DimGray"
+    },
+    {
+      "label": "rod_-112_55",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_rod_m5x180",
+      "ops": [
+        {
+          "translate": [
+            -110,
+            55,
+            142
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "washer_-112_55_-13",
+      "part": "parts/common/exterior/cots/parent_clamp_hardware",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            -110,
+            55,
+            -31
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "washer_-112_55_114.3",
+      "part": "parts/common/exterior/cots/parent_clamp_hardware",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            -110,
+            55,
+            122.3
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "nut_-112_55_-18",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m5_4",
+      "ops": [
+        {
+          "translate": [
+            -110,
+            55,
+            -35
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "nut_-112_55_115.3",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m5_4",
+      "ops": [
+        {
+          "translate": [
+            -110,
+            55,
+            123.3
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "rod_112_55",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_rod_m5x180",
+      "ops": [
+        {
+          "translate": [
+            110,
+            55,
+            142
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "washer_112_55_-13",
+      "part": "parts/common/exterior/cots/parent_clamp_hardware",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            110,
+            55,
+            -31
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "washer_112_55_114.3",
+      "part": "parts/common/exterior/cots/parent_clamp_hardware",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            110,
+            55,
+            122.3
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "nut_112_55_-18",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m5_4",
+      "ops": [
+        {
+          "translate": [
+            110,
+            55,
+            -35
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "nut_112_55_115.3",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m5_4",
+      "ops": [
+        {
+          "translate": [
+            110,
+            55,
+            123.3
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "camera_mount",
+      "part": "parts/child/exterior/printed/dji_osmo_action6_mount_m3",
+      "file": "camera_mount_twist",
+      "ops": [
+        {
+          "translate": [
+            -40,
+            -40,
+            -91.95
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "envelope",
+      "color": "SteelBlue",
+      "note": "25 mm clamp shifted 12 mm right from front-view left edge; rear lower 20 mm keepout; 41 mm measured case thickness. Physical fit pending.",
+      "removal_group": "camera"
+    },
+    {
+      "label": "camera_case_reference",
+      "part": "parts/child/exterior/printed/dji_osmo_action6_mount_m3",
+      "file": "camera_case_41mm",
+      "ops": [
+        {
+          "translate": [
+            -40,
+            -40,
+            -91.95
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "envelope",
+      "color": "DimGray",
+      "removal_group": "camera",
+      "print": false,
+      "note": "Depth 41 mm measured; case rear is aligned to original backplate -23.45. Actual M5-axis offset remains unmeasured."
+    },
+    {
+      "label": "carrier_screw_65",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m5x40_flat",
+      "ops": [
+        {
+          "translate": [
+            65,
+            -55,
+            -0.8
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "carrier_washer_65",
+      "part": "parts/common/exterior/cots/parent_clamp_hardware",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            65,
+            -55,
+            -26
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "carrier_nut_65",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m5_4",
+      "ops": [
+        {
+          "translate": [
+            65,
+            -55,
+            -30
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "carrier_screw_85",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m5x40_flat",
+      "ops": [
+        {
+          "translate": [
+            85,
+            -55,
+            -0.8
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "carrier_washer_85",
+      "part": "parts/common/exterior/cots/parent_clamp_hardware",
+      "file": "washer_M5",
+      "ops": [
+        {
+          "translate": [
+            85,
+            -55,
+            -26
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "carrier_nut_85",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m5_4",
+      "ops": [
+        {
+          "translate": [
+            85,
+            -55,
+            -30
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "locating_pressure_pad_-38",
+      "part": "parts/parent/exterior/printed/parent_oneplate_box_locator",
+      "file": "parent_oneplate_box_locator_pressure_pad",
+      "ops": [
+        {
+          "translate": [
+            105,
+            -38,
+            12
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "group": "exterior",
+      "color": "MediumSeaGreen"
+    },
+    {
+      "label": "locating_pressure_pad_38",
+      "part": "parts/parent/exterior/printed/parent_oneplate_box_locator",
+      "file": "parent_oneplate_box_locator_pressure_pad",
+      "ops": [
+        {
+          "translate": [
+            105,
+            38,
+            12
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "group": "exterior",
+      "color": "MediumSeaGreen"
+    },
+    {
+      "label": "locating_pressure_pad_end",
+      "part": "parts/parent/exterior/printed/parent_oneplate_box_locator",
+      "file": "parent_oneplate_box_locator_pressure_pad",
+      "ops": [
+        {
+          "translate": [
+            -94,
+            -115,
+            9
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "exterior",
+      "color": "MediumSeaGreen"
+    },
+    {
+      "label": "locating_press_bolt_-38",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m4x25_socket",
+      "ops": [
+        {
+          "translate": [
+            110.2,
+            -38,
+            12
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            -90,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "locating_press_nut_-38",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "ops": [
+        {
+          "translate": [
+            112.6,
+            -38,
+            12
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "locating_press_locknut_-38",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "ops": [
+        {
+          "translate": [
+            116,
+            -38,
+            12
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "locating_press_bolt_38",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m4x25_socket",
+      "ops": [
+        {
+          "translate": [
+            110.2,
+            38,
+            12
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            -90,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "locating_press_nut_38",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "ops": [
+        {
+          "translate": [
+            112.6,
+            38,
+            12
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "locating_press_locknut_38",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "ops": [
+        {
+          "translate": [
+            116,
+            38,
+            12
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "locating_press_bolt_end",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m4x25_socket",
+      "ops": [
+        {
+          "translate": [
+            -94,
+            -120.2,
+            9
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "locating_press_nut_end",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "ops": [
+        {
+          "translate": [
+            -94,
+            -127,
+            9
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "locating_press_locknut_end",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "ops": [
+        {
+          "translate": [
+            -94,
+            -130.2,
+            9
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "stand_-1",
+      "part": "parts/parent/exterior/printed/parent_oneplate_stand",
+      "file": "parent_oneplate_stand",
+      "ops": [
+        {
+          "translate": [
+            -116,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            180
+          ]
+        }
+      ],
+      "group": "exterior",
+      "color": "Orange"
+    },
+    {
+      "label": "stand_1",
+      "part": "parts/parent/exterior/printed/parent_oneplate_stand",
+      "file": "parent_oneplate_stand",
+      "ops": [
+        {
+          "translate": [
+            116,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "exterior",
+      "color": "Orange"
+    },
+    {
+      "label": "camera_qr_female",
+      "part": "parts/parent/exterior/printed/parent_oneplate_camera_qr",
+      "file": "parent_oneplate_camera_qr_female",
+      "ops": [
+        {
+          "translate": [
+            -40,
+            0,
+            -30
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            90
+          ]
+        }
+      ],
+      "group": "exterior",
+      "color": "Orange"
+    },
+    {
+      "label": "qr_female_bolt_-60_-20",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x25_socket",
+      "ops": [
+        {
+          "translate": [
+            -60,
+            -20,
+            -27.4
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "qr_female_nut_-60_-20",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "ops": [
+        {
+          "translate": [
+            -60,
+            -20,
+            -6.5
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "qr_female_bolt_-60_20",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x25_socket",
+      "ops": [
+        {
+          "translate": [
+            -60,
+            20,
+            -27.4
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "qr_female_nut_-60_20",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "ops": [
+        {
+          "translate": [
+            -60,
+            20,
+            -6.5
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "qr_female_bolt_-20_-20",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x25_socket",
+      "ops": [
+        {
+          "translate": [
+            -20,
+            -20,
+            -27.4
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "qr_female_nut_-20_-20",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "ops": [
+        {
+          "translate": [
+            -20,
+            -20,
+            -6.5
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "qr_female_bolt_-20_20",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x25_socket",
+      "ops": [
+        {
+          "translate": [
+            -20,
+            20,
+            -27.4
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "qr_female_nut_-20_20",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "ops": [
+        {
+          "translate": [
+            -20,
+            20,
+            -6.5
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "upper_clamp_frame",
+      "part": "parts/parent/exterior/printed/parent_oneplate_bar",
+      "ops": [
+        {
+          "translate": [
+            0,
+            0,
+            102.3
+          ]
+        }
+      ],
+      "group": "exterior",
+      "color": "Orange",
+      "file": "parent_oneplate_bar"
+    },
+    {
+      "label": "bolt_on_side_left",
+      "part": "parts/parent/exterior/printed/parent_oneplate_box_locator",
+      "file": "parent_oneplate_box_locator_side_left",
+      "ops": [],
+      "group": "exterior",
+      "color": "MediumSeaGreen"
+    },
+    {
+      "label": "bolt_on_side_right",
+      "part": "parts/parent/exterior/printed/parent_oneplate_box_locator",
+      "file": "parent_oneplate_box_locator_side_right",
+      "ops": [],
+      "group": "exterior",
+      "color": "MediumSeaGreen"
+    },
+    {
+      "label": "bolt_on_end_fixed",
+      "part": "parts/parent/exterior/printed/parent_oneplate_box_locator",
+      "file": "parent_oneplate_box_locator_end_fixed",
+      "ops": [],
+      "group": "exterior",
+      "color": "MediumSeaGreen"
+    },
+    {
+      "label": "bolt_on_end_push",
+      "part": "parts/parent/exterior/printed/parent_oneplate_box_locator",
+      "file": "parent_oneplate_box_locator_end_push",
+      "ops": [],
+      "group": "exterior",
+      "color": "MediumSeaGreen"
+    },
+    {
+      "label": "bolt_on_side_bolt_-110_-8",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m4x20_socket",
+      "ops": [
+        {
+          "translate": [
+            -110,
+            -8,
+            1.3
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "bolt_on_side_nut_-110_-8",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "ops": [
+        {
+          "translate": [
+            -110,
+            -8,
+            -15.5
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "bolt_on_side_bolt_-110_8",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m4x20_socket",
+      "ops": [
+        {
+          "translate": [
+            -110,
+            8,
+            1.3
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "bolt_on_side_nut_-110_8",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "ops": [
+        {
+          "translate": [
+            -110,
+            8,
+            -15.5
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "bolt_on_side_bolt_110_-8",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m4x20_socket",
+      "ops": [
+        {
+          "translate": [
+            110,
+            -8,
+            1.3
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "bolt_on_side_nut_110_-8",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "ops": [
+        {
+          "translate": [
+            110,
+            -8,
+            -15.5
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "bolt_on_side_bolt_110_8",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m4x20_socket",
+      "ops": [
+        {
+          "translate": [
+            110,
+            8,
+            1.3
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "bolt_on_side_nut_110_8",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "ops": [
+        {
+          "translate": [
+            110,
+            8,
+            -15.5
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "bolt_on_end_bolt_-1_52",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m4x25_socket",
+      "ops": [
+        {
+          "translate": [
+            -94,
+            -52,
+            -27.3
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "bolt_on_end_nut_-1_52",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "ops": [
+        {
+          "translate": [
+            -94,
+            -52,
+            -7.3
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "bolt_on_end_bolt_-1_62",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m4x25_socket",
+      "ops": [
+        {
+          "translate": [
+            -94,
+            -62,
+            -27.3
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "bolt_on_end_nut_-1_62",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "ops": [
+        {
+          "translate": [
+            -94,
+            -62,
+            -7.3
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "bolt_on_end_bolt_1_52",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m4x25_socket",
+      "ops": [
+        {
+          "translate": [
+            94,
+            52,
+            -27.3
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "bolt_on_end_nut_1_52",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "ops": [
+        {
+          "translate": [
+            94,
+            52,
+            -7.3
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "bolt_on_end_bolt_1_62",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m4x25_socket",
+      "ops": [
+        {
+          "translate": [
+            94,
+            62,
+            -27.3
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "bolt_on_end_nut_1_62",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "ops": [
+        {
+          "translate": [
+            94,
+            62,
+            -7.3
+          ]
+        }
+      ],
+      "group": "hardware",
+      "color": "Silver"
+    },
+    {
+      "label": "td04a_r6_parent_strap",
+      "part": "parts/common/exterior/printed/td04a_bracket_mount",
+      "file": "td04a_bracket_mount_parent_down",
+      "ops": [
+        {
+          "translate": [
+            53,
+            -55,
+            -20
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -45,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "DarkOrange",
+      "group": "exterior",
+      "note": "Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted."
+    },
+    {
+      "label": "td04a_r6_parent_sensor_bolt_-5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m4x14_socket",
+      "ops": [
+        {
+          "translate": [
+            53,
+            -55,
+            -20
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -51,
+            5.8,
+            -65
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "hardware",
+      "note": "Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted."
+    },
+    {
+      "label": "td04a_r6_parent_front_washer_-5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m4_08",
+      "ops": [
+        {
+          "translate": [
+            53,
+            -55,
+            -20
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -51,
+            -3,
+            -65
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "hardware",
+      "note": "Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted."
+    },
+    {
+      "label": "td04a_r6_parent_rear_washer_-5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m4_08",
+      "ops": [
+        {
+          "translate": [
+            53,
+            -55,
+            -20
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -51,
+            5,
+            -65
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "hardware",
+      "note": "Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted."
+    },
+    {
+      "label": "td04a_r6_parent_sensor_nut_-5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "ops": [
+        {
+          "translate": [
+            53,
+            -55,
+            -20
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -51,
+            -3.8,
+            -65
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "hardware",
+      "note": "Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted."
+    },
+    {
+      "label": "td04a_r6_parent_sensor_bolt_5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m4x14_socket",
+      "ops": [
+        {
+          "translate": [
+            53,
+            -55,
+            -20
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -39,
+            5.8,
+            -65
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "hardware",
+      "note": "Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted."
+    },
+    {
+      "label": "td04a_r6_parent_front_washer_5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m4_08",
+      "ops": [
+        {
+          "translate": [
+            53,
+            -55,
+            -20
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -39,
+            -3,
+            -65
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "hardware",
+      "note": "Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted."
+    },
+    {
+      "label": "td04a_r6_parent_rear_washer_5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m4_08",
+      "ops": [
+        {
+          "translate": [
+            53,
+            -55,
+            -20
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -39,
+            5,
+            -65
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "hardware",
+      "note": "Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted."
+    },
+    {
+      "label": "td04a_r6_parent_sensor_nut_5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "ops": [
+        {
+          "translate": [
+            53,
+            -55,
+            -20
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            -90
+          ]
+        },
+        {
+          "translate": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            -39,
+            -3.8,
+            -65
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "hardware",
+      "note": "Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted."
+    },
+    {
+      "label": "camera_front_clamp",
+      "part": "parts/child/exterior/printed/dji_osmo_action6_mount_m3",
+      "file": "camera_front_clamp",
+      "ops": [
+        {
+          "translate": [
+            -40,
+            -40,
+            -91.95
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "accessories",
+      "print": true,
+      "color": "Orange",
+      "owner": "camera_twist_accessory",
+      "revision_owner": "left_clamp_20261025",
+      "removal_group": "camera"
+    },
+    {
+      "label": "camera_clamp_0_screw",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m4x16_socket",
+      "ops": [
+        {
+          "translate": [
+            -40,
+            -40,
+            -91.95
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            11.5,
+            11.5,
+            4
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "fasteners",
+      "print": false,
+      "color": "Silver",
+      "owner": "camera_twist_accessory",
+      "revision_owner": "left_clamp_20261025",
+      "removal_group": "camera"
+    },
+    {
+      "label": "camera_clamp_0_washer",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m4_08",
+      "ops": [
+        {
+          "translate": [
+            -40,
+            -40,
+            -91.95
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            11.5,
+            11.5,
+            4
+          ]
+        }
+      ],
+      "group": "fasteners",
+      "print": false,
+      "color": "Silver",
+      "owner": "camera_twist_accessory",
+      "revision_owner": "left_clamp_20261025",
+      "removal_group": "camera"
+    },
+    {
+      "label": "camera_clamp_0_nut",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "ops": [
+        {
+          "translate": [
+            -40,
+            -40,
+            -91.95
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            11.5,
+            11.5,
+            10.6
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ],
+      "group": "fasteners",
+      "print": false,
+      "color": "Silver",
+      "owner": "camera_twist_accessory",
+      "revision_owner": "left_clamp_20261025",
+      "removal_group": "camera"
+    },
+    {
+      "label": "camera_clamp_1_screw",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m4x16_socket",
+      "ops": [
+        {
+          "translate": [
+            -40,
+            -40,
+            -91.95
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            24.5,
+            11.5,
+            4
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            0
+          ]
+        }
+      ],
+      "group": "fasteners",
+      "print": false,
+      "color": "Silver",
+      "owner": "camera_twist_accessory",
+      "revision_owner": "left_clamp_20261025",
+      "removal_group": "camera"
+    },
+    {
+      "label": "camera_clamp_1_washer",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m4_08",
+      "ops": [
+        {
+          "translate": [
+            -40,
+            -40,
+            -91.95
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            24.5,
+            11.5,
+            4
+          ]
+        }
+      ],
+      "group": "fasteners",
+      "print": false,
+      "color": "Silver",
+      "owner": "camera_twist_accessory",
+      "revision_owner": "left_clamp_20261025",
+      "removal_group": "camera"
+    },
+    {
+      "label": "camera_clamp_1_nut",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "ops": [
+        {
+          "translate": [
+            -40,
+            -40,
+            -91.95
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            24.5,
+            11.5,
+            10.6
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ],
+      "group": "fasteners",
+      "print": false,
+      "color": "Silver",
+      "owner": "camera_twist_accessory",
+      "revision_owner": "left_clamp_20261025",
+      "removal_group": "camera"
+    },
+    {
+      "label": "camera_qr_axial_0_screw",
+      "file": "camera_m3x30_hex",
+      "ops": [
+        {
+          "translate": [
+            -40,
+            0,
+            -30
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            0,
+            -52,
+            31.5
+          ]
+        }
+      ],
+      "part": "parts/child/exterior/printed/dji_osmo_action6_mount_m3",
+      "group": "fasteners",
+      "color": "Silver",
+      "print": false,
+      "owner": "camera_twist_accessory",
+      "removal_group": "camera"
+    },
+    {
+      "label": "camera_qr_axial_0_nut",
+      "file": "screw_nut_m3",
+      "ops": [
+        {
+          "translate": [
+            -40,
+            0,
+            -30
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            0,
+            -52,
+            2.4
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ],
+      "part": "parts/common/interior/cots/screw",
+      "group": "fasteners",
+      "color": "Silver",
+      "print": false,
+      "owner": "camera_twist_accessory"
+    },
+    {
+      "label": "camera_qr_axial_0_spacer",
+      "part": "parts/child/exterior/printed/dji_osmo_action6_mount_m3",
+      "file": "camera_hand_spacer",
+      "ops": [
+        {
+          "translate": [
+            -40,
+            0,
+            -30
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            0,
+            -52,
+            8
+          ]
+        }
+      ],
+      "group": "accessories",
+      "color": "Orange",
+      "print": true,
+      "owner": "camera_twist_accessory",
+      "removal_group": "camera"
+    },
+    {
+      "label": "camera_qr_axial_0_knob",
+      "part": "parts/child/exterior/printed/dji_osmo_action6_mount_m3",
+      "file": "camera_hand_knob",
+      "ops": [
+        {
+          "translate": [
+            -40,
+            0,
+            -30
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            0,
+            -52,
+            30.5
+          ]
+        }
+      ],
+      "group": "accessories",
+      "color": "SeaGreen",
+      "print": true,
+      "owner": "camera_twist_accessory",
+      "removal_group": "camera"
+    },
+    {
+      "label": "camera_qr_axial_0_knob_cap",
+      "part": "parts/child/exterior/printed/dji_osmo_action6_mount_m3",
+      "file": "camera_hand_knob_cap",
+      "ops": [
+        {
+          "translate": [
+            -40,
+            0,
+            -30
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            0,
+            -52,
+            33.5
+          ]
+        }
+      ],
+      "group": "accessories",
+      "color": "SeaGreen",
+      "print": true,
+      "owner": "camera_twist_accessory",
+      "removal_group": "camera"
+    },
+    {
+      "label": "camera_qr_axial_1_screw",
+      "file": "camera_m3x30_hex",
+      "ops": [
+        {
+          "translate": [
+            -40,
+            0,
+            -30
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            0,
+            52,
+            31.5
+          ]
+        }
+      ],
+      "part": "parts/child/exterior/printed/dji_osmo_action6_mount_m3",
+      "group": "fasteners",
+      "color": "Silver",
+      "print": false,
+      "owner": "camera_twist_accessory",
+      "removal_group": "camera"
+    },
+    {
+      "label": "camera_qr_axial_1_nut",
+      "file": "screw_nut_m3",
+      "ops": [
+        {
+          "translate": [
+            -40,
+            0,
+            -30
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            0,
+            52,
+            2.4
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ],
+      "part": "parts/common/interior/cots/screw",
+      "group": "fasteners",
+      "color": "Silver",
+      "print": false,
+      "owner": "camera_twist_accessory"
+    },
+    {
+      "label": "camera_qr_axial_1_spacer",
+      "part": "parts/child/exterior/printed/dji_osmo_action6_mount_m3",
+      "file": "camera_hand_spacer",
+      "ops": [
+        {
+          "translate": [
+            -40,
+            0,
+            -30
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            0,
+            52,
+            8
+          ]
+        }
+      ],
+      "group": "accessories",
+      "color": "Orange",
+      "print": true,
+      "owner": "camera_twist_accessory",
+      "removal_group": "camera"
+    },
+    {
+      "label": "camera_qr_axial_1_knob",
+      "part": "parts/child/exterior/printed/dji_osmo_action6_mount_m3",
+      "file": "camera_hand_knob",
+      "ops": [
+        {
+          "translate": [
+            -40,
+            0,
+            -30
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            0,
+            52,
+            30.5
+          ]
+        }
+      ],
+      "group": "accessories",
+      "color": "SeaGreen",
+      "print": true,
+      "owner": "camera_twist_accessory",
+      "removal_group": "camera"
+    },
+    {
+      "label": "camera_qr_axial_1_knob_cap",
+      "part": "parts/child/exterior/printed/dji_osmo_action6_mount_m3",
+      "file": "camera_hand_knob_cap",
+      "ops": [
+        {
+          "translate": [
+            -40,
+            0,
+            -30
+          ]
+        },
+        {
+          "rotate": [
+            180,
+            0,
+            90
+          ]
+        },
+        {
+          "translate": [
+            0,
+            52,
+            33.5
+          ]
+        }
+      ],
+      "group": "accessories",
+      "color": "SeaGreen",
+      "print": true,
+      "owner": "camera_twist_accessory",
+      "removal_group": "camera"
+    }
+  ],
+  "revision": "qr_standing_r2",
+  "upper_clamp_revision": "integrated_r3",
+  "camera_twist_mount": {
+    "revision": 3,
+    "source": "parts/child/exterior/printed/dji_osmo_action6_mount_m3/camera_mount_twist.scad",
+    "female": "camera_qr_female",
+    "male": "camera_mount",
+    "parent_camera_pose_retained": true,
+    "front_rotation_stop_removed": false,
+    "removed_hardware": "four M3x14 socket screws and four M3 nuts; detached front adjuster and its bridge/adjusting fasteners",
+    "bottom_support_revision": "rear_clearance_20261024",
+    "rear_bottom_clearance_mm": 20,
+    "physical_rotation_hold_status": "new_clamp_not_yet_physically_tested",
+    "left_clamp_revision": "clamp_right5_20261029",
+    "measured_case_depth_mm": 41,
+    "front_view_left_width_mm": 25,
+    "front_jaw_adjustment_mm": [
+      0,
+      3
+    ],
+    "previous_revision_test": "rear_clearance_20261024: user reported insufficient rotation hold",
+    "interface_limits": "Case depth confirmed; width/height and M5-axis offset remain provisional.",
+    "former_bottom_supports_removed": true,
+    "clamp_foot_direction": "inward",
+    "clamp_screws_insert_from": "below",
+    "rear_projecting_pad_removed": true,
+    "case_rear_datum_mm": -23.45,
+    "front_view_right_shift_mm": 17,
+    "clamp_x_range_mm": [
+      5.5,
+      30.5
+    ],
+    "M5_finger_gap_mm": null,
+    "interface": "camera axial clamp",
+    "removal": "Unscrew each knob until free, raise to about 3.8 mm, remove the U spacer, slide the screw outward, then rotate.",
+    "clamp_screws": "M3x30 hex, two; printed 1 mm compression floor and snap cap; M3 nuts",
+    "validation": "pending"
+  },
+  "vessel_locator_revision": "removable_r7_20261022",
+  "td04a_revision": "cable_clearance_r6",
+  "td04a_limits": "Nominal 12 mm approximate hole pitch; real body/cable/ear fit and strength unverified.",
+  "fastener_joints": [
+    {
+      "label": "camera_qr_axial_0",
+      "seat_mm": [
+        -92.0,
+        3.1840816777831178e-15,
+        -61.50000000000001
+      ],
+      "axis_rotation_deg": [
+        180.0,
+        -0.0,
+        90.0
+      ],
+      "length_mm": 30,
+      "nut_start_mm": [
+        -92.0,
+        3.184081677783118e-15,
+        -32.400000000000006
+      ],
+      "nut_rotation_deg": [
+        180.0,
+        -0.0,
+        90.0
+      ],
+      "nominal_diameter_mm": 3,
+      "exposed_nut": false,
+      "owner": "camera_twist_accessory"
+    },
+    {
+      "label": "camera_qr_axial_1",
+      "seat_mm": [
+        12.000000000000007,
+        -3.1840816777831186e-15,
+        -61.49999999999999
+      ],
+      "axis_rotation_deg": [
+        180.0,
+        -0.0,
+        90.0
+      ],
+      "length_mm": 30,
+      "nut_start_mm": [
+        12.0,
+        -3.184081677783118e-15,
+        -32.39999999999999
+      ],
+      "nut_rotation_deg": [
+        180.0,
+        -0.0,
+        90.0
+      ],
+      "nominal_diameter_mm": 3,
+      "exposed_nut": false,
+      "owner": "camera_twist_accessory"
+    }
+  ]
+}

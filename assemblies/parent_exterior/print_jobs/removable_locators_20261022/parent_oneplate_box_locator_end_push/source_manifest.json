@@ -1,0 +1,16 @@
+{
+  "file": "parent_oneplate_box_locator_end_push.stl",
+  "quantity": 1,
+  "source_sha256": "436c409adc793dd1f20d05f3f7d3ff359a3c0f2b0d448c8d57cf11d324d7ddf8",
+  "layer_mm": 0.2,
+  "supports": "auto",
+  "exit_code": 0,
+  "bed_fits": true,
+  "passed": true,
+  "warnings": [],
+  "error": null,
+  "grams": 28.08,
+  "seconds": 2801.0,
+  "support_filament_mm": 99.23100000000001,
+  "limits": "Slicer result only; inspect supports and physically verify printing/fit/strength."
+}

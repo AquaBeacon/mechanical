@@ -1,0 +1,765 @@
+{
+  "name": "td04a_fixture",
+  "units": "mm",
+  "revision": "cable_clearance_r6",
+  "status": "prototype_pending_real_sensor_fit",
+  "coordinate_system": "Global +Z up. Parent exterior plane Z0; child exterior side plane X0. Display origins separate comparison examples.",
+  "note": "12 mm approximate M4 through-hole pitch; 60 mm cable space from hole baseline; old sensor model excluded. Parent M5/20; child side M3/20.",
+  "groups": {
+    "parent": true,
+    "child": true
+  },
+  "items": [
+    {
+      "label": "parent_strap",
+      "part": "parts/common/exterior/printed/td04a_bracket_mount",
+      "file": "td04a_bracket_mount_parent_down",
+      "ops": [
+        {
+          "translate": [
+            -45,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "DarkOrange",
+      "group": "parent"
+    },
+    {
+      "label": "parent_sensor_bolt_-5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m4x14_socket",
+      "ops": [
+        {
+          "translate": [
+            -51,
+            5.8,
+            -65
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "parent"
+    },
+    {
+      "label": "parent_front_washer_-5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m4_08",
+      "ops": [
+        {
+          "translate": [
+            -51,
+            -3,
+            -65
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "parent"
+    },
+    {
+      "label": "parent_rear_washer_-5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m4_08",
+      "ops": [
+        {
+          "translate": [
+            -51,
+            5,
+            -65
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "parent"
+    },
+    {
+      "label": "parent_sensor_nut_-5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "ops": [
+        {
+          "translate": [
+            -51,
+            -3.8,
+            -65
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "parent"
+    },
+    {
+      "label": "parent_sensor_bolt_5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m4x14_socket",
+      "ops": [
+        {
+          "translate": [
+            -39,
+            5.8,
+            -65
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "parent"
+    },
+    {
+      "label": "parent_front_washer_5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m4_08",
+      "ops": [
+        {
+          "translate": [
+            -39,
+            -3,
+            -65
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "parent"
+    },
+    {
+      "label": "parent_rear_washer_5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m4_08",
+      "ops": [
+        {
+          "translate": [
+            -39,
+            5,
+            -65
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "parent"
+    },
+    {
+      "label": "parent_sensor_nut_5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "ops": [
+        {
+          "translate": [
+            -39,
+            -3.8,
+            -65
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "parent"
+    },
+    {
+      "label": "child_strap",
+      "part": "parts/common/exterior/printed/td04a_bracket_mount",
+      "file": "td04a_bracket_mount_child_side_up",
+      "ops": [
+        {
+          "translate": [
+            45,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "DarkOrange",
+      "group": "child"
+    },
+    {
+      "label": "child_sensor_bolt_-5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m4x14_socket",
+      "ops": [
+        {
+          "translate": [
+            71,
+            5.8,
+            65
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "child"
+    },
+    {
+      "label": "child_front_washer_-5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m4_08",
+      "ops": [
+        {
+          "translate": [
+            71,
+            -3,
+            65
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "child"
+    },
+    {
+      "label": "child_rear_washer_-5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m4_08",
+      "ops": [
+        {
+          "translate": [
+            71,
+            5,
+            65
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "child"
+    },
+    {
+      "label": "child_sensor_nut_-5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "ops": [
+        {
+          "translate": [
+            71,
+            -3.8,
+            65
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "child"
+    },
+    {
+      "label": "child_sensor_bolt_5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m4x14_socket",
+      "ops": [
+        {
+          "translate": [
+            83,
+            5.8,
+            65
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "child"
+    },
+    {
+      "label": "child_front_washer_5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m4_08",
+      "ops": [
+        {
+          "translate": [
+            83,
+            -3,
+            65
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "child"
+    },
+    {
+      "label": "child_rear_washer_5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m4_08",
+      "ops": [
+        {
+          "translate": [
+            83,
+            5,
+            65
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "child"
+    },
+    {
+      "label": "child_sensor_nut_5",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "ops": [
+        {
+          "translate": [
+            83,
+            -3.8,
+            65
+          ]
+        },
+        {
+          "rotate": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "child"
+    },
+    {
+      "label": "child_side_bolt_12",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x20",
+      "ops": [
+        {
+          "translate": [
+            50.5,
+            14,
+            12
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "child"
+    },
+    {
+      "label": "child_side_washer_12",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m3_05",
+      "ops": [
+        {
+          "translate": [
+            50,
+            14,
+            12
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "child"
+    },
+    {
+      "label": "child_side_nut_12",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "ops": [
+        {
+          "translate": [
+            35.8,
+            14,
+            12
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            -90,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "child"
+    },
+    {
+      "label": "child_side_bolt_32",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x20",
+      "ops": [
+        {
+          "translate": [
+            50.5,
+            14,
+            32
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "child"
+    },
+    {
+      "label": "child_side_washer_32",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m3_05",
+      "ops": [
+        {
+          "translate": [
+            50,
+            14,
+            32
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            90,
+            0
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "child"
+    },
+    {
+      "label": "child_side_nut_32",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "ops": [
+        {
+          "translate": [
+            35.8,
+            14,
+            32
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            -90,
+            0
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ],
+      "color": "Silver",
+      "print": false,
+      "group": "child"
+    }
+  ],
+  "confirmed_interface": {
+    "fastener": "M4 through bolt + nut",
+    "hole_center_pitch_mm": 12,
+    "hole_baseline": [
+      1,
+      0,
+      0
+    ],
+    "fixing_plane_normal": [
+      0,
+      1,
+      0
+    ],
+    "source_record": "parts/common/exterior/cots/td04a_transducer/ref/user_mount_interface_20261025.json",
+    "parent_broad_face": "down",
+    "child_broad_face": "up",
+    "hole_center_pitch_status": "user approximate; CAD nominal",
+    "cable_clearance_mm": 60,
+    "cable_clearance_reference": "M4 hole baseline towards exterior"
+  },
+  "assembly_assumptions": {
+    "sensor_ear_thickness_mm": 3,
+    "sensor_ear_thickness_status": "unmeasured",
+    "sensor_screw_length_mm": 14,
+    "exterior_hole_centers_local_mm": [
+      [
+        0,
+        12,
+        0
+      ],
+      [
+        0,
+        32,
+        0
+      ]
+    ],
+    "exterior_hole_status": "Parent existing M5/20; child existing side M3/20. Integration to be verified."
+  },
+  "fixture_variants": [
+    {
+      "unit": "parent",
+      "variant": "parent_down",
+      "stem": "td04a_bracket_mount_parent_down",
+      "origin_mm": [
+        -45,
+        0,
+        0
+      ],
+      "sensor_hole_z_mm": -65,
+      "broad_face_normal": [
+        0,
+        0,
+        -1
+      ],
+      "exterior_contact_plane_z_mm": 0,
+      "reference_body": {
+        "status": "DISABLED legacy schematic, not a fit model",
+        "center_y_mm": -20,
+        "width_mm": 46,
+        "depth_mm": 40,
+        "thickness_mm": 10,
+        "near_body_z_mm": -74,
+        "broad_face_z_mm": -84,
+        "ear_x_width_mm": 22,
+        "ear_thickness_mm": 3,
+        "ear_z_relative_mm": [
+          -7,
+          10
+        ]
+      },
+      "cable_reservation": {
+        "height_mm": 60,
+        "x_center_mm": 0,
+        "width_mm": 12,
+        "y_range_mm": [
+          -25,
+          -10
+        ],
+        "z_range_mm": [
+          -65,
+          -5
+        ],
+        "status": "width/depth illustrative, cable root unmeasured"
+      }
+    },
+    {
+      "unit": "child",
+      "variant": "child_side_up",
+      "stem": "td04a_bracket_mount_child_side_up",
+      "origin_mm": [
+        45,
+        0,
+        0
+      ],
+      "sensor_hole_z_mm": 65,
+      "broad_face_normal": [
+        0,
+        0,
+        1
+      ],
+      "reference_body": {
+        "status": "DISABLED legacy schematic, not a fit model",
+        "center_y_mm": -20,
+        "width_mm": 46,
+        "depth_mm": 40,
+        "thickness_mm": 10,
+        "near_body_z_mm": 74,
+        "broad_face_z_mm": 84,
+        "ear_x_width_mm": 22,
+        "ear_thickness_mm": 3,
+        "ear_z_relative_mm": [
+          -7,
+          10
+        ],
+        "center_x_mm": 32
+      },
+      "sensor_center_x_mm": 32,
+      "exterior_contact_plane_x_mm": 0,
+      "side_attachment": {
+        "target_assembly": "assemblies/child_horizontal_plate_frame/placement.json",
+        "frame_label": "right_side_frame",
+        "target_origin_mm": [
+          122,
+          -74,
+          108
+        ],
+        "hole_centers_local_mm": [
+          [
+            0,
+            14,
+            12
+          ],
+          [
+            0,
+            14,
+            32
+          ]
+        ],
+        "hole_centers_world_mm": [
+          [
+            122,
+            -60,
+            120
+          ],
+          [
+            122,
+            -60,
+            140
+          ]
+        ],
+        "hole_nominal": "M3",
+        "pitch_mm": 20,
+        "side_thickness_mm": 12,
+        "nut_pocket_depth_mm": 2.8,
+        "review_only": true
+      },
+      "cable_reservation": {
+        "height_mm": 60,
+        "x_center_mm": 32,
+        "width_mm": 12,
+        "y_range_mm": [
+          -25,
+          -10
+        ],
+        "z_range_mm": [
+          5,
+          65
+        ],
+        "status": "width/depth illustrative, cable root unmeasured"
+      }
+    }
+  ],
+  "unresolved": [
+    "Metal bracket dimensions and sensor ear/body/cable real dimensions",
+    "Actual exterior attachment locations and hardware",
+    "Physical print, strength and creep"
+  ]
+}

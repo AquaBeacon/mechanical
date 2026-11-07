@@ -1,3 +1,27 @@
+# 2026-10-29 床下面ナットへの貫通固定
+
+現行は [改訂報告](../../../../../assemblies/parent_hand_service/unified_support_report.md)。床の下面開放六角くぼみへM3ナットを入れ、上からの貫通ねじで床板まで挟む。MAIN枠とSony/GNSS支持枠の対象穴は通し穴。足の一体化・50 mmは維持。以下は変更前の履歴。
+
+# 2026-10-28 埋め込みナット廃止
+
+現行のアンテナ棚は鋼板・アンテナ用のナットを棚下面へ露出させ、外付け座金で反力を受ける。MAIN枠の床固定は下面からM3×30を入れ、床・同軸リング・床側受けを挟んで枠の樹脂下穴へ締める。埋め込みナットは使用しない。
+
+金具・組立順・未検証範囲は [改訂報告](../../../../../assemblies/parent_hand_service/unified_support_report.md)。以下は旧版履歴。
+
+2026-10-27 北側ペネトレータ対応：parent_hand_serviceのann_mb1_coax_ring_serviceは、ケースM4の約10 mm頭に合わせて下面の逃げを拡大。8 mmの工具通路と110°の側壁開放、4支持点は維持。床ナットは床内部へ横挿入して屋根で保持する構成に追従する。実物・強度は未確認。詳しくは assemblies/parent_hand_service/plate_access_report.md（リポジトリ基準）。
+
+2026-10-24 追補：工具穴周囲の薄壁を残さず、案内筒と接する外壁を半径7 mmの範囲・底板上面Z3 mmから上へ除去。外周へ開いた切欠き。底板と4取付座は保持。110°の電源側開放を維持。単一ソリッド・閉メッシュ・STEP再読込・工具通路・案内壁除去を確認。印刷は本リング1個のみ。実物と再スライスは未確認。一式全体の鮮度検査は前回同様未完了。
+
+2026-10-24 同軸リングのみ改訂：工具通路を4.2→8 mmへ拡大。電源基板側（+Y）の外側壁を35〜145°の110°分開放。底板・4か所の取付座は保持。原姿勢で1個再印刷。工具通路・単一ソリッド・閉メッシュ・STEP再読込を確認。実工具、XT実物、再スライス、強度は未確認。全体STEPは今回再生成していない。切欠き縦端0.2 mm面取り。工具口と既存面取り交差の微小縁は造形後にバリを除去。
+
+2026-10-24 MAIN下面・独立スペーサ改訂：格子下面の3.7 mmの浮きを解消。独立スペーサ12軸は対辺3.5 mmの通し穴と多角形外形。一体の基板ねじ座は2.8 mm下穴を維持。現行の金具・手順は assemblies/parent_hand_service/frame_spacer_printability_report.md を参照。床裏のナットを保持して締める構成に変更。以下の全スペーサ直接締結・整備用M3×8・最長30 mmの記述は変更前の履歴。
+
+2026-10-24 現行parent_hand_service：固定柱・床側受けは内部ナット穴を廃止し、内接径2.8 mmの縦下穴へ直接締結する。cradle_nut_keeperは旧版部品で現行構成では使用しない。数量・ねじ長・手順は assemblies/parent_hand_service/retrofit_report.md と parts/PRINT.md を参照。
+
+## 2026-10-24 内装改良バリアント
+
+設計元は `scad/lib/parent_service_retrofit.py`、生成入口は `spec/build_parent_hand_service.py --service-retrofit`。旧部品は保持し、現行内装の選択は `assemblies/parent_hand_service/placement.json` に従う。新規バリアントの手順・再使用範囲・金具は [改良報告](../../../../../assemblies/parent_hand_service/retrofit_report.md)。STLの姿勢は manufacturing.json を使い、支持材禁止モディファイアは部品として印刷しない。実物検証前の試作。
+
 # ann_mb1_internal_rack：現行の印刷削減改訂
 
 2026-10-12：容器固定ねじは南西・南東・北西のM4×12を各1本、計3本。最下段floor_plateはSCAD/STEP/STLすべて変更前と同一。再印刷はmain_mount_plate、battery_base、ann_mb1_coax_ring各1個だけ。長軸2.5 mmボールポイント六角レンチを使い、南西は南西方向へ10°、北西は西方向へ10°傾ける。南東は電池蓋とねじ4本、LiPo、上面フォームを外して電池台のØ4.2穴から操作する。北東ねじは使用しない。工具穴へコードを通さず、同軸束は新しい囲いの外へ収める。リング下面の局所支持を除去し工具穴を確認。実工具の嵌合、5 m巻き容量・R20曲げと3点固定の強度は未認定。 設計条件はscad/lib/parent_case_access.py、生成は既存spec/build_parent_hand_service.pyとspec/build_parent_gnss.pyを継続。

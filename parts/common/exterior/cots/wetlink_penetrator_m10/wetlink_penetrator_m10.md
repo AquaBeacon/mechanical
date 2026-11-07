@@ -133,3 +133,12 @@
 ## 出典
 
 - [WetLink Penetrator — Blue Robotics](https://bluerobotics.com/store/cables-connectors/penetrators/wlp-vp/)
+
+
+## 2026-10-27 北側ペネトレータ対応
+
+親機現行内装はX150／175、北側本体外面Y228.3、高さ30〜35 mmへ修正。上の南壁配置は旧モデルの記録。新しいwetlink_m10_bcas_referenceは従来SCADの本体参考形状と、メーカーの対辺16 mmナットを合成した非印刷モデル。付属ナットを一般的なISO M10／AF17へ置き換えない。
+
+メーカー原本はref/WL-M10-NUT-R1.zip、ref/WL-M10-BULKHEAD-WRENCH-R1.zip、ref/WLP-M10-6.5MM-R1.zip。取得元は [メーカーCAD索引](https://bluerobotics.com/learn/technical-reference/)。本体STEPは開いた面モデルを含むため、閉ソリッドとして採用せず原本を保管し、SCADのshow_nut=falseバリアントを使用する。メーカーSTEPと同梱STLは原点が異なるので、使用STEPから再メッシュする。
+
+既存のbcasバリアントと新しい参考モデルのdatumは共通で、Z0が壁外面、+Zが乾き側。新しいナット参照は内側の成形勾配を含む保守的な壁厚3.6 mmへ置く。専用レンチ参照は壁から0.5 mm控えて約7.5 mm掛ける位置。閉メッシュと交換データの整合は形状確認であり、実物締結・防水・工具操作の認定ではない。

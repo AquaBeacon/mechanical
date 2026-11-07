@@ -1,0 +1,16 @@
+{
+  "file": "parent_oneplate_stand.stl",
+  "quantity": 2,
+  "source_sha256": "872e2f4d66cd1ea14ac5c05b8b1b5b5c4233482dca2925c60a07325ca247075f",
+  "layer_mm": 0.2,
+  "supports": "none",
+  "exit_code": 0,
+  "bed_fits": true,
+  "passed": true,
+  "warnings": [],
+  "error": null,
+  "grams": 73.9,
+  "seconds": 6348.0,
+  "support_filament_mm": 0,
+  "limits": "Slicer result only; inspect supports and physically verify printing/fit/strength."
+}

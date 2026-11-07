@@ -1,0 +1,22 @@
+{
+  "source_sha256": "a67ca0e237093e1724f4a822c4e1aa427be32e6fda27ff31a343b197841de8ec",
+  "three_mf_sha256": "76e2395303551067895b52f0bb9934b4c5b39c995d9d7efb8581189c70aac821",
+  "extrusion_bounds_xy_mm": [
+    [
+      75.386,
+      79.661
+    ],
+    [
+      180.614,
+      172.339
+    ]
+  ],
+  "support_enable": "0",
+  "wall_loops": "6",
+  "infill": "15%",
+  "layer_mm": "0.2",
+  "passed": true,
+  "limits": [
+    "Physical print/adhesion and case fit unverified; G2/G3 paths plotted as chords."
+  ]
+}

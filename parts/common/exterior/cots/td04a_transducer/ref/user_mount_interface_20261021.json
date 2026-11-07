@@ -1,0 +1,28 @@
+{
+  "source": "Direct user instruction 2026-10-21",
+  "confirmed": {
+    "fastener": "M4",
+    "hole_center_pitch_mm": 10,
+    "tool_free_removal_required": false,
+    "simple_L_bracket_requested": true,
+    "hole_baseline_parallel_to_broad_face": true,
+    "fixing_face_perpendicular_to_broad_face": true,
+    "replace_photo_metal_portion": true,
+    "requested_variants": {
+      "parent": "broad face down",
+      "child": "broad face up"
+    },
+    "parent_r4_shape_accepted": true,
+    "child_exterior_fixing_surface": "side face"
+  },
+  "photo_file": "user_m4_pitch10_20261021.png",
+  "photo_sha256": "8b3bce970dba0cc1b54a44baebc9cb7e16afda273da635475749db79e7d2275b",
+  "not_confirmed": [
+    "Mounting ear thickness",
+    "Threaded versus through-hole details beyond the visible nut arrangement",
+    "Complete body, cable boot and acoustic envelope"
+  ],
+  "orientation_source": "Direct user correction 2026-10-21; not inferred from photo or old proxy model",
+  "replacement_photo_file": "user_photo_metal_replacement_20261021.png",
+  "replacement_photo_sha256": "8b3bce970dba0cc1b54a44baebc9cb7e16afda273da635475749db79e7d2275b"
+}

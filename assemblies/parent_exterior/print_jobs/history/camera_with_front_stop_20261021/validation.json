@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "source": "parts/child/exterior/printed/dji_osmo_action6_mount_m3/camera_mount_twist.stl",
+  "source_sha256": "5bf3a81254471ca8f93eb9b0521745293f2a30fe1301c28dbbe73a1a6bb064bb",
+  "three_mf_sha256": "3dd4a5cceff1b737f65ccb6daf203c3561c8af86024d370358e92faedb44ed26",
+  "layer_mm": 0.1,
+  "enable_support": "1",
+  "support_on_build_plate_only": "1",
+  "support_threshold_angle": "45",
+  "support_feature_sections": 188,
+  "extrusion_bounds_xy_mm": [
+    [
+      73.558,
+      77.833
+    ],
+    [
+      182.442,
+      174.167
+    ]
+  ],
+  "warning_message": "",
+  "seconds": 22862.85546875,
+  "grams": 133.1972198486328,
+  "material": "Generic PETG",
+  "walls": 6,
+  "infill": "15% gyroid",
+  "limits": [
+    "Physical print and C fit unverified; G2/G3 plotted as chords.",
+    "Camera: remove external rear adapter/post supports before assembly; do not force C contact surfaces."
+  ]
+}

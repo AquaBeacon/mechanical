@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "source": "parts/child/exterior/printed/dji_osmo_action6_mount_m3/camera_hand_knob_cap.stl",
+  "source_sha256": "eee29f38967f257b7b6c0ea0085c6ee1deeb37bb3a5d2857e48bf870f583d86c",
+  "three_mf_sha256": "cb37e6dbc0a84b0ca395bb8c98c23b33a71a2409d32fe3dd605cb00b63c14c0f",
+  "layer_mm": 0.1,
+  "enable_support": "0",
+  "support_on_build_plate_only": "1",
+  "support_threshold_angle": "45",
+  "support_feature_sections": 0,
+  "extrusion_bounds_xy_mm": [
+    [
+      117.716,
+      115.714
+    ],
+    [
+      138.283,
+      136.283
+    ]
+  ],
+  "warning_message": "",
+  "seconds": 577.1209106445312,
+  "grams": 0.47500190138816833,
+  "material": "Generic PETG",
+  "walls": 6,
+  "infill": "15% gyroid",
+  "limits": [
+    "Physical print and C fit unverified; G2/G3 plotted as chords.",
+    "Snap-cap nubs, finger fit and physical gripping require inspection on a real print."
+  ]
+}

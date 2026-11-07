@@ -1,0 +1,2 @@
+既存 parts/main_corner_column.3mf を内容変更せず移動。旧柱の印刷履歴であり、2026-10-24改良構成には使用しない。
+SHA-256: f433af1ded8148131d6d79d9b7f6f366731a736f6375e8290ef0b3c2ccc257bf

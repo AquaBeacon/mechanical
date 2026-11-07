@@ -1,0 +1,19 @@
+{
+  "retrieved_date": "2026-10-20",
+  "source_page": "https://www.honda-el.co.jp/product/marine/document/mounting_method_of_transducer",
+  "files": [
+    {
+      "file": "hondex_td04a_transom.jpg",
+      "url": "https://www.honda-el.co.jp/hubfs/TD04A%E3%83%88%E3%83%A9%E3%83%B3%E3%82%B5%E3%83%A0.jpg",
+      "applicability": "TD04A/TD04C official transom mounting illustration; dimensions not specified",
+      "sha256": "8fc4ff5736f4f0e6f63f440a8a3d8178ecdf20fdd6b88e943ba1835cb31ee74c"
+    },
+    {
+      "file": "hondex_td02_td03_pipe.gif",
+      "url": "https://www.honda-el.co.jp/hubfs/images/product/ufile/library/1278_file.gif",
+      "applicability": "Different models TD02/TD03/TD43. Not used as TD04A design evidence.",
+      "sha256": "4beccde70d582e15ee7bbaba9d391abf22ba5ee9979384fcf65e5af758d555b7"
+    }
+  ],
+  "relocation_note": "Initial tidy moved new images to _work/images/ref; restored to ref on 2026-10-20 after fixing tidy to preserve manufacturer originals. The unrelated pipe image was renamed to identify the actual models."
+}

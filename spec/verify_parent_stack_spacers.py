@@ -1,4 +1,4 @@
-"""Verify runner membership, unmodified columns and eight severable necks."""
+"""Verify the optional twelve-column runner against current individual sources."""
 import FreeCAD as A, Part, Mesh
 from pathlib import Path
 import json,hashlib
@@ -6,10 +6,13 @@ R=Path(__file__).resolve().parents[1];O=R/'assemblies/parent_hand_service';P=R/'
 import sys
 sys.path.insert(0,str(R/'scad/lib'));import parent_gnss as G
 d=json.loads((O/'placement.json').read_text(encoding='utf-8'));members=json.loads((P/'set_members.json').read_text(encoding='utf-8'))['members']
-actual={it['label']:(it['part'],it['file']) for it in d['items'] if it.get('print_set')=='parent_stack_spacer_set'}
+actual={it['label']:(it['part'],it['file']) for it in d['items'] if it.get('file') in
+        ['main_corner_column','sony_column_left','sony_column_right','gnss_column_front','gnss_column_rear']}
 assert actual=={it['label']:(it['part'],it['file']) for it in members}
-assert len(members)==12 and all(it['print'] is False for it in d['items'] if it['label'] in actual)
-cfg=json.loads((O/'print_config.json').read_text(encoding='utf-8'));assert sum(it['quantity'] for it in cfg['extra_parts'] if it['file']=='parent_stack_spacer_set')==1
+cfg=json.loads((O/'print_config.json').read_text(encoding='utf-8'))
+individual=cfg.get('spacer_delivery')=='individual'
+assert len(members)==12 and all(it['print'] is individual for it in d['items'] if it['label'] in actual)
+assert sum(it['quantity'] for it in cfg['extra_parts'] if it['file']=='parent_stack_spacer_set')==(0 if individual else 1)
 s=Part.read(str(P/'parent_stack_spacer_set.step'));severed=s.copy();rows=[]
 for it in members:
  src=R/it['part']/(it['file']+'.step');assert hashlib.sha256(src.read_bytes()).hexdigest()==it['source_step_sha256']

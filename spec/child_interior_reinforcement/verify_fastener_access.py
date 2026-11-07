@@ -4,6 +4,7 @@ Tool envelopes are explicit assumptions, not a specification of a purchased tool
 Intersections describe assembly-order constraints, not automatic design failures.
 """
 import json
+import argparse
 import sys
 from pathlib import Path
 import numpy as np
@@ -53,7 +54,9 @@ for r in results:
 report=dict(tool_length_mm=50,removed=['acrylic_tube_200'],
             assumption='4 mm straight shaft is the acceptance envelope; 6 mm and stepped 2.5/4 mm are diagnostics. Real bit and handle must be checked',
             errors=errors,results=results)
-target=ROOT/'assemblies/child_interior/_work/analysis/fastener_access_20261006'
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--out',type=Path,default=ROOT/'assemblies/child_interior/_work/analysis/fastener_access_20261006')
+target=parser.parse_args().out
 target.mkdir(parents=True,exist_ok=True)
 (target/'access.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
 for r in results:

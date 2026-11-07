@@ -1,0 +1,1 @@
+保存済み3MFを内容を変えずparts/から移動。camera_mount_twistは20 mm移動前の履歴として保持。parent_oneplate_camera_qr_femaleの形状・設定は今回変更していない。現行の印刷入口は../../../parts/PRINT.md。元の場所とSHA-256はmove_record.jsonを参照。

@@ -92,6 +92,10 @@ def build():
 
 def install(placement, interface):
     """Idempotent: keep all unrelated placement rows and station choices."""
+    # Preserve the accessory block's position when other device fixtures follow
+    # it; repeated regeneration must not reorder foreign camera-owned rows.
+    positions={key:next((i for i,r in enumerate(placement[key]) if r.get('owner')==TAG),len(placement[key]))
+               for key in ('items','fastener_joints')}
     q=generate_interface()
     (_,fw,fh,fp,plate_t,rn,ru,rv,angle,shift,centre_n,bore,length)=interface
     settings=placement.setdefault('side_twist_mount',dict(
@@ -109,6 +113,8 @@ def install(placement, interface):
     key=settings['light_station']
     if key!='right_front':raise ValueError('Rev.4 integral geometry is verified only for right_front; adapt and verify its outward station offset first')
     st=stations[key]; st['status']='light_installed'
+    if placement.get('camera_twist_mount'):
+        stations[placement['camera_twist_mount']['station']]['status']='camera_installed'
     settings['revision']=4
     settings['stations']=stations; settings['dock_rotation_deg']=angle
     settings['dock_offset_uvn_mm']=[ru,rv,rn]
@@ -180,6 +186,11 @@ def install(placement, interface):
     placement['print_progress']['base_remaining_instances']=sum(r.get('owner')!=TAG for r in remaining)
     placement['print_progress']['remaining_instances']=len(remaining)
     placement['print_progress']['already_printed_instances']=sum(r['print'] for r in placement['items'])-len(remaining)
+    for key in ('items','fastener_joints'):
+        owned=[r for r in placement[key] if r.get('owner')==TAG]
+        other=[r for r in placement[key] if r.get('owner')!=TAG]
+        index=positions[key]
+        placement[key]=other[:index]+owned+other[index:]
     return settings
 
 def main():

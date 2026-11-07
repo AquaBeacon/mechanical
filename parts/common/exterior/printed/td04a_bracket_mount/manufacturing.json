@@ -1,0 +1,31 @@
+{
+  "print_rotations_deg": {
+    "td04a_bracket_mount_parent_down": [
+      0,
+      -90,
+      0
+    ],
+    "td04a_bracket_mount_child_side_up": [
+      0,
+      0,
+      0
+    ]
+  },
+  "stl_export_format": "asciistl",
+  "portable_stl_export_format": "stl_ascii",
+  "step_coplanar_merge": true,
+  "degenerate_precision_weld_files": [
+    "td04a_bracket_mount_parent_down",
+    "td04a_bracket_mount_child_side_up"
+  ],
+  "degenerate_edge_flip_files": [
+    "td04a_bracket_mount_parent_down",
+    "td04a_bracket_mount_child_side_up"
+  ],
+  "source_dependencies": [
+    "../../../../../scad/lib/td04a_interface.scad",
+    "../../../../../scad/lib/edge_finished_profiles.scad",
+    "../../../../../scad/lib/util.scad",
+    "../../../../../scad/lib/child_horizontal_plate_interfaces.scad"
+  ]
+}

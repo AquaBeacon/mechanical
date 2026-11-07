@@ -1,0 +1,58 @@
+[
+  {
+    "file": "quick_release_prototypes_twist_female.stl",
+    "source_sha256": "9727c525e8278b2dfe1fda322236a98ad6189b4401ff31336a46cf1555ba7355",
+    "layer_mm": 0.1,
+    "supports": "none",
+    "exit_code": 0,
+    "bed_fits": true,
+    "passed": true,
+    "warnings": [],
+    "error": null,
+    "grams": 15.76,
+    "seconds": 3319.0,
+    "support_filament_mm": 0
+  },
+  {
+    "file": "td04a_bracket_mount.stl",
+    "source_sha256": "4723b21bfd7796d583faf37a63247217497546bcc0e4f26a32dedf0c39ab8a16",
+    "layer_mm": 0.1,
+    "supports": "none",
+    "exit_code": 0,
+    "bed_fits": true,
+    "passed": true,
+    "warnings": [],
+    "error": null,
+    "grams": 50.31,
+    "seconds": 7355.0,
+    "support_filament_mm": 0
+  },
+  {
+    "file": "parent_light_jaw.stl",
+    "source_sha256": "e98b1b9472087481bd3db7ee84fa24593ca91cbdda31b3146e0822f0e9c279c4",
+    "layer_mm": 0.2,
+    "supports": "none",
+    "exit_code": 0,
+    "bed_fits": true,
+    "passed": true,
+    "warnings": [],
+    "error": null,
+    "grams": 6.53,
+    "seconds": 866.0,
+    "support_filament_mm": 0
+  },
+  {
+    "file": "quick_release_prototypes_twist_knob.stl",
+    "source_sha256": "4937289e0a7dc0aa10f12c761e14c217befe0a074c2df8252e1f93170d629747",
+    "layer_mm": 0.2,
+    "supports": "none",
+    "exit_code": 0,
+    "bed_fits": true,
+    "passed": true,
+    "warnings": [],
+    "error": null,
+    "grams": 1.84,
+    "seconds": 791.0,
+    "support_filament_mm": 0
+  }
+]

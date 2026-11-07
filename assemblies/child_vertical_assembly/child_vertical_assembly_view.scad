@@ -2,6 +2,9 @@
 // child_vertical_assembly_view.scad
 // !! 自動生成ファイル - 編集しないこと。placement.json を直して
 //    build.ps1 -Assemblies で再生成する。
+// 2026-10-21 clearance revision: AF5.5 hex spacers, inscribed 3.5 mm through-bores; flange M3x26 pan x2, brace M3x30/M3x45 studs and two M3 nuts; no spacer tapping.
+// 2026-10-21 clearance revision: AF5.5 hex spacers, inscribed 3.5 mm through-bores; M3x30 studs x3, M3x45 x1, M3 nuts x4; no spacer tapping.
+// 2026-10-21: printed spacer bodies 10x2/12x1/30x1, breakaway print set; metal M3 studs 8x2/10x2; side flange screws M3x16.
 // 2026-10-01 bolted revision: battery M3x12/nut x4, floor M3x10 flat/nut, printed broader roots, front flange M3x16. Earlier notes below are history.
 // AquaBeacon 子機 縦置き(吊り下げ)構成の組立モデル。
 // 耐圧容器 WTE4 4in x 200mm を縦に立て、ドームを上・アルミキャップ(ペネトレータ)を下にする。
@@ -62,29 +65,21 @@ if (show_interior) color("Silver", 1) translate([-24, -6, 32]) rotate([-90, 0, 0
 if (show_interior) color("Silver", 1) translate([-24, -6, 110]) rotate([-90, 0, 0])  import("../../parts/common/interior/cots/screw/screw_m3x12.stl");
 // M3x10 flat: reinforced service tab and captive M3 nut; 1.1 mm nominal tip projection
 if (show_interior) color("Silver", 1) translate([22.5, -43, 36]) rotate([90, 0, 0])  import("../../parts/common/interior/cots/screw/screw_m3x10_flat.stl");
-// M3 MF10。下フランジ内面 (z=19) の BCD94 M3 穴へオスを 4〜5mm ねじ込む (6 を超えない)。オス部はフランジ金属の中 = 包絡検証対象外
-if (show_interior) color("Goldenrod", 1) translate([47, 0, 19])  import("../../parts/common/interior/cots/hex_spacer/hex_spacer_m3_mf10.stl");
-// M3x18: printed 12 mm bearing seat, MF10 engagement 6 mm
-if (show_interior) color("Silver", 1) translate([47, 0, 41])  import("../../parts/common/interior/cots/screw/screw_m3x18.stl");
-// M3 MF10。下フランジ内面 (z=19) の BCD94 M3 穴へオスを 4〜5mm ねじ込む (6 を超えない)。オス部はフランジ金属の中 = 包絡検証対象外
-if (show_interior) color("Goldenrod", 1) translate([-47, 0, 19])  import("../../parts/common/interior/cots/hex_spacer/hex_spacer_m3_mf10.stl");
-// M3x18: printed 12 mm bearing seat, MF10 engagement 6 mm
-if (show_interior) color("Silver", 1) translate([-47, 0, 41])  import("../../parts/common/interior/cots/screw/screw_m3x18.stl");
+// AF5.5 hex slip spacer 10 mm, inscribed 3.5 mm bore; M3x26 pan screw passes through 12 mm seat and body into flange 4 mm. No tapping.
+if (show_interior) color("Orange", 1) translate([47, 0, 19])  import("../../parts/child/interior/printed/child_spacer_set/child_spacer_set_body10.stl");
+// AF5.5 hex slip spacer 10 mm, inscribed 3.5 mm bore; M3x26 pan screw passes through 12 mm seat and body into flange 4 mm. No tapping.
+if (show_interior) color("Orange", 1) translate([-47, 0, 19])  import("../../parts/child/interior/printed/child_spacer_set/child_spacer_set_body10.stl");
 // M3x16 through 12 mm printed seat; flange engagement 4 mm, blind-hole depth respected
 if (show_interior) color("Silver", 1) translate([0, 47, 31])  import("../../parts/common/interior/cots/screw/screw_m3x16.stl");
-// M3 MF30: C-MAIN and lower flange brace mounting
-if (show_interior) color("Goldenrod", 1) translate([-22, 4.6, 24.5]) rotate([-90, 0, 0])  import("../../parts/common/interior/cots/hex_spacer/hex_spacer_m3_mf30.stl");
-// M3x12 pan screw: flat printed seat, spacer engagement 6.5 mm
-if (show_interior) color("Silver", 1) translate([-22, 40.1, 24.5]) rotate([-90, 0, 0])  import("../../parts/common/interior/cots/screw/screw_m3x12.stl");
-// M3 MF12: C-MAIN and lower flange brace mounting
-if (show_interior) color("Goldenrod", 1) translate([39.5, 4.6, 24.5]) rotate([-90, 0, 0])  import("../../parts/common/interior/cots/hex_spacer/hex_spacer_m3_mf12.stl");
-// M3x12 pan screw: flat printed seat, spacer engagement 6.5 mm
-if (show_interior) color("Silver", 1) translate([39.5, 22.1, 24.5]) rotate([-90, 0, 0])  import("../../parts/common/interior/cots/screw/screw_m3x12.stl");
+// AF5.5 printed hex slip spacer 30 mm; inscribed 3.5 mm bore, no tapping. Print with child_spacer_set_set; through-stud projects 6 mm below seat.
+if (show_interior) color("Orange", 1) translate([-22, 4.6, 24.5]) rotate([-90, 0, 0])  import("../../parts/child/interior/printed/child_spacer_set/child_spacer_set_body30.stl");
+// AF5.5 printed hex slip spacer 12 mm; inscribed 3.5 mm bore, no tapping. Print with child_spacer_set_set; through-stud projects 6 mm below seat.
+if (show_interior) color("Orange", 1) translate([39.5, 4.6, 24.5]) rotate([-90, 0, 0])  import("../../parts/child/interior/printed/child_spacer_set/child_spacer_set_body12.stl");
 // M3x8: board 1.6 mm + deck boss engagement 6.4 mm
 if (show_interior) color("Silver", 1) translate([-22, 4.6, 119.5]) rotate([-90, 0, 0])  import("../../parts/common/interior/cots/screw/screw_m3x8.stl");
 // M3x8: board 1.6 mm + deck boss engagement 6.4 mm
 if (show_interior) color("Silver", 1) translate([39.5, 4.6, 119.5]) rotate([-90, 0, 0])  import("../../parts/common/interior/cots/screw/screw_m3x8.stl");
-// Printed brace: 12 mm beams, 24 mm webs, 20 mm tangential flange seat, existing M3 spacers
+// Printed brace; existing seating planes retained, hex slip spacers, metal through-studs and M3 nuts.
 if (show_interior) color("Gold", 1) translate([0, 0, 22])  import("../../parts/child/interior/printed/child_flange_brace/child_flange_brace.stl");
 // Paired RX clamp: original Z140.5/174.5 contacts and screw axes retained; bridge outside PCB
 if (show_interior) color("Orange", 1) translate([0, 0, 140.5]) scale([-1, 1, 1])  import("../../parts/child/interior/printed/child_rx_edge_clamp/child_rx_edge_clamp_base_pair.stl");
@@ -130,6 +125,18 @@ if (show_interior) color("Silver", 1) translate([-24, -15.5, 32]) rotate([90, 0,
 if (show_interior) color("Silver", 1) translate([-24, -15.5, 110]) rotate([90, 0, 0]) rotate([0, 0, 30])  import("../../parts/common/interior/cots/screw/screw_nut_m3.stl");
 // Purchased plain M3 nut AF5.5/t2.4; insert before cable rails
 if (show_interior) color("Silver", 1) translate([22.5, -36.5, 36]) rotate([-90, 0, 0]) rotate([0, 0, 30])  import("../../parts/common/interior/cots/screw/screw_nut_m3.stl");
+// M3 pan screw under-head length 26 mm: seat12 + spacer10 + flange engagement4. Cut M3x30 to 26 mm and deburr if needed.
+if (show_interior) color("Silver", 1) translate([47, 0, 19]) translate([0, 0, 22])  import("../../parts/common/interior/cots/screw/screw_m3x26.stl");
+// M3 pan screw under-head length 26 mm: seat12 + spacer10 + flange engagement4. Cut M3x30 to 26 mm and deburr if needed.
+if (show_interior) color("Silver", 1) translate([-47, 0, 19]) translate([0, 0, 22])  import("../../parts/common/interior/cots/screw/screw_m3x26.stl");
+// Metal M3x45 through-stud; lower projection 6 mm, slides through spacer; upper M3 nut, do not print.
+if (show_interior) color("Silver", 1) translate([-22, 4.6, 24.5]) rotate([-90, 0, 0]) translate([0, 0, -6])  import("../../parts/common/interior/cots/threaded_stud/threaded_stud_m3x45.stl");
+// Plain metal M3 nut AF5.5/t2.4 on the through-stud. Spacer is a slip sleeve; no printed thread.
+if (show_interior) color("Silver", 1) translate([-22, 4.6, 24.5]) rotate([-90, 0, 0]) translate([0, 0, 35.5])  import("../../parts/common/interior/cots/screw/screw_nut_m3.stl");
+// Metal M3x30 through-stud; lower projection 6 mm, slides through spacer; upper M3 nut, do not print.
+if (show_interior) color("Silver", 1) translate([39.5, 4.6, 24.5]) rotate([-90, 0, 0]) translate([0, 0, -6])  import("../../parts/common/interior/cots/threaded_stud/threaded_stud_m3x30.stl");
+// Plain metal M3 nut AF5.5/t2.4 on the through-stud. Spacer is a slip sleeve; no printed thread.
+if (show_interior) color("Silver", 1) translate([39.5, 4.6, 24.5]) rotate([-90, 0, 0]) translate([0, 0, 17.5])  import("../../parts/common/interior/cots/screw/screw_nut_m3.stl");
 // 後半シェル (常設側)。吊り耳 x2 / 後部パイロン(TD04A台・取っ手・ケーブル導管) / 下部ガード取付ボス x4
 if (show_shell) color("SeaGreen", 0.9)  import("../../parts/child/exterior/printed/child_shell_aft/child_shell_aft.stl");
 // 前半シェル (ゲート側)。M5 蝶ボルト 4 本で外れる。カメラポッド x2 を一体で持つ = 基線 150 が単一部品で決まる

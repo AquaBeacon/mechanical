@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "assembly": "nut_driver_af10",
+  "release_status": "existing_prototype",
+  "note": "既存構成の印刷データを整理。強度・造形性の新規認証ではない。",
+  "source_hashes": {
+    "assemblies/nut_driver_af10/placement.json": "a3660e1c6ad751087c611c9856f4efe5362feddb92778aed9ebb48c9d1445876",
+    "assemblies/nut_driver_af10/README.md": "98b31ef00b3686be6fb87341422d91674001cddb2c02ec87841d474ce8a8c1cf",
+    "parts/common/jigs/nut_driver_af10/manufacturing.json": "69c4cf6d6cd97ab9c5e82b5e8995944ab7d0ed7ee6f05991608dff428ccc8b8b",
+    "parts/common/jigs/nut_driver_af10/nut_driver_af10.scad": "c1c6172fbd009a728e9c3fa2c929af5ac7fbb6fd89397b7016060f5298a0b698",
+    "parts/common/jigs/nut_driver_af10/README.md": "62b0699deb0a39099c4f32d5572b6803e13d27fea0cf98071dba34fe537e4aeb",
+    "scad/lib/edge_finished_profiles.scad": "595961f57ef1f293e1d1f9e6e531934b20fc02cf555b7ba86ed8c6f1a183f7f6",
+    "scad/lib/util.scad": "13fed014ff5835aef1559d05600e2b4b0e284c93a4325485f4ef1be3ede6ddb3",
+    "spec/verify_nut_driver_af10.py": "0d6cb4563522d02defabfdfd66a5b769600c25cbef1d6b29f38259f0fde8bd58"
+  },
+  "parts": [
+    {
+      "part": "parts/common/jigs/nut_driver_af10",
+      "stem": "nut_driver_af10",
+      "shape": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "nut_driver_af10"
+      ],
+      "file": "nut_driver_af10.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/common/jigs/nut_driver_af10/nut_driver_af10.stl",
+      "source_sha256": "f83af2184bcfbf6ed8b060b0bc38095ac28448499bf460837f800215490ca13d",
+      "sha256": "7051cae11ec61ddd9211ce9239838b7a1f3d9cb3820cfd7977dee4032b9fca82",
+      "extents_mm": [
+        72.0,
+        32.0,
+        10.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          36.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          16.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
+    }
+  ],
+  "modifiers": [],
+  "generated_files": [
+    "nut_driver_af10.stl",
+    "DESIGN_NOTES.md",
+    "PRINT.md"
+  ],
+  "document_hashes": {
+    "DESIGN_NOTES.md": "a04a6c64697556217216a19db1418b3ec60fde8089749ae064c45d8c5bb7e75e",
+    "PRINT.md": "7ad4739b37fb5f494ff5e089a1faeda0c554f6fd450d3b3449930edc789e61ae"
+  }
+}

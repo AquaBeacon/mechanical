@@ -1,0 +1,2314 @@
+{
+  "passed": true,
+  "plates": [
+    {
+      "plate": 1,
+      "passed": true,
+      "members": [
+        {
+          "name": "floor_plate",
+          "sha256": "eb70daab214ff4b6d177bc66474350f0031d6d0e8a0365c785e69a8eb26d86ad",
+          "bounds": [
+            [
+              30.0,
+              21.0,
+              0.0
+            ],
+            [
+              225.94999980926514,
+              233.75,
+              19.40999984741211
+            ]
+          ],
+          "shift": [
+            30.0,
+            21.0,
+            0.0
+          ]
+        }
+      ],
+      "first_model_layers_mm": {
+        "floor_plate": 0.2
+      },
+      "last_model_layers_mm": {
+        "floor_plate": 19.4
+      },
+      "support_extrusions_in_nut_access_voids": 0,
+      "floor_roof_bridges": [
+        {
+          "start": [
+            33.619,
+            158.089,
+            7.0
+          ],
+          "end": [
+            33.459,
+            158.017,
+            7.0
+          ],
+          "length_mm": 0.1754536975956885,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            33.459,
+            158.017,
+            7.0
+          ],
+          "end": [
+            32.895,
+            157.612,
+            7.0
+          ],
+          "length_mm": 0.6943493357093394,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            32.895,
+            157.612,
+            7.0
+          ],
+          "end": [
+            32.423,
+            157.103,
+            7.0
+          ],
+          "length_mm": 0.694164965984302,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            32.423,
+            157.103,
+            7.0
+          ],
+          "end": [
+            32.157,
+            156.667,
+            7.0
+          ],
+          "length_mm": 0.5107367227838713,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            32.157,
+            156.667,
+            7.0
+          ],
+          "end": [
+            31.834,
+            156.723,
+            7.0
+          ],
+          "length_mm": 0.3278185473703391,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            31.834,
+            156.723,
+            7.0
+          ],
+          "end": [
+            33.715,
+            158.751,
+            7.0
+          ],
+          "length_mm": 2.766034164648004,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            33.198,
+            158.751,
+            7.0
+          ],
+          "end": [
+            31.749,
+            157.19,
+            7.0
+          ],
+          "length_mm": 2.1298643149271332,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            31.749,
+            157.19,
+            7.0
+          ],
+          "end": [
+            31.749,
+            157.748,
+            7.0
+          ],
+          "length_mm": 0.5579999999999927,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            33.64,
+            151.249,
+            7.0
+          ],
+          "end": [
+            32.068,
+            153.323,
+            7.0
+          ],
+          "length_mm": 2.6024334765753494,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            32.068,
+            153.323,
+            7.0
+          ],
+          "end": [
+            31.749,
+            153.283,
+            7.0
+          ],
+          "length_mm": 0.3214980559816825,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            31.749,
+            153.283,
+            7.0
+          ],
+          "end": [
+            31.749,
+            153.093,
+            7.0
+          ],
+          "length_mm": 0.18999999999999773,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            31.749,
+            153.093,
+            7.0
+          ],
+          "end": [
+            33.146,
+            151.249,
+            7.0
+          ],
+          "length_mm": 2.313427111451749,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            32.652,
+            151.249,
+            7.0
+          ],
+          "end": [
+            31.749,
+            152.441,
+            7.0
+          ],
+          "length_mm": 1.4954173330545628,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            31.749,
+            152.441,
+            7.0
+          ],
+          "end": [
+            31.749,
+            151.79,
+            7.0
+          ],
+          "length_mm": 0.6510000000000105,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            37.085,
+            152.092,
+            7.0
+          ],
+          "end": [
+            37.408,
+            152.312,
+            7.0
+          ],
+          "length_mm": 0.39080557826110895,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            37.408,
+            152.312,
+            7.0
+          ],
+          "end": [
+            37.928,
+            151.55,
+            7.0
+          ],
+          "length_mm": 0.9225204604777049,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            37.692,
+            152.59,
+            7.0
+          ],
+          "end": [
+            37.868,
+            152.761,
+            7.0
+          ],
+          "length_mm": 0.24539152389599367,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            37.868,
+            152.761,
+            7.0
+          ],
+          "end": [
+            37.959,
+            152.894,
+            7.0
+          ],
+          "length_mm": 0.1611521020651074,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            36.537,
+            158.451,
+            7.0
+          ],
+          "end": [
+            37.013,
+            157.753,
+            7.0
+          ],
+          "length_mm": 0.8448550171479184,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            36.085,
+            102.092,
+            7.0
+          ],
+          "end": [
+            36.408,
+            102.312,
+            7.0
+          ],
+          "length_mm": 0.39080557826110895,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            36.408,
+            102.312,
+            7.0
+          ],
+          "end": [
+            36.928,
+            101.55,
+            7.0
+          ],
+          "length_mm": 0.9225204604777049,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            36.692,
+            102.59,
+            7.0
+          ],
+          "end": [
+            36.868,
+            102.761,
+            7.0
+          ],
+          "length_mm": 0.24539152389599367,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            36.868,
+            102.761,
+            7.0
+          ],
+          "end": [
+            36.959,
+            102.894,
+            7.0
+          ],
+          "length_mm": 0.1611521020651074,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            35.537,
+            108.451,
+            7.0
+          ],
+          "end": [
+            36.013,
+            107.753,
+            7.0
+          ],
+          "length_mm": 0.8448550171479067,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            31.84,
+            107.808,
+            7.0
+          ],
+          "end": [
+            31.79,
+            107.865,
+            7.0
+          ],
+          "length_mm": 0.07582216034906086,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            31.79,
+            107.865,
+            7.0
+          ],
+          "end": [
+            31.749,
+            107.829,
+            7.0
+          ],
+          "length_mm": 0.05456189146281614,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            31.749,
+            107.829,
+            7.0
+          ],
+          "end": [
+            31.749,
+            108.275,
+            7.0
+          ],
+          "length_mm": 0.44600000000001216,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            31.58,
+            102.55,
+            7.0
+          ],
+          "end": [
+            33.053,
+            101.249,
+            7.0
+          ],
+          "length_mm": 1.9652811503700947,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            155.453,
+            224.984,
+            7.0
+          ],
+          "end": [
+            153.581,
+            228.049,
+            7.0
+          ],
+          "length_mm": 3.5914633507805758,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            154.423,
+            226.897,
+            7.0
+          ],
+          "end": [
+            154.895,
+            226.388,
+            7.0
+          ],
+          "length_mm": 0.6941649659843069,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            154.895,
+            226.388,
+            7.0
+          ],
+          "end": [
+            155.151,
+            226.205,
+            7.0
+          ],
+          "length_mm": 0.3146823795511872,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            158.508,
+            225.79,
+            7.0
+          ],
+          "end": [
+            158.789,
+            225.9,
+            7.0
+          ],
+          "length_mm": 0.3017631521574335,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            158.789,
+            225.9,
+            7.0
+          ],
+          "end": [
+            158.857,
+            225.944,
+            7.0
+          ],
+          "length_mm": 0.08099382692526708,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            159.175,
+            226.15,
+            7.0
+          ],
+          "end": [
+            159.372,
+            226.277,
+            7.0
+          ],
+          "length_mm": 0.23438856627403198,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            159.372,
+            226.277,
+            7.0
+          ],
+          "end": [
+            159.478,
+            226.38,
+            7.0
+          ],
+          "length_mm": 0.14780054127100015,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            159.478,
+            226.38,
+            7.0
+          ],
+          "end": [
+            159.97,
+            225.574,
+            7.0
+          ],
+          "length_mm": 0.9442986815621227,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            159.755,
+            226.651,
+            7.0
+          ],
+          "end": [
+            159.868,
+            226.761,
+            7.0
+          ],
+          "length_mm": 0.1576990805299658,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            159.868,
+            226.761,
+            7.0
+          ],
+          "end": [
+            160.007,
+            226.965,
+            7.0
+          ],
+          "length_mm": 0.24685420798521127,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            159.659,
+            231.461,
+            7.0
+          ],
+          "end": [
+            159.09,
+            231.926,
+            7.0
+          ],
+          "length_mm": 0.7348373969797424,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            159.09,
+            231.926,
+            7.0
+          ],
+          "end": [
+            158.944,
+            232.001,
+            7.0
+          ],
+          "length_mm": 0.16413713778425326,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            158.944,
+            232.001,
+            7.0
+          ],
+          "end": [
+            159.599,
+            232.001,
+            7.0
+          ],
+          "length_mm": 0.6550000000000011,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            155.008,
+            231.897,
+            7.0
+          ],
+          "end": [
+            154.943,
+            231.987,
+            7.0
+          ],
+          "length_mm": 0.11101801655587402,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            154.943,
+            231.987,
+            7.0
+          ],
+          "end": [
+            154.962,
+            232.001,
+            7.0
+          ],
+          "length_mm": 0.02360084744239934,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            154.962,
+            232.001,
+            7.0
+          ],
+          "end": [
+            154.532,
+            232.001,
+            7.0
+          ],
+          "length_mm": 0.4299999999999784,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            47.619,
+            226.982,
+            7.0
+          ],
+          "end": [
+            47.468,
+            226.761,
+            7.0
+          ],
+          "length_mm": 0.2676602323842682,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            47.468,
+            226.761,
+            7.0
+          ],
+          "end": [
+            47.382,
+            226.677,
+            7.0
+          ],
+          "length_mm": 0.12021647141719599,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            47.859,
+            225.741,
+            7.0
+          ],
+          "end": [
+            47.105,
+            226.407,
+            7.0
+          ],
+          "length_mm": 1.006017892485021,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            47.105,
+            226.407,
+            7.0
+          ],
+          "end": [
+            46.972,
+            226.277,
+            7.0
+          ],
+          "length_mm": 0.18598118184376888,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            46.972,
+            226.277,
+            7.0
+          ],
+          "end": [
+            46.797,
+            226.164,
+            7.0
+          ],
+          "length_mm": 0.20831226560143162,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            46.797,
+            226.164,
+            7.0
+          ],
+          "end": [
+            47.506,
+            225.538,
+            7.0
+          ],
+          "length_mm": 0.9458102346665397,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            46.46,
+            225.947,
+            7.0
+          ],
+          "end": [
+            46.389,
+            225.9,
+            7.0
+          ],
+          "length_mm": 0.08514693182962867,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            46.389,
+            225.9,
+            7.0
+          ],
+          "end": [
+            46.071,
+            225.776,
+            7.0
+          ],
+          "length_mm": 0.3413209633175231,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            41.833,
+            226.943,
+            7.0
+          ],
+          "end": [
+            41.697,
+            226.549,
+            7.0
+          ],
+          "length_mm": 0.41681170808892004,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            41.533,
+            226.18,
+            7.0
+          ],
+          "end": [
+            41.366,
+            225.813,
+            7.0
+          ],
+          "length_mm": 0.403209622901059,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            47.662,
+            232.001,
+            7.0
+          ],
+          "end": [
+            47.18,
+            232.001,
+            7.0
+          ],
+          "length_mm": 0.4819999999999993,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            221.639,
+            211.399,
+            7.0
+          ],
+          "end": [
+            221.311,
+            211.588,
+            7.0
+          ],
+          "length_mm": 0.37855646870711285,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            220.521,
+            211.022,
+            7.0
+          ],
+          "end": [
+            221.005,
+            211.815,
+            7.0
+          ],
+          "length_mm": 0.9290344450019163,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            221.005,
+            211.815,
+            7.0
+          ],
+          "end": [
+            220.717,
+            212.069,
+            7.0
+          ],
+          "length_mm": 0.38400520829799323,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            220.717,
+            212.069,
+            7.0
+          ],
+          "end": [
+            220.193,
+            211.212,
+            7.0
+          ],
+          "length_mm": 1.0045023643575957,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            221.319,
+            217.416,
+            7.0
+          ],
+          "end": [
+            221.458,
+            217.517,
+            7.0
+          ],
+          "length_mm": 0.17181967291321038,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            221.458,
+            217.517,
+            7.0
+          ],
+          "end": [
+            221.964,
+            217.745,
+            7.0
+          ],
+          "length_mm": 0.5549954954772193,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            167.368,
+            146.739,
+            7.0
+          ],
+          "end": [
+            167.306,
+            146.799,
+            7.0
+          ],
+          "length_mm": 0.08627861844048161,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            167.525,
+            147.894,
+            7.0
+          ],
+          "end": [
+            167.024,
+            147.074,
+            7.0
+          ],
+          "length_mm": 0.9609375630081247,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            167.024,
+            147.074,
+            7.0
+          ],
+          "end": [
+            166.872,
+            147.223,
+            7.0
+          ],
+          "length_mm": 0.21284971223846244,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            166.872,
+            147.223,
+            7.0
+          ],
+          "end": [
+            166.724,
+            147.319,
+            7.0
+          ],
+          "length_mm": 0.17640861656960669,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            166.401,
+            147.527,
+            7.0
+          ],
+          "end": [
+            166.289,
+            147.6,
+            7.0
+          ],
+          "length_mm": 0.13368993978608223,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            166.289,
+            147.6,
+            7.0
+          ],
+          "end": [
+            166.052,
+            147.692,
+            7.0
+          ],
+          "length_mm": 0.25423021063595075,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            162.668,
+            147.308,
+            7.0
+          ],
+          "end": [
+            162.395,
+            147.112,
+            7.0
+          ],
+          "length_mm": 0.33607290875641416,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            162.395,
+            147.112,
+            7.0
+          ],
+          "end": [
+            161.923,
+            146.603,
+            7.0
+          ],
+          "length_mm": 0.6941649659843069,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            161.923,
+            146.603,
+            7.0
+          ],
+          "end": [
+            161.562,
+            146.011,
+            7.0
+          ],
+          "length_mm": 0.6933866165423213,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            161.562,
+            146.011,
+            7.0
+          ],
+          "end": [
+            161.351,
+            145.431,
+            7.0
+          ],
+          "length_mm": 0.6171879778479057,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            161.351,
+            145.431,
+            7.0
+          ],
+          "end": [
+            161.084,
+            145.451,
+            7.0
+          ],
+          "length_mm": 0.26774801586565883,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            161.084,
+            145.451,
+            7.0
+          ],
+          "end": [
+            162.794,
+            148.251,
+            7.0
+          ],
+          "length_mm": 3.2808687873793567,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            162.345,
+            148.251,
+            7.0
+          ],
+          "end": [
+            160.949,
+            145.967,
+            7.0
+          ],
+          "length_mm": 2.6768399279747612,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            160.949,
+            145.967,
+            7.0
+          ],
+          "end": [
+            160.949,
+            146.704,
+            7.0
+          ],
+          "length_mm": 0.7369999999999948,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            160.949,
+            146.704,
+            7.0
+          ],
+          "end": [
+            161.895,
+            148.251,
+            7.0
+          ],
+          "length_mm": 1.8133187805788553,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            160.179,
+            151.695,
+            7.0
+          ],
+          "end": [
+            158.99,
+            152.03,
+            7.0
+          ],
+          "length_mm": 1.2352918683452865,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            158.99,
+            152.03,
+            7.0
+          ],
+          "end": [
+            159.413,
+            152.317,
+            7.0
+          ],
+          "length_mm": 0.5111731604847862,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            159.736,
+            152.632,
+            7.0
+          ],
+          "end": [
+            159.868,
+            152.761,
+            7.0
+          ],
+          "length_mm": 0.18456706098326137,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            159.868,
+            152.761,
+            7.0
+          ],
+          "end": [
+            160.006,
+            152.963,
+            7.0
+          ],
+          "length_mm": 0.244638508824757,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            159.551,
+            157.558,
+            7.0
+          ],
+          "end": [
+            159.09,
+            157.926,
+            7.0
+          ],
+          "length_mm": 0.5898686294421681,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            159.09,
+            157.926,
+            7.0
+          ],
+          "end": [
+            158.473,
+            158.242,
+            7.0
+          ],
+          "length_mm": 0.6932135313162817,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            158.473,
+            158.242,
+            7.0
+          ],
+          "end": [
+            158.087,
+            158.351,
+            7.0
+          ],
+          "length_mm": 0.4010947518978783,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            158.087,
+            158.351,
+            7.0
+          ],
+          "end": [
+            158.088,
+            158.376,
+            7.0
+          ],
+          "length_mm": 0.025019992006399476,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            158.088,
+            158.376,
+            7.0
+          ],
+          "end": [
+            160.951,
+            157.571,
+            7.0
+          ],
+          "length_mm": 2.974019838535044,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            160.951,
+            157.977,
+            7.0
+          ],
+          "end": [
+            158.2,
+            158.751,
+            7.0
+          ],
+          "length_mm": 2.857809825723193,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            158.2,
+            158.751,
+            7.0
+          ],
+          "end": [
+            159.644,
+            158.751,
+            7.0
+          ],
+          "length_mm": 1.4440000000000168,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            153.449,
+            157.911,
+            7.0
+          ],
+          "end": [
+            155.949,
+            158.751,
+            7.0
+          ],
+          "length_mm": 2.6373471519691916,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            155.949,
+            158.751,
+            7.0
+          ],
+          "end": [
+            156.263,
+            158.751,
+            7.0
+          ],
+          "length_mm": 0.31399999999999295,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            156.263,
+            158.751,
+            7.0
+          ],
+          "end": [
+            156.283,
+            158.426,
+            7.0
+          ],
+          "length_mm": 0.32561480310331464,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            156.283,
+            158.426,
+            7.0
+          ],
+          "end": [
+            153.449,
+            157.474,
+            7.0
+          ],
+          "length_mm": 2.989625394593753,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            154.775,
+            157.483,
+            7.0
+          ],
+          "end": [
+            154.647,
+            157.369,
+            7.0
+          ],
+          "length_mm": 0.1714059508885402,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            154.647,
+            157.369,
+            7.0
+          ],
+          "end": [
+            154.274,
+            156.878,
+            7.0
+          ],
+          "length_mm": 0.616611709262812,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            155.189,
+            152.386,
+            7.0
+          ],
+          "end": [
+            155.77,
+            151.435,
+            7.0
+          ],
+          "length_mm": 1.114433488369767,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            155.386,
+            151.249,
+            7.0
+          ],
+          "end": [
+            153.671,
+            154.055,
+            7.0
+          ],
+          "length_mm": 3.2885955969076033,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            161.417,
+            143.787,
+            7.0
+          ],
+          "end": [
+            160.949,
+            143.022,
+            7.0
+          ],
+          "length_mm": 0.8967993086527289,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            160.949,
+            143.022,
+            7.0
+          ],
+          "end": [
+            160.949,
+            142.286,
+            7.0
+          ],
+          "length_mm": 0.73599999999999,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            160.949,
+            142.286,
+            7.0
+          ],
+          "end": [
+            161.492,
+            143.174,
+            7.0
+          ],
+          "length_mm": 1.0408616622779348,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            161.492,
+            143.174,
+            7.0
+          ],
+          "end": [
+            161.69,
+            142.762,
+            7.0
+          ],
+          "length_mm": 0.45710830226545657,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            161.69,
+            142.762,
+            7.0
+          ],
+          "end": [
+            160.949,
+            141.55,
+            7.0
+          ],
+          "length_mm": 1.4205720678656018,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            160.949,
+            140.814,
+            7.0
+          ],
+          "end": [
+            161.93,
+            142.417,
+            7.0
+          ],
+          "length_mm": 1.8793536122826957,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            161.93,
+            142.417,
+            7.0
+          ],
+          "end": [
+            162.184,
+            142.098,
+            7.0
+          ],
+          "length_mm": 0.4077707689376322,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            162.184,
+            142.098,
+            7.0
+          ],
+          "end": [
+            161.36,
+            140.749,
+            7.0
+          ],
+          "length_mm": 1.580752036215681,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            162.476,
+            141.84,
+            7.0
+          ],
+          "end": [
+            162.667,
+            141.672,
+            7.0
+          ],
+          "length_mm": 0.25437177516383985,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            162.667,
+            141.672,
+            7.0
+          ],
+          "end": [
+            162.783,
+            141.605,
+            7.0
+          ],
+          "length_mm": 0.13395894893584975,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            163.115,
+            141.413,
+            7.0
+          ],
+          "end": [
+            163.267,
+            141.325,
+            7.0
+          ],
+          "length_mm": 0.17563598720080095,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            157.691,
+            31.862,
+            7.0
+          ],
+          "end": [
+            157.789,
+            31.9,
+            7.0
+          ],
+          "length_mm": 0.10510946674775319,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            157.789,
+            31.9,
+            7.0
+          ],
+          "end": [
+            158.112,
+            32.109,
+            7.0
+          ],
+          "length_mm": 0.3847206778950232,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            158.112,
+            32.109,
+            7.0
+          ],
+          "end": [
+            159.174,
+            31.692,
+            7.0
+          ],
+          "length_mm": 1.140935142766681,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            158.476,
+            32.378,
+            7.0
+          ],
+          "end": [
+            158.777,
+            32.672,
+            7.0
+          ],
+          "length_mm": 0.4207576499601532,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            158.932,
+            37.146,
+            7.0
+          ],
+          "end": [
+            158.868,
+            37.239,
+            7.0
+          ],
+          "length_mm": 0.11289375536316626,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            158.868,
+            37.239,
+            7.0
+          ],
+          "end": [
+            158.372,
+            37.723,
+            7.0
+          ],
+          "length_mm": 0.6930165943179014,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            158.372,
+            37.723,
+            7.0
+          ],
+          "end": [
+            158.157,
+            37.862,
+            7.0
+          ],
+          "length_mm": 0.2560195305050032,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            159.951,
+            37.57,
+            7.0
+          ],
+          "end": [
+            157.146,
+            38.671,
+            7.0
+          ],
+          "length_mm": 3.0133413347976425,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            157.146,
+            38.671,
+            7.0
+          ],
+          "end": [
+            157.153,
+            38.751,
+            7.0
+          ],
+          "length_mm": 0.08030566605165415,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            157.153,
+            38.751,
+            7.0
+          ],
+          "end": [
+            157.994,
+            38.751,
+            7.0
+          ],
+          "length_mm": 0.8410000000000082,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            153.423,
+            37.103,
+            7.0
+          ],
+          "end": [
+            153.895,
+            37.612,
+            7.0
+          ],
+          "length_mm": 0.6941649659843172,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            153.895,
+            37.612,
+            7.0
+          ],
+          "end": [
+            154.031,
+            37.709,
+            7.0
+          ],
+          "length_mm": 0.16704789732289083,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            152.449,
+            37.425,
+            7.0
+          ],
+          "end": [
+            155.306,
+            38.713,
+            7.0
+          ],
+          "length_mm": 3.1339101773981985,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            155.306,
+            38.713,
+            7.0
+          ],
+          "end": [
+            155.305,
+            38.751,
+            7.0
+          ],
+          "length_mm": 0.03801315561749326,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            155.305,
+            38.751,
+            7.0
+          ],
+          "end": [
+            154.437,
+            38.751,
+            7.0
+          ],
+          "length_mm": 0.867999999999995,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            35.537,
+            38.451,
+            7.0
+          ],
+          "end": [
+            36.013,
+            37.753,
+            7.0
+          ],
+          "length_mm": 0.8448550171479127,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            31.84,
+            37.808,
+            7.0
+          ],
+          "end": [
+            31.79,
+            37.864,
+            7.0
+          ],
+          "length_mm": 0.07507329751649236,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            31.79,
+            37.864,
+            7.0
+          ],
+          "end": [
+            31.749,
+            37.828,
+            7.0
+          ],
+          "length_mm": 0.05456189146281145,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            31.749,
+            37.828,
+            7.0
+          ],
+          "end": [
+            31.749,
+            38.275,
+            7.0
+          ],
+          "length_mm": 0.4469999999999956,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            31.58,
+            32.55,
+            7.0
+          ],
+          "end": [
+            33.053,
+            31.249,
+            7.0
+          ],
+          "length_mm": 1.9652811503700922,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            36.085,
+            32.092,
+            7.0
+          ],
+          "end": [
+            36.408,
+            32.312,
+            7.0
+          ],
+          "length_mm": 0.39080557826110895,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            36.408,
+            32.312,
+            7.0
+          ],
+          "end": [
+            36.928,
+            31.55,
+            7.0
+          ],
+          "length_mm": 0.9225204604777019,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            36.693,
+            32.59,
+            7.0
+          ],
+          "end": [
+            36.868,
+            32.760999999999996,
+            7.0
+          ],
+          "length_mm": 0.24467529503404886,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            36.868,
+            32.760999999999996,
+            7.0
+          ],
+          "end": [
+            36.959,
+            32.894,
+            7.0
+          ],
+          "length_mm": 0.16115210206510155,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            154.288,
+            108.751,
+            7.0
+          ],
+          "end": [
+            155.266,
+            108.751,
+            7.0
+          ],
+          "length_mm": 0.9779999999999802,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            155.266,
+            108.751,
+            7.0
+          ],
+          "end": [
+            152.449,
+            107.48,
+            7.0
+          ],
+          "length_mm": 3.0904578948757546,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            154.19,
+            107.824,
+            7.0
+          ],
+          "end": [
+            153.895,
+            107.612,
+            7.0
+          ],
+          "length_mm": 0.3632753776407011,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            153.895,
+            107.612,
+            7.0
+          ],
+          "end": [
+            153.423,
+            107.103,
+            7.0
+          ],
+          "length_mm": 0.6941649659843172,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            153.647,
+            102.631,
+            7.0
+          ],
+          "end": [
+            153.951,
+            102.363,
+            7.0
+          ],
+          "length_mm": 0.40526534517523405,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            154.786,
+            101.501,
+            7.0
+          ],
+          "end": [
+            154.447,
+            102.206,
+            7.0
+          ],
+          "length_mm": 0.7822697744384585,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            159.056,
+            101.624,
+            7.0
+          ],
+          "end": [
+            158.002,
+            102.038,
+            7.0
+          ],
+          "length_mm": 1.1323921582208194,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            158.002,
+            102.038,
+            7.0
+          ],
+          "end": [
+            158.397,
+            102.301,
+            7.0
+          ],
+          "length_mm": 0.4745460989197871,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            158.397,
+            102.301,
+            7.0
+          ],
+          "end": [
+            159.487,
+            101.873,
+            7.0
+          ],
+          "length_mm": 1.1710183602318134,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            158.703,
+            102.599,
+            7.0
+          ],
+          "end": [
+            158.868,
+            102.761,
+            7.0
+          ],
+          "length_mm": 0.23123364807050628,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            158.868,
+            102.761,
+            7.0
+          ],
+          "end": [
+            158.971,
+            102.912,
+            7.0
+          ],
+          "length_mm": 0.1827840255602358,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            158.266,
+            107.791,
+            7.0
+          ],
+          "end": [
+            157.789,
+            108.1,
+            7.0
+          ],
+          "length_mm": 0.5683396871590107,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            157.789,
+            108.1,
+            7.0
+          ],
+          "end": [
+            157.119,
+            108.357,
+            7.0
+          ],
+          "length_mm": 0.7175994704568739,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            157.119,
+            108.357,
+            7.0
+          ],
+          "end": [
+            157.144,
+            108.65,
+            7.0
+          ],
+          "length_mm": 0.2940646187490158,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            157.144,
+            108.65,
+            7.0
+          ],
+          "end": [
+            159.951,
+            107.549,
+            7.0
+          ],
+          "length_mm": 3.015203144068394,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            157.954,
+            108.751,
+            7.0
+          ],
+          "end": [
+            159.02,
+            108.751,
+            7.0
+          ],
+          "length_mm": 1.0660000000000025,
+          "both_endpoints_anchored_with_025mm_allowance": false
+        },
+        {
+          "start": [
+            221.964,
+            147.745,
+            7.0
+          ],
+          "end": [
+            221.458,
+            147.517,
+            7.0
+          ],
+          "length_mm": 0.5549954954772193,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            221.458,
+            147.517,
+            7.0
+          ],
+          "end": [
+            221.319,
+            147.416,
+            7.0
+          ],
+          "length_mm": 0.17181967291321038,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            220.193,
+            141.212,
+            7.0
+          ],
+          "end": [
+            220.717,
+            142.069,
+            7.0
+          ],
+          "length_mm": 1.0045023643575957,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            220.717,
+            142.069,
+            7.0
+          ],
+          "end": [
+            221.005,
+            141.814,
+            7.0
+          ],
+          "length_mm": 0.3846673887919115,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            221.005,
+            141.814,
+            7.0
+          ],
+          "end": [
+            220.521,
+            141.022,
+            7.0
+          ],
+          "length_mm": 0.9281810168280814,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        },
+        {
+          "start": [
+            221.311,
+            141.589,
+            7.0
+          ],
+          "end": [
+            221.639,
+            141.399,
+            7.0
+          ],
+          "length_mm": 0.3790567239873224,
+          "both_endpoints_anchored_with_025mm_allowance": true
+        }
+      ],
+      "individual_bridge_segment_endpoints_all_anchored": false,
+      "support_free_printability_verified": false,
+      "physical_print_test": false,
+      "sha256": "e3f23bfb0242cc4bdf0e0deca34bb4d8b65ea3c551fa77ca605a59fc7d98409f",
+      "profiles": "X1C/0.4, PETG,0.2mm,wall4,100%, auto supports45deg, bridges included, local blockers",
+      "limitations": [
+        "Physical bridge/roof strength and actual print fit unverified; individual segment endpoint screening uses CAD section plus0.25mm nozzle allowance and does not prove complete extrusion-path anchoring. Arcs disabled for continuous segment/void checks."
+      ]
+    },
+    {
+      "plate": 2,
+      "passed": true,
+      "members": [
+        {
+          "name": "battery_base",
+          "sha256": "e7e3f63ea66814891f64643fe5eb5149f7c3ca9b02676a559f4de91561ee89f2",
+          "bounds": [
+            [
+              25.0,
+              32.0,
+              0.0
+            ],
+            [
+              135.40000009536743,
+              95.5,
+              29.000000000000004
+            ]
+          ],
+          "shift": [
+            25.0,
+            32.0,
+            0.0
+          ]
+        },
+        {
+          "name": "sony_mount_plate",
+          "sha256": "2a417029fbac23dde1f39b77a2f6d83ed831d14cb40be2accacb557e07ff61e9",
+          "bounds": [
+            [
+              160.0,
+              32.0,
+              0.0
+            ],
+            [
+              225.5,
+              109.45999145507812,
+              6.650001525878906
+            ]
+          ],
+          "shift": [
+            160.0,
+            32.0,
+            0.0
+          ]
+        },
+        {
+          "name": "ann_mb1_coax_ring_service",
+          "sha256": "76884b7619d0f4a2a3a0aa0daa79c9711e97911fda59f3a527bff83c24f270aa",
+          "bounds": [
+            [
+              25.0,
+              130.0,
+              0.0
+            ],
+            [
+              155.99999618530273,
+              235.9999237060547,
+              14.000000000000002
+            ]
+          ],
+          "shift": [
+            25.0,
+            130.0,
+            0.0
+          ]
+        },
+        {
+          "name": "gnss_sony_shared_column",
+          "sha256": "5040f5db64c596a7ef8d4cd46dbb9b055eab8b293168b8c917945213ecc6e568",
+          "bounds": [
+            [
+              185.0,
+              120.0,
+              0.0
+            ],
+            [
+              200.0,
+              144.0,
+              48.000003814697266
+            ]
+          ],
+          "shift": [
+            185.0,
+            120.0,
+            0.0
+          ]
+        },
+        {
+          "name": "sony_fixed_column_0",
+          "sha256": "bffe4061208a5bfd98c52cc9a79373ab190e1a7811983f83e87ab869ca428d80",
+          "bounds": [
+            [
+              215.0,
+              120.0,
+              0.0
+            ],
+            [
+              222.0,
+              129.0,
+              42.5
+            ]
+          ],
+          "shift": [
+            215.0,
+            120.0,
+            0.0
+          ]
+        }
+      ],
+      "first_model_layers_mm": {
+        "battery_base": 0.2,
+        "sony_mount_plate": 0.2,
+        "ann_mb1_coax_ring_service": 0.2,
+        "gnss_sony_shared_column": 0.2,
+        "sony_fixed_column_0": 0.2
+      },
+      "last_model_layers_mm": {
+        "battery_base": 29.0,
+        "sony_mount_plate": 6.6,
+        "ann_mb1_coax_ring_service": 14.0,
+        "gnss_sony_shared_column": 48.0,
+        "sony_fixed_column_0": 42.6
+      },
+      "support_extrusions_in_nut_access_voids": 0,
+      "floor_roof_bridges": [],
+      "individual_bridge_segment_endpoints_all_anchored": null,
+      "support_free_printability_verified": false,
+      "physical_print_test": false,
+      "sha256": "a533086aceacedd739dfec9c9ea411487db98f3068436986708407e8abc1f6ab",
+      "profiles": "X1C/0.4, PETG,0.2mm,wall4,100%, auto supports45deg, bridges included, local blockers",
+      "limitations": [
+        "Physical bridge/roof strength and actual print fit unverified; individual segment endpoint screening uses CAD section plus0.25mm nozzle allowance and does not prove complete extrusion-path anchoring. Arcs disabled for continuous segment/void checks."
+      ]
+    }
+  ],
+  "material": "PETG",
+  "actual_print_test": false
+}

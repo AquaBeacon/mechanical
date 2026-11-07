@@ -119,7 +119,7 @@ def inspect_document(doc):
         row = {"name": obj.Name, "label": obj.Label, "type": obj.TypeId, "state": list(obj.State)}
         if hasattr(obj, "Shape") and not obj.Shape.isNull():
             shape = obj.Shape
-            box = shape.BoundBox
+            box = shape.optimalBoundingBox(False, False)
             row["geometry"] = {"valid": shape.isValid(), "solids": len(shape.Solids), "volume_mm3": abs(shape.Volume),
                                "bbox_mm": [box.XMin, box.YMin, box.ZMin, box.XMax, box.YMax, box.ZMax]}
         if obj.TypeId == "Mesh::Feature":
@@ -162,11 +162,16 @@ def export_solids(objects, run_dir):
             raise ValueError("STL readback is not closed")
         if abs(abs(saved_mesh.Volume) - expected_volume) / max(expected_volume, 1e-9) > 0.02:
             raise ValueError("STL tessellation differs from B-Rep volume by more than 2%")
-        expected_box = shape.BoundBox
+        # Use analytic bounds, independent of cached STL triangulation.
+        expected_box = shape.optimalBoundingBox(False, False)
         for loaded, tolerance in ((readback, 1e-5), (saved_mesh, 0.1)):
-            box = loaded.BoundBox
+            box = loaded.optimalBoundingBox(False, False) if loaded is readback else loaded.BoundBox
             if any(abs(getattr(box, p) - getattr(expected_box, p)) > tolerance for p in ("XMin", "YMin", "ZMin", "XMax", "YMax", "ZMax")):
-                raise ValueError("exported bounding box mismatch")
+                fields = ("XMin", "YMin", "ZMin", "XMax", "YMax", "ZMax")
+                raise ValueError("exported bounding box mismatch: " + obj.Name +
+                                 "; tolerance=" + str(tolerance) +
+                                 "; expected=" + str([getattr(expected_box, p) for p in fields]) +
+                                 "; actual=" + str([getattr(box, p) for p in fields]))
         result[obj.Name] = {"step": str(step), "stl": str(stl), "step_sha256": digest(step), "stl_sha256": digest(stl),
                             "stl_closed": True, "volume_mm3": expected_volume}
     return result

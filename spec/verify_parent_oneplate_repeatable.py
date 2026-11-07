@@ -7,7 +7,7 @@ import trimesh
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT / "scad/lib"))
 from check_asm_contacts import matrix
-OUT = ROOT / "assemblies/parent_oneplate/_work/analysis/repeatable_mount"
+OUT = ROOT / "assemblies/parent_exterior/_work/analysis/repeatable_mount"
 
 def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -24,7 +24,7 @@ def cylinder(p0,p1,diameter):
 
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
-    path=ROOT / "assemblies/parent_oneplate/placement.json"
+    path=ROOT / "assemblies/parent_exterior/placement.json"
     data=json.loads(path.read_text(encoding="utf-8"))
     items={}
     meshes={}

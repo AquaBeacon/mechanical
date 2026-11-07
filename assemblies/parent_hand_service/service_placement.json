@@ -1,7 +1,7 @@
 {
-  "name": "service",
-  "note": "Power switches, LiPo and both SD cards accessible with lid open. MAIN USB accessed after removing interior from case. No lift carrier/props in this variant.",
-  "coordinate_system": "Box exterior southwest bottom origin; mm. Floor top18.8; MAIN PCB42; Sony PCB65.6; antenna top87.1.",
+  "name": "parent_hand_service",
+  "note": "Interior moved aside after vertical extraction with both M10 penetrators retained.",
+  "coordinate_system": "Box nominal lid-envelope southwest lower datum; mm. North body wallY228.3, lid rimY230. Floor top18.8; TX origin147/135.5/24.8.",
   "groups": {
     "vessel": true,
     "interior": true
@@ -13,17 +13,18 @@
       "group": "interior",
       "color": "Orange",
       "alpha": 0.9,
-      "note": "Grid top18.8 retained. Drawing corner contour minus0.5 clearance; actual Z10 boss bearing. M4x12 button anchors.",
+      "note": "Plain through holes and external underside heads; no embedded nuts. North M10 relief and10.8mm M4 clearance retained.",
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
           ]
         }
       ],
-      "file": "floor_plate"
+      "file": "floor_plate",
+      "print": true
     },
     {
       "label": "p_main",
@@ -34,9 +35,16 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            3
           ]
         },
         {
@@ -64,9 +72,16 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            -11,
+            5.5
           ]
         },
         {
@@ -94,15 +109,15 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
           ]
         },
         {
           "translate": [
-            148,
-            140.5,
+            147,
+            135.5,
             24.8
           ]
         },
@@ -124,9 +139,23 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            8.299999999999997
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            1.6
           ]
         },
         {
@@ -154,7 +183,7 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
           ]
@@ -174,7 +203,9 @@
           ]
         }
       ],
-      "file": "battery_base"
+      "file": "battery_base",
+      "print": true,
+      "note": "2026-10-29 vertical-removal lid revision; reprint base and lid together."
     },
     {
       "label": "lipo",
@@ -186,7 +217,7 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
           ]
@@ -208,52 +239,54 @@
       ]
     },
     {
-      "label": "pen_tether",
+      "label": "pen_north_150",
       "part": "parts/common/exterior/cots/wetlink_penetrator_m10",
-      "file": "wetlink_penetrator_m10_ref_bcas",
+      "file": "wetlink_m10_bcas_reference",
       "group": "vessel",
       "color": "Silver",
       "alpha": 1.0,
       "ops": [
         {
           "translate": [
-            28,
-            0,
-            65
+            150,
+            228.3,
+            32.5
           ]
         },
         {
           "rotate": [
-            -90,
+            90,
             0,
             0
           ]
         }
-      ]
+      ],
+      "note": "Pair confirmed at X150/175, center height30..35;32.5 nominal. Cable identity at each hole not specified. Existing SCAD body reference and separate vendor16mm nut; wet-end cable size unconfirmed."
     },
     {
-      "label": "pen_td04a",
+      "label": "pen_north_175",
       "part": "parts/common/exterior/cots/wetlink_penetrator_m10",
-      "file": "wetlink_penetrator_m10_ref_bcas",
+      "file": "wetlink_m10_bcas_reference",
       "group": "vessel",
       "color": "Silver",
       "alpha": 1.0,
       "ops": [
         {
           "translate": [
-            120,
-            0,
-            65
+            175,
+            228.3,
+            32.5
           ]
         },
         {
           "rotate": [
-            -90,
+            90,
             0,
             0
           ]
         }
-      ]
+      ],
+      "note": "Pair confirmed at X150/175, center height30..35;32.5 nominal. Cable identity at each hole not specified. Existing SCAD body reference and separate vendor16mm nut; wet-end cable size unconfirmed."
     },
     {
       "label": "box_bcas212310g",
@@ -281,7 +314,7 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
           ]
@@ -300,7 +333,9 @@
             90
           ]
         }
-      ]
+      ],
+      "print": true,
+      "note": "2026-10-29 vertical-removal lid revision; reprint base and lid together."
     },
     {
       "label": "lipo_ret_pads",
@@ -311,7 +346,7 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
           ]
@@ -341,7 +376,7 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
           ]
@@ -349,41 +384,12 @@
         {
           "translate": [
             192.5,
-            34.1,
+            72.1,
             52
           ]
         }
-      ]
-    },
-    {
-      "label": "lipo_ret_nut_0",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_nut_m3",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            192.5,
-            34.1,
-            41.6
-          ]
-        },
-        {
-          "rotate": [
-            0,
-            0,
-            90
-          ]
-        }
-      ]
+      ],
+      "note": "M3x12, 9mm engagement in2.8mm plastic pilot; no nut."
     },
     {
       "label": "lipo_ret_mount_0",
@@ -394,7 +400,7 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
           ]
@@ -417,7 +423,7 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
           ]
@@ -440,7 +446,7 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
           ]
@@ -463,7 +469,7 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
           ]
@@ -480,13 +486,13 @@
     {
       "label": "case_anchor_0",
       "part": "parts/common/interior/cots/screw",
-      "file": "screw_m4x12_button",
+      "file": "screw_m4x12_head10_h5_envelope",
       "group": "interior",
       "color": "Silver",
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
           ]
@@ -498,18 +504,19 @@
             16.8
           ]
         }
-      ]
+      ],
+      "note": "Conservative head10/H5, length12 inherited assumption; actual screw height and length unmeasured."
     },
     {
       "label": "case_anchor_1",
       "part": "parts/common/interior/cots/screw",
-      "file": "screw_m4x12_button",
+      "file": "screw_m4x12_head10_h5_envelope",
       "group": "interior",
       "color": "Silver",
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
           ]
@@ -521,18 +528,19 @@
             16.8
           ]
         }
-      ]
+      ],
+      "note": "Conservative head10/H5, length12 inherited assumption; actual screw height and length unmeasured."
     },
     {
       "label": "case_anchor_2",
       "part": "parts/common/interior/cots/screw",
-      "file": "screw_m4x12_button",
+      "file": "screw_m4x12_head10_h5_envelope",
       "group": "interior",
       "color": "Silver",
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
           ]
@@ -544,331 +552,8 @@
             16.8
           ]
         }
-      ]
-    },
-    {
-      "label": "main_column_0",
-      "part": "parts/parent/interior/printed/parent_hand_service",
-      "file": "main_corner_column",
-      "group": "interior",
-      "color": "Orange",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            21,
-            16.5,
-            18.8
-          ]
-        }
       ],
-      "print": false,
-      "print_set": "parent_stack_spacer_set"
-    },
-    {
-      "label": "main_column_1",
-      "part": "parts/parent/interior/printed/parent_hand_service",
-      "file": "main_corner_column",
-      "group": "interior",
-      "color": "Orange",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            22.5,
-            107.5,
-            18.8
-          ]
-        }
-      ],
-      "print": false,
-      "print_set": "parent_stack_spacer_set"
-    },
-    {
-      "label": "main_column_2",
-      "part": "parts/parent/interior/printed/parent_hand_service",
-      "file": "main_corner_column",
-      "group": "interior",
-      "color": "Orange",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            125.5,
-            32,
-            18.8
-          ]
-        }
-      ],
-      "print": false,
-      "print_set": "parent_stack_spacer_set"
-    },
-    {
-      "label": "main_column_3",
-      "part": "parts/parent/interior/printed/parent_hand_service",
-      "file": "main_corner_column",
-      "group": "interior",
-      "color": "Orange",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            125.5,
-            107.5,
-            18.8
-          ]
-        }
-      ],
-      "print": false,
-      "print_set": "parent_stack_spacer_set"
-    },
-    {
-      "label": "main_mount_plate",
-      "part": "parts/parent/interior/printed/parent_hand_service",
-      "file": "main_mount_plate",
-      "group": "interior",
-      "color": "Orange",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        }
-      ]
-    },
-    {
-      "label": "sony_mount_plate",
-      "part": "parts/parent/interior/printed/parent_hand_service",
-      "file": "sony_mount_plate",
-      "group": "interior",
-      "color": "Orange",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        }
-      ]
-    },
-    {
-      "label": "sony_column_0",
-      "part": "parts/common/interior/printed/stack_spacers",
-      "file": "sony_column_left",
-      "group": "interior",
-      "color": "Orange",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            144,
-            134.5,
-            18.8
-          ]
-        }
-      ],
-      "print": false,
-      "print_set": "parent_stack_spacer_set"
-    },
-    {
-      "label": "sony_column_1",
-      "part": "parts/common/interior/printed/stack_spacers",
-      "file": "sony_column_right",
-      "group": "interior",
-      "color": "Orange",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            201,
-            134.5,
-            18.8
-          ]
-        }
-      ],
-      "print": false,
-      "print_set": "parent_stack_spacer_set"
-    },
-    {
-      "label": "sony_column_2",
-      "part": "parts/common/interior/printed/stack_spacers",
-      "file": "sony_column_left",
-      "group": "interior",
-      "color": "Orange",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            144,
-            211.5,
-            18.8
-          ]
-        }
-      ],
-      "print": false,
-      "print_set": "parent_stack_spacer_set"
-    },
-    {
-      "label": "sony_column_3",
-      "part": "parts/common/interior/printed/stack_spacers",
-      "file": "sony_column_right",
-      "group": "interior",
-      "color": "Orange",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            201,
-            204.5,
-            18.8
-          ]
-        }
-      ],
-      "print": false,
-      "print_set": "parent_stack_spacer_set"
-    },
-    {
-      "label": "main_mount_0",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x30",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            22.5,
-            107.5,
-            43.6
-          ]
-        }
-      ]
-    },
-    {
-      "label": "main_mount_1",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x8",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            22.5,
-            32.0,
-            43.6
-          ]
-        }
-      ]
-    },
-    {
-      "label": "main_mount_2",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x30",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            125.5,
-            32.0,
-            43.6
-          ]
-        }
-      ]
-    },
-    {
-      "label": "main_mount_3",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x30",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            125.5,
-            107.5,
-            43.6
-          ]
-        }
-      ]
+      "note": "Conservative head10/H5, length12 inherited assumption; actual screw height and length unmeasured."
     },
     {
       "label": "sony_mount_0",
@@ -879,9 +564,23 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            8.299999999999997
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            1.6
           ]
         },
         {
@@ -902,9 +601,23 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            8.299999999999997
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            1.6
           ]
         },
         {
@@ -925,9 +638,23 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            8.299999999999997
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            1.6
           ]
         },
         {
@@ -948,9 +675,23 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            8.299999999999997
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            1.6
           ]
         },
         {
@@ -958,98 +699,6 @@
             166.78,
             205.46,
             67.2
-          ]
-        }
-      ]
-    },
-    {
-      "label": "pwr_mount_0",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x8",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            30.8,
-            120.0,
-            29.9
-          ]
-        }
-      ]
-    },
-    {
-      "label": "pwr_mount_1",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x8",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            104.8,
-            210.0,
-            29.9
-          ]
-        }
-      ]
-    },
-    {
-      "label": "pwr_mount_2",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x8",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            30.8,
-            210.0,
-            29.9
-          ]
-        }
-      ]
-    },
-    {
-      "label": "pwr_mount_3",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x8",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            104.8,
-            120.0,
-            29.9
           ]
         }
       ]
@@ -1063,15 +712,15 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
           ]
         },
         {
           "translate": [
-            194.0,
-            206.5,
+            193.0,
+            201.5,
             26.4
           ]
         }
@@ -1086,15 +735,15 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
           ]
         },
         {
           "translate": [
-            194.0,
-            140.5,
+            193.0,
+            135.5,
             26.4
           ]
         }
@@ -1109,15 +758,15 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
           ]
         },
         {
           "translate": [
-            152.0,
-            206.5,
+            151.0,
+            201.5,
             26.4
           ]
         }
@@ -1132,795 +781,16 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
           ]
         },
         {
           "translate": [
-            152.0,
-            140.5,
+            151.0,
+            135.5,
             26.4
-          ]
-        }
-      ]
-    },
-    {
-      "label": "main_carrier_nut_0",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_nut_m3",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            21,
-            16.5,
-            16.2
-          ]
-        },
-        {
-          "rotate": [
-            0,
-            0,
-            30
-          ]
-        }
-      ]
-    },
-    {
-      "label": "main_carrier_mount_0",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x25",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            21,
-            16.5,
-            36.8
-          ]
-        }
-      ]
-    },
-    {
-      "label": "main_carrier_nut_1",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_nut_m3",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            22.5,
-            107.5,
-            16.2
-          ]
-        },
-        {
-          "rotate": [
-            0,
-            0,
-            30
-          ]
-        }
-      ]
-    },
-    {
-      "label": "main_carrier_nut_2",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_nut_m3",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            125.5,
-            32,
-            16.2
-          ]
-        },
-        {
-          "rotate": [
-            0,
-            0,
-            30
-          ]
-        }
-      ]
-    },
-    {
-      "label": "main_carrier_nut_3",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_nut_m3",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            125.5,
-            107.5,
-            16.2
-          ]
-        },
-        {
-          "rotate": [
-            0,
-            0,
-            30
-          ]
-        }
-      ]
-    },
-    {
-      "label": "sony_carrier_nut_0",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_nut_m3",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            144,
-            134.5,
-            16.2
-          ]
-        },
-        {
-          "rotate": [
-            0,
-            0,
-            30
-          ]
-        }
-      ]
-    },
-    {
-      "label": "sony_carrier_mount_0",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x50",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            144,
-            134.5,
-            62.1
-          ]
-        }
-      ]
-    },
-    {
-      "label": "sony_carrier_nut_1",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_nut_m3",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            201,
-            134.5,
-            16.2
-          ]
-        },
-        {
-          "rotate": [
-            0,
-            0,
-            30
-          ]
-        }
-      ]
-    },
-    {
-      "label": "sony_carrier_mount_1",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x50",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            201,
-            134.5,
-            62.1
-          ]
-        }
-      ]
-    },
-    {
-      "label": "sony_carrier_nut_2",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_nut_m3",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            144,
-            211.5,
-            16.2
-          ]
-        },
-        {
-          "rotate": [
-            0,
-            0,
-            30
-          ]
-        }
-      ]
-    },
-    {
-      "label": "sony_carrier_mount_2",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x50",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            144,
-            211.5,
-            62.1
-          ]
-        }
-      ]
-    },
-    {
-      "label": "sony_carrier_nut_3",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_nut_m3",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            201,
-            204.5,
-            16.2
-          ]
-        },
-        {
-          "rotate": [
-            0,
-            0,
-            30
-          ]
-        }
-      ]
-    },
-    {
-      "label": "sony_carrier_mount_3",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x50",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            201,
-            204.5,
-            62.1
-          ]
-        }
-      ]
-    },
-    {
-      "label": "gnss_frame_nut_0",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_nut_m3",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            13,
-            145,
-            16.2
-          ]
-        },
-        {
-          "rotate": [
-            0,
-            0,
-            30
-          ]
-        }
-      ]
-    },
-    {
-      "label": "gnss_frame_mount_0",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x40",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            13,
-            145,
-            52.5
-          ]
-        }
-      ]
-    },
-    {
-      "label": "gnss_frame_nut_1",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_nut_m3",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            135,
-            145,
-            16.2
-          ]
-        },
-        {
-          "rotate": [
-            0,
-            0,
-            30
-          ]
-        }
-      ]
-    },
-    {
-      "label": "gnss_frame_mount_1",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x40",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            135,
-            145,
-            52.5
-          ]
-        }
-      ]
-    },
-    {
-      "label": "gnss_frame_nut_2",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_nut_m3",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            22.6,
-            219,
-            16.2
-          ]
-        },
-        {
-          "rotate": [
-            0,
-            0,
-            30
-          ]
-        }
-      ]
-    },
-    {
-      "label": "gnss_frame_mount_2",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x40",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            22.6,
-            219,
-            52.5
-          ]
-        }
-      ]
-    },
-    {
-      "label": "gnss_frame_nut_3",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_nut_m3",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            135,
-            219,
-            16.2
-          ]
-        },
-        {
-          "rotate": [
-            0,
-            0,
-            30
-          ]
-        }
-      ]
-    },
-    {
-      "label": "gnss_frame_mount_3",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x40",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            135,
-            219,
-            52.5
-          ]
-        }
-      ]
-    },
-    {
-      "label": "antenna_rack_nut_0",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_nut_m3",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            12,
-            25,
-            16.2
-          ]
-        },
-        {
-          "rotate": [
-            0,
-            0,
-            30
-          ]
-        }
-      ]
-    },
-    {
-      "label": "antenna_rack_mount_0",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x50",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            12,
-            25,
-            63.6
-          ]
-        }
-      ]
-    },
-    {
-      "label": "antenna_rack_nut_1",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_nut_m3",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            134,
-            25,
-            16.2
-          ]
-        },
-        {
-          "rotate": [
-            0,
-            0,
-            30
-          ]
-        }
-      ]
-    },
-    {
-      "label": "antenna_rack_mount_1",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x50",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            134,
-            25,
-            63.6
-          ]
-        }
-      ]
-    },
-    {
-      "label": "antenna_rack_nut_2",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_nut_m3",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            12,
-            95,
-            16.2
-          ]
-        },
-        {
-          "rotate": [
-            0,
-            0,
-            30
-          ]
-        }
-      ]
-    },
-    {
-      "label": "antenna_rack_mount_2",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x50",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            12,
-            95,
-            63.6
-          ]
-        }
-      ]
-    },
-    {
-      "label": "antenna_rack_nut_3",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_nut_m3",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            134,
-            95,
-            16.2
-          ]
-        },
-        {
-          "rotate": [
-            0,
-            0,
-            30
-          ]
-        }
-      ]
-    },
-    {
-      "label": "antenna_rack_mount_3",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x50",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            134,
-            95,
-            63.6
           ]
         }
       ]
@@ -1934,9 +804,16 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            18.799999999999997
           ]
         },
         {
@@ -1964,9 +841,16 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            18.799999999999997
           ]
         },
         {
@@ -1994,9 +878,16 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            18.799999999999997
           ]
         },
         {
@@ -2024,9 +915,16 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            18.799999999999997
           ]
         },
         {
@@ -2047,9 +945,16 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            18.799999999999997
           ]
         },
         {
@@ -2071,146 +976,32 @@
       "ops": [
         {
           "translate": [
-            230,
-            0,
-            0
-          ]
-        }
-      ]
-    },
-    {
-      "label": "gnss_column_0",
-      "part": "parts/parent/interior/printed/gnss_universal_carrier",
-      "file": "gnss_column_front",
-      "group": "interior",
-      "color": "Orange",
-      "ops": [
-        {
-          "translate": [
-            230,
+            240,
             0,
             0
           ]
         },
         {
           "translate": [
-            13,
-            145,
-            18.8
+            0,
+            0,
+            18.799999999999997
           ]
         }
       ],
-      "print": false,
-      "print_set": "parent_stack_spacer_set"
-    },
-    {
-      "label": "gnss_column_1",
-      "part": "parts/parent/interior/printed/gnss_universal_carrier",
-      "file": "gnss_column_front",
-      "group": "interior",
-      "color": "Orange",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            135,
-            145,
-            18.8
-          ]
-        }
-      ],
-      "print": false,
-      "print_set": "parent_stack_spacer_set"
-    },
-    {
-      "label": "gnss_column_2",
-      "part": "parts/parent/interior/printed/gnss_universal_carrier",
-      "file": "gnss_column_rear",
-      "group": "interior",
-      "color": "Orange",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            22.6,
-            219,
-            18.8
-          ]
-        }
-      ],
-      "print": false,
-      "print_set": "parent_stack_spacer_set"
-    },
-    {
-      "label": "gnss_column_3",
-      "part": "parts/parent/interior/printed/gnss_universal_carrier",
-      "file": "gnss_column_rear",
-      "group": "interior",
-      "color": "Orange",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            135,
-            219,
-            18.8
-          ]
-        }
-      ],
-      "print": false,
-      "print_set": "parent_stack_spacer_set"
-    },
-    {
-      "label": "antenna_rack",
-      "part": "parts/parent/interior/printed/ann_mb1_internal_rack",
-      "file": "ann_mb1_internal_rack",
-      "group": "interior",
-      "color": "Orange",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            60,
-            60,
-            18.8
-          ]
-        }
-      ]
+      "print": true,
+      "note": "Existing geometry, no reprint needed if already made. Included so the portable set contains the complete interior."
     },
     {
       "label": "coax_ring",
       "part": "parts/parent/interior/printed/ann_mb1_internal_rack",
-      "file": "ann_mb1_coax_ring",
+      "file": "ann_mb1_coax_ring_service",
       "group": "interior",
       "color": "Orange",
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
           ]
@@ -2222,7 +1013,9 @@
             18.8
           ]
         }
-      ]
+      ],
+      "print": true,
+      "note": "Reprint with open-top lead entry; original footprint, case-tool paths and floor holes retained."
     },
     {
       "label": "antenna_ground_plate",
@@ -2233,9 +1026,16 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            -12,
+            8.8
           ]
         },
         {
@@ -2256,9 +1056,16 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            -12,
+            8.8
           ]
         },
         {
@@ -2286,7 +1093,7 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
           ]
@@ -2302,22 +1109,6 @@
       "alpha": 0.2
     },
     {
-      "label": "gnss_coax_route",
-      "part": "parts/parent/interior/cots/ann_mb1",
-      "file": "coax_route",
-      "group": "interior",
-      "color": "Black",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        }
-      ]
-    },
-    {
       "label": "magnetometer",
       "part": "parts/parent/interior/cots/adafruit_lis3mdl",
       "file": "adafruit_lis3mdl",
@@ -2326,9 +1117,16 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            18.799999999999997
           ]
         },
         {
@@ -2350,15 +1148,22 @@
     {
       "label": "mag_bolt_0",
       "part": "parts/parent/interior/cots/adafruit_lis3mdl",
-      "file": "nylon_m2x8_envelope",
+      "file": "nylon_screw_m2x10_envelope",
       "group": "interior",
       "color": "Ivory",
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            18.799999999999997
           ]
         },
         {
@@ -2379,7 +1184,7 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
           ]
@@ -2388,7 +1193,7 @@
           "translate": [
             47.54,
             197.54,
-            49.9
+            66.69999999999999
           ]
         }
       ]
@@ -2396,15 +1201,22 @@
     {
       "label": "mag_bolt_1",
       "part": "parts/parent/interior/cots/adafruit_lis3mdl",
-      "file": "nylon_m2x8_envelope",
+      "file": "nylon_screw_m2x10_envelope",
       "group": "interior",
       "color": "Ivory",
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            18.799999999999997
           ]
         },
         {
@@ -2425,7 +1237,7 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
           ]
@@ -2434,7 +1246,7 @@
           "translate": [
             47.54,
             217.86,
-            49.9
+            66.69999999999999
           ]
         }
       ]
@@ -2442,15 +1254,22 @@
     {
       "label": "mag_bolt_2",
       "part": "parts/parent/interior/cots/adafruit_lis3mdl",
-      "file": "nylon_m2x8_envelope",
+      "file": "nylon_screw_m2x10_envelope",
       "group": "interior",
       "color": "Ivory",
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            18.799999999999997
           ]
         },
         {
@@ -2471,7 +1290,7 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
           ]
@@ -2480,7 +1299,7 @@
           "translate": [
             60.24,
             197.54,
-            49.9
+            66.69999999999999
           ]
         }
       ]
@@ -2488,15 +1307,22 @@
     {
       "label": "mag_bolt_3",
       "part": "parts/parent/interior/cots/adafruit_lis3mdl",
-      "file": "nylon_m2x8_envelope",
+      "file": "nylon_screw_m2x10_envelope",
       "group": "interior",
       "color": "Ivory",
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            18.799999999999997
           ]
         },
         {
@@ -2517,7 +1343,7 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
           ]
@@ -2526,299 +1352,54 @@
           "translate": [
             60.24,
             217.86,
-            49.9
+            66.69999999999999
           ]
         }
       ]
     },
     {
-      "label": "ground_plate_mount_0",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x6",
+      "label": "tx_top_keepout",
+      "part": "parts/parent/interior/printed/parent_hand_service",
+      "file": "tx_top_keepout",
       "group": "interior",
-      "color": "Silver",
+      "color": "Cyan",
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
           ]
         },
         {
           "translate": [
-            20,
-            38.5,
-            64.6
-          ]
-        }
-      ]
-    },
-    {
-      "label": "ground_plate_nut_0",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_nut_m3",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
+            -1,
+            -5,
             0
           ]
-        },
-        {
-          "translate": [
-            20,
-            38.5,
-            61.2
-          ]
         }
-      ]
-    },
-    {
-      "label": "ground_plate_mount_1",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x6",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            100,
-            35,
-            64.6
-          ]
-        }
-      ]
-    },
-    {
-      "label": "ground_plate_nut_1",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_nut_m3",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            100,
-            35,
-            61.2
-          ]
-        }
-      ]
-    },
-    {
-      "label": "ground_plate_mount_2",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x6",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            20,
-            85,
-            64.6
-          ]
-        }
-      ]
-    },
-    {
-      "label": "ground_plate_nut_2",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_nut_m3",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            20,
-            85,
-            61.2
-          ]
-        }
-      ]
-    },
-    {
-      "label": "ground_plate_mount_3",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x6",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            100,
-            75,
-            64.6
-          ]
-        }
-      ]
-    },
-    {
-      "label": "ground_plate_nut_3",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_nut_m3",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            100,
-            75,
-            61.2
-          ]
-        }
-      ]
-    },
-    {
-      "label": "antenna_mount_0",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m4x12",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            26,
-            60,
-            70.6
-          ]
-        }
-      ]
-    },
-    {
-      "label": "antenna_nut_0",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_nut_m4",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            26,
-            60,
-            60.4
-          ]
-        }
-      ]
-    },
-    {
-      "label": "antenna_mount_1",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m4x12",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            94,
-            60,
-            70.6
-          ]
-        }
-      ]
-    },
-    {
-      "label": "antenna_nut_1",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_nut_m4",
-      "group": "interior",
-      "color": "Silver",
-      "ops": [
-        {
-          "translate": [
-            230,
-            0,
-            0
-          ]
-        },
-        {
-          "translate": [
-            94,
-            60,
-            60.4
-          ]
-        }
-      ]
+      ],
+      "alpha": 0.15
     },
     {
       "label": "gnss_pcb_bolt_0",
       "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x10",
+      "file": "screw_m3x12",
       "group": "interior",
       "color": "Silver",
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            18.799999999999997
           ]
         },
         {
@@ -2839,9 +1420,16 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            18.799999999999997
           ]
         },
         {
@@ -2856,15 +1444,22 @@
     {
       "label": "gnss_pcb_bolt_1",
       "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x10",
+      "file": "screw_m3x12",
       "group": "interior",
       "color": "Silver",
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            18.799999999999997
           ]
         },
         {
@@ -2885,9 +1480,16 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            18.799999999999997
           ]
         },
         {
@@ -2902,15 +1504,22 @@
     {
       "label": "gnss_pcb_bolt_2",
       "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x10",
+      "file": "screw_m3x12",
       "group": "interior",
       "color": "Silver",
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            18.799999999999997
           ]
         },
         {
@@ -2931,9 +1540,16 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            18.799999999999997
           ]
         },
         {
@@ -2948,15 +1564,22 @@
     {
       "label": "gnss_pcb_bolt_3",
       "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x10",
+      "file": "screw_m3x12",
       "group": "interior",
       "color": "Silver",
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            18.799999999999997
           ]
         },
         {
@@ -2977,9 +1600,16 @@
       "ops": [
         {
           "translate": [
-            230,
+            240,
             0,
             0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            18.799999999999997
           ]
         },
         {
@@ -2990,10 +1620,1884 @@
           ]
         }
       ]
+    },
+    {
+      "label": "main_service_frame",
+      "part": "parts/parent/interior/printed/parent_hand_service",
+      "file": "main_service_frame",
+      "group": "interior",
+      "color": "DarkOrange",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        }
+      ],
+      "print": true
+    },
+    {
+      "label": "antenna_service_shelf",
+      "part": "parts/parent/interior/printed/ann_mb1_internal_rack",
+      "file": "antenna_service_shelf",
+      "group": "interior",
+      "color": "DarkOrange",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        }
+      ],
+      "print": true
+    },
+    {
+      "label": "cradle_floor_foot_0",
+      "part": "parts/parent/interior/printed/ann_mb1_internal_rack",
+      "file": "cradle_floor_foot_0",
+      "group": "interior",
+      "color": "DarkOrange",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        }
+      ],
+      "print": true
+    },
+    {
+      "label": "cradle_floor_foot_1",
+      "part": "parts/parent/interior/printed/ann_mb1_internal_rack",
+      "file": "cradle_floor_foot_1",
+      "group": "interior",
+      "color": "DarkOrange",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        }
+      ],
+      "print": true
+    },
+    {
+      "label": "cradle_floor_foot_2",
+      "part": "parts/parent/interior/printed/ann_mb1_internal_rack",
+      "file": "cradle_floor_foot_2",
+      "group": "interior",
+      "color": "DarkOrange",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        }
+      ],
+      "print": true
+    },
+    {
+      "label": "cradle_floor_foot_3",
+      "part": "parts/parent/interior/printed/ann_mb1_internal_rack",
+      "file": "cradle_floor_foot_3",
+      "group": "interior",
+      "color": "DarkOrange",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        }
+      ],
+      "print": true
+    },
+    {
+      "label": "power_adapter",
+      "part": "parts/parent/interior/printed/parent_hand_service",
+      "file": "power_adapter",
+      "group": "interior",
+      "color": "DarkOrange",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        }
+      ],
+      "print": true
+    },
+    {
+      "label": "sony_mount_plate",
+      "part": "parts/parent/interior/printed/parent_hand_service",
+      "file": "sony_mount_plate",
+      "group": "interior",
+      "color": "DarkOrange",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            8.299999999999997
+          ]
+        }
+      ],
+      "print": true
+    },
+    {
+      "label": "coax_service_loop",
+      "part": "parts/parent/interior/cots/ann_mb1",
+      "file": "coax_service_loop",
+      "group": "interior",
+      "color": "DimGray",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        }
+      ],
+      "print": false
+    },
+    {
+      "label": "coax_receiver_service",
+      "part": "parts/parent/interior/cots/ann_mb1",
+      "file": "coax_receiver_service",
+      "group": "interior",
+      "color": "DimGray",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        }
+      ],
+      "print": false
+    },
+    {
+      "label": "sony_support_frame",
+      "part": "parts/parent/interior/printed/parent_hand_service",
+      "file": "sony_support_frame",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "print": true,
+      "color": "Orange"
+    },
+    {
+      "label": "gnss_support_frame",
+      "part": "parts/parent/interior/printed/gnss_universal_carrier",
+      "file": "gnss_support_frame",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "print": true,
+      "color": "Orange"
+    },
+    {
+      "label": "mag_washer_0",
+      "part": "parts/parent/interior/cots/adafruit_lis3mdl",
+      "file": "nylon_washer_m2_05_envelope",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            47.54,
+            197.54,
+            68.3
+          ]
+        }
+      ]
+    },
+    {
+      "label": "mag_washer_1",
+      "part": "parts/parent/interior/cots/adafruit_lis3mdl",
+      "file": "nylon_washer_m2_05_envelope",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            47.54,
+            217.86,
+            68.3
+          ]
+        }
+      ]
+    },
+    {
+      "label": "mag_washer_2",
+      "part": "parts/parent/interior/cots/adafruit_lis3mdl",
+      "file": "nylon_washer_m2_05_envelope",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            60.24,
+            197.54,
+            68.3
+          ]
+        }
+      ]
+    },
+    {
+      "label": "mag_washer_3",
+      "part": "parts/parent/interior/cots/adafruit_lis3mdl",
+      "file": "nylon_washer_m2_05_envelope",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            60.24,
+            217.86,
+            68.3
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_cradle_service_0_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x30",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            12,
+            25,
+            35.6
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_cradle_service_0_nut",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            12,
+            25,
+            9.04
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_cradle_service_1_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x30",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            134,
+            25,
+            35.6
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_cradle_service_1_nut",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            134,
+            25,
+            9.04
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_cradle_service_2_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x30",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            12,
+            95,
+            35.6
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_cradle_service_2_nut",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            12,
+            95,
+            9.04
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_cradle_service_3_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x30",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            134,
+            95,
+            35.6
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_cradle_service_3_nut",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            134,
+            95,
+            9.04
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_gnss_floor_0_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x65",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            13,
+            145,
+            71.3
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_gnss_floor_0_nut",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            13,
+            145,
+            9.04
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_gnss_floor_1_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x65",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            135,
+            145,
+            71.3
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_gnss_floor_1_nut",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            135,
+            145,
+            9.04
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_gnss_floor_2_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x65",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            22.6,
+            219,
+            71.3
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_gnss_floor_2_nut",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            22.6,
+            219,
+            9.04
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_gnss_floor_3_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x65",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            135,
+            219,
+            71.3
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_gnss_floor_3_nut",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            135,
+            219,
+            9.04
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_sony_floor_0_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x65",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            142.5,
+            134.5,
+            72.0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_sony_floor_0_nut",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            142.5,
+            134.5,
+            9.04
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_sony_floor_1_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x65",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            201,
+            134.5,
+            72.0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_sony_floor_1_nut",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            201,
+            134.5,
+            9.04
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_sony_plate_2_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x10",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            142.5,
+            202.5,
+            72.0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_sony_floor_3_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x65",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            201,
+            204.5,
+            72.0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_sony_floor_3_nut",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            201,
+            204.5,
+            9.04
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_main_pcb_0_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            22.5,
+            107.5,
+            46.6
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_main_pcb_1_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            22.5,
+            32.0,
+            46.6
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_main_pcb_2_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            125.5,
+            32.0,
+            46.6
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_main_pcb_3_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            125.5,
+            107.5,
+            46.6
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_pwr_adapter_0_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            30.8,
+            120.0,
+            30.25
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_pwr_pcb_0_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x6",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            104.8,
+            199.0,
+            35.4
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_pwr_adapter_1_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            104.8,
+            210.0,
+            30.25
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_pwr_pcb_1_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x6",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            30.799999999999997,
+            109.0,
+            35.4
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_pwr_adapter_2_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            30.8,
+            210.0,
+            30.25
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_pwr_pcb_2_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x6",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            104.8,
+            109.0,
+            35.4
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_pwr_adapter_3_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x8",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            104.8,
+            120.0,
+            30.25
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_pwr_pcb_3_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x6",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            30.799999999999997,
+            199.0,
+            35.4
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_shelf_joint_0_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x30",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            12,
+            35,
+            72.4
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_shelf_joint_1_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x30",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            12,
+            75,
+            72.4
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_shelf_joint_2_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x30",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            137.5,
+            35,
+            72.4
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_shelf_joint_3_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x30",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            137.5,
+            75,
+            72.4
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_steel_0_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x10",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            20,
+            26.5,
+            73.39999999999999
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_steel_0_nut",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            20,
+            26.5,
+            64.5
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_steel_0_washer",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m3_05",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            20,
+            26.5,
+            66.9
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_steel_1_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x10",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            100,
+            23,
+            73.39999999999999
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_steel_1_nut",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            100,
+            23,
+            64.5
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_steel_1_washer",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m3_05",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            100,
+            23,
+            66.9
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_steel_2_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x10",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            20,
+            73,
+            73.39999999999999
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_steel_2_nut",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            20,
+            73,
+            64.5
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_steel_2_washer",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m3_05",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            20,
+            73,
+            66.9
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_steel_3_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x10",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            100,
+            63,
+            73.39999999999999
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_steel_3_nut",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            100,
+            63,
+            64.5
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_steel_3_washer",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m3_05",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            100,
+            63,
+            66.9
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_antenna_0_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m4x18_socket",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            26,
+            48,
+            79.39999999999999
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_antenna_0_nut",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            26,
+            48,
+            63.400000000000006
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_antenna_0_washer",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m4_08",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            26,
+            48,
+            66.60000000000001
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_antenna_1_bolt",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m4x18_socket",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            94,
+            48,
+            79.39999999999999
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_antenna_1_nut",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m4",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            94,
+            48,
+            63.400000000000006
+          ]
+        },
+        {
+          "rotate": [
+            0,
+            0,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "label": "retrofit_antenna_1_washer",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_washer_m4_08",
+      "group": "interior",
+      "ops": [
+        {
+          "translate": [
+            240,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            94,
+            48,
+            66.60000000000001
+          ]
+        }
+      ]
     }
   ],
-  "service_only": [],
-  "lift_mm": 0,
+  "case_anchor_access": {
+    "date": "2026-10-27",
+    "used_anchor_indices": [
+      0,
+      1,
+      2
+    ],
+    "unused_anchor_index": 3,
+    "floor_geometry": "replaced with roofed floor nuts and north port relief",
+    "tool": "Long 2.5 mm ball-end hex key: SW tilted10 degrees SW; NW tilted10 degrees W; SE vertical after removing pack/lid/top foam",
+    "guide_id_mm": 4.2,
+    "three_anchor_strength": "unverified",
+    "head_clearance_mm": 10.8,
+    "head_envelope_mm": [
+      10,
+      5
+    ],
+    "length_assumed_mm": 12,
+    "battery_tool_opening_mm": 10.8,
+    "physical_screw_and_tool_unmeasured": true
+  },
+  "battery_lid_design": {
+    "type": "vertical_lift_one_central_screw",
+    "screw": "M3x12 into2.8mm plastic pilot; no nut",
+    "screw_xy_local_mm": [
+      50,
+      5
+    ],
+    "engagement_mm": 9,
+    "bottom_clearance_mm": 2,
+    "release_translation_box_mm": [
+      0,
+      0,
+      120
+    ],
+    "operation": "Open vessel lid, remove one M3x12, lift battery lid straight up; keep tray and four tray screws installed",
+    "locator_clearance_per_side_mm": 0.3,
+    "verification": "battery_top_lid_report.md"
+  },
+  "retrofit": {
+    "sensor_supports": "Two one-piece four-legged frames",
+    "leg_length_mm": 50,
+    "leg_datums_mm": [
+      18.8,
+      68.8
+    ],
+    "floor_fixing": "Top through bolts into eleven underside-open hex nut seats",
+    "sony_floor_fixings": 3,
+    "gnss_floor_fixings": 4,
+    "main_floor_fixings": 4,
+    "top_fixing": "M3x65 through bolts; Sony rear-left M3x10 pilot"
+  },
+  "build_order": [
+    "plate",
+    "p_main",
+    "p_pwr",
+    "tx_improved",
+    "spresense",
+    "lipo_tray",
+    "lipo",
+    "pen_north_150",
+    "pen_north_175",
+    "box_bcas212310g",
+    "lipo_ret_lid",
+    "lipo_ret_pads",
+    "lipo_ret_bolt_0",
+    "lipo_ret_mount_0",
+    "lipo_ret_mount_1",
+    "lipo_ret_mount_2",
+    "lipo_ret_mount_3",
+    "case_anchor_0",
+    "case_anchor_1",
+    "case_anchor_2",
+    "sony_mount_0",
+    "sony_mount_1",
+    "sony_mount_2",
+    "sony_mount_3",
+    "tx_mount_0",
+    "tx_mount_1",
+    "tx_mount_2",
+    "tx_mount_3",
+    "gnss_receiver",
+    "gnss_sma_plug",
+    "gnss_pin_headers",
+    "gnss_universal_pcb",
+    "gnss_xh_keepout",
+    "gnss_universal_carrier",
+    "coax_ring",
+    "antenna_ground_plate",
+    "gnss_antenna",
+    "coax_coil_keepout",
+    "magnetometer",
+    "mag_bolt_0",
+    "mag_nut_0",
+    "mag_bolt_1",
+    "mag_nut_1",
+    "mag_bolt_2",
+    "mag_nut_2",
+    "mag_bolt_3",
+    "mag_nut_3",
+    "tx_top_keepout",
+    "gnss_pcb_bolt_0",
+    "gnss_pcb_nut_0",
+    "gnss_pcb_bolt_1",
+    "gnss_pcb_nut_1",
+    "gnss_pcb_bolt_2",
+    "gnss_pcb_nut_2",
+    "gnss_pcb_bolt_3",
+    "gnss_pcb_nut_3",
+    "main_service_frame",
+    "antenna_service_shelf",
+    "cradle_floor_foot_0",
+    "cradle_floor_foot_1",
+    "cradle_floor_foot_2",
+    "cradle_floor_foot_3",
+    "power_adapter",
+    "sony_mount_plate",
+    "coax_service_loop",
+    "coax_receiver_service",
+    "sony_support_frame",
+    "gnss_support_frame",
+    "mag_washer_0",
+    "mag_washer_1",
+    "mag_washer_2",
+    "mag_washer_3",
+    "retrofit_cradle_service_0_bolt",
+    "retrofit_cradle_service_0_nut",
+    "retrofit_cradle_service_1_bolt",
+    "retrofit_cradle_service_1_nut",
+    "retrofit_cradle_service_2_bolt",
+    "retrofit_cradle_service_2_nut",
+    "retrofit_cradle_service_3_bolt",
+    "retrofit_cradle_service_3_nut",
+    "retrofit_gnss_floor_0_bolt",
+    "retrofit_gnss_floor_0_nut",
+    "retrofit_gnss_floor_1_bolt",
+    "retrofit_gnss_floor_1_nut",
+    "retrofit_gnss_floor_2_bolt",
+    "retrofit_gnss_floor_2_nut",
+    "retrofit_gnss_floor_3_bolt",
+    "retrofit_gnss_floor_3_nut",
+    "retrofit_sony_floor_0_bolt",
+    "retrofit_sony_floor_0_nut",
+    "retrofit_sony_floor_1_bolt",
+    "retrofit_sony_floor_1_nut",
+    "retrofit_sony_plate_2_bolt",
+    "retrofit_sony_floor_3_bolt",
+    "retrofit_sony_floor_3_nut",
+    "retrofit_main_pcb_0_bolt",
+    "retrofit_main_pcb_1_bolt",
+    "retrofit_main_pcb_2_bolt",
+    "retrofit_main_pcb_3_bolt",
+    "retrofit_pwr_adapter_0_bolt",
+    "retrofit_pwr_pcb_0_bolt",
+    "retrofit_pwr_adapter_1_bolt",
+    "retrofit_pwr_pcb_1_bolt",
+    "retrofit_pwr_adapter_2_bolt",
+    "retrofit_pwr_pcb_2_bolt",
+    "retrofit_pwr_adapter_3_bolt",
+    "retrofit_pwr_pcb_3_bolt",
+    "retrofit_shelf_joint_0_bolt",
+    "retrofit_shelf_joint_1_bolt",
+    "retrofit_shelf_joint_2_bolt",
+    "retrofit_shelf_joint_3_bolt",
+    "retrofit_steel_0_bolt",
+    "retrofit_steel_0_nut",
+    "retrofit_steel_0_washer",
+    "retrofit_steel_1_bolt",
+    "retrofit_steel_1_nut",
+    "retrofit_steel_1_washer",
+    "retrofit_steel_2_bolt",
+    "retrofit_steel_2_nut",
+    "retrofit_steel_2_washer",
+    "retrofit_steel_3_bolt",
+    "retrofit_steel_3_nut",
+    "retrofit_steel_3_washer",
+    "retrofit_antenna_0_bolt",
+    "retrofit_antenna_0_nut",
+    "retrofit_antenna_0_washer",
+    "retrofit_antenna_1_bolt",
+    "retrofit_antenna_1_nut",
+    "retrofit_antenna_1_washer"
+  ],
+  "frame_spacer_revision": {
+    "date": "2026-10-24",
+    "clearance_d_mm": 3.5,
+    "standalone_axes": 12,
+    "pcb_pilot_d_mm": 2.8,
+    "maximum_screw_length_mm": 65
+  },
   "moving_labels": [
     "plate",
     "p_main",
@@ -3005,7 +3509,6 @@
     "lipo_ret_lid",
     "lipo_ret_pads",
     "lipo_ret_bolt_0",
-    "lipo_ret_nut_0",
     "lipo_ret_mount_0",
     "lipo_ret_mount_1",
     "lipo_ret_mount_2",
@@ -3013,77 +3516,24 @@
     "case_anchor_0",
     "case_anchor_1",
     "case_anchor_2",
-    "main_column_0",
-    "main_column_1",
-    "main_column_2",
-    "main_column_3",
-    "main_mount_plate",
-    "sony_mount_plate",
-    "sony_column_0",
-    "sony_column_1",
-    "sony_column_2",
-    "sony_column_3",
-    "main_mount_0",
-    "main_mount_1",
-    "main_mount_2",
-    "main_mount_3",
     "sony_mount_0",
     "sony_mount_1",
     "sony_mount_2",
     "sony_mount_3",
-    "pwr_mount_0",
-    "pwr_mount_1",
-    "pwr_mount_2",
-    "pwr_mount_3",
     "tx_mount_0",
     "tx_mount_1",
     "tx_mount_2",
     "tx_mount_3",
-    "main_carrier_nut_0",
-    "main_carrier_mount_0",
-    "main_carrier_nut_1",
-    "main_carrier_nut_2",
-    "main_carrier_nut_3",
-    "sony_carrier_nut_0",
-    "sony_carrier_mount_0",
-    "sony_carrier_nut_1",
-    "sony_carrier_mount_1",
-    "sony_carrier_nut_2",
-    "sony_carrier_mount_2",
-    "sony_carrier_nut_3",
-    "sony_carrier_mount_3",
-    "gnss_frame_nut_0",
-    "gnss_frame_mount_0",
-    "gnss_frame_nut_1",
-    "gnss_frame_mount_1",
-    "gnss_frame_nut_2",
-    "gnss_frame_mount_2",
-    "gnss_frame_nut_3",
-    "gnss_frame_mount_3",
-    "antenna_rack_nut_0",
-    "antenna_rack_mount_0",
-    "antenna_rack_nut_1",
-    "antenna_rack_mount_1",
-    "antenna_rack_nut_2",
-    "antenna_rack_mount_2",
-    "antenna_rack_nut_3",
-    "antenna_rack_mount_3",
     "gnss_receiver",
     "gnss_sma_plug",
     "gnss_pin_headers",
     "gnss_universal_pcb",
     "gnss_xh_keepout",
     "gnss_universal_carrier",
-    "gnss_column_0",
-    "gnss_column_1",
-    "gnss_column_2",
-    "gnss_column_3",
-    "antenna_rack",
     "coax_ring",
     "antenna_ground_plate",
     "gnss_antenna",
     "coax_coil_keepout",
-    "gnss_coax_route",
     "magnetometer",
     "mag_bolt_0",
     "mag_nut_0",
@@ -3093,18 +3543,7 @@
     "mag_nut_2",
     "mag_bolt_3",
     "mag_nut_3",
-    "ground_plate_mount_0",
-    "ground_plate_nut_0",
-    "ground_plate_mount_1",
-    "ground_plate_nut_1",
-    "ground_plate_mount_2",
-    "ground_plate_nut_2",
-    "ground_plate_mount_3",
-    "ground_plate_nut_3",
-    "antenna_mount_0",
-    "antenna_nut_0",
-    "antenna_mount_1",
-    "antenna_nut_1",
+    "tx_top_keepout",
     "gnss_pcb_bolt_0",
     "gnss_pcb_nut_0",
     "gnss_pcb_bolt_1",
@@ -3112,109 +3551,133 @@
     "gnss_pcb_bolt_2",
     "gnss_pcb_nut_2",
     "gnss_pcb_bolt_3",
-    "gnss_pcb_nut_3"
+    "gnss_pcb_nut_3",
+    "main_service_frame",
+    "antenna_service_shelf",
+    "cradle_floor_foot_0",
+    "cradle_floor_foot_1",
+    "cradle_floor_foot_2",
+    "cradle_floor_foot_3",
+    "power_adapter",
+    "sony_mount_plate",
+    "coax_service_loop",
+    "coax_receiver_service",
+    "sony_support_frame",
+    "gnss_support_frame",
+    "mag_washer_0",
+    "mag_washer_1",
+    "mag_washer_2",
+    "mag_washer_3",
+    "retrofit_cradle_service_0_bolt",
+    "retrofit_cradle_service_0_nut",
+    "retrofit_cradle_service_1_bolt",
+    "retrofit_cradle_service_1_nut",
+    "retrofit_cradle_service_2_bolt",
+    "retrofit_cradle_service_2_nut",
+    "retrofit_cradle_service_3_bolt",
+    "retrofit_cradle_service_3_nut",
+    "retrofit_gnss_floor_0_bolt",
+    "retrofit_gnss_floor_0_nut",
+    "retrofit_gnss_floor_1_bolt",
+    "retrofit_gnss_floor_1_nut",
+    "retrofit_gnss_floor_2_bolt",
+    "retrofit_gnss_floor_2_nut",
+    "retrofit_gnss_floor_3_bolt",
+    "retrofit_gnss_floor_3_nut",
+    "retrofit_sony_floor_0_bolt",
+    "retrofit_sony_floor_0_nut",
+    "retrofit_sony_floor_1_bolt",
+    "retrofit_sony_floor_1_nut",
+    "retrofit_sony_plate_2_bolt",
+    "retrofit_sony_floor_3_bolt",
+    "retrofit_sony_floor_3_nut",
+    "retrofit_main_pcb_0_bolt",
+    "retrofit_main_pcb_1_bolt",
+    "retrofit_main_pcb_2_bolt",
+    "retrofit_main_pcb_3_bolt",
+    "retrofit_pwr_adapter_0_bolt",
+    "retrofit_pwr_pcb_0_bolt",
+    "retrofit_pwr_adapter_1_bolt",
+    "retrofit_pwr_pcb_1_bolt",
+    "retrofit_pwr_adapter_2_bolt",
+    "retrofit_pwr_pcb_2_bolt",
+    "retrofit_pwr_adapter_3_bolt",
+    "retrofit_pwr_pcb_3_bolt",
+    "retrofit_shelf_joint_0_bolt",
+    "retrofit_shelf_joint_1_bolt",
+    "retrofit_shelf_joint_2_bolt",
+    "retrofit_shelf_joint_3_bolt",
+    "retrofit_steel_0_bolt",
+    "retrofit_steel_0_nut",
+    "retrofit_steel_0_washer",
+    "retrofit_steel_1_bolt",
+    "retrofit_steel_1_nut",
+    "retrofit_steel_1_washer",
+    "retrofit_steel_2_bolt",
+    "retrofit_steel_2_nut",
+    "retrofit_steel_2_washer",
+    "retrofit_steel_3_bolt",
+    "retrofit_steel_3_nut",
+    "retrofit_steel_3_washer",
+    "retrofit_antenna_0_bolt",
+    "retrofit_antenna_0_nut",
+    "retrofit_antenna_0_washer",
+    "retrofit_antenna_1_bolt",
+    "retrofit_antenna_1_nut",
+    "retrofit_antenna_1_washer"
   ],
   "service_translation_mm": [
-    230,
+    240,
     0,
     0
   ],
-  "access_revision": {
-    "date": "2026-10-08",
-    "switches": "Direct top access, both SW_PWR and SW_TX, at installed height",
-    "tx_extra_mm": 20,
-    "tx_reservation": "Full populated TX XY bounding envelope, 20 mm above its highest component",
-    "main_usb": "Out of case, straight south approach",
-    "battery": "Disconnect power lead, remove four tray mount screws, lift closed battery module90 mm, remove one lid screw, slide lid south108 mm, then extract pack",
-    "sd": "Both face south; direct card slide then lift"
-  },
-  "gnss_design": {
-    "receiver": "SparkFun GPS-23288 / NEO-F9P v1.1",
-    "antenna": "u-blox ANN-MB1-00",
-    "universal_carrier_mm": [
-      60,
-      80
+  "lift_mm": 120,
+  "service_only": [],
+  "plate_access_revision": {
+    "date": "2026-10-27",
+    "north_hole_x_mm": [
+      150,
+      175
     ],
-    "battery_status": "Parent LiPo retained, no dedicated SPRESENSE battery",
-    "provisional_envelopes": "XH pin count/edge/height and header height unselected; connector and SMA plug envelopes require measurement",
-    "mounting_hole_pitch_mm": [
-      55.0,
-      75.0
+    "height_range_mm": [
+      30,
+      35
     ],
-    "mounting_holes_xy_mm": [
-      [
-        71.5,
-        141.5
-      ],
-      [
-        126.5,
-        141.5
-      ],
-      [
-        71.5,
-        216.5
-      ],
-      [
-        126.5,
-        216.5
-      ]
+    "roofed_floor_nuts": 0,
+    "floor_nut_z_mm": 9.04,
+    "used_case_anchors": 3,
+    "m4_head_envelope_mm": [
+      10,
+      5
     ],
-    "mount": "Four M3x10 bolts and M3 nuts; edge caps removed",
-    "hole_measurement": "User confirmed 2026-10-11: 75x55 pitch, 2.5 mm from all edges; M3 nominal, actual PCB drill diameter unmeasured",
-    "fixture_revision": "GNSS cartridge translated -6 mm X, unchanged Z56; existing four floor interfaces retained"
-  },
-  "magnetometer_design": {
-    "product": "Adafruit 4479 LIS3MDL / Switch Science 6266",
-    "date": "2026-10-11",
-    "mount": "Coplanar rectangular frame connected to GNSS west rail and rear beam, four vendor 2.5 mm holes, nylon M2x8/nuts",
-    "origin_mm": [
-      62.78,
-      195,
-      56
-    ],
-    "rotation_deg": [
-      0,
-      0,
-      90
-    ],
-    "connection": "South STEMMA QT socket reserved; north socket unused inside case. Cable and host unselected",
-    "calibration": "ANN-MB1 has magnetic base. Increased separation does not certify accuracy; measure/calibrate complete powered enclosure, check range/saturation before calibration"
-  },
-  "case_anchor_access": {
-    "date": "2026-10-12",
-    "used_anchor_indices": [
-      0,
-      1,
-      2
-    ],
-    "unused_anchor_index": 3,
-    "floor_geometry": "unchanged",
-    "tool": "Long 2.5 mm ball-end hex key: SW tilted10 degrees SW; NW tilted10 degrees W; SE vertical after removing pack/lid/top foam",
-    "guide_id_mm": 4.2,
-    "three_anchor_strength": "unverified"
-  },
-  "battery_lid_design": {
-    "type": "full_length_side_grooves_and_one_screw",
-    "screw": "M3x12 + M3 nut, retained location0",
-    "release_translation_box_mm": [
-      0,
-      -108,
+    "m4_length_assumed_mm": 12,
+    "wrench_access": "Remove complete interior vertically with both penetrators retained; operate vendor M10 wrench inside empty case.",
+    "tx_translation_mm": [
+      -1,
+      -5,
       0
     ],
-    "lid_installed_z_mm": [
-      49,
-      52
+    "sony_floor_axes_mm": [
+      [
+        142.5,
+        134.5
+      ],
+      [
+        201,
+        134.5
+      ],
+      [
+        142.5,
+        202.5
+      ],
+      [
+        201,
+        204.5
+      ]
     ],
-    "base_and_pack_origins": "unchanged",
-    "floor": "unchanged",
-    "reference": "parts/child/interior/printed/child_vtray_batt_floor/child_vtray_batt_floor.scad",
-    "tool_opening_mm": 8.0,
-    "nut_entry_roof_deg": 50,
-    "local_support_blocker": "battery_lid_nut_support_blocker",
-    "module_lift_mm": 90,
-    "operation": "Disconnect power lead, remove four tray mount screws, lift closed battery module90 mm, remove one lid screw, slide lid south108 mm, then extract pack",
-    "rail_length_mm": 107.4,
-    "side_groove_depth_mm": 1.2,
-    "clearance_mm": 0.3
+    "printed_nut_pockets": 11,
+    "underside_open_nut_pockets": 11,
+    "nut_pocket_depth_mm": 2.6,
+    "print_pause_required": false
   }
 }

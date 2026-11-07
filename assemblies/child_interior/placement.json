@@ -1,6 +1,6 @@
 {
   "name": "child_interior",
-  "note": "2026-10-01 bolted revision: battery M3x12/nut x4, floor M3x10 flat/nut, printed broader roots, front flange M3x16. Earlier notes below are history.\n2026-09-27: WetLink M10×5を実配置。下円形リブと下デッキ尾部を廃止。電池用ねじをZ36側面へ移動し、床板の下端Z22.5と解除ストロークを確保。旧記述は履歴。\n子機 (水中ユニット) 内装のみのサブアセンブリ。親機の parent_interior_p1 と同じ位置づけ。\n容器: WTE4 4in × 200mm アクリルチューブ + 上下フランジ BR-101040 (透明表示・取合い確認用)。下エンドキャップ (5×M10) と上ドーム (仮モデル) も透明表示 (2026-09-03 追加)。外装シェル / カメラは表示しない。\n2026-08-28: 浮いていた部品を全部固定 — スペーサ・ねじ・ワッシャ・シム・フォームパッドを実体化し、貫通していた 4 箇所 (LCD/ベゼル前板、電池箱アンカー/デッキ、ヒンジ枠ラグ/アーチ、ナックル/ドア板) を部品形状で修正。\n2026-09-03: 電池を 35×26×110 (リード −Z 出し) に変更。電池箱を ∩ チャンネル + 着脱床板 (皿ねじ 1 本) に作り直し、電池だけを取り出せるようにした。電源リードは切って XT30 メスを付け、基板側は J_BAT パッド直付けのピグテール (XT30 ペアは +X レール z 25..55)。基板間 XH ハーネスをモデル化 (parts/common/cabling/child_harness)。\n2026-09-03: 下フランジ固定を 3 点化 — 0°/180° (デッキラグ + MF10) に加え、90° (0,+47) を下 LCD アーチ (child_lcd_support_lower) の耳で直接フランジ内面へ M3×12。270° は電池箱床が塞ぐため未使用。上フランジ 4 穴は内側からねじが回せないので使わない。穴の根拠: parts/child/exterior/cots/wte4_flange/_work/images/ref/BR-101040_hole_map.png + WTE データシート Rev C.5。\ninterior グループは assemblies/child_vertical_assembly/placement.json と同一 (生成元: 本 placement を正とし、spec/child_interior_reinforcement/sync_bolted_mount.py で複製)。\n配置根拠: docs/子機内装_収まり検討.md / docs/子機内装_サービス設計.md。検証: scad/lib/verify_child_interior.py, scad/lib/check_asm_contacts.py。",
+  "note": "2026-10-21 clearance revision: AF5.5 hex spacers, inscribed 3.5 mm through-bores; flange M3x26 pan x2, brace M3x30/M3x45 studs and two M3 nuts; no spacer tapping.\n2026-10-21 clearance revision: AF5.5 hex spacers, inscribed 3.5 mm through-bores; M3x30 studs x3, M3x45 x1, M3 nuts x4; no spacer tapping.\n2026-10-21: printed spacer bodies 10x2/12x1/30x1, breakaway print set; metal M3 studs 8x2/10x2; side flange screws M3x16.\n2026-10-01 bolted revision: battery M3x12/nut x4, floor M3x10 flat/nut, printed broader roots, front flange M3x16. Earlier notes below are history.\n2026-09-27: WetLink M10×5を実配置。下円形リブと下デッキ尾部を廃止。電池用ねじをZ36側面へ移動し、床板の下端Z22.5と解除ストロークを確保。旧記述は履歴。\n子機 (水中ユニット) 内装のみのサブアセンブリ。親機の parent_interior_p1 と同じ位置づけ。\n容器: WTE4 4in × 200mm アクリルチューブ + 上下フランジ BR-101040 (透明表示・取合い確認用)。下エンドキャップ (5×M10) と上ドーム (仮モデル) も透明表示 (2026-09-03 追加)。外装シェル / カメラは表示しない。\n2026-08-28: 浮いていた部品を全部固定 — スペーサ・ねじ・ワッシャ・シム・フォームパッドを実体化し、貫通していた 4 箇所 (LCD/ベゼル前板、電池箱アンカー/デッキ、ヒンジ枠ラグ/アーチ、ナックル/ドア板) を部品形状で修正。\n2026-09-03: 電池を 35×26×110 (リード −Z 出し) に変更。電池箱を ∩ チャンネル + 着脱床板 (皿ねじ 1 本) に作り直し、電池だけを取り出せるようにした。電源リードは切って XT30 メスを付け、基板側は J_BAT パッド直付けのピグテール (XT30 ペアは +X レール z 25..55)。基板間 XH ハーネスをモデル化 (parts/common/cabling/child_harness)。\n2026-09-03: 下フランジ固定を 3 点化 — 0°/180° (デッキラグ + MF10) に加え、90° (0,+47) を下 LCD アーチ (child_lcd_support_lower) の耳で直接フランジ内面へ M3×12。270° は電池箱床が塞ぐため未使用。上フランジ 4 穴は内側からねじが回せないので使わない。穴の根拠: parts/child/exterior/cots/wte4_flange/_work/images/ref/BR-101040_hole_map.png + WTE データシート Rev C.5。\ninterior グループは assemblies/child_vertical_assembly/placement.json と同一 (生成元: 本 placement を正とし、spec/child_interior_reinforcement/sync_bolted_mount.py で複製)。\n配置根拠: docs/子機内装_収まり検討.md / docs/子機内装_サービス設計.md。検証: scad/lib/verify_child_interior.py, scad/lib/check_asm_contacts.py。",
   "coordinate_system": "X=左右(カメラ基線) / Y=前後(+Y が前・カメラとライトの向き) / Z=上。アクリルチューブ下端面が z=0。",
   "groups": {
     "vessel": true,
@@ -550,12 +550,12 @@
     },
     {
       "label": "flange_spacer_p",
-      "part": "parts/common/interior/cots/hex_spacer",
-      "file": "hex_spacer_m3_mf10",
+      "part": "parts/child/interior/printed/child_spacer_set",
+      "file": "child_spacer_set_body10",
       "group": "interior",
-      "color": "Goldenrod",
+      "color": "Orange",
       "alpha": 1.0,
-      "note": "M3 MF10。下フランジ内面 (z=19) の BCD94 M3 穴へオスを 4〜5mm ねじ込む (6 を超えない)。オス部はフランジ金属の中 = 包絡検証対象外",
+      "note": "AF5.5 hex slip spacer 10 mm, inscribed 3.5 mm bore; M3x26 pan screw passes through 12 mm seat and body into flange 4 mm. No tapping.",
       "ops": [
         {
           "translate": [
@@ -565,34 +565,17 @@
           ]
         }
       ],
-      "skip_envelope": true
-    },
-    {
-      "label": "flange_screw_p",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x18",
-      "group": "interior",
-      "color": "Silver",
-      "alpha": 1.0,
-      "note": "M3x18: printed 12 mm bearing seat, MF10 engagement 6 mm",
-      "ops": [
-        {
-          "translate": [
-            47,
-            0,
-            41
-          ]
-        }
-      ]
+      "skip_envelope": true,
+      "print": false
     },
     {
       "label": "flange_spacer_n",
-      "part": "parts/common/interior/cots/hex_spacer",
-      "file": "hex_spacer_m3_mf10",
+      "part": "parts/child/interior/printed/child_spacer_set",
+      "file": "child_spacer_set_body10",
       "group": "interior",
-      "color": "Goldenrod",
+      "color": "Orange",
       "alpha": 1.0,
-      "note": "M3 MF10。下フランジ内面 (z=19) の BCD94 M3 穴へオスを 4〜5mm ねじ込む (6 を超えない)。オス部はフランジ金属の中 = 包絡検証対象外",
+      "note": "AF5.5 hex slip spacer 10 mm, inscribed 3.5 mm bore; M3x26 pan screw passes through 12 mm seat and body into flange 4 mm. No tapping.",
       "ops": [
         {
           "translate": [
@@ -602,25 +585,8 @@
           ]
         }
       ],
-      "skip_envelope": true
-    },
-    {
-      "label": "flange_screw_n",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x18",
-      "group": "interior",
-      "color": "Silver",
-      "alpha": 1.0,
-      "note": "M3x18: printed 12 mm bearing seat, MF10 engagement 6 mm",
-      "ops": [
-        {
-          "translate": [
-            -47,
-            0,
-            41
-          ]
-        }
-      ]
+      "skip_envelope": true,
+      "print": false
     },
     {
       "label": "flange_screw_y",
@@ -841,12 +807,12 @@
     },
     {
       "label": "brace_spacer_l",
-      "part": "parts/common/interior/cots/hex_spacer",
-      "file": "hex_spacer_m3_mf30",
+      "part": "parts/child/interior/printed/child_spacer_set",
+      "file": "child_spacer_set_body30",
       "group": "interior",
-      "color": "Goldenrod",
+      "color": "Orange",
       "alpha": 1.0,
-      "note": "M3 MF30: C-MAIN and lower flange brace mounting",
+      "note": "AF5.5 printed hex slip spacer 30 mm; inscribed 3.5 mm bore, no tapping. Print with child_spacer_set_set; through-stud projects 6 mm below seat.",
       "ops": [
         {
           "translate": [
@@ -862,41 +828,17 @@
             0
           ]
         }
-      ]
-    },
-    {
-      "label": "brace_screw_l",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x12",
-      "group": "interior",
-      "color": "Silver",
-      "alpha": 1.0,
-      "note": "M3x12 pan screw: flat printed seat, spacer engagement 6.5 mm",
-      "ops": [
-        {
-          "translate": [
-            -22,
-            40.1,
-            24.5
-          ]
-        },
-        {
-          "rotate": [
-            -90,
-            0,
-            0
-          ]
-        }
-      ]
+      ],
+      "print": false
     },
     {
       "label": "brace_spacer_r",
-      "part": "parts/common/interior/cots/hex_spacer",
-      "file": "hex_spacer_m3_mf12",
+      "part": "parts/child/interior/printed/child_spacer_set",
+      "file": "child_spacer_set_body12",
       "group": "interior",
-      "color": "Goldenrod",
+      "color": "Orange",
       "alpha": 1.0,
-      "note": "M3 MF12: C-MAIN and lower flange brace mounting",
+      "note": "AF5.5 printed hex slip spacer 12 mm; inscribed 3.5 mm bore, no tapping. Print with child_spacer_set_set; through-stud projects 6 mm below seat.",
       "ops": [
         {
           "translate": [
@@ -912,32 +854,8 @@
             0
           ]
         }
-      ]
-    },
-    {
-      "label": "brace_screw_r",
-      "part": "parts/common/interior/cots/screw",
-      "file": "screw_m3x12",
-      "group": "interior",
-      "color": "Silver",
-      "alpha": 1.0,
-      "note": "M3x12 pan screw: flat printed seat, spacer engagement 6.5 mm",
-      "ops": [
-        {
-          "translate": [
-            39.5,
-            22.1,
-            24.5
-          ]
-        },
-        {
-          "rotate": [
-            -90,
-            0,
-            0
-          ]
-        }
-      ]
+      ],
+      "print": false
     },
     {
       "label": "main_upper_screw_x-22",
@@ -995,7 +913,7 @@
       "group": "interior",
       "color": "Gold",
       "alpha": 1.0,
-      "note": "Printed brace: 12 mm beams, 24 mm webs, 20 mm tangential flange seat, existing M3 spacers",
+      "note": "Printed brace; existing seating planes retained, hex slip spacers, metal through-studs and M3 nuts.",
       "ops": [
         {
           "translate": [
@@ -1555,6 +1473,188 @@
           ]
         }
       ]
+    },
+    {
+      "label": "flange_screw_p",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x26",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1,
+      "ops": [
+        {
+          "translate": [
+            47,
+            0,
+            19
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            22
+          ]
+        }
+      ],
+      "skip_envelope": true,
+      "note": "M3 pan screw under-head length 26 mm: seat12 + spacer10 + flange engagement4. Cut M3x30 to 26 mm and deburr if needed."
+    },
+    {
+      "label": "flange_screw_n",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_m3x26",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1,
+      "ops": [
+        {
+          "translate": [
+            -47,
+            0,
+            19
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            22
+          ]
+        }
+      ],
+      "skip_envelope": true,
+      "note": "M3 pan screw under-head length 26 mm: seat12 + spacer10 + flange engagement4. Cut M3x30 to 26 mm and deburr if needed."
+    },
+    {
+      "label": "spacer_stud_brace_spacer_l",
+      "part": "parts/common/interior/cots/threaded_stud",
+      "file": "threaded_stud_m3x45",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1,
+      "ops": [
+        {
+          "translate": [
+            -22,
+            4.6,
+            24.5
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            -6
+          ]
+        }
+      ],
+      "note": "Metal M3x45 through-stud; lower projection 6 mm, slides through spacer; upper M3 nut, do not print.",
+      "skip_envelope": false
+    },
+    {
+      "label": "spacer_nut_brace_spacer_l",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1,
+      "ops": [
+        {
+          "translate": [
+            -22,
+            4.6,
+            24.5
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            35.5
+          ]
+        }
+      ],
+      "note": "Plain metal M3 nut AF5.5/t2.4 on the through-stud. Spacer is a slip sleeve; no printed thread."
+    },
+    {
+      "label": "spacer_stud_brace_spacer_r",
+      "part": "parts/common/interior/cots/threaded_stud",
+      "file": "threaded_stud_m3x30",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1,
+      "ops": [
+        {
+          "translate": [
+            39.5,
+            4.6,
+            24.5
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            -6
+          ]
+        }
+      ],
+      "note": "Metal M3x30 through-stud; lower projection 6 mm, slides through spacer; upper M3 nut, do not print.",
+      "skip_envelope": false
+    },
+    {
+      "label": "spacer_nut_brace_spacer_r",
+      "part": "parts/common/interior/cots/screw",
+      "file": "screw_nut_m3",
+      "group": "interior",
+      "color": "Silver",
+      "alpha": 1,
+      "ops": [
+        {
+          "translate": [
+            39.5,
+            4.6,
+            24.5
+          ]
+        },
+        {
+          "rotate": [
+            -90,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0,
+            17.5
+          ]
+        }
+      ],
+      "note": "Plain metal M3 nut AF5.5/t2.4 on the through-stud. Spacer is a slip sleeve; no printed thread."
     }
   ]
 }

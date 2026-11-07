@@ -6,65 +6,77 @@ module rr(p,s,r=2){translate([p[0]+s[0]/2,p[1]+s[1]/2])ef_round_rect(s[0],s[1],r
 module box(s,r=1,c=po_edge_chamfer){translate([s[0]/2,s[1]/2])ef_box(s[0],s[1],s[2],r,c);}
 module bore(d,t,c=po_hole_chamfer){ef_cut(t,c)circle(d=d/cos(180/32),$fn=32);}
 module nut(af,t,c=0.25){ef_cut(t,c)circle(d=af/cos(30),$fn=6);}
+// Preserve the hex flats; relieve only its upper roof in the chosen print pose.
+module roof_nut(af,t,angle){
+ r=af/2/cos(30);
+ ef_cut(t,0.25)union(){
+  circle(r=r,$fn=6);
+  rotate(angle)polygon([[r/2,-af/2],[r/2+af/2*tan(55),0],[r/2,af/2]]);
+ }
+}
 module roof(d,t,angle=0,c=po_hole_chamfer){
  r=d/2/cos(180/32);
- ef_cut(t,c)rotate(angle)union(){circle(r=r,$fn=32);polygon([[r/sqrt(2),-r/sqrt(2)],[sqrt(2)*r,0],[r/sqrt(2),r/sqrt(2)]]);}
+ ef_cut(t,c)rotate(angle)union(){circle(r=r,$fn=32);polygon([[r/sqrt(2),-r/sqrt(2)],[r/sqrt(2)*(1+tan(55)),0],[r/sqrt(2),r/sqrt(2)]]);}
 }
 
+case_feet_xy=[[25.0, 25.0], [25.0, 205.0], [185.0, 25.0], [185.0, 205.0], [25.0, 75.0], [25.0, 115.0], [25.0, 155.0], [65.0, 25.0], [65.0, 205.0], [105.0, 25.0], [105.0, 205.0], [145.0, 25.0], [145.0, 205.0], [185.0, 75.0], [185.0, 115.0], [185.0, 155.0]];
+spare_hole_xy=[[-60, -45], [-30, -45], [0, -45], [-90, -15], [0, -15], [-90, 15], [0, 15], [30, 15], [60, 15], [90, 15], [-60, 45], [-30, 45], [0, 45], [30, 45], [60, 45]];
+
 module deck_profile(){
- ef_plan_finish(1)difference(){
-  union(){
-   rr([-70,-67],[60,134],3);
-   for(x=[-116,92])rr([x,-67],[24,134],3);
-   for(y=[-55,55])rr([-116,y-12],[232,24],3);
-  }
-  rr([-52,-50],[24,100],3);
-  // Keep central webs solid for the keys, screws and third datum.
-  for(x=[-108,98],y=[-30,17])rr([x,y],[10,13],2);
-  for(y=[-55,55])rr([-54,y-5],[108,10],3);
- }
+ // Rev.6: one flat bed face, with vertical rope holes outside the vessel.
+ ef_round_rect(po_frame_w,po_frame_d,3);
 }
 difference(){
  union(){
-  translate([0,0,-12])ef_profile(12-po_relief,po_edge_chamfer)deck_profile();
+  translate([0,0,-po_deck_t])ef_convex_profile(po_deck_t-po_relief,po_edge_chamfer)deck_profile();
+  // Rev.7: locators are removable; keep a flat, independently printable deck.
   for(p=po_datum_xy)translate([p[0],p[1],-1.3])ef_convex_profile(1.3,0.25)circle(d=16,$fn=48);
-  for(x=[-60,-20],y=[-20,20]){
-   translate([x,y,-24])ef_convex_profile(14,0.4)circle(d=12,$fn=48);
-   translate([x,y,-13.3])cylinder(d1=12,d2=14.6,h=1.3,$fn=48);
-  }
-  for(x=[-116,108],y=[-31,31])translate([x,y,-10])rotate([0,90,0])
-   translate([16,0])ef_profile(8,0.4)ef_round_rect(32,32,3);
-  // Camera mount rear plate: two end contacts plus one side contact.
-  for(x=[-60,-20])translate([x-6,po_camera_plate_end,-28])box([12,5,17],1);
-  translate([-20,46,-16])box([26,9,6],1);
-  translate([po_camera_plate_right,34,-30])box([4,21,18],1);
+  // Flat-bottom rope tabs replace the ears formerly hanging 22 mm below deck.
+  // Their 10.5 mm bores remain outside the vessel and above the skid windows.
+  for(s=[-1,1],y=[-23,23])translate([s*112,y,-po_deck_t])
+   ef_convex_profile(po_deck_t-po_relief,po_edge_chamfer)ef_round_rect(16,32,4);
+
  }
- for(x=[-110,110],y=[-55,55])translate([x,y,-12])bore(5.5,12-po_relief);
- for(x=[-116,108],y=[-31,31])translate([x,y,-26])rotate([0,90,0])roof(10.5,8,0);
+ // Use all drawing-derived case feet; windows no longer provide their clearance.
+ // Foot diameter <=8; bottom Z=-1, relief floor -1.5 gives 0.5 mm axial space.
+ for(p=case_feet_xy)translate([p[0]-po_box_w/2,p[1]-po_box_d/2,-1.5])bore(8,2);
+ for(x=[-110,110],y=[-55,55])translate([x,y,-20])bore(5.5,20-po_relief);
+ // Bottom-loaded captive nuts bear on a closed ceiling at -12.3. They cannot
+ // pull out toward the screw head. M4x20 tips stop at -18.7 above skid Z=-20.
+ for(x=[-po_side_mount_x,po_side_mount_x],y=po_side_mount_y){
+  translate([x,y,-po_deck_t])bore(po_m4_bore,po_deck_t-po_relief);
+  translate([x,y,-po_deck_t])nut(po_m4_nut_af,po_deck_t+po_side_nut_top_z);
+ }
+ // M4x25 enters from beneath the 12 mm end arms, with its tip at Z=-2.3.
+ for(s=[-1,1],y=po_end_mount_y){
+  translate([s*po_end_mount_x,s*y,-po_deck_t])bore(po_m4_bore,po_deck_t-po_relief);
+  translate([s*po_end_mount_x,s*y,po_end_nut_z])nut(po_m4_nut_af,-po_relief-po_end_nut_z);
+ }
+ // X=+/-111.5, Y=+/-23 clears the pressure screws AND the skid's outer spine.
+  // The removable rails have their own matching, open rope clearances.
+ for(x=[-111.5,111.5],y=[-23,23]){
+  translate([x,y,-po_deck_t])bore(10.5,45);
+  // Finish the actual plate-level mouth too; the long rail clearance cutter
+  // has its upper mouth above the part and cannot chamfer this rope edge.
+  translate([x,y,-po_deck_t])bore(10.5,po_deck_t-po_relief);
+ }
  for(x=[-60,-20],y=[-20,20]){
-  translate([x,y,-24])bore(3.5,24-po_relief);
-  translate([x,y,-4.8])nut(5.7,4);
+  translate([x,y,-po_deck_t])bore(3.5,po_deck_t-po_relief);
+  // Actual pocket floor -6.5; assembled M3x25 tip -2.4 stays below the vessel.
+  translate([x,y,po_camera_nut_z])nut(5.7,-po_relief-po_camera_nut_z);
  }
  for(x=po_carrier_x){
-  translate([x,-55,-12])bore(5.5,12-po_relief);
+  translate([x,po_carrier_y,-po_deck_t])bore(5.5,po_deck_t-po_relief);
   translate([x,-55,-3.25])cylinder(d1=5.5/cos(180/32),d2=10.4/cos(180/32),h=2.47,$fn=32);
  }
- translate([75,-55,-12])ef_cut(2,0.25)ef_round_rect(12,12,1);
- for(s=[-1,1]){
-  for(y=po_side_mount_y){
-   translate([s*110,y,-12])bore(po_m4_bore,12-po_relief);
-   translate([s*110,y,-12])nut(po_m4_nut_af,po_m4_nut_depth);
-  }
-  translate([s*110,0,-2.8])ef_cut(2,0.25)ef_round_rect(8,24,1);
+ // Reusable 30 mm grid, masked around current interfaces. Actual top-open nut
+ // floor is -7.3 after ef_cut's 0.1 mm extension; screw tips remain below Z=0.
+ for(p=spare_hole_xy){
+  translate([p[0],p[1],-po_deck_t])bore(po_m4_bore,po_deck_t-po_relief);
+  translate([p[0],p[1],po_end_nut_z])nut(po_m4_nut_af,-po_relief-po_end_nut_z);
  }
- for(s=[-1,1]){
-  for(y=po_end_mount_y){
-   // The left pair crosses a datum seat: remove the full thickness to Z=0.
-   translate([s*94,s*y,-12])bore(po_m4_bore,12);
-   translate([s*94,s*y,-4.2])nut(po_m4_nut_af,po_m4_nut_depth);
-  }
-  translate([s*94,s*57,-12])ef_cut(2,0.25)ef_round_rect(12,16,1);
- }
+
 }
 echo("DATUMS",po_datum_xy,"BOX_BOTTOM",0,"RELIEF",po_relief);
-echo("HOLETABLE_CAMERA",[for(x=[-60,-20],y=[-20,20])[x,y,po_camera_face_z,3.5]]);
+echo("HOLETABLE_CAMERA",[for(x=[-60,-20],y=[-20,20])[x,y,-po_deck_t,3.5]]);
+echo("HOLETABLE_SPARE_M4",[for(p=spare_hole_xy)[p[0],p[1],-po_deck_t,po_m4_bore]]);

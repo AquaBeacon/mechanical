@@ -181,12 +181,12 @@ if (show_fasteners) color("Silver") translate([-122.5, -98, 176]) rotate([0, -90
 if (show_fasteners) color("Silver") translate([-122.5, -98, 176]) rotate([0, -90, 0]) translate([0, 0, -0.5])  import("../../parts/common/interior/cots/screw/screw_washer_m3_05.stl");
 if (show_fasteners) color("Silver") translate([-101.5, -98, 176]) rotate([0, 90, 0]) rotate([0, 0, 30])  import("../../parts/common/interior/cots/screw/screw_nut_m3.stl");
 if (show_fasteners) color("Silver") translate([-101.5, -98, 176]) rotate([0, 90, 0]) translate([0, 0, -0.5])  import("../../parts/common/interior/cots/screw/screw_washer_m3_05.stl");
-if (show_fasteners) color("Silver") translate([-122.5, 98, 100]) rotate([0, -90, 0])  import("../../parts/common/interior/cots/screw/screw_m3x25.stl");
-if (show_fasteners) color("Silver") translate([-122.5, 98, 100]) rotate([0, -90, 0]) translate([0, 0, -0.5])  import("../../parts/common/interior/cots/screw/screw_washer_m3_05.stl");
+if (show_fasteners) color("Silver") translate([-126.5, 98, 100]) rotate([0, -90, 0])  import("../../parts/common/interior/cots/screw/screw_m3x30.stl");
+if (show_fasteners) color("Silver") translate([-126.5, 98, 100]) rotate([0, -90, 0]) translate([0, 0, -0.5])  import("../../parts/common/interior/cots/screw/screw_washer_m3_05.stl");
 if (show_fasteners) color("Silver") translate([-101.5, 98, 100]) rotate([0, 90, 0]) rotate([0, 0, 30])  import("../../parts/common/interior/cots/screw/screw_nut_m3.stl");
 if (show_fasteners) color("Silver") translate([-101.5, 98, 100]) rotate([0, 90, 0]) translate([0, 0, -0.5])  import("../../parts/common/interior/cots/screw/screw_washer_m3_05.stl");
-if (show_fasteners) color("Silver") translate([-122.5, 98, 176]) rotate([0, -90, 0])  import("../../parts/common/interior/cots/screw/screw_m3x25.stl");
-if (show_fasteners) color("Silver") translate([-122.5, 98, 176]) rotate([0, -90, 0]) translate([0, 0, -0.5])  import("../../parts/common/interior/cots/screw/screw_washer_m3_05.stl");
+if (show_fasteners) color("Silver") translate([-126.5, 98, 176]) rotate([0, -90, 0])  import("../../parts/common/interior/cots/screw/screw_m3x30.stl");
+if (show_fasteners) color("Silver") translate([-126.5, 98, 176]) rotate([0, -90, 0]) translate([0, 0, -0.5])  import("../../parts/common/interior/cots/screw/screw_washer_m3_05.stl");
 if (show_fasteners) color("Silver") translate([-101.5, 98, 176]) rotate([0, 90, 0]) rotate([0, 0, 30])  import("../../parts/common/interior/cots/screw/screw_nut_m3.stl");
 if (show_fasteners) color("Silver") translate([-101.5, 98, 176]) rotate([0, 90, 0]) translate([0, 0, -0.5])  import("../../parts/common/interior/cots/screw/screw_washer_m3_05.stl");
 if (show_fasteners) color("Silver") translate([122.5, -98, 100]) rotate([0, 90, 0])  import("../../parts/common/interior/cots/screw/screw_m3x25.stl");
@@ -363,6 +363,64 @@ if (show_fasteners) color("Silver") translate([122, 60, 130]) rotate([90, 0, 90]
 if (show_fasteners) color("Silver") translate([122, 60, 130]) rotate([90, 0, 90]) translate([-6, 32.5, 46.25]) rotate([0, 0, 0]) translate([0, 0, -0.5])  import("../../parts/common/interior/cots/screw/screw_washer_m3_05.stl");
 if (show_fasteners) color("Silver") translate([122, 60, 130]) rotate([90, 0, 90]) translate([-6, 32.5, 31.75]) rotate([180, 0, 0]) rotate([0, 0, 30])  import("../../parts/common/interior/cots/screw/screw_nut_m3.stl");
 if (show_fasteners) color("Silver") translate([122, 60, 130]) rotate([90, 0, 90]) translate([-6, 32.5, 31.75]) rotate([180, 0, 0]) translate([0, 0, -0.5])  import("../../parts/common/interior/cots/screw/screw_washer_m3_05.stl");
+if (show_accessories) color("SteelBlue") translate([-122, 60, 130]) rotate([90, 0, -90])  import("../../parts/child/exterior/printed/child_horizontal_twist_mount/child_horizontal_twist_mount_camera_receiver.stl");
+if (show_fasteners) color("Silver") translate([-122, 60, 130]) rotate([90, 0, -90]) translate([0, -30, 4.5]) rotate([0, 0, 0])  import("../../parts/common/interior/cots/screw/screw_m3x18.stl");
+if (show_fasteners) color("Silver") translate([-122, 60, 130]) rotate([90, 0, -90]) translate([0, -30, 4.5]) rotate([0, 0, 0]) translate([0, 0, -0.5])  import("../../parts/common/interior/cots/screw/screw_washer_m3_05.stl");
+if (show_fasteners) color("Silver") translate([-122, 60, 130]) rotate([90, 0, -90]) translate([0, -30, -11.5]) rotate([0, 0, 0]) rotate([0, 0, 0])  import("../../parts/common/interior/cots/screw/screw_nut_m3.stl");
+if (show_fasteners) color("Silver") translate([-122, 60, 130]) rotate([90, 0, -90]) translate([0, 30, 4.5]) rotate([0, 0, 0])  import("../../parts/common/interior/cots/screw/screw_m3x18.stl");
+if (show_fasteners) color("Silver") translate([-122, 60, 130]) rotate([90, 0, -90]) translate([0, 30, 4.5]) rotate([0, 0, 0]) translate([0, 0, -0.5])  import("../../parts/common/interior/cots/screw/screw_washer_m3_05.stl");
+if (show_fasteners) color("Silver") translate([-122, 60, 130]) rotate([90, 0, -90]) translate([0, 30, -11.5]) rotate([0, 0, 0]) rotate([0, 0, 0])  import("../../parts/common/interior/cots/screw/screw_nut_m3.stl");
+// 25 mm clamp shifted 12 mm right from front-view left edge; rear lower 20 mm keepout; 41 mm measured case thickness. Physical fit pending.
+if (show_accessories) color("Orange") translate([-122, 60, 130]) rotate([90, 0, -90]) translate([-53, 0, 0]) rotate([0, 0, 90]) translate([-40, 4.5863e-15, 61.95]) rotate([90, 7.01671e-15, 90])  import("../../parts/child/exterior/printed/dji_osmo_action6_mount_m3/camera_mount_twist.stl");
+// Depth 41 mm measured; case rear is aligned to original backplate -23.45. Actual M5-axis offset remains unmeasured.
+if (show_accessories) color("DimGray") translate([-122, 60, 130]) rotate([90, 0, -90]) translate([-53, 0, 0]) rotate([0, 0, 90]) translate([-40, 4.5863e-15, 61.95]) rotate([90, 7.01671e-15, 90])  import("../../parts/child/exterior/printed/dji_osmo_action6_mount_m3/camera_case_41mm.stl");
+// Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted.
+if (show_exterior) color("DarkOrange") translate([122, -74, 108]) rotate([0, 0, 0]) translate([-45, 0, 0]) translate([45, 0, 0])  import("../../parts/common/exterior/printed/td04a_bracket_mount/td04a_bracket_mount_child_side_up.stl");
+// Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted.
+if (show_hardware) color("Silver") translate([122, -74, 108]) rotate([0, 0, 0]) translate([-45, 0, 0]) translate([71, 5.8, 65]) rotate([-90, 0, 0])  import("../../parts/common/interior/cots/screw/screw_m4x14_socket.stl");
+// Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted.
+if (show_hardware) color("Silver") translate([122, -74, 108]) rotate([0, 0, 0]) translate([-45, 0, 0]) translate([71, -3, 65]) rotate([90, 0, 0])  import("../../parts/common/interior/cots/screw/screw_washer_m4_08.stl");
+// Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted.
+if (show_hardware) color("Silver") translate([122, -74, 108]) rotate([0, 0, 0]) translate([-45, 0, 0]) translate([71, 5, 65]) rotate([-90, 0, 0])  import("../../parts/common/interior/cots/screw/screw_washer_m4_08.stl");
+// Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted.
+if (show_hardware) color("Silver") translate([122, -74, 108]) rotate([0, 0, 0]) translate([-45, 0, 0]) translate([71, -3.8, 65]) rotate([90, 0, 0])  import("../../parts/common/interior/cots/screw/screw_nut_m4.stl");
+// Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted.
+if (show_hardware) color("Silver") translate([122, -74, 108]) rotate([0, 0, 0]) translate([-45, 0, 0]) translate([83, 5.8, 65]) rotate([-90, 0, 0])  import("../../parts/common/interior/cots/screw/screw_m4x14_socket.stl");
+// Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted.
+if (show_hardware) color("Silver") translate([122, -74, 108]) rotate([0, 0, 0]) translate([-45, 0, 0]) translate([83, -3, 65]) rotate([90, 0, 0])  import("../../parts/common/interior/cots/screw/screw_washer_m4_08.stl");
+// Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted.
+if (show_hardware) color("Silver") translate([122, -74, 108]) rotate([0, 0, 0]) translate([-45, 0, 0]) translate([83, 5, 65]) rotate([-90, 0, 0])  import("../../parts/common/interior/cots/screw/screw_washer_m4_08.stl");
+// Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted.
+if (show_hardware) color("Silver") translate([122, -74, 108]) rotate([0, 0, 0]) translate([-45, 0, 0]) translate([83, -3.8, 65]) rotate([90, 0, 0])  import("../../parts/common/interior/cots/screw/screw_nut_m4.stl");
+// Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted.
+if (show_hardware) color("Silver") translate([122, -74, 108]) rotate([0, 0, 0]) translate([-45, 0, 0]) translate([50.5, 14, 12]) rotate([0, 90, 0])  import("../../parts/common/interior/cots/screw/screw_m3x20.stl");
+// Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted.
+if (show_hardware) color("Silver") translate([122, -74, 108]) rotate([0, 0, 0]) translate([-45, 0, 0]) translate([50, 14, 12]) rotate([0, 90, 0])  import("../../parts/common/interior/cots/screw/screw_washer_m3_05.stl");
+// Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted.
+if (show_hardware) color("Silver") translate([122, -74, 108]) rotate([0, 0, 0]) translate([-45, 0, 0]) translate([35.8, 14, 12]) rotate([0, -90, 0]) rotate([0, 0, 30])  import("../../parts/common/interior/cots/screw/screw_nut_m3.stl");
+// Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted.
+if (show_hardware) color("Silver") translate([122, -74, 108]) rotate([0, 0, 0]) translate([-45, 0, 0]) translate([50.5, 14, 32]) rotate([0, 90, 0])  import("../../parts/common/interior/cots/screw/screw_m3x20.stl");
+// Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted.
+if (show_hardware) color("Silver") translate([122, -74, 108]) rotate([0, 0, 0]) translate([-45, 0, 0]) translate([50, 14, 32]) rotate([0, 90, 0])  import("../../parts/common/interior/cots/screw/screw_washer_m3_05.stl");
+// Rev.6; sensor ear thickness 3 mm is provisional; rejected body model omitted.
+if (show_hardware) color("Silver") translate([122, -74, 108]) rotate([0, 0, 0]) translate([-45, 0, 0]) translate([35.8, 14, 32]) rotate([0, -90, 0]) rotate([0, 0, 30])  import("../../parts/common/interior/cots/screw/screw_nut_m3.stl");
+if (show_accessories) color("Orange") translate([-122, 60, 130]) rotate([90, 0, -90]) translate([-53, 0, 0]) rotate([0, 0, 90]) translate([-40, 4.5863e-15, 61.95]) rotate([90, 7.01671e-15, 90])  import("../../parts/child/exterior/printed/dji_osmo_action6_mount_m3/camera_front_clamp.stl");
+if (show_fasteners) color("Silver") translate([-122, 60, 130]) rotate([90, 0, -90]) translate([-53, 0, 0]) rotate([0, 0, 90]) translate([-40, 4.5863e-15, 61.95]) rotate([90, 7.01671e-15, 90]) translate([11.5, 11.5, 4]) rotate([180, 0, 0])  import("../../parts/common/interior/cots/screw/screw_m4x16_socket.stl");
+if (show_fasteners) color("Silver") translate([-122, 60, 130]) rotate([90, 0, -90]) translate([-53, 0, 0]) rotate([0, 0, 90]) translate([-40, 4.5863e-15, 61.95]) rotate([90, 7.01671e-15, 90]) translate([11.5, 11.5, 4])  import("../../parts/common/interior/cots/screw/screw_washer_m4_08.stl");
+if (show_fasteners) color("Silver") translate([-122, 60, 130]) rotate([90, 0, -90]) translate([-53, 0, 0]) rotate([0, 0, 90]) translate([-40, 4.5863e-15, 61.95]) rotate([90, 7.01671e-15, 90]) translate([11.5, 11.5, 10.6]) rotate([0, 0, 30])  import("../../parts/common/interior/cots/screw/screw_nut_m4.stl");
+if (show_fasteners) color("Silver") translate([-122, 60, 130]) rotate([90, 0, -90]) translate([-53, 0, 0]) rotate([0, 0, 90]) translate([-40, 4.5863e-15, 61.95]) rotate([90, 7.01671e-15, 90]) translate([24.5, 11.5, 4]) rotate([180, 0, 0])  import("../../parts/common/interior/cots/screw/screw_m4x16_socket.stl");
+if (show_fasteners) color("Silver") translate([-122, 60, 130]) rotate([90, 0, -90]) translate([-53, 0, 0]) rotate([0, 0, 90]) translate([-40, 4.5863e-15, 61.95]) rotate([90, 7.01671e-15, 90]) translate([24.5, 11.5, 4])  import("../../parts/common/interior/cots/screw/screw_washer_m4_08.stl");
+if (show_fasteners) color("Silver") translate([-122, 60, 130]) rotate([90, 0, -90]) translate([-53, 0, 0]) rotate([0, 0, 90]) translate([-40, 4.5863e-15, 61.95]) rotate([90, 7.01671e-15, 90]) translate([24.5, 11.5, 10.6]) rotate([0, 0, 30])  import("../../parts/common/interior/cots/screw/screw_nut_m4.stl");
+if (show_fasteners) color("Silver") translate([-122, 60, 130]) rotate([90, 0, -90]) translate([-53, 0, 0]) rotate([0, 0, 90]) translate([0, -52, 31.5])  import("../../parts/child/exterior/printed/dji_osmo_action6_mount_m3/camera_m3x30_hex.stl");
+if (show_fasteners) color("Silver") translate([-122, 60, 130]) rotate([90, 0, -90]) translate([-53, 0, 0]) rotate([0, 0, 90]) translate([0, -52, 2.4]) rotate([0, 0, 30])  import("../../parts/common/interior/cots/screw/screw_nut_m3.stl");
+if (show_accessories) color("Orange") translate([-122, 60, 130]) rotate([90, 0, -90]) translate([-53, 0, 0]) rotate([0, 0, 90]) translate([0, -52, 8])  import("../../parts/child/exterior/printed/dji_osmo_action6_mount_m3/camera_hand_spacer.stl");
+if (show_accessories) color("SeaGreen") translate([-122, 60, 130]) rotate([90, 0, -90]) translate([-53, 0, 0]) rotate([0, 0, 90]) translate([0, -52, 30.5])  import("../../parts/child/exterior/printed/dji_osmo_action6_mount_m3/camera_hand_knob.stl");
+if (show_accessories) color("SeaGreen") translate([-122, 60, 130]) rotate([90, 0, -90]) translate([-53, 0, 0]) rotate([0, 0, 90]) translate([0, -52, 33.5])  import("../../parts/child/exterior/printed/dji_osmo_action6_mount_m3/camera_hand_knob_cap.stl");
+if (show_fasteners) color("Silver") translate([-122, 60, 130]) rotate([90, 0, -90]) translate([-53, 0, 0]) rotate([0, 0, 90]) translate([0, 52, 31.5])  import("../../parts/child/exterior/printed/dji_osmo_action6_mount_m3/camera_m3x30_hex.stl");
+if (show_fasteners) color("Silver") translate([-122, 60, 130]) rotate([90, 0, -90]) translate([-53, 0, 0]) rotate([0, 0, 90]) translate([0, 52, 2.4]) rotate([0, 0, 30])  import("../../parts/common/interior/cots/screw/screw_nut_m3.stl");
+if (show_accessories) color("Orange") translate([-122, 60, 130]) rotate([90, 0, -90]) translate([-53, 0, 0]) rotate([0, 0, 90]) translate([0, 52, 8])  import("../../parts/child/exterior/printed/dji_osmo_action6_mount_m3/camera_hand_spacer.stl");
+if (show_accessories) color("SeaGreen") translate([-122, 60, 130]) rotate([90, 0, -90]) translate([-53, 0, 0]) rotate([0, 0, 90]) translate([0, 52, 30.5])  import("../../parts/child/exterior/printed/dji_osmo_action6_mount_m3/camera_hand_knob.stl");
+if (show_accessories) color("SeaGreen") translate([-122, 60, 130]) rotate([90, 0, -90]) translate([-53, 0, 0]) rotate([0, 0, 90]) translate([0, 52, 33.5])  import("../../parts/child/exterior/printed/dji_osmo_action6_mount_m3/camera_hand_knob_cap.stl");
 // 下フランジ。ピストン(局所 z0..19)を上へ向けてチューブ座ぐりへ 19mm 挿入 → カラー(Ø114.3)が z -8..0 に露出
 if (show_vessel) color("LightSteelBlue", 0.6) translate([0, -100, 138]) rotate([-90, 0, 0]) translate([0, 0, 19]) rotate([180, 0, 0]) translate([-57.15, -57.15, 0])  import("../../parts/child/exterior/cots/wte4_flange/BR-101040_RevC.stl");
 // 上フランジ。ピストンを下へ向けて挿入 → カラー上面が z=208 (= ドームの座面)

@@ -15,7 +15,7 @@ import numpy as np
 import trimesh
 
 ROOT = Path(__file__).resolve().parents[1]
-ASSEMBLY = ROOT / "assemblies" / "parent_oneplate"
+ASSEMBLY = ROOT / "assemblies" / "parent_exterior"
 WORK = ASSEMBLY / "_work" / "analysis" / "repeatable_mount"
 IMAGES = ASSEMBLY / "_work" / "images"
 OUT = ASSEMBLY / "print_jobs" / "repeatable_mount"
@@ -34,7 +34,7 @@ def sha(path: Path):
 
 def render_views():
     placement = ASSEMBLY / "placement.json"
-    view = ASSEMBLY / "parent_oneplate_view.scad"
+    view = ASSEMBLY / "parent_exterior_view.scad"
     subprocess.run(["python", str(ROOT / "scad/lib/asm_gen.py"), str(placement), str(view)], check=True)
     openscad = Path(r"C:\Program Files\OpenSCAD\openscad.exe")
     if not openscad.is_file():
@@ -162,7 +162,7 @@ def main():
                            "winding_consistent": bool(saved.is_winding_consistent),
                            "zero_area_faces": int(np.count_nonzero(saved.area_faces == 0)),
                            "part_count": len(parts), "parts": parts})
-    result = {"schema_version": 1, "assembly": "parent_oneplate", "job": "repeatable_mount",
+    result = {"schema_version": 1, "assembly": "parent_exterior", "job": "repeatable_mount",
               "material": "PETG", "layer_height_mm": 0.20, "walls": 6, "top_layers": 6, "bottom_layers": 6,
               "infill_percent": 40, "supports": True, "brim_mm": BRIM, "bed_mm": list(BED),
               "excluded_zone_mm": list(EXCLUDED), "placement_sha256": sha(ASSEMBLY / "placement.json"),

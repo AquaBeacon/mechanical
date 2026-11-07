@@ -1,0 +1,197 @@
+{
+  "name": "01_fixtures",
+  "title": "小物・TD04A治具",
+  "file": "01_fixtures/01_fixtures.3mf",
+  "sha256": "49ee2dcd37474d1f3e74535abf58632ec23b9a6ca927a82edc32064adfb5633b",
+  "parts": [
+    {
+      "stem": "parent_oneplate_td_support",
+      "file": "parent_oneplate_td_support.stl",
+      "source_sha256": "75c968b02b664a922f1a9717ae96efd68d009ef57d02c2dec30541b98cce0a97",
+      "translation_mm": [
+        45.0,
+        75.0,
+        0.0
+      ],
+      "label": "TD04A",
+      "saved_bounds_mm": [
+        [
+          59.99999,
+          87.00001,
+          0.0
+        ],
+        [
+          93.99999,
+          156.00001,
+          80.0
+        ]
+      ]
+    },
+    {
+      "stem": "parent_oneplate_camera_stop",
+      "file": "parent_oneplate_camera_stop.stl",
+      "source_sha256": "e8da2d82204c15ea158d8c02a69f25b9cd67a78027509077b538788db53652c2",
+      "translation_mm": [
+        95.0,
+        75.0,
+        0.0
+      ],
+      "label": "Stop",
+      "saved_bounds_mm": [
+        [
+          109.99999,
+          87.00001,
+          0.0
+        ],
+        [
+          161.99999,
+          108.50001,
+          26.5
+        ]
+      ]
+    },
+    {
+      "stem": "parent_light_jaw",
+      "file": "parent_light_jaw.stl",
+      "source_sha256": "e98b1b9472087481bd3db7ee84fa24593ca91cbdda31b3146e0822f0e9c279c4",
+      "translation_mm": [
+        95.0,
+        112.0,
+        0.0
+      ],
+      "label": "Jaw",
+      "saved_bounds_mm": [
+        [
+          109.99999,
+          124.00001,
+          0.0
+        ],
+        [
+          159.99999,
+          138.00001,
+          8.0
+        ]
+      ]
+    },
+    {
+      "stem": "quick_release_prototypes_twist_knob",
+      "file": "quick_release_prototypes_twist_knob.stl",
+      "source_sha256": "4937289e0a7dc0aa10f12c761e14c217befe0a074c2df8252e1f93170d629747",
+      "translation_mm": [
+        165.0,
+        75.0,
+        0.0
+      ],
+      "label": "Knob",
+      "saved_bounds_mm": [
+        [
+          179.99999,
+          87.00001,
+          0.0
+        ],
+        [
+          195.99999,
+          101.5236077,
+          10.0
+        ]
+      ]
+    },
+    {
+      "stem": "parent_oneplate_box_locator_pressure_pad",
+      "file": "parent_oneplate_box_locator_pressure_pad.stl",
+      "source_sha256": "3aa0ad77980b8d10a526ac78a3114fd73ba476cd8c0cdf2218e21b64b7c0d975",
+      "translation_mm": [
+        95.0,
+        145.0,
+        0.0
+      ],
+      "label": "Pad 1",
+      "saved_bounds_mm": [
+        [
+          109.99999,
+          157.00001,
+          0.0
+        ],
+        [
+          123.99999,
+          169.00001,
+          5.400001500000002
+        ]
+      ]
+    },
+    {
+      "stem": "parent_oneplate_box_locator_pressure_pad",
+      "file": "parent_oneplate_box_locator_pressure_pad.stl",
+      "source_sha256": "3aa0ad77980b8d10a526ac78a3114fd73ba476cd8c0cdf2218e21b64b7c0d975",
+      "translation_mm": [
+        125.0,
+        145.0,
+        0.0
+      ],
+      "label": "Pad 2",
+      "saved_bounds_mm": [
+        [
+          139.99999,
+          157.00001,
+          0.0
+        ],
+        [
+          153.99999,
+          169.00001,
+          5.400001500000002
+        ]
+      ]
+    },
+    {
+      "stem": "parent_oneplate_box_locator_pressure_pad",
+      "file": "parent_oneplate_box_locator_pressure_pad.stl",
+      "source_sha256": "3aa0ad77980b8d10a526ac78a3114fd73ba476cd8c0cdf2218e21b64b7c0d975",
+      "translation_mm": [
+        155.0,
+        145.0,
+        0.0
+      ],
+      "label": "Pad 3",
+      "saved_bounds_mm": [
+        [
+          169.99999,
+          157.00001,
+          0.0
+        ],
+        [
+          183.99999,
+          169.00001,
+          5.400001500000002
+        ]
+      ]
+    }
+  ],
+  "part_count": 7,
+  "grams": 88.43,
+  "seconds": 9392.0,
+  "layer_mm": 0.2,
+  "wall_loops": "8",
+  "infill": "100%",
+  "brim_mm": 6.0,
+  "support_enable": "1",
+  "material_profile": [
+    "Bambu PETG Basic @BBL X1C"
+  ],
+  "machine": "Bambu Lab X1 Carbon",
+  "gcode_sha256": "89cd3925f9c18cfc53e1884e73e37f3e078779a77bc183357eb7c7960eaa5c43",
+  "support_filament_mm": 0,
+  "actual_support_extrusion_moves": 0,
+  "extrusion_bounds_xy_mm": [
+    [
+      54.994,
+      79.645
+    ],
+    [
+      201.35,
+      172.156
+    ]
+  ],
+  "exclusion_hits": 0,
+  "saved_3mf_components": 7,
+  "passed": true
+}

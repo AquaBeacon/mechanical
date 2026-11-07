@@ -1,34 +1,60 @@
 {
   "status": "fit_check_prototype",
-  "note": "2026-10-13 全長側溝版：電池台と蓋を各1個再印刷。蓋を配線側の端から両側の全長溝へ108 mm差し込み、M3×12ねじ／M3ナット各1個で固定する。箱内で全長分を引き出せないため、電源リードを外し、台の固定ねじ4本を外して閉じたボックスを上へ約90 mm持ち上げ、蓋ねじ1本を外して引き抜く。基板を外す必要はない。最下段、MAIN固定板、同軸巻き部と工具穴8 mmは維持。電池台はprint_jobs/battery_side_grooves_20261013/battery_base.3mfをプロジェクトとして開く。ナット座と側溝の支持材禁止設定済み。STLの場合はmodifiers内の支持材禁止パーツ2個を同梱座標で追加し、単体印刷しない。蓋は上面をベッドへ向けた同梱姿勢。9種類各1個、PETG0.2 mm・4周壁・100%インフィル。旧2 mmフック版の電池台／蓋を混ぜない。実印刷でバリ、嵌合と締付けを確認する。",
+  "note": "2026-10-29：床下面のM3六角ナット座11か所。上からの貫通ねじで固定。50mm一体支持枠を維持。手順は ../unified_support_report.md。電池本体・蓋の同時交換は ../battery_top_lid_report.md を参照。",
   "notes": [
+    "assemblies/parent_hand_service/unified_support_report.md",
+    "assemblies/parent_hand_service/battery_top_lid_report.md",
+    "assemblies/parent_hand_service/plate_access_report.md",
+    "assemblies/parent_hand_service/retrofit_report.md",
     "docs/配線・ケーブル計画.md",
-    "assemblies/parent_hand_service/fixed_plate_report.md",
-    "assemblies/parent_hand_service/battery_box_report.md",
-    "assemblies/parent_hand_service/sensor_mount_report.md",
-    "assemblies/parent_hand_service/case_screw_access_report.md",
-    "assemblies/parent_hand_service/battery_slide_lid_report.md",
-    "assemblies/parent_hand_service/battery_tool_nut_access_report.md",
-    "assemblies/parent_hand_service/battery_side_grooves_report.md"
+    "assemblies/parent_hand_service/sony_plate_thickening_report.md",
+    "assemblies/parent_hand_service/frame_spacer_printability_report.md"
   ],
-  "extra_parts": [
-    {
-      "part": "parts/common/interior/printed/stack_spacers",
-      "file": "parent_stack_spacer_set",
-      "quantity": 1,
-      "labels": [
-        "print_runner_12_spacers"
-      ]
-    }
-  ],
+  "extra_parts": [],
   "modifiers": [
     {
-      "host": "battery_base",
-      "source": "parts/parent/interior/printed/parent_hand_service/battery_lid_nut_support_blocker.stl"
+      "host": "cradle_floor_foot_0",
+      "source": "parts/parent/interior/printed/ann_mb1_internal_rack/cradle_floor_foot_0_support_blocker.stl"
+    },
+    {
+      "host": "cradle_floor_foot_1",
+      "source": "parts/parent/interior/printed/ann_mb1_internal_rack/cradle_floor_foot_1_support_blocker.stl"
+    },
+    {
+      "host": "cradle_floor_foot_2",
+      "source": "parts/parent/interior/printed/ann_mb1_internal_rack/cradle_floor_foot_2_support_blocker.stl"
+    },
+    {
+      "host": "cradle_floor_foot_3",
+      "source": "parts/parent/interior/printed/ann_mb1_internal_rack/cradle_floor_foot_3_support_blocker.stl"
+    },
+    {
+      "host": "main_service_frame",
+      "source": "parts/parent/interior/printed/parent_hand_service/main_service_frame_support_blocker.stl"
+    },
+    {
+      "host": "power_adapter",
+      "source": "parts/parent/interior/printed/parent_hand_service/power_adapter_support_blocker.stl"
+    },
+    {
+      "host": "antenna_service_shelf",
+      "source": "parts/parent/interior/printed/ann_mb1_internal_rack/antenna_service_shelf_support_blocker.stl"
+    },
+    {
+      "host": "sony_support_frame",
+      "source": "parts/parent/interior/printed/parent_hand_service/sony_support_frame_support_blocker.stl"
+    },
+    {
+      "host": "gnss_support_frame",
+      "source": "parts/parent/interior/printed/gnss_universal_carrier/gnss_support_frame_support_blocker.stl"
+    },
+    {
+      "host": "floor_plate",
+      "source": "parts/parent/interior/printed/parent_hand_service/floor_underside_nut_support_blocker.stl"
     },
     {
       "host": "battery_base",
-      "source": "parts/parent/interior/printed/parent_hand_service/battery_slide_rail_support_blocker.stl"
+      "source": "parts/parent/interior/printed/parent_hand_service/battery_lid_pilot_support_blocker.stl"
     }
   ]
 }

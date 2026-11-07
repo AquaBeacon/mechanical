@@ -1,4 +1,4 @@
-# <suffix> <var=value> ...   (pan head: d / l / head_d / head_h ; washer: d=id head_d=od head_h=t)
+﻿# <suffix> <var=value> ...   (pan head: d / l / head_d / head_h ; washer: d=id head_d=od head_h=t)
 m2x5 d=2 l=5 head_d=3.8 head_h=1.3
 m2x6 d=2 l=6 head_d=3.8 head_h=1.3
 m2_5x6 d=2.5 l=6 head_d=4.5 head_h=1.7
@@ -12,6 +12,7 @@ m3x12 d=3 l=12 head_d=5.5 head_h=2.0
 m3x105_rod kind="rod" d=3 l=105 head_d=3.1
 nut_m3 kind="nut" d=3 head_d=5.5 head_h=2.4
 washer_m3_05 kind="washer" d=3.2 head_d=7 head_h=0.5
+washer_m4_08 kind="washer" d=4.3 head_d=9 head_h=0.8
 
 # Compression-limited interior flange mounts
 m3x18 d=3 l=18 head_d=5.5 head_h=2.0
@@ -21,6 +22,7 @@ m3x16 d=3 l=16 head_d=5.5 head_h=2.0
 
 # Exterior suspension clamp (plain model; metal purchased parts)
 m3x60 d=3 l=60 head_d=5.5 head_h=3.0
+m3x65 d=3 l=65 head_d=5.5 head_h=3.0
 m3x70 d=3 l=70 head_d=5.5 head_h=3.0
 m3x25 d=3 l=25 head_d=5.5 head_h=3.0
 washer_m3_9x1 kind="washer" d=3.2 head_d=9 head_h=1.0
@@ -51,3 +53,18 @@ m4x14_socket d=4 l=14 head_d=7 head_h=4
 m4x16_socket d=4 l=16 head_d=7 head_h=4
 m4x20_socket d=4 l=20 head_d=7 head_h=4
 m4x25_socket d=4 l=25 head_d=7 head_h=4
+
+rod_m5x180 kind="rod" d=5 l=180
+
+m3x25_socket d=3 l=25 head_d=5.5 head_h=3
+
+m3x14_socket d=3 l=14 head_d=5.5 head_h=3
+# Rev.4 TD04A support: purchased countersunk screw, overall length includes head
+m5x40_flat kind="flat" d=5 l=40 head_d=10 head_h=2.5
+# Camera angle adjuster: same tip, shorter shaft, standard socket head
+m4x8_socket d=4 l=8 head_d=7 head_h=4
+# Through the 12 mm flange seat and 10 mm slip spacer, 4 mm thread engagement.
+# Under-head 26 mm; cut/deburr a metal M3x30 if a ready length is unavailable.
+m3x26 kind="pan" d=3 l=26 head_d=5.5 head_h=2
+m4x12_head10_h5_envelope d=4 l=12 head_d=10 head_h=5
+m4x18_socket d=4 l=18 head_d=7 head_h=4

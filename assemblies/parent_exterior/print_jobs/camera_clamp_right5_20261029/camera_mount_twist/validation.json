@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "source": "parts/child/exterior/printed/dji_osmo_action6_mount_m3/camera_mount_twist.stl",
+  "source_sha256": "f17ae5cb03b94ae992d7031c7c6794b14072edac87813c750d67375e13dfe2a4",
+  "three_mf_sha256": "eb19b427e44cd0f3c394b7088ae35bd15229416a17520d7547b07a6bc4d69dfb",
+  "layer_mm": 0.1,
+  "enable_support": "1",
+  "support_on_build_plate_only": "1",
+  "support_threshold_angle": "45",
+  "support_feature_sections": 247,
+  "extrusion_bounds_xy_mm": [
+    [
+      68.08,
+      80.573
+    ],
+    [
+      187.92,
+      170.846
+    ]
+  ],
+  "warning_message": "",
+  "seconds": 20008.1875,
+  "grams": 109.79132843017578,
+  "material": "Generic PETG",
+  "walls": 6,
+  "infill": "15% gyroid",
+  "limits": [
+    "Physical print and C fit unverified; G2/G3 plotted as chords.",
+    "Snap-cap nubs, finger fit and physical gripping require inspection on a real print."
+  ]
+}

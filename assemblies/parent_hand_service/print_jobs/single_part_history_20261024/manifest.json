@@ -1,0 +1,21 @@
+{
+  "reason": "Preserve existing 2026-10-24 files while keeping current portable STL set managed; 3MF belongs under print_jobs.",
+  "files": [
+    {
+      "file": "ann_mb1_coax_ring_service.3mf",
+      "original_path": "parts/ann_mb1_coax_ring_service.3mf",
+      "sha256": "49ec0f94974ffd2d0494656fa34ce7e05d7b76c3c1cacf86fef0e1886602aa82",
+      "size_bytes": 110166,
+      "last_modified_utc": "2026-10-24T13:21:12.817784+00:00",
+      "status": "Historical single-part 3MF; STL/material/settings relation unverified; not the current plate-access revision."
+    },
+    {
+      "file": "cradle_floor_foot_0.3mf",
+      "original_path": "parts/cradle_floor_foot_0.3mf",
+      "sha256": "74de110b7fc2500e764fbf4c0d818993b646c06f2ade715fe9e67c3f4119bdb5",
+      "size_bytes": 165176,
+      "last_modified_utc": "2026-10-24T13:21:10.424615+00:00",
+      "status": "Historical single-part 3MF; STL/material/settings relation unverified; not the current plate-access revision."
+    }
+  ]
+}

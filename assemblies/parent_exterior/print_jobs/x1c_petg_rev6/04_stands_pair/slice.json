@@ -1,0 +1,17 @@
+{
+  "print_time_s": 12607.0,
+  "filament_g": 147.71,
+  "bed_fits": true,
+  "support_used": false,
+  "nozzle_mm": 0.4,
+  "filaments": [
+    {
+      "type": "PETG",
+      "used_mm": 49130.0,
+      "used_g": 147.71,
+      "used_for_object": true,
+      "used_for_support": false
+    }
+  ],
+  "layers": 100
+}

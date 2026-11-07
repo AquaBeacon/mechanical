@@ -1,0 +1,6 @@
+{
+  "from": "parts/camera_front_clamp.3mf",
+  "to": "print_jobs\\history\\imported_20261029\\camera_front_clamp.3mf",
+  "sha256": "4959a2457de87fa194eca16a81f87c515aeedb450759882fe9b630cb70b3d63b",
+  "reason": "Preserve pre-existing slicer job as history; parts/ contains current STL package only."
+}

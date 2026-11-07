@@ -1,0 +1,17 @@
+{
+  "print_rotations_deg": {
+    "child_spacer_set_set": [0, 0, 0],
+    "child_spacer_set_body10": [0, 0, 0],
+    "child_spacer_set_body12": [0, 0, 0],
+    "child_spacer_set_body30": [0, 0, 0]
+  },
+  "release_status": "fit_check_prototype",
+  "structural_print_conditions": {
+    "material": "PETG",
+    "nozzle_mm": 0.4,
+    "layer_height_mm": 0.2,
+    "walls": 4,
+    "infill_percent": 100
+  },
+  "permitted_sharp_edges": "Sacrificial 0.8 x 0.4 mm necks and their junctions; compensated dodecagonal clearance-bore profile edges retained for fit. Exterior hex corners R0.2; top/bottom and bore rims chamfered 0.2 mm."
+}

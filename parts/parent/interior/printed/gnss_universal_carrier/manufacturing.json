@@ -7,9 +7,40 @@
     "../../cots/sparkfun_neo_f9p/ref/SparkFun NEO-F9P.brd",
     "../../cots/sparkfun_neo_f9p/ref/NEO-F9P.STEP",
     "../../cots/adafruit_lis3mdl/ref/Adafruit LIS3MDL.brd",
-    "../../cots/adafruit_lis3mdl/ref/4479 LIS3MDL.step"
+    "../../cots/adafruit_lis3mdl/ref/4479 LIS3MDL.step",
+    "../../../../../spec/build_parent_hand_service.py",
+    "../../../../../scad/lib/parent_service_retrofit.py",
+    "../../../../../scad/lib/parent_corner_mounts.py",
+    "../ann_mb1_internal_rack/ann_mb1_coax_ring.step",
+    "../../../../../spec/prepare_parent_retrofit_printing.py",
+    "../../../../../assemblies/parent_hand_service/_work/analysis/retrofit_20261024/release_record.json",
+    "../../../../../spec/build_parent_frame_spacers.py",
+    "../../../../../spec/revise_parent_printability.py",
+    "../../../../../spec/build_parent_access_related.py",
+    "../../../../../scad/lib/parent_service_datums.py"
   ],
-  "print_rotations_deg": {},
+  "print_rotations_deg": {
+    "gnss_fixed_column_0": [
+      0,
+      0,
+      0
+    ],
+    "gnss_fixed_column_1": [
+      0,
+      0,
+      0
+    ],
+    "gnss_fixed_column_2": [
+      0,
+      0,
+      0
+    ],
+    "gnss_sony_shared_column": [
+      0,
+      0,
+      0
+    ]
+  },
   "release_status": "fit_check_prototype",
   "structural_print_conditions": {
     "material": "PETG",
@@ -18,5 +49,13 @@
     "infill_percent": 100,
     "build_axis": "Z",
     "note": "Dense equivalent-solid assumption for historical FEA; current case-corrected geometry not structurally analyzed. Supports as PRINT.md. No fatigue/creep qualification."
-  }
+  },
+  "non_print_files": [
+    "gnss_fixed_column_0_support_blocker",
+    "gnss_fixed_column_1_support_blocker",
+    "gnss_fixed_column_2_support_blocker",
+    "gnss_sony_shared_column_support_blocker",
+    "gnss_support_frame_support_blocker"
+  ],
+  "portable_stl_export_format": "stl_ascii"
 }

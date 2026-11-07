@@ -6,11 +6,57 @@
     "../../../../../scad/lib/cad_edge_finish.py",
     "../../cots/sparkfun_neo_f9p/ref/SparkFun NEO-F9P.brd",
     "../../cots/sparkfun_neo_f9p/ref/NEO-F9P.STEP",
-    "../../../../../scad/lib/parent_case_access.py"
+    "../../../../../scad/lib/parent_case_access.py",
+    "../../../../../spec/build_parent_hand_service.py",
+    "../../../../../scad/lib/parent_service_retrofit.py",
+    "../../../../../scad/lib/parent_corner_mounts.py",
+    "ann_mb1_coax_ring.step",
+    "../../../../../spec/prepare_parent_retrofit_printing.py",
+    "../../../../../assemblies/parent_hand_service/_work/analysis/retrofit_20261024/release_record.json",
+    "../../../../../spec/build_parent_frame_spacers.py",
+    "../../../../../spec/revise_parent_printability.py",
+    "../../../../../spec/build_parent_coax_access.py",
+    "../../../../../spec/build_parent_access_related.py",
+    "../../../../../scad/lib/parent_service_datums.py"
   ],
   "print_rotations_deg": {
     "ann_mb1_internal_rack": [
       180,
+      0,
+      0
+    ],
+    "antenna_service_shelf": [
+      180,
+      0,
+      0
+    ],
+    "cradle_floor_foot_0": [
+      0,
+      0,
+      0
+    ],
+    "cradle_floor_foot_1": [
+      0,
+      0,
+      0
+    ],
+    "cradle_floor_foot_2": [
+      0,
+      0,
+      0
+    ],
+    "cradle_floor_foot_3": [
+      0,
+      0,
+      0
+    ],
+    "ann_mb1_coax_ring_service": [
+      0,
+      0,
+      0
+    ],
+    "cradle_nut_keeper": [
+      90,
       0,
       0
     ]
@@ -23,5 +69,13 @@
     "infill_percent": 100,
     "build_axis": "Z",
     "note": "Dense equivalent-solid assumption for historical FEA; current case-corrected geometry not structurally analyzed. Supports as PRINT.md. No fatigue/creep qualification."
-  }
+  },
+  "non_print_files": [
+    "antenna_service_shelf_support_blocker",
+    "cradle_floor_foot_0_support_blocker",
+    "cradle_floor_foot_1_support_blocker",
+    "cradle_floor_foot_2_support_blocker",
+    "cradle_floor_foot_3_support_blocker"
+  ],
+  "portable_stl_export_format": "stl_ascii"
 }

@@ -1,0 +1,7 @@
+{
+  "status": "retained_existing_project_not_resliced",
+  "original_path": "assemblies/parent_hand_service/parts/parent_lipo_retainer_lid_slide.3mf",
+  "retained_path": "assemblies/parent_hand_service/print_jobs/battery_lid_retained_20261022/parent_lipo_retainer_lid_slide.3mf",
+  "sha256": "06f48529eb2bc67293a21eb8b296fc50cf7c5019f4785c1022b7dff0b2026ceb",
+  "note": "Preserved user 3MF; moved from managed STL-only parts folder. No geometry or settings edits."
+}

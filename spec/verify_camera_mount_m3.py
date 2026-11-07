@@ -4,7 +4,7 @@ from pathlib import Path
 ROOT=Path(os.environ['CAMERA_M3_ROOT']);OUT=ROOT/'parts/child/exterior/printed/dji_osmo_action6_mount_m3'
 mount=Part.read(str(OUT/'camera_mount.step'))
 assert mount.isValid() and len(mount.Solids)==1,'Invalid STEP'
-result={'revision':'direct_rear_M3_15pct','valid':True,'solids':1,'volume_mm3':mount.Volume}
+result={'revision':'rear_support_23mm_20261020','valid':True,'solids':1,'volume_mm3':mount.Volume}
 mount.translate(A.Vector(0,113.45,60))
 frame=Part.read(str(ROOT/'parts/child/exterior/printed/child_simple_front/child_simple_front.step'))
 result['mount_frame_intersection_mm3']=mount.common(frame).Volume

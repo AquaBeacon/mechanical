@@ -2,11 +2,11 @@
   "schema_version": 1,
   "assembly": "child_interior",
   "release_status": "existing_prototype",
-  "note": "電池ナット締結・印刷根元補強版。ケースM3×12＋普通M3ナット4組、床板M3×10皿＋普通M3ナット1組、前側フランジM3×16。ナットは二面幅5.5／厚2.4 mm。ケース・床板・ブレース100%、デッキ通常15%／根元100%、壁8周。床板の容器すきまは公称0.71 mm、仮組みを確認。強度試験未実施。 2026-10-04: RXクランプは左右連結4個。小部品を減らし、フランジ梁のくびれ・床板窓・ケース耳を補強。連結クランプ100%充填。配線はクランプ外側へ迂回。 2026-10-06:軸径4 mmの工具で組立順を指定。左右フランジMF10のオス突出長は現物確認待ち（CAD6 mm／取付記録4〜5 mm）。 2026-10-07：未使用ケーブルレール2本と固定ねじ8本を撤去。デッキの既存穴は残置（使用不要）。バッテリーの普通M3ナット5個は横差しポケットに収まり、樹脂との重なり・横挿入・床板着脱の122検査で干渉なし。ナットの熱圧入や造形途中の埋込みは不要。",
+  "note": "2026-10-21 clearance revision: AF5.5 hex spacers, inscribed 3.5 mm through-bores; flange M3x26 pan x2, brace M3x30/M3x45 studs and two M3 nuts; no spacer tapping.\n\nスペーサは child_spacer_set_set.stl を1セット印刷（10 mm×2、12 mm×1、30 mm×1）。外側AF5.5の六角、内接径3.5 mmのM3滑り穴、タップ不要。PETG／0.4 mmノズル／0.2 mm積層／壁4周／100%充填。幅0.8×厚0.4 mmのつなぎを冷却後に折り、跡を除く。左右フランジは首下26 mmのM3なべねじ2本（必要ならM3×30を26 mmに切断・面取り）。ブレースは金属M3×30／×45通しスタッド各1本と普通M3ナット2個で固定。旧短スタッドと旧上ねじ4本は使わない。実物の嵌合・締結強度は未検証。\n\n電池ナット締結・印刷根元補強版。ケースM3×12＋普通M3ナット4組、床板M3×10皿＋普通M3ナット1組、前側フランジM3×16。ナットは二面幅5.5／厚2.4 mm。ケース・床板・ブレース100%、デッキ通常15%／根元100%、壁8周。床板の容器すきまは公称0.71 mm、仮組みを確認。強度試験未実施。 2026-10-04: RXクランプは左右連結4個。小部品を減らし、フランジ梁のくびれ・床板窓・ケース耳を補強。連結クランプ100%充填。配線はクランプ外側へ迂回。 2026-10-06:軸径4 mmの工具で組立順を指定。左右フランジMF10のオス突出長は現物確認待ち（CAD6 mm／取付記録4〜5 mm）。 2026-10-07：未使用ケーブルレール2本と固定ねじ8本を撤去。デッキの既存穴は残置（使用不要）。バッテリーの普通M3ナット5個は横差しポケットに収まり、樹脂との重なり・横挿入・床板着脱の122検査で干渉なし。ナットの熱圧入や造形途中の埋込みは不要。",
   "source_hashes": {
-    "assemblies/child_interior/placement.json": "dfe5db64ecab48eac4dc0764be7a0e086fe730d3387a7840be5e4c8e0594d770",
-    "assemblies/child_interior/print_config.json": "3b712997ce54d82050236cbd00cf3d14c3023d3f9c0ea3949ce327d80407d6f8",
-    "assemblies/child_interior/README.md": "58b9790a30129c48e365e20da9e32692343d2dba0977c4b9f9e7f79072696cbf",
+    "assemblies/child_interior/placement.json": "2bea79f8a26791e6c01c12b6ca4bcd813bb39aa24d66c20a7655f985bec3dd27",
+    "assemblies/child_interior/print_config.json": "d91a280d1858dc97ed3cfe49b74546847226c023552f48f4cbae85e4bba9d90a",
+    "assemblies/child_interior/README.md": "3886f4a35c390a756187e7348652c3c727dc467791914a3faa8776e6cd79aebc",
     "parts/child/interior/printed/child_flange_brace/child_flange_brace.md": "30c3b993c3027d5f04ce4266abc0574af4b9358ef3dda7e072514f13ae45409b",
     "parts/child/interior/printed/child_flange_brace/child_flange_brace.scad": "e792e94a822077e5e3af1674493193b04357e8808a7bfc25071b4eedcc48eb35",
     "parts/child/interior/printed/child_flange_brace/manufacturing.json": "60e6187cd5f6d86fa9a19a2466fe3db3a6ef63e6c1da8db5453bfff317a714ee",
@@ -14,6 +14,10 @@
     "parts/child/interior/printed/child_rx_edge_clamp/child_rx_edge_clamp.scad": "45433ba44c2c36546160dff4408c3a2d4b5ec3094a618a38f3f3b6dbcd361d7d",
     "parts/child/interior/printed/child_rx_edge_clamp/manufacturing.json": "b4f817671bc2ade9795d91dff23bfdcf1357e46ac9cabcd48378988d88312ee8",
     "parts/child/interior/printed/child_rx_edge_clamp/variants.txt": "65aca5a0aef41536d57616125b27cbd939759b76cca942507d678a464408565c",
+    "parts/child/interior/printed/child_spacer_set/child_spacer_set.md": "0b8b0e707f1155bd439a7a6f256b49bf9388fe6a37916dcbc2e5cc22e473cfe3",
+    "parts/child/interior/printed/child_spacer_set/child_spacer_set.scad": "b9344691da39cb58f760ccb405459287cbddbf053afa316f5a697c25801a00dd",
+    "parts/child/interior/printed/child_spacer_set/manufacturing.json": "9926128ad47ee96757a0fcfab9ce9afeb4b169110af5421ed2a9c99a3e95ef05",
+    "parts/child/interior/printed/child_spacer_set/variants.txt": "93511118e2dbbdc2ac30e8321d54549414ec2ec7281d63ba4fa0089b060c08ea",
     "parts/child/interior/printed/child_vtray_batt_box/child_vtray_batt_box.md": "2fd012efcd8479c2217a91212983e7239f6f5342b6e9f3bb15d3bcab5c4255b2",
     "parts/child/interior/printed/child_vtray_batt_box/child_vtray_batt_box.scad": "a29ca8d26b4220d43a45e2f24e9dddc93dd00c9bb54d5d465c628caac63d1b3d",
     "parts/child/interior/printed/child_vtray_batt_box/manufacturing.json": "90e5db4b3522494fbbce537527d1cf90a1668bed216930fedbe61b74425f61ef",
@@ -28,11 +32,12 @@
     "parts/child/interior/printed/child_vtray_rib/child_vtray_rib.scad": "4f000e4941fbd1fa602f0840d89511b952a4156412331c6135efb153b885c9be",
     "scad/lib/child_interior_mounts.scad": "ef9f0865bd61bc8ebc9421d1a189db73c38257c5e49adeef2acb3ee204ec0990",
     "spec/child_interior_reinforcement/BOLTED_MOUNT_REVISION.md": "cda39e4a59dc2f1fa9a816f35de9be86ebbe82eb73889eb140d611d5fdcdb03e",
-    "spec/child_interior_reinforcement/FASTENER_ASSEMBLY.md": "adb95c617a0daaf1d6657d42df2b4e52835d87e140285dadf521a1226630ecab",
+    "spec/child_interior_reinforcement/FASTENER_ASSEMBLY.md": "3d2219454e08110996ffa2e297ae4c19b0c010bdf124480ae4f11a37d20b89fe",
     "spec/child_interior_reinforcement/M3_SUPPORT_REVISION.md": "2c5ee0019d7bd4def32bf64f0d4efaad358b0db17e45a032152b08ff7918216a",
     "spec/child_interior_reinforcement/PLA_MATTE_REVISION.md": "9ff4801b6447f69038b045813942b18548ff62daa7942247a5983eee02c17ff7",
     "spec/child_interior_reinforcement/PRINT_STRENGTH_REVISION.md": "d53c6bdbdb379f00397ed0447aca27c228aa6b474542e0001b3df95a135decd0",
-    "spec/child_interior_reinforcement/SERVICE_REVISION.md": "0b0c10809841b261044f61a879e77a95bae20c1c183e75e60c6dd2e9a6280ed8"
+    "spec/child_interior_reinforcement/SERVICE_REVISION.md": "0b0c10809841b261044f61a879e77a95bae20c1c183e75e60c6dd2e9a6280ed8",
+    "spec/child_interior_reinforcement/sync_printed_spacers.py": "5c256e5c8f2c1a23da44a05e35cbf356016091c5779ed1bc0bd8f8938a7a310d"
   },
   "parts": [
     {
@@ -655,6 +660,75 @@
       "watertight": true,
       "stl_format": "stl",
       "fits_x1c_250": true
+    },
+    {
+      "part": "parts/child/interior/printed/child_spacer_set",
+      "stem": "child_spacer_set_set",
+      "shape": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "quantity": 1,
+      "labels": [
+        "spacer_bodies_10x2_12x1_30x1"
+      ],
+      "file": "child_spacer_set_set.stl",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "mesh_warning": null,
+      "source": "parts/child/interior/printed/child_spacer_set/child_spacer_set_set.stl",
+      "source_sha256": "649eb3aa4608a17ee4762930c263df1ec3a7249911817ba90d31198f92be525c",
+      "sha256": "b6850e81558666b6028ec9b776a459cb89afa4f934336958ef09031b203c486a",
+      "extents_mm": [
+        36.2888,
+        8.75,
+        30.0
+      ],
+      "model_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          3.14436
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          6.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "watertight": true,
+      "stl_format": "stl",
+      "fits_x1c_250": true
     }
   ],
   "modifiers": [
@@ -677,12 +751,13 @@
     "child_rx_edge_clamp_cap_pair_mirrored.stl",
     "child_rx_edge_clamp_base_pair.stl",
     "child_rx_edge_clamp_cap_pair.stl",
+    "child_spacer_set_set.stl",
     "modifiers/root_dense_modifier.stl",
     "DESIGN_NOTES.md",
     "PRINT.md"
   ],
   "document_hashes": {
-    "DESIGN_NOTES.md": "c87778cc42ffbc32d61bbeb0fef00b447572f42ae97696310a2d6ace024ea5b6",
-    "PRINT.md": "17afb6d58b08306e558055d3a42c76b6172a88e85b4d18a98ca13cb6c03a26c0"
+    "DESIGN_NOTES.md": "531759bfd44981d69d5f689009cf88f10452773c719e8353b97bdb89da6b98f4",
+    "PRINT.md": "5b8b33a613b74b1dfb771a7d263ce885f044de3f39697f6f084eaf62455bccdd"
   }
 }

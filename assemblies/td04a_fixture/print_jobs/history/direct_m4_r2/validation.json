@@ -1,0 +1,30 @@
+[
+  {
+    "file": "quick_release_prototypes_twist_female.stl",
+    "source_sha256": "9727c525e8278b2dfe1fda322236a98ad6189b4401ff31336a46cf1555ba7355",
+    "layer_mm": 0.1,
+    "supports": "none",
+    "exit_code": 0,
+    "bed_fits": true,
+    "passed": true,
+    "warnings": [],
+    "error": null,
+    "grams": 15.76,
+    "seconds": 3319.0,
+    "support_filament_mm": 0
+  },
+  {
+    "file": "td04a_bracket_mount.stl",
+    "source_sha256": "3fc5916047e3e58ce3ea79a1675fffe0e2e06f99a9f90fc04304d0e7f41c5007",
+    "layer_mm": 0.1,
+    "supports": "none",
+    "exit_code": 0,
+    "bed_fits": true,
+    "passed": true,
+    "warnings": [],
+    "error": null,
+    "grams": 25.4,
+    "seconds": 5324.0,
+    "support_filament_mm": 0
+  }
+]

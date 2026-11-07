@@ -34,7 +34,7 @@
     {
       "label": "sony_column_1",
       "missing_member_mm3": 0.0,
-      "neck_probe_mm3": 0.09899999999999971,
+      "neck_probe_mm3": 0.09899999999999942,
       "pass_": true
     },
     {
@@ -46,7 +46,7 @@
     {
       "label": "sony_column_3",
       "missing_member_mm3": 0.0,
-      "neck_probe_mm3": 0.09899999999999971,
+      "neck_probe_mm3": 0.09899999999999942,
       "pass_": true
     },
     {

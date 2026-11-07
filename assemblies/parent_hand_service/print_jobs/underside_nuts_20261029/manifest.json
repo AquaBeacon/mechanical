@@ -1,0 +1,263 @@
+{
+  "passed": true,
+  "plates": [
+    {
+      "plate": 1,
+      "passed": true,
+      "members": [
+        {
+          "name": "floor_plate",
+          "sha256": "5a05f0ec45a885aebfab62fdce24169e7bfd80a9f2eb94ef45bc2590b7258d8c",
+          "bounds": [
+            [
+              30.0,
+              21.0,
+              0.0
+            ],
+            [
+              225.94999980926514,
+              233.75,
+              19.40999984741211
+            ]
+          ],
+          "shift": [
+            30.0,
+            21.0,
+            0.0
+          ],
+          "bed_rotation_z_deg": 0
+        }
+      ],
+      "first_model_layers_mm": {
+        "floor_plate": 0.2
+      },
+      "last_model_layers_mm": {
+        "floor_plate": 19.4
+      },
+      "support_extrusions_in_nut_access_voids": 0,
+      "nut_roof_bridges": [
+        {
+          "start": [
+            47.111,
+            225.765,
+            2.8
+          ],
+          "end": [
+            47.085,
+            225.89,
+            2.8
+          ],
+          "length_mm": 0.12767536959022208
+        },
+        {
+          "start": [
+            47.085,
+            225.89,
+            2.8
+          ],
+          "end": [
+            46.399,
+            225.89,
+            2.8
+          ],
+          "length_mm": 0.6859999999999999
+        },
+        {
+          "start": [
+            42.34,
+            225.89,
+            2.8
+          ],
+          "end": [
+            43.201,
+            225.89,
+            2.8
+          ],
+          "length_mm": 0.8609999999999971
+        },
+        {
+          "start": [
+            159.511,
+            225.765,
+            2.8
+          ],
+          "end": [
+            159.485,
+            225.89,
+            2.8
+          ],
+          "length_mm": 0.1276753695902192
+        },
+        {
+          "start": [
+            159.485,
+            225.89,
+            2.8
+          ],
+          "end": [
+            158.799,
+            225.89,
+            2.8
+          ],
+          "length_mm": 0.686000000000007
+        },
+        {
+          "start": [
+            154.74,
+            225.89,
+            2.8
+          ],
+          "end": [
+            155.601,
+            225.89,
+            2.8
+          ],
+          "length_mm": 0.86099999999999
+        },
+        {
+          "start": [
+            153.74,
+            31.89,
+            2.8
+          ],
+          "end": [
+            154.601,
+            31.89,
+            2.8
+          ],
+          "length_mm": 0.86099999999999
+        },
+        {
+          "start": [
+            158.511,
+            31.765,
+            2.8
+          ],
+          "end": [
+            158.485,
+            31.89,
+            2.8
+          ],
+          "length_mm": 0.1276753695902192
+        },
+        {
+          "start": [
+            158.485,
+            31.89,
+            2.8
+          ],
+          "end": [
+            157.799,
+            31.89,
+            2.8
+          ],
+          "length_mm": 0.686000000000007
+        }
+      ],
+      "printed_embedded_nut_pockets": 0,
+      "maximum_nut_roof_span_mm": 6.7,
+      "support_free_printability_verified": false,
+      "physical_print_test": false,
+      "sha256": "433ca76e08a6e1798c19c7457e8b726b74940ac9e438580516019b9324289f1a",
+      "profiles": "X1C/0.4, PETG,0.2mm,wall4,100%, auto supports45deg, bridges included, local blockers",
+      "limitations": [
+        "Underside-open hex pockets have roofs spanning at most6.7mm; no print pause. Actual bridge quality, thread pullout and fit require physical testing. Arcs disabled for continuous segment/void checks."
+      ]
+    },
+    {
+      "plate": 2,
+      "passed": true,
+      "members": [
+        {
+          "name": "main_service_frame",
+          "sha256": "dccf4ea35a9961fe6aba7d11adc005f2380cce5a7b9d3e13875c1df5233c93f4",
+          "bounds": [
+            [
+              25.0,
+              32.0,
+              0.0
+            ],
+            [
+              158.5,
+              124.49972152709961,
+              17.39999771118164
+            ]
+          ],
+          "shift": [
+            25.0,
+            32.0,
+            0.0
+          ],
+          "bed_rotation_z_deg": 0
+        },
+        {
+          "name": "gnss_support_frame",
+          "sha256": "411b4b0dcede155ca756206235ceb219d12deb8b1d9c3265ab684f7e77bcba5d",
+          "bounds": [
+            [
+              25.0,
+              150.0,
+              0.0
+            ],
+            [
+              156.0,
+              231.5,
+              50.79999923706055
+            ]
+          ],
+          "shift": [
+            25.0,
+            150.0,
+            0.0
+          ],
+          "bed_rotation_z_deg": 0
+        },
+        {
+          "name": "sony_support_frame",
+          "sha256": "5c5b050c0f1824d7a32774b35fec4e4fab0ad7e8cf6ecff6a6429fd404f73d60",
+          "bounds": [
+            [
+              180.0,
+              32.0,
+              0.0
+            ],
+            [
+              244.6999969482422,
+              111.60000610351562,
+              50.79999923706055
+            ]
+          ],
+          "shift": [
+            180.0,
+            32.0,
+            0.0
+          ],
+          "bed_rotation_z_deg": 0
+        }
+      ],
+      "first_model_layers_mm": {
+        "main_service_frame": 0.2,
+        "gnss_support_frame": 0.2,
+        "sony_support_frame": 0.2
+      },
+      "last_model_layers_mm": {
+        "main_service_frame": 17.4,
+        "gnss_support_frame": 50.8,
+        "sony_support_frame": 50.8
+      },
+      "support_extrusions_in_nut_access_voids": 0,
+      "nut_roof_bridges": [],
+      "printed_embedded_nut_pockets": 0,
+      "maximum_nut_roof_span_mm": 6.7,
+      "support_free_printability_verified": false,
+      "physical_print_test": false,
+      "sha256": "5ea5093ac7445cd46edba6c791b7e1b76a0bc6459706152124a796fcad9b7585",
+      "profiles": "X1C/0.4, PETG,0.2mm,wall4,100%, auto supports45deg, bridges included, local blockers",
+      "limitations": [
+        "Underside-open hex pockets have roofs spanning at most6.7mm; no print pause. Actual bridge quality, thread pullout and fit require physical testing. Arcs disabled for continuous segment/void checks."
+      ]
+    }
+  ],
+  "material": "PETG",
+  "actual_print_test": false
+}

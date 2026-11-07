@@ -2,7 +2,7 @@
 
 対象: `child_horizontal_plate_frame`。同じ部品は表の数量だけ複製してください。
 
-Rev.4 現構成17種類・24個、未印刷13種類・19個。側板2・底板1・クランプ上下各1は印刷済み、元STLのSHAと配置を保持。追加フレーム4枚は側板内側。段差なしの一体メスは厚4、M3×18各2本。既存33×81ホルダーを流用、60°回して停止すると上向き、横のノブは水平+Y、突出59.5 mm、中央Y±45は手の通路。X1C / PETG Basic、0.4 mmノズル、8壁、100%充填、5 mmブリム、Textured PEI。一体メス・オスは0.1 mm層、他は0.2 mm層。ライトオスだけベッドからの外部サポート（上下離隔0.2）、他はサポート無効。STLは印刷姿勢へ変換済み。筒内・機構内部にサポートを入れず、除去後に爪・カム・ロック・実ライトの嵌合を確認する。旧版STLと3MFを混ぜない。嵌合・荷重試験用。詳細は同梱DESIGN_NOTES.mdのCHILD-HORIZONTAL-TWIST-C-R4。 トップフレーム改良（2026-10-12）：クランプ締付ねじ6本の真上に工具穴φ10、正12角形、入口0.4 mm面取り。工具軸φ8×70 mmは仮包絡。縁に近い2穴を局所拡幅、入口直近の検査断面の最小残存肉厚は約3.3 mm。トップは従来向きで1個。
+2026-10-29 素手で着脱するカメラ接続試作。機体1台につきカメラ本体1・専用受け1・指掛け付きUスペーサ2・ノブ2・蓋2を印刷。M3×30六角頭2本とM3普通ナット2個を使用。初回受け固定は工具を使用する。通常はノブを緩めてスペーサ、ねじの順に外して回す。実印刷・物理操作・締結強度・クリープ・爪の耐久は未認定。詳細と旧3MFの扱いはREADME最上段を参照。 前側押さえとカメラ本体の現行3MFは print_jobs/camera_clamp_right5_20261029/。その他の手回し部品・受けは print_jobs/camera_hand_release_20261029/。X1C・0.4 mmノズル・Generic PETG・0.1 mm層・6壁・15% Gyroid。カメラ本体・受け・スペーサ・ノブはベッドからの自動サポート、蓋はサポートなし。スペーサの指掛け下面と各支持部のサポートを除去し、溝・ナット座・蓋アームを破損しないようにする。各3MFは1個入りでスペーサ・ノブ・蓋は各2個必要。旧3MFは使わない。 子機受けは既存4穴を使い、側板側M3×18が2本、ガード共締めはM3×25からM3×30へ2本交換する。接続中心は(-122,113,130) mm。
 
 STLは全てこのフォルダ内の実ファイルです。このフォルダをコピーして印刷できます。組立配置は除き、最小XYZを0へ移動済み。鏡像・スケールは反映済みです。CAD原本は編集せず、設計元を更新して再生成します。
 
@@ -25,6 +25,13 @@ STLは全てこのフォルダ内の実ファイルです。このフォルダ�
 | [child_horizontal_twist_mount_light_twist.stl](child_horizontal_twist_mount_light_twist.stl) | 1 | 65 × 27.75 × 81 | [90, 0, 0] | 枠内 |
 | [quick_release_prototypes_twist_knob.stl](quick_release_prototypes_twist_knob.stl) | 1 | 16 × 14.5236 × 10 | [0, 0, 0] | 枠内 |
 | [child_simple_light_mount_cap.stl](child_simple_light_mount_cap.stl) | 1 | 65 × 19.75 × 81 | [0.0, -0.0, 0.0] | 枠内 |
+| [child_horizontal_twist_mount_camera_receiver.stl](child_horizontal_twist_mount_camera_receiver.stl) | 1 | 120 × 96 × 18.5 | [0, 0, 0] | 枠内 |
+| [camera_mount_twist.stl](camera_mount_twist.stl) | 1 | 114 × 81.9414 × 84.4914 | [0, 0, 0] | 枠内 |
+| [td04a_bracket_mount_child_side_up.stl](td04a_bracket_mount_child_side_up.stl) | 1 | 45 × 26 × 75 | [0, 0, 0] | 枠内 |
+| [camera_front_clamp.stl](camera_front_clamp.stl) | 1 | 24.9828 × 24.9828 × 59.9828 | [0, 0, 0] | 枠内 |
+| [camera_hand_spacer.stl](camera_hand_spacer.stl) | 2 | 22.5 × 10 × 10.5 | [0, 0, 0] | 枠内 |
+| [camera_hand_knob.stl](camera_hand_knob.stl) | 2 | 19.9249 × 19.9249 × 3.8 | [0, 0, 0] | 枠内 |
+| [camera_hand_knob_cap.stl](camera_hand_knob_cap.stl) | 2 | 12.1036 × 12.1036 × 0.8 | [0, 0, 0] | 枠内 |
 
 回転0°のものは設計元の姿勢を保っています。枠内の判定は外形だけです。サポート・積層方向・材料・強度の条件は [設計元の説明](DESIGN_NOTES.md) と上のassemblyの説明を確認してください。
 

@@ -4,7 +4,7 @@ import json, os, math
 import FreeCAD as App, Part
 
 ROOT = Path(__file__).resolve().parents[1]
-ASSEMBLY = ROOT / 'assemblies/parent_oneplate'
+ASSEMBLY = ROOT / 'assemblies/parent_exterior'
 WORK = ASSEMBLY / '_work/analysis/repeatable_mount'
 layout = json.loads((ASSEMBLY / 'placement.json').read_text(encoding='utf-8'))
 geometry = json.loads((WORK / 'geometry_checks.json').read_text(encoding='utf-8'))

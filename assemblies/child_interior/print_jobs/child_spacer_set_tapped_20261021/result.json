@@ -1,0 +1,60 @@
+{
+    "error_string": "Success.",
+    "export_time": 1024,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 96,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Custom": 35.28977966308594,
+                "Gap infill": 4.941317081451416,
+                "Inner wall": 533.602294921875,
+                "Internal solid infill": 2.0093021392822266,
+                "Outer wall": 573.0305786132813,
+                "Top surface": 6.338049411773682,
+                "Travel": 408.2676086425781,
+                "Undefined": 392.8995666503906
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFG00",
+                    "id": 1,
+                    "main_used_g": 1.471913456916809,
+                    "total_used_g": 1.471913456916809
+                }
+            ],
+            "generate_support_material_time": 21,
+            "id": 1,
+            "infill_time": 10,
+            "layer_filament_change": 0,
+            "main_predication": 1528.2896728515625,
+            "make_perimeters_time": 45,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 8.750001907348633,
+                        "height": 30.0,
+                        "width": 35.5,
+                        "x": 110.25,
+                        "y": 123.62500762939453,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "child_spacer_set_set.stl",
+                    "triangle_count": 2580
+                }
+            ],
+            "sliced_time": 327,
+            "sliced_time_with_cache": 224,
+            "total_predication": 1548.180908203125,
+            "triangle_count": 2580,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 100.0,
+    "wall_loops": 4
+}

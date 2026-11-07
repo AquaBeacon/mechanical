@@ -40,6 +40,8 @@ python tools/tidy_workspace.py check
 
 確認画像は各assembly・部品の `_work/images/` に集約した。画像の旧サブフォルダ構成はその下で保持している。直下のログは `_work/logs/`、CSGは `_work/intermediate/`。移動先とファイルハッシュは `tools/_work/tidy_journal.json` に記録した。
 
+メーカー資料の原本画像は `ref/` に保持する。2026-10-20に整理ツールを修正し、`ref/` 配下を `_work/images/` への自動移動から除外した。
+
 既存の解析、設計版、スライス設定、ZIPは記録として残す。旧 `prints/` とルート `print_jobs/` は過去の出力・スライス資料であり、新しい印刷データの入口はassembly内の `parts/` とする。従来スクリプトの動的な出力先は旧構成を使う場合があるため、実行後に `tidy_workspace.py apply` を行う。汎用ビルドは整理を自動実行する。
 
 OpenSCAD・FreeCADのCLIとPythonで再現可能なため、今回MCPや追加インストールは必要なかった。
@@ -58,3 +60,10 @@ OpenSCAD・FreeCADのCLIとPythonで再現可能なため、今回MCPや追加�
 - 確認画像と直下の作業ログは `_work/` に収まり、既存文書の画像参照が移動先を指す。
 
 探索だけの `child_single_camera_topopt` は印刷部品未確定と明記している。旧部品には250 mm枠外の形状や `child_top_crown` の非多様体エッジがある。各印刷手順に残し、フォルダ整理を形状・強度の合格判定へ読み替えない。
+
+## 親機外装の名称変更（2026-10-19）
+
+現行の `assemblies/parent_oneplate/` を `assemblies/parent_exterior/`（親機外装・位置決めフレーム）へ改名。全体STEP/STLと確認ビューも `parent_exterior` 名へ変更。構造STEPの旧別名、部品ID、生成スクリプト名は維持し、出力先を更新した。形状と印刷ジョブのバイナリは変更していない。旧版外装10構成の削除は実行環境のポリシーで拒否され、未実施。旧フォルダ内の購入品・ねじモデルには現行版と統合モデルからの参照が残るため、削除前に参照先の移設が必要。改名前ハッシュは `tools/_work/analysis/parent_exterior_cleanup/inventory_before.json` に記録。
+
+
+2026-10-24：`assembly_parts.py sync` のPRINT.mdでは、`*_support_blocker.stl` を支持材禁止として案内する。他のモディファイアは従来の局所100%指定。どちらも単体印刷せず、ホスト部品と同じ変換・相対座標を保つ。

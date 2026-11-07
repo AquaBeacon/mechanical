@@ -1,6 +1,10 @@
 # 親機のスペーサセット
 
-2026-10-11現行はMAIN柱4、Sony柱4、GNSS柱4、計12本を側面首付きランナー1枚で印刷する。MAIN14.3 mm、Sony41.7 mm＋キー0.8、GNSS既存寸法。固定板は別に印刷する。元STEPを変形せず印刷姿勢へ配置し、set_members.jsonに出所・SHAと姿勢を保存する。生成元spec/build_parent_stack_spacers.py。
+2026-10-22現行のparent_hand_serviceは、MAIN柱4、Sony左／右各2、GNSS前／後各2、計12本を個別STLで印刷する。MAIN14.3 mm、Sony41.7 mm＋キー0.8、GNSS31.2 mm＋キー0.8。固定板は別に印刷する。印刷入口はassemblies/parent_hand_service/parts/PRINT.md、対応表は同assemblyのspacer_delivery_report.md。旧ランナーと個別柱を重複印刷しない。
+
+このフォルダのSony柱は既存の生成元spec/build_parent_stack_spacers.pyが正本。MAIN柱はparent_hand_service、GNSS柱はgnss_universal_carrierの既存正本を参照する。旧ランナーCADとset_members.jsonは履歴として保持する。形状と取合いを再定義しない。
+
+Sony右は2026-10-22から5×9×高さ1.2 mmの下端を追加し、床の開放ナット穴をまたぐ。全体X幅5.4 mm・本体高さ41.7 mm・キー高さ0.8 mm・Ø3.45穴を維持する。下端・根元を含む外周は0.1 mm面取り。旧右柱の床との0.25 mmの隙間を解消するため、印刷済み旧ランナーの右柱2本は差し替える。ランナー自体も同じ新版STEPから再生成するが、現行印刷一式に重複追加しない。
 
 幅1.2×高さ0.4×自由長1 mmの側面首を切り離す。座面・キー・穴を削らない。ランナーは廃棄。実物の切離し力・嵌合・締付け・波浪・クリープは未認定。印刷入口はassemblies/parent_hand_service/parts/PRINT.md。
 

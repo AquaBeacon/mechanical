@@ -1,0 +1,6 @@
+{
+  "new_path": "assemblies/parent_exterior/print_jobs/history/user_saved_outward_L_20261025/camera_mount_twist.3mf",
+  "sha256": "0F3B3742D146D502FE896FC89FE60BFC6126D9C748E32998FBD71536E73143C5",
+  "old_path": "assemblies/parent_exterior/parts/camera_mount_twist.3mf",
+  "reason": "Preserve saved outward-L job. Contained mount depth 97.4414 mm; current inward-L depth is 81.9414 mm."
+}

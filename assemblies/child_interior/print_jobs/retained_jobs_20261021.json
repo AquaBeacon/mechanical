@@ -1,0 +1,14 @@
+[
+  {
+    "source": "assemblies/child_interior/parts/child_flange_brace.3mf",
+    "destination": "assemblies/child_interior/print_jobs/child_flange_brace_20261008_retained.3mf",
+    "sha256": "8919e8bf6c2517f17423e4378bf99eb666bfee85813623c97cb9a72d43e23974",
+    "model_changed": false
+  },
+  {
+    "source": "assemblies/child_interior/parts/child_rx_edge_clamp_base_pair.3mf",
+    "destination": "assemblies/child_interior/print_jobs/child_rx_edge_clamp_base_pair_20261009_retained.3mf",
+    "sha256": "338ddd89a812e20bec1644746ca1afea1df80144653984d1c5162f68f326b72e",
+    "model_changed": false
+  }
+]

@@ -11,6 +11,9 @@ sys.path.insert(0,str(R/'scad/lib'));import parent_gnss as G
 P=R/'parts/common/interior/printed/stack_spacers';P.mkdir(parents=True,exist_ok=True)
 O=R/'assemblies/parent_hand_service'
 v=A.Vector
+SONY_RIGHT_FOOT_DEPTH=9.0
+SONY_RIGHT_FOOT_HEIGHT=1.2
+SONY_RIGHT_FOOT_CHAMFER=.1
 def save(stem,s):
  s=s.removeSplitter();assert s.isValid() and len(s.Solids)==1,(stem,len(s.Solids))
  s.exportStep(str(P/(stem+'.step')))
@@ -24,6 +27,25 @@ for stem,(diam,key) in ({} if '--set-only' in sys.argv else G.SONY_COLUMN_VARIAN
  s=Part.makeCone(r-c,r,c,v(0,0,0)).fuse(Part.makeCylinder(r,h-2*c,v(0,0,c))).fuse(Part.makeCone(r,r-c,c,v(0,0,h-c)))
  kh=G.SONY_COLUMN_KEY_HEIGHT
  s=s.fuse(Part.makeCylinder(key/2,kh-.1,v(0,0,h))).fuse(Part.makeCone(key/2,key/2-.1,.1,v(0,0,h+kh-.1)))
+ if stem=='sony_column_right':
+  # The 5.4 mm shaft fits entirely inside the floor's open M3 nut pocket.
+  # A Y-elongated foot bridges that pocket while retaining the original X
+  # envelope at the east case wall, joint height and locating-key dimensions.
+  try:
+   foot_width=diam-.4  # avoid tangent box/cylinder joins, preserve shaft X envelope
+   foot=Part.makeBox(foot_width,SONY_RIGHT_FOOT_DEPTH,SONY_RIGHT_FOOT_HEIGHT,
+                     v(-foot_width/2,-SONY_RIGHT_FOOT_DEPTH/2,0))
+   # Finish after the union so the foot-to-shaft roots are treated too. Starting
+   # from an already bevelled shaft would create sliver edges at the foot rim.
+   s=Part.makeCylinder(r,h).fuse(Part.makeCylinder(key/2,kh,v(0,0,h))).fuse(foot).removeSplitter()
+   from cad_edge_finish import sharp_edges
+   edges=sharp_edges(s)
+   s=s.makeChamfer(SONY_RIGHT_FOOT_CHAMFER,edges)
+  except Exception as exc:
+   import traceback
+   print('Foot edge finish failed:',traceback.format_exc(),flush=True)
+   raise
+  assert s.isValid() and len(s.Solids)==1
  bore=Part.makeCylinder(3.45/2,h+kh+.2,v(0,0,-.1)).fuse(Part.makeCone(3.45/2+.15,3.45/2,.15,v(0,0,0))).fuse(Part.makeCone(3.45/2,3.45/2+.15,.15,v(0,0,h+kh-.15)))
  save(stem,s.cut(bore))
 if '--columns-only' in sys.argv:sys.exit(0)
@@ -34,7 +56,8 @@ if '--set-only' in sys.argv:
   assert abs(b.XLength-diam)<.001 and abs(b.ZLength-G.SONY_COLUMN_LENGTH-G.SONY_COLUMN_KEY_HEIGHT)<.001
   MeshPart.meshFromShape(Shape=s,LinearDeflection=.025,AngularDeflection=.1,Relative=False).write(str(P/(stem+'.stl')))
 d=json.loads((O/'placement.json').read_text(encoding='utf-8'))
-items=[it for it in d['items'] if it.get('print_set')=='parent_stack_spacer_set']
+items=[it for it in d['items'] if it.get('file') in
+       ['main_corner_column','sony_column_left','sony_column_right','gnss_column_front','gnss_column_rear']]
 assert len(items)==12 and len({it['label'] for it in items})==12
 # One flat runner with short 1.2 x 0.4 mm necks (two 0.2 mm layers).
 # Attach on the non-bearing side; every column's own flat base sits on Z0.

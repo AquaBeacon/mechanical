@@ -1,0 +1,68 @@
+{
+    "error_string": "Success.",
+    "export_time": 281,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 31,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Bottom surface": 21.71484375,
+                "Bridge": 6.6204094886779785,
+                "Brim": 28.17658042907715,
+                "Custom": 34.96210479736328,
+                "Gap infill": 34.10221862792969,
+                "Inner wall": 1063.418212890625,
+                "Internal solid infill": 99.68882751464844,
+                "Outer wall": 218.89193725585938,
+                "Overhang wall": 20.315528869628906,
+                "Sparse infill": 614.7208251953125,
+                "Support": 27.62779998779297,
+                "Support interface": 7.852478981018066,
+                "Support transition": 5.5345048904418945,
+                "Top surface": 48.20329666137695,
+                "Travel": 265.9449157714844,
+                "Undefined": 250.82369995117188
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFG00",
+                    "id": 1,
+                    "main_used_g": 25.783672332763672,
+                    "total_used_g": 26.135940551757813
+                }
+            ],
+            "generate_support_material_time": 18,
+            "id": 1,
+            "infill_time": 18,
+            "layer_filament_change": 0,
+            "main_predication": 2462.833984375,
+            "make_perimeters_time": 20,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 74.0,
+                        "height": 20.0,
+                        "width": 46.999996185302734,
+                        "x": 104.49999237060547,
+                        "y": 91.00000762939453,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "parent_oneplate_box_locator_end_fixed.stl",
+                    "triangle_count": 2548
+                }
+            ],
+            "sliced_time": 225,
+            "sliced_time_with_cache": 157,
+            "total_predication": 2482.644287109375,
+            "triangle_count": 2548,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 100.0,
+    "wall_loops": 8
+}

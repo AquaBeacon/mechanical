@@ -7,7 +7,7 @@
     "assemblies/tether_open_reel/placement.json": "de1af84cd4064146ef2e4f9f77a3d744123c21f64787f082f606640d10c7bff5",
     "assemblies/tether_open_reel/README.md": "bcb7f4904f9a5909ac331ceb8c650cbea6c44d3530eb4c5f38ad085522073db5",
     "parts/common/jigs/tether_open_reel/check_and_preview.py": "2b1bd7675eacc2df274ff472ed1fea8133336865346b2b1fc3171b402c685598",
-    "parts/common/jigs/tether_open_reel/tether_open_reel.md": "7ebff13141fbf1adc6ea9d9dca31dbe262636bf80ef095847876715b138345f6",
+    "parts/common/jigs/tether_open_reel/tether_open_reel.md": "535fea408fadf00d8aba350aea12d54587db147d3f0ab28fa83980b2c4485a1e",
     "parts/common/jigs/tether_open_reel/tether_open_reel.scad": "fd30413cfdea9b40a4ce07abcc427605fdec19797ee7ec45cd277edd96aeccb4",
     "parts/common/jigs/tether_open_reel/variants.txt": "1737c75a4eefb4150ff5adc4fd0d007542ac97ac078ce8a3bf04b7645bfbe886",
     "parts/common/jigs/tether_open_reel/verify_step.py": "cd922ad551bb3b138de461523dae5c8bd36da1eb7e6d164c7ce09dc9d01b29d2"
@@ -230,7 +230,7 @@
     "PRINT.md"
   ],
   "document_hashes": {
-    "DESIGN_NOTES.md": "9377d646d21fede1b6f0363c24421801bbf9891d83acd261d4de3f3f233331dc",
+    "DESIGN_NOTES.md": "f2440755b748c4db012e38e8ccd2dd53d784d63da9d2440b09b6dd71f4fa0736",
     "PRINT.md": "8057ac3b8b8c104e63c98b262f03a85ee3412da3097235769d5b14d647c8a53e"
   }
 }

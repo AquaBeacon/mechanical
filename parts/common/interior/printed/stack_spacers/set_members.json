@@ -108,7 +108,7 @@
         0,
         0
       ],
-      "source_step_sha256": "ec787ac47006986b2a6f220f5857ff9c3e8dfef649c3437bdaa47c70eac29f4b",
+      "source_step_sha256": "b227a017cbc766faf46bcbf10c9ee0d621a0106ebe5ab8710f443edf174446ec",
       "neck_width_mm": 1.2,
       "neck_height_mm": 0.4,
       "neck_length_mm": 1,
@@ -124,20 +124,20 @@
       "translation_mm": [
         86.0,
         12.0,
-        -0.0
+        1.0000000128369537e-07
       ],
       "rotations_deg": [
         0,
         0,
         0
       ],
-      "source_step_sha256": "09a5bed127b1ebf65a79b7600c72f63c184fe799b3215d8fda2f01daeabcb870",
+      "source_step_sha256": "e230ecf4c901752155c1b62986260f38269997f1d9ed76ed5946852943ca19f5",
       "neck_width_mm": 1.2,
       "neck_height_mm": 0.4,
       "neck_length_mm": 1,
       "neck_xy_mm": [
         86.0,
-        8.8
+        7.0
       ]
     },
     {
@@ -154,7 +154,7 @@
         0,
         0
       ],
-      "source_step_sha256": "ec787ac47006986b2a6f220f5857ff9c3e8dfef649c3437bdaa47c70eac29f4b",
+      "source_step_sha256": "b227a017cbc766faf46bcbf10c9ee0d621a0106ebe5ab8710f443edf174446ec",
       "neck_width_mm": 1.2,
       "neck_height_mm": 0.4,
       "neck_length_mm": 1,
@@ -170,20 +170,20 @@
       "translation_mm": [
         118.0,
         12.0,
-        -0.0
+        1.0000000128369537e-07
       ],
       "rotations_deg": [
         0,
         0,
         0
       ],
-      "source_step_sha256": "09a5bed127b1ebf65a79b7600c72f63c184fe799b3215d8fda2f01daeabcb870",
+      "source_step_sha256": "e230ecf4c901752155c1b62986260f38269997f1d9ed76ed5946852943ca19f5",
       "neck_width_mm": 1.2,
       "neck_height_mm": 0.4,
       "neck_length_mm": 1,
       "neck_xy_mm": [
         118.0,
-        8.8
+        6.999999999999993
       ]
     },
     {

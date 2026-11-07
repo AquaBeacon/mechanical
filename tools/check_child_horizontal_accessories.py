@@ -169,7 +169,7 @@ def main():
         input_sha256={str(f.relative_to(ROOT)).replace('\\','/'):hashlib.sha256(f.read_bytes()).hexdigest() for f in sorted(inputs)},
         limitations=['Discrete rigid motion, not strength, adhesion, friction or operator-force validation',
                      '33 x 81 gauge represents the confirmed reference holder, not the full light or its head',
-                     'No camera/TD04A device fixture or cable/connector model is installed'])
+                     'Camera checks are recorded separately in camera_twist_20261021; TD04A and real cable/connector envelopes remain unmodelled'])
     save(OUT/'_work/analysis/side_twist_mount/validation.json',result)
     print(json.dumps(dict(result=result['result'],parts=len(printed),checks=len(rows),failures=failures[:40]),ensure_ascii=False))
     if failures:raise RuntimeError('Accessory verification failed')

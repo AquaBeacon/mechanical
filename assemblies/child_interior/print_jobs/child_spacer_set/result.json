@@ -1,0 +1,60 @@
+{
+    "error_string": "Success.",
+    "export_time": 356,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 17,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Custom": 35.27446746826172,
+                "Gap infill": 352.29278564453125,
+                "Inner wall": 4.240460395812988,
+                "Internal solid infill": 1.4323970079421997,
+                "Outer wall": 723.5850830078125,
+                "Top surface": 3.6286070346832275,
+                "Travel": 119.64412689208984,
+                "Undefined": 104.29093170166016
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFG00",
+                    "id": 1,
+                    "main_used_g": 1.2650864124298096,
+                    "total_used_g": 1.2650864124298096
+                }
+            ],
+            "generate_support_material_time": 7,
+            "id": 1,
+            "infill_time": 6,
+            "layer_filament_change": 0,
+            "main_predication": 1204.845947265625,
+            "make_perimeters_time": 46,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 8.750001907348633,
+                        "height": 30.0,
+                        "width": 36.28876495361328,
+                        "x": 109.85627746582031,
+                        "y": 123.62500762939453,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "child_spacer_set_set.stl",
+                    "triangle_count": 2204
+                }
+            ],
+            "sliced_time": 1750,
+            "sliced_time_with_cache": 1682,
+            "total_predication": 1224.7366943359375,
+            "triangle_count": 2204,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 100.0,
+    "wall_loops": 4
+}

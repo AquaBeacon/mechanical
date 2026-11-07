@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "source": "parts/child/exterior/printed/dji_osmo_action6_mount_m3/camera_front_clamp.stl",
+  "source_sha256": "0c8fa79eb1c4ebb21f584d96e1d0de4180e128780d3566eaa7b2c7a63de42ffb",
+  "three_mf_sha256": "41072abd88d82931e6f6b3e97e2632d6df1c3836a1b1ae9e51653cc77b94b24f",
+  "layer_mm": 0.1,
+  "enable_support": "1",
+  "support_on_build_plate_only": "1",
+  "support_threshold_angle": "45",
+  "support_feature_sections": 22,
+  "extrusion_bounds_xy_mm": [
+    [
+      111.619,
+      109.62
+    ],
+    [
+      144.381,
+      142.381
+    ]
+  ],
+  "warning_message": "",
+  "seconds": 8099.125,
+  "grams": 13.785209655761719,
+  "material": "Generic PETG",
+  "walls": 6,
+  "infill": "15% gyroid",
+  "limits": [
+    "Physical print and C fit unverified; G2/G3 plotted as chords.",
+    "Camera: remove external rear adapter/post supports before assembly; do not force C contact surfaces."
+  ]
+}

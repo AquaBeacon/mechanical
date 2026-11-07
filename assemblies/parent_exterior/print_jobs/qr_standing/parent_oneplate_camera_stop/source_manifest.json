@@ -1,0 +1,16 @@
+{
+  "file": "parent_oneplate_camera_stop.stl",
+  "quantity": 1,
+  "source_sha256": "162a208e01fdb11bcfc20b06c9288318ac0c303c9f562cfedc757d552e9a7ad7",
+  "layer_mm": 0.2,
+  "supports": "auto",
+  "exit_code": 0,
+  "bed_fits": true,
+  "passed": true,
+  "warnings": [],
+  "error": null,
+  "grams": 6.66,
+  "seconds": 1534.0,
+  "support_filament_mm": 524.659,
+  "limits": "Slicer result only; inspect supports and physically verify printing/fit/strength."
+}

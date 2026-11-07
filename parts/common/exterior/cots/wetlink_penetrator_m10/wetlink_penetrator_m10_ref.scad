@@ -49,6 +49,7 @@ cable_d   = 7.5;     // プラグに入るケーブル外被 Ø (**未選定**: 
 //     内側クリアランスもねじ掛かりもモデルより広い = モデルは保守側。
 //   子機 wte4_end_cap_5xm10 は t10 の M10 タップ穴なのでナット無し (別途モデル化)。
 wall_t    = 3.1;
+show_nut = true; // false: reuse the existing body with a separate vendor nut
 
 $fn = 48;
 
@@ -79,7 +80,7 @@ difference() {
         cylinder(d = thread_d, h = thread_l);              // ねじ部 (山は省略)
         translate([0, 0, -head_h])      hexp(hex_af,  head_h);   // 六角頭 (濡れ側)
         translate([0, 0, -out_h])       hexp(plug_af, plug_h);   // プラグ (濡れ側)
-        translate([0, 0, wall_t])       hexp(nut_af,  nut_h);    // ナット (乾き側)
+        if (show_nut) translate([0, 0, wall_t]) hexp(nut_af, nut_h); // ナット (乾き側)
     }
     // 導体ボア (貫通)
     translate([0, 0, -out_h - 1]) cylinder(d = bore_d, h = out_h + thread_l + 2);

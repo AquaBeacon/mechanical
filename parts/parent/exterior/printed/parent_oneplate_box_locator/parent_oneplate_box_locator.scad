@@ -6,32 +6,51 @@ module rr(p,s,r=2){translate([p[0]+s[0]/2,p[1]+s[1]/2])ef_round_rect(s[0],s[1],r
 module box(s,r=1,c=po_edge_chamfer){translate([s[0]/2,s[1]/2])ef_box(s[0],s[1],s[2],r,c);}
 module bore(d,t,c=po_hole_chamfer){ef_cut(t,c)circle(d=d/cos(180/32),$fn=32);}
 module nut(af,t,c=0.25){ef_cut(t,c)circle(d=af/cos(30),$fn=6);}
+// Preserve the hex flats; relieve only its upper roof in the chosen print pose.
+module roof_nut(af,t,angle){
+ r=af/2/cos(30);
+ ef_cut(t,0.25)union(){
+  circle(r=r,$fn=6);
+  rotate(angle)polygon([[r/2,-af/2],[r/2+af/2*tan(55),0],[r/2,af/2]]);
+ }
+}
 module roof(d,t,angle=0,c=po_hole_chamfer){
  r=d/2/cos(180/32);
- ef_cut(t,c)rotate(angle)union(){circle(r=r,$fn=32);polygon([[r/sqrt(2),-r/sqrt(2)],[sqrt(2)*r,0],[r/sqrt(2),r/sqrt(2)]]);}
+ ef_cut(t,c)rotate(angle)union(){circle(r=r,$fn=32);polygon([[r/sqrt(2),-r/sqrt(2)],[r/sqrt(2)*(1+tan(55)),0],[r/sqrt(2),r/sqrt(2)]]);}
 }
 
 /* [Variant] */
 part="side_left"; // [side_left,side_right,end_fixed,end_push,pressure_pad]
-// Correct after initial fit; retain the stops on the frame for daily use.
+// Rev.7: all four locators attach afterwards. Contact corrections remain zero.
 side_contact_correction=0; end_contact_correction=0;
-module side(right=false){
+end_arm_thickness=12; // 12 mm arm below the deck; no change to the printed skids.
+module side(right=false,integrated=false){
  difference(){
   union(){
-   translate([right?105.5:-116,-49,-po_relief])box([right?10.5:11,98,5.8],1);
-   translate([right?110:-110,0,-2.65])ef_convex_profile(1.95,0.3)ef_round_rect(7.6,23.6,0.8);
+   // Outer spine bypasses both rope holes without leaving tiny separate tabs.
+   translate([right?105.5:-120,-49,-po_relief])box([right?14.5:15,98,5.8],2);
+   // Flat seat: no key extending into the plate.
    for(y=po_side_datum_y){
-    if(right)translate([111,y-7,2])box([5,14,17],1);
+    if(right)translate([111,y-7,2])box([5,14,20],1);
     else translate([-116,y-7,2])box([11+side_contact_correction,14,13],1);
    }
+   for(y=po_side_datum_y)intersection(){
+    translate([right?113.5:-110.5,y,5])ef_root(right?5:11,14,0.7,1);
+    translate([right?105.5:-120,-49,-1])cube([right?14.5:15,98,30]);
+   }
   }
-  for(y=po_side_mount_y){
-   translate([right?110:-110,y,-2.65])bore(4.5,7.65);
+  for(y=[-23,23]){
+   translate([right?111.5:-111.5,y,-po_relief])bore(10.5,7.5);
+   // Open the narrow inner crescent; retain the >=3.2 mm outer spine.
+   translate([right?105:-108,y-3,-po_relief-0.2])box([3,6,8],0.5,0.3);
+  }
+  if(!integrated)for(y=po_side_mount_y){
+   translate([right?110:-110,y,-po_relief])bore(4.5,5.8);
    translate([right?110:-110,y,1.4])bore(7.4,3.6);
   }
   if(right)for(y=po_side_datum_y){
-   translate([111,y,po_side_pressure_z])rotate([0,90,0])roof(4.5,5,0);
-   translate([112.6,y,po_side_pressure_z])rotate([0,90,0])nut(po_m4_nut_af,3.4);
+   translate([111,y,po_side_pressure_z])rotate([0,90,0])roof(4.5,5,180);
+   translate([112.6,y,po_side_pressure_z])rotate([0,90,0])roof_nut(po_m4_nut_af,3.4,180);
   }
  }
 }
@@ -40,22 +59,23 @@ module gusset(x,positive){
  ef_profile(4,0.4)offset(r=0.6)offset(delta=-0.6)
  polygon(positive?[[105,-12],[115,-12],[115,-2]]:[[-111,-12],[-121,-12],[-121,-2]]);
 }
-module end_arm(push=false){
+module end_arm(push=false,integrated=false){
  s=push?-1:1;
+ arm_z=-po_deck_t-end_arm_thickness;
  difference(){
   union(){
-   translate([push?-104:84,push?-127:47,-18])box([20,push?80:74,6],1);
-   translate([s*94,s*57,-12.1])ef_convex_profile(1.95,0.3)ef_round_rect(11.6,15.6,0.8);
-   translate([push?-104:84,push?-127:115+end_contact_correction,-18])box([20,6,33],1);
-   for(x=push?[-104,-88]:[84,100])gusset(x,!push);
+   translate([push?-104:84,push?-127:47,arm_z])box([20,push?80:74,end_arm_thickness],1);
+   translate([push?-104:84,push?-127:115+end_contact_correction,arm_z])box([20,6,(push?19:15)-arm_z],1);
+   for(x=push?[-103.2,-88.8]:[84.8,99.2])translate([0,0,-8])gusset(x,!push);
   }
-  for(y=po_end_mount_y){
-   translate([s*94,s*y,-18])bore(4.5,7.85);
-   translate([s*94,s*y,-18])bore(7.4,3.6);
+  if(!integrated)for(y=po_end_mount_y){
+   // Print Y=90: the roofs point toward model -X, the positive build direction.
+   translate([s*94,s*y,arm_z])roof(4.5,end_arm_thickness,180);
+   translate([s*94,s*y,arm_z])roof(7.4,4.6,180);
   }
   if(push){
-   translate([-94,-127,9])rotate([-90,0,0])roof(4.5,6,0);
-   translate([-94,-127,9])rotate([-90,0,0])nut(po_m4_nut_af,3.4);
+   translate([-94,-127,9])rotate([-90,0,0])roof(4.5,6,180);
+   translate([-94,-127,9])rotate([-90,0,0])roof_nut(po_m4_nut_af,3.4,180);
   }
  }
 }
